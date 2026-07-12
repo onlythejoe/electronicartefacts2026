@@ -1,0 +1,238 @@
+{
+  "id": "local:ea:collection:knowledge-hub-fifth-wave",
+  "kind": "local",
+  "focus": "ea:collection:knowledge-hub-fifth-wave",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web",
+      "type": "publication",
+      "title": "WebMCP and the Agentic Web",
+      "route": "/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "type": "publication",
+      "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+      "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:agent2agent-protocol",
+      "type": "technology",
+      "title": "Agent2Agent Protocol",
+      "route": "/knowledge/technologies/agent2agent-protocol/",
+      "status": "experimental",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webmcp",
+      "type": "technology",
+      "title": "WebMCP",
+      "route": "/knowledge/technologies/webmcp/",
+      "status": "experimental",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:model-context-protocol",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:c2pa",
+      "type": "technology",
+      "title": "C2PA",
+      "route": "/knowledge/technologies/c2pa/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent",
+      "type": "concept",
+      "title": "AI Agent",
+      "route": "/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Browser Software",
+      "route": "/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:publication:webmcp-and-the-agentic-web",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agent2agent-protocol-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:agent2agent-protocol",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:webmcp-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:webmcp",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:model-context-protocol",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:c2pa-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:c2pa",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:ai-agent",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-software-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:browser-software",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:contextual-execution",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:program:vaste",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:palimpsests-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:project:palimpsests",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    }
+  ]
+}

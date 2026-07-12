@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="A2A, Agent Interoperability and Governed Delegation: Technical Article. A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles,…" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="Electronic Artefacts" />
+    <meta name="application-name" content="Electronic Artefacts" />
+    <meta name="apple-mobile-web-app-title" content="Electronic Artefacts" />
+    <meta name="keywords" content="A2A, Agent Interoperability and Governed Delegation, publication, A2A, AI Agents, Agent Interoperability, Delegation, VASTE, Artificial Intelligence, Distributed Systems, Software Architecture" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/" />
+    <link rel="alternate" hreflang="fr" href="https://electronicartefacts.com/fr/publications/a2a-agent-interoperability-and-governed-delegation/" />
+    <link rel="alternate" hreflang="en" href="https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/" />
+    <link rel="alternate" hreflang="x-default" href="https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/" />
+    <link rel="alternate" type="application/ld+json" href="https://electronicartefacts.com/id/publication/a2a-agent-interoperability-and-governed-delegation/index.jsonld" />
+    <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
+    <link rel="alternate" type="application/json" href="/agent-manifest.json" title="Agent manifest" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Electronic Artefacts Search" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="A2A, Agent Interoperability and Governed Delegation" />
+    <meta property="og:description" content="A2A, Agent Interoperability and Governed Delegation: Technical Article. A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles,…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Electronic Artefacts" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:url" content="https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/" />
+    <meta property="og:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta property="og:image:secure_url" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A2A, Agent Interoperability and Governed Delegation" />
+    <meta property="article:published_time" content="2026-07-12" />
+    <meta property="article:modified_time" content="2026-07-12" />
+    <meta property="article:tag" content="A2A, Agent Interoperability and Governed Delegation" />
+    <meta property="article:tag" content="publication" />
+    <meta property="article:tag" content="A2A" />
+    <meta property="article:tag" content="AI Agents" />
+    <meta property="article:tag" content="Agent Interoperability" />
+    <meta property="article:tag" content="Delegation" />
+    <meta property="article:tag" content="VASTE" />
+    <meta property="article:tag" content="Artificial Intelligence" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A2A, Agent Interoperability and Governed Delegation" />
+    <meta name="twitter:description" content="A2A, Agent Interoperability and Governed Delegation: Technical Article. A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles,…" />
+    <meta name="twitter:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta name="twitter:image:alt" content="A2A, Agent Interoperability and Governed Delegation" />
+    <title>A2A, Agent Interoperability and Governed Delegation</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/#webpage","url":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/","name":"A2A, Agent Interoperability and Governed Delegation","description":"Understand A2A agent cards, messages, tasks and artifacts, how A2A differs from MCP, and why agent interoperability still needs identity, policy and audit trails.","inLanguage":"en","datePublished":"2026-07-12","dateModified":"2026-07-12","primaryImageOfPage":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","description":"A2A, Agent Interoperability and Governed Delegation"},"breadcrumb":{"@id":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/#breadcrumb"},"mainEntity":{"@id":"https://electronicartefacts.com/id/publication/a2a-agent-interoperability-and-governed-delegation/"},"isPartOf":{"@id":"https://electronicartefacts.com/#website"},"publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"isAccessibleForFree":true},{"@type":"TechArticle","@id":"https://electronicartefacts.com/id/publication/a2a-agent-interoperability-and-governed-delegation/","identifier":"ea:publication:a2a-agent-interoperability-and-governed-delegation","name":"A2A, Agent Interoperability and Governed Delegation","headline":"A2A, Agent Interoperability and Governed Delegation","abstract":"A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.","description":"A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.","url":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/","mainEntityOfPage":{"@id":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/#webpage"},"image":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","description":"A2A, Agent Interoperability and Governed Delegation"},"author":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"creator":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"keywords":["A2A","AI Agents","Agent Interoperability","Delegation","VASTE","Artificial Intelligence","Distributed Systems","Software Architecture"],"inLanguage":"en","dateCreated":"2026-07-12","datePublished":"2026-07-12","dateModified":"2026-07-12","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"copyrightHolder":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"isAccessibleForFree":true,"wordCount":670,"citation":["Electronic Artefacts. \"A2A, Agent Interoperability and Governed Delegation.\" Technical article, version 1.0.0, 2026.",{"@type":"CreativeWork","name":"Agent2Agent Protocol Specification","url":"https://a2a-protocol.org/latest/specification/","publisher":"A2A Protocol Project"},{"@type":"CreativeWork","name":"Google Cloud donates A2A to Linux Foundation","url":"https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/","publisher":"Google for Developers","datePublished":"2025-06-23"}],"about":[{"@id":"https://electronicartefacts.com/id/technology/agent2agent-protocol/"},{"@id":"https://electronicartefacts.com/id/technology/model-context-protocol/"},{"@id":"https://electronicartefacts.com/id/concept/ai-agent/"},{"@id":"https://electronicartefacts.com/id/concept/contextual-execution/"},{"@id":"https://electronicartefacts.com/id/concept/provenance/"},{"@id":"https://electronicartefacts.com/id/program/vaste/"}],"mentions":[{"@id":"https://electronicartefacts.com/id/technology/agent2agent-protocol/"},{"@id":"https://electronicartefacts.com/id/concept/contextual-execution/"}],"articleSection":["Artificial Intelligence","Distributed Systems","Software Architecture","A2A","AI Agents","Agent Interoperability"],"timeRequired":"PT4M","isBasedOn":[{"@type":"CreativeWork","name":"Agent2Agent Protocol Specification","url":"https://a2a-protocol.org/latest/specification/","publisher":"A2A Protocol Project"},{"@type":"CreativeWork","name":"Google Cloud donates A2A to Linux Foundation","url":"https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/","publisher":"Google for Developers","datePublished":"2025-06-23"}]},{"@type":"Organization","@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/","name":"Electronic Artefacts","alternateName":["electronicArtefacts","electronicartefacts.com"],"url":"https://electronicartefacts.com/","description":"Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.","keywords":["creative technology","digital product strategy","UX design","web development","knowledge graph","AI agents","retrieval-augmented generation","linked data","digital preservation","cultural infrastructure","software systems","research publishing"],"knowsAbout":["AI agents","knowledge graphs","retrieval-augmented generation","linked data","JSON-LD","creative coding","digital preservation","cultural knowledge systems","software architecture","human-computer interaction","generative AI","provenance"],"logo":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png","contentUrl":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png","width":1024,"height":1024},"image":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","email":"electronic.artefacts@gmail.com","contactPoint":[{"@type":"ContactPoint","email":"electronic.artefacts@gmail.com","contactType":"inquiries","availableLanguage":["en","fr"]}],"sameAs":["https://www.instagram.com/electronic.artefacts/","https://github.com/onlythejoe","https://soundcloud.com/electronic-artefacts"]},{"@type":"WebSite","@id":"https://electronicartefacts.com/#website","url":"https://electronicartefacts.com/","name":"Electronic Artefacts","alternateName":["electronicArtefacts","electronicartefacts.com"],"description":"Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.","keywords":["creative technology","digital product strategy","UX design","web development","knowledge graph","AI agents","retrieval-augmented generation","linked data","digital preservation","cultural infrastructure","software systems","research publishing"],"dateModified":"2026-07-10","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"inLanguage":"en"},{"@type":"BreadcrumbList","@id":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Electronic Artefacts","item":"https://electronicartefacts.com/"},{"@type":"ListItem","position":2,"name":"Publications","item":"https://electronicartefacts.com/publications/"},{"@type":"ListItem","position":3,"name":"A2A, Agent Interoperability and Governed Delegation","item":"https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/"}]}]}</script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=60" />
+    <script type="module" src="/assets/js/app.js?v=55"></script>
+  </head>
+  <body data-page="publication" data-generated-page="true" data-entry-id="a2a-agent-interoperability-and-governed-delegation">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header><div class="shell-header zone-card">
+  <a class="brand-lockup" href="/index.html">
+    <span class="brand-text">
+      <strong><span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span></strong>
+      <span>Creative technology studio for complex digital systems</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a data-nav="home" href="/index.html">HOME</a>
+    <a data-nav="work" href="/work.html">WORK</a>
+    <a data-nav="projects" href="/projects.html">PROJECTS</a>
+    <a data-nav="programs" href="/programs.html">PROGRAMS</a>
+    <a data-nav="research" href="/research.html">RESEARCH</a>
+    <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
+    <a data-nav="about" href="/about.html">ABOUT</a>
+    <a data-nav="contact" href="/contact.html">CONTACT</a>
+  </nav>
+
+  <div class="language-switcher" data-language-switcher>
+    <button class="language-switcher__trigger" type="button" aria-haspopup="menu" aria-expanded="false" title="Choose language" data-language-trigger>
+      <span class="language-switcher__planet" aria-hidden="true">
+        <span></span>
+      </span>
+      <strong data-language-current>EN</strong>
+    </button>
+    <div class="language-switcher__menu" role="menu" hidden data-language-menu>
+      <div class="language-switcher__menu-shell">
+        <span class="language-switcher__eyebrow">Language</span>
+        <div class="language-switcher__rail" aria-label="Available languages">
+          <button type="button" role="menuitemradio" aria-checked="true" data-language-option="en">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>English</span>
+              <em>Original interface</em>
+            </span>
+            <strong>EN</strong>
+          </button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-language-option="fr">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>Français</span>
+              <em>Version française</em>
+            </span>
+            <strong>FR</strong>
+          </button>
+        </div>
+        <span class="language-switcher__status" data-language-status>Current language</span>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+    <main id="main" class="site-main" tabindex="-1">
+    <div class="article-page">
+      <section class="zone-card entity-breadcrumb-card">
+  <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
+    <a class="tag" href="/">Home</a>
+    <span class="tag">Publications</span>
+    <span class="tag entity-breadcrumbs__current" aria-current="page">A2A, Agent Interoperability and Governed Delegation</span>
+  </nav></section>
+
+    <section class="zone-card hero article-hero">
+      <div class="article-hero__copy">
+        <p class="eyebrow">Technical article</p>
+        <h1 class="display-title">A2A, Agent Interoperability and Governed Delegation</h1>
+        <p class="card__meta">Technical Article</p>
+        <p class="lede">A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.</p>
+
+    <div class="pill-cloud">
+      <span class="tag">Technical article</span><span class="tag">active</span><span class="tag">research</span><span class="tag">published</span><span class="tag">A2A</span><span class="tag">AI Agents</span><span class="tag">Agent Interoperability</span><span class="tag">Delegation</span>
+    </div>
+      </div>
+      <aside class="article-hero__dashboard" aria-label="Article summary">
+        <div class="article-hero__dashboard-head">
+          <p class="card__meta">Article</p>
+          <strong>1.0.0</strong>
+        </div>
+        <div class="article-stat-grid">
+          <span>
+            <strong>4 min</strong>
+            <em>Reading</em>
+          </span>
+          <span>
+            <strong>10</strong>
+            <em>Sections</em>
+          </span>
+          <span>
+            <strong>7</strong>
+            <em>Related</em>
+          </span>
+          <span>
+            <strong>2026-07-12</strong>
+            <em>Published</em>
+          </span>
+        </div>
+        <div class="article-hero__subjects">
+          <p class="card__meta">Primary subjects</p>
+
+    <div class="article-link-cloud">
+
+        <a class="tag" href="/knowledge/technologies/agent2agent-protocol/">Agent2Agent Protocol</a>
+
+        <a class="tag" href="/knowledge/technologies/model-context-protocol/">Model Context Protocol</a>
+
+        <a class="tag" href="/knowledge/concepts/ai-agent/">AI Agent</a>
+
+        <a class="tag" href="/knowledge/concepts/contextual-execution/">Contextual Execution</a>
+
+        <a class="tag" href="/knowledge/concepts/provenance/">Provenance</a>
+
+    </div>
+        </div>
+      </aside>
+    </section>
+      <section class="article-layout">
+
+  <aside class="article-rail" aria-label="Article side rail">
+    <section class="panel article-rail-card">
+      <div class="section-head">
+        <p class="card__meta">Contents</p>
+        <h2 class="card__title">In this article</h2>
+      </div>
+
+    <nav class="article-toc" aria-label="Article contents">
+
+        <a class="article-toc__item article-toc__item--level-2" href="#problem">
+          <span>01</span>
+          <strong>Problem</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#agent-cards-and-discovery">
+          <span>02</span>
+          <strong>Agent Cards and discovery</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#architecture">
+          <span>03</span>
+          <strong>Architecture</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#a2a-and-mcp">
+          <span>04</span>
+          <strong>A2A and MCP</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#implementation">
+          <span>05</span>
+          <strong>Implementation</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#implications-for-vaste">
+          <span>06</span>
+          <strong>Implications for VASTE</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#evidence">
+          <span>07</span>
+          <strong>Evidence</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#limitations">
+          <span>08</span>
+          <strong>Limitations</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#related-reading">
+          <span>09</span>
+          <strong>Related reading</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#references">
+          <span>10</span>
+          <strong>References</strong>
+        </a>
+    </nav>
+    </section>
+    <section class="panel article-rail-card article-rail-card--compact">
+      <div class="article-rail-facts">
+        <span><strong>Technical article</strong><em>Format</em></span>
+        <span><strong>4 min</strong><em>Reading</em></span>
+        <span><strong>2026-07-12</strong><em>Updated</em></span>
+      </div>
+    </section>
+
+      <section class="panel article-rail-card article-rail-card--compact">
+        <p class="card__meta">Disciplines</p>
+
+    <div class="tag-cluster tag-cluster--compact">
+      <span class="tag">Artificial Intelligence</span><span class="tag">Distributed Systems</span><span class="tag">Software Architecture</span>
+    </div>
+      </section>
+  </aside>
+        <article class="zone-card hero publication-body article-body">
+          <div class="article-body__frame">
+            <h2 id="problem">Problem</h2>
+<p>AI agents are moving from isolated assistants toward systems that assign work to one another. The difficult part is not making two services exchange JSON. It is preserving meaning while different vendors, models and runtimes negotiate capabilities, progress and results.</p>
+<p>Agent2Agent, or A2A, addresses that exchange layer. The open protocol describes how an agent advertises capabilities, receives messages, manages a task and returns artifacts. It deliberately allows the remote agent to remain opaque: collaboration should not require access to its private memory, prompt or internal tools.</p>
+<h2 id="agent-cards-and-discovery">Agent Cards and discovery</h2>
+<p>An Agent Card is the public description of an A2A endpoint. It can identify the agent, its skills, supported interaction modes, endpoint and authentication expectations. This makes discovery machine-readable, but a card is a claim, not an attestation. A client still needs to decide who published it, whether the endpoint is trusted and which declared skills may be used.</p>
+<p>Discovery therefore has two layers. The protocol can answer “what does this agent say it can do?” Governance must answer “under which identity and authority may we rely on it?”</p>
+<h2 id="architecture">Architecture</h2>
+<p>A2A distinguishes conversational messages from tasks whose state can evolve over time. That distinction matters for work that pauses, requests more input or produces several outputs. A task may move through states while messages carry instructions or clarification. Artifacts represent deliverables such as text, files or structured data.</p>
+<p>The vocabulary is useful because it prevents every integration from inventing its own lifecycle. Yet shared states do not guarantee shared semantics. “Completed” can mean that a remote agent finished execution; it does not prove that the result is true, safe, licensed or fit to publish.</p>
+<h2 id="a2a-and-mcp">A2A and MCP</h2>
+<p>MCP and A2A are complementary. MCP exposes context and tools to an AI application. A2A lets one agent application collaborate with another. An agent may use MCP internally and A2A externally, but the protocols should not be collapsed into one permission model.</p>
+<p>The distinction clarifies blast radius. A remote A2A agent should not inherit access to every MCP tool available to the delegating agent. Delegation needs an explicit, narrower capability envelope.</p>
+<h2 id="implementation">Implementation</h2>
+<p>Safe delegation begins with a task contract: objective, input provenance, allowed operations, expected artifact types, expiry, budget and review policy. The contract should bind the requesting actor, remote agent, task and resulting artifacts to stable identifiers.</p>
+<p>Every transition should be observable. A durable audit record captures who delegated, which version of the Agent Card was used, what data crossed the boundary, which state changes occurred and which artifact was accepted. Sensitive payloads need minimization; useful auditability does not require retaining every private prompt.</p>
+<h2 id="implications-for-vaste">Implications for VASTE</h2>
+<p>For VASTE, A2A is best treated as an edge protocol. A VASTE runtime could project a governed capability through an Agent Card, translate an incoming task into typed entities and events, and return an artifact with provenance. The runtime—not the remote protocol—would validate actor rights, relation constraints and publication state.</p>
+<p>This yields a practical design rule: interoperability may open a channel, but authority remains local. An agent can propose or perform bounded work; it cannot define the meaning of the graph it enters.</p>
+<h2 id="evidence">Evidence</h2>
+<p>The A2A specification defines Agent Cards, messages, tasks, artifacts and protocol bindings. Its Linux Foundation governance establishes an open project home; it does not remove the need to verify individual implementations and trust policies.</p>
+<h2 id="limitations">Limitations</h2>
+<p>A2A is evolving and adoption does not prove end-to-end compatibility. Authentication, service trust, prompt injection, data residency, cost control and result evaluation remain application responsibilities. Multi-agent architecture also adds failure modes: loops, duplicated work, contradictory outputs and cascading retries.</p>
+<p>The protocol is most valuable when it replaces a real integration seam. Adding agent-to-agent delegation where a deterministic API or workflow is enough only increases uncertainty.</p>
+<h2 id="related-reading">Related reading</h2>
+<p>Continue with <a href="/publications/model-context-protocol-and-tool-using-ai-systems/">Model Context Protocol and Tool-Using AI Systems</a>, <a href="/publications/ai-agents-vs-ai-workflows/">AI Agents vs AI Workflows</a> and <a href="/publications/contextual-execution-and-graph-runtimes/">Contextual Execution and Graph Runtimes</a>.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>A2A Protocol Project. Agent2Agent Protocol Specification, latest version accessed 12 July 2026.</li>
+<li>Google for Developers. “Google Cloud donates A2A to Linux Foundation,” 23 June 2025.</li>
+</ul>
+
+          </div>
+        </article>
+      </section>
+
+  <section class="article-context-grid" aria-label="Article context">
+    <article class="panel article-context-card article-context-card--lead">
+      <div class="section-head">
+        <p class="card__meta">Argument</p>
+        <h2 class="card__title">Main arguments</h2>
+      </div>
+
+    <ol class="article-mini-list article-mini-list--claims">
+      <li><strong>Agent interoperability is an exchange contract, not proof that delegated work is authorized or correct.</strong></li><li><strong>Durable delegation requires task identity, scoped authority, provenance and inspectable state transitions around the protocol.</strong></li>
+    </ol>
+    </article>
+    <article class="panel article-context-card">
+      <div class="section-head">
+        <p class="card__meta">Related context</p>
+        <h2 class="card__title">Related evidence</h2>
+      </div>
+
+    <div class="article-link-cloud">
+
+        <a class="tag" href="/knowledge/technologies/agent2agent-protocol/">Agent2Agent Protocol</a>
+
+        <a class="tag" href="/knowledge/concepts/contextual-execution/">Contextual Execution</a>
+
+    </div>
+    </article>
+    <article class="panel article-context-card">
+      <div class="section-head">
+        <p class="card__meta">Sources</p>
+        <h2 class="card__title">References</h2>
+      </div>
+
+    <ol class="article-mini-list">
+
+          <li>
+            <a href="https://a2a-protocol.org/latest/specification/" target="_blank" rel="noreferrer">Agent2Agent Protocol Specification</a>
+            <span>A2A Protocol Project</span>
+          </li>
+          <li>
+            <a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/" target="_blank" rel="noreferrer">Google Cloud donates A2A to Linux Foundation</a>
+            <span>Google for Developers / 2025-06-23</span>
+          </li>
+    </ol>
+    </article>
+  </section>
+      <section class="detail-grid article-detail-grid">
+
+  <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="ea:publication:a2a-agent-interoperability-and-governed-delegation">
+    <div class="engagement-panel__header">
+      <div>
+        <p class="card__meta">Page actions</p>
+        <h2 class="card__title">A2A, Agent Interoperability and Governed Delegation</h2>
+      </div>
+      <span class="engagement-panel__status">Active</span>
+    </div>
+    <div class="engagement-panel__actions" aria-label="Page actions">
+      <button class="engagement-action" type="button" data-share-button>
+        <span aria-hidden="true">↗</span>
+        <strong>Share</strong>
+      </button>
+    </div>
+    <dl class="engagement-meta" aria-label="Compact page metadata">
+      <div><dt>Type</dt><dd>Publication</dd></div>
+      <div><dt>Maturity</dt><dd>Research</dd></div>
+      <div><dt>Updated</dt><dd>2026-07-12</dd></div>
+      <div><dt>Version</dt><dd>1.0.0</dd></div>
+    </dl>
+    <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>
+  </section>
+
+    <section class="panel knowledge-panel">
+      <div class="section-head">
+        <p class="card__meta">Reference</p>
+        <h2 class="card__title">Cite this page</h2>
+      </div>
+      <p class="card__copy">Electronic Artefacts. &quot;A2A, Agent Interoperability and Governed Delegation.&quot; Technical article, version 1.0.0, 2026.</p>
+      <div class="link-row"><a class="tag" href="https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/">Canonical URL</a></div>
+    </section>
+      </section>
+
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">DOCUMENTED RELATIONSHIPS</p>
+        <h2>Connected work and ideas.</h2>
+        <p class="lede">Each link names the relationship between two entries and why it matters.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+
+          <article class="panel">
+            <p class="card__meta">structure</p>
+            <div class="stack">
+
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Member of collection</p>
+                    <h3 class="card__title"><a href="/archive/collections/knowledge-hub-fifth-wave/">Knowledge Hub Fifth Wave</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.</p>
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">evidence</p>
+            <div class="stack">
+
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/technologies/agent2agent-protocol/">Agent2Agent Protocol</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/technologies/model-context-protocol/">Model Context Protocol</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/ai-agent/">AI Agent</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/contextual-execution/">Contextual Execution</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/provenance/">Provenance</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/programs/vaste/">VASTE</a></h3>
+                    <p class="card__copy">A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.</p>
+                  </div>
+            </div>
+          </article>
+      </div>
+    </section>
+      <section class="zone-card hero article-local-graph">
+    <section class="panel knowledge-panel" data-local-graph data-graph-src="/graph/neighborhoods/publication/a2a-agent-interoperability-and-governed-delegation.json">
+      <div class="section-head">
+        <p class="card__meta">Related context</p>
+        <h2 class="card__title">Nearby relationships</h2>
+        <p class="card__copy">7 public links connect this page to nearby projects, concepts and references.</p>
+      </div>
+    </section></section>
+    </div></main>
+    <footer><div class="shell-footer zone-card">
+  <div class="footer-main">
+    <div class="footer-stack footer-stack--brand">
+      <a class="footer-brand" href="/" aria-label="Electronic Artefacts home">
+        <span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span>
+      </a>
+      <span>Independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.</span>
+    </div>
+    <nav class="footer-links" aria-label="Quick links">
+      <a class="tag" href="/work.html">WORK</a>
+      <a class="tag" href="/projects.html">PROJECTS</a>
+      <a class="tag" href="/programs.html">PROGRAMS</a>
+      <a class="tag" href="/research.html">RESEARCH</a>
+      <a class="tag" href="/about.html">ABOUT</a>
+      <a class="tag" href="/contact.html">CONTACT</a>
+    </nav>
+    <nav class="footer-links footer-links--utility" aria-label="Resources and legal">
+      <a class="tag" href="/knowledge/">KNOWLEDGE</a>
+      <a class="tag" href="/archive.html">ARCHIVE</a>
+      <a class="tag" href="/search/">SEARCH</a>
+      <a class="tag" href="/mentions-legales.html">LEGAL</a>
+      <a class="tag" href="/confidentialite.html">PRIVACY</a>
+      <button class="tag footer-consent-button" type="button" data-analytics-preferences>COOKIES</button>
+    </nav>
+  </div>
+  <div class="footer-signature" aria-label="Site signature">
+    <a class="footer-signature__framework" href="/knowledge/frameworks/electronic-artefacts-lightweight-template/">
+      Built on the Electronic Artefacts Light Framework
+    </a>
+    <span class="footer-note">© <span id="current-year"></span></span>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:agent2agent-protocol",
+  "kind": "local",
+  "focus": "ea:technology:agent2agent-protocol",
+  "nodes": [
+    {
+      "id": "ea:technology:agent2agent-protocol",
+      "type": "technology",
+      "title": "Agent2Agent Protocol",
+      "route": "/knowledge/technologies/agent2agent-protocol/",
+      "status": "experimental",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:agent2agent-protocol-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:agent2agent-protocol",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-agent2agent-protocol",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:technology:agent2agent-protocol",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+  "type": "publication",
+  "slug": {
+    "canonical": "eu-ai-act-transparency-content-provenance-and-creative-practice"
+  },
+  "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+  "subtitle": "Implementation Guide",
+  "abstract": "A source-led guide to the EU AI Act transparency duties applying from August 2026, connecting machine-readable marking, visible labels, deepfakes, public-interest text and creative provenance.",
+  "description": "Prepare creative and cultural AI workflows for EU transparency rules with a layered approach to machine-readable marks, visible disclosure, provenance and editorial records.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "publishedAt": "2026-07-12",
+    "modifiedAt": "2026-07-12"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "EU AI Act",
+    "AI Transparency",
+    "Synthetic Media",
+    "Content Provenance",
+    "C2PA"
+  ],
+  "disciplines": [
+    "AI Governance",
+    "Digital Media",
+    "Cultural Infrastructure",
+    "Digital Preservation"
+  ],
+  "sources": [
+    {
+      "title": "Code of Practice on Transparency of AI-Generated Content",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "publisher": "European Commission",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "Guidelines on obligations for General-Purpose AI providers",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers",
+      "publisher": "European Commission",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "C2PA Technical Specification 2.2",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.2/specs/_attachments/C2PA_Specification.pdf",
+      "publisher": "Coalition for Content Provenance and Authenticity",
+      "publishedAt": "2025-05-01",
+      "accessedAt": "2026-07-12"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:c2pa"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:generative-ai"
+    },
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:metadata"
+    },
+    {
+      "id": "ea:project:palimpsests"
+    }
+  ],
+  "claims": [
+    "Machine-readable marking and visible disclosure solve different transparency problems and should be designed as complementary layers.",
+    "Cultural organizations need provenance records that survive export and editorial labels that remain understandable when metadata does not."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:c2pa"
+    },
+    {
+      "id": "ea:concept:provenance"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"EU AI Act Transparency, Content Provenance and Creative Practice.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>From 2 August 2026, Article 50 transparency obligations of the EU AI Act apply to several forms of interactive and generative AI. The European Commission’s June 2026 code of practice translates part of that legal framework into measures for marking AI-generated or manipulated outputs and labelling deepfakes and certain public-interest text.</p>\n<p>This article is an implementation reading for creative and cultural organizations, not legal advice. The central lesson is operational: transparency cannot be added as a badge at the end of production. It needs to connect generation, editing, export, publication and preservation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Machine-readable marking helps systems detect that media was generated or manipulated. Visible labelling helps a person understand what they are seeing. The two layers overlap, but neither replaces the other.</p>\n<p>Metadata may be stripped when an image is recompressed, a video is captured or audio is transcoded. A visible notice may survive those transformations, yet provide too little detail for automated verification. Robust practice combines embedded or associated provenance with a plain-language disclosure near the content.</p>\n<h2 id=\"who-acts-provider-and-deployer\">Who acts: provider and deployer</h2>\n<p>The framework distinguishes providers of AI systems from deployers who use them. A model or creative-tool provider may need to enable machine-readable marking and detection. A publisher, studio or cultural institution may need to label the resulting deepfake or qualifying public-interest publication.</p>\n<p>One organization can occupy several roles across a workflow. A studio might build an internal generative system, operate it for a client and publish selected outputs. Responsibility should therefore be mapped per system and use, not reduced to a single company-wide label.</p>\n<h2 id=\"a-provenance-record-for-creative-work\">A provenance record for creative work</h2>\n<p>A useful production record answers: which model or system participated, what source assets entered, what transformations followed, who reviewed the result, what rights applied and where the final object was published. It should distinguish machine generation from conventional editing and human authorship without pretending that creative work is a binary.</p>\n<p>C2PA Content Credentials can support signed provenance assertions and change history. They are valuable infrastructure, not a universal truth machine. A valid credential can show who signed a claim and whether attached data was altered; it cannot prove that every claim inside the credential is honest or that an unmarked file is synthetic.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Start with an inventory of interactive AI and generative media uses. Assign provider or deployer roles, content types, publication contexts and responsible owners. For each workflow, define:</p>\n<ol>\n<li>a machine-readable marking path where technically feasible;</li>\n<li>a visible label triggered by the content and publication context;</li>\n<li>a durable internal record of tools, source material, review and rights;</li>\n<li>a fallback for formats or distribution channels that strip metadata;</li>\n<li>a correction and withdrawal path when a label or provenance claim is wrong.</li>\n</ol>\n<p>Labels should be specific. “Made with AI” says less than “background image generated with an AI image system and edited by the studio.” The disclosure should remain concise at the point of viewing, with a link to fuller provenance where the context warrants it.</p>\n<h2 id=\"creative-and-cultural-implications\">Creative and cultural implications</h2>\n<p>Museums, labels, archives and studios need to protect more than compliance. They manage authorship, interpretation and public memory. Over-labelling every low-level assistive operation can obscure meaningful disclosure; under-labelling a synthetic voice, reconstructed face or fabricated documentary image can damage trust.</p>\n<p>A risk-based editorial policy can distinguish assistive changes, substantial generation, identity simulation and public-interest claims. The decisive questions are not only “was AI used?” but “what did it change, could an audience be misled, and which provenance would matter later?”</p>\n<p>For Palimpsests or future ORETH media, this means recording the lineage of generated and processed material while preserving the artistic narrative. Provenance should expand the work’s context, not flatten it into a compliance notice.</p>\n<h2 id=\"relationship-to-seo-and-discovery\">Relationship to SEO and discovery</h2>\n<p>Transparent content can also be more legible to search and AI retrieval systems when the publication exposes dates, authorship, source notes, media captions and structured metadata. These signals do not guarantee ranking. They do reduce ambiguity around who published a page, what it claims and when it changed.</p>\n<p>The strongest public record is layered: readable article, structured entity, cited sources, stable URL, visible disclosure and portable provenance. This architecture serves audiences first and gives machines better evidence to interpret.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The Commission states that Article 50 transparency obligations apply from 2 August 2026 and separates provider marking duties from deployer labelling duties. C2PA 2.2 provides a technical provenance layer, while the Commission’s code supplies a voluntary compliance framework around marking and labelling.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>The regulatory guidance and technical state of the art continue to evolve. Organizations should review the Commission’s final guidance, the adequacy status of the code and applicable national enforcement before relying on a checklist. Existing systems may also have transitional rules.</p>\n<p>Compliance does not end the ethical question. A technically marked deepfake can still deceive through placement or framing. Transparency must be evaluated in the actual audience context.</p>\n<h2 id=\"related-reading\">Related reading</h2>\n<p>Read <a href=\"/publications/c2pa-content-credentials-and-generative-media-provenance/\">C2PA, Content Credentials and Generative Media Provenance</a>, <a href=\"/publications/responsible-ai-governance-for-creative-and-cultural-systems/\">Responsible AI Governance for Creative and Cultural Systems</a> and <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a>.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>European Commission. Code of Practice on Transparency of AI-Generated Content, 10 June 2026.</li>\n<li>European Commission. Guidelines on obligations for general-purpose AI providers, accessed 12 July 2026.</li>\n<li>C2PA. Content Credentials Technical Specification 2.2, 1 May 2025.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Who acts: provider and deployer",
+    "A provenance record for creative work",
+    "Implementation",
+    "Creative and cultural implications",
+    "Relationship to SEO and discovery",
+    "Evidence",
+    "Limitations",
+    "Related reading",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Who acts: provider and deployer",
+      "id": "who-acts-provider-and-deployer"
+    },
+    {
+      "level": 2,
+      "title": "A provenance record for creative work",
+      "id": "a-provenance-record-for-creative-work"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Creative and cultural implications",
+      "id": "creative-and-cultural-implications"
+    },
+    {
+      "level": 2,
+      "title": "Relationship to SEO and discovery",
+      "id": "relationship-to-seo-and-discovery"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Related reading",
+      "id": "related-reading"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

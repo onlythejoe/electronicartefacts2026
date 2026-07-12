@@ -1,0 +1,172 @@
+{
+  "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+  "slug": {
+    "canonical": "eu-ai-act-transparency-content-provenance-and-creative-practice"
+  },
+  "title": "Transparence de l’AI Act, provenance des contenus et pratique créative",
+  "subtitle": "Guide d’implémentation",
+  "abstract": "Guide sourcé des obligations de transparence de l’AI Act applicables en août 2026, reliant marquage lisible par machine, étiquetage visible, deepfakes, textes d’intérêt public et provenance créative.",
+  "description": "Préparer les workflows culturels et créatifs aux règles européennes avec une approche combinant marquage machine, information visible, provenance et dossier éditorial.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "publishedAt": "2026-07-12",
+    "modifiedAt": "2026-07-12"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "AI Act",
+    "transparence de l’IA",
+    "médias synthétiques",
+    "provenance des contenus",
+    "C2PA"
+  ],
+  "disciplines": [
+    "gouvernance de l’IA",
+    "médias numériques",
+    "infrastructure culturelle",
+    "préservation numérique"
+  ],
+  "sources": [
+    {
+      "title": "Code of Practice on Transparency of AI-Generated Content",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "publisher": "Commission européenne",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "Guidelines on obligations for General-Purpose AI providers",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers",
+      "publisher": "Commission européenne",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "C2PA Technical Specification 2.2",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.2/specs/_attachments/C2PA_Specification.pdf",
+      "publisher": "Coalition for Content Provenance and Authenticity",
+      "publishedAt": "2025-05-01",
+      "accessedAt": "2026-07-12"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:c2pa"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:generative-ai"
+    },
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:metadata"
+    },
+    {
+      "id": "ea:project:palimpsests"
+    }
+  ],
+  "claims": [
+    "Le marquage lisible par machine et l’information visible répondent à des problèmes distincts et doivent former des couches complémentaires.",
+    "Les organisations culturelles ont besoin de traces de provenance qui survivent aux exports et de libellés compréhensibles lorsque les métadonnées disparaissent."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:c2pa"
+    },
+    {
+      "id": "ea:concept:provenance"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Transparence de l’AI Act, provenance des contenus et pratique créative.\" Article technique, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>À partir du 2 août 2026, les obligations de transparence de l’article 50 de l’AI Act s’appliquent à plusieurs usages interactifs et génératifs. Le code de bonnes pratiques publié par la Commission européenne en juin 2026 traduit une partie du cadre en mesures de marquage des sorties générées ou manipulées et d’étiquetage des deepfakes et de certains textes d’intérêt public.</p>\n<p>Cet article propose une lecture d’implémentation pour les organisations créatives et culturelles, pas un conseil juridique. La leçon centrale est opérationnelle : la transparence ne s’ajoute pas comme un badge en fin de production. Elle doit relier génération, montage, export, publication et conservation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le marquage lisible par machine aide les systèmes à détecter un média généré ou manipulé. L’étiquetage visible aide une personne à comprendre ce qu’elle voit. Les couches se complètent sans se remplacer.</p>\n<p>Les métadonnées peuvent disparaître lors d’une recompression, d’une capture ou d’un transcodage. Une mention visible peut survivre, mais manquer de détails pour une vérification automatisée. Une pratique robuste combine provenance embarquée ou associée et explication en langage clair à proximité du contenu.</p>\n<h2 id=\"fournisseur-et-deployeur\">Fournisseur et déployeur</h2>\n<p>Le cadre distingue les fournisseurs de systèmes IA des déployeurs qui les utilisent. Un fournisseur de modèle ou d’outil créatif peut devoir permettre le marquage et la détection. Un éditeur, studio ou établissement culturel peut devoir étiqueter le deepfake ou la publication d’intérêt public qui en résulte.</p>\n<p>Une organisation peut occuper plusieurs rôles. Un studio peut développer un système interne, l’opérer pour un client puis publier certaines sorties. Les responsabilités doivent être cartographiées par système et par usage, pas résumées dans une étiquette unique.</p>\n<h2 id=\"un-dossier-de-provenance-creative\">Un dossier de provenance créative</h2>\n<p>Un bon dossier répond à quelques questions : quel système a participé, quels actifs sources sont entrés, quelles transformations ont suivi, qui a revu le résultat, quels droits s’appliquent et où l’objet final a été publié ? Il distingue génération machine, montage conventionnel et contribution humaine sans réduire la création à un choix binaire.</p>\n<p>Les Content Credentials C2PA peuvent porter des affirmations signées et un historique de modifications. Elles constituent une infrastructure utile, pas une machine à vérité. Un credential valide indique qui a signé et si les données liées ont changé ; il ne prouve pas l’honnêteté de toutes les déclarations ni qu’un fichier sans marque est synthétique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencer par inventorier les usages d’IA interactive et de médias génératifs. Attribuer les rôles, types de contenus, contextes de publication et responsables. Pour chaque workflow, définir :</p>\n<ol>\n<li>un marquage lisible par machine lorsque cela est techniquement possible ;</li>\n<li>un libellé visible déclenché selon le contenu et son contexte ;</li>\n<li>un dossier interne durable sur outils, sources, revue et droits ;</li>\n<li>un repli pour les formats qui suppriment les métadonnées ;</li>\n<li>une voie de correction ou de retrait si une mention est erronée.</li>\n</ol>\n<p>Les libellés doivent être précis. « Créé avec l’IA » informe moins que « arrière-plan généré avec un système d’image IA puis monté par le studio ». La mention reste brève au point de consultation et peut renvoyer vers une provenance détaillée.</p>\n<h2 id=\"enjeux-culturels-et-creatifs\">Enjeux culturels et créatifs</h2>\n<p>Musées, labels, archives et studios protègent davantage que la conformité : ils administrent auteur·ices, interprétation et mémoire publique. Sur-étiqueter toute assistance mineure masque l’information importante ; sous-étiqueter une voix synthétique, un visage reconstruit ou une image documentaire fabriquée fragilise la confiance.</p>\n<p>Une politique éditoriale par risque distingue assistance, génération substantielle, simulation d’identité et affirmation d’intérêt public. Les questions utiles deviennent : qu’est-ce que l’IA a changé, le public peut-il être trompé, et quelle provenance comptera plus tard ?</p>\n<p>Pour Palimpsests ou de futurs médias ORETH, cela implique de consigner la lignée du matériau généré et traité sans sacrifier le récit artistique. La provenance doit enrichir le contexte de l’œuvre, pas l’aplatir en notice réglementaire.</p>\n<h2 id=\"seo-et-decouverte\">SEO et découverte</h2>\n<p>Un contenu transparent devient aussi plus interprétable par les moteurs et systèmes de récupération lorsque la page expose dates, attribution, sources, légendes et données structurées. Ces signaux ne garantissent aucun classement, mais réduisent l’ambiguïté sur l’éditeur, les affirmations et les modifications.</p>\n<p>Le meilleur dossier public est multicouche : article lisible, entité structurée, sources citées, URL stable, mention visible et provenance portable. Cette architecture sert d’abord le public et donne aux machines de meilleures preuves.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La Commission indique que les obligations de transparence de l’article 50 s’appliquent à partir du 2 août 2026 et distingue marquage par les fournisseurs et étiquetage par les déployeurs. C2PA 2.2 apporte une couche technique de provenance ; le code européen fournit un cadre volontaire autour du marquage et de l’information visible.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les orientations réglementaires et l’état de l’art technique évoluent. Avant de s’appuyer sur une checklist, il faut vérifier les lignes directrices finales de la Commission, le statut du code et l’application nationale. Certains systèmes existants bénéficient aussi de transitions.</p>\n<p>La conformité ne clôt pas la question éthique. Un deepfake techniquement marqué peut encore tromper par son placement ou son cadrage. La transparence doit être évaluée dans le contexte réel du public.</p>\n<h2 id=\"a-lire-ensuite\">À lire ensuite</h2>\n<p>Lire <a href=\"/fr/publications/c2pa-content-credentials-and-generative-media-provenance/\">C2PA, Content Credentials et provenance des médias génératifs</a>, <a href=\"/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/\">Gouvernance responsable de l’IA pour les systèmes créatifs et culturels</a> et <a href=\"/fr/publications/digital-preservation-and-living-archives/\">Préservation numérique et archives vivantes</a>.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Commission européenne. Code de bonnes pratiques sur la transparence des contenus générés par l’IA, 10 juin 2026.</li>\n<li>Commission européenne. Lignes directrices sur les obligations des fournisseurs de modèles d’IA à usage général, consultées le 12 juillet 2026.</li>\n<li>C2PA. Spécification technique Content Credentials 2.2, 1er mai 2025.</li>\n</ul>\n",
+  "headings": [
+    "Problème",
+    "Architecture",
+    "Fournisseur et déployeur",
+    "Un dossier de provenance créative",
+    "Mise en œuvre",
+    "Enjeux culturels et créatifs",
+    "SEO et découverte",
+    "Éléments de preuve",
+    "Limites",
+    "À lire ensuite",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problème",
+      "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Fournisseur et déployeur",
+      "id": "fournisseur-et-deployeur"
+    },
+    {
+      "level": 2,
+      "title": "Un dossier de provenance créative",
+      "id": "un-dossier-de-provenance-creative"
+    },
+    {
+      "level": 2,
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
+    },
+    {
+      "level": 2,
+      "title": "Enjeux culturels et créatifs",
+      "id": "enjeux-culturels-et-creatifs"
+    },
+    {
+      "level": 2,
+      "title": "SEO et découverte",
+      "id": "seo-et-decouverte"
+    },
+    {
+      "level": 2,
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Limites",
+      "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "À lire ensuite",
+      "id": "a-lire-ensuite"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

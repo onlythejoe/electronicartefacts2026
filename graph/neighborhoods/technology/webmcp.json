@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:webmcp",
+  "kind": "local",
+  "focus": "ea:technology:webmcp",
+  "nodes": [
+    {
+      "id": "ea:technology:webmcp",
+      "type": "technology",
+      "title": "WebMCP",
+      "route": "/knowledge/technologies/webmcp/",
+      "status": "experimental",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web",
+      "type": "publication",
+      "title": "WebMCP and the Agentic Web",
+      "route": "/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:webmcp-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:webmcp",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-webmcp",
+      "source": "ea:publication:webmcp-and-the-agentic-web",
+      "target": "ea:technology:webmcp",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents WebMCP as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

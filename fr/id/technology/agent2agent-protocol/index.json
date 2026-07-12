@@ -1,0 +1,93 @@
+{
+  "id": "ea:technology:agent2agent-protocol-fr",
+  "type": "technology",
+  "translationOf": "ea:technology:agent2agent-protocol",
+  "slug": {
+    "canonical": "agent2agent-protocol"
+  },
+  "title": "Protocole Agent2Agent",
+  "alternateNames": [
+    "A2A"
+  ],
+  "abstract": "Agent2Agent est un protocole ouvert de découverte de capacités, de coordination de tâches et d’échange entre systèmes d’agents IA indépendants.",
+  "description": "Guide canonique sur les Agent Cards, messages, tâches, artefacts, transports et frontières de sécurité du protocole A2A.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "development",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "publishedAt": "2026-07-12",
+    "modifiedAt": "2026-07-12"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "A2A",
+    "Agents IA",
+    "interopérabilité",
+    "protocoles d’agents"
+  ],
+  "disciplines": [
+    "intelligence artificielle",
+    "architecture logicielle",
+    "systèmes distribués"
+  ],
+  "sources": [
+    {
+      "title": "Agent2Agent Protocol Specification",
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "publisher": "A2A Protocol Project",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "Google Cloud donates A2A to Linux Foundation",
+      "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+      "publisher": "Google for Developers",
+      "publishedAt": "2025-06-23",
+      "accessedAt": "2026-07-12"
+    }
+  ],
+  "category": "protocol",
+  "roleInEcosystem": "A2A fournit un modèle pour découvrir des agents distants et coordonner des tâches délimitées sans exposer leur mémoire ni leurs outils internes.",
+  "officialUrl": "https://a2a-protocol.org/latest/specification/",
+  "versions": [
+    "0.3.0"
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>A2A définit un langage commun entre applications agentiques indépendantes. Un agent publie une Agent Card décrivant ses capacités, reçoit des messages, suit des tâches longues et renvoie des artefacts sans révéler son prompt, sa mémoire ou son implémentation.</p>\n<h2 id=\"frontiere\">Frontière</h2>\n<p>A2A et MCP répondent à des problèmes voisins. MCP relie une application IA à du contexte et des outils ; A2A coordonne le travail entre applications agentiques. Aucun des deux ne fournit seul une identité fiable, une autorisation complète ou une autonomie sûre.</p>\n<h2 id=\"maturite\">Maturité</h2>\n<p>Le protocole est ouvert et gouverné via la Linux Foundation, mais ses interfaces évoluent encore. La version 0.3.0 constitue un jalon de développement, pas une garantie d’interopérabilité universelle.</p>\n<h2 id=\"usage-electronic-artefacts\">Usage Electronic Artefacts</h2>\n<p>A2A peut servir de protocole de bord pour échanger des tâches gouvernées entre runtimes VASTE. VASTE conserverait la responsabilité des identités, permissions, provenances et transitions d’état.</p>\n",
+  "headings": [
+    "Rôle",
+    "Frontière",
+    "Maturité",
+    "Usage Electronic Artefacts"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Frontière",
+      "id": "frontiere"
+    },
+    {
+      "level": 2,
+      "title": "Maturité",
+      "id": "maturite"
+    },
+    {
+      "level": 2,
+      "title": "Usage Electronic Artefacts",
+      "id": "usage-electronic-artefacts"
+    }
+  ]
+}

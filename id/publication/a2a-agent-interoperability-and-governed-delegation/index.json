@@ -1,0 +1,157 @@
+{
+  "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+  "type": "publication",
+  "slug": {
+    "canonical": "a2a-agent-interoperability-and-governed-delegation"
+  },
+  "title": "A2A, Agent Interoperability and Governed Delegation",
+  "subtitle": "Technical Article",
+  "abstract": "A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.",
+  "description": "Understand A2A agent cards, messages, tasks and artifacts, how A2A differs from MCP, and why agent interoperability still needs identity, policy and audit trails.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "publishedAt": "2026-07-12",
+    "modifiedAt": "2026-07-12"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "A2A",
+    "AI Agents",
+    "Agent Interoperability",
+    "Delegation",
+    "VASTE"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Distributed Systems",
+    "Software Architecture"
+  ],
+  "sources": [
+    {
+      "title": "Agent2Agent Protocol Specification",
+      "url": "https://a2a-protocol.org/latest/specification/",
+      "publisher": "A2A Protocol Project",
+      "accessedAt": "2026-07-12"
+    },
+    {
+      "title": "Google Cloud donates A2A to Linux Foundation",
+      "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+      "publisher": "Google for Developers",
+      "publishedAt": "2025-06-23",
+      "accessedAt": "2026-07-12"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:agent2agent-protocol"
+    },
+    {
+      "id": "ea:technology:model-context-protocol"
+    },
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "claims": [
+    "Agent interoperability is an exchange contract, not proof that delegated work is authorized or correct.",
+    "Durable delegation requires task identity, scoped authority, provenance and inspectable state transitions around the protocol."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:agent2agent-protocol"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"A2A, Agent Interoperability and Governed Delegation.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>AI agents are moving from isolated assistants toward systems that assign work to one another. The difficult part is not making two services exchange JSON. It is preserving meaning while different vendors, models and runtimes negotiate capabilities, progress and results.</p>\n<p>Agent2Agent, or A2A, addresses that exchange layer. The open protocol describes how an agent advertises capabilities, receives messages, manages a task and returns artifacts. It deliberately allows the remote agent to remain opaque: collaboration should not require access to its private memory, prompt or internal tools.</p>\n<h2 id=\"agent-cards-and-discovery\">Agent Cards and discovery</h2>\n<p>An Agent Card is the public description of an A2A endpoint. It can identify the agent, its skills, supported interaction modes, endpoint and authentication expectations. This makes discovery machine-readable, but a card is a claim, not an attestation. A client still needs to decide who published it, whether the endpoint is trusted and which declared skills may be used.</p>\n<p>Discovery therefore has two layers. The protocol can answer “what does this agent say it can do?” Governance must answer “under which identity and authority may we rely on it?”</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A2A distinguishes conversational messages from tasks whose state can evolve over time. That distinction matters for work that pauses, requests more input or produces several outputs. A task may move through states while messages carry instructions or clarification. Artifacts represent deliverables such as text, files or structured data.</p>\n<p>The vocabulary is useful because it prevents every integration from inventing its own lifecycle. Yet shared states do not guarantee shared semantics. “Completed” can mean that a remote agent finished execution; it does not prove that the result is true, safe, licensed or fit to publish.</p>\n<h2 id=\"a2a-and-mcp\">A2A and MCP</h2>\n<p>MCP and A2A are complementary. MCP exposes context and tools to an AI application. A2A lets one agent application collaborate with another. An agent may use MCP internally and A2A externally, but the protocols should not be collapsed into one permission model.</p>\n<p>The distinction clarifies blast radius. A remote A2A agent should not inherit access to every MCP tool available to the delegating agent. Delegation needs an explicit, narrower capability envelope.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Safe delegation begins with a task contract: objective, input provenance, allowed operations, expected artifact types, expiry, budget and review policy. The contract should bind the requesting actor, remote agent, task and resulting artifacts to stable identifiers.</p>\n<p>Every transition should be observable. A durable audit record captures who delegated, which version of the Agent Card was used, what data crossed the boundary, which state changes occurred and which artifact was accepted. Sensitive payloads need minimization; useful auditability does not require retaining every private prompt.</p>\n<h2 id=\"implications-for-vaste\">Implications for VASTE</h2>\n<p>For VASTE, A2A is best treated as an edge protocol. A VASTE runtime could project a governed capability through an Agent Card, translate an incoming task into typed entities and events, and return an artifact with provenance. The runtime—not the remote protocol—would validate actor rights, relation constraints and publication state.</p>\n<p>This yields a practical design rule: interoperability may open a channel, but authority remains local. An agent can propose or perform bounded work; it cannot define the meaning of the graph it enters.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The A2A specification defines Agent Cards, messages, tasks, artifacts and protocol bindings. Its Linux Foundation governance establishes an open project home; it does not remove the need to verify individual implementations and trust policies.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>A2A is evolving and adoption does not prove end-to-end compatibility. Authentication, service trust, prompt injection, data residency, cost control and result evaluation remain application responsibilities. Multi-agent architecture also adds failure modes: loops, duplicated work, contradictory outputs and cascading retries.</p>\n<p>The protocol is most valuable when it replaces a real integration seam. Adding agent-to-agent delegation where a deterministic API or workflow is enough only increases uncertainty.</p>\n<h2 id=\"related-reading\">Related reading</h2>\n<p>Continue with <a href=\"/publications/model-context-protocol-and-tool-using-ai-systems/\">Model Context Protocol and Tool-Using AI Systems</a>, <a href=\"/publications/ai-agents-vs-ai-workflows/\">AI Agents vs AI Workflows</a> and <a href=\"/publications/contextual-execution-and-graph-runtimes/\">Contextual Execution and Graph Runtimes</a>.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>A2A Protocol Project. Agent2Agent Protocol Specification, latest version accessed 12 July 2026.</li>\n<li>Google for Developers. “Google Cloud donates A2A to Linux Foundation,” 23 June 2025.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Agent Cards and discovery",
+    "Architecture",
+    "A2A and MCP",
+    "Implementation",
+    "Implications for VASTE",
+    "Evidence",
+    "Limitations",
+    "Related reading",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Agent Cards and discovery",
+      "id": "agent-cards-and-discovery"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "A2A and MCP",
+      "id": "a2a-and-mcp"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Implications for VASTE",
+      "id": "implications-for-vaste"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Related reading",
+      "id": "related-reading"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

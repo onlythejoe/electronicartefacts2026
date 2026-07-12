@@ -1,0 +1,136 @@
+{
+  "id": "local:ea:publication:webmcp-and-the-agentic-web-fr",
+  "kind": "local",
+  "focus": "ea:publication:webmcp-and-the-agentic-web-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "type": "publication",
+      "title": "WebMCP et le web agentique",
+      "route": "/fr/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, cinquième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:webmcp-fr",
+      "type": "technology",
+      "title": "WebMCP",
+      "route": "/fr/knowledge/technologies/webmcp/",
+      "status": "experimental",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:browser-software-fr",
+      "type": "concept",
+      "title": "Logiciel de navigateur",
+      "route": "/fr/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:linked-data-fr",
+      "type": "concept",
+      "title": "Données liées",
+      "route": "/fr/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:webmcp-and-the-agentic-web-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-webmcp",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:technology:webmcp-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents WebMCP as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-model-context-protocol",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-browser-software",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:concept:browser-software-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-human-computer-interaction",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-ai-agent",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-linked-data",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Linked Data as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

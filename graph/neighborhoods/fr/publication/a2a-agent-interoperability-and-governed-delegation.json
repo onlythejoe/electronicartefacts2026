@@ -1,0 +1,136 @@
+{
+  "id": "local:ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+  "kind": "local",
+  "focus": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "type": "publication",
+      "title": "A2A, interopérabilité des agents et délégation gouvernée",
+      "route": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, cinquième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:agent2agent-protocol-fr",
+      "type": "technology",
+      "title": "Protocole Agent2Agent",
+      "route": "/fr/knowledge/technologies/agent2agent-protocol/",
+      "status": "experimental",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-agent2agent-protocol",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:technology:agent2agent-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-model-context-protocol",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-ai-agent",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-contextual-execution",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-provenance",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-vaste",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}
