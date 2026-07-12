@@ -26764,17 +26764,9 @@ window.EA_ANALYTICS_CONFIG = {
       let height = 1;
       let frameActive = false;
       let compactLayout = compactLayoutQuery.matches;
+      let mapIsVisible = true;
+      const pointer = { x: null, y: null };
       const bubbleState = [];
-
-      const resetBubbleStyles = () => {
-        nodes.forEach((node) => {
-          node.style.removeProperty("will-change");
-          node.style.removeProperty("left");
-          node.style.removeProperty("top");
-          node.style.removeProperty("width");
-          node.style.removeProperty("height");
-        });
-      };
 
       const renderTokens = (target, value) => {
         target.replaceChildren(
@@ -26829,7 +26821,12 @@ window.EA_ANALYTICS_CONFIG = {
             || node.dataset.capabilitySize
             || "7rem";
           const baseWidth = node.getBoundingClientRect().width || (Number.parseFloat(sizeValue) * 16) || 112;
-          const baseR = Math.max(44, baseWidth / 2);
+          // On small screens the map is a real field, rather than a miniature
+          // version of the desktop composition. Slightly oversized nodes let
+          // the field read as one dense, living composition.
+          const densityScale = compactLayout ? 1.16 : 1;
+          const maximumRadius = Math.max(44, Math.min(width, height) / 2 - 10);
+          const baseR = Math.min(maximumRadius, Math.max(44, (baseWidth / 2) * densityScale));
           const x = (leftPct / 100) * width;
           const y = (topPct / 100) * height;
           bubbleState.push({
@@ -26857,9 +26854,12 @@ window.EA_ANALYTICS_CONFIG = {
       };
 
       const frame = () => {
-        if (compactLayout || !bubbleState.length) return;
-        const hoverScale = 1;
-        const iterations = 5;
+        if (!bubbleState.length || !mapIsVisible) {
+          frameActive = false;
+          return;
+        }
+        const hoverScale = 1.055;
+        const iterations = compactLayout ? 6 : 5;
         const time = performance.now() * 0.001;
 
         bubbleState.forEach((bubble) => {
@@ -26868,14 +26868,27 @@ window.EA_ANALYTICS_CONFIG = {
         });
 
         bubbleState.forEach((bubble) => {
-          const driftX = 0;
-          const driftY = 0;
+          const driftX = Math.sin(time * 0.54 + bubble.phase) * Math.min(width * 0.075, 38);
+          const driftY = Math.cos(time * 0.43 + bubble.phase * 1.31) * Math.min(height * 0.065, 48);
           const targetX = bubble.ax + driftX;
           const targetY = bubble.ay + driftY;
-          bubble.vx += (targetX - bubble.x) * 0.0009;
-          bubble.vy += (targetY - bubble.y) * 0.0009;
-          bubble.vx *= 0.985;
-          bubble.vy *= 0.985;
+          bubble.vx += (targetX - bubble.x) * 0.0015;
+          bubble.vy += (targetY - bubble.y) * 0.0015;
+
+          if (pointer.x !== null && pointer.y !== null) {
+            const dx = bubble.x - pointer.x;
+            const dy = bubble.y - pointer.y;
+            const distance = Math.hypot(dx, dy) || 1;
+            const influence = bubble.r + Math.min(width, height) * 0.18;
+            if (distance < influence) {
+              const force = (1 - distance / influence) * 0.14;
+              bubble.vx += (dx / distance) * force;
+              bubble.vy += (dy / distance) * force;
+            }
+          }
+
+          bubble.vx *= 0.972;
+          bubble.vy *= 0.972;
           bubble.x += bubble.vx;
           bubble.y += bubble.vy;
         });
@@ -26896,7 +26909,7 @@ window.EA_ANALYTICS_CONFIG = {
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 24;
+              const minDist = targetRa + targetRb + (compactLayout ? -8 : 18);
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;
@@ -26928,7 +26941,7 @@ window.EA_ANALYTICS_CONFIG = {
       };
 
       const start = () => {
-        if (frameActive || reduceMotion || compactLayout) return;
+        if (frameActive || reduceMotion || !mapIsVisible) return;
         frameActive = true;
         rafId = window.requestAnimationFrame(frame);
       };
@@ -26938,10 +26951,8 @@ window.EA_ANALYTICS_CONFIG = {
         window.cancelAnimationFrame(rafId);
       };
 
-      if (!compactLayout) {
-        measure();
-        initBubbleState();
-      }
+      measure();
+      initBubbleState();
 
       const syncFromPointer = (node) => {
         bubbleState.forEach((bubble) => {
@@ -26960,7 +26971,6 @@ window.EA_ANALYTICS_CONFIG = {
         const nextNode = nodes[nextIndex];
         if (!nextNode || nextNode === node) return;
         syncFromPointer(nextNode);
-        if (compactLayout) nextNode.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest", inline: "center" });
         nextNode.focus({ preventScroll: true });
       };
 
@@ -26968,8 +26978,20 @@ window.EA_ANALYTICS_CONFIG = {
         node.addEventListener("pointerenter", () => syncFromPointer(node));
         node.addEventListener("focus", () => syncFromPointer(node));
         node.addEventListener("click", () => syncFromPointer(node));
+        node.addEventListener("pointerdown", (event) => {
+          syncFromPointer(node);
+          const bubble = bubbleState.find((candidate) => candidate.el === node);
+          if (!bubble) return;
+          const rect = map.getBoundingClientRect();
+          const pointX = event.clientX - rect.left;
+          const pointY = event.clientY - rect.top;
+          const dx = bubble.x - pointX;
+          const dy = bubble.y - pointY;
+          const distance = Math.hypot(dx, dy) || 1;
+          bubble.vx += (dx / distance) * 2.8;
+          bubble.vy += (dy / distance) * 2.8;
+        });
         node.addEventListener("keydown", (event) => {
-          if (!compactLayout) return;
           if (event.key === "ArrowRight" || event.key === "ArrowDown") {
             event.preventDefault();
             moveSelection(node, 1);
@@ -26984,20 +27006,21 @@ window.EA_ANALYTICS_CONFIG = {
       if (bubbleState[0]) activate(bubbleState[0].el);
       if (!reduceMotion) start();
 
+      map.addEventListener("pointermove", (event) => {
+        if (event.pointerType === "touch") return;
+        const rect = map.getBoundingClientRect();
+        pointer.x = event.clientX - rect.left;
+        pointer.y = event.clientY - rect.top;
+      }, { passive: true });
+      map.addEventListener("pointerleave", () => {
+        pointer.x = null;
+        pointer.y = null;
+      }, { passive: true });
+
       const resize = () => {
         const nextCompactLayout = compactLayoutQuery.matches;
-        if (nextCompactLayout) {
-          if (!compactLayout) {
-            compactLayout = true;
-            stop();
-            bubbleState.length = 0;
-            resetBubbleStyles();
-          }
-          return;
-        }
-
-        if (compactLayout) {
-          compactLayout = false;
+        if (nextCompactLayout !== compactLayout) {
+          compactLayout = nextCompactLayout;
           measure();
           initBubbleState();
           if (!reduceMotion) start();
@@ -27026,6 +27049,15 @@ window.EA_ANALYTICS_CONFIG = {
         window.addEventListener("resize", resize, { passive: true });
       }
       compactLayoutQuery.addEventListener?.("change", resize);
+
+      if (typeof IntersectionObserver !== "undefined") {
+        const visibilityObserver = new IntersectionObserver(([entry]) => {
+          mapIsVisible = entry.isIntersecting;
+          if (mapIsVisible && !reduceMotion) start();
+          if (!mapIsVisible) stop();
+        }, { threshold: 0.08 });
+        visibilityObserver.observe(map);
+      }
     });
   };
 

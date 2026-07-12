@@ -142,6 +142,8 @@
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
     rgba(8, 9, 12, 0.72);
   isolation: isolate;
+  overflow: hidden;
+  touch-action: pan-y;
 }
 
 .capability-map::before {
@@ -551,7 +553,7 @@
   [data-page="work"] .capability-map {
     position: relative;
     display: block;
-    min-height: clamp(31rem, 136vw, 40rem);
+    min-height: clamp(36rem, 156vw, 46rem);
     padding: 0;
     overflow: hidden;
     overscroll-behavior-inline: auto;
