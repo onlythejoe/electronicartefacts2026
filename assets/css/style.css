@@ -7504,6 +7504,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
   background-size: 2rem 2rem, 2rem 2rem, auto, auto;
   outline: none;
   touch-action: pan-y;
+  contain: layout paint;
 }
 
 .global-graph__canvas-wrap:focus-visible {
@@ -7523,11 +7524,16 @@ body[data-entry-id="vestiges"] .project-process__marker {
   transform-origin: center;
   transform: translate(var(--global-graph-pan-x, 0), var(--global-graph-pan-y, 0)) scale(var(--global-graph-scale, 1));
   transition: transform 180ms ease-out;
+  will-change: transform;
 }
 
 .global-graph__canvas-wrap.is-panning,
 .global-graph__canvas-wrap.is-panning * {
   cursor: grabbing;
+}
+
+.global-graph__canvas-wrap.is-panning .global-graph__viewport {
+  transition: none;
 }
 
 .global-graph__controls {
@@ -7586,6 +7592,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
   stroke: var(--text);
   stroke-width: 0.62;
   filter: drop-shadow(0 0 0.95rem var(--node-color));
+  animation: global-graph-node-pulse 1.8s ease-in-out infinite;
 }
 
 .global-graph__node.is-neighbor circle {
@@ -7595,6 +7602,20 @@ body[data-entry-id="vestiges"] .project-process__marker {
 .global-graph__edges line.is-selected {
   stroke: rgba(247, 244, 239, 0.82);
   stroke-width: 0.18;
+  stroke-dasharray: 0.5 0.7;
+  animation: global-graph-relation-flow 2.2s linear infinite;
+}
+
+@keyframes global-graph-node-pulse {
+  50% {
+    filter: drop-shadow(0 0 1.35rem var(--node-color));
+  }
+}
+
+@keyframes global-graph-relation-flow {
+  to {
+    stroke-dashoffset: -2.4;
+  }
 }
 
 .global-graph__node.is-muted,
@@ -7701,6 +7722,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
   .global-graph__edges line,
   .global-graph__node circle {
     transition: none;
+    animation: none;
   }
 }
 

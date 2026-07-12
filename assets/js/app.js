@@ -35114,6 +35114,13 @@ window.EA_ANALYTICS_CONFIG = {
     const buttons = [...graph.querySelectorAll("[data-global-graph-filter]")];
     const nodes = [...graph.querySelectorAll("[data-global-graph-node]")];
     const edges = [...graph.querySelectorAll("[data-global-graph-edge]")];
+    const edgesByNode = new Map();
+    edges.forEach((edge) => {
+      [edge.dataset.globalGraphFrom, edge.dataset.globalGraphTo].forEach((id) => {
+        if (!edgesByNode.has(id)) edgesByNode.set(id, []);
+        edgesByNode.get(id).push(edge);
+      });
+    });
     const stage = graph.querySelector("[data-global-graph-stage]");
     const viewport = graph.querySelector("[data-global-graph-viewport]");
     const inspector = graph.querySelector("[data-global-graph-inspector]");
@@ -35131,6 +35138,7 @@ window.EA_ANALYTICS_CONFIG = {
     let drag = null;
     let nodeDrag = null;
     let nodeFrame = 0;
+    let viewportFrame = 0;
     const resetInspector = () => {
       selectedId = "";
       nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
@@ -35145,7 +35153,9 @@ window.EA_ANALYTICS_CONFIG = {
     const selectNode = (node) => {
       const id = node.dataset.globalGraphId;
       const relatedIds = new Set([id]);
-      edges.forEach((edge) => {
+      const directEdges = edgesByNode.get(id) || [];
+      const directEdgeSet = new Set(directEdges);
+      directEdges.forEach((edge) => {
         if (edge.dataset.globalGraphFrom === id) relatedIds.add(edge.dataset.globalGraphTo);
         if (edge.dataset.globalGraphTo === id) relatedIds.add(edge.dataset.globalGraphFrom);
       });
@@ -35156,7 +35166,7 @@ window.EA_ANALYTICS_CONFIG = {
         item.classList.toggle("is-muted", !relatedIds.has(item.dataset.globalGraphId));
       });
       edges.forEach((edge) => {
-        const direct = edge.dataset.globalGraphFrom === id || edge.dataset.globalGraphTo === id;
+        const direct = directEdgeSet.has(edge);
         edge.classList.toggle("is-selected", direct);
         edge.classList.toggle("is-muted", !direct);
       });
@@ -35173,15 +35183,20 @@ window.EA_ANALYTICS_CONFIG = {
       viewport?.style.setProperty("--global-graph-pan-x", `${panX}px`);
       viewport?.style.setProperty("--global-graph-pan-y", `${panY}px`);
     };
-    const clampPan = () => {
-      const rect = stage?.getBoundingClientRect();
+    const scheduleViewport = () => {
+      if (viewportFrame) return;
+      viewportFrame = requestAnimationFrame(() => {
+        viewportFrame = 0;
+        applyScale();
+      });
+    };
+    const clampPan = (rect = stage?.getBoundingClientRect()) => {
       const limitX = Math.max(0, (rect?.width || 0) * (scale - 1) * 0.48 + 42);
       const limitY = Math.max(0, (rect?.height || 0) * (scale - 1) * 0.48 + 42);
       panX = Math.max(-limitX, Math.min(limitX, panX));
       panY = Math.max(-limitY, Math.min(limitY, panY));
     };
-    const stagePoint = (event) => {
-      const rect = stage?.getBoundingClientRect();
+    const stagePoint = (event, rect = stage?.getBoundingClientRect()) => {
       if (!rect) return null;
       return {
         x: Math.max(2, Math.min(98, ((event.clientX - rect.left) / rect.width) * 100)),
@@ -35194,7 +35209,7 @@ window.EA_ANALYTICS_CONFIG = {
       node.querySelector("circle")?.setAttribute("cx", String(x));
       node.querySelector("circle")?.setAttribute("cy", String(y));
       const id = node.dataset.globalGraphId;
-      edges.forEach((edge) => {
+      (edgesByNode.get(id) || []).forEach((edge) => {
         if (edge.dataset.globalGraphFrom === id) {
           edge.setAttribute("x1", String(x));
           edge.setAttribute("y1", String(y));
@@ -35225,13 +35240,13 @@ window.EA_ANALYTICS_CONFIG = {
         const point = stagePoint(event);
         if (!point) return;
         event.stopPropagation();
-        nodeDrag = { node, pointerId: event.pointerId, startX: point.x, startY: point.y, moved: false };
+        nodeDrag = { node, pointerId: event.pointerId, rect: stage?.getBoundingClientRect(), startX: point.x, startY: point.y, moved: false };
         node.setPointerCapture?.(event.pointerId);
         node.classList.add("is-dragging");
       });
       node.addEventListener("pointermove", (event) => {
         if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
-        const point = stagePoint(event);
+        const point = stagePoint(event, nodeDrag.rect);
         if (!point) return;
         nodeDrag.moved ||= Math.abs(point.x - nodeDrag.startX) > 0.35 || Math.abs(point.y - nodeDrag.startY) > 0.35;
         node.dataset.globalGraphX = String(point.x);
@@ -35284,7 +35299,7 @@ window.EA_ANALYTICS_CONFIG = {
     stage?.addEventListener("pointerdown", (event) => {
       if (event.pointerType === "touch" && event.isPrimary === false) return;
       if (event.target.closest?.("[data-global-graph-node], [data-global-graph-zoom]")) return;
-      drag = { pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, panX, panY };
+      drag = { pointerId: event.pointerId, rect: stage.getBoundingClientRect(), startX: event.clientX, startY: event.clientY, panX, panY };
       stage.setPointerCapture?.(event.pointerId);
       stage.classList.add("is-panning");
     });
@@ -35295,8 +35310,8 @@ window.EA_ANALYTICS_CONFIG = {
       if (event.pointerType === "touch" && Math.abs(deltaY) > Math.abs(deltaX)) return;
       panX = drag.panX + deltaX;
       panY = drag.panY + deltaY;
-      clampPan();
-      applyScale();
+      clampPan(drag.rect);
+      scheduleViewport();
     });
     const stopPanning = (event) => {
       if (!drag || event.pointerId !== drag.pointerId) return;
@@ -35316,7 +35331,7 @@ window.EA_ANALYTICS_CONFIG = {
         panY -= event.deltaY;
       }
       clampPan();
-      applyScale();
+      scheduleViewport();
     }, { passive: false });
     resetInspector();
   };
