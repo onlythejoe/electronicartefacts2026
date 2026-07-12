@@ -5,8 +5,8 @@ slug:
   canonical: runtime-engines-and-domain-operating-systems
 title: Moteurs d'exécution et systèmes d'exploitation de domaine
 subtitle: Article technique
-abstract: "Cette synthèse française présente Moteurs d'exécution et systèmes d'exploitation de domaine : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Moteurs d'exécution et systèmes d'exploitation de domaine dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un guide au niveau des systèmes pour les moteurs d'exécution, les systèmes d'exploitation de domaine, l'identité, l'état, les autorisations, les événements, les extensions et les projections publiques."
+description: "Comprendre les moteurs d'exécution et les systèmes d'exploitation de domaine, et comment les entités, les permissions et les événements partagés peuvent supporter de nombreuses applications."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -30,8 +30,8 @@ subjects:
   - id: ea:program:vaste
   - id: ea:project:vestiges
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Un système d'exploitation de domaine est crédible lorsque plusieurs applications réutilisent l'identité partagée, l'entité, la permission et la sémantique d'événement."
+  - "Les moteurs d'exécution devraient séparer les contrats de domaine stables des implémentations de stockage, de transport et d'interface remplaçables."
 evidence:
   - id: ea:concept:domain-operating-system
   - id: ea:concept:graph-runtime
@@ -54,7 +54,7 @@ sources:
     url: https://cloudevents.io/
 citation:
   preferred: Electronic Artefacts. "Moteurs d'exécution et systèmes d'exploitation de domaine".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - moteur d'exécution
   - système d'exploitation de domaine

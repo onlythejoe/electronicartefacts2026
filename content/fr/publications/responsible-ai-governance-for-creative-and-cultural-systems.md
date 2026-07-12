@@ -5,8 +5,8 @@ slug:
   canonical: responsible-ai-governance-for-creative-and-cultural-systems
 title: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels
 subtitle: Article technique
-abstract: "Cette synthèse française présente Gouvernance responsable de l'IA pour les systèmes créatifs et culturels : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Gouvernance responsable de l'IA pour les systèmes créatifs et culturels dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un article pratique sur la gouvernance de l'IA dans les studios de création, les archives culturelles et les systèmes de connaissances, couvrant le risque, l'examen, la provenance, les droits et l'évaluation."
+description: "Découvrez comment une gouvernance responsable de l'IA s'applique aux technologies créatives, aux infrastructures culturelles, aux archives, aux médias générateurs et aux flux de connaissances assistés par l'IA."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-25
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:systems-thinking
   - id: ea:concept:contextual-execution
 claims:
-  - Gouvernance responsable de l'IA pour les systèmes créatifs et culturels doit être lisible comme
-    une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La gouvernance responsable de l'IA est une pratique opérationnelle, pas une politique PDF qui se trouve en dehors des flux de travail des produits, des archives et de la rédaction."
+  - "Les systèmes d'IA créatifs et culturels ont besoin de provenance, d'examen humain, de sensibilisation aux droits, de limites de la vie privée et d'évaluation avant que l'automatisation ne devienne une infrastructure."
 evidence:
   - id: ea:concept:generative-ai
   - id: ea:concept:provenance
@@ -51,7 +50,7 @@ sources:
     url: https://doi.org/10.6028/NIST.AI.600-1
 citation:
   preferred: Electronic Artefacts. "Gouvernance responsable de l'IA pour les systèmes créatifs et
-    culturels". Article technique, version 1.1.0, 2026.
+    culturels". Article technique, version 1.1.1, 2026.
 tags:
   - Responsible AI
   - gouvernance de l'IA
@@ -150,7 +149,7 @@ La documentation ne remplace pas les contrôles. C'est la carte qui permet d'ins
 
 ## Réponse aux incidents
 
-Les incidents liés à l'IA comprennent des erreurs factuelles, des fuites de renseignements personnels, des appels d'outils dangereux, des extrants biaisés, des violations des droits, une injection rapide, une publication non autorisée et une provenance trompeuse. La gouvernance a besoin d'un chemin pour les rapports, trier, corriger et postmortem.
+Les incidents liés à l'IA comprennent des erreurs factuelles, des fuites de renseignements personnels, des appels d'outils dangereux, des extrants biaisés, des violations des droits, une injection de prompt, une publication non autorisée et une provenance trompeuse. La gouvernance a besoin d'un chemin pour les rapports, trier, corriger et postmortem.
 
 Un petit studio peut garder cette légèreté. Définir qui peut interrompre un workflow d'IA, comment les corrections publiques sont émises, où les événements d'audit sont stockés et comment les dossiers touchés sont examinés.
 

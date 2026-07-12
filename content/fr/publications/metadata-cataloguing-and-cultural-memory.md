@@ -5,8 +5,8 @@ slug:
   canonical: metadata-cataloguing-and-cultural-memory
 title: Métadonnées, catalogage et mémoire culturelle
 subtitle: Article technique
-abstract: "Cette synthèse française présente Métadonnées, catalogage et mémoire culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Métadonnées, catalogage et mémoire culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique les métadonnées comme une couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances."
+description: "Un article technique sur les métadonnées, le catalogage, la mémoire culturelle, les normes de conservation et les enregistrements du graphe électroniques Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:knowledge-graph
   - id: ea:project:vestiges
 claims:
-  - Métadonnées, catalogage et mémoire culturelle doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les métadonnées ne sont pas des résidus d'écriture; c'est l'infrastructure d'interprétation qui rend les objets culturels accessibles et compréhensibles."
+  - "Les graphes de connaissances deviennent plus fiables lorsque les métadonnées enregistrent la source, les droits, le format, la relation et l'incertitude."
 evidence:
   - id: ea:concept:metadata
   - id: ea:project:vestiges
@@ -51,7 +50,7 @@ sources:
     url: https://www.loc.gov/standards/premis/
 citation:
   preferred: Electronic Artefacts. "Métadonnées, catalogage et mémoire culturelle". Article technique,
-    version 1.1.0, 2026.
+    version 1.1.1, 2026.
 tags:
   - Metadata
   - Cataloguing
@@ -153,7 +152,7 @@ La deuxième erreur est la surpersonnalisation. Un vocabulaire privé peut se se
 
 La troisième erreur est de traiter les étiquettes comme assez. Mots-clés contenu de groupe; métadonnées explique les ressources.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peuvent utiliser des métadonnées pour connecter la production créative à la mémoire de recherche. Ceci est important parce que le site ne présente pas seulement des travaux. Il documente un écosystème.
 
@@ -177,7 +176,7 @@ Le centre de connaissances devrait traiter les modifications apportées aux mét
 
 ## Voie de lecture
 
-Les métadonnées peuvent se sentir abstraites jusqu'à ce qu'un lecteur perde son contexte. L'article devrait donc guider les lecteurs de questions quotidiennes, comme « quel est ce fichier ? » ou « d'où vient cette source ? », vers des concepts d'archives comme la provenance, la conservation des métadonnées et les relations graphiques. Le chemin le plus fort mène de [Métadonnées](/fr/knowledge/concepts/metadata/) à [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/) et [V6](/fr/projects/v6/).
+Les métadonnées peuvent se sentir abstraites jusqu'à ce qu'un lecteur perde son contexte. L'article devrait donc guider les lecteurs de questions quotidiennes, comme « quel est ce fichier ? » ou « d'où vient cette source ? », vers des concepts d'archives comme la provenance, la conservation des métadonnées et les relations de graphe. Le chemin le plus fort mène de [Métadonnées](/fr/knowledge/concepts/metadata/) à [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/) et [V6](/fr/projects/v6/).
 
 ## Travaux futurs
 

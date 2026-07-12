@@ -5,8 +5,8 @@ slug:
   canonical: generative-systems-cybernetics-and-creative-coding
 title: Systèmes génératifs, cybernétique et programmation créative
 subtitle: Article technique
-abstract: "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article retrace les systèmes génératifs de la rétroaction cybernétique et de l'art algorithmique à la codification créative, la conception sonore et la production contemporaine assistée par l'IA."
+description: "Un article technique sur les systèmes génératifs, la rétroaction cybernétique, le codage créatif, la composition algorithmique et les projets d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Le travail génératif est mieux compris par les contraintes, la rétroaction, la sélection du matériel et la curation plutôt que par la nouveauté seule."
+  - "La rétroaction cybernétique reste un concept utile pour les systèmes créatifs lorsqu'ils sont utilisés avec précision technique."
 evidence:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
@@ -51,7 +51,7 @@ sources:
     publishedAt: 1971-01-01
 citation:
   preferred: Electronic Artefacts. "Systèmes génératifs, cybernétique et programmation créative".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Generative Systems
   - Cybernetics
@@ -155,11 +155,11 @@ Méthode curatoriale : comment les sorties sont-elles sélectionnées, éditées
 
 Provenance : un futur lecteur peut-il comprendre quel système, version, matériau source et paramètres produit un artefact ?
 
-Ces critères aident à séparer les pratiques génératrices durables de la nouveauté de la production.
+Ces critères aident à séparer les pratiques génératrices durables de la seule nouveauté des résultats.
 
 ## Schéma de documentation
 
-Un enregistrement générateur utile doit décrire le système avant de présenter la sortie sélectionnée. Cet enregistrement peut nommer les matériaux sources, l'ensemble de règles, le modèle d'interaction, la politique aléatoire de semences, les versions logicielles, les plages de paramètres, le processus d'exportation et la méthode de sélection. Il peut également faire la distinction entre les artefacts publics et les essais rejetés. Le but n'est pas de rendre chaque œuvre entièrement reproductible. Certaines œuvres dépendent des conditions de vie, du comportement matériel ou de la guérison subjective. Le but est de préserver suffisamment de contexte pour qu'un futur lecteur comprenne la relation entre le système, le matériel et le résultat.
+Un enregistrement générateur utile doit décrire le système avant de présenter la sortie sélectionnée. Cet enregistrement peut nommer les matériaux sources, l'ensemble de règles, le modèle d'interaction, la politique aléatoire de semences, les versions logicielles, les plages de paramètres, le processus d'exportation et la méthode de sélection. Il peut également faire la distinction entre les artefacts publics et les essais rejetés. Le but n'est pas de rendre chaque œuvre entièrement reproductible. Certaines œuvres dépendent des conditions de vie, du comportement matériel ou de la curation subjective. Le but est de préserver suffisamment de contexte pour qu'un futur lecteur comprenne la relation entre le système, le matériel et le résultat.
 
 Pour Electronic Artefacts, ce modèle est important car le même système peut produire des sons, des images, des pages, des traces ou des projections graphiques. La documentation permet à ces sorties de rester connectées plutôt que de devenir des fragments de médias isolés.
 
@@ -167,11 +167,11 @@ Pour Electronic Artefacts, ce modèle est important car le même système peut p
 
 La première erreur est de traiter le hasard comme de la créativité. Le hasard peut être utile, mais un système génératif a besoin de contraintes qui façonnent la gamme de sorties possibles.
 
-La deuxième erreur est de cacher le rôle humain. Dans la plupart des travaux génératifs, la paternité comprend la décision de ce qui compte comme entrée, l'écriture des règles, le choix des outils, la formation ou les systèmes d'incitation, la sélection des résultats et la désignation du travail final.
+La deuxième erreur est de cacher le rôle humain. Dans la plupart des travaux génératifs, la paternité comprend la décision de ce qui compte comme entrée, l'écriture des règles, le choix des outils, l’entraînement ou les systèmes d'incitation, la sélection des résultats et la désignation du travail final.
 
 La troisième erreur est d'ignorer la préservation. Le travail générateur dépend souvent des versions de code, des bibliothèques, des semences, des paramètres, des versions de modèle ou des API externes. Si elles ne sont pas enregistrées, le travail devient difficile à étudier plus tard.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Pour Electronic Artefacts, les systèmes générateurs peuvent devenir à la fois des outils de production et des objets de recherche. Un visuel généré n'est pas seulement une image; il est la preuve d'un système. Un modèle audio n'est pas seulement un son, il peut révéler une méthode d'écoute. Une projection graphique n'est pas seulement une page; c'est une surface publique générée à partir de documents structurés.
 

@@ -5,8 +5,8 @@ slug:
   canonical: web-audio-and-browser-based-sound-systems
 title: Web Audio et systèmes sonores dans le navigateur
 subtitle: Article technique
-abstract: "Cette synthèse française présente Web Audio et systèmes sonores dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Web Audio et systèmes sonores dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique Web Audio comme une architecture sonore native de navigateur pour la synthèse, le traitement, l'analyse, les essais interactifs, le codage créatif et les outils audio publics."
+description: "Un article technique sur Web Audio, les graphiques audio, le son du navigateur, ORETH, l'écoute automatique et les médias interactifs."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:creative-coding
 claims:
-  - Web Audio et systèmes sonores dans le navigateur doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Web Audio transforme le navigateur en un environnement viable pour les outils sonores publics, pas seulement la lecture intégrée."
+  - "Les systèmes sonores basés sur le navigateur ont besoin d'une réflexion graphique, d'une discipline de performance et d'enregistrements de conservation."
 evidence:
   - id: ea:technology:web-audio-api
   - id: ea:program:oreth
@@ -43,7 +42,7 @@ sources:
     url: https://www.w3.org/TR/webaudio/
 citation:
   preferred: Electronic Artefacts. "Web Audio et systèmes sonores dans le navigateur". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Web Audio
   - Audio Graph
@@ -147,7 +146,7 @@ La deuxième erreur est de cacher la latence. L'interaction en temps réel dépe
 
 La troisième erreur est de traiter la production d'analyse comme une vérité objective. Un analyseur fournit des données, pas un sens.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Web Audio donne à Electronic Artefacts une voie vers la recherche publique. Au lieu de décrire les expériences audio uniquement en prose, le site peut éventuellement héberger des outils d'écoute qui restent connectés aux sources et aux concepts.
 

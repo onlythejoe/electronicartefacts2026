@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
       "name": "Interaction humain-machine pour les outils créatifs",
-      "description": "Repères pour comprendre Interaction humain-machine pour les outils créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur IHM, des outils créatifs, la conception d'interface, l'intelligence augmentée, l'accessibilité et les systèmes d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:human-computer-interaction-for-creative-tools-fr",
       "name": "Interaction humain-machine pour les outils créatifs",
       "headline": "Interaction humain-machine pour les outils créatifs",
-      "abstract": "Cette synthèse française présente Interaction humain-machine pour les outils créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Interaction humain-machine pour les outils créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique IHM pour les outils créatifs, se concentrant sur la rétroaction, l’agentivité, le flux, la récupération des erreurs, l'accessibilité, l'intelligence augmentée et les médias informatiques.",
+      "description": "Cet article explique IHM pour les outils créatifs, se concentrant sur la rétroaction, l’agentivité, le flux, la récupération des erreurs, l'accessibilité, l'intelligence augmentée et les médias informatiques.",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage"
@@ -78,7 +78,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1586,
       "citation": [
-        "Electronic Artefacts. \"Interaction humain-machine pour les outils créatifs\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Interaction humain-machine pour les outils créatifs\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Augmenting Human Intellect",

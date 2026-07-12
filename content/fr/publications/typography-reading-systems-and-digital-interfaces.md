@@ -5,8 +5,8 @@ slug:
   canonical: typography-reading-systems-and-digital-interfaces
 title: Typographie, systèmes de lecture et interfaces numériques
 subtitle: Article technique
-abstract: "Cette synthèse française présente Typographie, systèmes de lecture et interfaces numériques : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Typographie, systèmes de lecture et interfaces numériques dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique la typographie comme infrastructure pour la lecture numérique, le polices connectées, la mise en page, la hiérarchie, l'accessibilité, les polices CSS et l'édition de connaissances de longue durée."
+description: "Un article technique sur la typographie, les systèmes de lecture, les interfaces web, l'accessibilité et la conception éditoriale d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -28,8 +28,8 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:metadata
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La typographie est une infrastructure du savoir car elle façonne l'attention, la compréhension, la hiérarchie et le balayage."
+  - "La typographie numérique doit être conçue comme un système de lecture sensible et accessible plutôt qu'une composition visuelle fixe."
 evidence:
   - id: ea:concept:typography
   - id: ea:technology:css-fonts
@@ -44,7 +44,7 @@ sources:
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 citation:
   preferred: Electronic Artefacts. "Typographie, systèmes de lecture et interfaces numériques".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Typography
   - Reading Systems
@@ -104,7 +104,7 @@ Le rythme de lecture : le motif des intervalles visuels sur une page.
 
 ## Architecture
 
-Un système typographique a besoin de jetons et de règles. Les jetons définissent les tailles, les poids, les hauteurs de ligne, l'espacement et les rôles de couleur. Les règles définissent où ces jetons s'appliquent : en-têtes d'articles, métadonnées, légendes, citations, navigation, panneaux graphiques et liens connexes.
+Un système typographique a besoin de tokens et de règles. Les tokens définissent les tailles, les poids, les hauteurs de ligne, l'espacement et les rôles de couleur. Les règles définissent où ces tokens s'appliquent : en-têtes d'articles, métadonnées, légendes, citations, navigation, panneaux graphiques et liens connexes.
 
 Le système devrait également comporter des contraintes. La longueur maximale de la ligne empêche les paragraphes épuisants. Des tailles de cap stables empêchent les panneaux internes de se sentir comme des pages d'atterrissage. Les styles de liens doivent rester reconnaissables.
 
@@ -130,7 +130,7 @@ Il appuie les pages de projet en séparant le récit, les preuves, les crédits 
 
 ## Outils
 
-Les outils utiles comprennent les polices CSS, les propriétés sur mesure CSS, les inspecteurs de typographie de navigateur, les vérificateurs d'accessibilité, les outils de contraste, les captures d'écran réactives, les stratégies de chargement de police et les jetons de conception.
+Les outils utiles comprennent les polices CSS, les propriétés sur mesure CSS, les inspecteurs de typographie de navigateur, les vérificateurs d'accessibilité, les outils de contraste, les captures d'écran réactives, les stratégies de chargement de police et les tokens de conception.
 
 ## Éléments de preuve
 
@@ -152,7 +152,7 @@ La deuxième erreur est d'utiliser trop de niveaux hiérarchiques. Les lecteurs 
 
 La troisième erreur est de concevoir uniquement pour les captures d'écran de bureau. Les pages de connaissance doivent survivre mobile, zoom et l'expansion de texte.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts devraient traiter la typographie comme faisant partie de son identité intellectuelle. Le site peut se sentir précis, calme et axé sur la recherche sans devenir stérile.
 
@@ -184,7 +184,7 @@ La voie doit connecter [Typographie](/fr/knowledge/concepts/typography/) à [Int
 
 ## Angle de conservation
 
-La typographie a également une dimension de préservation. Les polices peuvent changer, les licences peuvent expirer, le rendu du navigateur peut changer et les hypothèses de mise en page peuvent se rompre. Un site de connaissances durable devrait documenter son système typographique au moyen de CSS, de jetons de conception et de reculs lisibles. L'objectif n'est pas de geler l'apparence pour toujours, mais de préserver la qualité de lecture.
+La typographie a également une dimension de préservation. Les polices peuvent changer, les licences peuvent expirer, le rendu du navigateur peut changer et les hypothèses de mise en page peuvent se rompre. Un site de connaissances durable devrait documenter son système typographique au moyen de CSS, de tokens de conception et de reculs lisibles. L'objectif n'est pas de geler l'apparence pour toujours, mais de préserver la qualité de lecture.
 
 Ceci est particulièrement important pour Electronic Artefacts parce que le Knowledge Hub est destiné à croître pendant des années. Une décision typographique prise pour dix pages doit encore fonctionner quand il y en a des centaines.
 

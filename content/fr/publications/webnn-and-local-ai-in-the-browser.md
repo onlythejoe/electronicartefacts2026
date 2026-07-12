@@ -5,8 +5,8 @@ slug:
   canonical: webnn-and-local-ai-in-the-browser
 title: WebNN et IA locale dans le navigateur
 subtitle: Article technique
-abstract: "Cette synthèse française présente WebNN et IA locale dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre WebNN et IA locale dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication pratique de WebNN, inférence locale navigateur, accélération matérielle, limites de confidentialité, outils créatifs et architecture d'apprentissage machine web."
+description: "Comprendre WebNN comme une API de navigateur pour l'inférence du réseau neuronal accélérée par le matériel et la conception d'interactions locales avec l'IA."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:generative-ai
 claims:
-  - WebNN et IA locale dans le navigateur doit être lisible comme une synthèse française autonome,
-    sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'inférence navigateur-local peut réduire la dépendance du serveur et améliorer la confidentialité des interactions, mais elle reste limitée par la capacité de l'appareil, le support du navigateur et la taille du modèle."
+  - "WebNN est le plus utile lorsqu'il est traité comme une couche dans une pile d'IA web plus large qui comprend l'empaquetage du modèle, les permissions, les solutions de repli et les contrôles visibles par l'utilisateur."
 evidence:
   - id: ea:technology:webnn
   - id: ea:concept:multimodal-ai
@@ -80,7 +79,7 @@ Les contraintes sont tout aussi importantes. Le support du navigateur, la taille
 
 ## Architecture
 
-Une architecture WebNN comprend l'emballage modèle, la détection de la capacité du navigateur, un contexte d'exécution WebNN, des moteurs de périphérique sélectionnés, le prétraitement d'entrée, le posttraitement de sortie, les contrôles de confidentialité, la télémétrie et les chemins de repli. L'API fournit une surface d'inférence, tandis que l'application possède toujours la sélection des modèles, le mouvement des données et la confiance des utilisateurs.
+Une architecture WebNN comprend l'empaquetage du modèle, la détection de la capacité du navigateur, un contexte d'exécution WebNN, des moteurs de périphérique sélectionnés, le prétraitement d'entrée, le posttraitement de sortie, les contrôles de confidentialité, la télémétrie et les chemins de repli. L'API fournit une surface d'inférence, tandis que l'application possède toujours la sélection des modèles, le mouvement des données et la confiance des utilisateurs.
 
 ## Ce que WebNN fournit
 
@@ -150,7 +149,7 @@ Pour V6, un téléspectateur WebNN pourrait classer les images ou suggérer des 
 
 VASTE pourrait traiter WebNN comme une surface d'exécution côté client. Le temps d'exécution du graphique déterminerait l'entité et la tâche visées. Le navigateur courrait l'inférence limitée. Le résultat serait une proposition, pas une vérité silencieuse.
 
-Par exemple, un utilisateur qui regarde un artefact peut demander des balises d'image locales. Le modèle fonctionne dans le navigateur. Les étiquettes proposées sont examinées puis présentées sous forme de relations graphiques seulement si elles sont acceptées.
+Par exemple, un utilisateur qui regarde un artefact peut demander des balises d'image locales. Le modèle fonctionne dans le navigateur. Les étiquettes proposées sont examinées puis présentées sous forme de relations de graphe seulement si elles sont acceptées.
 
 Cela maintient l'inférence près de l'interface tout en préservant la gouvernance graphique.
 
@@ -164,7 +163,7 @@ Pin version modèle. Enregistrer les identificateurs de modèles dans les métad
 
 La spécification W3C WebNN définit une API de bas niveau pour l'accélération matérielle de l'inférence du réseau neuronal et énumère les cas d'utilisation d'application à travers la vision, l'audio, le langage et les médias générateurs. W3C Web Machine Learning guide éthique met l'accent sur la confidentialité, la transparence, le contrôle et les avantages pour les utilisateurs.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 WebNN est un outil fort pour Electronic Artefacts car le studio fonctionne sur les interfaces web, l'IA, les archives et les outils créatifs. Il offre un itinéraire vers la perception locale et interactive de la machine sans transformer chaque interface en client API distant.
 

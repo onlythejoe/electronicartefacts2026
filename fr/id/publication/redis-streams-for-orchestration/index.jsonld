@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "name": "Redis Streams pour l’orchestration",
-      "description": "Repères pour comprendre Redis Streams pour l’orchestration dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Découvrez comment Redis Streams fonctionne et comment utiliser les groupes de consommateurs, les entrées en attente et les travailleurs idempotents pour une orchestration fiable.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:redis-streams-for-orchestration-fr",
       "name": "Redis Streams pour l’orchestration",
       "headline": "Redis Streams pour l’orchestration",
-      "abstract": "Cette synthèse française présente Redis Streams pour l’orchestration : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Redis Streams pour l’orchestration : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide axé sur la mise en œuvre de Redis Streams, les groupes de consommateurs, les acquittements, les entrées en attente, les récupérations, l'idempotence, le trimming et l'orchestration.",
+      "description": "Un guide axé sur la mise en œuvre de Redis Streams, les groupes de consommateurs, les acquittements, les entrées en attente, les récupérations, l'idempotence, le trimming et l'orchestration.",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage"
@@ -61,7 +61,7 @@
         "orchestration",
         "Consumer Groups",
         "Event Processing",
-        "Idempotency",
+        "Idempotence",
         "architecture logicielle",
         "Distributed Systems",
         "programmation",

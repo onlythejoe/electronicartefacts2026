@@ -5,8 +5,8 @@ slug:
   canonical: generative-ai-latent-space-and-creative-workflows
 title: IA générative, espace latent et workflows créatifs
 subtitle: Article technique
-abstract: "Cette synthèse française présente IA générative, espace latent et workflows créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre IA générative, espace latent et workflows créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique l'IA générative comme un sujet de flux de travail créatif, couvrant les espaces latents, les invites, la provenance, le risque, l'évaluation, la paternité et les systèmes d'Electronic Artefacts."
+description: "Un article technique sur l'IA générative, l'espace latent, les workflows créatifs, la provenance, l'intelligence augmentée et la production responsable."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:concept:generative-system
   - id: ea:concept:human-computer-interaction
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'IA générative est mieux comprise comme faisant partie d'un workflow qui comprend les sources, les invites, les contraintes, le comportement du modèle, la sélection et l'édition."
+  - "L'utilisation créative de l'IA générative nécessite la provenance et l'évaluation plutôt que la seule nouveauté des résultats."
 evidence:
   - id: ea:concept:generative-ai
   - id: ea:concept:provenance
@@ -48,7 +48,7 @@ sources:
     url: https://arxiv.org/abs/1706.03762
 citation:
   preferred: Electronic Artefacts. "IA générative, espace latent et workflows créatifs". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Generative AI
   - Latent Space
@@ -64,7 +64,7 @@ translationOf: ea:publication:generative-ai-latent-space-and-creative-workflows
 
 ## Problème
 
-L'IA generative est souvent discutée par des sorties : une image, un paragraphe, un son, une vidéo, un extrait de code. La première discussion sur les résultats cache le flux de travail qui a produit le résultat. Il cache les incitations, le matériel source, les contraintes du modèle, l'édition, le rejet, les droits, l'incertitude et le jugement humain.
+L'IA générative est souvent discutée par des sorties : une image, un paragraphe, un son, une vidéo, un extrait de code. La première discussion sur les résultats cache le flux de travail qui a produit le résultat. Il cache les incitations, le matériel source, les contraintes du modèle, l'édition, le rejet, les droits, l'incertitude et le jugement humain.
 
 Cela crée un problème culturel. Les médias générés peuvent paraître complets alors que sa provenance n'est pas claire. Un modèle peut produire une réponse convaincante sans mise à la terre fiable. Un workflow peut dépendre d'invites non documentées ou d'outils instables.
 
@@ -120,7 +120,7 @@ Enfin, conservez les preuves de flux de travail. Consigner les invites lorsque c
 
 ## Applications pratiques
 
-L'IA generative peut soutenir les résumés d'article, les ébauches de glossaire, les prototypes de code, les concepts d'image, les transformations audio, l'extraction de métadonnées, l'augmentation de recherche et l'exploration graphique.
+L'IA générative peut soutenir les résumés d'article, les ébauches de glossaire, les prototypes de code, les concepts d'image, les transformations audio, l'extraction de métadonnées, l'augmentation de recherche et l'exploration graphique.
 
 Pour ORETH, il peut aider à classifier ou décrire les modèles audio lorsqu'il est associé à l'écoute et à la provenance.
 
@@ -152,7 +152,7 @@ La troisième erreur consiste à ignorer les questions relatives aux droits et a
 
 La quatrième erreur est d'utiliser "AI" comme un mot clé vague au lieu de nommer le workflow.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peuvent discuter de l'IA générative à travers son propre vocabulaire plus fort: systèmes générateurs, provenance, intelligence augmentée, HCI et exécution contextuelle.
 

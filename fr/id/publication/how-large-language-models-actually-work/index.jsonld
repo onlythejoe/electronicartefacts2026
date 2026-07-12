@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
-      "description": "Repères pour comprendre Comment fonctionnent vraiment les grands modèles de langage dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Découvrez comment fonctionnent les LLM, de la tokenisation et de l’entraînement à l'attention, les fenêtres contextuelles, le décodage, les hallucinations, les outils et l'évaluation.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:how-large-language-models-actually-work-fr",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
       "headline": "Comment fonctionnent vraiment les grands modèles de langage",
-      "abstract": "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication fondée sur la façon dont les grands modèles de langage transforment les tokens en prédictions par les embeddings, les couches de Transformer, l'attention, l’entraînement et l'inférence probabiliste.",
+      "description": "Une explication fondée sur la façon dont les grands modèles de langage transforment les tokens en prédictions par les embeddings, les couches de Transformer, l'attention, l’entraînement et l'inférence probabiliste.",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage"
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 2504,
+      "wordCount": 2506,
       "citation": [
-        "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Attention Is All You Need",

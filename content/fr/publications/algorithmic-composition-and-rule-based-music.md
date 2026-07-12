@@ -5,8 +5,8 @@ slug:
   canonical: algorithmic-composition-and-rule-based-music
 title: Composition algorithmique et musique fondée sur des règles
 subtitle: Article technique
-abstract: "Cette synthèse française présente Composition algorithmique et musique fondée sur des règles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Composition algorithmique et musique fondée sur des règles dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique la composition algorithmique à travers les règles, les méthodes stochastiques, la cybernétique, la musique électronique, le codage créatif, les systèmes génératifs et ORETH."
+description: "Un article technique sur la composition algorithmique, la musique basée sur des règles, le son générateur, la cybernétique et la recherche audio d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:web-audio
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La composition algorithmique n'est pas un phénomène récent de l'IA; c'est une longue histoire de pensée musicale fondée sur des règles."
+  - "La musique basée sur les règles nécessite l'écoute, l'évaluation et la documentation autant que la génération procédurale."
 evidence:
   - id: ea:concept:algorithmic-composition
   - id: ea:program:oreth
@@ -52,7 +52,7 @@ sources:
     url: https://www.w3.org/TR/webaudio/
 citation:
   preferred: Electronic Artefacts. "Composition algorithmique et musique fondée sur des règles".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Algorithmic Composition
   - Electronic Music
@@ -150,7 +150,7 @@ La deuxième erreur est de revendiquer l'autonomie de la machine tout en cachant
 
 La troisième erreur est la publication de son généré sans préserver les règles, les sources et les paramètres.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 La composition algorithmique peut aider Electronic Artefacts à connecter la production musicale, la conception sonore et les systèmes de recherche. ORETH peut devenir non seulement un programme d'analyse, mais une maison conceptuelle pour la génération basée sur l'écoute.
 

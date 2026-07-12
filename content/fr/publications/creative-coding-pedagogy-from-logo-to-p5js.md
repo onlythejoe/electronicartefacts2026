@@ -5,8 +5,8 @@ slug:
   canonical: creative-coding-pedagogy-from-logo-to-p5js
 title: Pédagogie de la programmation créative, de Logo à p5.js
 subtitle: Article technique
-abstract: "Cette synthèse française présente Pédagogie de la programmation créative, de Logo à p5.js : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Pédagogie de la programmation créative, de Logo à p5.js dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique la pédagogie créative du codage par la programmation exploratoire, l'alphabétisation informatique, le traitement, p5.js, la rétroaction visuelle et les communautés d'apprentissage ouvert."
+description: "Un article technique sur l'enseignement du codage créatif, le traitement, p5.js, les médias informatiques, open source et la culture d'apprentissage d’Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -28,8 +28,8 @@ subjects:
   - id: ea:concept:procedural-graphics
   - id: ea:concept:generative-system
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La pédagogie du codage créatif fonctionne parce que le code produit des retours visibles, audibles ou interactifs rapidement."
+  - "Des exemples ouverts et des croquis modifiables sont au cœur de l'alphabétisation informatique dans les contextes d'art et de conception."
 evidence:
   - id: ea:concept:creative-coding
   - id: ea:concept:open-source
@@ -44,7 +44,7 @@ sources:
     url: https://p5js.org/
 citation:
   preferred: Electronic Artefacts. "Pédagogie de la programmation créative, de Logo à p5.js". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - programmation créative
   - Processing
@@ -142,7 +142,7 @@ La deuxième erreur est des exemples exagérés. Les apprenants ont besoin de sy
 
 La troisième erreur est d'ignorer l'accessibilité. Les exemples de codage créatifs devraient tenir compte de l'entrée du clavier, de la réduction du mouvement, du contraste et d'autres descriptions.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peuvent utiliser la pédagogie de codage créative pour rendre sa recherche plus lisible. Au lieu de présenter les systèmes génériques comme des artefacts finis seulement, le site peut montrer les étapes, les contraintes et les règles qui les produisent.
 

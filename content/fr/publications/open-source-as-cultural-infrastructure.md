@@ -5,8 +5,8 @@ slug:
   canonical: open-source-as-cultural-infrastructure
 title: L’open source comme infrastructure culturelle
 subtitle: Article technique
-abstract: "Cette synthèse française présente L’open source comme infrastructure culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre L’open source comme infrastructure culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article présente les sources ouvertes comme des infrastructures culturelles, expliquant les licences, la maintenance, les outils créatifs, les chaînes de dépendance, les biens communs et les systèmes de connaissances publiques."
+description: "Un article technique sur les logiciels libres, la maintenance, le codage créatif, l'infrastructure et la culture du savoir d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -28,9 +28,8 @@ subjects:
   - id: ea:concept:internet-culture
   - id: ea:concept:digital-preservation
 claims:
-  - L’open source comme infrastructure culturelle doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Open source est une infrastructure culturelle parce que le code partagé façonne ce que les artistes, les chercheurs et les développeurs peuvent construire."
+  - "L'accès au code n'est pas suffisant; l'open source dépend des licences, de la maintenance, de la gouvernance et de la documentation."
 evidence:
   - id: ea:concept:open-source
   - id: ea:concept:creative-coding
@@ -45,7 +44,7 @@ sources:
     url: https://p5js.org/
 citation:
   preferred: Electronic Artefacts. "L’open source comme infrastructure culturelle". Article technique,
-    version 1.1.0, 2026.
+    version 1.1.1, 2026.
 tags:
   - open source
   - programmation créative
@@ -143,7 +142,7 @@ La deuxième erreur est la romantisation de l'entretien non rémunéré. L'infra
 
 La troisième erreur est d'ignorer les licences jusqu'à leur publication. Les droits devraient être documentés tôt.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peut traiter open source comme faisant partie de son environnement intellectuel. VASTE, ORETH et futurs outils devraient documenter les dépendances et les modèles réutilisables le cas échéant.
 

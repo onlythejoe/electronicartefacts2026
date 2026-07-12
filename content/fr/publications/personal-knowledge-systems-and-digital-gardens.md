@@ -5,8 +5,8 @@ slug:
   canonical: personal-knowledge-systems-and-digital-gardens
 title: Systèmes personnels de connaissance et jardins numériques
 subtitle: Article technique
-abstract: "Cette synthèse française présente Systèmes personnels de connaissance et jardins numériques : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Systèmes personnels de connaissance et jardins numériques dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique les systèmes de connaissances personnelles et les jardins numériques comme des pratiques durables pour les notes, les sources, les rétroliens, la révision, l'apprentissage public et les bibliothèques de recherche."
+description: "Un article technique sur les systèmes de connaissances personnelles, les jardins numériques, les rétroliens, la mémoire de recherche et les centres de connaissances publics."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:concept:metadata
   - id: ea:concept:digital-preservation
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Un système de connaissances devient utile lorsque les notes sont liées, révisées et récupérées, et non simplement saisies."
+  - "Les centres de connaissances du public peuvent adapter les pratiques de jardinage numérique tout en ajoutant des normes éditoriales et la validation des sources."
 evidence:
   - id: ea:concept:personal-knowledge-system
   - id: ea:collection:knowledge-hub-foundations
@@ -48,7 +48,7 @@ sources:
     url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 citation:
   preferred: Electronic Artefacts. "Systèmes personnels de connaissance et jardins numériques".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - gestion personnelle des connaissances
   - Digital Gardens
@@ -150,7 +150,7 @@ La deuxième erreur est de survisualiser le graphique. Une vue graphique peut ê
 
 La troisième erreur est de traiter les notes brutes comme une autorité publique. Les pages de connaissances publiques devraient indiquer au lecteur à quel point elles sont matures et sources.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peuvent utiliser les principes du système de connaissances personnelles comme méthode de production. Les fragments de recherche devraient être capturés, puis promus en concepts, articles, méthodes ou archives lorsqu'ils deviennent utiles.
 
@@ -218,4 +218,4 @@ Ils ont aussi besoin de retenue. Chaque note ne mérite pas d'être publiée.
 
 - Vannevar Bush. Comme nous pouvons le penser. 1945.
 - Initiative sur les métadonnées de Dublin Core. Conditions de métadonnées du DCMI. 2020.
-- Electronic Artefacts. Fondations du Centre du savoir et documents graphiques du savoir.
+- Electronic Artefacts. Fondations du Centre du savoir et documents graphes de connaissances.

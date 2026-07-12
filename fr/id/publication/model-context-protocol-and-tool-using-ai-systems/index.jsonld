@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "description": "Repères pour comprendre Model Context Protocol et systèmes d'IA utilisant des outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre le Model Context Protocol à travers les hôtes, les clients, les serveurs, les ressources, les invites, les outils, les limites de sécurité et l'exécution contextuelle.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
       "headline": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "abstract": "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique du MCP en tant que protocole d'intégration pour les ressources, les invites, les outils, le consentement, les limites de l'hôte et les workflows d’IA fondés sur des graphes.",
+      "description": "Une explication pratique du MCP en tant que protocole d'intégration pour les ressources, les invites, les outils, le consentement, les limites de l'hôte et les workflows d’IA fondés sur des graphes.",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage"
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1912,
+      "wordCount": 1915,
       "citation": [
-        "Electronic Artefacts. \"Model Context Protocol et systèmes d'IA utilisant des outils\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Model Context Protocol et systèmes d'IA utilisant des outils\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Model Context Protocol Specification",

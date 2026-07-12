@@ -5,8 +5,8 @@ slug:
   canonical: local-and-open-source-ai-systems
 title: Systèmes d’IA locaux et open source
 subtitle: Article technique
-abstract: "Cette synthèse française présente Systèmes d’IA locaux et open source : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Systèmes d’IA locaux et open source dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un guide pratique sur l'inférence locale, les modèles à poids ouvert, l'IA à source ouverte, la quantification, le matériel, la confidentialité, la licence et l'indépendance opérationnelle."
+description: "Comprendre les systèmes locaux d'IA et d'IA open-source, y compris les poids des modèles, la quantification, llama.cpp, la vie privée, le matériel et les licences."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
 claims:
-  - Systèmes d’IA locaux et open source doit être lisible comme une synthèse française autonome,
-    sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'inférence locale peut améliorer le contrôle, la confidentialité et la disponibilité hors ligne, mais elle transfère les responsabilités en matière de matériel, de sécurité et de maintenance à l'opérateur."
+  - "Les poids téléchargeables ne devraient pas être décrites comme de l'IA open-source sans examiner le code, les informations sur les données de formation et les libertés de licence."
 evidence:
   - id: ea:concept:open-weight-model
   - id: ea:technology:llama-cpp
@@ -93,7 +92,7 @@ Une pile de modèle de langue locale comprend l'architecture du modèle, les poi
 
 L'architecture du modèle définit le calcul. Les poids contiennent des paramètres appris. Le tokenizer cartographie le texte pour modéliser le vocabulaire. L'exécution exécute les opérations du modèle. Un format de fichier regroupe les paramètres et métadonnées. Les moteurs de matériel accélèrent le calcul sur les processeurs CPU, GPU ou spécialisés. Une application ajoute l'incitation, la récupération, les outils, la mémoire et l'interface utilisateur.
 
-lama.cpp est un temps d'exécution en open-source important pour l'inférence C et C++. Il prend en charge l'exécution portable et les formats de modèles quantifiés sur une large gamme de matériel. Son importance n'est pas que chaque système local doit l'utiliser, mais qu'il démontre comment l'inférence peut être séparée d'un fournisseur hébergé et intégrée dans d'autres outils.
+llama.cpp est un temps d'exécution en open-source important pour l'inférence C et C++. Il prend en charge l'exécution portable et les formats de modèles quantifiés sur une large gamme de matériel. Son importance n'est pas que chaque système local doit l'utiliser, mais qu'il démontre comment l'inférence peut être séparée d'un fournisseur hébergé et intégrée dans d'autres outils.
 
 ## Architecture
 
@@ -123,7 +122,7 @@ Garder des invites locaux réduit une classe d'exposition aux données, mais la 
 
 Un déploiement local devrait définir la liaison réseau, l'authentification, le chiffrement, la conservation des journaux et la procédure de mise à jour. Les projets sensibles devraient utiliser des environnements isolés et des répertoires de données explicites. Dans la mesure du possible, les modèles et les binaires d'exécution devraient provenir de sources vérifiées.
 
-L'injection rapide reste pertinente. Un système local RAG peut récupérer un document contenant des instructions pour manipuler l'utilisation des outils. L'exécution locale modifie la propriété de l'infrastructure; elle ne supprime pas le contenu contradictoire.
+L'injection de prompt reste pertinente. Un système local RAG peut récupérer un document contenant des instructions pour manipuler l'utilisation des outils. L'exécution locale modifie la propriété de l'infrastructure; elle ne supprime pas le contenu contradictoire.
 
 ## Sélection du modèle
 
@@ -137,7 +136,7 @@ Les modèles plus petits spécialisés peuvent surpasser les modèles généraux
 
 La mise à l'essai et la récupération doivent être testées avant le réglage fin. De nombreuses défaillances attribuées aux connaissances du modèle sont en fait des défaillances de contexte ou d'interface. Un schéma clair, des exemples pertinents et une recherche faisant autorité peuvent suffire.
 
-Le réglage fin est approprié lorsqu'un comportement stable, un vocabulaire ou un formulaire de sortie doivent être appris dans de nombreuses demandes. L'adaptation de bas grades peut réduire les coûts de formation. L'ensemble de formation exige toujours la provenance, les droits, le contrôle de la qualité et la séparation entre la formation et l'évaluation.
+Le réglage fin est approprié lorsqu'un comportement stable, un vocabulaire ou un formulaire de sortie doivent être appris dans de nombreuses demandes. L'adaptation de bas grades peut réduire les coûts de formation. L'ensemble de formation exige toujours la provenance, les droits, le contrôle de la qualité et la séparation entre l’entraînement et l'évaluation.
 
 Un modèle formé sur le matériel privé devient un autre artefact sensible. Les points de contrôle, les adaptateurs et les journaux ont besoin d'une politique de conservation. Le réglage fin peut également dégrader les capacités générales ou rendre les patrons indésirables plus persistants.
 
@@ -147,7 +146,7 @@ La génération de récupération-augmentée est l'un des cas d'utilisation loca
 
 L'implémentation la plus faible divise simplement les fichiers en morceaux arbitraires et envoie les correspondances les plus proches au modèle. Un système plus fort préserve les titres, les auteurs, les dates, les ID des entités, les niveaux d'accès et les limites des sections. Il combine extraction lexicale et sémantique et renvoie des citations.
 
-Electronic Artefacts ont déjà une structure de corpus appropriée : entités canoniques, sources, façade, relations graphiques et pages générées. Un assistant local pourrait récupérer les projections publiques et privées selon l'identité. VASTE pourrait imposer des limites de contexte, tandis que le Knowledge Hub fournit des documents riches en sources.
+Electronic Artefacts ont déjà une structure de corpus appropriée : entités canoniques, sources, façade, relations de graphe et pages générées. Un assistant local pourrait récupérer les projections publiques et privées selon l'identité. VASTE pourrait imposer des limites de contexte, tandis que le Knowledge Hub fournit des documents riches en sources.
 
 ## Applications créatives
 
@@ -161,7 +160,7 @@ Les modèles devraient augmenter la sélection et l'expérimentation plutôt que
 
 L'auto-hébergement crée des travaux de maintenance. Les temps d'exécution changent, les formats de modèles évoluent, les problèmes de sécurité apparaissent et le matériel échoue. Un opérateur a besoin d'épinglage de version, de contrôles de santé, de sauvegardes pour la configuration, d'inventaires de modèles et de procédures de renversement.
 
-L'observabilité devrait saisir la durée de la demande, les nombres de jetons, les erreurs et l'utilisation des ressources sans conserver le contenu sensible par défaut. Les limites de devises protègent les performances interactives. Une file d'attente peut être meilleure que de permettre à chaque processus de charger sa propre copie modèle.
+L'observabilité devrait saisir la durée de la demande, les nombres de tokens, les erreurs et l'utilisation des ressources sans conserver le contenu sensible par défaut. Les limites de devises protègent les performances interactives. Une file d'attente peut être meilleure que de permettre à chaque processus de charger sa propre copie modèle.
 
 Les mises à jour du modèle doivent être traitées comme des versions logicielles. Évaluer la nouvelle version avant de la remplacer. Préserver suffisamment de métadonnées pour reproduire des extrants importants. Un système local devient durable grâce aux opérations, pas seulement grâce aux fichiers téléchargeables.
 
@@ -195,11 +194,11 @@ Commencez par un ensemble de tâches et un budget matériel représentatifs. Pin
 
 ## Éléments de preuve
 
-La définition de l'OSI établit des critères pour l'IA open-source au-delà des poids téléchargeables. lama.cpp montre une inférence locale portable, tandis que QLoRA documente l'adaptation efficace des modèles quantifiés.
+La définition de l'OSI établit des critères pour l'IA open-source au-delà des poids téléchargeables. llama.cpp montre une inférence locale portable, tandis que QLoRA documente l'adaptation efficace des modèles quantifiés.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
-L'IA locale s'adapte aux Electronic Artefacts lorsqu'elle renforce le contrôle du savoir et du matériel culturel. Il peut soutenir un assistant de recherche privé sur les enregistrements graphiques, un service d'analyse ORETH, un outil de codage en studio ou une interface d'archive multimodale.
+L'IA locale s'adapte aux Electronic Artefacts lorsqu'elle renforce le contrôle du savoir et du matériel culturel. Il peut soutenir un assistant de recherche privé sur les enregistrements du graphe, un service d'analyse ORETH, un outil de codage en studio ou une interface d'archive multimodale.
 
 Le principe durable est la compasabilité. Les modèles devraient être des éléments remplaçables derrière des contrats clairs. Les sources, l'identité de l'entité et les autorisations devraient demeurer indépendantes d'un seul fournisseur modèle. La provenance devrait saisir comment l'IA a contribué à un artefact.
 
@@ -230,5 +229,5 @@ Mémoire unifiée : mémoire partagée par le CPU et l'accélérateur dans certa
 ## Références
 
 - Initiative sur les sources ouvertes. Définition de l'IA source ouverte 1.0.
-- ggml-org. lama.cpp.
+- ggml-org. llama.cpp.
 - Dettmers et al. QLoRA. 2023.

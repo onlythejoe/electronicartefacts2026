@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "name": "Exécution contextuelle et runtimes de graphe",
-      "description": "Repères pour comprendre Exécution contextuelle et runtimes de graphe dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique reliant l'exécution contextuelle, l'exécution graphique, la théorie d'exécution et VASTE.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:contextual-execution-and-graph-runtimes-fr",
       "name": "Exécution contextuelle et runtimes de graphe",
       "headline": "Exécution contextuelle et runtimes de graphe",
-      "abstract": "Cette synthèse française présente Exécution contextuelle et runtimes de graphe : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Exécution contextuelle et runtimes de graphe : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'exécution contextuelle comme principe d'exécution pour les systèmes où l'identité, les relations, les permissions et l'état influencent les opérations qui peuvent se produire.",
+      "description": "Cet article explique l'exécution contextuelle comme principe d'exécution pour les systèmes où l'identité, les relations, les permissions et l'état influencent les opérations qui peuvent se produire.",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage"
@@ -79,7 +79,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1640,
       "citation": [
-        "Electronic Artefacts. \"Exécution contextuelle et runtimes de graphe\". Article technique, version 1.1.0, 2026."
+        "Electronic Artefacts. \"Exécution contextuelle et runtimes de graphe\". Article technique, version 1.1.1, 2026."
       ],
       "about": [
         {

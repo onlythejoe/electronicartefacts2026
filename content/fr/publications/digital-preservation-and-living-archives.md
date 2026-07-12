@@ -5,8 +5,8 @@ slug:
   canonical: digital-preservation-and-living-archives
 title: Préservation numérique et archives vivantes
 subtitle: Article technique
-abstract: "Cette synthèse française présente Préservation numérique et archives vivantes : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Préservation numérique et archives vivantes dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique la préservation numérique comme une pratique culturelle active qui maintient les objets numériques, les métadonnées, la provenance et l'interprétation utilisables au fil du temps."
+description: "Un article technique sur la préservation numérique, les archives vivantes, les formats de fichiers, la provenance et les documents culturels d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:project:vestiges
   - id: ea:concept:knowledge-graph
 claims:
-  - Préservation numérique et archives vivantes doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La préservation numérique n'est pas une sauvegarde; c'est un soin à long terme pour les objets, les métadonnées, les droits, les formats et le contexte."
+  - "Les archives vivantes ont besoin de relations de graphe parce que l'interprétation change alors que la provenance doit rester inspectable."
 evidence:
   - id: ea:project:palimpsests
   - id: ea:project:vestiges
@@ -52,7 +51,7 @@ sources:
     url: https://www.ndsa.org/publications/levels-of-digital-preservation/
 citation:
   preferred: Electronic Artefacts. "Préservation numérique et archives vivantes". Article technique,
-    version 1.1.0, 2026.
+    version 1.1.1, 2026.
 tags:
   - Digital Préservation
   - Living Archive
@@ -116,7 +115,7 @@ Une archive vivante a besoin de plusieurs couches:
 - les déclarations de provenance;
 - surveillance du format;
 - les pages d'accès public;
-- les relations graphiques avec les projets, les concepts et les publications;
+- les relations de graphe avec les projets, les concepts et les publications;
 - l'examen des états qui distinguent les enregistrements canoniques de l'interprétation spéculative.
 
 Pour un site web statique, la préservation inclut également les sorties générées. Les pages HTML, JSON-LD, les plans du site et les exportations de graphiques font partie du dossier public. Ils devraient être reproductibles à partir des dossiers sources, mais la conservation des instantanés générés peut encore aider les vérifications futures.
@@ -125,7 +124,7 @@ Pour un site web statique, la préservation inclut également les sorties géné
 
 La voie de mise en œuvre devrait commencer par l'inventaire. Qu'est-ce qui existe ? Quels sont les dossiers publics? Quels sont les fichiers sources ? Quels sont les dossiers ? Quels formats sont risqués? Quels documents n'ont pas de provenance ?
 
-Ensuite vient l'identité. Les objets importants doivent recevoir des identifiants et des itinéraires stables. Un enregistrement ne doit pas dépendre uniquement d'un nom de fichier image ou d'un nom de dossier.
+Ensuite vient l'identité. Les objets importants doivent recevoir des identifiants et des routes stables. Un enregistrement ne doit pas dépendre uniquement d'un nom de fichier image ou d'un nom de dossier.
 
 Alors vient la relation. Un artefact devrait dire à quel projet il appartient, à quelle publication il documente, quel concept il démontre et de quelle source ou processus de production il dérive.
 
@@ -175,9 +174,9 @@ La deuxième erreur est de préserver les sorties finales tout en rejetant le co
 
 La troisième erreur est la sur-conservation sans sélection. Si tout est gardé avec la même priorité, l'archive devient difficile à maintenir et difficile à interpréter.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
-Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d'architecture en version et d'enregistrements de licences. Les palimpsestes ont besoin d'une provenance audio, visuelle et interprétative. V6 a besoin de contribution et d'historique de validation. Le site lui-même a besoin d'instantanés et d'enregistrements sources générés parce que le graphique public fait partie de la production intellectuelle de l'institution.
+Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d'architecture en version et d'enregistrements de licences. Les palimpsestes ont besoin d'une provenance audio, visuelle et interprétative. V6 a besoin de contribution et d'historique de validation. Le site lui-même a besoin d'instantanés et d'enregistrements sources générés parce que le graphe public fait partie de la production intellectuelle de l'institution.
 
 Cette approche donne la valeur d'archive au-delà de la nostalgie. Il fait du site un système de mémoire de travail.
 

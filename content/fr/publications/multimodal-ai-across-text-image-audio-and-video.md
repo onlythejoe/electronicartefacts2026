@@ -5,8 +5,8 @@ slug:
   canonical: multimodal-ai-across-text-image-audio-and-video
 title: IA multimodale pour le texte, l'image, l'audio et la vidéo
 subtitle: Article technique
-abstract: "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre IA multimodale pour le texte, l'image, l'audio et la vidéo dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un guide durable sur l'architecture d'IA multimodale, les représentations partagées, la recherche intermodale, la génération, les médias temporels, la provenance et les applications créatives."
+description: "Découvrez comment l'IA multimodale connecte le texte, les images, l'audio et la vidéo, et comment évaluer les systèmes multimodaux à des fins créatives et culturelles."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La capacité multimodale dépend de l'encodage, de l'alignement et de l'évaluation propres à chaque modalité plutôt que d'une seule interface linguistique."
+  - "Les systèmes multimodaux culturels devraient préserver l'identité et la provenance de chaque modalité source."
 evidence:
   - id: ea:concept:multimodal-ai
   - id: ea:program:oreth
@@ -49,7 +49,7 @@ sources:
     url: https://arxiv.org/abs/2309.10020
 citation:
   preferred: Electronic Artefacts. "IA multimodale pour le texte, l'image, l'audio et la vidéo".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Multimodal AI
   - Vision Language
@@ -80,7 +80,7 @@ La question la plus importante n'est pas de savoir si un modèle accepte plusieu
 
 Une modalité est une forme par laquelle l'information est représentée ou perçue. Le texte, l'image, l'audio et la vidéo sont des exemples communs, mais des tableaux structurés, des graphiques, des cartes de profondeur, la capture de mouvement, les coordonnées géospatiales et les signaux biologiques peuvent aussi être des modalités.
 
-Les modalités diffèrent selon la structure. Le texte est discret et séquentiel. Les images sont des tableaux spatiaux. L'audio est une forme d'onde variable dans le temps. La vidéo combine l'espace, le temps et souvent le son. Les graphiques encodent les entités et les relations. La conversion de tous en unités de type jeton peut simplifier l'architecture, mais peut jeter des propriétés spécifiques à un domaine.
+Les modalités diffèrent selon la structure. Le texte est discret et séquentiel. Les images sont des tableaux spatiaux. L'audio est une forme d'onde variable dans le temps. La vidéo combine l'espace, le temps et souvent le son. Les graphiques encodent les entités et les relations. La conversion de tous en unités de type token peut simplifier l'architecture, mais peut jeter des propriétés spécifiques à un domaine.
 
 Les systèmes multimodal ont besoin de représentations qui préservent ce qui compte pour la tâche. La transcription des discours peut ignorer certains timbres alors que l'identification des haut-parleurs en dépend. Le sous-titrage d'image peut résumer une scène alors que l'analyse art-historique nécessite de la composition, du matériel et de la provenance.
 
@@ -98,7 +98,7 @@ Un modèle utilise des encodeurs séparés. Un encodeur d'image et un codeur de 
 
 Un second modèle ajoute un adaptateur de modalité à un modèle de langue. Les fonctions visuelles ou audio sont transformées en représentations que le modèle de langue peut traiter. Le modèle de langage devient une couche de raisonnement et de réponse, tandis que les encodeurs spécialisés gèrent la perception.
 
-Un troisième modèle utilise un espace de jeton unifié et forme un modèle sur de nombreux types de médias. Cela peut supporter une génération flexible, mais nécessite des données et des calculs énormes.
+Un troisième modèle utilise un espace de token unifié et forme un modèle sur de nombreux types de médias. Cela peut supporter une génération flexible, mais nécessite des données et des calculs énormes.
 
 Un quatrième motif est l'orchestration des outils. Un modèle linguistique appelle reconnaissance de la parole, détection d'objets, génération d'images, analyse audio ou services de traitement vidéo et combine leurs résultats. Cette architecture peut être plus inspectable car chaque outil spécialisé a une fonction définie.
 

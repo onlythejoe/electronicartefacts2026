@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
-      "description": "Repères pour comprendre Graphes de connaissances pour les infrastructures culturelles dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au V6 et au graphique d’Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
       "headline": "Graphes de connaissances pour les infrastructures culturelles",
-      "abstract": "Cette synthèse française présente Graphes de connaissances pour les infrastructures culturelles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Graphes de connaissances pour les infrastructures culturelles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique comment les graphes de connaissances soutiennent l'infrastructure culturelle en donnant aux personnes, aux œuvres, aux sources, aux concepts, aux projets et aux archives des identités stables et des relations explicites.",
+      "description": "Cet article explique comment les graphes de connaissances soutiennent l'infrastructure culturelle en donnant aux personnes, aux œuvres, aux sources, aux concepts, aux projets et aux archives des identités stables et des relations explicites.",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage"
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1719,
       "citation": [
-        "Electronic Artefacts. \"Graphes de connaissances pour les infrastructures culturelles\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Graphes de connaissances pour les infrastructures culturelles\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "RDF 1.1 Concepts and Abstract Syntax",

@@ -5,8 +5,8 @@ slug:
   canonical: c2pa-content-credentials-and-generative-media-provenance
 title: C2PA, Content Credentials et provenance des médias génératifs
 subtitle: Article technique
-abstract: "Cette synthèse française présente C2PA, Content Credentials et provenance des médias génératifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre C2PA, Content Credentials et provenance des médias génératifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication pratique de C2PA, Content Credentials, manifestes multimédias signés, revendications de provenance, limites de confiance et utilisation des archives."
+description: "Comprendre C2PA et les Content Credentials pour la provenance des médias, l'étiquetage générique de l'IA, la confiance dans les archives et les processus de production culturelle."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:generative-ai
   - id: ea:project:palimpsests
 claims:
-  - C2PA, Content Credentials et provenance des médias génératifs doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "C2PA peut renforcer la provenance des médias par des assertions signées, mais cela ne prouve pas que le contenu est vrai ou culturellement significatif."
+  - "Les flux de travail des archives devraient traiter les Content Credentials comme une seule couche de preuve aux côtés des documents sources, des métadonnées sur les droits, de la fixité et de l'interprétation éditoriale."
 evidence:
   - id: ea:technology:c2pa
   - id: ea:concept:provenance
@@ -50,7 +49,7 @@ sources:
     url: https://www.w3.org/TR/prov-overview/
 citation:
   preferred: Electronic Artefacts. "C2PA, Content Credentials et provenance des médias génératifs".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - C2PA
   - Content Credentials
@@ -75,7 +74,7 @@ C2PA, la Coalition for Content Provenance and Authentificity, définit les spéc
 
 Ceci est important dans un environnement médiatique façonné par des images synthétiques, l'édition assistée par l'IA et la distribution fragmentée. Une photographie peut être capturée sur un appareil, éditée en logiciel, exportée pour une publication, compressée par une plate-forme et republée ailleurs. Chaque transformation peut détacher l'actif de son contexte de production.
 
-Le C2PA essaie de conserver une partie de ce contexte. Pour Electronic Artefacts, la norme est moins intéressante comme label de consommation et plus intéressante comme infrastructure d'archives. Les palimpsestes, l'ORETH et les documents publics futurs peuvent bénéficier d'une mémoire de production durable, mais seulement si les titres de compétence sont traités comme des preuves plutôt que comme une autorité finale.
+Le C2PA essaie de conserver une partie de ce contexte. Pour Electronic Artefacts, la norme est moins intéressante comme label de consommation et plus intéressante comme infrastructure d'archives. Les palimpsestes, l'ORETH et les documents publics futurs peuvent bénéficier d'une mémoire de production durable, mais seulement si les Content Credentials sont traités comme des preuves plutôt que comme une autorité finale.
 
 ## Architecture
 
@@ -135,7 +134,7 @@ La chaîne de confiance devrait être explicite. Qui a capturé la source ? Quel
 
 W3C PROV donne un modèle général pour les entités, les activités et les agents. C2PA donne un système de justificatifs spécifiques aux médias. Ils sont complémentaires.
 
-Une archive peut utiliser C2PA pour lier la provenance à un fichier et utiliser des enregistrements graphiques plus larges pour décrire la même histoire dans les publications, les projets et les personnes. Cela permet d'éviter une vue étroite où seules les métadonnées de fichiers intégrées comptent.
+Une archive peut utiliser C2PA pour lier la provenance à un fichier et utiliser des enregistrements du graphe plus larges pour décrire la même histoire dans les publications, les projets et les personnes. Cela permet d'éviter une vue étroite où seules les métadonnées de fichiers intégrées comptent.
 
 Pour Electronic Artefacts, la pensée de style PROV reste utile parce que les œuvres sont composées. Un objet Palimpsests peut inclure des tiges audio, des photographies, des notes, des vidéos rendues, des albums d'art, des fragments de texte et des pages publiques. Toutes les relations ne vivent pas dans un seul fichier multimédia.
 
@@ -165,7 +164,7 @@ Définir l'identité du signataire, les champs à divulguer, la politique de mé
 
 L'ensemble de spécifications C2PA définit les pouvoirs de contenu, les attestations, les directives de mise en œuvre, les directives UX, les considérations de sécurité et les directives AI/ML. W3C PROV fournit un modèle conceptuel plus large pour les agents, les activités et les entités dans les registres de provenance.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 C2PA fait partie du Knowledge Hub parce que Electronic Artefacts travaille à travers l'IA, les archives, les systèmes audio, visuels et les pages de connaissances publiques. Il donne une couche technique concrète pour la provenance, mais le site devrait éviter de surestimer son autorité.
 

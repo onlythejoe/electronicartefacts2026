@@ -5,8 +5,8 @@ slug:
   canonical: how-large-language-models-actually-work
 title: Comment fonctionnent vraiment les grands modèles de langage
 subtitle: Article technique
-abstract: "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Comment fonctionnent vraiment les grands modèles de langage dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication fondée sur la façon dont les grands modèles de langage transforment les tokens en prédictions par les embeddings, les couches de Transformer, l'attention, l’entraînement et l'inférence probabiliste."
+description: "Découvrez comment fonctionnent les LLM, de la tokenisation et de l’entraînement à l'attention, les fenêtres contextuelles, le décodage, les hallucinations, les outils et l'évaluation."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:concept:augmented-intelligence
   - id: ea:concept:provenance
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Un grand modèle de langage prédit des séquences de tokens à partir de paramètres appris et fournit un contexte plutôt que de consulter une base de données interne complète des faits."
+  - "Les systèmes LLM fiables dépendent de la recherche documentaire, des outils, de l'évaluation et du jugement humain en plus de la capacité du modèle."
 evidence:
   - id: ea:concept:large-language-model
   - id: ea:technology:transformer-architecture
@@ -49,7 +49,7 @@ sources:
     url: https://arxiv.org/abs/2108.07258
 citation:
   preferred: Electronic Artefacts. "Comment fonctionnent vraiment les grands modèles de langage".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - LLM
   - Transformer
@@ -66,35 +66,35 @@ translationOf: ea:publication:how-large-language-models-actually-work
 
 ## Problème
 
-Les LLM sont largement utilisés mais mal expliqués. Le langage produit s'effondre souvent l'architecture du modèle, la formation, la récupération, les outils et le comportement d'interface en une seule idée de "AI", rendant la capacité et l'échec difficiles à évaluer.
+Les LLM sont largement utilisés mais mal expliqués. Le langage produit s'effondre souvent l'architecture du modèle, l’entraînement, la recherche documentaire, les outils et le comportement d'interface en une seule idée de "AI", rendant la capacité et l'échec difficiles à évaluer.
 
 ## Présentation
 
-Les grands modèles de langage sont souvent décrits par des métaphores : autocomplet, mémoire synthétique, perroquet probabiliste, moteur de raisonnement, Internet comprimé ou interface universelle. Chaque métaphore illumine une caractéristique et en cache plusieurs autres. Une explication plus utile commence par l'opération réelle. Un LLM reçoit une séquence représentée comme jetons, transforme ces jetons à travers de nombreuses couches numériques apprises, et estime une distribution de probabilité pour ce que jeton devrait venir ensuite. Il répète cette opération jusqu'à ce qu'elle atteigne une condition d'arrêt.
+Les grands modèles de langage sont souvent décrits par des métaphores : autocomplet, mémoire synthétique, perroquet probabiliste, moteur de raisonnement, Internet comprimé ou interface universelle. Chaque métaphore illumine une caractéristique et en cache plusieurs autres. Une explication plus utile commence par l'opération réelle. Un LLM reçoit une séquence représentée comme tokens, transforme ces tokens à travers de nombreuses couches numériques apprises, et estime une distribution de probabilité pour ce que token devrait venir ensuite. Il répète cette opération jusqu'à ce qu'elle atteigne une condition d'arrêt.
 
-Cette description semble simple parce que la boucle d'inférence de base est simple. Le pouvoir vient de l'échelle, de la formation, de la représentation et de l'architecture. Des milliards de paramètres appris encodent les régularités statistiques trouvées dans la langue, le code et parfois d'autres médias. Les couches de transformateurs laissent l'information de différentes positions s'influencer mutuellement. Le réglage de l'instruction et l'optimisation des préférences façonnent la façon dont un modèle préformé répond aux demandes. Les outils, le code d'extraction et le code d'application élargissent ce que le modèle peut observer et faire.
+Cette description semble simple parce que la boucle d'inférence de base est simple. Le pouvoir vient de l'échelle, de l’entraînement, de la représentation et de l'architecture. Des milliards de paramètres appris encodent les régularités statistiques trouvées dans la langue, le code et parfois d'autres médias. Les couches de Transformers laissent l'information de différentes positions s'influencer mutuellement. Le réglage de l'instruction et l'optimisation des préférences façonnent la façon dont un modèle préformé répond aux demandes. Les outils, le code d'extraction et le code d'application élargissent ce que le modèle peut observer et faire.
 
 Comprendre ces couches importe parce qu'une LLM n'est ni une base de données ni une source indépendante de vérité. Il peut reproduire des connaissances, combiner des modèles et effectuer des transformations utiles, mais le même mécanisme peut générer des erreurs courantes. L'unité d'analyse correcte est donc l'ensemble du système: modèle, contexte, outils, interface, sources, contrôles et évaluateur.
 
-## Du texte aux jetons
+## Du texte aux tokens
 
-Les modèles ne reçoivent pas de mots au sens humain. Un tokenizer segmente l'entrée dans des unités tirées d'un vocabulaire fixe. Un jeton peut représenter un mot commun complet, une partie d'un mot plus long, une ponctuation, un espace blanc ou un fragment de code. La tokenisation rend le langage ouvert computingable : au lieu de prédire directement toute chaîne de caractères possible, le modèle prédit à partir d'un vocabulaire fini.
+Les modèles ne reçoivent pas de mots au sens humain. Un tokenizer segmente l'entrée dans des unités tirées d'un vocabulaire fixe. Un token peut représenter un mot commun complet, une partie d'un mot plus long, une ponctuation, un espace blanc ou un fragment de code. La tokenisation rend le langage ouvert computingable : au lieu de prédire directement toute chaîne de caractères possible, le modèle prédit à partir d'un vocabulaire fini.
 
-La segmentation a des conséquences. Les noms rares peuvent nécessiter plusieurs jetons. Les langues moins représentées dans un tokenizer peuvent consommer plus de contexte pour la même quantité de sens. Le comptage des caractères, l'orthographe et les opérations de chaînes exactes peuvent être inopinément difficiles parce que le modèle fonctionne à partir d'unités symboliques et de modèles appris plutôt qu'une vue symbolique native de chaque personnage.
+La segmentation a des conséquences. Les noms rares peuvent nécessiter plusieurs tokens. Les langues moins représentées dans un tokenizer peuvent consommer plus de contexte pour la même quantité de sens. Le comptage des caractères, l'orthographe et les opérations de chaînes exactes peuvent être inopinément difficiles parce que le modèle fonctionne à partir d'unités symboliques et de modèles appris plutôt qu'une vue symbolique native de chaque personnage.
 
-Chaque jeton est cartographié à un encastrement, un vecteur de valeurs numériques. Les assemblages permettent au réseau de représenter des modèles de similitude et de différence dans un espace haute dimension. Le modèle a également besoin d'informations sur la position, car les mêmes jetons dans un ordre différent signifient quelque chose de différent. Les informations positionnelles et les représentations symboliques entrent dans la pile du transformateur.
+Chaque token est cartographié à un encastrement, un vecteur de valeurs numériques. Les assemblages permettent au réseau de représenter des modèles de similitude et de différence dans un espace haute dimension. Le modèle a également besoin d'informations sur la position, car les mêmes tokens dans un ordre différent signifient quelque chose de différent. Les informations positionnelles et les représentations symboliques entrent dans la pile du transformateur.
 
 ## Transformer les couches et l'attention
 
 Le document de 2017 « L'attention est tout ce dont vous avez besoin » présente l'architecture du transformateur comme une alternative aux modèles séquentiels basés principalement sur la récurrence ou la convolution. Son mécanisme central, l'auto-attention, permet à chaque position de calculer avec quelle force elle doit utiliser l'information d'autres positions dans la séquence disponible.
 
-En termes simplifiés, le modèle produit des requêtes, des clés et des représentations de valeur. Une requête d'un jeton est comparée aux clés d'autres jetons. Ces comparaisons produisent des poids, et les valeurs pondérées contribuent à une représentation actualisée. Plusieurs têtes d'attention peuvent apprendre différents modèles de relation. Les couches d'alimentation vers l'avant transforment ensuite chaque position. Les connexions résiduelles et la normalisation aident l'information et les gradients à traverser des réseaux profonds.
+En termes simplifiés, le modèle produit des requêtes, des clés et des représentations de valeur. Une requête d'un token est comparée aux clés d'autres tokens. Ces comparaisons produisent des poids, et les valeurs pondérées contribuent à une représentation actualisée. Plusieurs têtes d'attention peuvent apprendre différents modèles de relation. Les couches d'alimentation vers l'avant transforment ensuite chaque position. Les connexions résiduelles et la normalisation aident l'information et les gradients à traverser des réseaux profonds.
 
 L'attention n'est pas une preuve lisible par l'homme de pourquoi le modèle a répondu. C'est un mécanisme de calcul pour mélanger l'information contextuelle. Sur de nombreuses couches, le modèle peut construire des représentations sensibles à la syntaxe, la référence, le style, la structure de code et les instructions de tâches. L'organisation interne exacte est distribuée : un concept est rarement stocké dans un paramètre ou un emplacement.
 
 ## Préformation
 
-Pendant la préformation, le modèle traite d'énormes collections d'exemples et ajuste les paramètres pour réduire l'erreur de prédiction. Pour un modèle de langage autorégressif, l'objectif de base est la prédiction à suivre. Compte tenu des jetons précédents, le réseau attribue les probabilités à d'éventuelles continuations. Le système d'entraînement compare la prédiction avec le jeton suivant réel et propage l'erreur en arrière pour mettre à jour les poids.
+Pendant la préformation, le modèle traite d'énormes collections d'exemples et ajuste les paramètres pour réduire l'erreur de prédiction. Pour un modèle de langage autorégressif, l'objectif de base est la prédiction à suivre. Compte tenu des tokens précédents, le réseau attribue les probabilités à d'éventuelles continuations. Le système d'entraînement compare la prédiction avec le token suivant réel et propage l'erreur en arrière pour mettre à jour les poids.
 
 Répété à travers de grands ensembles de données, cet objectif oblige le modèle à apprendre de nombreuses régularités utiles pour la prédiction. Grammaire aide à prédire le langage. Les faits et les associations aident à prédire les énoncés. Les modèles de code aident à prédire les fonctions. La structure générale et rhétorique aide à prédire les documents. Certaines capacités n'apparaissent qu'après une échelle ou une diversité de formation suffisante, bien que les affirmations d'émergence soudaine nécessitent une mesure soigneuse parce que les seuils d'évaluation peuvent faire des améliorations progressives semblent discontinues.
 
@@ -104,25 +104,25 @@ Les données de formation ne sont pas un miroir neutre de la culture. La collect
 
 Un modèle brut préformé est optimisé pour continuer les séquences, pas nécessairement pour suivre l'intention de l'utilisateur. Le réglage d'instruction utilise des exemples d'invites et de réponses souhaitées pour façonner un comportement plus utile. L'optimisation des préférences utilise des comparaisons humaines ou générées par des modèles pour favoriser les extrants jugés plus utiles, sûrs ou alignés sur une politique.
 
-Ces étapes ne remplacent pas le modèle sous-jacent. Ils modifient les tendances de réponse. Les instructions du système, les rôles conversationnels, les politiques de refus et les formats de sortie sont des couches d'application et de formation placées autour de la prédiction du prochain jeton. Un modèle peut sembler avoir une personnalité stable parce que ces couches biaisent systématiquement ses réponses.
+Ces étapes ne remplacent pas le modèle sous-jacent. Ils modifient les tendances de réponse. Les instructions du système, les rôles conversationnels, les politiques de refus et les formats de sortie sont des couches d'application et de formation placées autour de la prédiction du prochain token. Un modèle peut sembler avoir une personnalité stable parce que ces couches biaisent systématiquement ses réponses.
 
 Le mot alignement doit être utilisé avec soin. Il peut s'agir du respect des règles relatives aux produits, des préférences humaines, des principes constitutionnels, des exigences de sécurité ou de valeurs sociales plus larges. Ce ne sont pas des objectifs identiques, et aucun processus d'accord ne résout tous les conflits entre eux.
 
 ## Inférence et décodage
 
-L'inférence est le processus d'exécution d'un modèle formé sur de nouvelles entrées. L'application assemble un contexte qui peut inclure des instructions système, des messages utilisateurs, des passages récupérés, des résultats d'outils et des conversations antérieures. Le modèle calcule les probabilités pour le jeton suivant. Une stratégie de décodage en choisit une.
+L'inférence est le processus d'exécution d'un modèle formé sur de nouvelles entrées. L'application assemble un contexte qui peut inclure des instructions système, des messages utilisateurs, des passages récupérés, des résultats d'outils et des conversations antérieures. Le modèle calcule les probabilités pour le token suivant. Une stratégie de décodage en choisit une.
 
-Le décodage de la graisse choisit le jeton le plus élevé à chaque fois. L'échantillonnage introduit des variations contrôlées. La température remodele la distribution des probabilités : les valeurs inférieures concentrent les choix, tandis que les valeurs supérieures augmentent la diversité. L'échantillonnage top-k ou noyau limite la sélection à un sous-ensemble de jetons probables. Ces paramètres influencent le style et la répétabilité, mais ils ne créent pas ou ne suppriment pas les connaissances.
+Le décodage de la graisse choisit le token le plus élevé à chaque fois. L'échantillonnage introduit des variations contrôlées. La température remodele la distribution des probabilités : les valeurs inférieures concentrent les choix, tandis que les valeurs supérieures augmentent la diversité. L'échantillonnage top-k ou noyau limite la sélection à un sous-ensemble de tokens probables. Ces paramètres influencent le style et la répétabilité, mais ils ne créent pas ou ne suppriment pas les connaissances.
 
-Après avoir sélectionné un jeton, le système l'ajoute à la séquence et le répète. Le modèle ne rédige normalement pas un paragraphe caché complet et le révèle mot par mot. Il prédit continuellement dans le contexte produit jusqu'à présent, bien que les systèmes modernes puissent ajouter des étapes de planification, de raisonnement ou de vérification autour de cette boucle.
+Après avoir sélectionné un token, le système l'ajoute à la séquence et le répète. Le modèle ne rédige normalement pas un paragraphe caché complet et le révèle mot par mot. Il prédit continuellement dans le contexte produit jusqu'à présent, bien que les systèmes modernes puissent ajouter des étapes de planification, de raisonnement ou de vérification autour de cette boucle.
 
 ## Fenêtres contextuelles et mémoire
 
 La fenêtre contextuelle est la quantité d'information tokenisée qu'un modèle peut traiter en une seule opération d'inférence. C'est le contexte de travail, pas la mémoire permanente. Lorsqu'une conversation dépasse la fenêtre disponible, les applications peuvent tronquer, résumer ou récupérer des documents antérieurs. Chaque stratégie peut perdre de l'information.
 
-Un contexte plus long est utile mais pas équivalent à un rappel parfait. Des preuves pertinentes peuvent être enterrées parmi les distractions. La position peut affecter l'attention. Des instructions contradictoires peuvent réduire la fiabilité. Les bons systèmes sélectionnent et structurent le contexte au lieu de remplir chaque jeton disponible.
+Un contexte plus long est utile mais pas équivalent à un rappel parfait. Des preuves pertinentes peuvent être enterrées parmi les distractions. La position peut affecter l'attention. Des instructions contradictoires peuvent réduire la fiabilité. Les bons systèmes sélectionnent et structurent le contexte au lieu de remplir chaque token disponible.
 
-La mémoire persistante est une fonctionnalité d'application. Il peut stocker les préférences de l'utilisateur, les résumés, les documents, les intégrations ou les enregistrements graphiques en dehors du modèle et les récupérer plus tard. Le système de mémoire a besoin de permissions, de politique de rétention, de provenance et de comportement de suppression. Appeler tout cela "le modèle se souvient" cache une architecture importante.
+La mémoire persistante est une fonctionnalité d'application. Il peut stocker les préférences de l'utilisateur, les résumés, les documents, les embeddings ou les enregistrements du graphe en dehors du modèle et les récupérer plus tard. Le système de mémoire a besoin de permissions, de politique de rétention, de provenance et de comportement de suppression. Appeler tout cela "le modèle se souvient" cache une architecture importante.
 
 ## Pourquoi les hallucinations se produisent
 
@@ -150,7 +150,7 @@ Pour Electronic Artefacts, VASTE propose une question architecturale utile : les
 
 ## Architecture
 
-L'architecture complète comprend le tokenizer, l'intégration, les couches de transformateur, les paramètres appris, l'assemblage contextuel, le décodage, la récupération optionnelle et les outils, ainsi que les autorisations et l'évaluation au niveau de l'application.
+L'architecture complète comprend le tokenizer, l'intégration, les couches de Transformer, les paramètres appris, l'assemblage contextuel, le décodage, la recherche documentaire optionnelle et les outils, ainsi que les autorisations et l'évaluation au niveau de l'application.
 
 ## Mise en œuvre
 
@@ -166,9 +166,9 @@ L'évaluation doit correspondre à la tâche prévue. Un résumé peut être tes
 
 Les manifestations uniques sont de faibles preuves. L'évaluation de la production nécessite des exemples représentatifs, des catégories de défaillance, des ensembles de régression et un suivi. L'examen humain est particulièrement important lorsque la qualité est contextuelle ou culturelle. Les évaluateurs automatisés peuvent évaluer à l'échelle, mais ils peuvent partager des biais avec le système évalué.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
-Electronic Artefacts devraient discuter des LLM comme composantes des connaissances et des infrastructures créatives. Le centre de connaissances fournit des pages stables, des sources et des relations graphiques qui peuvent améliorer la recherche. ORETH fournit un contexte pour l'analyse audio et la recherche multimodale. VASTE fournit un contexte pour les permissions, les outils et l'exécution contextuelle.
+Electronic Artefacts devraient discuter des LLM comme composantes des connaissances et des infrastructures créatives. Le centre de connaissances fournit des pages stables, des sources et des relations de graphe qui peuvent améliorer la recherche. ORETH fournit un contexte pour l'analyse audio et la recherche multimodale. VASTE fournit un contexte pour les permissions, les outils et l'exécution contextuelle.
 
 La position éditoriale devrait rester durable : expliquer les architectures et l'évaluation plutôt que de poursuivre chaque version de modèle. Les noms de produits changent rapidement. La tokenisation, l'attention, la mémoire externe, la provenance, l'autorité des outils et le jugement humain demeurent fondamentaux.
 
@@ -188,7 +188,7 @@ Continuer avec [L'IA, l'espace latent et les flux de travail créatifs](/fr/publ
 
 Token: une unité du vocabulaire modèle.
 
-Embedding : représentation numérique d'un jeton ou d'un autre objet.
+Embedding : représentation numérique d'un token ou d'un autre objet.
 
 Paramètre : une valeur numérique apprise dans le modèle.
 
@@ -196,7 +196,7 @@ Attention : un mécanisme qui mélange l'information entre les positions.
 
 Inférence : exécuter un modèle formé pour produire une sortie.
 
-Décodage : la stratégie utilisée pour sélectionner les jetons de sortie.
+Décodage : la stratégie utilisée pour sélectionner les tokens de sortie.
 
 ## Références
 

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
       "name": "IA générative, espace latent et workflows créatifs",
-      "description": "Repères pour comprendre IA générative, espace latent et workflows créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur l'IA générative, l'espace latent, les workflows créatifs, la provenance, l'intelligence augmentée et la production responsable.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
       "name": "IA générative, espace latent et workflows créatifs",
       "headline": "IA générative, espace latent et workflows créatifs",
-      "abstract": "Cette synthèse française présente IA générative, espace latent et workflows créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente IA générative, espace latent et workflows créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'IA générative comme un sujet de flux de travail créatif, couvrant les espaces latents, les invites, la provenance, le risque, l'évaluation, la paternité et les systèmes d'Electronic Artefacts.",
+      "description": "Cet article explique l'IA générative comme un sujet de flux de travail créatif, couvrant les espaces latents, les invites, la provenance, le risque, l'évaluation, la paternité et les systèmes d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/#webpage"
@@ -79,7 +79,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1699,
       "citation": [
-        "Electronic Artefacts. \"IA générative, espace latent et workflows créatifs\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"IA générative, espace latent et workflows créatifs\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "AI Risk Management Framework",

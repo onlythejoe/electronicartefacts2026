@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "name": "WebNN et IA locale dans le navigateur",
-      "description": "Repères pour comprendre WebNN et IA locale dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre WebNN comme une API de navigateur pour l'inférence du réseau neuronal accélérée par le matériel et la conception d'interactions locales avec l'IA.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
       "name": "WebNN et IA locale dans le navigateur",
       "headline": "WebNN et IA locale dans le navigateur",
-      "abstract": "Cette synthèse française présente WebNN et IA locale dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente WebNN et IA locale dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique de WebNN, inférence locale navigateur, accélération matérielle, limites de confidentialité, outils créatifs et architecture d'apprentissage machine web.",
+      "description": "Une explication pratique de WebNN, inférence locale navigateur, accélération matérielle, limites de confidentialité, outils créatifs et architecture d'apprentissage machine web.",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1727,
+      "wordCount": 1729,
       "citation": [
         "Electronic Artefacts. \"WebNN et IA locale dans le navigateur\". Article technique, version 1.0.0, 2026.",
         {

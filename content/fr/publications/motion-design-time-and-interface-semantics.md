@@ -5,8 +5,8 @@ slug:
   canonical: motion-design-time-and-interface-semantics
 title: Motion design, temps et sémantique d'interface
 subtitle: Article technique
-abstract: "Cette synthèse française présente Motion design, temps et sémantique d'interface : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Motion design, temps et sémantique d'interface dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique la conception du mouvement comme couche sémantique pour les interfaces numériques, le temps de connexion, la transition, l'attention, l'accessibilité et les Animations Web."
+description: "Un article technique sur la conception de mouvement, l'animation web, l'état de l'interface, l'accessibilité et les systèmes visuels temporels."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -28,9 +28,8 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:typography
 claims:
-  - Motion design, temps et sémantique d'interface doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La conception du mouvement communique l'état, la causalité et l'attention lorsqu'elle est traitée comme une sémantique d'interface."
+  - "Une motion responsable exige une discipline de temps, un soutien à la mobilité réduite et une relation claire avec le contenu."
 evidence:
   - id: ea:concept:motion-design
   - id: ea:technology:web-animations
@@ -46,7 +45,7 @@ sources:
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 citation:
   preferred: Electronic Artefacts. "Motion design, temps et sémantique d'interface". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Motion Design
   - Web Animations
@@ -66,7 +65,7 @@ Le mouvement sur le web est souvent traité comme une décoration. Les élément
 
 La vision la plus utile est que la conception de mouvement est l'interface sémantique. Il peut expliquer d'où vient quelque chose, ce qui a changé, ce qui est lié et ce que l'utilisateur peut faire ensuite. Le temps devient une partie du sens.
 
-Electronic Artefacts a besoin de ce sujet car son site s'articule autour de la navigation des connaissances, des projets, des relations graphiques et des médias expérimentaux. Motion peut aider les lecteurs à comprendre ces structures, mais seulement si elle est conçue avec discipline.
+Electronic Artefacts a besoin de ce sujet car son site s'articule autour de la navigation des connaissances, des projets, des relations de graphe et des médias expérimentaux. Motion peut aider les lecteurs à comprendre ces structures, mais seulement si elle est conçue avec discipline.
 
 ## Présentation
 
@@ -102,7 +101,7 @@ Mouvement réduit : préférence de l'utilisateur pour moins de mouvement.
 
 ## Architecture
 
-Un système de mouvement nécessite des jetons, des règles et des contextes. Les jetons définissent les durées et les courbes d'assouplissement. Les règles définissent les changements d'état qui se produisent et non pas. Les contextes définissent quand le mouvement est approprié : navigation, ouverture, fermeture, chargement, erreur, succès, focus ou mise à jour des données.
+Un système de mouvement nécessite des tokens, des règles et des contextes. Les tokens définissent les durées et les courbes d'assouplissement. Les règles définissent les changements d'état qui se produisent et non pas. Les contextes définissent quand le mouvement est approprié : navigation, ouverture, fermeture, chargement, erreur, succès, focus ou mise à jour des données.
 
 Le système ne devrait pas compter sur une seule animation partout. Une page de connaissance, un héros de projet et une interaction graphique ont des besoins de mouvement différents.
 
@@ -144,7 +143,7 @@ La deuxième erreur est d'animer tout. Le mouvement constant réduit le sens.
 
 La troisième erreur est d'ignorer le texte. La motion ne devrait pas compliquer la lecture.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts peuvent développer un langage de mouvement silencieux mais expressif pour l'exploration du savoir. Le site devrait utiliser le mouvement pour soutenir la compréhension, et non pour imiter les interfaces marketing.
 
@@ -172,7 +171,7 @@ Pour Electronic Artefacts, les motifs de mouvement doivent être attachés aux r
 
 Motion design est un sujet de recherche important car de nombreux lecteurs recherchent des techniques d'animation. Le centre de connaissances devrait capter cet intérêt, puis déplacer le lecteur vers la conception sémantique. La question devrait passer de « Comment animer cela ? » à « Quel est l'état de cette motion ? »
 
-Ce chemin relie l'implémentation à HCI. Une transition peut soutenir l'orientation. Un recul réduit peut favoriser l'accessibilité. Un jeton de timing peut soutenir la cohérence. Une expansion graphique peut rendre la relation visible. L'article devrait donc envoyer des lecteurs vers [Interaction informatique humaine](/fr/knowledge/concepts/human-computer-interaction/), [Typographie](/fr/knowledge/concepts/typography/) et [Animations Web](/fr/knowledge/technologies/web-animations/).
+Ce chemin relie l'implémentation à HCI. Une transition peut soutenir l'orientation. Un recul réduit peut favoriser l'accessibilité. Un token de timing peut soutenir la cohérence. Une expansion graphique peut rendre la relation visible. L'article devrait donc envoyer des lecteurs vers [Interaction informatique humaine](/fr/knowledge/concepts/human-computer-interaction/), [Typographie](/fr/knowledge/concepts/typography/) et [Animations Web](/fr/knowledge/technologies/web-animations/).
 
 ## Angle de conservation
 
@@ -186,7 +185,7 @@ Cela préserve l'intention de conception.
 
 ## Travaux futurs
 
-Les futures entrées devraient couvrir les jetons de mouvement, les transitions graphiques, la conception à mouvement réduit, l'animation par défilement, la typographie cinétique et le mouvement audio-réactif.
+Les futures entrées devraient couvrir les tokens de mouvement, les transitions graphiques, la conception à mouvement réduit, l'animation par défilement, la typographie cinétique et le mouvement audio-réactif.
 
 ## Concepts connexes
 

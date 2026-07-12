@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/",
       "name": "Composition algorithmique et musique fondée sur des règles",
-      "description": "Repères pour comprendre Composition algorithmique et musique fondée sur des règles dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur la composition algorithmique, la musique basée sur des règles, le son générateur, la cybernétique et la recherche audio d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
       "name": "Composition algorithmique et musique fondée sur des règles",
       "headline": "Composition algorithmique et musique fondée sur des règles",
-      "abstract": "Cette synthèse française présente Composition algorithmique et musique fondée sur des règles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Composition algorithmique et musique fondée sur des règles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la composition algorithmique à travers les règles, les méthodes stochastiques, la cybernétique, la musique électronique, le codage créatif, les systèmes génératifs et ORETH.",
+      "description": "Cet article explique la composition algorithmique à travers les règles, les méthodes stochastiques, la cybernétique, la musique électronique, le codage créatif, les systèmes génératifs et ORETH.",
       "url": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/#webpage"
@@ -78,7 +78,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1558,
       "citation": [
-        "Electronic Artefacts. \"Composition algorithmique et musique fondée sur des règles\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Composition algorithmique et musique fondée sur des règles\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Formalized Music",

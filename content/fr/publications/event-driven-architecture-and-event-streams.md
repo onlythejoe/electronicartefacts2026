@@ -5,8 +5,8 @@ slug:
   canonical: event-driven-architecture-and-event-streams
 title: Architecture événementielle et flux d'événements
 subtitle: Article technique
-abstract: "Cette synthèse française présente Architecture événementielle et flux d'événements : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Architecture événementielle et flux d'événements dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication pratique des événements, commandes, files d'attente, journaux, courtiers, schémas, sémantique de livraison, idempotence, projections, replay et observabilité."
+description: "Apprenez l'architecture axée sur les événements à travers les flux d'événements, les garanties de livraison, l'évolution des schémas, l'idempotence, les projections et la conception de l'exécution."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:program:vaste
 claims:
-  - Architecture événementielle et flux d'événements doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les systèmes axés sur les événements réduisent le couplage temporel en enregistrant les changements d'état pour les consommateurs indépendants."
+  - "Un traitement fiable des événements nécessite une identité stable, une gouvernance de schéma, une idempotence, une politique de rejouage et une observabilité de bout en bout."
 evidence:
   - id: ea:concept:event-driven-architecture
   - id: ea:technology:cloudevents
@@ -52,12 +51,12 @@ sources:
     url: https://martinfowler.com/eaaDev/EventSourcing.html
 citation:
   preferred: Electronic Artefacts. "Architecture événementielle et flux d'événements". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Event-Driven Architecture
   - Event Streams
   - CloudEvents
-  - Idempotency
+  - Idempotence
   - Event Sourcing
 disciplines:
   - architecture logicielle
@@ -137,9 +136,9 @@ Les allégations de marketing concernant exactement une fois devraient être tra
 
 Une opération idémpotente produit le même résultat pertinent lorsqu'elle est répétée. Il est central pour une gestion fiable des événements parce que les réseaux et les processus peuvent échouer après la fin du travail, mais avant que la reconnaissance soit enregistrée.
 
-Les consommateurs peuvent utiliser des identifiants d'événement comme clés de duplication. Base de données écrit peut utiliser des upserts ou des contraintes uniques. Les appels externes peuvent utiliser des clés idempotency supportées par le fournisseur. Les transitions d'état peuvent vérifier la version actuelle.
+Les consommateurs peuvent utiliser des identifiants d'événement comme clés de duplication. Base de données écrit peut utiliser des upserts ou des contraintes uniques. Les appels externes peuvent utiliser des clés idempotence supportées par le fournisseur. Les transitions d'état peuvent vérifier la version actuelle.
 
-Idempotency est une propriété de domaine, pas seulement une fonctionnalité de courtier. L'envoi de la même annonce publique à deux reprises peut rester nuisible même si l'écriture interne de la base de données est dupliquer.
+Idempotence est une propriété de domaine, pas seulement une fonctionnalité de courtier. L'envoi de la même annonce publique à deux reprises peut rester nuisible même si l'écriture interne de la base de données est dupliquer.
 
 L'examen de la conception devrait identifier chaque effet secondaire irréversible et définir le comportement en double.
 
@@ -211,11 +210,11 @@ Les producteurs devraient être authentifiés et autorisés à émettre des type
 
 La politique de maintien en poste est importante. Un journal en annexe seulement peut devenir une copie de longue date de renseignements personnels ou restreints. Les références à des documents contrôlés peuvent être plus sûres que l'intégration du contenu complet.
 
-L'injection rapide affecte également les consommateurs d'IA. Le texte dans un cas où la charge utile ne devrait pas devenir une instruction de modèle fiable.
+L'injection de prompt affecte également les consommateurs d'IA. Le texte dans un cas où la charge utile ne devrait pas devenir une instruction de modèle fiable.
 
 ## AI axé sur l'événement
 
-Les workflows d'IA correspondent souvent à l'architecture des événements. Un événement lié à un document peut déclencher l'extraction. Un événement terminé par analyse peut déclencher une révision humaine. Un événement approuvé par l'examen peut mettre à jour le graphique public.
+Les workflows d'IA correspondent souvent à l'architecture des événements. Un événement lié à un document peut déclencher l'extraction. Un événement terminé par analyse peut déclencher une révision humaine. Un événement approuvé par l'examen peut mettre à jour le graphe public.
 
 Les agents ne devraient pas consommer un flux mondial non consolidé. Ils ont besoin d'abonnements, de permissions et de contexte de tâches. Les sorties du modèle devraient devenir des propositions ou des événements avec une confiance explicite, et non une mutation d'état silencieuse.
 
@@ -245,7 +244,7 @@ Les systèmes d'événements les plus puissants sont sélectifs. Ils enregistren
 
 ## Séquence de mise en œuvre
 
-Commencez par nommer les événements de domaine et leurs propriétaires. Définir les identifiants, le schéma, la source et la conservation. Choisissez un consommateur et design idempotency avant d'ajouter plus.
+Commencez par nommer les événements de domaine et leurs propriétaires. Définir les identifiants, le schéma, la source et la conservation. Choisissez un consommateur et design idempotence avant d'ajouter plus.
 
 Ajouter les ID de corrélation, les mesures de décalage et la gestion des défaillances tôt. Tester les duplicata, la réorganisation, les consommateurs non disponibles et les changements de schéma. Rejouer le comportement.
 
@@ -287,7 +286,7 @@ Courtier : infrastructure qui transporte les messages.
 
 Consommateur : une composante qui lit et réagit aux événements.
 
-Idempotency: sécurité sous exécution répétée.
+Idempotence: sécurité sous exécution répétée.
 
 Projection : un modèle de lecture dérivé de l'état canonique ou des événements.
 

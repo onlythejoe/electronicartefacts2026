@@ -5,8 +5,8 @@ slug:
   canonical: ontologies-taxonomies-and-knowledge-modeling
 title: Ontologies, taxonomies et modélisation des connaissances
 subtitle: Article technique
-abstract: "Cette synthèse française présente Ontologies, taxonomies et modélisation des connaissances : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Ontologies, taxonomies et modélisation des connaissances dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Guide pratique des taxonomies, des thésaurus, des thésaurus, des ontologies, des vocabulaires contrôlés, des OWL, des SKOS et de la modélisation sémantique durable."
+description: "Comprendre les différences entre taxonomies et ontologies et apprendre à concevoir un modèle de connaissance durable sans sur-ingénierie."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -30,8 +30,8 @@ subjects:
   - id: ea:technology:skos
   - id: ea:project:vestiges
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les taxonomies classent les concepts, tandis que les ontologies précisent des entités de domaine plus riches, des propriétés, des relations et des contraintes."
+  - "Les modèles durables de connaissances devraient commencer par des questions réelles et des besoins d'interopérabilité plutôt que par une expressivité formelle maximale."
 evidence:
   - id: ea:concept:ontology
   - id: ea:concept:knowledge-graph
@@ -52,7 +52,7 @@ sources:
     url: https://www.cidoc-crm.org/
 citation:
   preferred: Electronic Artefacts. "Ontologies, taxonomies et modélisation des connaissances". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Ontology
   - Taxonomy

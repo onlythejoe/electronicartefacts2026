@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/",
       "name": "Web Audio et systèmes sonores dans le navigateur",
-      "description": "Repères pour comprendre Web Audio et systèmes sonores dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur Web Audio, les graphiques audio, le son du navigateur, ORETH, l'écoute automatique et les médias interactifs.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
       "name": "Web Audio et systèmes sonores dans le navigateur",
       "headline": "Web Audio et systèmes sonores dans le navigateur",
-      "abstract": "Cette synthèse française présente Web Audio et systèmes sonores dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Web Audio et systèmes sonores dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique Web Audio comme une architecture sonore native de navigateur pour la synthèse, le traitement, l'analyse, les essais interactifs, le codage créatif et les outils audio publics.",
+      "description": "Cet article explique Web Audio comme une architecture sonore native de navigateur pour la synthèse, le traitement, l'analyse, les essais interactifs, le codage créatif et les outils audio publics.",
       "url": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/#webpage"
@@ -79,7 +79,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1588,
       "citation": [
-        "Electronic Artefacts. \"Web Audio et systèmes sonores dans le navigateur\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Web Audio et systèmes sonores dans le navigateur\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Web Audio API 1.1",

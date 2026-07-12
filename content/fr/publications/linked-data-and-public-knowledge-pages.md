@@ -5,8 +5,8 @@ slug:
   canonical: linked-data-and-public-knowledge-pages
 title: Données liées et pages publiques de connaissance
 subtitle: Article technique
-abstract: "Cette synthèse française présente Données liées et pages publiques de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Données liées et pages publiques de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique comment les pages de connaissances publiques peuvent utiliser des URL stables, JSON-LD, des identifiants orientés RDF et des liens internes pour devenir utiles aux humains, aux moteurs de recherche et aux systèmes d'IA."
+description: "Un article technique sur les données liées, JSON-LD, les URL canoniques, les identifiants et le référencement pour les plateformes de connaissances statiques."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:technology:rdf
   - id: ea:concept:knowledge-graph
 claims:
-  - Données liées et pages publiques de connaissance doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les pages de connaissances statiques peuvent participer aux données liées lorsqu'elles publient des identifiants stables, des routes canoniques et des données structurées."
+  - "JSON-LD est un pont pratique entre l'édition éditoriale et la représentation sémantique des graphiques."
 evidence:
   - id: ea:organization:electronic-artefacts
 sources:
@@ -51,7 +50,7 @@ sources:
     url: https://schema.org/Article
 citation:
   preferred: Electronic Artefacts. "Données liées et pages publiques de connaissance". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Linked Data
   - JSON-LD
@@ -93,7 +92,7 @@ Les données structurées pour la recherche ont adopté certains des mêmes prin
 
 ## Concepts fondamentaux
 
-Le premier concept est l'identité canonique. Une page devrait avoir une URL publique préférée. Les itinéraires alternatifs et les chemins anciens peuvent rediriger ou identifier, mais l'URL canonique est la cible de citation publique.
+Le premier concept est l'identité canonique. Une page devrait avoir une URL publique préférée. Les routes alternatifs et les chemins anciens peuvent rediriger ou identifier, mais l'URL canonique est la cible de citation publique.
 
 Le deuxième concept est l'identité de l'entité. La chose décrite devrait avoir un ID stable indépendant de la mise en page. Electronic Artefacts utilise des ID comme `ea:concept:linked-data` et des routes d’identification sous `/id/`.
 
@@ -160,7 +159,7 @@ L'erreur la plus courante est de confondre le marquage SEO avec l'architecture d
 
 Une troisième erreur est de traiter JSON-LD comme une décoration invisible. Si les données structurées ne sont jointes que pour les moteurs de recherche et ne sont pas reflétées dans le modèle éditorial visible, elles deviennent fragiles. Le Knowledge Hub devrait faire les mêmes revendications aux humains et aux machines.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Pour Electronic Artefacts, Linked Data est une discipline d'édition. Il aide le site à relier le travail artistique, les systèmes logiciels, les publications de recherche et les archives sans les forcer dans un modèle visuel unique. Il donne également aux futurs systèmes d'IA une meilleure chance de récupérer le bon enregistrement plutôt que de deviner à partir de texte de page générique.
 

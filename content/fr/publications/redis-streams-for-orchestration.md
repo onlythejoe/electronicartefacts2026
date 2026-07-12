@@ -5,8 +5,8 @@ slug:
   canonical: redis-streams-for-orchestration
 title: Redis Streams pour l’orchestration
 subtitle: Article technique
-abstract: "Cette synthèse française présente Redis Streams pour l’orchestration : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Redis Streams pour l’orchestration dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un guide axé sur la mise en œuvre de Redis Streams, les groupes de consommateurs, les acquittements, les entrées en attente, les récupérations, l'idempotence, le trimming et l'orchestration."
+description: "Découvrez comment Redis Streams fonctionne et comment utiliser les groupes de consommateurs, les entrées en attente et les travailleurs idempotents pour une orchestration fiable."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -28,8 +28,8 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Redis Streams fournit un journal ordonné et un groupe de consommateurs primitifs utiles pour l'orchestration limitée."
+  - "Les travailleurs de Redis Streams ont besoin d'un acquittement explicite, d'une récupération, d’une compensation, d'une rétention et d'une surveillance."
 evidence:
   - id: ea:technology:redis-streams
   - id: ea:concept:event-driven-architecture
@@ -54,7 +54,7 @@ tags:
   - orchestration
   - Consumer Groups
   - Event Processing
-  - Idempotency
+  - Idempotence
 disciplines:
   - architecture logicielle
   - Distributed Systems
@@ -73,7 +73,7 @@ Redis Streams est un type de données Redis pour les séquences d'entrées en ap
 
 Cela rend Streams utiles pour le traitement des événements, la distribution des tâches, les projections et l'orchestration légère. Il occupe un espace entre les simples listes de Redis ou Pub/Sub et les plates-formes plus grandes. Les équipes qui exploitent déjà Redis peuvent ajouter un état de consommation durable sans introduire immédiatement un courtier séparé.
 
-Le mot orchestration a besoin de qualification. Redis Streams peut transporter le travail et suivre la livraison, mais il ne modélise pas en soi les workflows à long terme, la compensation, les horaires ou les autorisations de domaine. L'orchestration fiable émerge de la conception du flux, du comportement des travailleurs, de l'idempotency, de la persistance et de l'observabilité autour du primitif.
+Le mot orchestration a besoin de qualification. Redis Streams peut transporter le travail et suivre la livraison, mais il ne modélise pas en soi les workflows à long terme, la compensation, les horaires ou les autorisations de domaine. L'orchestration fiable émerge de la conception du flux, du comportement des travailleurs, de l'idempotence, de la persistance et de l'observabilité autour du primitif.
 
 ## Modèle de flux
 
@@ -115,7 +115,7 @@ La reconnaissance doit avoir lieu après les travaux pertinents. Un travailleur 
 
 C'est pourquoi le gestionnaire doit être idémpotent. Le flux peut fournir au moins un comportement de traitement, mais l'état de l'application doit tolérer la répétition.
 
-Les transactions ou les scripts atomiques peuvent coordonner l'état côté Redis, mais ils ne peuvent pas inclure atomiquement des services externes arbitraires. Les modèles de boîte de réception et les clés d'idempotency aident à combler ces limites.
+Les transactions ou les scripts atomiques peuvent coordonner l'état côté Redis, mais ils ne peuvent pas inclure atomiquement des services externes arbitraires. Les modèles de boîte de réception et les clés d'idempotence aident à combler ces limites.
 
 La politique de reconnaissance devrait être explicite dans l'examen des codes. La reconnaissance automatique cachée peut produire une perte silencieuse.
 
@@ -147,7 +147,7 @@ Les contraintes liées à l'unicité des bases de données sont de puissants out
 
 Ne vous fiez pas seulement à la déduplication en mémoire. Le travailleur redémarre l'effacer. Les touches Redis avec expiration peuvent aider pour les fenêtres délimitées, mais les effets de domaine permanents peuvent nécessiter des enregistrements durables.
 
-Idempotency protège également le replay manuel. Les opérateurs devraient être en mesure de retraiter une entrée sans se demander s'il fera double emploi avec un travail irréversible.
+Idempotence protège également le replay manuel. Les opérateurs devraient être en mesure de retraiter une entrée sans se demander s'il fera double emploi avec un travail irréversible.
 
 ## Conception du flux
 
@@ -223,7 +223,7 @@ Si les exigences d'échelle ou de conservation dépassent Redis Streams, les con
 
 L'analyse ORETH peut impliquer un traitement audio à long terme. Un flux peut distribuer des références de fichiers et des paramètres d'analyse aux travailleurs. Les résultats deviennent de nouveaux enregistrements liés aux artefacts sources.
 
-Les travailleurs devraient enregistrer la version du modèle ou de l'algorithme, la liste des sources et l'emplacement de sortie. Idempotency peut utiliser la combinaison de source, de type d'analyse et de version.
+Les travailleurs devraient enregistrer la version du modèle ou de l'algorithme, la liste des sources et l'emplacement de sortie. Idempotence peut utiliser la combinaison de source, de type d'analyse et de version.
 
 Pour les tâches locales de LLM, un groupe de consommateurs peut nourrir un ou plusieurs travailleurs d'inférence. La priorité peut nécessiter des volets distincts. Les appels sensibles doivent être référencés à partir d'un stockage contrôlé plutôt que copiés dans des journaux conservés.
 
@@ -265,7 +265,7 @@ Le septième est d'ajouter des consommateurs sans observabilité ni propriété.
 
 ## Liste de contrôle pour la mise en œuvre
 
-Définir les noms de flux et de groupe, l'enveloppe de l'événement et la version du schéma. Établir la validation du producteur. Mettre en place des gestionnaires idémpotents. Reconnaissez après le commit. Surveillez l'âge. Ajouter des relevés limités et un flux d'échec. Configurer la persistance, la sauvegarde et la rétention. Tester les accidents de travail et la livraison en double.
+Définir les noms de flux et de groupe, l'enveloppe de l'événement et la version du schéma. Établir la validation du producteur. Mettre en place des gestionnaires idempotents. Reconnaissez après le commit. Surveillez l'âge. Ajouter des relevés limités et un flux d'échec. Configurer la persistance, la sauvegarde et la rétention. Tester les accidents de travail et la livraison en double.
 
 Documenter la source de la vérité et rejouer la procédure. Notez quels événements sont sûrs de rejouer et quels effets secondaires nécessitent une suppression.
 

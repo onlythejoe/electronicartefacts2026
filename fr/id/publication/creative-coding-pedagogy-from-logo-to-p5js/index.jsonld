@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
       "name": "Pédagogie de la programmation créative, de Logo à p5.js",
-      "description": "Repères pour comprendre Pédagogie de la programmation créative, de Logo à p5.js dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur l'enseignement du codage créatif, le traitement, p5.js, les médias informatiques, open source et la culture d'apprentissage d’Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
       "name": "Pédagogie de la programmation créative, de Logo à p5.js",
       "headline": "Pédagogie de la programmation créative, de Logo à p5.js",
-      "abstract": "Cette synthèse française présente Pédagogie de la programmation créative, de Logo à p5.js : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Pédagogie de la programmation créative, de Logo à p5.js : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la pédagogie créative du codage par la programmation exploratoire, l'alphabétisation informatique, le traitement, p5.js, la rétroaction visuelle et les communautés d'apprentissage ouvert.",
+      "description": "Cet article explique la pédagogie créative du codage par la programmation exploratoire, l'alphabétisation informatique, le traitement, p5.js, la rétroaction visuelle et les communautés d'apprentissage ouvert.",
       "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/#webpage"
@@ -78,7 +78,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1617,
       "citation": [
-        "Electronic Artefacts. \"Pédagogie de la programmation créative, de Logo à p5.js\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Pédagogie de la programmation créative, de Logo à p5.js\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Processing Overview",

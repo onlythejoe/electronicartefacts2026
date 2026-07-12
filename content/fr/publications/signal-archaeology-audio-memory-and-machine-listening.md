@@ -5,8 +5,8 @@ slug:
   canonical: signal-archaeology-audio-memory-and-machine-listening
 title: Archéologie du signal, mémoire audio et écoute machine
 subtitle: Article technique
-abstract: "Cette synthèse française présente Archéologie du signal, mémoire audio et écoute machine : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Archéologie du signal, mémoire audio et écoute machine dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique l'archéologie des signaux comme un moyen de lire des traces sonores et techniques à travers l'analyse audio, la provenance, la mémoire et l'écoute automatique."
+description: "Un article technique sur l'archéologie des signaux, la mémoire audio, l'écoute automatique, ORETH et Palimpsests."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les résidus techniques peuvent devenir des preuves culturelles lorsqu'ils sont interprétés avec provenance et contexte."
+  - "L'écoute automatique peut supporter l'archéologie des signaux, mais elle ne peut remplacer l'interprétation humaine et archivistique."
 evidence:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
@@ -47,7 +47,7 @@ sources:
     url: https://www.dpconline.org/handbook
 citation:
   preferred: Electronic Artefacts. "Archéologie du signal, mémoire audio et écoute machine". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Signal Archaeology
   - audio
@@ -135,7 +135,7 @@ Pour la production musicale, elle peut aider les créateurs à comprendre commen
 
 ## Outils
 
-Les outils utiles comprennent les éditeurs de forme d'onde, les spectrogrammes, les lecteurs de métadonnées, les outils de somme de contrôle, les bibliothèques audio Python, les systèmes d'annotation, les notes d'écoute, les inventaires de fichiers et les enregistrements graphiques.
+Les outils utiles comprennent les éditeurs de forme d'onde, les spectrogrammes, les lecteurs de métadonnées, les outils de somme de contrôle, les bibliothèques audio Python, les systèmes d'annotation, les notes d'écoute, les inventaires de fichiers et les enregistrements du graphe.
 
 ## Éléments de preuve
 
@@ -161,7 +161,7 @@ La deuxième erreur est de traiter l'écoute automatique comme neutre. L'extract
 
 La troisième erreur est de séparer l'analyse de la mémoire. Chez Palimpsests, les résidus ne sont pas seulement techniques. Elle fait partie de la structure conceptuelle du travail. L'archive devrait préserver cette couche d'interprétation.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 ORETH peut devenir la maison méthodologique pour l'écoute automatique et la recherche audio. Les palimpsestes peuvent devenir la maison culturelle pour la mémoire, les résidus et la transmission. L'archéologie des signaux est le pont : elle permet au site de discuter de l'analyse technique sans perdre de contexte artistique.
 

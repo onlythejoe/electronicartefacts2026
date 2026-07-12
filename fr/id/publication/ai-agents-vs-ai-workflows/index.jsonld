@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "name": "Agents d'IA et workflows d'IA",
-      "description": "Repères pour comprendre Agents d'IA et workflows d'IA dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre la différence entre les agents d'IA et les flux de travail d'IA, quand utiliser chaque architecture, et comment concevoir des systèmes hybrides fiables.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ai-agents-vs-ai-workflows-fr",
       "name": "Agents d'IA et workflows d'IA",
       "headline": "Agents d'IA et workflows d'IA",
-      "abstract": "Cette synthèse française présente Agents d'IA et workflows d'IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Agents d'IA et workflows d'IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Comparaison pratique des agents dirigés par le modèle, des flux de travail déterministes, de l'orchestration hybride, des autorisations d'outils, de la mémoire, de l'évaluation et de la surveillance humaine.",
+      "description": "Comparaison pratique des agents dirigés par le modèle, des flux de travail déterministes, de l'orchestration hybride, des autorisations d'outils, de la mémoire, de l'évaluation et de la surveillance humaine.",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage"
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 2566,
+      "wordCount": 2567,
       "citation": [
-        "Electronic Artefacts. \"Agents d'IA et workflows d'IA\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Agents d'IA et workflows d'IA\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Building Effective Agents",

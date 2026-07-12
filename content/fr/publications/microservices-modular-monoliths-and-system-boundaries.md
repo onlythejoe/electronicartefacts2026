@@ -5,8 +5,8 @@ slug:
   canonical: microservices-modular-monoliths-and-system-boundaries
 title: Microservices, monolithes modulaires et frontières de système
 subtitle: Article technique
-abstract: "Cette synthèse française présente Microservices, monolithes modulaires et frontières de système : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Microservices, monolithes modulaires et frontières de système dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Comparaison pragmatique des microservices et des monolithes modulaires à travers les limites du domaine, la propriété des données, le déploiement, les événements, l'observation et la structure de l'équipe."
+description: "Apprenez quand les microservices ont un sens, pourquoi les monolithes modulaires sont souvent le meilleur point de départ, et comment définir les frontières durables du système."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - Microservices, monolithes modulaires et frontières de système doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les frontières des services devraient suivre la propriété du domaine, l'évolution indépendante et les exigences opérationnelles plutôt que la mode technique."
+  - "Un monolithe modulaire préserve les transactions et les opérations plus simples tout en établissant des limites qui peuvent devenir des services plus tard."
 evidence:
   - id: ea:concept:microservice-architecture
   - id: ea:concept:systems-thinking
@@ -56,7 +55,7 @@ sources:
     url: https://www.domainlanguage.com/ddd/reference/
 citation:
   preferred: Electronic Artefacts. "Microservices, monolithes modulaires et frontières de système".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Microservices
   - Modular Monolith
@@ -255,7 +254,7 @@ Le centre de connaissances actuel est bien desservi par une construction statiqu
 
 L'édition collaborative future ou la récupération à grande échelle peut justifier des services. Les contrats d'entité existants et les projections générées créent une solide base modulaire.
 
-Ceci démontre un principe important: l'architecture doit s'adapter au stade du produit. Un graphe de connaissancess sophistiqué ne nécessite pas de déploiement réparti.
+Ceci démontre un principe important: l'architecture doit s'adapter au stade du produit. Un graphe de connaissances sophistiqué ne nécessite pas de déploiement réparti.
 
 ## Cadre de décision
 

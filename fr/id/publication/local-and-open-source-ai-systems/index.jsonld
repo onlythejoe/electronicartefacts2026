@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
       "name": "Systèmes d’IA locaux et open source",
-      "description": "Repères pour comprendre Systèmes d’IA locaux et open source dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre les systèmes locaux d'IA et d'IA open-source, y compris les poids des modèles, la quantification, llama.cpp, la vie privée, le matériel et les licences.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:local-and-open-source-ai-systems-fr",
       "name": "Systèmes d’IA locaux et open source",
       "headline": "Systèmes d’IA locaux et open source",
-      "abstract": "Cette synthèse française présente Systèmes d’IA locaux et open source : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Systèmes d’IA locaux et open source : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide pratique sur l'inférence locale, les modèles à poids ouvert, l'IA à source ouverte, la quantification, le matériel, la confidentialité, la licence et l'indépendance opérationnelle.",
+      "description": "Un guide pratique sur l'inférence locale, les modèles à poids ouvert, l'IA à source ouverte, la quantification, le matériel, la confidentialité, la licence et l'indépendance opérationnelle.",
       "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 2556,
+      "wordCount": 2558,
       "citation": [
         "Electronic Artefacts. \"Systèmes d’IA locaux et open source\". Article technique, version 1.0.0, 2026.",
         {

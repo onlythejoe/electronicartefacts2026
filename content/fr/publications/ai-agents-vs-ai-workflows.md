@@ -5,8 +5,8 @@ slug:
   canonical: ai-agents-vs-ai-workflows
 title: Agents d'IA et workflows d'IA
 subtitle: Article technique
-abstract: "Cette synthèse française présente Agents d'IA et workflows d'IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Agents d'IA et workflows d'IA dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Comparaison pratique des agents dirigés par le modèle, des flux de travail déterministes, de l'orchestration hybride, des autorisations d'outils, de la mémoire, de l'évaluation et de la surveillance humaine."
+description: "Comprendre la différence entre les agents d'IA et les flux de travail d'IA, quand utiliser chaque architecture, et comment concevoir des systèmes hybrides fiables."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:concept:autonomous-system
   - id: ea:program:vaste
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les flux de travail fournissent des chemins prévisibles pour les tâches répétables, tandis que les agents laissent les modèles choisir des actions dynamiquement dans l'incertitude."
+  - "Les systèmes de production les plus fiables combinent flexibilité du modèle avec permissions déterministes, validation et conditions d'arrêt."
 evidence:
   - id: ea:concept:ai-agent
   - id: ea:concept:contextual-execution
@@ -47,7 +47,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.nist.gov/itl/ai-risk-management-framework
 citation:
-  preferred: Electronic Artefacts. "Agents d'IA et workflows d'IA". Article technique, version 1.1.0, 2026.
+  preferred: Electronic Artefacts. "Agents d'IA et workflows d'IA". Article technique, version 1.1.1, 2026.
 tags:
   - agents d'IA
   - workflows d'IA
@@ -176,7 +176,7 @@ Le guide d'ingénierie d'Anthropic distingue les workflows avec orchestration pr
 
 ## Implications pour Electronic Artefacts
 
-Le Knowledge Hub peut utiliser des flux de travail pour la validation de la matière première, la vérification des liens, les propositions de génération de relations et les vérifications SEO. Les agents conviennent mieux à l'étude d'un sujet sur de nombreux types de sources, à la recherche de relations graphiques manquantes ou à la mise à jour d'un ensemble de pages connectées dont la portée ne peut être connue au préalable.
+Le Knowledge Hub peut utiliser des flux de travail pour la validation de la matière première, la vérification des liens, les propositions de génération de relations et les vérifications SEO. Les agents conviennent mieux à l'étude d'un sujet sur de nombreux types de sources, à la recherche de relations de graphe manquantes ou à la mise à jour d'un ensemble de pages connectées dont la portée ne peut être connue au préalable.
 
 VASTE fournit le contexte de recherche plus profond. Un agent opérant sur un graphique peut utiliser l'identité et la sémantique relation comme contraintes. V6 pourrait soutenir les agents de contribution qui proposent des liens entre les personnes, les techniques et les institutions tout en préservant la validation humaine. L'ORETH pourrait prendre en charge les agents d'analyse audio exploratoire qui choisissent des mesures basées sur la structure du signal observée.
 

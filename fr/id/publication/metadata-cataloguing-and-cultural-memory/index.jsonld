@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "name": "Métadonnées, catalogage et mémoire culturelle",
-      "description": "Repères pour comprendre Métadonnées, catalogage et mémoire culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur les métadonnées, le catalogage, la mémoire culturelle, les normes de conservation et les enregistrements du graphe électroniques Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
       "name": "Métadonnées, catalogage et mémoire culturelle",
       "headline": "Métadonnées, catalogage et mémoire culturelle",
-      "abstract": "Cette synthèse française présente Métadonnées, catalogage et mémoire culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Métadonnées, catalogage et mémoire culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique les métadonnées comme une couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+      "description": "Cet article explique les métadonnées comme une couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage"
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1579,
+      "wordCount": 1580,
       "citation": [
-        "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "DCMI Metadata Terms",

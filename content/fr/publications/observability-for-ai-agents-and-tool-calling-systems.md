@@ -5,8 +5,8 @@ slug:
   canonical: observability-for-ai-agents-and-tool-calling-systems
 title: Observabilité des agents d'IA et des systèmes d'appel d'outils
 subtitle: Article technique
-abstract: "Cette synthèse française présente Observabilité des agents d'IA et des systèmes d'appel d'outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Observabilité des agents d'IA et des systèmes d'appel d'outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication pratique de la télémétrie pour les agents d'IA, les appels d'outils, les traces, les événements, les approbations, les échecs, les évaluations et la responsabilisation dans les runtimes graphes."
+description: "Comprendre l'observabilité des agents d'IA et des systèmes d'appel d'outils au moyen de traces, de mesures, de journaux, d'événements de vérification et d'OpenTelemetry."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:event-driven-architecture
   - id: ea:concept:contextual-execution
 claims:
-  - Observabilité des agents d'IA et des systèmes d'appel d'outils doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les agents d'IA ont besoin d'être observables pour les appels de modèles, les appels d'outils, les approbations, le contexte récupéré et les effets secondaires externes."
+  - "La télémétrie de l'agent devrait enregistrer le comportement opérationnel et les métadonnées de responsabilité sans stocker par défaut des invites sensibles ou du contenu privé."
 evidence:
   - id: ea:technology:opentelemetry
   - id: ea:technology:model-context-protocol
@@ -50,7 +49,7 @@ sources:
     url: https://cloudevents.io/
 citation:
   preferred: Electronic Artefacts. "Observabilité des agents d'IA et des systèmes d'appel d'outils".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Observability
   - agents d'IA
@@ -91,7 +90,7 @@ Une trace doit inclure des identifiants stables sans exposer le contenu sensible
 
 ## métriques
 
-Les mesures décrivent le comportement agrégé. Pour les systèmes d'appel d'outils, le nombre de demandes de piste, le taux d'erreur, la latence, le nombre d'appels d'outils, le taux d'approbation, le taux de rejet, le nombre de réessayer, l'utilisation du jeton, le coût, la profondeur de la file d'attente et l'âge de projection.
+Les mesures décrivent le comportement agrégé. Pour les systèmes d'appel d'outils, le nombre de demandes de piste, le taux d'erreur, la latence, le nombre d'appels d'outils, le taux d'approbation, le taux de rejet, le nombre de réessayer, l'utilisation du token, le coût, la profondeur de la file d'attente et l'âge de projection.
 
 Les paramètres de domaine sont tout aussi importants que les paramètres d'infrastructure. Si un agent d'assistance aux archives crée de nombreuses ébauches de métadonnées, mais qu'aucune n'est approuvée, le système ne réussit pas. Si un assistant graphique propose à plusieurs reprises des prédicats non valides, le modèle ou l'ajustement rapide doit être effectué.
 
@@ -119,7 +118,7 @@ Chaque appel d'outils devrait être observable comme une opération de première
 
 Ne comptez pas sur la transcription du modèle comme journal de vérification. La transcription peut être résumée, cachée, taillée ou indisponible. L'exécution doit enregistrer l'appel de l'outil de manière indépendante.
 
-Pour les outils d'écriture, enregistrer l'entité cible et, le cas échéant, les références antérieures. Pour les appels externes, enregistrez la classe de destination et la clé idempotency s'il y en a.
+Pour les outils d'écriture, enregistrer l'entité cible et, le cas échéant, les références antérieures. Pour les appels externes, enregistrez la classe de destination et la clé idempotence s'il y en a.
 
 ## Télémétrie de récupération
 
@@ -145,9 +144,9 @@ Un agent doit être évalué sur les résultats des tâches, et pas seulement su
 
 Les données d'évaluation devraient être mises en forme avec des définitions de modèles, d'indicateurs rapides et d'outils. Autrement, les améliorations ne peuvent être expliquées.
 
-## Injection rapide
+## Injection de prompt
 
-L'injection rapide est un problème d'observabilité ainsi qu'un problème de sécurité. Une ressource malveillante peut provoquer un modèle à demander un appel d'outil dangereux. Le système devrait consigner la ressource lue, la demande d'outil et la décision de politique.
+L'injection de prompt est un problème d'observabilité ainsi qu'un problème de sécurité. Une ressource malveillante peut provoquer un modèle à demander un appel d'outil dangereux. Le système devrait consigner la ressource lue, la demande d'outil et la décision de politique.
 
 La détection ne suffit pas. L'hôte devrait éviter une composition dangereuse, et la télémétrie devrait rendre les tentatives visibles. Si de nombreuses pages récupérées déclenchent des requêtes d'outils suspects, la récupération ou la limite rapide doit fonctionner.
 
@@ -187,7 +186,7 @@ Définir une politique de suppression avant de collecter du contenu. Stocker l'i
 
 OpenTelemetry définit la sémantique de télémétrie partagée pour les traces, les mesures, les journaux et les attributs. MCP définit un modèle de capacité autour des ressources, des appels et des outils. CloudEvents fournit une référence utile pour les événements d'audit durables.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 L'observation est essentielle si Electronic Artefacts connecte les systèmes d'IA à VASTE, aux archives ou aux flux de travail de publication. Il protège la fiabilité, la responsabilité éditoriale et le consentement des utilisateurs.
 

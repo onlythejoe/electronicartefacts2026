@@ -5,8 +5,8 @@ slug:
   canonical: retrieval-augmented-generation-and-knowledge-systems
 title: Génération augmentée par récupération et systèmes de connaissance
 subtitle: Article technique
-abstract: "Cette synthèse française présente Génération augmentée par récupération et systèmes de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Génération augmentée par récupération et systèmes de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication de bout en bout de l'architecture du RAG, l'ingestion, le chunking, l'intégration, la récupération hybride, les graphiques, les citations, les permissions et l'évaluation."
+description: "Découvrez comment fonctionne la génération augmentée par la récupération et comment construire des systèmes RAG basés sur des sources avec des métadonnées, des graphes de connaissances et une évaluation."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -30,9 +30,8 @@ subjects:
   - id: ea:concept:large-language-model
   - id: ea:program:vaste
 claims:
-  - Génération augmentée par récupération et systèmes de connaissance doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "La qualité du RAG dépend de l'architecture du corpus, de la récupération et de l'attribution plutôt que de la seule recherche vectorielle."
+  - "Les systèmes hybrides peuvent combiner des embeddings avec des relations de graphe typées pour préserver l'identité sémantique et les chemins source."
 evidence:
   - id: ea:concept:retrieval-augmented-generation
   - id: ea:concept:knowledge-graph
@@ -51,7 +50,7 @@ sources:
     url: https://arxiv.org/abs/2305.06983
 citation:
   preferred: Electronic Artefacts. "Génération augmentée par récupération et systèmes de
-    connaissance". Article technique, version 1.1.0, 2026.
+    connaissance". Article technique, version 1.1.1, 2026.
 tags:
   - RAG
   - graphe de connaissances
@@ -82,7 +81,7 @@ RAG est souvent réduit à trois étapes : des documents fractionnés, des morce
 
 Le document RAG 2020 de Lewis et de ses collègues a combiné un modèle de séquence à séquence préformé avec un indice vectoriel dense utilisé comme mémoire non paramétrique. Un récupérateur a sélectionné les passages pertinents à une entrée, et le générateur a conditionné sa sortie sur le matériau récupéré.
 
-L'importante séparation conceptuelle est entre la mémoire paramétrique et la mémoire externe. Les paramètres du modèle encodent les modèles appris pendant la formation. Le corpus de recherche contient des documents adressables qui peuvent être mis à jour, inspectés et attribués. Un système peut remplacer ou corriger une source sans recycler le modèle linguistique complet.
+L'importante séparation conceptuelle est entre la mémoire paramétrique et la mémoire externe. Les paramètres du modèle encodent les modèles appris pendant l’entraînement. Le corpus de recherche contient des documents adressables qui peuvent être mis à jour, inspectés et attribués. Un système peut remplacer ou corriger une source sans recycler le modèle linguistique complet.
 
 Les systèmes modernes de RAG prolongent cette conception avec la recherche hybride, le reclassage, les graphes de connaissances, la décomposition des requêtes, l'utilisation d'outils, la récupération active et l'évaluation en plusieurs étapes. La question sous-jacente demeure stable: comment le système devrait-il trouver et présenter les preuves appropriées pour une tâche génératrice?
 
@@ -102,7 +101,7 @@ Electronic Artefacts modélisent déjà beaucoup de ces exigences. Publications,
 
 Les modèles linguistiques reçoivent un contexte délimité, si longtemps les documents sont divisés en unités de recherche. Le découpage détermine ce que le récupérateur peut retourner. Les catégories trop petites peuvent perdre des définitions et des qualifications. Les morceaux trop gros peuvent diluer la pertinence et consommer le contexte.
 
-Les fenêtres en jeton fixes sont faciles mais ignorent la structure. Des tentatives sémantiques pour séparer les changements de sujet, mais peuvent être instables. Le découpage des documents est effectué suivant les rubriques, paragraphes, listes, tableaux ou blocs de codes. La meilleure stratégie dépend du matériel et des questions.
+Les fenêtres en token fixes sont faciles mais ignorent la structure. Des tentatives sémantiques pour séparer les changements de sujet, mais peuvent être instables. Le découpage des documents est effectué suivant les rubriques, paragraphes, listes, tableaux ou blocs de codes. La meilleure stratégie dépend du matériel et des questions.
 
 Un morceau devrait conserver un pointeur vers sa source et son emplacement parent. Il peut comprendre un préfixe de titre ou un résumé pour la recherche, tandis que le texte original reste disponible pour la citation. Overlap peut préserver la continuité, mais augmente la duplication et peut crowd résultats avec des passages presque identiques.
 
@@ -114,7 +113,7 @@ La récupération sparse utilise des preuves lexicales telles que les termes exa
 
 Ni domine toutes les tâches. Une recherche dense peut confondre des concepts connexes ou manquer des identifiants exacts rares. La recherche lexique peut manquer les paraphrases. La récupération hybride combine des scores ou des ensembles de candidats. Les reclasseurs peuvent alors évaluer les résultats les plus prometteurs avec un modèle plus cher.
 
-La stratégie de recherche devrait refléter le corpus. Une archive technique avec des ID stables bénéficie d'une correspondance exacte. Une collection d'essais culturels bénéficie de la récupération sémantique. Le contenu multilingue peut nécessiter des intégrations translingues ou une indexation linguistique.
+La stratégie de recherche devrait refléter le corpus. Une archive technique avec des ID stables bénéficie d'une correspondance exacte. Une collection d'essais culturels bénéficie de la récupération sémantique. Le contenu multilingue peut nécessiter des embeddings translingues ou une indexation linguistique.
 
 L'évaluation doit permettre de déterminer si les éléments de preuve pertinents figurent dans l'ensemble des candidats, et non seulement si la réponse finale semble bonne.
 

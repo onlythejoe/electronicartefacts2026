@@ -5,8 +5,8 @@ slug:
   canonical: procedural-graphics-shaders-and-visual-systems
 title: Graphisme procédural, shaders et systèmes visuels
 subtitle: Article technique
-abstract: "Cette synthèse française présente Graphisme procédural, shaders et systèmes visuels : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Graphisme procédural, shaders et systèmes visuels dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique les graphismes procéduraux à travers les règles, les shaders, les paramètres, WebGL, les systèmes génératifs et les grammaires visuelles pour l'art numérique et les interfaces."
+description: "Un article technique sur les graphismes procéduraux, les shaders, WebGL, le codage créatif et les systèmes visuels génératifs."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:concept:motion-design
 claims:
-  - Graphisme procédural, shaders et systèmes visuels doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les graphismes procéduraux sont les plus forts lorsque les règles expriment une grammaire visuelle plutôt que des variations arbitraires."
+  - "Shaders et WebGL rendent les systèmes visuels procéduraux publics, interactifs et inspectables dans les navigateurs."
 evidence:
   - id: ea:concept:procedural-graphics
   - id: ea:technology:webgl
@@ -42,7 +41,7 @@ sources:
     url: https://www.khronos.org/webgl/
 citation:
   preferred: Electronic Artefacts. "Graphisme procédural, shaders et systèmes visuels". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Procedural Graphics
   - Shaders
@@ -58,15 +57,15 @@ translationOf: ea:publication:procedural-graphics-shaders-and-visual-systems
 
 ## Problème
 
-Les visuels numériques sont souvent discutés comme des images terminées : une affiche, une interface, un cadre, un rendu, un immobile d'un système de mouvement. Les graphiques procéduraux déplacent l'attention de la sortie vers le système. La question importante devient : quelles règles, paramètres et transformations ont produit cette image ?
+Les visuels numériques sont souvent discutés comme des images terminées : une affiche, une interface, un cadre, un rendu, un immobile d'un système de mouvement. Les graphismes procéduraux déplacent l'attention de la sortie vers le système. La question importante devient : quelles règles, paramètres et transformations ont produit cette image ?
 
 Le problème est que les visuels procéduraux peuvent devenir génériques. Les champs de bruit, les particules, les gradients et les effets shader sont partout. Sans discipline conceptuelle, le travail procédural devient un style reconnaissable plutôt qu'une façon de penser.
 
-Electronic Artefacts a besoin de graphiques procéduraux comme sujet de connaissance parce que de nombreux systèmes visuels futurs seront générés, paramétrés, animés ou liés à l'état audio et graphique.
+Electronic Artefacts a besoin de graphismes procéduraux comme sujet de connaissance parce que de nombreux systèmes visuels futurs seront générés, paramétrés, animés ou liés à l'état audio et graphique.
 
 ## Présentation
 
-Les graphiques procéduraux sont générés à partir de règles. Les règles peuvent être mathématiques, physiques, typographiques, aléatoires, fondées sur des données ou interactives. Un shader peut calculer la couleur de chaque pixel. Un système de particules peut simuler le mouvement. Un système de mise en page peut organiser des éléments à partir de données graphiques.
+Les graphismes procéduraux sont générés à partir de règles. Les règles peuvent être mathématiques, physiques, typographiques, aléatoires, fondées sur des données ou interactives. Un shader peut calculer la couleur de chaque pixel. Un système de particules peut simuler le mouvement. Un système de mise en page peut organiser des éléments à partir de données graphiques.
 
 L'idée clé est que la forme visuelle n'est pas dessinée une fois. Il émerge d'un système qui peut être modifié, répété, mis en version et étudié.
 
@@ -74,7 +73,7 @@ L'idée clé est que la forme visuelle n'est pas dessinée une fois. Il émerge 
 
 Le codage créatif a rendu les graphismes procéduraux accessibles aux artistes et aux concepteurs. WebGL a apporté des systèmes visuels accélérés GPU dans les navigateurs. Les communautés de Shader ont rendu l'expérimentation au niveau du pixel instructible. Les plates-formes d'art génératif ont rendu les sorties procédurales collectables et publiques.
 
-Mais les graphiques procéduraux ont de la valeur au-delà du spectacle. Ils peuvent expliquer les données, exprimer l'identité, créer des archives interactives, visualiser l'audio et révéler les modèles structurels.
+Mais les graphismes procéduraux ont de la valeur au-delà du spectacle. Ils peuvent expliquer les données, exprimer l'identité, créer des archives interactives, visualiser l'audio et révéler les modèles structurels.
 
 ## Historique
 
@@ -110,7 +109,7 @@ La préservation nécessite l'enregistrement du code, de la version, des plages 
 
 ## Applications pratiques
 
-Les graphiques procéduraux supportent les systèmes d'identité generative, les essais interactifs, les visualisateurs audio, les cartes d'archives, les œuvres basées sur la simulation, les mises en page de publication et les systèmes de mouvement axés sur les données.
+Les graphismes procéduraux supportent les systèmes d'identité generative, les essais interactifs, les visualisateurs audio, les cartes d'archives, les œuvres basées sur la simulation, les mises en page de publication et les systèmes de mouvement axés sur les données.
 
 Pour les palimpsestes, les graphiques de procédure pourraient exprimer les couches, les résidus et la transformation. Pour ORETH, ils pouvaient visualiser les fonctionnalités audio. Pour VASTE, ils pourraient représenter l'état d'exécution du graphique.
 
@@ -138,7 +137,7 @@ La deuxième erreur est d'ignorer la performance. Un beau système qui échoue s
 
 La troisième erreur est de laisser le lecteur incapable de connecter le comportement visuel au concept.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Les graphismes procéduraux peuvent aider Electronic Artefacts à construire un langage de recherche visuelle reconnaissable sans compter uniquement sur la marque statique. Le site peut développer des systèmes visuels qui répondent aux connaissances, au son et aux archives.
 
@@ -174,7 +173,7 @@ Pour les lecteurs, cela crée un chemin de la curiosité visuelle à l'alphabét
 
 ## Travaux futurs
 
-Les futurs articles devraient couvrir les ombres, le bruit, les particules, la typographie générative, la visualisation graphique, les visuels audioréactifs, la préservation WebGL et la conception de paramètres.
+Les futurs articles devraient couvrir les shaders, le bruit, les particules, la typographie générative, la visualisation graphique, les visuels audioréactifs, la préservation WebGL et la conception de paramètres.
 
 ## Concepts connexes
 

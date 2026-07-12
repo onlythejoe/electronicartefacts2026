@@ -5,8 +5,8 @@ slug:
   canonical: verifiable-credentials-for-cultural-archives-and-creator-identity
 title: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs
 subtitle: Article technique
-abstract: "Cette synthèse française présente Identifiants vérifiables pour les archives culturelles et l’identité des créateurs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Identifiants vérifiables pour les archives culturelles et l’identité des créateurs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un article pratique sur Verifiable Credentials du W3C, identité du créateur, archives culturelles, provenance, revendications, vie privée et confiance lisible par machine."
+description: "Comprendre comment les justificatifs vérifiables peuvent soutenir l'identité du créateur, la provenance des archives, les flux de travail des droits et les revendications de confiance dans les systèmes de connaissances culturelles."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-25
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:technology:c2pa
 claims:
-  - Identifiants vérifiables pour les archives culturelles et l’identité des créateurs doit être
-    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les justificatifs vérifiables peuvent exprimer des revendications signées concernant les créateurs, les oeuvres, les droits ou les événements d'archives, mais la confiance dépend toujours du contexte de l'émetteur et de la politique de vérification."
+  - "Les systèmes culturels devraient utiliser les justificatifs d'identité comme une seule couche de provenance, parallèlement aux registres graphiques, à l'examen rédactionnel, aux métadonnées sur les droits et à l'interprétation publique."
 evidence:
   - id: ea:concept:provenance
   - id: ea:concept:entity-identity
@@ -52,7 +51,7 @@ sources:
     url: https://spec.c2pa.org/specifications/specifications/2.2/index.html
 citation:
   preferred: Electronic Artefacts. "Identifiants vérifiables pour les archives culturelles et
-    l’identité des créateurs". Article technique, version 1.1.0, 2026.
+    l’identité des créateurs". Article technique, version 1.1.1, 2026.
 tags:
   - Verifiable Credentials
   - Creator Identity
@@ -71,15 +70,15 @@ translationOf: ea:publication:verifiable-credentials-for-cultural-archives-and-c
 
 Les systèmes créatifs et culturels doivent savoir qui a fait une œuvre, qui a signé une déclaration, quelle organisation a publié un document, quels droits s'appliquent et quelles preuves appuient une revendication. Les pages Web conventionnelles peuvent dire ces choses, mais elles sont souvent difficiles à vérifier, à réutiliser ou à transporter.
 
-Les références vérifiables offrent un moyen d'exprimer des revendications qui peuvent être vérifiées cryptographiquement. L'occasion est importante pour l'identité des créateurs et les archives. Le danger est de traiter une revendication signée comme une vérité finale plutôt qu'un seul morceau de provenance.
+Les justificatifs vérifiables offrent un moyen d'exprimer des revendications qui peuvent être vérifiées cryptographiquement. L'occasion est importante pour l'identité des créateurs et les archives. Le danger est de traiter une revendication signée comme une vérité finale plutôt qu'un seul morceau de provenance.
 
 ## Présentation
 
-W3C Vérification des pouvoirs définit un modèle de données pour les créances faites par un émetteur au sujet d'un sujet et présentées à un vérificateur. Un titre peut représenter un permis de conduire, une affiliation, un certificat, une autorisation, une demande d'auteur ou une déclaration institutionnelle. Le modèle comprend l'émetteur, le sujet, les créances, la preuve, la validité et les métadonnées connexes.
+Verifiable Credentials du W3C définit un modèle de données pour les créances faites par un émetteur au sujet d'un sujet et présentées à un vérificateur. Un titre peut représenter un permis de conduire, une affiliation, un certificat, une autorisation, une demande d'auteur ou une déclaration institutionnelle. Le modèle comprend l'émetteur, le sujet, les créances, la preuve, la validité et les métadonnées connexes.
 
 Pour les infrastructures culturelles, l'utilisation intéressante n'est pas seulement l'identité personnelle. Les lettres de créances peuvent exprimer des revendications lisibles par machine concernant les créateurs, les oeuvres, les événements d'archives, les droits, l'adhésion à la collection, l'approbation institutionnelle ou le statut de publication.
 
-Electronic Artefacts utilisent déjà l'identité et la provenance des entités dans les documents publics. Des références vérifiables pourraient étendre cette architecture en laissant certaines revendications devenir portables, signées et contrôlables indépendamment tout en restant intégrées dans un graphique plus large d'interprétation.
+Electronic Artefacts utilisent déjà l'identité et la provenance des entités dans les documents publics. Des justificatifs vérifiables pourraient étendre cette architecture en laissant certaines revendications devenir portables, signées et contrôlables indépendamment tout en restant intégrées dans un graphique plus large d'interprétation.
 
 ## Architecture
 
@@ -111,7 +110,7 @@ La conception pour les créateurs consiste à appuyer la divulgation sélective,
 
 ## Provenance des archives
 
-Les archives peuvent utiliser des références pour renforcer la provenance. Un titre de créance peut attester le dépôt, l'examen, la publication, la transformation, l'apurement des droits ou l'action de préservation. Le justificatif peut être stocké aux côtés d'enregistrements graphiques et de métadonnées de fichiers.
+Les archives peuvent utiliser des références pour renforcer la provenance. Un titre de créance peut attester le dépôt, l'examen, la publication, la transformation, l'apurement des droits ou l'action de préservation. Le justificatif peut être stocké aux côtés d'enregistrements du graphe et de métadonnées de fichiers.
 
 Cela complète la pensée du W3C PROV. PROV modèle des entités, des activités et des agents. Les lettres de créance vérifiables peuvent signer certaines réclamations concernant ces entités, activités et agents. Le graphique peut ensuite relier les revendications signées aux documents, sources et interprétation visibles.
 
@@ -119,9 +118,9 @@ Les pouvoirs ne doivent pas remplacer la description des archives. Ils rendent c
 
 ## Comparaison C2PA
 
-C2PA met l'accent sur la provenance des médias rattachés ou associés à des actifs. Les références vérifiables sont plus larges et peuvent exprimer de nombreuses sortes de revendications. Les deux approches peuvent travailler ensemble.
+C2PA met l'accent sur la provenance des médias rattachés ou associés à des actifs. Les justificatifs vérifiables sont plus larges et peuvent exprimer de nombreuses sortes de revendications. Les deux approches peuvent travailler ensemble.
 
-Un atout médiatique peut porter des lettres de créances C2PA décrivant l'origine et les modifications du niveau de fichier. Une archive culturelle peut également stocker des références vérifiables sur l'identité du créateur, l'examen des droits ou la publication institutionnelle. La page publique peut expliquer comment ces couches se rapportent.
+Un atout médiatique peut porter des lettres de créances C2PA décrivant l'origine et les modifications du niveau de fichier. Une archive culturelle peut également stocker des justificatifs vérifiables sur l'identité du créateur, l'examen des droits ou la publication institutionnelle. La page publique peut expliquer comment ces couches se rapportent.
 
 La distinction est importante. La provenance au niveau du fichier n'est pas la même que l'identité du créateur. Un titre de créateur signé n'est pas le même que l'histoire de la transformation des médias. Une archive robuste peut modéliser les deux.
 
@@ -173,7 +172,7 @@ Ces normes mettent en évidence une approche stratifiée : revendications signé
 
 ## Limites
 
-Les références vérifiables ne résolvent pas la confiance par elles-mêmes. Une fausse réclamation peut être signée. Un titre valide peut être présenté dans un contexte trompeur. Un vérificateur peut faire confiance au mauvais émetteur. La vie privée peut être endommagée par une divulgation excessive.
+Les justificatifs vérifiables ne résolvent pas la confiance par elles-mêmes. Une fausse réclamation peut être signée. Un titre valide peut être présenté dans un contexte trompeur. Un vérificateur peut faire confiance au mauvais émetteur. La vie privée peut être endommagée par une divulgation excessive.
 
 La technologie est la plus forte lorsque les créances sont étroites, que les émetteurs sont connus, que les sujets ont une identité stable et que la politique de vérification est visible.
 

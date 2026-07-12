@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
       "name": "IIIF et objets culturels composés",
-      "description": "Repères pour comprendre IIIF et objets culturels composés dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre l'IIIF comme une infrastructure de présentation d'objets culturels composés, d'archives, de manifestes, de toiles et d'annotations.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:iiif-and-compound-cultural-objects-fr",
       "name": "IIIF et objets culturels composés",
       "headline": "IIIF et objets culturels composés",
-      "abstract": "Cette synthèse française présente IIIF et objets culturels composés : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente IIIF et objets culturels composés : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique des concepts d'API de présentation IIIF, objets composés, manifestes, toiles, annotations et interfaces d'archives culturelles.",
+      "description": "Une explication pratique des concepts d'API de présentation IIIF, objets composés, manifestes, toiles, annotations et interfaces d'archives culturelles.",
       "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/#webpage"

@@ -5,8 +5,8 @@ slug:
   canonical: model-context-protocol-and-tool-using-ai-systems
 title: Model Context Protocol et systèmes d'IA utilisant des outils
 subtitle: Article technique
-abstract: "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Model Context Protocol et systèmes d'IA utilisant des outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une explication pratique du MCP en tant que protocole d'intégration pour les ressources, les invites, les outils, le consentement, les limites de l'hôte et les workflows d’IA fondés sur des graphes."
+description: "Comprendre le Model Context Protocol à travers les hôtes, les clients, les serveurs, les ressources, les invites, les outils, les limites de sécurité et l'exécution contextuelle."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:program:vaste
 claims:
-  - Model Context Protocol et systèmes d'IA utilisant des outils doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Il est préférable de comprendre le MCP comme un protocole de contexte et de capacité, et non comme une autonomie d'agent en soi."
+  - "Les systèmes d'intelligence artificielle utilisant des outils ont besoin de limites d'hôte explicites, de consentement, d'autorisation et de cadrage du contexte avant que les outils ne deviennent une infrastructure utile."
 evidence:
   - id: ea:technology:model-context-protocol
   - id: ea:concept:contextual-execution
@@ -50,7 +49,7 @@ sources:
     url: https://microsoft.github.io/language-server-protocol/
 citation:
   preferred: Electronic Artefacts. "Model Context Protocol et systèmes d'IA utilisant des outils".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Model Context Protocol
   - agents d'IA
@@ -70,7 +69,7 @@ Les applications de modèles linguistiques ont de plus en plus besoin d'accéder
 
 ## Présentation
 
-Model Context Protocol, généralement raccourci au MCP, standardise la façon dont un hôte AI peut se connecter à des serveurs qui exposent le contexte et les capacités. Un hôte peut être un assistant de bureau, un environnement de codage, une interface de chat ou un moteur de workflow. Un serveur peut exposer des fichiers de projet, des trackers d'émission, des index de recherche, des métadonnées multimédias, des enregistrements graphiques ou des actions telles que le rendu d'un document.
+Model Context Protocol, généralement raccourci au MCP, standardise la façon dont un hôte AI peut se connecter à des serveurs qui exposent le contexte et les capacités. Un hôte peut être un assistant de bureau, un environnement de codage, une interface de chat ou un moteur de workflow. Un serveur peut exposer des fichiers de projet, des trackers d'émission, des index de recherche, des métadonnées multimédias, des enregistrements du graphe ou des actions telles que le rendu d'un document.
 
 Le changement important est architectural. MCP ne rend pas un modèle autonome par lui-même. Il donne à l'application environnante une façon structurée de découvrir et d'invoquer des ressources, des incitations et des outils. L'autonomie, l'examen, la permission et la mémoire appartiennent encore à la conception de l'hôte et de l'application.
 
@@ -148,7 +147,7 @@ Dans le cas des systèmes graphiques, la télémétrie devrait comprendre des id
 
 Le risque principal de MCP n'est pas la syntaxe du protocole. C'est la composition des capacités. Un modèle qui peut lire des données privées et appeler un outil d'envoi externe peut exfiltrer des informations si l'hôte n'applique pas les limites.
 
-L'injection rapide augmente ce risque. Une ressource peut contenir du texte qui indique au modèle d'ignorer les instructions antérieures ou d'appeler un outil. L'hôte doit traiter le contenu des ressources comme des données, et non comme une autorité.
+L'injection de prompt augmente ce risque. Une ressource peut contenir du texte qui indique au modèle d'ignorer les instructions antérieures ou d'appeler un outil. L'hôte doit traiter le contenu des ressources comme des données, et non comme une autorité.
 
 Les autorisations d'outils doivent être projetées par serveur, exploitation, utilisateur, conversation et classe de données. Un serveur de recherche en lecture seule ne devrait pas obtenir de permissions d'écriture car un autre serveur connecté fournit un outil de publication.
 
@@ -170,7 +169,7 @@ Définir la visibilité des ressources, les schémas d'outils, les événements 
 
 La spécification MCP définit les hôtes, les clients, les serveurs, les ressources, les invites et les outils sur la communication de style JSON-RPC. Sa propre section de sécurité met en lumière le consentement des utilisateurs, la confidentialité, la sécurité des outils et les contrôles autour de l'échantillonnage lancé par le modèle.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 MCP est intéressant pour Electronic Artefacts car il donne aux systèmes d'IA une frontière pratique entre le raisonnement du modèle et l'infrastructure de studio exécutable. Il pourrait connecter le Knowledge Hub, VASTE, les archives, les métadonnées de projet et les outils locaux sans s'effondrer en un seul assistant opaque.
 
@@ -178,7 +177,7 @@ Le principe de la conception durable est simple : le modèle peut proposer et in
 
 ## Limites
 
-MCP ne résout pas l'injection rapide, l'autorisation, l'observabilité, la conception de schéma ou le consentement d'interface utilisateur par lui-même. Il donne aux implémentateurs une surface de protocole où ces responsabilités peuvent être exprimées.
+MCP ne résout pas l'injection de prompt, l'autorisation, l'observabilité, la conception de schéma ou le consentement d'interface utilisateur par lui-même. Il donne aux implémentateurs une surface de protocole où ces responsabilités peuvent être exprimées.
 
 ## Concepts connexes
 

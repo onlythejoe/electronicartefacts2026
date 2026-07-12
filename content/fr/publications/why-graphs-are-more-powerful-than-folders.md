@@ -5,8 +5,8 @@ slug:
   canonical: why-graphs-are-more-powerful-than-folders
 title: Pourquoi les graphes sont plus puissants que les dossiers
 subtitle: Article technique
-abstract: "Cette synthèse française présente Pourquoi les graphes sont plus puissants que les dossiers : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Pourquoi les graphes sont plus puissants que les dossiers dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Une comparaison pratique des dossiers hiérarchiques et des modèles graphiques pour les connaissances, les projets, les archives, l'identité, la provenance et les interfaces générées."
+description: "Apprenez quand les modèles graphiques surpassent les hiérarchies de dossiers, pourquoi les relations comptent, et comment garder les dossiers comme projections utiles sur les données connectées."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -30,8 +30,8 @@ subjects:
   - id: ea:program:vaste
   - id: ea:project:vestiges
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les dossiers fournissent un seul chemin de confinement primaire, tandis que les graphes conservent de nombreuses relations simultanées entre les entités."
+  - "Les graphes ne devraient pas éliminer les vues hiérarchiques; ils devraient générer plusieurs projections utiles à partir d'un modèle connecté."
 evidence:
   - id: ea:concept:graph-modeling
   - id: ea:concept:knowledge-graph
@@ -48,7 +48,7 @@ sources:
     url: https://www.cidoc-crm.org/
 citation:
   preferred: Electronic Artefacts. "Pourquoi les graphes sont plus puissants que les dossiers".
-    Article technique, version 1.1.0, 2026.
+    Article technique, version 1.1.1, 2026.
 tags:
   - Graph Modeling
   - Folders
@@ -93,13 +93,13 @@ Un graphique commence par des nœuds et des bords. Les nœuds représentent des 
 
 Propriétés joignent des valeurs supplémentaires : dates, titres, état et descriptions. Les identifiants stables permettent à une entité de rester la même même même si son titre ou son URL publique change.
 
-Les relations typées sont essentielles. Une visualisation en réseau où chaque ligne signifie « liée » n'est pas un graphe de connaissancess utile. Le type indique au logiciel et aux lecteurs comment interpréter la connexion.
+Les relations typées sont essentielles. Une visualisation en réseau où chaque ligne signifie « liée » n'est pas un graphe de connaissances utile. Le type indique au logiciel et aux lecteurs comment interpréter la connexion.
 
 RDF formalise les énoncés graphiques comme sujet, prédicat et objet. Un système n'a pas besoin de stocker RDF en interne pour bénéficier de la discipline. Electronic Artefacts utilise des ID typés et des prédicats qui peuvent être publiés par JSON-LD et des sorties graphiques générées.
 
 ## Architecture
 
-L'architecture sépare les nœuds canoniques et les relations typées du stockage et de la présentation. Les fichiers restent dans les dépôts ou les magasins d'objets, tandis que les ID stables les connectent aux enregistrements graphiques et aux vues générées.
+L'architecture sépare les nœuds canoniques et les relations typées du stockage et de la présentation. Les fichiers restent dans les dépôts ou les magasins d'objets, tandis que les ID stables les connectent aux enregistrements du graphe et aux vues générées.
 
 ## Nombreux chemins valides
 
@@ -173,9 +173,9 @@ Electronic Artefacts suivent déjà ce modèle. Markdown front matter alimente l
 
 ## Graphiques et systèmes de fichiers
 
-Les graphiques ne suppriment pas le besoin de fichiers. Les documents sources, les médias et le code doivent encore être stockés. Le graphique doit les mentionner et les décrire.
+Les graphes ne suppriment pas le besoin de fichiers. Les documents sources, les médias et le code doivent encore être stockés. Le graphique doit les mentionner et les décrire.
 
-Une architecture pratique conserve des actifs binaires dans un système de fichiers ou un magasin d'objets, des enregistrements sources dans le contrôle de version ou une base de données, et des relations graphiques dans des données structurées. Les cartes d'identité stables font le pont entre ces couches.
+Une architecture pratique conserve des actifs binaires dans un système de fichiers ou un magasin d'objets, des enregistrements sources dans le contrôle de version ou une base de données, et des relations de graphe dans des données structurées. Les cartes d'identité stables font le pont entre ces couches.
 
 Les conventions de dossiers lisibles par l'homme restent utiles pour la maintenance. L'erreur est de traiter ces conventions comme le seul modèle de domaine.
 

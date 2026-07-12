@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "name": "Préservation numérique et archives vivantes",
-      "description": "Repères pour comprendre Préservation numérique et archives vivantes dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur la préservation numérique, les archives vivantes, les formats de fichiers, la provenance et les documents culturels d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:digital-preservation-and-living-archives-fr",
       "name": "Préservation numérique et archives vivantes",
       "headline": "Préservation numérique et archives vivantes",
-      "abstract": "Cette synthèse française présente Préservation numérique et archives vivantes : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Préservation numérique et archives vivantes : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la préservation numérique comme une pratique culturelle active qui maintient les objets numériques, les métadonnées, la provenance et l'interprétation utilisables au fil du temps.",
+      "description": "Cet article explique la préservation numérique comme une pratique culturelle active qui maintient les objets numériques, les métadonnées, la provenance et l'interprétation utilisables au fil du temps.",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage"
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1608,
+      "wordCount": 1609,
       "citation": [
-        "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Digital Preservation Handbook",

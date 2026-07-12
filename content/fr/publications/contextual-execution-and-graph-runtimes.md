@@ -5,8 +5,8 @@ slug:
   canonical: contextual-execution-and-graph-runtimes
 title: Exécution contextuelle et runtimes de graphe
 subtitle: Article technique
-abstract: "Cette synthèse française présente Exécution contextuelle et runtimes de graphe : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Exécution contextuelle et runtimes de graphe dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique l'exécution contextuelle comme principe d'exécution pour les systèmes où l'identité, les relations, les permissions et l'état influencent les opérations qui peuvent se produire."
+description: "Un article technique reliant l'exécution contextuelle, l'exécution graphique, la théorie d'exécution et VASTE."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,15 +29,14 @@ subjects:
   - id: ea:program:vaste
   - id: ea:concept:entity-identity
 claims:
-  - Exécution contextuelle et runtimes de graphe doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'exécution d'un graphique devient opérationnellement significative lorsque les relations et l'identité affectent l'exécution plutôt que seulement la description."
+  - "Le contexte devrait être explicite lorsqu'il détermine les permissions, la visibilité, la propagation ou l'interprétation."
 evidence:
   - id: ea:program:vaste
   - id: ea:researchField:runtime-theory
 citation:
   preferred: Electronic Artefacts. "Exécution contextuelle et runtimes de graphe". Article technique,
-    version 1.1.0, 2026.
+    version 1.1.1, 2026.
 tags:
   - Contextual Exécution
   - Graph Runtime
@@ -150,7 +149,7 @@ La deuxième erreur est de traiter les permissions comme le seul contexte. Les p
 
 La troisième erreur est de rendre le graphique purement descriptif. Si les relations n'influent jamais sur la validation, la projection ou la recherche, le système a un graphe de connaissances, mais pas un graphique d'exécution.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Le Knowledge Hub montre déjà pourquoi l'exécution contextuelle compte. Une relation publique n'est autorisée que lorsque les deux entités connectées sont publiques. Une publication ne peut être indexée que lorsqu'elle a la bonne classe de publication et une date de publication. Une page concept utilise sa définition différemment d'une page projet. Ce sont de petits exemples, mais ils créent un chemin vers un comportement d'exécution plus fort.
 

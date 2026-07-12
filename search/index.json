@@ -1506,29 +1506,29 @@
       5,
       1,
       null,
-      20,
+      25,
       51,
       1,
       8,
       68,
-      927
+      926
     ],
     "114": [
       10,
       1,
       null,
-      25,
+      26,
       39,
       1,
       12,
       73,
-      720
+      719
     ],
     "115": [
       8,
       1,
       null,
-      24,
+      23,
       45,
       1,
       6,
@@ -1539,18 +1539,18 @@
       8,
       1,
       null,
-      24,
+      19,
       43,
       1,
       8,
       40,
-      659
+      660
     ],
     "117": [
       6,
       1,
       null,
-      21,
+      25,
       31,
       1,
       9,
@@ -1561,7 +1561,7 @@
       9,
       1,
       null,
-      26,
+      27,
       43,
       1,
       6,
@@ -1572,12 +1572,12 @@
       5,
       1,
       null,
-      21,
+      27,
       34,
       1,
       7,
       53,
-      592
+      591
     ],
     "120": [
       6,
@@ -1588,7 +1588,7 @@
       1,
       7,
       49,
-      981
+      980
     ],
     "121": [
       3,
@@ -1605,40 +1605,40 @@
       7,
       1,
       null,
-      23,
+      30,
       45,
       1,
       7,
       53,
-      600
+      599
     ],
     "123": [
       6,
       1,
       null,
-      22,
+      25,
       36,
       1,
       9,
       51,
-      651
+      652
     ],
     "124": [
       8,
       1,
       null,
-      25,
-      53,
+      27,
+      54,
       1,
       5,
       53,
-      956
+      958
     ],
     "125": [
       7,
       1,
       null,
-      24,
+      27,
       45,
       1,
       8,
@@ -1649,29 +1649,29 @@
       6,
       1,
       null,
-      22,
+      26,
       33,
       1,
       11,
       55,
-      628
+      627
     ],
     "127": [
       5,
       1,
       null,
-      21,
+      20,
       32,
       1,
       8,
       44,
-      558
+      557
     ],
     "128": [
       7,
       1,
       null,
-      24,
+      28,
       23,
       1,
       9,
@@ -1682,18 +1682,18 @@
       7,
       1,
       null,
-      23,
+      33,
       32,
       1,
       8,
       68,
-      608
+      607
     ],
     "130": [
       7,
       1,
       null,
-      22,
+      25,
       56,
       1,
       9,
@@ -1704,7 +1704,7 @@
       5,
       1,
       null,
-      21,
+      23,
       43,
       1,
       5,
@@ -1715,19 +1715,19 @@
       7,
       1,
       null,
-      23,
+      25,
       51,
       1,
       10,
       50,
-      968
+      967
     ],
     "133": [
       10,
       1,
       null,
-      25,
-      37,
+      30,
+      38,
       1,
       11,
       66,
@@ -1737,7 +1737,7 @@
       7,
       1,
       null,
-      22,
+      26,
       45,
       1,
       8,
@@ -1748,7 +1748,7 @@
       11,
       1,
       null,
-      26,
+      23,
       48,
       1,
       9,
@@ -1764,13 +1764,13 @@
       1,
       8,
       54,
-      716
+      717
     ],
     "137": [
       6,
       1,
       null,
-      22,
+      17,
       49,
       1,
       6,
@@ -1781,7 +1781,7 @@
       6,
       1,
       null,
-      23,
+      26,
       44,
       1,
       6,
@@ -1792,40 +1792,40 @@
       7,
       1,
       null,
-      23,
+      27,
       42,
       1,
       11,
       55,
-      632
+      633
     ],
     "140": [
       6,
       1,
       null,
-      22,
+      23,
       43,
       1,
       6,
       55,
-      607
+      606
     ],
     "141": [
       11,
       1,
       null,
-      27,
+      29,
       38,
       1,
       10,
       61,
-      715
+      714
     ],
     "142": [
       5,
       1,
       null,
-      22,
+      25,
       67,
       1,
       8,
@@ -1836,18 +1836,18 @@
       11,
       1,
       null,
-      27,
+      26,
       39,
       1,
       11,
       54,
-      738
+      739
     ],
     "144": [
       8,
       1,
       null,
-      24,
+      23,
       53,
       1,
       8,
@@ -1858,7 +1858,7 @@
       8,
       1,
       null,
-      23,
+      24,
       57,
       1,
       11,
@@ -1869,12 +1869,12 @@
       8,
       1,
       null,
-      24,
+      26,
       38,
       1,
       7,
       52,
-      621
+      622
     ],
     "147": [
       6,
@@ -1891,7 +1891,7 @@
       7,
       1,
       null,
-      23,
+      28,
       45,
       1,
       7,
@@ -1902,7 +1902,7 @@
       11,
       1,
       null,
-      27,
+      22,
       38,
       1,
       9,
@@ -1913,7 +1913,7 @@
       8,
       1,
       null,
-      23,
+      29,
       43,
       1,
       6,
@@ -1924,18 +1924,18 @@
       7,
       1,
       null,
-      22,
-      39,
+      21,
+      40,
       1,
       13,
       59,
-      660
+      663
     ],
     "152": [
       8,
       1,
       null,
-      25,
+      21,
       54,
       1,
       10,
@@ -2948,12 +2948,12 @@
     4.036885245901643,
     1.1393442622950825,
     19.882422131738835,
-    22.774590163934434,
-    17.52868852459015,
+    23.04508196721312,
+    17.540983606557376,
     1.9918032786885247,
     7.188524590163935,
     58.68032786885246,
-    303.9139344262297
+    303.9139344262293
   ],
   "storedFields": {
     "0": {
@@ -4299,7 +4299,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Agents d'IA et workflows d'IA",
-      "abstract": "Cette synthèse française présente Agents d'IA et workflows d'IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Comparaison pratique des agents dirigés par le modèle, des flux de travail déterministes, de l'orchestration hybride, des autorisations d'outils, de la mémoire, de l'évaluation et de la surveillance humaine.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4311,7 +4311,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-      "abstract": "Cette synthèse française présente Recherche IA, contenu structuré et SEO par graphe de connaissances : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un article pratique sur la visibilité de la recherche sur l'IA, le contenu structuré, JSON-LD, l'identité de l'entité, le SEO du graphe de connaissances et l'autorité éditoriale durable.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4323,7 +4323,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Composition algorithmique et musique fondée sur des règles",
-      "abstract": "Cette synthèse française présente Composition algorithmique et musique fondée sur des règles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la composition algorithmique à travers les règles, les méthodes stochastiques, la cybernétique, la musique électronique, le codage créatif, les systèmes génératifs et ORETH.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4335,7 +4335,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "C2PA, Content Credentials et provenance des médias génératifs",
-      "abstract": "Cette synthèse française présente C2PA, Content Credentials et provenance des médias génératifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique de C2PA, Content Credentials, manifestes multimédias signés, revendications de provenance, limites de confiance et utilisation des archives.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4347,7 +4347,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Exécution contextuelle et runtimes de graphe",
-      "abstract": "Cette synthèse française présente Exécution contextuelle et runtimes de graphe : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'exécution contextuelle comme principe d'exécution pour les systèmes où l'identité, les relations, les permissions et l'état influencent les opérations qui peuvent se produire.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4359,7 +4359,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Pédagogie de la programmation créative, de Logo à p5.js",
-      "abstract": "Cette synthèse française présente Pédagogie de la programmation créative, de Logo à p5.js : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la pédagogie créative du codage par la programmation exploratoire, l'alphabétisation informatique, le traitement, p5.js, la rétroaction visuelle et les communautés d'apprentissage ouvert.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4371,7 +4371,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Préservation numérique et archives vivantes",
-      "abstract": "Cette synthèse française présente Préservation numérique et archives vivantes : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la préservation numérique comme une pratique culturelle active qui maintient les objets numériques, les métadonnées, la provenance et l'interprétation utilisables au fil du temps.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4383,7 +4383,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Architecture événementielle et flux d'événements",
-      "abstract": "Cette synthèse française présente Architecture événementielle et flux d'événements : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique des événements, commandes, files d'attente, journaux, courtiers, schémas, sémantique de livraison, idempotence, projections, replay et observabilité.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4407,7 +4407,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "IA générative, espace latent et workflows créatifs",
-      "abstract": "Cette synthèse française présente IA générative, espace latent et workflows créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'IA générative comme un sujet de flux de travail créatif, couvrant les espaces latents, les invites, la provenance, le risque, l'évaluation, la paternité et les systèmes d'Electronic Artefacts.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4419,7 +4419,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Systèmes génératifs, cybernétique et programmation créative",
-      "abstract": "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article retrace les systèmes génératifs de la rétroaction cybernétique et de l'art algorithmique à la codification créative, la conception sonore et la production contemporaine assistée par l'IA.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4431,7 +4431,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Comment fonctionnent vraiment les grands modèles de langage",
-      "abstract": "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication fondée sur la façon dont les grands modèles de langage transforment les tokens en prédictions par les embeddings, les couches de Transformer, l'attention, l’entraînement et l'inférence probabiliste.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4443,7 +4443,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Interaction humain-machine pour les outils créatifs",
-      "abstract": "Cette synthèse française présente Interaction humain-machine pour les outils créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique IHM pour les outils créatifs, se concentrant sur la rétroaction, l’agentivité, le flux, la récupération des erreurs, l'accessibilité, l'intelligence augmentée et les médias informatiques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4455,7 +4455,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Hypertexte et systèmes de connaissance augmentée",
-      "abstract": "Cette synthèse française présente Hypertexte et systèmes de connaissance augmentée : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'hypertexte comme une architecture de connaissance à long terme, reliant Vannevar Bush, Douglas Engelbart, liens Web, graphes de connaissances et intelligence augmentée.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4467,7 +4467,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "IIIF et objets culturels composés",
-      "abstract": "Cette synthèse française présente IIIF et objets culturels composés : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique des concepts d'API de présentation IIIF, objets composés, manifestes, toiles, annotations et interfaces d'archives culturelles.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4479,7 +4479,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Graphes de connaissances pour les infrastructures culturelles",
-      "abstract": "Cette synthèse française présente Graphes de connaissances pour les infrastructures culturelles : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique comment les graphes de connaissances soutiennent l'infrastructure culturelle en donnant aux personnes, aux œuvres, aux sources, aux concepts, aux projets et aux archives des identités stables et des relations explicites.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4491,7 +4491,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Données liées et pages publiques de connaissance",
-      "abstract": "Cette synthèse française présente Données liées et pages publiques de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique comment les pages de connaissances publiques peuvent utiliser des URL stables, JSON-LD, des identifiants orientés RDF et des liens internes pour devenir utiles aux humains, aux moteurs de recherche et aux systèmes d'IA.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4503,7 +4503,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Systèmes d’IA locaux et open source",
-      "abstract": "Cette synthèse française présente Systèmes d’IA locaux et open source : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide pratique sur l'inférence locale, les modèles à poids ouvert, l'IA à source ouverte, la quantification, le matériel, la confidentialité, la licence et l'indépendance opérationnelle.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4515,7 +4515,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Métadonnées, catalogage et mémoire culturelle",
-      "abstract": "Cette synthèse française présente Métadonnées, catalogage et mémoire culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique les métadonnées comme une couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4527,7 +4527,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Microservices, monolithes modulaires et frontières de système",
-      "abstract": "Cette synthèse française présente Microservices, monolithes modulaires et frontières de système : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Comparaison pragmatique des microservices et des monolithes modulaires à travers les limites du domaine, la propriété des données, le déploiement, les événements, l'observation et la structure de l'équipe.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4539,7 +4539,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "abstract": "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique du MCP en tant que protocole d'intégration pour les ressources, les invites, les outils, le consentement, les limites de l'hôte et les workflows d’IA fondés sur des graphes.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4551,7 +4551,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Motion design, temps et sémantique d'interface",
-      "abstract": "Cette synthèse française présente Motion design, temps et sémantique d'interface : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la conception du mouvement comme couche sémantique pour les interfaces numériques, le temps de connexion, la transition, l'attention, l'accessibilité et les Animations Web.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4563,7 +4563,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
-      "abstract": "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide durable sur l'architecture d'IA multimodale, les représentations partagées, la recherche intermodale, la génération, les médias temporels, la provenance et les applications créatives.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4575,7 +4575,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
-      "abstract": "Cette synthèse française présente Observabilité des agents d'IA et des systèmes d'appel d'outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique de la télémétrie pour les agents d'IA, les appels d'outils, les traces, les événements, les approbations, les échecs, les évaluations et la responsabilisation dans les runtimes graphes.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4587,7 +4587,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Ontologies, taxonomies et modélisation des connaissances",
-      "abstract": "Cette synthèse française présente Ontologies, taxonomies et modélisation des connaissances : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Guide pratique des taxonomies, des thésaurus, des thésaurus, des ontologies, des vocabulaires contrôlés, des OWL, des SKOS et de la modélisation sémantique durable.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4599,7 +4599,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "L’open source comme infrastructure culturelle",
-      "abstract": "Cette synthèse française présente L’open source comme infrastructure culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article présente les sources ouvertes comme des infrastructures culturelles, expliquant les licences, la maintenance, les outils créatifs, les chaînes de dépendance, les biens communs et les systèmes de connaissances publiques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4611,7 +4611,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Systèmes personnels de connaissance et jardins numériques",
-      "abstract": "Cette synthèse française présente Systèmes personnels de connaissance et jardins numériques : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique les systèmes de connaissances personnelles et les jardins numériques comme des pratiques durables pour les notes, les sources, les rétroliens, la révision, l'apprentissage public et les bibliothèques de recherche.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4623,7 +4623,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Graphisme procédural, shaders et systèmes visuels",
-      "abstract": "Cette synthèse française présente Graphisme procédural, shaders et systèmes visuels : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique les graphismes procéduraux à travers les règles, les shaders, les paramètres, WebGL, les systèmes génératifs et les grammaires visuelles pour l'art numérique et les interfaces.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4635,7 +4635,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "abstract": "Cette synthèse française présente Injection de prompt et frontières de confiance dans les systèmes de connaissance IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un article axé sur la sécurité sur l'injection de prompt, le contenu récupéré, l'utilisation d'outils, les serveurs MCP, les limites de confiance, les permissions et les workflows d'IA conscients du graphe.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4647,7 +4647,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Redis Streams pour l’orchestration",
-      "abstract": "Cette synthèse française présente Redis Streams pour l’orchestration : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide axé sur la mise en œuvre de Redis Streams, les groupes de consommateurs, les acquittements, les entrées en attente, les récupérations, l'idempotence, le trimming et l'orchestration.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4659,7 +4659,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
-      "abstract": "Cette synthèse française présente Gouvernance responsable de l'IA pour les systèmes créatifs et culturels : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un article pratique sur la gouvernance de l'IA dans les studios de création, les archives culturelles et les systèmes de connaissances, couvrant le risque, l'examen, la provenance, les droits et l'évaluation.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4671,7 +4671,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Génération augmentée par récupération et systèmes de connaissance",
-      "abstract": "Cette synthèse française présente Génération augmentée par récupération et systèmes de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication de bout en bout de l'architecture du RAG, l'ingestion, le chunking, l'intégration, la récupération hybride, les graphiques, les citations, les permissions et l'évaluation.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4683,7 +4683,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
-      "abstract": "Cette synthèse française présente Moteurs d'exécution et systèmes d'exploitation de domaine : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide au niveau des systèmes pour les moteurs d'exécution, les systèmes d'exploitation de domaine, l'identité, l'état, les autorisations, les événements, les extensions et les projections publiques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4695,7 +4695,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Archéologie du signal, mémoire audio et écoute machine",
-      "abstract": "Cette synthèse française présente Archéologie du signal, mémoire audio et écoute machine : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique l'archéologie des signaux comme un moyen de lire des traces sonores et techniques à travers l'analyse audio, la provenance, la mémoire et l'écoute automatique.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4707,7 +4707,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Pensée systémique pour la pratique créative",
-      "abstract": "Cette synthèse française présente Pensée systémique pour la pratique créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une introduction pratique aux systèmes, aux frontières, aux retours, aux stocks, aux flux, aux retards, aux points de levier et à leur utilisation dans les travaux créatifs et techniques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4719,7 +4719,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Typographie, systèmes de lecture et interfaces numériques",
-      "abstract": "Cette synthèse française présente Typographie, systèmes de lecture et interfaces numériques : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique la typographie comme infrastructure pour la lecture numérique, le polices connectées, la mise en page, la hiérarchie, l'accessibilité, les polices CSS et l'édition de connaissances de longue durée.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4731,7 +4731,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "abstract": "Cette synthèse française présente Identifiants vérifiables pour les archives culturelles et l’identité des créateurs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un article pratique sur Verifiable Credentials du W3C, identité du créateur, archives culturelles, provenance, revendications, vie privée et confiance lisible par machine.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4743,7 +4743,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Web Audio et systèmes sonores dans le navigateur",
-      "abstract": "Cette synthèse française présente Web Audio et systèmes sonores dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique Web Audio comme une architecture sonore native de navigateur pour la synthèse, le traitement, l'analyse, les essais interactifs, le codage créatif et les outils audio publics.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4755,7 +4755,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "WebNN et IA locale dans le navigateur",
-      "abstract": "Cette synthèse française présente WebNN et IA locale dans le navigateur : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique de WebNN, inférence locale navigateur, accélération matérielle, limites de confidentialité, outils créatifs et architecture d'apprentissage machine web.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -4767,7 +4767,7 @@
       "type": "publication",
       "format": "technicalArticle",
       "title": "Pourquoi les graphes sont plus puissants que les dossiers",
-      "abstract": "Cette synthèse française présente Pourquoi les graphes sont plus puissants que les dossiers : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une comparaison pratique des dossiers hiérarchiques et des modèles graphiques pour les connaissances, les projets, les archives, l'identité, la provenance et les interfaces générées.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-07-12"
@@ -5943,6 +5943,8 @@
           "100": 1,
           "103": 1,
           "107": 1,
+          "117": 1,
+          "119": 1,
           "155": 1
         },
         "4": {
@@ -6493,6 +6495,9 @@
     [
       "quantification",
       {
+        "3": {
+          "130": 1
+        },
         "4": {
           "130": 1
         },
@@ -6796,7 +6801,7 @@
         },
         "3": {
           "100": 1,
-          "152": 1
+          "133": 1
         },
         "4": {
           "112": 1,
@@ -7530,6 +7535,9 @@
     [
       "œuvres",
       {
+        "3": {
+          "128": 1
+        },
         "8": {
           "116": 1,
           "119": 2,
@@ -7548,6 +7556,9 @@
     [
       "œuvre",
       {
+        "3": {
+          "142": 1
+        },
         "4": {
           "113": 1,
           "114": 1,
@@ -7661,7 +7672,14 @@
           "109": 1,
           "110": 1,
           "111": 2,
-          "118": 1,
+          "115": 1,
+          "123": 1,
+          "126": 1,
+          "130": 2,
+          "132": 1,
+          "140": 1,
+          "146": 1,
+          "147": 1,
           "154": 1,
           "155": 1
         },
@@ -8120,6 +8138,9 @@
     [
       "édition",
       {
+        "3": {
+          "148": 1
+        },
         "8": {
           "97": 1,
           "116": 5,
@@ -8183,6 +8204,9 @@
     [
       "éditoriale",
       {
+        "3": {
+          "114": 1
+        },
         "4": {
           "115": 2,
           "118": 2,
@@ -8382,6 +8406,9 @@
     [
       "équipe",
       {
+        "3": {
+          "132": 1
+        },
         "8": {
           "112": 1,
           "120": 2,
@@ -8844,6 +8871,9 @@
     [
       "échecs",
       {
+        "3": {
+          "136": 1
+        },
         "8": {
           "113": 1,
           "120": 2,
@@ -9021,6 +9051,9 @@
     [
       "électronique",
       {
+        "3": {
+          "115": 1
+        },
         "4": {
           "137": 1,
           "147": 1
@@ -9465,8 +9498,7 @@
           "71": 1
         },
         "3": {
-          "71": 1,
-          "120": 1
+          "71": 1
         },
         "8": {
           "71": 1
@@ -9512,7 +9544,10 @@
           "58": 1,
           "71": 1,
           "75": 1,
-          "120": 1
+          "120": 1,
+          "132": 1,
+          "136": 1,
+          "145": 1
         },
         "4": {
           "120": 3,
@@ -9626,6 +9661,9 @@
     [
       "évaluations",
       {
+        "3": {
+          "136": 1
+        },
         "8": {
           "124": 1,
           "136": 1,
@@ -9640,7 +9678,11 @@
           "82": 1
         },
         "3": {
-          "82": 1
+          "82": 1,
+          "113": 1,
+          "122": 1,
+          "143": 1,
+          "144": 1
         },
         "4": {
           "113": 1,
@@ -10025,7 +10067,9 @@
         },
         "3": {
           "65": 1,
-          "71": 1
+          "71": 1,
+          "117": 1,
+          "145": 1
         },
         "4": {
           "110": 1,
@@ -10632,34 +10676,6 @@
       }
     ],
     [
-      "jeton",
-      {
-        "8": {
-          "124": 11,
-          "134": 1,
-          "135": 2,
-          "136": 1,
-          "144": 1
-        }
-      }
-    ],
-    [
-      "jetons",
-      {
-        "4": {
-          "124": 1
-        },
-        "8": {
-          "124": 9,
-          "125": 1,
-          "130": 1,
-          "134": 3,
-          "141": 1,
-          "148": 5
-        }
-      }
-    ],
-    [
       "jeu",
       {
         "8": {
@@ -10961,7 +10977,7 @@
       {
         "8": {
           "116": 1,
-          "149": 3
+          "149": 8
         }
       }
     ],
@@ -11165,6 +11181,9 @@
     [
       "journaux",
       {
+        "3": {
+          "120": 1
+        },
         "4": {
           "120": 1
         },
@@ -11233,6 +11252,8 @@
           "101": 1
         },
         "3": {
+          "114": 1,
+          "129": 1,
           "162": 1,
           "183": 1,
           "198": 1,
@@ -12224,9 +12245,6 @@
         "0": {
           "133": 1
         },
-        "3": {
-          "133": 1
-        },
         "8": {
           "124": 1,
           "136": 1,
@@ -12254,6 +12272,11 @@
     [
       "utilisation",
       {
+        "3": {
+          "116": 1,
+          "141": 1,
+          "147": 1
+        },
         "4": {
           "141": 1,
           "143": 1,
@@ -12349,6 +12372,14 @@
           "151": 6,
           "152": 2,
           "154": 1
+        }
+      }
+    ],
+    [
+      "utilisables",
+      {
+        "3": {
+          "119": 1
         }
       }
     ],
@@ -12451,6 +12482,9 @@
     [
       "utiliser",
       {
+        "3": {
+          "129": 1
+        },
         "4": {
           "120": 1
         },
@@ -12601,6 +12635,9 @@
     [
       "utiles",
       {
+        "3": {
+          "129": 1
+        },
         "8": {
           "57": 1,
           "58": 1,
@@ -12870,6 +12907,9 @@
     [
       "url",
       {
+        "3": {
+          "129": 1
+        },
         "6": {
           "17": 1,
           "70": 1
@@ -12943,46 +12983,7 @@
       "usages",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -14527,6 +14528,20 @@
           "104": 1,
           "111": 1,
           "112": 1,
+          "116": 1,
+          "119": 1,
+          "120": 1,
+          "124": 1,
+          "126": 1,
+          "127": 1,
+          "131": 1,
+          "133": 1,
+          "136": 1,
+          "144": 1,
+          "147": 1,
+          "150": 1,
+          "151": 1,
+          "152": 1,
           "154": 1,
           "157": 1,
           "158": 1,
@@ -14670,6 +14685,16 @@
           "108": 1,
           "109": 1,
           "110": 2,
+          "114": 1,
+          "122": 1,
+          "130": 1,
+          "135": 1,
+          "141": 1,
+          "142": 1,
+          "143": 1,
+          "145": 1,
+          "146": 1,
+          "149": 1,
           "153": 1,
           "154": 2,
           "155": 1
@@ -15402,8 +15427,9 @@
         "3": {
           "68": 1,
           "78": 1,
-          "139": 1,
-          "148": 1
+          "119": 1,
+          "134": 1,
+          "139": 1
         },
         "8": {
           "68": 1,
@@ -15436,7 +15462,9 @@
         "3": {
           "68": 1,
           "110": 1,
-          "119": 1
+          "119": 1,
+          "140": 1,
+          "148": 1
         },
         "4": {
           "127": 1
@@ -16149,6 +16177,7 @@
       {
         "3": {
           "109": 1,
+          "150": 1,
           "178": 1,
           "219": 1
         },
@@ -16398,6 +16427,9 @@
     [
       "niveau",
       {
+        "3": {
+          "145": 1
+        },
         "8": {
           "65": 1,
           "103": 2,
@@ -18164,6 +18196,7 @@
         "3": {
           "24": 1,
           "90": 1,
+          "139": 1,
           "208": 1
         },
         "6": {
@@ -18740,11 +18773,33 @@
           "110": 1,
           "111": 2,
           "112": 2,
-          "135": 2,
-          "138": 1,
-          "142": 1,
-          "143": 1,
-          "149": 1,
+          "113": 2,
+          "114": 4,
+          "117": 3,
+          "118": 1,
+          "119": 1,
+          "122": 2,
+          "123": 2,
+          "124": 3,
+          "125": 3,
+          "126": 1,
+          "128": 1,
+          "130": 3,
+          "132": 2,
+          "133": 1,
+          "134": 2,
+          "135": 1,
+          "139": 1,
+          "140": 1,
+          "141": 2,
+          "142": 2,
+          "143": 3,
+          "144": 4,
+          "145": 2,
+          "146": 3,
+          "148": 2,
+          "150": 1,
+          "152": 1,
           "154": 3,
           "156": 1
         },
@@ -18838,14 +18893,14 @@
           "119": 26,
           "120": 76,
           "122": 54,
-          "123": 33,
-          "124": 73,
+          "123": 34,
+          "124": 75,
           "125": 71,
           "126": 38,
           "127": 33,
           "128": 21,
           "129": 38,
-          "130": 95,
+          "130": 96,
           "131": 24,
           "132": 74,
           "133": 60,
@@ -18859,7 +18914,7 @@
           "141": 57,
           "142": 60,
           "143": 74,
-          "144": 48,
+          "144": 49,
           "145": 77,
           "146": 59,
           "147": 66,
@@ -18947,7 +19002,8 @@
           "98": 1
         },
         "3": {
-          "98": 1
+          "98": 1,
+          "147": 1
         },
         "4": {
           "147": 1
@@ -19084,6 +19140,9 @@
     [
       "leur",
       {
+        "3": {
+          "147": 1
+        },
         "8": {
           "59": 1,
           "65": 4,
@@ -19417,13 +19476,35 @@
           "103": 1,
           "105": 5,
           "111": 1,
-          "124": 1,
-          "125": 1,
+          "115": 3,
+          "117": 4,
+          "118": 1,
+          "119": 2,
+          "122": 3,
+          "123": 1,
+          "124": 4,
+          "125": 2,
           "128": 1,
-          "141": 1,
-          "143": 1,
-          "149": 1,
-          "152": 2,
+          "129": 1,
+          "130": 1,
+          "131": 1,
+          "132": 2,
+          "133": 5,
+          "134": 2,
+          "135": 3,
+          "136": 8,
+          "138": 6,
+          "139": 6,
+          "140": 7,
+          "141": 4,
+          "142": 4,
+          "143": 4,
+          "144": 3,
+          "145": 6,
+          "147": 1,
+          "148": 1,
+          "150": 2,
+          "152": 4,
           "153": 1,
           "157": 1,
           "158": 1,
@@ -19616,45 +19697,22 @@
           "95": 1,
           "105": 1,
           "113": 1,
-          "114": 1,
+          "114": 2,
           "115": 1,
-          "116": 1,
-          "117": 1,
           "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
           "122": 1,
-          "123": 1,
-          "124": 1,
           "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
           "130": 1,
-          "131": 1,
           "132": 1,
           "133": 1,
           "134": 1,
-          "135": 2,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
           "141": 1,
           "142": 1,
           "143": 1,
           "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
           "148": 1,
-          "149": 1,
           "150": 2,
-          "151": 2,
-          "152": 1,
           "154": 1,
           "155": 1,
           "156": 1
@@ -20375,6 +20433,7 @@
         },
         "8": {
           "36": 1,
+          "130": 3,
           "163": 1,
           "199": 4,
           "232": 2
@@ -20682,7 +20741,7 @@
       "lama",
       {
         "8": {
-          "130": 4
+          "130": 1
         }
       }
     ],
@@ -20790,9 +20849,31 @@
           "105": 1,
           "108": 2,
           "112": 1,
-          "118": 1,
-          "135": 1,
-          "147": 1,
+          "113": 2,
+          "114": 2,
+          "115": 3,
+          "118": 3,
+          "119": 2,
+          "122": 2,
+          "123": 4,
+          "124": 1,
+          "125": 2,
+          "130": 3,
+          "132": 2,
+          "134": 2,
+          "135": 3,
+          "136": 2,
+          "137": 1,
+          "138": 1,
+          "139": 1,
+          "141": 1,
+          "142": 1,
+          "143": 2,
+          "144": 1,
+          "146": 2,
+          "148": 4,
+          "150": 1,
+          "152": 1,
           "156": 1
         },
         "4": {
@@ -20879,14 +20960,14 @@
           "120": 76,
           "121": 5,
           "122": 71,
-          "123": 79,
-          "124": 76,
+          "123": 77,
+          "124": 74,
           "125": 50,
           "126": 48,
           "127": 41,
           "128": 44,
           "129": 51,
-          "130": 89,
+          "130": 88,
           "131": 63,
           "132": 67,
           "133": 60,
@@ -20900,7 +20981,7 @@
           "141": 43,
           "142": 111,
           "143": 91,
-          "144": 104,
+          "144": 103,
           "145": 73,
           "146": 63,
           "147": 106,
@@ -21313,6 +21394,9 @@
     [
       "latents",
       {
+        "3": {
+          "122": 1
+        },
         "8": {
           "122": 1
         }
@@ -21327,7 +21411,6 @@
         },
         "3": {
           "19": 1,
-          "122": 1,
           "191": 1
         },
         "6": {
@@ -21517,6 +21600,8 @@
           "231": 1
         },
         "3": {
+          "114": 1,
+          "129": 1,
           "162": 1,
           "183": 1,
           "198": 1,
@@ -21822,9 +21907,6 @@
         "0": {
           "130": 1
         },
-        "3": {
-          "130": 1
-        },
         "8": {
           "101": 1,
           "109": 3,
@@ -21920,6 +22002,7 @@
           "58": 1,
           "89": 1,
           "112": 1,
+          "130": 1,
           "151": 1
         },
         "4": {
@@ -22652,9 +22735,6 @@
           "118": 1,
           "187": 1
         },
-        "3": {
-          "118": 1
-        },
         "7": {
           "4": 2,
           "13": 1,
@@ -22710,6 +22790,9 @@
     [
       "longue",
       {
+        "3": {
+          "148": 1
+        },
         "8": {
           "112": 1,
           "117": 1,
@@ -22763,6 +22846,7 @@
           "15": 1,
           "37": 1,
           "46": 1,
+          "126": 1,
           "195": 1,
           "217": 1
         },
@@ -23024,6 +23108,9 @@
     [
       "lire",
       {
+        "3": {
+          "146": 1
+        },
         "8": {
           "113": 2,
           "114": 1,
@@ -23429,6 +23516,9 @@
     [
       "lisible",
       {
+        "3": {
+          "149": 1
+        },
         "8": {
           "56": 1,
           "75": 1,
@@ -23495,46 +23585,9 @@
         },
         "3": {
           "77": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
           "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "129": 1
         },
         "6": {
           "139": 1
@@ -23617,6 +23670,9 @@
     [
       "licences",
       {
+        "3": {
+          "138": 1
+        },
         "4": {
           "130": 1
         },
@@ -23632,6 +23688,9 @@
     [
       "licence",
       {
+        "3": {
+          "130": 1
+        },
         "6": {
           "89": 1
         },
@@ -23757,8 +23816,7 @@
           "81": 1
         },
         "3": {
-          "81": 1,
-          "129": 1
+          "81": 1
         },
         "4": {
           "127": 1
@@ -24300,6 +24358,9 @@
     [
       "livraison",
       {
+        "3": {
+          "120": 1
+        },
         "4": {
           "120": 1
         },
@@ -24526,46 +24587,12 @@
           "99": 1,
           "101": 1,
           "105": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
           "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
           "132": 1,
           "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
           "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
           "151": 1,
-          "152": 1,
           "155": 1,
           "157": 1,
           "158": 1,
@@ -25401,8 +25428,8 @@
           "44": 1,
           "82": 1,
           "111": 1,
-          "113": 1,
-          "122": 1,
+          "133": 1,
+          "141": 1,
           "180": 1,
           "182": 1,
           "202": 1,
@@ -25847,6 +25874,7 @@
       "w3c",
       {
         "3": {
+          "149": 1,
           "218": 1,
           "226": 1,
           "231": 1,
@@ -26513,6 +26541,7 @@
           "242": 1
         },
         "3": {
+          "140": 1,
           "173": 1,
           "209": 1,
           "242": 1
@@ -26637,7 +26666,10 @@
           "57": 1,
           "81": 1,
           "105": 2,
+          "126": 1,
+          "134": 1,
           "150": 1,
+          "151": 1,
           "171": 1,
           "172": 1,
           "195": 1,
@@ -27911,16 +27943,6 @@
       }
     ],
     [
-      "hôte",
-      {
-        "8": {
-          "133": 15,
-          "136": 1,
-          "141": 4
-        }
-      }
-    ],
-    [
       "hôtes",
       {
         "4": {
@@ -27929,6 +27951,19 @@
         "8": {
           "133": 3,
           "141": 1
+        }
+      }
+    ],
+    [
+      "hôte",
+      {
+        "3": {
+          "133": 1
+        },
+        "8": {
+          "133": 15,
+          "136": 1,
+          "141": 4
         }
       }
     ],
@@ -29273,6 +29308,9 @@
     [
       "hiérarchiques",
       {
+        "3": {
+          "152": 1
+        },
         "8": {
           "137": 1,
           "148": 1
@@ -29290,6 +29328,9 @@
     [
       "hiérarchie",
       {
+        "3": {
+          "148": 1
+        },
         "8": {
           "125": 1,
           "134": 3,
@@ -29686,8 +29727,21 @@
       }
     ],
     [
+      "hybrides",
+      {
+        "8": {
+          "113": 2,
+          "130": 1
+        }
+      }
+    ],
+    [
       "hybride",
       {
+        "3": {
+          "113": 1,
+          "144": 1
+        },
         "4": {
           "144": 1
         },
@@ -29695,15 +29749,6 @@
           "113": 1,
           "137": 1,
           "144": 4
-        }
-      }
-    ],
-    [
-      "hybrides",
-      {
-        "8": {
-          "113": 2,
-          "130": 1
         }
       }
     ],
@@ -29761,7 +29806,6 @@
           "23": 2,
           "32": 1,
           "122": 2,
-          "125": 14,
           "134": 2,
           "148": 1,
           "191": 2,
@@ -29813,7 +29857,8 @@
           "62": 1
         },
         "3": {
-          "62": 1
+          "62": 1,
+          "129": 1
         },
         "8": {
           "62": 1,
@@ -29852,6 +29897,9 @@
     [
       "humaine",
       {
+        "3": {
+          "113": 1
+        },
         "6": {
           "60": 1,
           "63": 1
@@ -29891,8 +29939,7 @@
         },
         "3": {
           "62": 1,
-          "76": 1,
-          "125": 1
+          "76": 1
         },
         "4": {
           "113": 1,
@@ -31272,7 +31319,8 @@
           "91": 1
         },
         "3": {
-          "91": 1
+          "91": 1,
+          "152": 1
         },
         "4": {
           "152": 1
@@ -31418,7 +31466,7 @@
         },
         "3": {
           "93": 2,
-          "144": 1
+          "135": 1
         },
         "6": {
           "155": 1
@@ -31480,8 +31528,9 @@
         },
         "3": {
           "55": 1,
-          "116": 1,
-          "123": 1
+          "115": 1,
+          "123": 1,
+          "140": 1
         },
         "8": {
           "55": 1,
@@ -31527,7 +31576,7 @@
           "115": 3,
           "116": 2,
           "118": 2,
-          "122": 5,
+          "122": 7,
           "123": 3,
           "124": 1,
           "125": 1,
@@ -32169,7 +32218,6 @@
           "40": 1,
           "45": 1,
           "115": 1,
-          "122": 2,
           "137": 1,
           "140": 1,
           "183": 5,
@@ -33556,6 +33604,9 @@
     [
       "groupes",
       {
+        "3": {
+          "142": 1
+        },
         "4": {
           "114": 1,
           "142": 1
@@ -33737,6 +33788,14 @@
       }
     ],
     [
+      "grammaires",
+      {
+        "3": {
+          "140": 1
+        }
+      }
+    ],
+    [
       "grammaire",
       {
         "8": {
@@ -33847,47 +33906,47 @@
     [
       "graphiques",
       {
+        "3": {
+          "144": 1,
+          "152": 1
+        },
         "4": {
           "152": 2
         },
         "8": {
-          "113": 1,
-          "114": 4,
-          "116": 4,
+          "114": 2,
+          "116": 3,
           "117": 4,
           "118": 6,
-          "119": 4,
+          "119": 3,
           "120": 1,
           "123": 5,
-          "124": 2,
           "125": 4,
           "126": 4,
           "127": 1,
           "128": 3,
           "129": 1,
-          "130": 2,
-          "131": 2,
+          "131": 1,
           "132": 4,
-          "133": 3,
-          "134": 4,
+          "133": 2,
+          "134": 3,
           "135": 5,
           "136": 1,
           "137": 3,
           "138": 1,
-          "139": 4,
-          "140": 16,
-          "141": 1,
+          "139": 3,
+          "140": 11,
           "142": 1,
           "143": 1,
           "144": 2,
           "145": 1,
-          "146": 2,
+          "146": 1,
           "147": 2,
           "148": 1,
-          "149": 3,
+          "149": 2,
           "150": 3,
-          "151": 5,
-          "152": 20
+          "151": 4,
+          "152": 17
         }
       }
     ],
@@ -33903,12 +33962,11 @@
           "116": 3,
           "117": 8,
           "118": 1,
-          "119": 1,
-          "120": 3,
+          "120": 2,
           "122": 4,
           "123": 3,
           "125": 7,
-          "126": 3,
+          "126": 2,
           "127": 4,
           "128": 9,
           "129": 3,
@@ -33947,8 +34005,7 @@
           "91": 1
         },
         "3": {
-          "91": 1,
-          "140": 1
+          "91": 1
         },
         "8": {
           "91": 1,
@@ -33959,10 +34016,13 @@
     [
       "graphismes",
       {
+        "3": {
+          "140": 1
+        },
         "8": {
           "57": 1,
           "118": 1,
-          "140": 4
+          "140": 9
         }
       }
     ],
@@ -34031,8 +34091,11 @@
         "3": {
           "55": 1,
           "58": 1,
+          "126": 1,
           "128": 1,
-          "152": 1
+          "131": 1,
+          "133": 1,
+          "136": 1
         },
         "4": {
           "136": 1,
@@ -34044,7 +34107,7 @@
           "58": 2,
           "75": 1,
           "79": 1,
-          "114": 3,
+          "114": 4,
           "117": 3,
           "119": 1,
           "123": 1,
@@ -34055,8 +34118,10 @@
           "133": 1,
           "135": 1,
           "136": 1,
+          "139": 1,
           "144": 2,
-          "145": 2
+          "145": 2,
+          "152": 1
         }
       }
     ],
@@ -34092,46 +34157,9 @@
           "75": 1,
           "79": 1,
           "95": 1,
-          "113": 1,
-          "114": 2,
-          "115": 1,
-          "116": 1,
-          "117": 2,
-          "118": 1,
-          "119": 1,
-          "120": 1,
+          "114": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
           "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "155": 1
         },
         "4": {
@@ -34214,38 +34242,43 @@
           "103": 3,
           "105": 1,
           "109": 13,
-          "113": 1,
-          "114": 6,
+          "113": 2,
+          "114": 7,
           "115": 1,
+          "116": 1,
           "117": 5,
           "118": 1,
-          "119": 1,
-          "120": 5,
+          "119": 3,
+          "120": 6,
           "121": 2,
           "122": 1,
           "123": 1,
+          "124": 2,
           "125": 2,
-          "126": 8,
+          "126": 9,
           "127": 3,
           "128": 11,
           "129": 3,
-          "131": 2,
+          "130": 2,
+          "131": 3,
           "132": 1,
-          "133": 2,
-          "134": 2,
+          "133": 3,
+          "134": 3,
           "136": 1,
           "137": 1,
           "138": 1,
           "139": 4,
           "140": 1,
-          "141": 3,
+          "141": 4,
           "142": 1,
           "144": 4,
           "145": 2,
+          "146": 1,
           "148": 1,
-          "149": 1,
+          "149": 2,
           "150": 1,
-          "152": 3,
+          "151": 1,
+          "152": 5,
           "153": 2,
           "154": 3,
           "155": 14,
@@ -34871,14 +34904,6 @@
       }
     ],
     [
-      "guérison",
-      {
-        "8": {
-          "123": 1
-        }
-      }
-    ],
-    [
       "guérir",
       {
         "8": {
@@ -34949,6 +34974,11 @@
         "3": {
           "50": 1,
           "103": 1,
+          "130": 1,
+          "135": 1,
+          "137": 1,
+          "142": 1,
+          "145": 1,
           "199": 1,
           "204": 1,
           "206": 1,
@@ -35153,7 +35183,10 @@
         },
         "3": {
           "98": 1,
-          "120": 1
+          "113": 1,
+          "122": 1,
+          "125": 1,
+          "147": 1
         },
         "4": {
           "113": 1,
@@ -35961,6 +35994,9 @@
     [
       "façon",
       {
+        "3": {
+          "124": 1
+        },
         "8": {
           "65": 1,
           "113": 6,
@@ -37025,9 +37061,6 @@
         "0": {
           "124": 1
         },
-        "3": {
-          "124": 1
-        },
         "8": {
           "132": 1,
           "135": 1,
@@ -37366,6 +37399,9 @@
     [
       "fondés",
       {
+        "3": {
+          "133": 1
+        },
         "8": {
           "140": 1
         }
@@ -37388,7 +37424,7 @@
           "115": 1
         },
         "3": {
-          "115": 1
+          "124": 1
         },
         "8": {
           "123": 1,
@@ -38674,11 +38710,10 @@
       {
         "8": {
           "122": 1,
-          "123": 2,
-          "124": 7,
-          "130": 6,
+          "123": 1,
+          "124": 5,
+          "130": 5,
           "143": 1,
-          "144": 1,
           "147": 1
         }
       }
@@ -39860,6 +39895,9 @@
     [
       "fil",
       {
+        "3": {
+          "119": 1
+        },
         "8": {
           "110": 1,
           "111": 1,
@@ -39918,7 +39956,8 @@
       "files",
       {
         "3": {
-          "17": 1
+          "17": 1,
+          "120": 1
         },
         "8": {
           "43": 1,
@@ -40524,8 +40563,7 @@
           "141": 1
         },
         "3": {
-          "132": 1,
-          "141": 1
+          "147": 1
         },
         "4": {
           "103": 1,
@@ -41159,46 +41197,7 @@
       "française",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
-          "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "121": 1
         },
         "8": {
           "137": 1
@@ -41303,9 +41302,6 @@
       "vraiment",
       {
         "0": {
-          "124": 1
-        },
-        "3": {
           "124": 1
         },
         "8": {
@@ -41527,7 +41523,7 @@
           "141": 1,
           "143": 3,
           "145": 1,
-          "149": 8
+          "149": 7
         }
       }
     ],
@@ -41579,9 +41575,6 @@
       "vérifiables",
       {
         "0": {
-          "149": 1
-        },
-        "3": {
           "149": 1
         },
         "8": {
@@ -41929,6 +41922,7 @@
         },
         "3": {
           "3": 1,
+          "149": 1,
           "218": 1,
           "227": 1
         },
@@ -41954,7 +41948,7 @@
         },
         "8": {
           "3": 2,
-          "149": 1,
+          "149": 2,
           "185": 2,
           "218": 13
         }
@@ -42392,9 +42386,6 @@
         "0": {
           "119": 1
         },
-        "3": {
-          "119": 1
-        },
         "8": {
           "119": 1,
           "131": 1,
@@ -42578,8 +42569,7 @@
         },
         "3": {
           "72": 1,
-          "86": 1,
-          "135": 1
+          "86": 1
         },
         "4": {
           "135": 1
@@ -42624,6 +42614,9 @@
     [
       "vie",
       {
+        "3": {
+          "149": 1
+        },
         "4": {
           "112": 1,
           "116": 1,
@@ -42819,9 +42812,6 @@
         "0": {
           "140": 1
         },
-        "3": {
-          "140": 1
-        },
         "8": {
           "116": 1,
           "118": 3,
@@ -42849,7 +42839,8 @@
           "91": 1
         },
         "3": {
-          "91": 1
+          "91": 1,
+          "140": 1
         },
         "8": {
           "91": 1,
@@ -42863,6 +42854,9 @@
     [
       "visuelle",
       {
+        "3": {
+          "118": 1
+        },
         "6": {
           "85": 1
         },
@@ -43277,6 +43271,9 @@
     [
       "visibilité",
       {
+        "3": {
+          "114": 1
+        },
         "8": {
           "65": 2,
           "75": 1,
@@ -43912,6 +43909,9 @@
     [
       "vocabulaires",
       {
+        "3": {
+          "137": 1
+        },
         "4": {
           "137": 1
         },
@@ -44447,6 +44447,7 @@
       "vannevar",
       {
         "3": {
+          "126": 1,
           "195": 1
         },
         "8": {
@@ -45408,7 +45409,8 @@
           "86": 1,
           "89": 1,
           "91": 1,
-          "93": 1
+          "93": 1,
+          "117": 1
         },
         "8": {
           "65": 2,
@@ -45487,6 +45489,10 @@
     [
       "ouvert",
       {
+        "3": {
+          "118": 1,
+          "130": 1
+        },
         "4": {
           "130": 1
         },
@@ -45505,6 +45511,9 @@
     [
       "ouverte",
       {
+        "3": {
+          "130": 1
+        },
         "8": {
           "113": 2,
           "118": 1,
@@ -45519,6 +45528,9 @@
     [
       "ouvertes",
       {
+        "3": {
+          "138": 1
+        },
         "4": {
           "153": 1
         },
@@ -45914,9 +45926,14 @@
           "60": 1,
           "62": 1,
           "76": 1,
+          "113": 1,
           "125": 1,
           "133": 1,
-          "136": 1
+          "136": 1,
+          "138": 1,
+          "141": 1,
+          "150": 1,
+          "151": 1
         },
         "4": {
           "113": 1,
@@ -46059,8 +46076,7 @@
       "ombres",
       {
         "8": {
-          "118": 1,
-          "140": 1
+          "118": 1
         }
       }
     ],
@@ -46431,6 +46447,9 @@
     [
       "opérations",
       {
+        "3": {
+          "117": 1
+        },
         "4": {
           "130": 1,
           "132": 1
@@ -46515,7 +46534,8 @@
           "84": 1
         },
         "3": {
-          "84": 1
+          "84": 1,
+          "130": 1
         },
         "8": {
           "56": 1,
@@ -46935,8 +46955,6 @@
           "57": 1,
           "88": 1,
           "112": 1,
-          "130": 1,
-          "138": 1,
           "181": 1,
           "187": 1,
           "199": 2,
@@ -47453,6 +47471,7 @@
           "235": 1
         },
         "3": {
+          "137": 1,
           "166": 1,
           "206": 1,
           "235": 1
@@ -47755,6 +47774,7 @@
         },
         "3": {
           "68": 1,
+          "119": 1,
           "127": 1
         },
         "4": {
@@ -48131,6 +48151,9 @@
           "95": 1,
           "103": 1
         },
+        "3": {
+          "132": 1
+        },
         "4": {
           "121": 1,
           "154": 1,
@@ -48178,7 +48201,7 @@
           "136": 1
         },
         "3": {
-          "136": 1
+          "120": 1
         },
         "4": {
           "120": 1,
@@ -49486,6 +49509,7 @@
           "100": 1
         },
         "3": {
+          "113": 1,
           "142": 1,
           "182": 1,
           "211": 1
@@ -49863,7 +49887,8 @@
       "orientés",
       {
         "3": {
-          "111": 1
+          "111": 1,
+          "129": 1
         },
         "8": {
           "56": 1,
@@ -49935,6 +49960,7 @@
         "3": {
           "108": 2,
           "110": 1,
+          "115": 1,
           "177": 2,
           "179": 1,
           "184": 1
@@ -51467,6 +51493,9 @@
     [
       "déterministes",
       {
+        "3": {
+          "113": 1
+        },
         "8": {
           "53": 1,
           "113": 4,
@@ -52314,6 +52343,9 @@
     [
       "dépendance",
       {
+        "3": {
+          "138": 1
+        },
         "8": {
           "119": 1,
           "122": 1,
@@ -52558,6 +52590,9 @@
       {
         "2": {
           "82": 1
+        },
+        "3": {
+          "132": 1
         },
         "4": {
           "132": 1
@@ -53409,46 +53444,20 @@
           "105": 1,
           "108": 2,
           "110": 1,
-          "113": 3,
-          "114": 1,
-          "115": 1,
-          "116": 1,
+          "113": 1,
           "117": 1,
           "118": 1,
-          "119": 1,
-          "120": 2,
+          "120": 1,
           "121": 1,
           "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
+          "127": 2,
           "129": 1,
-          "130": 2,
-          "131": 1,
-          "132": 1,
           "133": 2,
-          "134": 2,
           "135": 1,
-          "136": 4,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 3,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
+          "136": 2,
+          "141": 2,
+          "145": 2,
           "151": 1,
-          "152": 1,
           "153": 1,
           "154": 1,
           "177": 1
@@ -53657,7 +53666,8 @@
           "68": 1
         },
         "3": {
-          "68": 1
+          "68": 1,
+          "143": 1
         },
         "4": {
           "54": 1,
@@ -54049,9 +54059,9 @@
           "70": 1,
           "95": 1,
           "97": 1,
-          "141": 1,
-          "150": 1,
-          "151": 1,
+          "136": 1,
+          "143": 1,
+          "147": 1,
           "156": 1,
           "157": 1,
           "158": 1,
@@ -54799,7 +54809,15 @@
           "94": 1,
           "99": 1,
           "105": 1,
-          "146": 1
+          "114": 1,
+          "118": 1,
+          "119": 1,
+          "132": 1,
+          "133": 1,
+          "134": 1,
+          "141": 1,
+          "144": 1,
+          "149": 2
         },
         "4": {
           "53": 1,
@@ -54860,7 +54878,7 @@
           "113": 13,
           "114": 13,
           "115": 9,
-          "116": 15,
+          "116": 16,
           "117": 10,
           "118": 13,
           "119": 12,
@@ -54868,35 +54886,35 @@
           "121": 1,
           "122": 15,
           "123": 12,
-          "124": 18,
+          "124": 19,
           "125": 10,
           "126": 7,
           "127": 5,
           "128": 10,
           "129": 4,
-          "130": 37,
+          "130": 38,
           "131": 6,
           "132": 17,
-          "133": 19,
+          "133": 20,
           "134": 14,
           "135": 13,
           "136": 11,
           "137": 15,
           "138": 8,
-          "139": 15,
+          "139": 14,
           "140": 13,
           "141": 20,
           "142": 28,
           "143": 15,
           "144": 21,
           "145": 17,
-          "146": 10,
+          "146": 11,
           "147": 16,
           "148": 18,
-          "149": 13,
+          "149": 15,
           "150": 16,
-          "151": 30,
-          "152": 14,
+          "151": 31,
+          "152": 15,
           "153": 1,
           "154": 4,
           "155": 4,
@@ -54935,6 +54953,7 @@
       "dublin",
       {
         "3": {
+          "131": 1,
           "200": 1
         },
         "8": {
@@ -54980,6 +54999,9 @@
     [
       "durables",
       {
+        "3": {
+          "139": 1
+        },
         "8": {
           "55": 1,
           "58": 1,
@@ -55009,6 +55031,9 @@
         "3": {
           "44": 1,
           "97": 1,
+          "114": 1,
+          "135": 1,
+          "137": 1,
           "204": 1,
           "208": 1
         },
@@ -55151,6 +55176,9 @@
     [
       "durée",
       {
+        "3": {
+          "148": 1
+        },
         "8": {
           "112": 1,
           "113": 1,
@@ -56285,20 +56313,35 @@
           "109": 1,
           "111": 3,
           "112": 2,
-          "114": 1,
-          "117": 1,
-          "118": 2,
-          "124": 1,
-          "126": 1,
+          "113": 5,
+          "114": 3,
+          "116": 3,
+          "120": 1,
+          "122": 2,
+          "123": 2,
+          "124": 2,
+          "126": 2,
+          "127": 1,
           "128": 1,
-          "129": 1,
+          "129": 2,
+          "131": 2,
           "132": 1,
-          "139": 1,
-          "141": 3,
-          "143": 1,
-          "144": 1,
+          "133": 1,
+          "134": 1,
+          "136": 1,
+          "137": 1,
+          "138": 2,
+          "139": 2,
+          "141": 2,
+          "142": 2,
+          "143": 3,
+          "144": 2,
           "145": 1,
-          "148": 1,
+          "146": 1,
+          "147": 1,
+          "148": 2,
+          "150": 1,
+          "151": 2,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -56348,7 +56391,7 @@
           "133": 2,
           "134": 4,
           "135": 2,
-          "136": 2,
+          "136": 3,
           "137": 6,
           "138": 4,
           "139": 3,
@@ -56466,37 +56509,37 @@
           "110": 9,
           "111": 12,
           "112": 49,
-          "113": 124,
-          "114": 138,
+          "113": 125,
+          "114": 139,
           "115": 66,
-          "116": 107,
+          "116": 106,
           "117": 82,
           "118": 71,
-          "119": 109,
-          "120": 123,
+          "119": 110,
+          "120": 124,
           "121": 2,
           "122": 105,
-          "123": 75,
-          "124": 131,
+          "123": 74,
+          "124": 132,
           "125": 67,
           "126": 73,
           "127": 62,
           "128": 73,
           "129": 86,
-          "130": 141,
-          "131": 74,
+          "130": 143,
+          "131": 75,
           "132": 151,
-          "133": 91,
-          "134": 86,
+          "133": 93,
+          "134": 87,
           "135": 90,
-          "136": 102,
+          "136": 104,
           "137": 106,
           "138": 73,
-          "139": 90,
+          "139": 91,
           "140": 87,
-          "141": 107,
+          "141": 122,
           "142": 185,
-          "143": 108,
+          "143": 109,
           "144": 109,
           "145": 141,
           "146": 86,
@@ -56504,8 +56547,8 @@
           "148": 92,
           "149": 101,
           "150": 66,
-          "151": 91,
-          "152": 120,
+          "151": 92,
+          "152": 121,
           "153": 12,
           "154": 15,
           "155": 27,
@@ -57329,6 +57372,9 @@
           "155": 1,
           "156": 1
         },
+        "3": {
+          "129": 1
+        },
         "5": {
           "154": 1,
           "155": 2,
@@ -57586,7 +57632,6 @@
           "52": 1,
           "57": 1,
           "85": 1,
-          "134": 1,
           "192": 1,
           "203": 1
         },
@@ -57948,46 +57993,33 @@
           "107": 2,
           "109": 1,
           "111": 1,
-          "115": 1,
+          "113": 3,
           "116": 1,
+          "120": 1,
+          "125": 1,
+          "127": 1,
+          "128": 2,
+          "129": 3,
+          "132": 3,
           "133": 1,
-          "136": 2,
-          "137": 1,
-          "149": 1
+          "137": 7,
+          "138": 1,
+          "139": 1,
+          "145": 1,
+          "146": 2,
+          "152": 2
         },
         "4": {
           "113": 2,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
           "120": 1,
-          "122": 1,
-          "123": 1,
-          "124": 2,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
+          "124": 1,
           "132": 3,
-          "133": 2,
-          "134": 1,
-          "136": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
+          "133": 1,
           "141": 2,
           "143": 2,
           "144": 1,
           "145": 1,
-          "146": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1
+          "149": 1
         },
         "5": {
           "153": 2
@@ -58040,43 +58072,43 @@
           "112": 14,
           "113": 98,
           "114": 40,
-          "115": 28,
-          "116": 57,
-          "117": 38,
-          "118": 45,
-          "119": 35,
+          "115": 27,
+          "116": 56,
+          "117": 37,
+          "118": 44,
+          "119": 34,
           "120": 60,
           "121": 1,
-          "122": 41,
+          "122": 40,
           "123": 76,
-          "124": 74,
-          "125": 39,
-          "126": 42,
-          "127": 76,
+          "124": 73,
+          "125": 38,
+          "126": 41,
+          "127": 75,
           "128": 58,
-          "129": 30,
-          "130": 60,
-          "131": 39,
+          "129": 29,
+          "130": 59,
+          "131": 38,
           "132": 86,
-          "133": 66,
-          "134": 26,
+          "133": 65,
+          "134": 25,
           "135": 69,
-          "136": 73,
+          "136": 72,
           "137": 84,
-          "138": 45,
-          "139": 49,
-          "140": 33,
+          "138": 44,
+          "139": 48,
+          "140": 32,
           "141": 72,
           "142": 67,
           "143": 63,
           "144": 80,
           "145": 113,
-          "146": 56,
+          "146": 55,
           "147": 85,
-          "148": 30,
-          "149": 59,
-          "150": 45,
-          "151": 42,
+          "148": 29,
+          "149": 58,
+          "150": 44,
+          "151": 41,
           "152": 93,
           "153": 5,
           "154": 6,
@@ -59619,6 +59651,9 @@
     [
       "dirigés",
       {
+        "3": {
+          "113": 1
+        },
         "8": {
           "113": 1
         }
@@ -61999,6 +62034,7 @@
       "douglas",
       {
         "3": {
+          "126": 1,
           "195": 1
         },
         "8": {
@@ -62014,6 +62050,9 @@
     [
       "donnant",
       {
+        "3": {
+          "128": 1
+        },
         "8": {
           "131": 1
         }
@@ -62055,7 +62094,7 @@
           "75": 1,
           "81": 2,
           "96": 1,
-          "129": 1
+          "132": 1
         },
         "4": {
           "114": 1,
@@ -62181,7 +62220,8 @@
           "89": 1
         },
         "3": {
-          "89": 1
+          "89": 1,
+          "124": 1
         },
         "8": {
           "89": 1,
@@ -62417,6 +62457,7 @@
           "69": 2,
           "84": 1,
           "87": 1,
+          "132": 1,
           "145": 1
         },
         "4": {
@@ -62638,6 +62679,7 @@
           "155": 1
         },
         "8": {
+          "124": 2,
           "155": 2
         }
       }
@@ -63499,6 +63541,7 @@
         "3": {
           "62": 1,
           "110": 1,
+          "113": 1,
           "131": 1,
           "146": 1
         },
@@ -63611,46 +63654,7 @@
       "mécanismes",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
-          "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "121": 1
         },
         "8": {
           "58": 1,
@@ -63781,7 +63785,8 @@
           "64": 1
         },
         "3": {
-          "116": 1
+          "125": 1,
+          "135": 1
         },
         "4": {
           "110": 1
@@ -63875,6 +63880,9 @@
     [
       "méthodes",
       {
+        "3": {
+          "115": 1
+        },
         "6": {
           "139": 1
         },
@@ -63961,6 +63969,7 @@
           "83": 2,
           "97": 1,
           "104": 1,
+          "119": 1,
           "131": 1,
           "156": 1
         },
@@ -64516,6 +64525,10 @@
     [
       "mise",
       {
+        "3": {
+          "142": 1,
+          "148": 1
+        },
         "4": {
           "113": 1,
           "114": 1,
@@ -65462,6 +65475,9 @@
     [
       "multimédias",
       {
+        "3": {
+          "116": 1
+        },
         "8": {
           "116": 1,
           "127": 1,
@@ -65577,6 +65593,8 @@
         "3": {
           "3": 1,
           "56": 1,
+          "133": 1,
+          "141": 1,
           "202": 1,
           "210": 1
         },
@@ -65832,6 +65850,9 @@
     [
       "moyen",
       {
+        "3": {
+          "146": 1
+        },
         "8": {
           "120": 1,
           "122": 1,
@@ -66005,7 +66026,8 @@
           "85": 1
         },
         "3": {
-          "85": 1
+          "85": 1,
+          "134": 1
         },
         "8": {
           "85": 1,
@@ -66073,6 +66095,7 @@
           "145": 1
         },
         "3": {
+          "129": 1,
           "145": 1
         },
         "8": {
@@ -66166,7 +66189,6 @@
           "32": 1,
           "38": 1,
           "85": 1,
-          "134": 1,
           "203": 1
         },
         "6": {
@@ -66640,7 +66662,9 @@
           "80": 1,
           "87": 1,
           "89": 1,
-          "124": 1
+          "124": 1,
+          "130": 1,
+          "152": 1
         },
         "4": {
           "113": 1,
@@ -66716,6 +66740,7 @@
           "89": 1,
           "101": 1,
           "104": 1,
+          "113": 1,
           "154": 1
         },
         "4": {
@@ -67396,7 +67421,6 @@
           "35": 1,
           "48": 1,
           "51": 1,
-          "133": 1,
           "164": 1,
           "182": 1,
           "223": 1,
@@ -68535,6 +68559,7 @@
       "mets",
       {
         "3": {
+          "131": 1,
           "200": 1
         },
         "8": {
@@ -70093,6 +70118,9 @@
     [
       "maintient",
       {
+        "3": {
+          "119": 1
+        },
         "8": {
           "54": 1,
           "115": 1,
@@ -70193,6 +70221,7 @@
         },
         "3": {
           "88": 1,
+          "138": 1,
           "207": 1
         },
         "4": {
@@ -71132,6 +71161,10 @@
     [
       "manifestes",
       {
+        "3": {
+          "116": 1,
+          "127": 1
+        },
         "4": {
           "127": 1
         },
@@ -71486,6 +71519,9 @@
     [
       "matérielle",
       {
+        "3": {
+          "151": 1
+        },
         "8": {
           "115": 1,
           "123": 1,
@@ -71500,6 +71536,9 @@
     [
       "matériel",
       {
+        "3": {
+          "130": 1
+        },
         "4": {
           "130": 1
         },
@@ -71901,8 +71940,8 @@
           "76": 1,
           "82": 1,
           "104": 1,
-          "125": 1,
-          "146": 1,
+          "149": 1,
+          "151": 1,
           "155": 1,
           "215": 1,
           "218": 1,
@@ -72202,6 +72241,9 @@
     [
       "sécurité",
       {
+        "3": {
+          "141": 1
+        },
         "4": {
           "120": 1,
           "130": 1,
@@ -72737,7 +72779,9 @@
         "3": {
           "55": 1,
           "81": 1,
-          "134": 1
+          "120": 1,
+          "134": 1,
+          "137": 1
         },
         "4": {
           "120": 1
@@ -72939,6 +72983,7 @@
           "238": 1
         },
         "3": {
+          "137": 1,
           "169": 1,
           "206": 1,
           "238": 1
@@ -73203,7 +73248,7 @@
           "136": 2,
           "137": 3,
           "138": 1,
-          "139": 3,
+          "139": 2,
           "140": 1,
           "141": 2,
           "143": 3,
@@ -73758,8 +73803,7 @@
         "3": {
           "58": 1,
           "67": 1,
-          "98": 1,
-          "147": 1
+          "98": 1
         },
         "8": {
           "58": 1,
@@ -73808,19 +73852,17 @@
           "105": 1,
           "107": 1,
           "109": 1,
+          "115": 1,
+          "117": 1,
+          "122": 1,
           "123": 1,
-          "126": 1,
-          "130": 1,
-          "133": 1,
-          "136": 1,
+          "129": 1,
+          "138": 1,
           "139": 1,
           "140": 1,
-          "141": 1,
           "143": 1,
-          "144": 1,
-          "145": 1,
-          "148": 1,
-          "150": 1,
+          "145": 2,
+          "147": 1,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -73934,7 +73976,6 @@
           "73": 1,
           "90": 1,
           "110": 1,
-          "132": 1,
           "153": 1
         },
         "4": {
@@ -74822,46 +74863,8 @@
       "synthèse",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "150": 1
         },
         "8": {
           "58": 1,
@@ -76171,7 +76174,7 @@
           "38": 1,
           "91": 1,
           "123": 2,
-          "140": 4,
+          "140": 5,
           "187": 2,
           "192": 2,
           "209": 5,
@@ -76834,7 +76837,7 @@
         "3": {
           "94": 1,
           "105": 1,
-          "150": 1
+          "146": 1
         },
         "8": {
           "94": 1,
@@ -76851,6 +76854,10 @@
     [
       "sonore",
       {
+        "3": {
+          "123": 1,
+          "150": 1
+        },
         "6": {
           "108": 1
         },
@@ -76928,8 +76935,7 @@
         },
         "3": {
           "71": 1,
-          "89": 1,
-          "152": 1
+          "89": 1
         },
         "5": {
           "155": 1
@@ -77469,6 +77475,9 @@
           "82": 1,
           "90": 1,
           "93": 1,
+          "128": 1,
+          "138": 1,
+          "139": 1,
           "197": 1,
           "208": 1
         },
@@ -77643,7 +77652,6 @@
           "88": 1,
           "112": 1,
           "130": 1,
-          "138": 1,
           "181": 1,
           "199": 1,
           "207": 1,
@@ -77864,6 +77872,9 @@
     [
       "soutiennent",
       {
+        "3": {
+          "128": 1
+        },
         "8": {
           "55": 1,
           "103": 1,
@@ -79437,6 +79448,9 @@
     [
       "signés",
       {
+        "3": {
+          "116": 1
+        },
         "8": {
           "116": 1
         }
@@ -79525,6 +79539,9 @@
     [
       "signaux",
       {
+        "3": {
+          "146": 1
+        },
         "8": {
           "114": 1,
           "115": 2,
@@ -79585,7 +79602,6 @@
           "41": 1,
           "55": 1,
           "94": 1,
-          "146": 1,
           "215": 1
         },
         "6": {
@@ -80406,7 +80422,8 @@
         "3": {
           "61": 1,
           "69": 1,
-          "70": 1
+          "70": 1,
+          "122": 1
         },
         "8": {
           "55": 1,
@@ -80702,6 +80719,9 @@
     [
       "surveillance",
       {
+        "3": {
+          "113": 1
+        },
         "4": {
           "142": 1
         },
@@ -80735,7 +80755,16 @@
           "88": 1,
           "103": 1,
           "105": 1,
-          "115": 1
+          "114": 2,
+          "124": 1,
+          "125": 1,
+          "130": 1,
+          "133": 1,
+          "135": 1,
+          "141": 2,
+          "142": 1,
+          "143": 1,
+          "149": 1
         },
         "4": {
           "106": 1,
@@ -82093,6 +82122,9 @@
     [
       "schémas",
       {
+        "3": {
+          "120": 1
+        },
         "8": {
           "113": 4,
           "117": 1,
@@ -82814,6 +82846,7 @@
       "studios",
       {
         "3": {
+          "143": 1,
           "212": 1
         },
         "8": {
@@ -83090,19 +83123,22 @@
       }
     ],
     [
-      "stochastiques",
+      "stochastique",
       {
         "8": {
-          "115": 2,
+          "115": 5,
           "123": 1
         }
       }
     ],
     [
-      "stochastique",
+      "stochastiques",
       {
+        "3": {
+          "115": 1
+        },
         "8": {
-          "115": 5,
+          "115": 2,
           "123": 1
         }
       }
@@ -83224,6 +83260,7 @@
           "45": 1
         },
         "3": {
+          "147": 1,
           "216": 1
         },
         "4": {
@@ -84003,6 +84040,7 @@
           "29": 1,
           "75": 1,
           "82": 1,
+          "132": 1,
           "201": 1
         },
         "4": {
@@ -84678,7 +84716,9 @@
       "stables",
       {
         "3": {
-          "79": 1
+          "79": 1,
+          "128": 1,
+          "129": 1
         },
         "8": {
           "56": 1,
@@ -86168,6 +86208,7 @@
           "113": 2,
           "116": 1,
           "119": 1,
+          "123": 1,
           "124": 3,
           "127": 2,
           "129": 2,
@@ -86280,6 +86321,10 @@
     [
       "se",
       {
+        "3": {
+          "117": 1,
+          "125": 1
+        },
         "4": {
           "124": 1
         },
@@ -86634,6 +86679,9 @@
     [
       "serveurs",
       {
+        "3": {
+          "141": 1
+        },
         "4": {
           "133": 1
         },
@@ -88675,6 +88723,9 @@
     [
       "polices",
       {
+        "3": {
+          "148": 2
+        },
         "8": {
           "138": 1,
           "148": 11
@@ -88817,7 +88868,8 @@
           "89": 2
         },
         "3": {
-          "89": 2
+          "89": 2,
+          "130": 1
         },
         "6": {
           "89": 1,
@@ -88864,6 +88916,7 @@
         },
         "3": {
           "98": 1,
+          "147": 1,
           "216": 1
         },
         "4": {
@@ -89023,7 +89076,7 @@
           "137": 2,
           "141": 1,
           "143": 1,
-          "149": 6
+          "149": 5
         }
       }
     ],
@@ -89215,9 +89268,6 @@
         "0": {
           "152": 1
         },
-        "3": {
-          "152": 1
-        },
         "4": {
           "109": 1,
           "124": 1
@@ -89279,13 +89329,18 @@
           "109": 1,
           "111": 1,
           "112": 1,
+          "117": 1,
           "125": 1,
-          "128": 1,
-          "135": 1,
-          "142": 1,
-          "143": 1,
-          "147": 1,
-          "149": 1,
+          "129": 1,
+          "133": 1,
+          "134": 1,
+          "136": 1,
+          "139": 1,
+          "140": 1,
+          "145": 1,
+          "148": 1,
+          "150": 1,
+          "152": 1,
           "153": 1,
           "157": 1,
           "158": 1,
@@ -89309,13 +89364,37 @@
         "4": {
           "113": 1,
           "114": 1,
+          "115": 1,
+          "116": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "123": 1,
+          "124": 1,
+          "125": 1,
+          "126": 1,
+          "127": 1,
+          "129": 1,
+          "130": 1,
+          "131": 1,
+          "133": 1,
+          "134": 1,
           "135": 1,
+          "136": 1,
+          "138": 1,
+          "139": 1,
+          "140": 1,
           "141": 1,
           "142": 1,
           "143": 1,
           "144": 1,
           "145": 2,
-          "149": 1
+          "146": 1,
+          "148": 1,
+          "149": 1,
+          "150": 1,
+          "151": 1
         },
         "5": {
           "153": 1
@@ -89373,43 +89452,43 @@
           "112": 13,
           "113": 12,
           "114": 23,
-          "115": 13,
-          "116": 19,
-          "117": 10,
-          "118": 16,
-          "119": 17,
+          "115": 14,
+          "116": 20,
+          "117": 11,
+          "118": 17,
+          "119": 18,
           "120": 15,
           "121": 2,
-          "122": 18,
-          "123": 9,
-          "124": 23,
-          "125": 15,
-          "126": 8,
-          "127": 19,
+          "122": 19,
+          "123": 10,
+          "124": 24,
+          "125": 16,
+          "126": 9,
+          "127": 20,
           "128": 20,
-          "129": 19,
-          "130": 20,
-          "131": 16,
+          "129": 20,
+          "130": 21,
+          "131": 17,
           "132": 9,
-          "133": 14,
-          "134": 17,
+          "133": 15,
+          "134": 18,
           "135": 25,
-          "136": 17,
+          "136": 18,
           "137": 23,
-          "138": 6,
-          "139": 11,
-          "140": 13,
+          "138": 7,
+          "139": 12,
+          "140": 14,
           "141": 12,
           "142": 19,
           "143": 22,
           "144": 18,
           "145": 18,
-          "146": 16,
+          "146": 17,
           "147": 9,
-          "148": 15,
+          "148": 16,
           "149": 22,
-          "150": 10,
-          "151": 20,
+          "150": 11,
+          "151": 21,
           "152": 17,
           "153": 1,
           "154": 2,
@@ -90408,8 +90487,7 @@
         },
         "3": {
           "58": 1,
-          "98": 1,
-          "147": 1
+          "98": 1
         },
         "8": {
           "58": 1,
@@ -90528,6 +90606,10 @@
       {
         "0": {
           "156": 1
+        },
+        "3": {
+          "117": 1,
+          "129": 1
         },
         "4": {
           "124": 2
@@ -91112,6 +91194,9 @@
     [
       "personnelles",
       {
+        "3": {
+          "139": 1
+        },
         "8": {
           "126": 1,
           "136": 1,
@@ -91143,8 +91228,7 @@
           "90": 1
         },
         "3": {
-          "90": 1,
-          "139": 1
+          "90": 1
         },
         "8": {
           "90": 1,
@@ -91206,7 +91290,8 @@
           "76": 1
         },
         "3": {
-          "76": 1
+          "76": 1,
+          "128": 1
         },
         "8": {
           "65": 1,
@@ -91551,6 +91636,9 @@
           "7": 1,
           "12": 1,
           "65": 1,
+          "117": 1,
+          "141": 1,
+          "144": 1,
           "182": 1,
           "186": 1,
           "210": 1,
@@ -92099,9 +92187,6 @@
       "plus",
       {
         "0": {
-          "152": 1
-        },
-        "3": {
           "152": 1
         },
         "8": {
@@ -93650,8 +93735,11 @@
           "93": 2,
           "98": 1,
           "99": 1,
-          "114": 1,
-          "144": 1
+          "113": 1,
+          "118": 1,
+          "123": 1,
+          "124": 1,
+          "149": 1
         },
         "4": {
           "135": 1,
@@ -94017,6 +94105,9 @@
     [
       "paramètres",
       {
+        "3": {
+          "140": 1
+        },
         "8": {
           "113": 2,
           "115": 4,
@@ -94102,6 +94193,9 @@
     [
       "partagées",
       {
+        "3": {
+          "135": 1
+        },
         "8": {
           "79": 1,
           "126": 1,
@@ -94755,6 +94849,9 @@
     [
       "paternité",
       {
+        "3": {
+          "122": 1
+        },
         "8": {
           "115": 1,
           "116": 1,
@@ -95019,6 +95116,7 @@
       "page",
       {
         "3": {
+          "148": 1,
           "240": 1
         },
         "7": {
@@ -95308,6 +95406,8 @@
         },
         "3": {
           "129": 1,
+          "138": 1,
+          "145": 1,
           "155": 1
         },
         "8": {
@@ -95745,6 +95845,9 @@
     [
       "publics",
       {
+        "3": {
+          "150": 1
+        },
         "8": {
           "64": 1,
           "107": 1,
@@ -96057,46 +96160,8 @@
           "61": 1,
           "69": 1,
           "70": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
           "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "198": 1,
           "207": 1,
           "208": 1,
@@ -96346,9 +96411,6 @@
       "puissants",
       {
         "0": {
-          "152": 1
-        },
-        "3": {
           "152": 1
         },
         "8": {
@@ -96958,6 +97020,14 @@
       }
     ],
     [
+      "prédictions",
+      {
+        "3": {
+          "124": 1
+        }
+      }
+    ],
+    [
       "prédice",
       {
         "8": {
@@ -97331,6 +97401,9 @@
     [
       "présentation",
       {
+        "3": {
+          "127": 1
+        },
         "4": {
           "110": 1,
           "113": 1,
@@ -97497,46 +97570,8 @@
       "présente",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "138": 1
         },
         "8": {
           "123": 1,
@@ -97994,6 +98029,9 @@
     [
       "pragmatique",
       {
+        "3": {
+          "132": 1
+        },
         "8": {
           "129": 1,
           "137": 2
@@ -98047,7 +98085,8 @@
         },
         "3": {
           "88": 1,
-          "111": 1
+          "111": 1,
+          "139": 1
         },
         "4": {
           "115": 1,
@@ -98107,7 +98146,21 @@
           "147": 1
         },
         "3": {
-          "147": 1
+          "113": 1,
+          "114": 1,
+          "116": 1,
+          "119": 1,
+          "120": 1,
+          "127": 1,
+          "130": 1,
+          "133": 1,
+          "136": 1,
+          "137": 1,
+          "143": 1,
+          "147": 1,
+          "149": 1,
+          "151": 1,
+          "152": 1
         },
         "4": {
           "107": 1,
@@ -98411,6 +98464,7 @@
       "premis",
       {
         "3": {
+          "131": 1,
           "200": 1
         },
         "8": {
@@ -99284,6 +99338,9 @@
     [
       "principe",
       {
+        "3": {
+          "117": 1
+        },
         "8": {
           "117": 4,
           "119": 1,
@@ -99699,6 +99756,7 @@
       "privée",
       {
         "3": {
+          "149": 1,
           "156": 1
         },
         "4": {
@@ -100439,8 +100497,7 @@
           "91": 1
         },
         "3": {
-          "91": 1,
-          "140": 1
+          "91": 1
         },
         "8": {
           "91": 1,
@@ -100453,6 +100510,9 @@
     [
       "procéduraux",
       {
+        "3": {
+          "140": 1
+        },
         "8": {
           "57": 1,
           "118": 2,
@@ -100920,7 +100980,9 @@
           "94": 1,
           "98": 1,
           "99": 1,
-          "105": 1
+          "105": 1,
+          "128": 1,
+          "152": 1
         },
         "4": {
           "112": 1,
@@ -101061,6 +101123,8 @@
       {
         "3": {
           "18": 1,
+          "120": 1,
+          "145": 1,
           "189": 1,
           "214": 1
         },
@@ -101304,7 +101368,8 @@
           "72": 1
         },
         "3": {
-          "72": 1
+          "72": 1,
+          "117": 1
         },
         "8": {
           "72": 1,
@@ -101591,6 +101656,7 @@
         },
         "3": {
           "19": 1,
+          "123": 1,
           "192": 1
         },
         "4": {
@@ -101631,7 +101697,7 @@
           "116": 5,
           "119": 5,
           "122": 8,
-          "123": 7,
+          "123": 6,
           "124": 3,
           "128": 4,
           "131": 2,
@@ -101950,6 +102016,7 @@
           "96": 1,
           "97": 1,
           "133": 2,
+          "141": 1,
           "191": 7,
           "192": 1,
           "193": 2,
@@ -101976,6 +102043,7 @@
           "210": 1
         },
         "4": {
+          "136": 1,
           "205": 1
         },
         "6": {
@@ -102009,11 +102077,15 @@
           "56": 2,
           "112": 1,
           "113": 1,
+          "120": 1,
           "122": 4,
           "125": 1,
-          "133": 1,
+          "130": 1,
+          "133": 3,
           "135": 1,
-          "141": 2,
+          "136": 2,
+          "141": 15,
+          "143": 1,
           "156": 2,
           "181": 2,
           "182": 4,
@@ -102080,6 +102152,9 @@
     [
       "probabiliste",
       {
+        "3": {
+          "124": 1
+        },
         "8": {
           "124": 1
         }
@@ -102649,6 +102724,9 @@
     [
       "propriété",
       {
+        "3": {
+          "132": 1
+        },
         "4": {
           "132": 1
         },
@@ -102983,6 +103061,9 @@
     [
       "protocole",
       {
+        "3": {
+          "133": 1
+        },
         "4": {
           "146": 1
         },
@@ -103025,7 +103106,6 @@
           "233": 1
         },
         "3": {
-          "133": 1,
           "164": 1,
           "202": 1,
           "226": 1,
@@ -103343,8 +103423,7 @@
         },
         "3": {
           "66": 1,
-          "118": 1,
-          "123": 1
+          "118": 1
         },
         "6": {
           "66": 2,
@@ -103784,6 +103863,14 @@
           "41": 1,
           "92": 1,
           "116": 1,
+          "119": 1,
+          "122": 1,
+          "131": 1,
+          "135": 1,
+          "143": 1,
+          "146": 1,
+          "149": 1,
+          "152": 1,
           "185": 1,
           "188": 1,
           "191": 1,
@@ -104594,6 +104681,9 @@
     [
       "télémétrie",
       {
+        "3": {
+          "136": 1
+        },
         "4": {
           "136": 2
         },
@@ -105310,6 +105400,9 @@
     [
       "tant",
       {
+        "3": {
+          "133": 1
+        },
         "8": {
           "114": 2,
           "115": 1,
@@ -105573,7 +105666,7 @@
         },
         "8": {
           "114": 1,
-          "116": 2,
+          "116": 1,
           "128": 1,
           "130": 1,
           "134": 1,
@@ -106082,6 +106175,9 @@
     [
       "terme",
       {
+        "3": {
+          "126": 1
+        },
         "8": {
           "79": 1,
           "113": 2,
@@ -106232,6 +106328,9 @@
     [
       "temporels",
       {
+        "3": {
+          "135": 1
+        },
         "8": {
           "127": 1,
           "147": 1
@@ -106330,6 +106429,7 @@
           "134": 1
         },
         "3": {
+          "119": 1,
           "134": 1
         },
         "8": {
@@ -106629,8 +106729,7 @@
         "3": {
           "72": 1,
           "86": 1,
-          "99": 1,
-          "135": 1
+          "99": 1
         },
         "4": {
           "124": 1,
@@ -106763,7 +106862,9 @@
         },
         "3": {
           "78": 1,
-          "94": 1
+          "94": 1,
+          "146": 1,
+          "147": 1
         },
         "7": {
           "26": 1,
@@ -107904,6 +108005,9 @@
     [
       "thésaurus",
       {
+        "3": {
+          "137": 2
+        },
         "4": {
           "137": 1
         },
@@ -110122,6 +110226,7 @@
       "trimming",
       {
         "3": {
+          "142": 1,
           "211": 1,
           "237": 1
         },
@@ -110475,6 +110580,8 @@
         },
         "3": {
           "94": 1,
+          "136": 1,
+          "146": 1,
           "192": 1,
           "205": 1,
           "215": 1,
@@ -110601,6 +110708,10 @@
       {
         "3": {
           "110": 1,
+          "115": 1,
+          "132": 1,
+          "140": 1,
+          "146": 1,
           "155": 1
         },
         "8": {
@@ -110676,7 +110787,8 @@
       "travaux",
       {
         "3": {
-          "107": 1
+          "107": 1,
+          "147": 1
         },
         "4": {
           "115": 1,
@@ -110776,6 +110888,10 @@
     [
       "travail",
       {
+        "3": {
+          "113": 1,
+          "122": 1
+        },
         "4": {
           "107": 1,
           "113": 1,
@@ -110915,6 +111031,10 @@
     [
       "traitement",
       {
+        "3": {
+          "118": 1,
+          "150": 1
+        },
         "4": {
           "141": 1
         },
@@ -111286,6 +111406,7 @@
         },
         "3": {
           "85": 1,
+          "134": 1,
           "203": 1
         },
         "8": {
@@ -111557,7 +111678,7 @@
       "transformateur",
       {
         "8": {
-          "124": 4
+          "124": 3
         }
       }
     ],
@@ -111566,7 +111687,7 @@
       {
         "8": {
           "122": 3,
-          "124": 2
+          "124": 1
         }
       }
     ],
@@ -111752,7 +111873,8 @@
           "104": 1
         },
         "3": {
-          "96": 1
+          "96": 1,
+          "124": 1
         },
         "8": {
           "115": 1,
@@ -111787,6 +111909,7 @@
       {
         "8": {
           "19": 1,
+          "124": 1,
           "191": 1
         }
       }
@@ -111804,6 +111927,7 @@
         "3": {
           "27": 1,
           "72": 1,
+          "124": 1,
           "170": 1,
           "193": 1,
           "239": 1
@@ -111835,7 +111959,7 @@
           "106": 1,
           "115": 1,
           "118": 2,
-          "124": 1,
+          "124": 2,
           "129": 1,
           "133": 1,
           "134": 1,
@@ -112382,6 +112506,9 @@
     [
       "toiles",
       {
+        "3": {
+          "127": 1
+        },
         "4": {
           "127": 1
         },
@@ -112754,23 +112881,6 @@
       }
     ],
     [
-      "token",
-      {
-        "8": {
-          "124": 1,
-          "182": 1,
-          "193": 15,
-          "199": 2,
-          "201": 1,
-          "203": 1,
-          "204": 2,
-          "205": 1,
-          "213": 2,
-          "239": 1
-        }
-      }
-    ],
-    [
       "tokenisée",
       {
         "8": {
@@ -112821,6 +112931,27 @@
       }
     ],
     [
+      "token",
+      {
+        "8": {
+          "124": 12,
+          "134": 1,
+          "135": 2,
+          "136": 1,
+          "144": 1,
+          "182": 1,
+          "193": 15,
+          "199": 2,
+          "201": 1,
+          "203": 1,
+          "204": 2,
+          "205": 1,
+          "213": 2,
+          "239": 1
+        }
+      }
+    ],
+    [
       "tokens",
       {
         "2": {
@@ -112829,9 +112960,11 @@
         },
         "3": {
           "80": 1,
+          "124": 1,
           "193": 1
         },
         "4": {
+          "124": 1,
           "193": 1
         },
         "6": {
@@ -112841,6 +112974,12 @@
         "8": {
           "27": 3,
           "80": 1,
+          "124": 9,
+          "125": 1,
+          "130": 1,
+          "134": 3,
+          "141": 1,
+          "148": 5,
           "193": 9,
           "194": 1,
           "203": 3,
@@ -113548,6 +113687,7 @@
           "236": 1
         },
         "3": {
+          "129": 1,
           "167": 1,
           "198": 1,
           "236": 1
@@ -113747,7 +113887,8 @@
         "3": {
           "73": 1,
           "91": 1,
-          "115": 1
+          "115": 1,
+          "140": 1
         },
         "8": {
           "54": 1,
@@ -114303,7 +114444,7 @@
           "146": 2,
           "147": 3,
           "148": 3,
-          "149": 11,
+          "149": 6,
           "150": 1,
           "151": 1,
           "152": 3,
@@ -114848,6 +114989,9 @@
     [
       "rétroliens",
       {
+        "3": {
+          "139": 1
+        },
         "8": {
           "126": 2,
           "139": 2
@@ -114864,7 +115008,10 @@
           "67": 2
         },
         "3": {
-          "67": 2
+          "67": 2,
+          "118": 1,
+          "123": 1,
+          "125": 1
         },
         "4": {
           "147": 1
@@ -115436,6 +115583,14 @@
       }
     ],
     [
+      "récupérations",
+      {
+        "3": {
+          "142": 1
+        }
+      }
+    ],
+    [
       "récupération",
       {
         "0": {
@@ -115447,6 +115602,7 @@
         },
         "3": {
           "93": 1,
+          "125": 1,
           "144": 1
         },
         "4": {
@@ -115463,7 +115619,7 @@
           "114": 10,
           "119": 1,
           "122": 3,
-          "124": 7,
+          "124": 5,
           "125": 4,
           "126": 2,
           "128": 1,
@@ -115513,6 +115669,9 @@
     [
       "récupéré",
       {
+        "3": {
+          "141": 1
+        },
         "8": {
           "114": 1,
           "119": 1,
@@ -115695,7 +115854,7 @@
           "119": 1,
           "120": 1,
           "122": 1,
-          "123": 5,
+          "123": 6,
           "124": 2,
           "125": 1,
           "130": 1,
@@ -116304,7 +116463,8 @@
         },
         "3": {
           "97": 1,
-          "112": 1
+          "112": 1,
+          "139": 1
         },
         "8": {
           "97": 1,
@@ -116430,6 +116590,10 @@
     [
       "risque",
       {
+        "3": {
+          "122": 1,
+          "143": 1
+        },
         "8": {
           "113": 1,
           "119": 1,
@@ -116798,7 +116962,7 @@
           "5": 1,
           "52": 1,
           "58": 1,
-          "117": 1
+          "136": 1
         },
         "4": {
           "205": 1
@@ -117650,14 +117814,6 @@
       }
     ],
     [
-      "rampables",
-      {
-        "8": {
-          "114": 4
-        }
-      }
-    ],
-    [
       "rayon",
       {
         "8": {
@@ -117700,23 +117856,18 @@
     [
       "rapide",
       {
-        "4": {
-          "136": 1
-        },
         "8": {
           "113": 3,
           "116": 1,
           "118": 1,
-          "120": 1,
           "122": 1,
           "124": 1,
-          "130": 1,
-          "133": 4,
+          "133": 2,
           "134": 1,
           "135": 1,
-          "136": 4,
-          "141": 14,
-          "143": 4,
+          "136": 2,
+          "141": 1,
+          "143": 3,
           "145": 1,
           "147": 2,
           "148": 1,
@@ -117735,7 +117886,6 @@
           "132": 2,
           "135": 1,
           "136": 1,
-          "141": 1,
           "143": 1
         }
       }
@@ -117887,6 +118037,7 @@
           "5": 1,
           "40": 1,
           "58": 1,
+          "144": 1,
           "213": 1
         },
         "4": {
@@ -118430,10 +118581,10 @@
           "28": 1,
           "112": 1,
           "114": 4,
-          "119": 1,
-          "126": 3,
+          "119": 2,
+          "126": 5,
           "128": 2,
-          "129": 4,
+          "129": 5,
           "152": 1,
           "155": 1,
           "181": 1,
@@ -119436,6 +119587,31 @@
       }
     ],
     [
+      "retired",
+      {
+        "8": {
+          "212": 1
+        }
+      }
+    ],
+    [
+      "retire",
+      {
+        "8": {
+          "130": 1
+        }
+      }
+    ],
+    [
+      "retient",
+      {
+        "8": {
+          "55": 1,
+          "79": 1
+        }
+      }
+    ],
+    [
       "retrospectives",
       {
         "8": {
@@ -119448,40 +119624,6 @@
       {
         "8": {
           "139": 1
-        }
-      }
-    ],
-    [
-      "retraining",
-      {
-        "8": {
-          "199": 1,
-          "213": 1
-        }
-      }
-    ],
-    [
-      "retraités",
-      {
-        "8": {
-          "143": 1
-        }
-      }
-    ],
-    [
-      "retraiter",
-      {
-        "8": {
-          "142": 1
-        }
-      }
-    ],
-    [
-      "retraits",
-      {
-        "8": {
-          "132": 1,
-          "136": 1
         }
       }
     ],
@@ -119684,27 +119826,44 @@
       }
     ],
     [
-      "retired",
+      "retraining",
       {
         "8": {
-          "212": 1
+          "199": 1,
+          "213": 1
         }
       }
     ],
     [
-      "retire",
+      "retraités",
       {
         "8": {
-          "130": 1
+          "143": 1
         }
       }
     ],
     [
-      "retient",
+      "retraiter",
       {
         "8": {
-          "55": 1,
-          "79": 1
+          "142": 1
+        }
+      }
+    ],
+    [
+      "retraits",
+      {
+        "8": {
+          "132": 1,
+          "136": 1
+        }
+      }
+    ],
+    [
+      "retrace",
+      {
+        "3": {
+          "123": 1
         }
       }
     ],
@@ -119737,6 +119896,9 @@
     [
       "retards",
       {
+        "3": {
+          "147": 1
+        },
         "4": {
           "147": 1
         },
@@ -119829,6 +119991,9 @@
     [
       "retours",
       {
+        "3": {
+          "147": 1
+        },
         "8": {
           "123": 1
         }
@@ -121223,7 +121388,10 @@
         "3": {
           "56": 1,
           "107": 1,
-          "114": 1
+          "114": 1,
+          "129": 1,
+          "135": 1,
+          "139": 1
         },
         "4": {
           "108": 1,
@@ -121265,7 +121433,7 @@
           "120": 4,
           "122": 7,
           "123": 3,
-          "124": 4,
+          "124": 6,
           "125": 5,
           "126": 8,
           "127": 3,
@@ -122300,7 +122468,9 @@
       "reliant",
       {
         "3": {
-          "79": 1
+          "79": 1,
+          "126": 1,
+          "131": 1
         },
         "8": {
           "109": 1,
@@ -122890,6 +123060,8 @@
           "98": 2,
           "99": 1,
           "105": 1,
+          "117": 1,
+          "128": 1,
           "153": 1,
           "186": 1,
           "197": 1,
@@ -124032,7 +124204,8 @@
           "88": 1
         },
         "3": {
-          "88": 1
+          "88": 1,
+          "133": 1
         },
         "4": {
           "133": 1
@@ -124606,6 +124779,9 @@
     [
       "responsabilisation",
       {
+        "3": {
+          "136": 1
+        },
         "8": {
           "141": 1,
           "143": 1
@@ -124669,9 +124845,6 @@
       "responsable",
       {
         "0": {
-          "143": 1
-        },
-        "3": {
           "143": 1
         },
         "8": {
@@ -126003,6 +126176,10 @@
     [
       "revendications",
       {
+        "3": {
+          "116": 1,
+          "149": 1
+        },
         "8": {
           "56": 1,
           "114": 2,
@@ -126482,6 +126659,7 @@
       "replay",
       {
         "3": {
+          "120": 1,
           "189": 1
         },
         "8": {
@@ -127125,6 +127303,9 @@
     [
       "représentations",
       {
+        "3": {
+          "135": 1
+        },
         "8": {
           "79": 1,
           "124": 3,
@@ -127962,46 +128143,8 @@
           "106": 1,
           "107": 1,
           "108": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
           "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -128531,46 +128674,46 @@
           "110": 1,
           "111": 2,
           "112": 1,
-          "113": 2,
-          "114": 2,
-          "115": 2,
-          "116": 2,
-          "117": 2,
+          "113": 1,
+          "114": 1,
+          "115": 1,
+          "116": 1,
+          "117": 1,
           "118": 1,
-          "119": 2,
-          "120": 2,
+          "119": 1,
+          "120": 1,
           "121": 1,
-          "122": 2,
+          "122": 1,
           "123": 2,
           "124": 1,
           "125": 1,
-          "126": 2,
-          "127": 2,
-          "128": 1,
+          "126": 1,
+          "127": 1,
+          "128": 2,
           "129": 2,
-          "130": 2,
-          "131": 2,
+          "130": 1,
+          "131": 1,
           "132": 2,
-          "133": 2,
-          "134": 2,
-          "135": 2,
-          "136": 2,
-          "137": 2,
+          "133": 1,
+          "134": 1,
+          "135": 1,
+          "136": 1,
+          "137": 1,
           "138": 1,
           "139": 2,
           "140": 2,
-          "141": 2,
+          "141": 1,
           "142": 1,
           "143": 2,
-          "144": 2,
-          "145": 2,
+          "144": 1,
+          "145": 1,
           "146": 2,
-          "147": 1,
-          "148": 2,
-          "149": 2,
-          "150": 2,
-          "151": 2,
-          "152": 1,
+          "147": 2,
+          "148": 1,
+          "149": 1,
+          "150": 1,
+          "151": 1,
+          "152": 2,
           "153": 1,
           "154": 1,
           "155": 2,
@@ -128901,6 +129044,9 @@
     [
       "erreurs",
       {
+        "3": {
+          "125": 1
+        },
         "4": {
           "115": 1,
           "117": 1,
@@ -129062,7 +129208,7 @@
           "151": 1
         },
         "8": {
-          "151": 2
+          "151": 1
         }
       }
     ],
@@ -129139,6 +129285,7 @@
         "3": {
           "27": 1,
           "40": 1,
+          "124": 1,
           "193": 1,
           "213": 1
         },
@@ -129154,6 +129301,8 @@
         "8": {
           "19": 1,
           "40": 1,
+          "124": 1,
+          "144": 1,
           "191": 2,
           "193": 3,
           "199": 1,
@@ -129189,6 +129338,14 @@
         "8": {
           "181": 1,
           "221": 1
+        }
+      }
+    ],
+    [
+      "empaquetage",
+      {
+        "8": {
+          "151": 1
         }
       }
     ],
@@ -129911,6 +130068,9 @@
     [
       "essais",
       {
+        "3": {
+          "150": 1
+        },
         "4": {
           "132": 1
         },
@@ -129974,9 +130134,6 @@
         "0": {
           "122": 1
         },
-        "3": {
-          "122": 1
-        },
         "8": {
           "114": 1,
           "122": 5,
@@ -129996,6 +130153,9 @@
     [
       "espaces",
       {
+        "3": {
+          "122": 1
+        },
         "8": {
           "56": 1,
           "113": 1,
@@ -132302,6 +132462,12 @@
           "99": 1,
           "105": 1,
           "110": 1,
+          "124": 1,
+          "128": 1,
+          "133": 1,
+          "142": 2,
+          "144": 1,
+          "148": 1,
           "156": 1
         },
         "4": {
@@ -132912,6 +133078,7 @@
       "engelbart",
       {
         "3": {
+          "126": 1,
           "195": 1
         },
         "8": {
@@ -133240,12 +133407,17 @@
         "2": {
           "82": 1
         },
+        "3": {
+          "124": 1
+        },
         "8": {
           "82": 2,
           "96": 1,
           "112": 3,
-          "124": 1,
-          "130": 1,
+          "123": 1,
+          "124": 3,
+          "130": 2,
+          "144": 1,
           "156": 2
         }
       }
@@ -133261,6 +133433,9 @@
     [
       "entrées",
       {
+        "3": {
+          "142": 1
+        },
         "4": {
           "142": 1
         },
@@ -133533,7 +133708,8 @@
           "70": 2
         },
         "3": {
-          "70": 2
+          "70": 2,
+          "114": 1
         },
         "4": {
           "114": 1
@@ -134394,7 +134570,7 @@
         "3": {
           "65": 1,
           "89": 1,
-          "117": 1,
+          "117": 2,
           "145": 1
         },
         "4": {
@@ -135011,6 +135187,9 @@
     [
       "examen",
       {
+        "3": {
+          "143": 1
+        },
         "4": {
           "143": 1
         },
@@ -136671,6 +136850,14 @@
       }
     ],
     [
+      "explorables",
+      {
+        "8": {
+          "114": 4
+        }
+      }
+    ],
+    [
       "explorait",
       {
         "3": {
@@ -136693,7 +136880,8 @@
           "66": 1
         },
         "3": {
-          "66": 1
+          "66": 1,
+          "118": 1
         },
         "8": {
           "66": 1,
@@ -136862,6 +137050,16 @@
     [
       "explication",
       {
+        "3": {
+          "116": 1,
+          "120": 1,
+          "124": 1,
+          "127": 1,
+          "133": 1,
+          "136": 1,
+          "144": 1,
+          "151": 1
+        },
         "8": {
           "118": 1,
           "124": 2,
@@ -136921,7 +137119,8 @@
         },
         "3": {
           "63": 1,
-          "79": 1
+          "79": 1,
+          "128": 1
         },
         "8": {
           "60": 1,
@@ -137262,6 +137461,14 @@
       }
     ],
     [
+      "expliquant",
+      {
+        "3": {
+          "138": 1
+        }
+      }
+    ],
+    [
       "expliquez",
       {
         "8": {
@@ -137313,6 +137520,24 @@
     [
       "explique",
       {
+        "3": {
+          "115": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "125": 1,
+          "126": 1,
+          "128": 1,
+          "129": 1,
+          "131": 1,
+          "134": 1,
+          "139": 1,
+          "140": 1,
+          "146": 1,
+          "148": 1,
+          "150": 1
+        },
         "8": {
           "114": 3,
           "118": 1,
@@ -137773,6 +137998,7 @@
           "102": 1
         },
         "3": {
+          "145": 1,
           "214": 1
         },
         "4": {
@@ -138022,7 +138248,7 @@
         "8": {
           "3": 2,
           "56": 2,
-          "127": 22,
+          "127": 28,
           "161": 1,
           "196": 29,
           "230": 3
@@ -138033,11 +138259,13 @@
       "ihm",
       {
         "3": {
-          "57": 1
+          "57": 1,
+          "125": 1
         },
         "8": {
           "57": 1,
-          "59": 1
+          "59": 1,
+          "125": 14
         }
       }
     ],
@@ -138074,16 +138302,16 @@
           "72": 2,
           "86": 2,
           "93": 1,
-          "113": 2,
           "114": 1,
           "122": 1,
+          "123": 1,
+          "129": 1,
           "130": 1,
           "133": 1,
           "135": 1,
           "136": 1,
           "141": 1,
-          "143": 1,
-          "151": 1
+          "143": 1
         },
         "4": {
           "116": 1,
@@ -138538,14 +138766,6 @@
       }
     ],
     [
-      "imf",
-      {
-        "8": {
-          "127": 6
-        }
-      }
-    ],
-    [
       "imagined",
       {
         "8": {
@@ -138636,8 +138856,7 @@
           "86": 1
         },
         "3": {
-          "86": 1,
-          "135": 1
+          "86": 1
         },
         "4": {
           "135": 1,
@@ -139161,11 +139380,35 @@
         "4": {
           "113": 1,
           "114": 1,
+          "115": 1,
+          "116": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "123": 1,
+          "124": 1,
+          "125": 1,
+          "126": 1,
+          "127": 1,
+          "129": 1,
+          "130": 1,
+          "131": 1,
+          "133": 1,
+          "134": 1,
           "135": 1,
+          "136": 1,
+          "138": 1,
+          "139": 1,
+          "140": 1,
           "141": 1,
           "143": 1,
           "144": 1,
+          "146": 1,
+          "148": 1,
           "149": 1,
+          "150": 1,
+          "151": 1,
           "184": 1,
           "185": 1,
           "186": 1,
@@ -139194,12 +139437,35 @@
         "8": {
           "113": 1,
           "114": 1,
+          "115": 1,
+          "116": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "123": 1,
+          "124": 1,
+          "125": 1,
+          "126": 1,
+          "127": 1,
+          "129": 1,
+          "130": 1,
+          "131": 1,
+          "133": 1,
+          "134": 1,
           "135": 1,
-          "138": 1,
+          "136": 1,
+          "138": 2,
+          "139": 1,
+          "140": 1,
           "141": 1,
           "143": 1,
           "144": 1,
+          "146": 1,
+          "148": 1,
           "149": 1,
+          "150": 1,
+          "151": 1,
           "184": 1,
           "185": 1,
           "186": 1,
@@ -139955,14 +140221,6 @@
       }
     ],
     [
-      "idémpotents",
-      {
-        "8": {
-          "142": 1
-        }
-      }
-    ],
-    [
       "idémpotente",
       {
         "8": {
@@ -140106,14 +140364,32 @@
       }
     ],
     [
+      "idempotents",
+      {
+        "8": {
+          "142": 1
+        }
+      }
+    ],
+    [
       "idempotence",
       {
+        "3": {
+          "120": 1,
+          "142": 1
+        },
         "4": {
           "120": 1
         },
+        "6": {
+          "120": 1,
+          "142": 1
+        },
         "8": {
           "113": 1,
-          "120": 1
+          "120": 5,
+          "136": 1,
+          "142": 4
         }
       }
     ],
@@ -140130,16 +140406,11 @@
         "6": {
           "18": 1,
           "71": 1,
-          "120": 1,
-          "142": 1,
           "189": 1,
           "211": 1
         },
         "8": {
           "18": 1,
-          "120": 4,
-          "136": 1,
-          "142": 4,
           "182": 1,
           "189": 5,
           "205": 1,
@@ -140264,7 +140535,7 @@
         },
         "3": {
           "81": 1,
-          "149": 1
+          "129": 1
         },
         "5": {
           "155": 1
@@ -140476,6 +140747,7 @@
       {
         "3": {
           "79": 1,
+          "128": 1,
           "153": 1
         },
         "8": {
@@ -140514,7 +140786,11 @@
           "70": 2,
           "75": 1,
           "95": 1,
-          "149": 1
+          "114": 1,
+          "117": 1,
+          "145": 1,
+          "149": 1,
+          "152": 1
         },
         "4": {
           "145": 1,
@@ -141480,16 +141756,6 @@
       }
     ],
     [
-      "itinéraires",
-      {
-        "8": {
-          "119": 1,
-          "126": 2,
-          "129": 1
-        }
-      }
-    ],
-    [
       "itérations",
       {
         "8": {
@@ -142285,6 +142551,7 @@
       "ingestion",
       {
         "3": {
+          "144": 1,
           "213": 1
         },
         "8": {
@@ -142360,6 +142627,10 @@
     [
       "invites",
       {
+        "3": {
+          "122": 1,
+          "133": 1
+        },
         "8": {
           "122": 5,
           "123": 1,
@@ -142887,6 +143158,9 @@
     [
       "indépendance",
       {
+        "3": {
+          "130": 1
+        },
         "8": {
           "130": 3,
           "132": 1
@@ -143493,67 +143767,21 @@
       }
     ],
     [
-      "incidence",
+      "incidences",
       {
+        "4": {
+          "151": 1
+        },
         "8": {
-          "143": 1
+          "151": 1
         }
       }
     ],
     [
-      "incidences",
+      "incidence",
       {
-        "4": {
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "133": 1,
-          "134": 1,
-          "136": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "146": 1,
-          "148": 1,
-          "150": 1,
-          "151": 2
-        },
         "8": {
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "133": 1,
-          "134": 1,
-          "136": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "146": 1,
-          "148": 1,
-          "150": 1,
-          "151": 2
+          "143": 1
         }
       }
     ],
@@ -145273,6 +145501,7 @@
       "introduction",
       {
         "3": {
+          "147": 1,
           "216": 1
         },
         "4": {
@@ -145492,13 +145721,11 @@
       {
         "8": {
           "122": 1,
-          "124": 1,
           "130": 1,
           "135": 1,
           "137": 1,
           "142": 1,
           "143": 1,
-          "144": 1,
           "145": 2
         }
       }
@@ -145506,6 +145733,10 @@
     [
       "intégration",
       {
+        "3": {
+          "133": 1,
+          "144": 1
+        },
         "4": {
           "145": 1
         },
@@ -145939,6 +146170,8 @@
           "49": 1,
           "62": 1,
           "102": 1,
+          "125": 1,
+          "126": 1,
           "194": 1,
           "195": 1
         },
@@ -146318,6 +146551,14 @@
       }
     ],
     [
+      "intermodale",
+      {
+        "3": {
+          "135": 1
+        }
+      }
+    ],
+    [
       "intermédiaire",
       {
         "8": {
@@ -146486,7 +146727,8 @@
           "105": 1
         },
         "3": {
-          "105": 1
+          "105": 1,
+          "150": 1
         },
         "8": {
           "105": 1,
@@ -146581,8 +146823,7 @@
         "3": {
           "13": 1,
           "32": 1,
-          "76": 1,
-          "125": 1
+          "76": 1
         },
         "6": {
           "13": 1,
@@ -146843,7 +147084,8 @@
           "68": 1
         },
         "3": {
-          "68": 1
+          "68": 1,
+          "119": 1
         },
         "4": {
           "121": 1
@@ -147171,7 +147413,8 @@
       "internes",
       {
         "3": {
-          "53": 1
+          "53": 1,
+          "129": 1
         },
         "4": {
           "56": 1,
@@ -147263,7 +147506,10 @@
           "51": 1,
           "76": 1,
           "104": 1,
-          "148": 1,
+          "127": 1,
+          "134": 1,
+          "140": 1,
+          "152": 1,
           "196": 1,
           "203": 1,
           "209": 1,
@@ -147366,8 +147612,7 @@
           "23": 1,
           "32": 1,
           "57": 1,
-          "85": 1,
-          "134": 1
+          "85": 1
         },
         "6": {
           "23": 1,
@@ -147502,6 +147747,9 @@
     [
       "influencent",
       {
+        "3": {
+          "117": 1
+        },
         "8": {
           "120": 1,
           "124": 1,
@@ -147616,7 +147864,7 @@
           "128": 1
         },
         "3": {
-          "128": 1
+          "138": 1
         },
         "8": {
           "25": 1,
@@ -147640,7 +147888,8 @@
         "3": {
           "16": 1,
           "35": 1,
-          "138": 1,
+          "128": 1,
+          "148": 1,
           "197": 1,
           "207": 1,
           "217": 1
@@ -147800,6 +148049,11 @@
     [
       "inférence",
       {
+        "3": {
+          "124": 1,
+          "130": 1,
+          "151": 1
+        },
         "4": {
           "124": 1,
           "130": 1,
@@ -147885,6 +148139,9 @@
     [
       "informatique",
       {
+        "3": {
+          "118": 1
+        },
         "8": {
           "115": 1,
           "118": 2,
@@ -147905,7 +148162,8 @@
           "76": 1
         },
         "3": {
-          "76": 1
+          "76": 1,
+          "125": 1
         },
         "8": {
           "76": 1,
@@ -148450,6 +148708,7 @@
         },
         "3": {
           "67": 1,
+          "115": 1,
           "123": 1
         },
         "8": {
@@ -148782,46 +149041,7 @@
       "cette",
       {
         "3": {
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "154": 1,
           "155": 1,
           "156": 1
@@ -148939,6 +149159,26 @@
     [
       "cet",
       {
+        "3": {
+          "115": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "123": 1,
+          "125": 1,
+          "126": 1,
+          "128": 1,
+          "129": 1,
+          "131": 1,
+          "134": 1,
+          "138": 1,
+          "139": 1,
+          "140": 1,
+          "146": 1,
+          "148": 1,
+          "150": 1
+        },
         "8": {
           "54": 1,
           "108": 1,
@@ -149628,6 +149868,7 @@
       "citations",
       {
         "3": {
+          "144": 1,
           "213": 1
         },
         "6": {
@@ -150270,9 +150511,6 @@
         "0": {
           "149": 1
         },
-        "3": {
-          "149": 1
-        },
         "8": {
           "131": 1,
           "135": 1,
@@ -150286,6 +150524,9 @@
     [
       "créateur",
       {
+        "3": {
+          "149": 1
+        },
         "4": {
           "149": 1
         },
@@ -150322,8 +150563,7 @@
         "3": {
           "66": 1,
           "118": 1,
-          "123": 1,
-          "147": 1
+          "123": 1
         },
         "4": {
           "147": 1
@@ -150357,7 +150597,8 @@
       "créatives",
       {
         "3": {
-          "107": 1
+          "107": 1,
+          "135": 1
         },
         "4": {
           "130": 1
@@ -150383,6 +150624,11 @@
     [
       "créatif",
       {
+        "3": {
+          "115": 1,
+          "122": 1,
+          "150": 1
+        },
         "4": {
           "145": 1,
           "147": 1
@@ -150418,9 +150664,10 @@
           "143": 1
         },
         "3": {
-          "122": 1,
           "125": 1,
-          "143": 1
+          "138": 1,
+          "147": 1,
+          "151": 1
         },
         "6": {
           "62": 1,
@@ -150447,7 +150694,8 @@
       "création",
       {
         "3": {
-          "107": 1
+          "107": 1,
+          "143": 1
         },
         "4": {
           "144": 1
@@ -150726,6 +150974,7 @@
           "42": 1,
           "95": 1,
           "116": 1,
+          "149": 1,
           "185": 1,
           "218": 1
         },
@@ -150772,6 +151021,8 @@
           "100": 2,
           "101": 1,
           "109": 3,
+          "116": 1,
+          "149": 1,
           "178": 3,
           "182": 3,
           "183": 1,
@@ -151196,6 +151447,7 @@
         },
         "3": {
           "106": 1,
+          "148": 1,
           "160": 1,
           "175": 1,
           "217": 1,
@@ -151416,10 +151668,6 @@
           "127": 1,
           "143": 1
         },
-        "3": {
-          "127": 1,
-          "143": 1
-        },
         "8": {
           "56": 1,
           "75": 1,
@@ -151456,7 +151704,9 @@
         },
         "3": {
           "78": 1,
-          "128": 1,
+          "127": 1,
+          "138": 1,
+          "143": 1,
           "149": 1
         },
         "8": {
@@ -151486,8 +151736,9 @@
           "138": 1
         },
         "3": {
-          "131": 1,
-          "138": 1
+          "119": 1,
+          "128": 1,
+          "131": 1
         },
         "4": {
           "110": 1,
@@ -151919,7 +152170,7 @@
       {
         "8": {
           "14": 1,
-          "123": 1,
+          "123": 2,
           "126": 1,
           "192": 2,
           "195": 1
@@ -154342,20 +154593,6 @@
       }
     ],
     [
-      "chunking",
-      {
-        "3": {
-          "213": 1
-        },
-        "4": {
-          "213": 1
-        },
-        "8": {
-          "213": 5
-        }
-      }
-    ],
-    [
       "chunks",
       {
         "8": {
@@ -154370,6 +154607,21 @@
         "8": {
           "144": 1,
           "213": 2
+        }
+      }
+    ],
+    [
+      "chunking",
+      {
+        "3": {
+          "144": 1,
+          "213": 1
+        },
+        "4": {
+          "213": 1
+        },
+        "8": {
+          "213": 5
         }
       }
     ],
@@ -155291,6 +155543,9 @@
     [
       "chaînes",
       {
+        "3": {
+          "138": 1
+        },
         "4": {
           "116": 1
         },
@@ -157806,19 +158061,22 @@
       }
     ],
     [
-      "courtiers",
-      {
-        "8": {
-          "120": 1
-        }
-      }
-    ],
-    [
       "courtier",
       {
         "8": {
           "120": 6,
           "142": 1
+        }
+      }
+    ],
+    [
+      "courtiers",
+      {
+        "3": {
+          "120": 1
+        },
+        "8": {
+          "120": 1
         }
       }
     ],
@@ -157954,6 +158212,15 @@
       }
     ],
     [
+      "couvrant",
+      {
+        "3": {
+          "122": 1,
+          "143": 1
+        }
+      }
+    ],
+    [
       "couvrir",
       {
         "8": {
@@ -158004,6 +158271,9 @@
     [
       "couches",
       {
+        "3": {
+          "124": 1
+        },
         "4": {
           "124": 1
         },
@@ -158033,6 +158303,10 @@
     [
       "couche",
       {
+        "3": {
+          "131": 1,
+          "134": 1
+        },
         "5": {
           "155": 1
         },
@@ -158564,26 +158838,10 @@
       }
     ],
     [
-      "codage",
+      "codification",
       {
-        "8": {
-          "113": 1,
-          "115": 7,
-          "118": 19,
-          "122": 1,
-          "123": 8,
-          "124": 1,
-          "125": 1,
-          "130": 1,
-          "133": 1,
-          "137": 1,
-          "138": 9,
-          "140": 7,
-          "141": 1,
-          "143": 1,
-          "146": 1,
-          "147": 1,
-          "150": 3
+        "3": {
+          "123": 1
         }
       }
     ],
@@ -158676,6 +158934,35 @@
           "216": 1,
           "219": 3,
           "233": 1
+        }
+      }
+    ],
+    [
+      "codage",
+      {
+        "3": {
+          "115": 1,
+          "118": 1,
+          "150": 1
+        },
+        "8": {
+          "113": 1,
+          "115": 7,
+          "118": 19,
+          "122": 1,
+          "123": 8,
+          "124": 1,
+          "125": 1,
+          "130": 1,
+          "133": 1,
+          "137": 1,
+          "138": 9,
+          "140": 7,
+          "141": 1,
+          "143": 1,
+          "146": 1,
+          "147": 1,
+          "150": 3
         }
       }
     ],
@@ -159241,6 +159528,7 @@
           "49": 1
         },
         "3": {
+          "131": 1,
           "200": 1
         },
         "4": {
@@ -159926,16 +160214,6 @@
       }
     ],
     [
-      "connaissancess",
-      {
-        "8": {
-          "114": 2,
-          "132": 1,
-          "152": 1
-        }
-      }
-    ],
-    [
       "connaissances",
       {
         "0": {
@@ -159950,8 +160228,15 @@
         "3": {
           "79": 1,
           "114": 1,
+          "126": 1,
           "128": 1,
-          "137": 1
+          "129": 1,
+          "131": 1,
+          "138": 1,
+          "139": 1,
+          "143": 1,
+          "148": 1,
+          "152": 1
         },
         "4": {
           "115": 1,
@@ -159988,7 +160273,7 @@
           "75": 2,
           "79": 2,
           "113": 1,
-          "114": 12,
+          "114": 15,
           "115": 2,
           "116": 1,
           "117": 7,
@@ -160004,14 +160289,14 @@
           "129": 12,
           "130": 2,
           "131": 9,
-          "132": 2,
+          "132": 3,
           "133": 2,
           "134": 3,
           "135": 4,
           "136": 2,
           "137": 10,
           "138": 5,
-          "139": 25,
+          "139": 26,
           "140": 3,
           "141": 4,
           "143": 3,
@@ -160022,7 +160307,7 @@
           "148": 6,
           "149": 3,
           "150": 3,
-          "152": 7
+          "152": 8
         }
       }
     ],
@@ -160051,11 +160336,7 @@
           "57": 1,
           "58": 1,
           "90": 1,
-          "126": 1,
-          "129": 1,
-          "139": 1,
-          "141": 1,
-          "144": 1
+          "126": 1
         },
         "4": {
           "141": 1
@@ -160081,7 +160362,7 @@
           "59": 1,
           "90": 1,
           "107": 1,
-          "114": 2,
+          "114": 1,
           "123": 1,
           "126": 2,
           "129": 2,
@@ -160254,6 +160535,9 @@
     [
       "connexion",
       {
+        "3": {
+          "134": 1
+        },
         "8": {
           "79": 1,
           "113": 1,
@@ -160303,6 +160587,9 @@
     [
       "connectées",
       {
+        "3": {
+          "148": 1
+        },
         "8": {
           "113": 1,
           "117": 1,
@@ -160870,6 +161157,9 @@
     [
       "concentrant",
       {
+        "3": {
+          "125": 1
+        },
         "8": {
           "124": 1
         }
@@ -161190,7 +161480,9 @@
           "104": 1
         },
         "3": {
-          "76": 1
+          "76": 1,
+          "123": 1,
+          "134": 1
         },
         "4": {
           "113": 1,
@@ -161375,6 +161667,8 @@
           "34": 1,
           "50": 1,
           "79": 1,
+          "127": 1,
+          "128": 1,
           "196": 1,
           "197": 1
         },
@@ -161775,7 +162069,9 @@
         "3": {
           "101": 1,
           "102": 1,
-          "141": 1
+          "116": 1,
+          "141": 1,
+          "149": 1
         },
         "4": {
           "102": 1,
@@ -161852,6 +162148,10 @@
     [
       "confidentialité",
       {
+        "3": {
+          "130": 1,
+          "151": 1
+        },
         "4": {
           "130": 1,
           "136": 1,
@@ -162048,6 +162348,14 @@
       }
     ],
     [
+      "conscients",
+      {
+        "3": {
+          "141": 1
+        }
+      }
+    ],
+    [
       "console",
       {
         "8": {
@@ -162114,6 +162422,9 @@
     [
       "consommateurs",
       {
+        "3": {
+          "142": 1
+        },
         "4": {
           "142": 1
         },
@@ -163009,6 +163320,9 @@
         "2": {
           "97": 1
         },
+        "3": {
+          "133": 1
+        },
         "4": {
           "133": 1,
           "136": 1
@@ -163430,6 +163744,9 @@
     [
       "contemporaine",
       {
+        "3": {
+          "123": 1
+        },
         "8": {
           "115": 1,
           "123": 1
@@ -163548,7 +163865,8 @@
           "114": 1
         },
         "3": {
-          "114": 1
+          "114": 1,
+          "141": 1
         },
         "4": {
           "114": 1
@@ -163707,7 +164025,7 @@
           "38": 1,
           "46": 1,
           "50": 1,
-          "116": 1,
+          "116": 2,
           "128": 1,
           "129": 1,
           "175": 1,
@@ -164224,7 +164542,6 @@
           "39": 1,
           "40": 1,
           "44": 1,
-          "133": 1,
           "164": 1,
           "180": 1,
           "223": 1,
@@ -164679,6 +164996,9 @@
     [
       "contrôlés",
       {
+        "3": {
+          "137": 1
+        },
         "4": {
           "137": 1
         },
@@ -165603,6 +165923,9 @@
     [
       "commandes",
       {
+        "3": {
+          "120": 1
+        },
         "4": {
           "120": 1
         },
@@ -165788,6 +166111,9 @@
     [
       "communautés",
       {
+        "3": {
+          "118": 1
+        },
         "8": {
           "118": 1,
           "128": 1,
@@ -165811,6 +166137,9 @@
     [
       "communs",
       {
+        "3": {
+          "138": 1
+        },
         "6": {
           "88": 1
         },
@@ -166174,7 +166503,8 @@
         "3": {
           "95": 1,
           "100": 1,
-          "124": 1,
+          "128": 1,
+          "129": 1,
           "156": 1
         },
         "4": {
@@ -166260,7 +166590,17 @@
           "85": 1,
           "86": 1,
           "111": 1,
+          "117": 1,
+          "119": 1,
+          "122": 1,
+          "126": 1,
+          "131": 1,
+          "134": 1,
           "138": 1,
+          "139": 1,
+          "146": 1,
+          "148": 1,
+          "150": 1,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -166592,7 +166932,7 @@
       "compétence",
       {
         "8": {
-          "116": 2,
+          "116": 1,
           "118": 1,
           "125": 1,
           "137": 3,
@@ -167366,6 +167706,11 @@
     [
       "comparaison",
       {
+        "3": {
+          "113": 1,
+          "132": 1,
+          "152": 1
+        },
         "4": {
           "149": 1
         },
@@ -168732,6 +169077,9 @@
     [
       "bibliothèques",
       {
+        "3": {
+          "139": 1
+        },
         "8": {
           "79": 2,
           "115": 1,
@@ -168826,6 +169174,14 @@
           "191": 1,
           "193": 1,
           "206": 2
+        }
+      }
+    ],
+    [
+      "biens",
+      {
+        "3": {
+          "138": 1
         }
       }
     ],
@@ -169141,6 +169497,7 @@
       "bush",
       {
         "3": {
+          "126": 1,
           "195": 1
         },
         "8": {
@@ -171996,6 +172353,9 @@
     [
       "bout",
       {
+        "3": {
+          "144": 2
+        },
         "8": {
           "120": 2,
           "132": 6,
@@ -172528,6 +172888,10 @@
     [
       "axé",
       {
+        "3": {
+          "141": 1,
+          "142": 1
+        },
         "4": {
           "120": 1
         },
@@ -173506,6 +173870,9 @@
     [
       "agentivité",
       {
+        "3": {
+          "125": 1
+        },
         "4": {
           "113": 1
         },
@@ -174433,6 +174800,9 @@
     [
       "appels",
       {
+        "3": {
+          "136": 1
+        },
         "8": {
           "113": 4,
           "120": 7,
@@ -174450,9 +174820,6 @@
       "appel",
       {
         "0": {
-          "136": 1
-        },
-        "3": {
           "136": 1
         },
         "4": {
@@ -174567,7 +174934,10 @@
       "apprentissage",
       {
         "3": {
-          "108": 1
+          "108": 1,
+          "118": 1,
+          "139": 1,
+          "151": 1
         },
         "6": {
           "72": 1,
@@ -174728,6 +175098,9 @@
     [
       "approbations",
       {
+        "3": {
+          "136": 1
+        },
         "8": {
           "113": 1,
           "120": 1,
@@ -175200,6 +175573,7 @@
       "applications",
       {
         "3": {
+          "135": 1,
           "204": 1,
           "233": 1,
           "243": 1
@@ -175871,6 +176245,7 @@
         },
         "3": {
           "105": 1,
+          "127": 1,
           "172": 1,
           "196": 1,
           "241": 1,
@@ -175956,14 +176331,6 @@
       }
     ],
     [
-      "alphabétisation",
-      {
-        "8": {
-          "140": 1
-        }
-      }
-    ],
-    [
       "alongside",
       {
         "8": {
@@ -176039,6 +176406,17 @@
           "118": 2,
           "123": 2,
           "140": 2
+        }
+      }
+    ],
+    [
+      "alphabétisation",
+      {
+        "3": {
+          "118": 1
+        },
+        "8": {
+          "140": 1
         }
       }
     ],
@@ -176540,7 +176918,8 @@
         },
         "3": {
           "61": 2,
-          "115": 1
+          "115": 1,
+          "123": 1
         },
         "8": {
           "57": 1,
@@ -177000,46 +177379,7 @@
           "99": 1,
           "105": 1,
           "106": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
-          "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1
+          "121": 1
         },
         "4": {
           "65": 1
@@ -178698,7 +179038,11 @@
           "29": 1,
           "71": 1,
           "84": 1,
-          "120": 1,
+          "126": 1,
+          "135": 1,
+          "144": 1,
+          "150": 1,
+          "151": 1,
           "170": 1,
           "190": 1,
           "195": 1,
@@ -179249,8 +179593,13 @@
           "37": 1,
           "51": 1,
           "104": 1,
-          "119": 1,
+          "116": 1,
+          "127": 1,
+          "128": 1,
+          "131": 1,
+          "143": 1,
           "149": 1,
+          "152": 1,
           "197": 1,
           "200": 1,
           "212": 1,
@@ -179690,6 +180039,8 @@
         "3": {
           "14": 1,
           "111": 1,
+          "123": 1,
+          "140": 1,
           "180": 1,
           "192": 1,
           "209": 1
@@ -179936,6 +180287,28 @@
       "article",
       {
         "3": {
+          "114": 1,
+          "115": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "122": 1,
+          "123": 1,
+          "125": 1,
+          "126": 1,
+          "128": 1,
+          "129": 1,
+          "131": 1,
+          "134": 1,
+          "138": 1,
+          "139": 1,
+          "140": 1,
+          "141": 1,
+          "143": 1,
+          "146": 1,
+          "148": 1,
+          "149": 1,
+          "150": 1,
           "183": 1,
           "184": 1,
           "186": 1,
@@ -180373,46 +180746,8 @@
           "106": 1,
           "107": 1,
           "108": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
           "121": 1,
           "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1,
-          "127": 1,
-          "128": 1,
-          "129": 1,
-          "130": 1,
-          "131": 1,
-          "132": 1,
-          "133": 1,
-          "134": 1,
-          "135": 1,
-          "136": 1,
-          "137": 1,
-          "138": 1,
-          "139": 1,
-          "140": 1,
-          "141": 1,
-          "142": 1,
-          "143": 1,
-          "144": 1,
-          "145": 1,
-          "146": 1,
-          "147": 1,
-          "148": 1,
-          "149": 1,
-          "150": 1,
-          "151": 1,
-          "152": 1,
           "157": 1,
           "158": 1,
           "159": 1,
@@ -181076,8 +181411,8 @@
         "3": {
           "62": 1,
           "93": 1,
-          "126": 1,
-          "144": 1
+          "125": 1,
+          "126": 1
         },
         "6": {
           "62": 1,
@@ -181327,6 +181662,11 @@
     [
       "aux",
       {
+        "3": {
+          "128": 6,
+          "129": 3,
+          "147": 7
+        },
         "4": {
           "124": 1,
           "137": 1,
@@ -181484,7 +181824,9 @@
           "101": 1
         },
         "3": {
-          "53": 1
+          "53": 1,
+          "119": 1,
+          "145": 1
         },
         "4": {
           "113": 1
@@ -181676,9 +182018,8 @@
           "86": 1,
           "97": 1,
           "105": 2,
-          "135": 1,
           "146": 1,
-          "150": 1,
+          "150": 2,
           "172": 1,
           "215": 1,
           "219": 2,
@@ -182458,6 +182799,10 @@
     [
       "autorisations",
       {
+        "3": {
+          "113": 1,
+          "145": 1
+        },
         "4": {
           "113": 1,
           "144": 1,
@@ -182516,7 +182861,8 @@
           "102": 1
         },
         "3": {
-          "95": 1
+          "95": 1,
+          "114": 1
         },
         "4": {
           "95": 1
@@ -182811,6 +183157,9 @@
     [
       "automatique",
       {
+        "3": {
+          "146": 1
+        },
         "6": {
           "72": 1,
           "82": 1,
@@ -183537,6 +183886,9 @@
     [
       "assistée",
       {
+        "3": {
+          "123": 1
+        },
         "8": {
           "55": 1,
           "115": 1,
@@ -184199,6 +184551,14 @@
       }
     ],
     [
+      "acquittements",
+      {
+        "3": {
+          "142": 1
+        }
+      }
+    ],
+    [
       "acquièrent",
       {
         "8": {
@@ -184467,6 +184827,9 @@
     [
       "accélération",
       {
+        "3": {
+          "151": 1
+        },
         "8": {
           "151": 5
         }
@@ -184875,6 +185238,11 @@
     [
       "accessibilité",
       {
+        "3": {
+          "125": 1,
+          "134": 1,
+          "148": 1
+        },
         "6": {
           "76": 1,
           "99": 1,
@@ -185590,6 +185958,7 @@
         },
         "3": {
           "68": 1,
+          "119": 1,
           "188": 1
         },
         "8": {
@@ -186117,7 +186486,9 @@
           "96": 1
         },
         "3": {
-          "94": 1
+          "94": 1,
+          "146": 1,
+          "150": 1
         },
         "8": {
           "58": 1,
@@ -186301,6 +186672,7 @@
           "240": 1
         },
         "3": {
+          "134": 1,
           "171": 1,
           "203": 1,
           "240": 1
@@ -186522,6 +186894,7 @@
       "annotations",
       {
         "3": {
+          "127": 1,
           "196": 1
         },
         "4": {
@@ -188356,6 +188729,8 @@
         "3": {
           "27": 1,
           "85": 1,
+          "124": 1,
+          "134": 1,
           "193": 1,
           "203": 1,
           "239": 1
@@ -188444,6 +188819,10 @@
     [
       "attente",
       {
+        "3": {
+          "120": 1,
+          "142": 1
+        },
         "4": {
           "142": 1
         },

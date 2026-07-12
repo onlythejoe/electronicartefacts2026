@@ -5,8 +5,8 @@ slug:
   canonical: hypertext-and-augmented-knowledge-systems
 title: Hypertexte et systèmes de connaissance augmentée
 subtitle: Article technique
-abstract: "Cette synthèse française présente Hypertexte et systèmes de connaissance augmentée : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Hypertexte et systèmes de connaissance augmentée dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique l'hypertexte comme une architecture de connaissance à long terme, reliant Vannevar Bush, Douglas Engelbart, liens Web, graphes de connaissances et intelligence augmentée."
+description: "Un article technique sur l'hypertexte, l'intelligence augmentée, les pages liées, les graphes de connaissances et l'édition électronique des connaissances d’Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:researchField:runtime-theory
 claims:
-  - Hypertexte et systèmes de connaissance augmentée doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'hypertexte n'est pas seulement un modèle de navigation; c'est une théorie de la connaissance associative."
+  - "Les graphes de connaissances rendent l'hypertexte plus durable en donnant aux objets liés des identités stables et des relations typées."
 evidence:
   - id: ea:concept:hypertext
   - id: ea:concept:knowledge-graph
@@ -56,7 +55,7 @@ sources:
     url: https://www.rfc-editor.org/info/rfc3986/
 citation:
   preferred: Electronic Artefacts. "Hypertexte et systèmes de connaissance augmentée". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - Hypertext
   - intelligence augmentée
@@ -125,7 +124,7 @@ Dans Electronic Artefacts, cette architecture apparaît déjà à travers des pa
 
 La mise en œuvre commence en première matière. Chaque article doit nommer les sujets, les sources, les revendications et les preuves. Le corps devrait alors expliquer ces relations en langage. Un lien vers VASTE ne devrait pas apparaître parce que VASTE existe; il devrait apparaître parce que l'article traite des systèmes d'exécution, de l'exécution contextuelle ou de l'infrastructure basée sur des graphiques.
 
-Les liaisons internes devraient indiquer des itinéraires stables. Les mentions conceptuelles devraient devenir des liens conceptuels lorsqu'elles aident le lecteur. Les articles devraient comprendre des sections « concepts connexes » et « articles connexes », mais ces sections devraient être curées plutôt que génériques.
+Les liaisons internes devraient indiquer des routes stables. Les mentions conceptuelles devraient devenir des liens conceptuels lorsqu'elles aident le lecteur. Les articles devraient comprendre des sections « concepts connexes » et « articles connexes », mais ces sections devraient être curées plutôt que génériques.
 
 Au moment de la construction, le site peut générer des voisinages du graphe et des documents de recherche. À l'heure de l'écriture, l'éditeur rend un jugement.
 
@@ -145,7 +144,7 @@ Les outils utiles comprennent la génération de sites statiques, le Markdown av
 
 ## Éléments de preuve
 
-Electronic Artefacts a déjà le fondement nécessaire : enregistrements d'entités, relations typées, itinéraires canoniques, routes d’identification et vues graphiques générées. Les nouveaux articles de Knowledge Hub rendent cette infrastructure visible pour les lecteurs.
+Electronic Artefacts a déjà le fondement nécessaire : enregistrements d'entités, relations typées, routes canoniques, routes d’identification et vues graphiques générées. Les nouveaux articles de Knowledge Hub rendent cette infrastructure visible pour les lecteurs.
 
 La preuve la plus forte est la navigation: un lecteur peut passer de cet article à [Hypertexte](/fr/knowledge/concepts/hypertext/), [Intelligence augmentée](/fr/knowledge/concepts/augmented-intelligence/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/) et [Données liées](/fr/knowledge/concepts/linked-data/) sans quitter le cadre conceptuel.
 
@@ -163,11 +162,11 @@ La deuxième erreur est la confusion des étiquettes avec les relations. Mots-cl
 
 La troisième erreur est de laisser le temps dominer la structure. Les flux chronologiques sont utiles, mais une bibliothèque de recherche devrait privilégier les concepts, les sources et les questions durables.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
 Electronic Artefacts devraient traiter chaque article majeur comme un nœud dans un système de connaissances à long terme. VASTE, ORETH, Palimpsests et V6 doivent être liés lorsqu'ils illuminent un sujet, et non lorsqu'une promotion est nécessaire.
 
-L'avantage du site n'est pas seulement ses projets. C'est la capacité d'expliquer les idées techniques, artistiques et historiques derrière ces projets dans un graphique public réutilisable.
+L'avantage du site n'est pas seulement ses projets. C'est la capacité d'expliquer les idées techniques, artistiques et historiques derrière ces projets dans un graphe public réutilisable.
 
 ## Travaux futurs
 

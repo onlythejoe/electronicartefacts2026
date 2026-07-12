@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
       "name": "C2PA, Content Credentials et provenance des médias génératifs",
-      "description": "Repères pour comprendre C2PA, Content Credentials et provenance des médias génératifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre C2PA et les Content Credentials pour la provenance des médias, l'étiquetage générique de l'IA, la confiance dans les archives et les processus de production culturelle.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
       "name": "C2PA, Content Credentials et provenance des médias génératifs",
       "headline": "C2PA, Content Credentials et provenance des médias génératifs",
-      "abstract": "Cette synthèse française présente C2PA, Content Credentials et provenance des médias génératifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente C2PA, Content Credentials et provenance des médias génératifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Une explication pratique de C2PA, Content Credentials, manifestes multimédias signés, revendications de provenance, limites de confiance et utilisation des archives.",
+      "description": "Une explication pratique de C2PA, Content Credentials, manifestes multimédias signés, revendications de provenance, limites de confiance et utilisation des archives.",
       "url": "https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/#webpage"
@@ -79,7 +79,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1832,
       "citation": [
-        "Electronic Artefacts. \"C2PA, Content Credentials et provenance des médias génératifs\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"C2PA, Content Credentials et provenance des médias génératifs\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "C2PA Specifications 2.4",

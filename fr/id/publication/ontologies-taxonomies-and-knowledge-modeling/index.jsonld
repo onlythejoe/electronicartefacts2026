@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "name": "Ontologies, taxonomies et modélisation des connaissances",
-      "description": "Repères pour comprendre Ontologies, taxonomies et modélisation des connaissances dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre les différences entre taxonomies et ontologies et apprendre à concevoir un modèle de connaissance durable sans sur-ingénierie.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
       "name": "Ontologies, taxonomies et modélisation des connaissances",
       "headline": "Ontologies, taxonomies et modélisation des connaissances",
-      "abstract": "Cette synthèse française présente Ontologies, taxonomies et modélisation des connaissances : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Ontologies, taxonomies et modélisation des connaissances : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Guide pratique des taxonomies, des thésaurus, des thésaurus, des ontologies, des vocabulaires contrôlés, des OWL, des SKOS et de la modélisation sémantique durable.",
+      "description": "Guide pratique des taxonomies, des thésaurus, des thésaurus, des ontologies, des vocabulaires contrôlés, des OWL, des SKOS et de la modélisation sémantique durable.",
       "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/#webpage"
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 2675,
       "citation": [
-        "Electronic Artefacts. \"Ontologies, taxonomies et modélisation des connaissances\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Ontologies, taxonomies et modélisation des connaissances\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "OWL 2 Web Ontology Language Document Overview",

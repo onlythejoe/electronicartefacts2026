@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "description": "Repères pour comprendre Identifiants vérifiables pour les archives culturelles et l’identité des créateurs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Comprendre comment les justificatifs vérifiables peuvent soutenir l'identité du créateur, la provenance des archives, les flux de travail des droits et les revendications de confiance dans les systèmes de connaissances culturelles.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
       "headline": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "abstract": "Cette synthèse française présente Identifiants vérifiables pour les archives culturelles et l’identité des créateurs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Identifiants vérifiables pour les archives culturelles et l’identité des créateurs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un article pratique sur Verifiable Credentials du W3C, identité du créateur, archives culturelles, provenance, revendications, vie privée et confiance lisible par machine.",
+      "description": "Un article pratique sur Verifiable Credentials du W3C, identité du créateur, archives culturelles, provenance, revendications, vie privée et confiance lisible par machine.",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage"
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1820,
+      "wordCount": 1821,
       "citation": [
-        "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Verifiable Credentials Data Model v2.0",

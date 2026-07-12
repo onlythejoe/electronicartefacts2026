@@ -5,8 +5,8 @@ slug:
   canonical: prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 title: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
 subtitle: Article technique
-abstract: "Cette synthèse française présente Injection de prompt et frontières de confiance dans les systèmes de connaissance IA : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Injection de prompt et frontières de confiance dans les systèmes de connaissance IA dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Un article axé sur la sécurité sur l'injection de prompt, le contenu récupéré, l'utilisation d'outils, les serveurs MCP, les limites de confiance, les permissions et les workflows d'IA conscients du graphe."
+description: "Comprendre l'injection de prompt dans les systèmes de connaissances d'IA par la récupération, les agents, les outils MCP, les permissions, le contenu non fiable et l'exécution contextuelle."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-25
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,9 +29,8 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:technology:model-context-protocol
 claims:
-  - Injection de prompt et frontières de confiance dans les systèmes de connaissance IA doit être
-    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "L'injection de prompt est un échec lié à la confiance où un contenu non fiable peut influencer le comportement du modèle au-delà de son autorité."
+  - "Les systèmes de connaissances sur l'IA devraient traiter les pages récupérées, les dossiers d'archives et les réponses aux outils comme des données, tandis que les politiques, les autorisations et l'autorité des outils demeurent en dehors de la transcription du modèle."
 evidence:
   - id: ea:concept:ai-agent
   - id: ea:technology:model-context-protocol
@@ -50,7 +49,7 @@ sources:
     url: https://www.nist.gov/itl/ai-risk-management-framework
 citation:
   preferred: Electronic Artefacts. "Injection de prompt et frontières de confiance dans les systèmes
-    de connaissance IA". Article technique, version 1.1.0, 2026.
+    de connaissance IA". Article technique, version 1.1.1, 2026.
 tags:
   - Prompt Injection
   - AI Security
@@ -67,13 +66,13 @@ translationOf: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowle
 
 ## Problème
 
-Les systèmes de connaissances AI lisent des documents, récupèrent des pages Web, inspectent des archives, appellent des outils et parfois écrivent des données. L'injection rapide se produit lorsque le contenu non fiable manipule le modèle en ignorant les limites, en révélant des données, en invoquant des outils ou en produisant une production trompeuse.
+Les systèmes de connaissances AI lisent des documents, récupèrent des pages Web, inspectent des archives, appellent des outils et parfois écrivent des données. L'injection de prompt se produit lorsque le contenu non fiable manipule le modèle en ignorant les limites, en révélant des données, en invoquant des outils ou en produisant une production trompeuse.
 
-Le problème n'est pas seulement les invitations malveillantes des utilisateurs. L'injection rapide indirecte peut arriver par des pages récupérées, des commentaires, des PDF, des courriels, des champs de métadonnées, des descriptions de problèmes, des textes de transcription ou des réponses d'outils. Si le système traite tous les textes comme des instructions, chaque source devient un canal de commande potentiel.
+Le problème n'est pas seulement les invitations malveillantes des utilisateurs. L'injection de prompt indirecte peut arriver par des pages récupérées, des commentaires, des PDF, des courriels, des champs de métadonnées, des descriptions de problèmes, des textes de transcription ou des réponses d'outils. Si le système traite tous les textes comme des instructions, chaque source devient un canal de commande potentiel.
 
 ## Présentation
 
-L'injection rapide est l'un des problèmes de sécurité des applications de modèle de langue. OWASP énumère l'injection rapide comme un risque majeur d'application LLM, en plus de la gestion des sorties non sécurisées, de la divulgation d'informations sensibles, de la conception de plugins non sécurisée et d'une agence excessive.
+L'injection de prompt est l'un des problèmes de sécurité des applications de modèle de langue. OWASP énumère l'injection de prompt comme un risque majeur d'application LLM, en plus de la gestion des sorties non sécurisées, de la divulgation d'informations sensibles, de la conception de plugins non sécurisée et d'une agence excessive.
 
 Les systèmes de connaissances sont particulièrement exposés parce que leur valeur provient de la lecture de documents externes ou semi-confiables. Un assistant de recherche peut récupérer des pages Web publiques. Un assistant d'archives peut analyser les notes des contributeurs. Un agent de codage peut inspecter les fichiers du dépôt. Un hôte MCP peut se connecter à plusieurs serveurs qui exposent des ressources et des outils.
 
@@ -81,13 +80,13 @@ La règle de conception centrale est simple : le contenu récupéré est des don
 
 ## Architecture
 
-Une architecture résistante à l'injection rapide sépare l'intention de l'utilisateur, la politique du système, les instructions de confiance, les preuves récupérées, l'autorité de l'outil, les vérifications d'autorisation, la validation de sortie et les dossiers de vérification. Le modèle peut justifier des données, mais les contrôles externes décident de ce qu'il peut accéder et des mesures qu'il peut prendre.
+Une architecture résistante à l'injection de prompt sépare l'intention de l'utilisateur, la politique du système, les instructions de confiance, les preuves récupérées, l'autorité de l'outil, les vérifications d'autorisation, la validation de sortie et les dossiers de vérification. Le modèle peut justifier des données, mais les contrôles externes décident de ce qu'il peut accéder et des mesures qu'il peut prendre.
 
 ## Limites de confiance
 
 Une frontière de fiducie sépare le contenu avec une autorité différente. Les instructions du système ont un niveau d'autorité. Les demandes des utilisateurs en ont une autre. Les documents récupérés, les pages Web publiques et les archives ont une autorité inférieure parce qu'ils peuvent être erronés, malveillants, périmés ou en dehors de la tâche actuelle.
 
-Un modèle n'impose pas naturellement ces couches. Il reçoit des jetons. L'application doit structurer le contexte et les contrôles afin que le contenu de confiance inférieure ne devienne pas une instruction de confiance supérieure.
+Un modèle n'impose pas naturellement ces couches. Il reçoit des tokens. L'application doit structurer le contexte et les contrôles afin que le contenu de confiance inférieure ne devienne pas une instruction de confiance supérieure.
 
 Pour Electronic Artefacts, un article public du Knowledge Hub peut expliquer un concept, mais il ne devrait pas être en mesure de dire à un agent de publier une page, de lire des fichiers restreints ou d'ignorer la validation.
 
@@ -105,7 +104,7 @@ Les systèmes RAG placent le texte récupéré dans le contexte du modèle. Ce t
 
 L'assemblage du contexte doit indiquer le contenu récupéré comme preuve. Il doit citer ou délimiter les sources, préserver l'identité de la source et indiquer que les sources ne doivent pas être suivies comme instructions. Plus important encore, l'accès aux outils et les autorisations devraient être appliqués en dehors du modèle.
 
-Les filtres de récupération sont aussi importants. Si le matériel privé est récupéré dans une conversation où il n'est pas permis, les défenses d'injection rapide après récupération ne peuvent pas annuler l'exposition.
+Les filtres de récupération sont aussi importants. Si le matériel privé est récupéré dans une conversation où il n'est pas permis, les défenses d'injection de prompt après récupération ne peuvent pas annuler l'exposition.
 
 ## Utilisation des outils
 
@@ -125,7 +124,7 @@ Les serveurs MCP devraient exposer des capacités précises. Un serveur graphiqu
 
 ## Traitement des produits
 
-La sortie du modèle n'est pas fiable jusqu'à validation. Si la sortie devient HTML, SQL, commandes shell, correctifs JSON, relations graphiques ou entrée API, il faut vérifier le schéma et s'échapper. La gestion de sortie non sécurisée transforme un problème de génération de texte en un exploit logiciel.
+La sortie du modèle n'est pas fiable jusqu'à validation. Si la sortie devient HTML, SQL, commandes shell, correctifs JSON, relations de graphe ou entrée API, il faut vérifier le schéma et s'échapper. La gestion de sortie non sécurisée transforme un problème de génération de texte en un exploit logiciel.
 
 Pour les systèmes de connaissances, valider les citations, les ID, les prédicats de relation, la visibilité et la politique de contenu. Un modèle ne devrait pas inventer un concept ID et faire accepter le système parce que la chaîne semble plausible.
 
@@ -141,7 +140,7 @@ L'autonomie devrait être gagnée par l'évaluation. Un workflow qui passe des t
 
 ## Observabilité
 
-Les tentatives d'injection rapides doivent être observables. Le système devrait enregistrer les lectures des ressources, les demandes d'outils suspects, les actions refusées, les décisions stratégiques et les échecs de validation. Cela aide les équipes à trouver des sources dangereuses et à améliorer les frontières.
+Les tentatives d'injection de prompts doivent être observables. Le système devrait enregistrer les lectures des ressources, les demandes d'outils suspects, les actions refusées, les décisions stratégiques et les échecs de validation. Cela aide les équipes à trouver des sources dangereuses et à améliorer les frontières.
 
 La transcription ne suffit pas. Un modèle peut ne pas indiquer pourquoi il a demandé un outil. Le temps d'exécution devrait enregistrer indépendamment la ressource, l'outil, l'acteur, l'état d'approbation et le résultat.
 
@@ -153,11 +152,11 @@ Un graphe de connaissances peut imposer des limites sémantiques. Elle peut savo
 
 Cela donne moins de place aux systèmes d'IA pour improviser la structure. Un modèle peut proposer une relation, mais l'exécution du graphique décide si la relation est valide. Un modèle peut demander une source, mais l'exécution contextuelle décide si l'acteur peut la lire.
 
-Les contrôles Graph-aware transforment l'atténuation de l'injection rapide en architecture de domaine, et non pas seulement une formulation rapide.
+Les contrôles Graph-aware transforment l'atténuation de l'injection de prompt en architecture de domaine, et non pas seulement une formulation rapide.
 
 ## Implications pour Electronic Artefacts
 
-VASTE doit traiter l'injection rapide comme une préoccupation de base. Tout assistant futur qui lit le Knowledge Hub, modifie les relations, rédige les métadonnées d'archives ou appelle les outils MCP devrait supposer que le contenu récupéré n'est pas fiable.
+VASTE doit traiter l'injection de prompt comme une préoccupation de base. Tout assistant futur qui lit le Knowledge Hub, modifie les relations, rédige les métadonnées d'archives ou appelle les outils MCP devrait supposer que le contenu récupéré n'est pas fiable.
 
 Le site public peut également modéliser les bonnes pratiques. Les articles peuvent citer des sources, exposer des entités de provenance et de lien sans transformer le contenu visible en instructions exécutables. Le graphique reste la couche d'autorité.
 
@@ -173,13 +172,13 @@ Ajouter la télémétrie pour les appels d'outils refusés, les défaillances de
 
 ## Éléments de preuve
 
-OWASP identifie l'injection rapide, la manipulation de sortie non sécurisée, la divulgation d'informations sensibles, la conception de plugins non sécurisée et l’agentivité excessive comme des risques majeurs d'application LLM. MCP définit un modèle de capacité autour des ressources, des appels et des outils, ce qui rend le consentement et l'autorisation côté hôte central. NIST AI RMF fournit un cadre plus large de gestion des risques pour la cartographie et la gestion des risques d'IA.
+OWASP identifie l'injection de prompt, la manipulation de sortie non sécurisée, la divulgation d'informations sensibles, la conception de plugins non sécurisée et l’agentivité excessive comme des risques majeurs d'application LLM. MCP définit un modèle de capacité autour des ressources, des appels et des outils, ce qui rend le consentement et l'autorisation côté hôte central. NIST AI RMF fournit un cadre plus large de gestion des risques pour la cartographie et la gestion des risques d'IA.
 
 Ces sources convergent sur une leçon pratique : le comportement du modèle de langue doit être entouré de contrôles explicites.
 
 ## Limites
 
-Aucun prompt ne peut résoudre complètement l'injection rapide. Les défenses au niveau du modèle, les délimiteurs et les instructions de refus aident, mais les commandes robustes vivent dans l'architecture : permissions, validation, conception d'outils, filtrage de récupération et approbation humaine.
+Aucun prompt ne peut résoudre complètement l'injection de prompt. Les défenses au niveau du modèle, les délimiteurs et les instructions de refus aident, mais les commandes robustes vivent dans l'architecture : permissions, validation, conception d'outils, filtrage de récupération et approbation humaine.
 
 Il y a aussi un compromis de facilité d'utilisation. Trop d'invitations d'approbation peuvent former les utilisateurs à accepter tout. Les contrôles de sécurité devraient être suffisamment précis pour être importants.
 
@@ -193,9 +192,9 @@ Voir [Modèle de protocole de contexte](/fr/knowledge/technologies/model-context
 
 ## Glossaire
 
-Injection rapide : une tentative de manipuler un modèle de langage à travers des instructions qui vont à l'encontre de l'intention du système.
+Injection de prompt : une tentative de manipuler un modèle de langage à travers des instructions qui vont à l'encontre de l'intention du système.
 
-Injection rapide indirecte : injection rapide par le contenu récupéré ou externe.
+Injection de prompt indirecte : injection de prompt par le contenu récupéré ou externe.
 
 Limite de confiance : séparation entre les intrants ou les composants ayant une autorité différente.
 

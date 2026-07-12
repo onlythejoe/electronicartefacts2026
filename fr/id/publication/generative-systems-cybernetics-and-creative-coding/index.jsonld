@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
       "name": "Systèmes génératifs, cybernétique et programmation créative",
-      "description": "Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur les systèmes génératifs, la rétroaction cybernétique, le codage créatif, la composition algorithmique et les projets d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
       "name": "Systèmes génératifs, cybernétique et programmation créative",
       "headline": "Systèmes génératifs, cybernétique et programmation créative",
-      "abstract": "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article retrace les systèmes génératifs de la rétroaction cybernétique et de l'art algorithmique à la codification créative, la conception sonore et la production contemporaine assistée par l'IA.",
+      "description": "Cet article retrace les systèmes génératifs de la rétroaction cybernétique et de l'art algorithmique à la codification créative, la conception sonore et la production contemporaine assistée par l'IA.",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage"
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1685,
+      "wordCount": 1684,
       "citation": [
-        "Electronic Artefacts. \"Systèmes génératifs, cybernétique et programmation créative\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Systèmes génératifs, cybernétique et programmation créative\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Cybernetics or Control and Communication in the Animal and the Machine",

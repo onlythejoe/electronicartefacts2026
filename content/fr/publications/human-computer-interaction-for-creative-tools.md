@@ -5,8 +5,8 @@ slug:
   canonical: human-computer-interaction-for-creative-tools
 title: Interaction humain-machine pour les outils créatifs
 subtitle: Article technique
-abstract: "Cette synthèse française présente Interaction humain-machine pour les outils créatifs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
-description: "Repères pour comprendre Interaction humain-machine pour les outils créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
+abstract: "Cet article explique IHM pour les outils créatifs, se concentrant sur la rétroaction, l’agentivité, le flux, la récupération des erreurs, l'accessibilité, l'intelligence augmentée et les médias informatiques."
+description: "Un article technique sur IHM, des outils créatifs, la conception d'interface, l'intelligence augmentée, l'accessibilité et les systèmes d'Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -14,7 +14,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.1.1
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-12
@@ -29,8 +29,8 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:program:vaste
 claims:
-  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
+  - "Les outils créatifs devraient préserver l’agentivité en rendant visible l'état, l'histoire, les contraintes et la récupération."
+  - "L’IHM pour les systèmes créatifs n'est pas seulement une facilité d'utilisation; elle comprend le flux, l'ambiguïté, l'exploration et l'interprétation."
 evidence:
   - id: ea:concept:human-computer-interaction
   - id: ea:program:vaste
@@ -47,7 +47,7 @@ sources:
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 citation:
   preferred: Electronic Artefacts. "Interaction humain-machine pour les outils créatifs". Article
-    technique, version 1.1.0, 2026.
+    technique, version 1.1.1, 2026.
 tags:
   - interaction humain-machine
   - outils créatifs
@@ -67,11 +67,11 @@ Les outils créatifs sont souvent jugés par des caractéristiques. L'outil peut
 
 L'interaction informatique humaine est donc au cœur de la technologie créative. Un outil sonore, un graphe d'exécution, un assistant d'IA ou un éditeur génératif peuvent étendre la capacité créative ou réduire l'utilisateur à accepter une sortie opaque.
 
-Electronic Artefacts a besoin de HCI en tant que sujet central de connaissances parce que ses programmes impliquent des systèmes graphiques, de l'intelligence audio, des workflows génératifs et des interfaces publiques. Ces systèmes ont besoin de principes d'interaction, et pas seulement d'architecture technique.
+Electronic Artefacts a besoin de IHM en tant que sujet central de connaissances parce que ses programmes impliquent des systèmes graphiques, de l'intelligence audio, des workflows génératifs et des interfaces publiques. Ces systèmes ont besoin de principes d'interaction, et pas seulement d'architecture technique.
 
 ## Présentation
 
-HCI étudie et conçoit les relations entre les personnes et les systèmes informatiques. Pour les outils créatifs, l'objectif n'est pas seulement l'efficacité. C'est aussi l’agentivité, le flux, le jeu, la précision, l'ambiguïté et l'interprétation.
+IHM étudie et conçoit les relations entre les personnes et les systèmes informatiques. Pour les outils créatifs, l'objectif n'est pas seulement l'efficacité. C'est aussi l’agentivité, le flux, le jeu, la précision, l'ambiguïté et l'interprétation.
 
 Les interfaces créatives les plus fortes rendent les contraintes visibles sans fermer la découverte. Ils aident l'utilisateur à comprendre ce qui s'est passé, ce qui peut arriver ensuite et comment changer de direction.
 
@@ -83,7 +83,7 @@ Les systèmes modernes d'IA rendent cela plus urgent. Lorsque les systèmes gén
 
 ## Historique
 
-Le HCI est issu de l'informatique, des sciences cognitives, de la conception, de l'ergonomie, des facteurs humains et de la recherche sur les systèmes interactifs. Les outils créatifs ajoutent des préoccupations spécifiques : écoulement, expressivité, itération, matérialité et compétence tacite.
+Le IHM est issu de l'informatique, des sciences cognitives, de la conception, de l'ergonomie, des facteurs humains et de la recherche sur les systèmes interactifs. Les outils créatifs ajoutent des préoccupations spécifiques : écoulement, expressivité, itération, matérialité et compétence tacite.
 
 Les premiers environnements de dessin, de musique et de programmation ont montré que la conception d'interfaces pouvait créer de nouvelles pratiques créatives. L'outil ne sert pas seulement le travail. Il façonne le travail qui devient thinkable.
 
@@ -121,17 +121,17 @@ Soutenir l'accessibilité. La navigation par clavier, le focus clair, le texte l
 
 ## Applications pratiques
 
-Pour ORETH, HCI peut façonner des interfaces d'écoute automatique qui montrent ce que le système détecte et à quel point il est confiant.
+Pour ORETH, IHM peut façonner des interfaces d'écoute automatique qui montrent ce que le système détecte et à quel point il est confiant.
 
-Pour VASTE, HCI peut façonner les outils d'exécution du graphique qui exposent le contexte et la relation.
+Pour VASTE, IHM peut façonner les outils d'exécution du graphique qui exposent le contexte et la relation.
 
-Pour les palimpsestes, HCI peut supporter l'exploration en couches du son, de la mémoire et des résidus visuels.
+Pour les palimpsestes, IHM peut supporter l'exploration en couches du son, de la mémoire et des résidus visuels.
 
-Pour le Centre de connaissances, HCI améliore la recherche, la lecture connexe, la navigation graphique et la compréhension des articles.
+Pour le Centre de connaissances, IHM améliore la recherche, la lecture connexe, la navigation graphique et la compréhension des articles.
 
 ## Outils
 
-Les outils utiles comprennent les prototypes, les sessions d'utilisation, les journaux d'interaction, les tests de clavier, les audits d'accessibilité, les diagrammes d'état, les jetons de conception, les lignes directrices de mouvement, l'historique des versions et les tests d'automatisation du navigateur.
+Les outils utiles comprennent les prototypes, les sessions d'utilisation, les journaux d'interaction, les tests de clavier, les audits d'accessibilité, les diagrammes d'état, les tokens de conception, les lignes directrices de mouvement, l'historique des versions et les tests d'automatisation du navigateur.
 
 ## Éléments de preuve
 
@@ -141,7 +141,7 @@ Electronic Artefacts a déjà les entités techniques pour cette discussion: [VA
 
 ## Méthode éditoriale
 
-Un article de HCI devrait décrire l'utilisateur, la tâche, le contexte et l'état du système. Sans cela, les conseils d'interface deviennent génériques.
+Un article de IHM devrait décrire l'utilisateur, la tâche, le contexte et l'état du système. Sans cela, les conseils d'interface deviennent génériques.
 
 Pour les outils créatifs, l'article devrait également demander quel type d'exploration l'interface permet. Est-ce qu'il appuie les croquis ? Comparaison ? Un échec ? Surprise ? Révision ?
 
@@ -153,15 +153,15 @@ La deuxième erreur est de cacher l'incertitude. Les systèmes d'IA et d'analyse
 
 La troisième erreur est de traiter l'accessibilité comme un vernis final. Il appartient au modèle d'interaction de base.
 
-## Incidences des Electronic Artefacts
+## Implications pour Electronic Artefacts
 
-Electronic Artefacts devrait faire de HCI une lentille récurrente pour les programmes et les projets. Le site ne se limite pas à documenter les systèmes, il construit des interfaces publiques pour la recherche.
+Electronic Artefacts devrait faire de IHM une lentille récurrente pour les programmes et les projets. Le site ne se limite pas à documenter les systèmes, il construit des interfaces publiques pour la recherche.
 
 À mesure que les outils deviennent plus intelligents, la conception de l'interaction devient plus éthique et culturelle. L'utilisateur doit rester en mesure d'inspecter, de guider et de contester le système.
 
 ## Rôle du graphe de connaissances
 
-HCI façonne également comment le graphique est vécu. Un graphique peut être formellement correct et encore difficile à utiliser. Les lecteurs ont besoin d'orientation, de divulgation progressive et d'étiquettes de relations significatives. Une page de projet ne devrait pas surcharger un nouveau venu avec tous les bords possibles. Il devrait faire surface aux relations qui aident la tâche actuelle.
+IHM façonne également comment le graphique est vécu. Un graphique peut être formellement correct et encore difficile à utiliser. Les lecteurs ont besoin d'orientation, de divulgation progressive et d'étiquettes de relations significatives. Une page de projet ne devrait pas surcharger un nouveau venu avec tous les bords possibles. Il devrait faire surface aux relations qui aident la tâche actuelle.
 
 Pour Electronic Artefacts, cela signifie que les interfaces graphiques ont besoin d'une hiérarchie éditoriale. Un quartier local peut montrer un contexte immédiat. Une collection peut offrir un chemin réservé. La recherche peut fournir une récupération directe. L'interface devrait permettre aux lecteurs de passer d'une simple compréhension à une exploration plus approfondie sans perdre l'état.
 
@@ -177,13 +177,13 @@ Lorsque le Knowledge Hub documente un outil ou une interface, l'article doit dé
 
 ## Voie de lecture
 
-HCI peut servir plusieurs publics à la fois. Les concepteurs peuvent arriver par des questions d'interface. Les développeurs peuvent arriver par des problèmes d'état et de rétroaction. Les artistes peuvent arriver par des frustrations d'outils créatifs. L'article devrait donner à tous un vocabulaire commun : agence, récupération, rétroaction, historique et accessibilité.
+IHM peut servir plusieurs publics à la fois. Les concepteurs peuvent arriver par des questions d'interface. Les développeurs peuvent arriver par des problèmes d'état et de rétroaction. Les artistes peuvent arriver par des frustrations d'outils créatifs. L'article devrait donner à tous un vocabulaire commun : agence, récupération, rétroaction, historique et accessibilité.
 
-De là, le chemin devrait conduire à [Intelligence augmentée](/fr/knowledge/concepts/augmented-intelligence/), [Conception de mouvement](/fr/knowledge/concepts/motion-design/), [IA générative](/fr/knowledge/concepts/generative-ai/) et [VASTE](/fr/programs/vaste/). Cela fait de HCI un pont entre le métier d'interface et la recherche sur les systèmes.
+De là, le chemin devrait conduire à [Intelligence augmentée](/fr/knowledge/concepts/augmented-intelligence/), [Conception de mouvement](/fr/knowledge/concepts/motion-design/), [IA générative](/fr/knowledge/concepts/generative-ai/) et [VASTE](/fr/programs/vaste/). Cela fait de IHM un pont entre le métier d'interface et la recherche sur les systèmes.
 
 ## Angle de conservation
 
-Les outils créatifs devraient préserver les décisions et non seulement les exportations finales. Défaire des histoires, des instantanés de paramètres, des journaux rapides, des changements de graphiques et des états d'analyse peuvent devenir des preuves. HCI et conservation se chevauchent donc: le même état qui aide un utilisateur à récupérer aujourd'hui peut aider un chercheur à comprendre le travail demain.
+Les outils créatifs devraient préserver les décisions et non seulement les exportations finales. Défaire des histoires, des instantanés de paramètres, des journaux rapides, des changements de graphiques et des états d'analyse peuvent devenir des preuves. IHM et conservation se chevauchent donc: le même état qui aide un utilisateur à récupérer aujourd'hui peut aider un chercheur à comprendre le travail demain.
 
 Ce chevauchement devrait façonner les futurs outils d'EE.
 
@@ -215,7 +215,7 @@ Récupération: capacité à annuler, réviser ou brancher après action.
 
 ## Limites
 
-Les méthodes HCI peuvent devenir trop axées sur la tâche pour la pratique artistique. Le travail créatif comprend l'ambiguïté, le jeu et l'exploration ouverte.
+Les méthodes IHM peuvent devenir trop axées sur la tâche pour la pratique artistique. Le travail créatif comprend l'ambiguïté, le jeu et l'exploration ouverte.
 
 La solution n'est pas de rejeter la facilité d'utilisation, mais de développer ce qui compte comme une interaction réussie.
 

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
       "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
-      "description": "Repères pour comprendre IA multimodale pour le texte, l'image, l'audio et la vidéo dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Découvrez comment l'IA multimodale connecte le texte, les images, l'audio et la vidéo, et comment évaluer les systèmes multimodaux à des fins créatives et culturelles.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
       "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
       "headline": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
-      "abstract": "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Un guide durable sur l'architecture d'IA multimodale, les représentations partagées, la recherche intermodale, la génération, les médias temporels, la provenance et les applications créatives.",
+      "description": "Un guide durable sur l'architecture d'IA multimodale, les représentations partagées, la recherche intermodale, la génération, les médias temporels, la provenance et les applications créatives.",
       "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/#webpage"
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 2469,
       "citation": [
-        "Electronic Artefacts. \"IA multimodale pour le texte, l'image, l'audio et la vidéo\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"IA multimodale pour le texte, l'image, l'audio et la vidéo\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Learning Transferable Visual Models From Natural Language Supervision",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "name": "Données liées et pages publiques de connaissance",
-      "description": "Repères pour comprendre Données liées et pages publiques de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
+      "description": "Un article technique sur les données liées, JSON-LD, les URL canoniques, les identifiants et le référencement pour les plateformes de connaissances statiques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-12",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:linked-data-and-public-knowledge-pages-fr",
       "name": "Données liées et pages publiques de connaissance",
       "headline": "Données liées et pages publiques de connaissance",
-      "abstract": "Cette synthèse française présente Données liées et pages publiques de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
-      "description": "Cette synthèse française présente Données liées et pages publiques de connaissance : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "abstract": "Cet article explique comment les pages de connaissances publiques peuvent utiliser des URL stables, JSON-LD, des identifiants orientés RDF et des liens internes pour devenir utiles aux humains, aux moteurs de recherche et aux systèmes d'IA.",
+      "description": "Cet article explique comment les pages de connaissances publiques peuvent utiliser des URL stables, JSON-LD, des identifiants orientés RDF et des liens internes pour devenir utiles aux humains, aux moteurs de recherche et aux systèmes d'IA.",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage"
@@ -78,7 +78,7 @@
       "isAccessibleForFree": true,
       "wordCount": 1639,
       "citation": [
-        "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.1.0, 2026.",
+        "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.1.1, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Cool URIs for the Semantic Web",
