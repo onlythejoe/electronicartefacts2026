@@ -19034,10 +19034,11 @@ figcaption strong,
   }
 
   .signature-banner__actions {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 0.42rem;
+    justify-content: flex-start;
+    gap: clamp(0.58rem, 2.6vw, 0.82rem);
   }
 
   .signature-banner__actions .button,
@@ -19052,6 +19053,7 @@ figcaption strong,
 
   .signature-banner__actions .button {
     display: inline-grid;
+    width: auto;
     min-height: 3.45rem;
     padding: 0.42rem;
     place-items: center;
@@ -19063,7 +19065,7 @@ figcaption strong,
     width: 3.45rem;
     min-width: 3.45rem;
     height: 3.45rem;
-    justify-self: center;
+    flex: 0 0 3.45rem;
     padding: 0;
     border-radius: 50%;
   }
@@ -19096,6 +19098,13 @@ figcaption strong,
 
   .signature-banner__actions .button:not(.signature-banner__action--icon) .signature-banner__action-label {
     white-space: nowrap;
+  }
+
+  .signature-banner__actions .button:not(.signature-banner__action--icon) {
+    min-width: 0;
+    flex: 0 1 auto;
+    padding-inline: clamp(0.66rem, 2.3vw, 0.88rem);
+    font-size: clamp(0.57rem, 2.3vw, 0.72rem);
   }
 
   .research-atlas__meta-row .status-badge {

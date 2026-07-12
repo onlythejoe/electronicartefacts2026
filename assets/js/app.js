@@ -23455,8 +23455,8 @@ window.EA_ANALYTICS_CONFIG = {
   };
 
   const signatureActionIcons = {
-    discover: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="7.25"></circle><path d="m14.8 9.2-1.7 4.1-4.1 1.7 1.7-4.1 4.1-1.7Z"></path></svg>`,
-    archive: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 7.5h15v11h-15z"></path><path d="M3.5 4.5h17v3h-17zM9 12h6"></path></svg>`,
+    discover: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 7.25 7 4.75-7 4.75z"></path></svg>`,
+    archive: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="7.25"></circle><path d="m14.8 9.2-1.7 4.1-4.1 1.7 1.7-4.1 4.1-1.7Z"></path></svg>`,
   };
 
   const signatureBanner = (item, options = {}) => {
