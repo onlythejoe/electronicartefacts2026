@@ -12031,9 +12031,25 @@ input:focus-visible {
 
   .project-graph__stage {
     display: grid;
-    gap: 0.65rem;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(13rem, 82%);
+    align-items: stretch;
+    gap: 0.75rem;
     min-height: auto;
     padding: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scroll-padding-inline: 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(234, 220, 207, 0.1), transparent 32%),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.008));
+  }
+
+  .project-graph__stage::-webkit-scrollbar {
+    display: none;
   }
 
   .project-graph__lines {
@@ -12046,18 +12062,57 @@ input:focus-visible {
     left: auto;
     top: auto;
     width: 100%;
-    min-height: auto;
+    min-height: 8.75rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
     transform: none;
   }
 
   .project-graph__center {
-    min-height: 6.5rem;
+    min-height: 8.75rem;
+    padding: 1.15rem;
     border-radius: calc(var(--radius-lg) - 0.12rem);
+  }
+
+  .project-graph__center strong {
+    font-size: 1.12rem;
+  }
+
+  .project-graph__node {
+    isolation: isolate;
+    align-content: center;
+    padding: 1rem 1.1rem;
+    border-color: rgba(255, 255, 255, 0.14);
+    background:
+      linear-gradient(145deg, rgba(125, 211, 252, 0.055), transparent 58%),
+      rgba(8, 8, 10, 0.72);
+    box-shadow:
+      0 14px 30px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .project-graph__node::after {
+    content: "\2192";
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.65rem;
+    color: rgba(234, 220, 207, 0.46);
+    font-size: 0.95rem;
+  }
+
+  .project-graph__node strong {
+    max-width: 18ch;
+    font-size: 0.94rem;
+    line-height: 1.2;
   }
 
   .project-graph__node:hover,
   .project-graph__node:focus-visible,
   .project-graph__node.is-active {
+    border-color: rgba(125, 211, 252, 0.34);
+    background:
+      linear-gradient(145deg, rgba(125, 211, 252, 0.13), transparent 62%),
+      rgba(8, 8, 10, 0.78);
     transform: none;
   }
 
