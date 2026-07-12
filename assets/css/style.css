@@ -4296,7 +4296,7 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
   position: relative;
   inset: auto;
   width: 100%;
-  min-height: clamp(24rem, 48vw, 38rem);
+  height: clamp(24rem, 48vw, 38rem);
   aspect-ratio: auto;
   border-radius: calc(var(--radius-xl) - 0.25rem);
 }
@@ -4977,7 +4977,7 @@ body[data-entry-id="forge"] :is(.button--secondary, .tag:hover, .tag:focus-visib
 }
 
 @media (max-width: 42rem) {
-  .forge-artifact--workbench { min-height: 29rem; }
+  .forge-artifact--workbench { height: 29rem; }
   .forge-artifact-record { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: -8.5rem; }
   .forge-pipeline-path { grid-template-columns: 1fr; }
   .forge-pipeline-path span { min-height: auto; }
