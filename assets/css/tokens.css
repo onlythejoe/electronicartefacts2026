@@ -27,6 +27,8 @@
   --header-offset: clamp(6.4rem, 8vw, 7.8rem);
   --safe-area-top: env(safe-area-inset-top, 0px);
   --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inline-start: env(safe-area-inset-left, 0px);
+  --safe-area-inline-end: env(safe-area-inset-right, 0px);
   --motion-fast: 160ms;
   --motion-medium: 260ms;
   font-synthesis: none;

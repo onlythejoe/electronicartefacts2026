@@ -1,8 +1,8 @@
 .site-shell,
 .site-main {
-  width: calc(100% - (var(--gutter) * 2));
+  width: auto;
   max-width: none;
-  margin: 0 auto;
+  margin-inline: max(var(--gutter), var(--safe-area-inline-start)) max(var(--gutter), var(--safe-area-inline-end));
 }
 
 :root {
@@ -33,17 +33,17 @@ section[data-render] {
 
 .shell-header.zone-card,
 .shell-footer.zone-card {
-  width: calc(100% - (var(--gutter) * 2));
+  width: auto;
   max-width: none;
-  margin: 0 auto;
+  margin-inline: max(var(--gutter), var(--safe-area-inline-start)) max(var(--gutter), var(--safe-area-inline-end));
   padding: clamp(1.15rem, 2vw, 1.5rem);
 }
 
 .shell-header.zone-card {
   position: fixed;
   top: calc(var(--safe-area-top) + clamp(0.85rem, 1.5vw, 1.25rem));
-  left: var(--gutter);
-  right: var(--gutter);
+  left: max(var(--gutter), var(--safe-area-inline-start));
+  right: max(var(--gutter), var(--safe-area-inline-end));
   z-index: 2000;
   display: grid;
   grid-template-columns: minmax(10.5rem, 0.55fr) minmax(0, 2.45fr) auto;

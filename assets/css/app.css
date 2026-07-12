@@ -30,6 +30,8 @@
   --header-offset: clamp(6.4rem, 8vw, 7.8rem);
   --safe-area-top: env(safe-area-inset-top, 0px);
   --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inline-start: env(safe-area-inset-left, 0px);
+  --safe-area-inline-end: env(safe-area-inset-right, 0px);
   --motion-fast: 160ms;
   --motion-medium: 260ms;
   font-synthesis: none;
@@ -48,6 +50,7 @@
 html {
   min-height: 100%;
   min-height: 100svh;
+  min-height: 100dvh;
   background: #030304;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -519,9 +522,9 @@ strong {
 /* ==== assets/css/layout.css ==== */
 .site-shell,
 .site-main {
-  width: calc(100% - (var(--gutter) * 2));
+  width: auto;
   max-width: none;
-  margin: 0 auto;
+  margin-inline: max(var(--gutter), var(--safe-area-inline-start)) max(var(--gutter), var(--safe-area-inline-end));
 }
 
 :root {
@@ -552,17 +555,17 @@ section[data-render] {
 
 .shell-header.zone-card,
 .shell-footer.zone-card {
-  width: calc(100% - (var(--gutter) * 2));
+  width: auto;
   max-width: none;
-  margin: 0 auto;
+  margin-inline: max(var(--gutter), var(--safe-area-inline-start)) max(var(--gutter), var(--safe-area-inline-end));
   padding: clamp(1.15rem, 2vw, 1.5rem);
 }
 
 .shell-header.zone-card {
   position: fixed;
   top: calc(var(--safe-area-top) + clamp(0.85rem, 1.5vw, 1.25rem));
-  left: var(--gutter);
-  right: var(--gutter);
+  left: max(var(--gutter), var(--safe-area-inline-start));
+  right: max(var(--gutter), var(--safe-area-inline-end));
   z-index: 2000;
   display: grid;
   grid-template-columns: minmax(10.5rem, 0.55fr) minmax(0, 2.45fr) auto;
