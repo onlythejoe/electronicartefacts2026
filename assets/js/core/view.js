@@ -29,6 +29,11 @@
     return id === "oreth" || artist === "oreth" || project === "palimpsests";
   };
 
+  const signatureActionIcons = {
+    discover: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="7.25"></circle><path d="m14.8 9.2-1.7 4.1-4.1 1.7 1.7-4.1 4.1-1.7Z"></path></svg>`,
+    archive: `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 7.5h15v11h-15z"></path><path d="M3.5 4.5h17v3h-17zM9 12h6"></path></svg>`,
+  };
+
   const signatureBanner = (item, options = {}) => {
     const title = options.title || item?.title || "ORETH";
     const copy = options.copy || item?.summary || item?.description || "";
@@ -61,8 +66,10 @@
     const actionMarkup = actions.length
       ? `<div class="button-row button-row--compact signature-banner__actions">${actions
           .map(
-            (action, index) =>
-              `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
+            (action, index) => {
+              const icon = signatureActionIcons[action.mobileIcon] || "";
+              return `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}${icon ? " signature-banner__action--icon" : ""}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${icon ? `<span class="signature-banner__action-icon">${icon}</span>` : ""}<span class="signature-banner__action-label">${esc(action.label)}</span></a>`;
+            },
           )
           .join("")}</div>`
       : "";
@@ -1274,8 +1281,8 @@
       fetchPriority: "low",
       tags: homeCardPills(palimpsests),
       actions: [
-        { label: "Discover", href: "./palimpsests.html" },
-        { label: "Browse archive", href: "./archive.html" },
+        { label: "Discover", href: "./palimpsests.html", mobileIcon: "discover" },
+        { label: "Browse archive", href: "./archive.html", mobileIcon: "archive" },
         { label: "Start a Collaboration", href: "./contact.html" },
       ],
     });
