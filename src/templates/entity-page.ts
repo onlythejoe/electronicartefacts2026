@@ -110,7 +110,7 @@ const renderVasteGraphDemo = (entity: Entity): string => {
   if (!isVasteProgram(entity)) return "";
   const french = entity.locale === "fr";
   return `
-    <link rel="stylesheet" href="/assets/css/vaste-demo.css?v=1" />
+    <link rel="stylesheet" href="/assets/css/vaste-demo.css?v=2" />
     <section class="zone-card hero vaste-demo" data-vaste-demo data-locale="${french ? "fr" : "en"}" aria-labelledby="vaste-demo-title">
       <div class="vaste-demo__intro">
         <div class="section-head">
@@ -130,7 +130,6 @@ const renderVasteGraphDemo = (entity: Entity): string => {
 
       <div class="vaste-demo__window">
         <div class="vaste-demo__chrome" aria-hidden="true">
-          <span class="vaste-demo__traffic"><i></i><i></i><i></i></span>
           <span>VASTE / GRAPH SURFACE</span>
           <span class="vaste-demo__chrome-state" data-demo-chrome-state>${french ? "SYSTÈME ACTIF" : "SYSTEM ACTIVE"}</span>
         </div>

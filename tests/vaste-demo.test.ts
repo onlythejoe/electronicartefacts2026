@@ -10,6 +10,8 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   ]);
 
   assert.match(template, /data-vaste-demo/);
+  assert.match(template, /vaste-demo\.css\?v=2/);
+  assert.doesNotMatch(template, /vaste-demo__traffic/);
   assert.match(template, /data-demo-scene="runtime"/);
   assert.match(template, /data-demo-scene="portable"/);
   assert.match(template, /data-demo-scene="boot"/);
@@ -22,6 +24,8 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   assert.match(runtime, /parentId/);
   assert.match(runtime, /ResizeObserver/);
   assert.match(runtime, /prefers-reduced-motion/);
-  assert.match(styles, /@media \(max-width: 820px\)/);
+  assert.match(styles, /@media \(max-width: 900px\)/);
+  assert.match(styles, /@media \(max-width: 720px\)/);
+  assert.match(styles, /width: 100vw/);
   assert.match(styles, /touch-action: none/);
 });
