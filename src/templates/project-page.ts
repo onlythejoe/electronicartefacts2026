@@ -435,6 +435,88 @@ const renderProjectMoodboard = (project: ProjectEntity): string => {
     </section>`;
 };
 
+const palimpsestsPlates = [
+  ["ea-palimpsests-cover.webp", "project", "Cover study", "Portrait, smoke and overprinted title"],
+  ["ea-contemplating.webp", "project", "Contemplating", "Layered portrait experiment"],
+  ["ea-hood-portrait.webp", "project", "Threshold portrait", "Body held between exposure and retreat"],
+  ["ea-founder-portrait.webp", "project", "Founder portrait", "Silhouette, garment and negative space"],
+  ["ea-profile-study.webp", "project", "Profile study", "A figure read as a quiet film still"],
+  ["ea-running-up-study.webp", "project", "Type / image study", "Oversized type crossing a violet memory surface"],
+  ["ea-nerve-concept.webp", "project", "Nerve // corrupted", "A biological signal reduced to light"],
+  ["ea-entropy-concept.webp", "project", "Entropy // corrupted", "Order dissolving into particulate noise"],
+  ["ea-wordmark-study.webp", "project", "Electronic Artefacts", "Neutral wordmark and muted rose field"],
+  ["ref-fabric-stage.webp", "reference", "Scale / apparition", "A body made small by a suspended textile landscape"],
+  ["ref-wrapped-room.webp", "reference", "Wrapped archive", "Objects preserved, withheld and tied into relation"],
+  ["ref-lace-archive.webp", "reference", "Soft archive", "Lace as residue, domestic memory and spatial skin"],
+  ["ref-veiled-figure.webp", "reference", "Veiled presence", "Identity partially legible through a translucent layer"],
+  ["ref-white-silhouette.webp", "reference", "Erased silhouette", "A figure approaching disappearance"],
+  ["ref-shell-garment.webp", "reference", "Accumulated shell", "Repetition becomes protection and surface"],
+  ["ref-feather-garment.webp", "reference", "Organic armour", "Fragile material assembled into a defensive form"],
+  ["ref-open-knit.webp", "reference", "Incomplete weave", "Construction remains visible through absence"],
+  ["ref-translucent-knit.webp", "reference", "Second skin", "Transparency reveals the garment's internal logic"],
+  ["ref-textile-circuit.webp", "reference", "Textile circuit", "Soft structure routed like an anatomical diagram"],
+  ["ref-harness.webp", "reference", "Body apparatus", "Utility hardware held against an archival uniform"],
+  ["ref-padded-suit.webp", "reference", "Insulated body", "Protection, repair and speculative equipment"],
+  ["ref-wrapped-hand.webp", "reference", "Repaired hand", "Gesture constrained and extended by layered material"],
+  ["ref-metal-fingers.webp", "reference", "Metal memory", "Jewellery as fragment, armour and inscription"],
+  ["ref-carbon-object.webp", "reference", "Carbon relic", "A functional object made archaeological"],
+  ["ref-body-extension.webp", "reference", "Body extension", "An almost invisible prosthetic line"],
+] as const;
+
+const renderPalimpsestsResearchBoard = (project: ProjectEntity): string => {
+  if (project.slug.canonical !== "palimpsests") return "";
+  const acts = project.locale === "fr"
+    ? [
+        ["I", "Émergence", "La forme apparaît avant de pouvoir se nommer."],
+        ["II", "Mémoire", "La matière garde la trace de ce qui l’a traversée."],
+        ["III", "Mutation", "Le système se réécrit, se déforme et change d’échelle."],
+        ["IV", "Limite", "Le corps rencontre la panne, la contrainte et l’effacement."],
+        ["V", "Transmission", "Ce qui demeure devient signal, archive et passage."],
+      ]
+    : [
+        ["I", "Emergence", "Form appears before it can be named."],
+        ["II", "Memory", "Matter retains the trace of what passed through it."],
+        ["III", "Mutation", "The system rewrites itself, distorts and changes scale."],
+        ["IV", "Limit", "The body meets failure, constraint and erasure."],
+        ["V", "Transmission", "What remains becomes signal, archive and passage."],
+      ];
+  return `
+    <section class="palimpsests-cinema" id="project-moodboard" data-palimpsests-board>
+      <header class="palimpsests-cinema__head">
+        <p class="eyebrow">${ui(project, "A FILM IN FIVE ACTS", "UN FILM EN CINQ ACTES")}</p>
+        <h2>${ui(project, "The album as a moving image.", "L’album comme image en mouvement.")}</h2>
+        <p>${ui(project, "Palimpsests is approached as a feature-length atmosphere: bodies, fabrics, systems and residual images move through five acts. This board is a living research surface, not a locked identity manual.", "Palimpsests se pense comme une atmosphère de long métrage : corps, étoffes, systèmes et images résiduelles traversent cinq actes. Cette planche est une surface de recherche vivante, pas une identité figée.")}</p>
+      </header>
+      <ol class="palimpsests-acts" aria-label="${ui(project, "Five-act arc", "Arc en cinq actes")}">
+        ${acts.map(([number, title, copy]) => `<li><span>${number}</span><h3>${title}</h3><p>${copy}</p></li>`).join("")}
+      </ol>
+      <div class="palimpsests-board__toolbar">
+        <div>
+          <p class="eyebrow">${ui(project, "LIVE RESEARCH BOARD", "PLANCHE DE RECHERCHE VIVANTE")}</p>
+          <h2>${ui(project, "Current visual constellation.", "Constellation visuelle du moment.")}</h2>
+        </div>
+        <div class="palimpsests-board__filters" role="group" aria-label="${ui(project, "Filter images", "Filtrer les images")}">
+          <button class="is-active" type="button" data-board-filter="all" aria-pressed="true">${ui(project, "All", "Tout")}</button>
+          <button type="button" data-board-filter="project" aria-pressed="false">Electronic Artefacts</button>
+          <button type="button" data-board-filter="reference" aria-pressed="false">${ui(project, "References", "Inspirations")}</button>
+        </div>
+      </div>
+      <p class="palimpsests-board__note">${ui(project, "Electronic Artefacts images are project material. Reference images are working inspirations supplied for art-direction research; authorship is not attributed to the studio.", "Les images Electronic Artefacts sont des matières du projet. Les références sont des inspirations de travail fournies pour la recherche de direction artistique ; leur création n’est pas attribuée au studio.")}</p>
+      <div class="palimpsests-board__grid">
+        ${palimpsestsPlates.map(([file, kind, title, note], index) => `
+          <button class="palimpsests-plate palimpsests-plate--${kind}${index % 7 === 0 ? " palimpsests-plate--wide" : ""}" type="button" data-board-item="${kind}" data-board-open>
+            <img src="/assets/media/projects/palimpsests/research/${file}" alt="${escapeHtml(title)}" loading="${index < 4 ? "eager" : "lazy"}" decoding="async" />
+            <span><em>${kind === "project" ? "EA / PROJECT" : ui(project, "RESEARCH REFERENCE", "RÉFÉRENCE DE RECHERCHE")}</em><strong>${escapeHtml(title)}</strong><small>${escapeHtml(note)}</small></span>
+          </button>`).join("")}
+      </div>
+      <dialog class="palimpsests-lightbox" data-board-dialog aria-label="${ui(project, "Image detail", "Détail de l’image")}">
+        <button type="button" data-board-close aria-label="${ui(project, "Close", "Fermer")}">×</button>
+        <img data-board-dialog-image alt="" />
+        <div><p data-board-dialog-kind></p><h3 data-board-dialog-title></h3><p data-board-dialog-note></p></div>
+      </dialog>
+    </section>`;
+};
+
 const renderProjectDevelopment = (
   project: ProjectEntity,
   relations: RelationStatement[],
@@ -627,6 +709,7 @@ export const renderProjectPage = (
   const documentaryMediaCount = documentaryMediaFor(project).length;
   const hasGraph = connected.length > 0;
   const hasArtDirection = projectHasArtDirection(project);
+  const isPalimpsests = project.slug.canonical === "palimpsests";
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
   const productionRefs = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId));
   const heroNav = [
@@ -635,7 +718,7 @@ export const renderProjectPage = (
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
     { label: "Dev", href: "#project-dev" },
     { label: "Marketing", href: "#project-marketing" },
-    ...(documentaryMediaCount ? [{ label: "Media", href: "#project-media" }] : []),
+    ...(!isPalimpsests && documentaryMediaCount ? [{ label: "Media", href: "#project-media" }] : []),
     ...(hasGraph ? [{ label: "Graph", href: "#project-graph" }] : []),
     { label: "Thesis", href: "#project-thesis" },
   ];
@@ -665,7 +748,7 @@ export const renderProjectPage = (
       ${renderHeroVisual(project)}
     </section>
     ${renderProjectSystem(project)}
-    ${renderProjectMoodboard(project)}
+    ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}
     ${renderProjectMarketing(project, byId, routeById)}
     ${renderProjectTabs(project, byId, routeById)}
@@ -673,7 +756,7 @@ export const renderProjectPage = (
       ${renderRefCards("Addressable outputs.", "OUTPUTS", outputRefs, byId, routeById)}
       ${renderRefCards("Stakeholders and credits.", "PRODUCTION", productionRefs, byId, routeById)}
     </section>
-    ${renderProjectMedia(project)}
+    ${isPalimpsests ? "" : renderProjectMedia(project)}
     ${renderProjectGraph(project, relations, byId, routeById)}
     <article class="zone-card hero publication-body project-dossier-body" id="project-thesis">
       <div class="section-head">

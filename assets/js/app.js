@@ -9744,7 +9744,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Palimpsests",
       "subtitle": "Album en cinq chapitres signé ORETH",
       "summary": "Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.",
-      "description": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
+      "description": "Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -9768,7 +9768,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/project/palimpsests/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-13",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }
@@ -12894,7 +12894,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Palimpsests",
       "subtitle": "Five-Chapter Album by ORETH",
       "summary": "Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.",
-      "description": "A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.",
+      "description": "A cinematic cultural dossier for Palimpsests, the five-act ORETH album, bringing sound, image, fashion research and campaign material into one evolving visual world.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -12920,7 +12920,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/id/project/palimpsests/",
       "temporality": {
         "creationDate": "2026-01-01",
-        "lastUpdated": "2026-06-23",
+        "lastUpdated": "2026-07-13",
         "releaseDate": "2026-06-23",
         "creationYear": "2026"
       }
@@ -19564,7 +19564,7 @@ window.EA_PUBLIC_CATALOG = {
       "statement": "Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "confidence": "published",
       "createdAt": "2026-01-01",
-      "reviewedAt": "2026-06-23",
+      "reviewedAt": "2026-07-13",
       "visibility": "public"
     },
     {
@@ -19784,7 +19784,7 @@ window.EA_PUBLIC_CATALOG = {
       "statement": "Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
       "confidence": "published",
       "createdAt": "2026-01-01",
-      "reviewedAt": "2026-06-23",
+      "reviewedAt": "2026-07-13",
       "visibility": "public"
     },
     {
@@ -35518,6 +35518,32 @@ window.EA_ANALYTICS_CONFIG = {
     resetInspector();
   };
 
+  const initPalimpsestsBoard = () => {
+    document.querySelectorAll("[data-palimpsests-board]").forEach((board) => {
+      const filters = [...board.querySelectorAll("[data-board-filter]")];
+      const items = [...board.querySelectorAll("[data-board-item]")];
+      const dialog = board.querySelector("[data-board-dialog]");
+      const dialogImage = dialog?.querySelector("[data-board-dialog-image]");
+      filters.forEach((button) => button.addEventListener("click", () => {
+        const filter = button.dataset.boardFilter || "all";
+        filters.forEach((candidate) => { const active = candidate === button; candidate.classList.toggle("is-active", active); candidate.setAttribute("aria-pressed", String(active)); });
+        items.forEach((item) => { item.hidden = filter !== "all" && item.dataset.boardItem !== filter; });
+      }));
+      items.forEach((item) => item.addEventListener("click", () => {
+        const image = item.querySelector("img");
+        if (!dialog || !image || !dialogImage) return;
+        dialogImage.src = image.currentSrc || image.src;
+        dialogImage.alt = image.alt;
+        const copy = (selector) => item.querySelector(selector)?.textContent || "";
+        const set = (selector, value) => { const target = dialog.querySelector(selector); if (target) target.textContent = value; };
+        set("[data-board-dialog-kind]", copy("em")); set("[data-board-dialog-title]", copy("strong") || image.alt); set("[data-board-dialog-note]", copy("small"));
+        dialog.showModal?.();
+      }));
+      dialog?.querySelector("[data-board-close]")?.addEventListener("click", () => dialog.close());
+      dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    });
+  };
+
   const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
@@ -35526,6 +35552,7 @@ window.EA_ANALYTICS_CONFIG = {
     initCapabilityMaps();
     initProjectBrowser();
     initGlobalGraph();
+    initPalimpsestsBoard();
     initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();

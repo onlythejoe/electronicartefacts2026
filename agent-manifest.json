@@ -257,7 +257,7 @@
       "translationOf": "ea:project:palimpsests",
       "type": "project",
       "title": "Palimpsests",
-      "summary": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
+      "summary": "Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.",
       "url": "https://electronicartefacts.com/fr/projects/palimpsests/",
       "route": "/fr/projects/palimpsests/",
       "identifier": "https://electronicartefacts.com/fr/id/project/palimpsests/",
@@ -276,14 +276,14 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-13"
     },
     {
       "id": "ea:project:palimpsests",
       "locale": "en",
       "type": "project",
       "title": "Palimpsests",
-      "summary": "A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.",
+      "summary": "A cinematic cultural dossier for Palimpsests, the five-act ORETH album, bringing sound, image, fashion research and campaign material into one evolving visual world.",
       "url": "https://electronicartefacts.com/projects/palimpsests/",
       "route": "/projects/palimpsests/",
       "identifier": "https://electronicartefacts.com/id/project/palimpsests/",
@@ -304,7 +304,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-23",
-      "modifiedAt": "2026-06-23"
+      "modifiedAt": "2026-07-13"
     },
     {
       "id": "ea:project:vestiges-fr",

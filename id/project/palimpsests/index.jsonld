@@ -6,13 +6,13 @@
       "@id": "https://electronicartefacts.com/projects/palimpsests/#webpage",
       "url": "https://electronicartefacts.com/projects/palimpsests/",
       "name": "Palimpsests",
-      "description": "A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.",
+      "description": "A cinematic cultural dossier for Palimpsests, the five-act ORETH album, bringing sound, image, fashion research and campaign material into one evolving visual world.",
       "inLanguage": "en",
       "datePublished": "2026-06-23",
-      "dateModified": "2026-06-23",
+      "dateModified": "2026-07-13",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/palimpsests.jpg",
+        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp",
         "caption": "Palimpsests album cover visual.",
         "description": "Palimpsests album cover visual"
       },
@@ -43,7 +43,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/palimpsests.jpg",
+        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp",
         "caption": "Palimpsests album cover visual.",
         "description": "Palimpsests album cover visual"
       },
@@ -73,7 +73,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-01-01",
       "datePublished": "2026-06-23",
-      "dateModified": "2026-06-23",
+      "dateModified": "2026-07-13",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -81,7 +81,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 282
+      "wordCount": 394
     },
     {
       "@type": "Organization",

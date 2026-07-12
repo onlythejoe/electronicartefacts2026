@@ -56,17 +56,17 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## project
 
-- [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.
+- [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.
   - Entity ID: ea:project:palimpsests-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/palimpsests/
   - JSON-LD: https://electronicartefacts.com/fr/id/project/palimpsests/index.jsonld
-  - Modified: 2026-07-11
+  - Modified: 2026-07-13
   - Keywords: Palimpsests, ORETH, Musique, Culture numérique, Mémoire, Transmission, Art sonore, Image
-- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.
+- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A cinematic cultural dossier for Palimpsests, the five-act ORETH album, bringing sound, image, fashion research and campaign material into one evolving visual world.
   - Entity ID: ea:project:palimpsests
   - Identifier: https://electronicartefacts.com/id/project/palimpsests/
   - JSON-LD: https://electronicartefacts.com/id/project/palimpsests/index.jsonld
-  - Modified: 2026-06-23
+  - Modified: 2026-07-13
   - Keywords: Palimpsests, ORETH, Audio, Memory, Transmission, Signal, Digital Art, Music
 - [Vestiges](https://electronicartefacts.com/fr/projects/v6/): Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.
   - Entity ID: ea:project:vestiges-fr

@@ -7,7 +7,7 @@ slug:
 title: Palimpsests
 subtitle: Album en cinq chapitres signé ORETH
 abstract: Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.
-description: Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.
+description: Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -15,10 +15,10 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.1.0
+  version: 1.2.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-11
+  modifiedAt: 2026-07-13
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -46,9 +46,28 @@ credits:
 media:
   - id: palimpsests-cover-fr
     type: image
-    src: /assets/media/projects/palimpsests/P1288759-edit-1800.webp
+    src: /assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp
     alt: Visuel de l’album Palimpsests
     caption: Image principale associée à l’album Palimpsests.
+visualLanguage:
+  - Noir encre
+  - Rose poussière
+  - Blanc os
+  - Grain cinéma
+  - Typographie monumentale
+  - Mémoire stratifiée
+textures:
+  - Voile
+  - Patine
+  - Couture
+  - Fumée
+  - Résidu de signal
+symbols:
+  - Palimpseste
+  - Corps enveloppé
+  - Seconde peau
+  - Signal corrompu
+  - Relique
 tags:
   - Palimpsests
   - ORETH
@@ -70,6 +89,12 @@ Palimpsests est un album conceptuel en cinq chapitres, signé ORETH. Il suit l�
 ## Structure
 
 L’album est organisé en cinq chapitres. Cette structure crée une progression plutôt qu’une simple suite de morceaux et traite de culture numérique, de mémoire, de transformation et de transmission.
+
+## Direction artistique
+
+La direction visuelle envisage moins l’album comme une suite de pochettes que comme un film en cinq actes. Les corps deviennent paysages ; les vêtements, des dispositifs de mémoire ; le tissu, la fumée, le métal et la typographie surimprimée se comportent comme les couches successives d’une même image. La palette évolue entre noir encre, blanc os et rose poussière. Le violet intervient ponctuellement comme un signal corrompu, jamais comme un simple accent décoratif.
+
+La planche de recherche reste volontairement ouverte. Elle documente la constellation visuelle actuelle du projet et pourra accueillir de nouvelles références au fil de la production. Les matières Electronic Artefacts sont séparées des inspirations externes afin que cette surface demeure à la fois un outil de création et une archive publique honnête.
 
 ## Musique, médias et campagne culturelle
 

@@ -6,7 +6,7 @@ slug:
 title: Palimpsests
 subtitle: Five-Chapter Album by ORETH
 abstract: Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.
-description: A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.
+description: A cinematic cultural dossier for Palimpsests, the five-act ORETH album, bringing sound, image, fashion research and campaign material into one evolving visual world.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -14,10 +14,10 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.2.0
   createdAt: "2026-01-01"
   publishedAt: "2026-06-23"
-  modifiedAt: "2026-06-23"
+  modifiedAt: "2026-07-13"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -46,24 +46,28 @@ credits:
 media:
   - id: palimpsests-cover
     type: image
-    src: /assets/media/projects/palimpsests/palimpsests.jpg
+    src: /assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp
     alt: Palimpsests album cover visual
     caption: Palimpsests album cover visual.
 visualLanguage:
-  - Black
-  - White
-  - Material trace
+  - Ink black
+  - Dust rose
+  - Bone white
+  - Film grain
+  - Monumental type
   - Layered memory
 textures:
-  - Overwriting
-  - Residue
-  - Signal
-  - Fragment
+  - Veil
+  - Patina
+  - Stitch
+  - Smoke
+  - Signal residue
 symbols:
   - Palimpsest
-  - Trace
-  - Memory surface
-  - Transmission
+  - Wrapped body
+  - Second skin
+  - Corrupted signal
+  - Relic
 tags:
   - Palimpsests
   - ORETH
@@ -91,6 +95,12 @@ Palimpsests is a cultural work before it is a technical case study. Its place wi
 A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The album uses that image to address digital life: information is stored, overwritten, compressed, distorted, recovered and reinterpreted.
 
 In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance.
+
+## Art direction
+
+The visual direction treats the album less as a sequence of covers than as a film unfolding in five acts. Bodies become landscapes; garments become memory devices; fabric, smoke, metal and overprinted type behave like successive layers of one image. The palette moves between ink black, bone white and muted dust rose, with violet used as an occasional corrupted signal rather than a decorative accent.
+
+The research board remains intentionally open. It records the project’s current visual constellation and can absorb new references as production progresses. Electronic Artefacts material is separated from external inspiration so the board can function both as a creative tool and as an honest public archive.
 
 ## ORETH signature
 

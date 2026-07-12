@@ -6,13 +6,13 @@
       "@id": "https://electronicartefacts.com/fr/projects/palimpsests/#webpage",
       "url": "https://electronicartefacts.com/fr/projects/palimpsests/",
       "name": "Palimpsests",
-      "description": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
+      "description": "Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-13",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/P1288759-edit-1800.webp",
+        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp",
         "caption": "Image principale associée à l’album Palimpsests.",
         "description": "Visuel de l’album Palimpsests"
       },
@@ -43,7 +43,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/P1288759-edit-1800.webp",
+        "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp",
         "caption": "Image principale associée à l’album Palimpsests.",
         "description": "Visuel de l’album Palimpsests"
       },
@@ -71,7 +71,7 @@
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-13",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 164
+      "wordCount": 292
     },
     {
       "@type": "Organization",
