@@ -15,7 +15,7 @@
   "maturity": "development",
   "confidence": "published",
   "version": {
-    "version": "1.3.0",
+    "version": "1.4.0",
     "createdAt": "2026-01-01",
     "publishedAt": "2026-06-23",
     "modifiedAt": "2026-07-13"
@@ -63,6 +63,13 @@
       "src": "/assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4",
       "alt": "Moon filmed through violet and rose light for Belle",
       "caption": "Belle — short visual fragment."
+    },
+    {
+      "id": "palimpsest-piano-study",
+      "type": "video",
+      "src": "/assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study.mp4",
+      "alt": "Particle field and layered curves accompanying the Palimpsest piano study",
+      "caption": "Palimpsest — experimental piano reinterpretation without rhythmic section."
     }
   ],
   "category": "cultural",
@@ -124,7 +131,7 @@
     "Corrupted signal",
     "Relic"
   ],
-  "bodyHtml": "<h2 id=\"project-thesis\">Project thesis</h2>\n<p>Palimpsests is a conceptual album in five chapters, signed by ORETH. It follows the evolution of a system: how something emerges, accumulates memory, transforms, meets its limits and transmits what remains.</p>\n<p>Palimpsests is a cultural work before it is a technical case study. Its place within Electronic Artefacts reflects the studio’s belief that artistic production, software, research and archives are connected forms of knowledge.</p>\n<h2 id=\"concept\">Concept</h2>\n<p>A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The album uses that image to address digital life: information is stored, overwritten, compressed, distorted, recovered and reinterpreted.</p>\n<p>In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance.</p>\n<h2 id=\"art-direction\">Art direction</h2>\n<p>The visual direction treats the album less as a sequence of covers than as a film unfolding in five acts. Bodies become landscapes; garments become memory devices; fabric, smoke, metal and overprinted type behave like successive layers of one image. The palette moves between ink black, bone white and muted dust rose, with violet used as an occasional corrupted signal rather than a decorative accent.</p>\n<p>The research board remains intentionally open. It records the project’s current visual constellation and can absorb new references as production progresses. Electronic Artefacts material is separated from external inspiration so the board can function both as a creative tool and as an honest public archive.</p>\n<h2 id=\"oreth-signature\">ORETH signature</h2>\n<p>Palimpsests is signed by ORETH. This artistic use of the name is separate from ORETH’s archived speech-synthesis R&amp;D prototype. The album is a musical work; it does not claim to demonstrate or release that historical system.</p>\n<h2 id=\"knowledge-role\">Knowledge role</h2>\n<p>Palimpsests demonstrates the studio’s ability to produce music, media and cultural campaigns. Its public materials can connect sound, image, editorial work and research references while keeping the album’s artistic autonomy intact.</p>\n<h2 id=\"belle-first-open-fragment\">Belle — first open fragment</h2>\n<p>Belle belongs to Act III, Experiences: the point where the album moves from founding narratives toward intimate lives, absence, resilience and relation. Its first public trace combines an unfinished instrumental studio version, a short lunar image and the French lyric sheet. The full album sequence remains visible, but unreleased tracks are deliberately held back rather than presented as available works.</p>\n<h2 id=\"archive-role\">Archive role</h2>\n<p>The project should preserve not only final releases but also references, visual plates, research notes and structural decisions. The archive should remain selective. A good archive does not publish everything; it preserves enough provenance for future interpretation.</p>\n<h2 id=\"status\">Status</h2>\n<p>Palimpsests is in active cultural production. The public dossier will grow with the album, its media and its editorial material as they are released.</p>\n",
+  "bodyHtml": "<h2 id=\"project-thesis\">Project thesis</h2>\n<p>Palimpsests is a conceptual album in five chapters, signed by ORETH. It follows the evolution of a system: how something emerges, accumulates memory, transforms, meets its limits and transmits what remains.</p>\n<p>Palimpsests is a cultural work before it is a technical case study. Its place within Electronic Artefacts reflects the studio’s belief that artistic production, software, research and archives are connected forms of knowledge.</p>\n<h2 id=\"concept\">Concept</h2>\n<p>A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The album uses that image to address digital life: information is stored, overwritten, compressed, distorted, recovered and reinterpreted.</p>\n<p>In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance.</p>\n<h2 id=\"art-direction\">Art direction</h2>\n<p>The visual direction treats the album less as a sequence of covers than as a film unfolding in five acts. Bodies become landscapes; garments become memory devices; fabric, smoke, metal and overprinted type behave like successive layers of one image. The palette moves between ink black, bone white and muted dust rose, with violet used as an occasional corrupted signal rather than a decorative accent.</p>\n<p>The research board remains intentionally open. It records the project’s current visual constellation and can absorb new references as production progresses. Electronic Artefacts material is separated from external inspiration so the board can function both as a creative tool and as an honest public archive.</p>\n<h2 id=\"oreth-signature\">ORETH signature</h2>\n<p>Palimpsests is signed by ORETH. This artistic use of the name is separate from ORETH’s archived speech-synthesis R&amp;D prototype. The album is a musical work; it does not claim to demonstrate or release that historical system.</p>\n<h2 id=\"knowledge-role\">Knowledge role</h2>\n<p>Palimpsests demonstrates the studio’s ability to produce music, media and cultural campaigns. Its public materials can connect sound, image, editorial work and research references while keeping the album’s artistic autonomy intact.</p>\n<h2 id=\"belle-first-open-fragment\">Belle — first open fragment</h2>\n<p>Belle belongs to Act III, Experiences: the point where the album moves from founding narratives toward intimate lives, absence, resilience and relation. Its first public trace combines an unfinished instrumental studio version, a short lunar image and the French lyric sheet. The full album sequence remains visible, but unreleased tracks are deliberately held back rather than presented as available works.</p>\n<h2 id=\"palimpsest-piano-study\">Palimpsest — piano study</h2>\n<p>The album’s signature piece is also opened through an experimental reinterpretation for piano, without a rhythmic section. Image and audio remain joined in a single 3:08 vertical fragment. This is not positioned as a substitute master: it is another inscription of the same piece, consistent with the work’s central idea that every form persists beneath its transformations.</p>\n<h2 id=\"archive-role\">Archive role</h2>\n<p>The project should preserve not only final releases but also references, visual plates, research notes and structural decisions. The archive should remain selective. A good archive does not publish everything; it preserves enough provenance for future interpretation.</p>\n<h2 id=\"status\">Status</h2>\n<p>Palimpsests is in active cultural production. The public dossier will grow with the album, its media and its editorial material as they are released.</p>\n",
   "headings": [
     "Project thesis",
     "Concept",
@@ -132,6 +139,7 @@
     "ORETH signature",
     "Knowledge role",
     "Belle — first open fragment",
+    "Palimpsest — piano study",
     "Archive role",
     "Status"
   ],
@@ -165,6 +173,11 @@
       "level": 2,
       "title": "Belle — first open fragment",
       "id": "belle-first-open-fragment"
+    },
+    {
+      "level": 2,
+      "title": "Palimpsest — piano study",
+      "id": "palimpsest-piano-study"
     },
     {
       "level": 2,
