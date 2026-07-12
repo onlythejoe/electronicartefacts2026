@@ -7427,6 +7427,152 @@ body[data-entry-id="vestiges"] .project-process__marker {
   }
 }
 
+.global-graph {
+  gap: clamp(1rem, 2vw, 1.45rem);
+}
+
+.global-graph__head {
+  max-width: 64rem;
+}
+
+.global-graph__summary,
+.global-graph__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.global-graph__summary span,
+.global-graph__filters .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  min-height: 2.1rem;
+  padding: 0.42rem 0.62rem;
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.global-graph__summary strong {
+  color: var(--text);
+}
+
+.global-graph__filters .tag {
+  cursor: pointer;
+}
+
+.global-graph__filters .tag.is-active {
+  border-color: rgba(247, 244, 239, 0.45);
+  background: rgba(247, 244, 239, 0.1);
+  color: var(--text);
+}
+
+.global-graph__filters i {
+  width: 0.52rem;
+  height: 0.52rem;
+  border-radius: 50%;
+  background: var(--node-color);
+  box-shadow: 0 0 0.45rem var(--node-color);
+}
+
+.global-graph__canvas-wrap {
+  position: relative;
+  min-height: clamp(29rem, 68vw, 48rem);
+  overflow: hidden;
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(rgba(247, 244, 239, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 244, 239, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(151, 121, 255, 0.1), transparent 42%),
+    rgba(255, 255, 255, 0.015);
+  background-size: 2.5rem 2.5rem, 2.5rem 2.5rem, auto, auto;
+}
+
+.global-graph__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+}
+
+.global-graph__edges line {
+  stroke: rgba(247, 244, 239, 0.2);
+  stroke-width: 0.08;
+  transition: opacity 160ms ease;
+}
+
+.global-graph__node {
+  cursor: pointer;
+  transition: opacity 160ms ease;
+}
+
+.global-graph__node circle {
+  fill: var(--node-color);
+  stroke: rgba(3, 4, 6, 0.88);
+  stroke-width: 0.38;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 0.5rem var(--node-color));
+}
+
+.global-graph__node text {
+  display: none;
+  fill: rgba(247, 244, 239, 0.72);
+  font-size: 1.25px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: rgba(3, 4, 6, 0.9);
+  stroke-width: 0.55px;
+  pointer-events: none;
+}
+
+.global-graph__node:hover circle,
+.global-graph__node:focus-visible circle {
+  r: 2.1;
+}
+
+.global-graph__node:hover text,
+.global-graph__node:focus-visible text {
+  display: block;
+  fill: var(--text);
+  font-size: 1.6px;
+}
+
+.global-graph__node.is-muted,
+.global-graph__edges line.is-muted {
+  opacity: 0.09;
+}
+
+.global-graph__hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 48rem) {
+  .global-graph__canvas-wrap {
+    min-height: 31rem;
+  }
+
+  .global-graph__node text {
+    display: none;
+  }
+
+  .global-graph__node:hover text,
+  .global-graph__node:focus-visible text {
+    display: block;
+    font-size: 2.2px;
+  }
+}
+
 .graph-surface {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -15624,11 +15770,11 @@ figcaption strong,
 
   .signature-banner--oreth {
     width: 100%;
-    min-height: clamp(48rem, 148vw, 62rem);
+    min-height: clamp(34rem, 120vw, 44rem);
   }
 
   .signature-banner--oreth .signature-banner__media {
-    min-height: clamp(30rem, 96vw, 40rem);
+    min-height: clamp(23rem, 82vw, 32rem);
   }
 }
 
@@ -15956,6 +16102,22 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
 }
 
 @media (max-width: 48rem) {
+  .signature-banner--oreth .signature-banner__spacer {
+    display: none;
+  }
+
+  .signature-banner--oreth .signature-banner__image {
+    width: 162%;
+    max-width: none;
+    transform: translateY(5%);
+  }
+
+  .signature-banner--oreth:hover .signature-banner__image,
+  .signature-banner--oreth:focus-within .signature-banner__image {
+    transform: translateY(5%);
+    filter: drop-shadow(0 20px 34px rgba(42, 29, 21, 0.16));
+  }
+
   .signature-banner--oreth .signature-banner__copy {
     position: static;
   }
