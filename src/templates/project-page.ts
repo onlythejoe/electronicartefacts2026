@@ -516,6 +516,64 @@ const renderPalimpsestsResearchBoard = (project: ProjectEntity): string => {
     </section>`;
 };
 
+const renderPalimpsestsArtistHero = (
+  project: ProjectEntity,
+  heroNav: Array<{ label: string; href: string }>,
+): string => {
+  const tags = project.locale === "fr"
+    ? ["Cycle d’album", "ORETH", "Cinq actes", "Archives"]
+    : ["Album cycle", "ORETH", "Five acts", "Archives"];
+  return `
+    <section class="zone-card hero palimpsests-artist-hero" id="project-overview" data-entry-id="palimpsests">
+      <div class="palimpsests-artist-hero__copy">
+        ${renderProjectBreadcrumb(project)}
+        <p class="eyebrow">ORETH / ${ui(project, "ARTIST PROFILE", "PROFIL ARTISTE")}</p>
+        <h1>${escapeHtml(project.title)}</h1>
+        <p class="palimpsests-artist-hero__role">${ui(project, "A five-act album cycle by ORETH", "Un cycle d’albums en cinq actes par ORETH")}</p>
+        <p class="palimpsests-artist-hero__lede">${escapeHtml(project.abstract)}</p>
+        ${renderChips(tags, "tag-cluster tag-cluster--compact palimpsests-artist-hero__tags")}
+        <div class="button-row button-row--compact palimpsests-artist-hero__actions">
+          <a class="button button--primary" href="#project-moodboard">${ui(project, "Enter the visual world", "Entrer dans l’univers visuel")}</a>
+          <a class="button button--secondary" href="#project-thesis">${ui(project, "Read the artist note", "Lire la note d’artiste")}</a>
+        </div>
+        <nav class="project-dossier-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}">
+          ${heroNav.map((item) => `<a class="tag" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join("")}
+        </nav>
+      </div>
+      <div class="palimpsests-artist-hero__portrait" aria-label="${ui(project, "ORETH portrait", "Portrait d’ORETH")}">
+        <div class="palimpsests-artist-hero__halo" aria-hidden="true"></div>
+        <img
+          src="/assets/media/projects/oreth/ORETH-hero-1200.webp"
+          srcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w"
+          sizes="(max-width: 48rem) 100vw, 48vw"
+          width="1200"
+          height="900"
+          alt="${ui(project, "ORETH, artist behind Palimpsests", "ORETH, artiste derrière Palimpsests")}"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <aside class="palimpsests-profile-window palimpsests-profile-window--identity">
+          <span>01 / ${ui(project, "SIGNATURE", "SIGNATURE")}</span>
+          <strong>ORETH</strong>
+          <small>${ui(project, "Recording artist", "Artiste sonore")}</small>
+        </aside>
+        <aside class="palimpsests-profile-window palimpsests-profile-window--work">
+          <span>02 / ${ui(project, "CURRENT WORK", "ŒUVRE EN COURS")}</span>
+          <strong>Palimpsests</strong>
+          <small>${ui(project, "Five acts · evolving archive", "Cinq actes · archive évolutive")}</small>
+        </aside>
+        <aside class="palimpsests-profile-window palimpsests-profile-window--status">
+          <i aria-hidden="true"></i>
+          <span>${ui(project, "ACTIVE CULTURAL PRODUCTION", "PRODUCTION CULTURELLE ACTIVE")}</span>
+        </aside>
+        <div class="palimpsests-orbit-dots" aria-hidden="true">
+          ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
+        </div>
+      </div>
+    </section>`;
+};
+
 const renderProjectDevelopment = (
   project: ProjectEntity,
   relations: RelationStatement[],
@@ -722,7 +780,7 @@ export const renderProjectPage = (
     { label: "Thesis", href: "#project-thesis" },
   ];
 
-  return `
+  const defaultHero = `
     <section class="zone-card hero detail-hero detail-hero--with-media project-dossier-hero" id="project-overview" data-entry-id="${escapeHtml(project.slug.canonical)}">
       <div class="section-head detail-hero__content">
         ${renderProjectBreadcrumb(project)}
@@ -745,7 +803,9 @@ export const renderProjectPage = (
         </nav>
       </div>
       ${renderHeroVisual(project)}
-    </section>
+    </section>`;
+
+  return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}
     ${renderProjectSystem(project)}
     ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}

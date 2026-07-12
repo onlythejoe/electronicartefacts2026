@@ -16397,6 +16397,58 @@ article.publication-body--vaste {
 
 @media(max-width:760px){.project-dossier-hero[data-entry-id="palimpsests"] .detail-hero__visual{aspect-ratio:4/5;min-height:0}.project-dossier-hero[data-entry-id="palimpsests"] .detail-hero__visual img{object-position:center center}}
 
+/* Palimpsests artist profile: extends the ORETH signature card from the home page. */
+.palimpsests-artist-hero {
+  --oreth-ink:#2f343b;
+  --oreth-muted:#69717d;
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(20rem,.86fr) minmax(28rem,1.14fr);
+  min-height:min(86svh,54rem);
+  padding:clamp(1.2rem,3vw,3rem);
+  border:1px solid rgba(75,79,84,.14);
+  color:var(--oreth-ink);
+  background:
+    radial-gradient(circle at var(--pointer-x,72%) var(--pointer-y,26%),rgba(255,255,255,.68),transparent 28%),
+    radial-gradient(circle at 15% 12%,rgba(255,255,255,.4),transparent 32%),
+    linear-gradient(135deg,#e8e1d7 0%,#d7d3cc 52%,#c5c9cb 100%);
+  box-shadow:0 34px 80px rgba(18,20,23,.24),inset 0 1px 0 rgba(255,255,255,.7);
+  overflow:hidden;
+  isolation:isolate;
+}
+.palimpsests-artist-hero::before { content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(255,255,255,.15),transparent 48%),radial-gradient(circle at 75% 64%,rgba(68,80,94,.14),transparent 34%);pointer-events:none; }
+.palimpsests-artist-hero__copy { position:relative;z-index:5;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:clamp(.75rem,1.5vw,1.1rem);max-width:42rem;padding-block:1rem; }
+.palimpsests-artist-hero .project-dossier-breadcrumbs,.palimpsests-artist-hero .project-dossier-breadcrumbs a { color:rgba(47,52,59,.62); }
+.palimpsests-artist-hero .eyebrow { color:rgba(47,52,59,.68); }
+.palimpsests-artist-hero h1 { margin:0;max-width:8ch;font-size:clamp(4.4rem,8vw,9rem);line-height:.78;letter-spacing:-.075em;color:var(--oreth-ink); }
+.palimpsests-artist-hero__role { margin:0;font-size:clamp(.75rem,1.1vw,.9rem);font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8b5683; }
+.palimpsests-artist-hero__lede { max-width:35rem;margin:0;color:var(--oreth-muted);font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.52; }
+.palimpsests-artist-hero .chip,.palimpsests-artist-hero .tag { border-color:rgba(56,64,73,.16);color:#3a424c;background:rgba(255,255,255,.34);box-shadow:inset 0 1px 0 rgba(255,255,255,.5); }
+.palimpsests-artist-hero__actions .button { border-color:rgba(56,64,73,.18);color:#353b43;background:rgba(255,255,255,.34); }
+.palimpsests-artist-hero__actions .button--primary { color:#f8f5ef;background:linear-gradient(180deg,#3e4651,#292f38); }
+.palimpsests-artist-hero .project-dossier-nav { margin-top:.3rem;border-top-color:rgba(56,64,73,.13); }
+.palimpsests-artist-hero__portrait { position:relative;z-index:2;align-self:stretch;min-height:clamp(34rem,63vw,50rem); }
+.palimpsests-artist-hero__halo { position:absolute;inset:10% 4% 3% 1%;border:1px solid rgba(68,76,86,.16);border-radius:50% 50% 2.5rem 2.5rem;background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.06));box-shadow:inset 0 0 80px rgba(255,255,255,.18); }
+.palimpsests-artist-hero__portrait>img { position:absolute;z-index:2;inset:auto -8% -7% -7%;width:116%;height:102%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 28px 38px rgba(38,43,49,.2));transform:translateY(0);transition:transform 700ms cubic-bezier(.2,.8,.2,1),filter 500ms ease;pointer-events:none; }
+.palimpsests-artist-hero:hover .palimpsests-artist-hero__portrait>img { transform:translateY(-1.2%) scale(1.012);filter:drop-shadow(0 34px 46px rgba(38,43,49,.28)); }
+.palimpsests-profile-window { position:absolute;z-index:4;display:grid;gap:.18rem;min-width:12rem;padding:.85rem 1rem;border:1px solid rgba(69,77,87,.16);border-radius:1rem;color:#39414a;background:rgba(242,240,235,.56);box-shadow:0 18px 40px rgba(55,60,67,.12),inset 0 1px 0 rgba(255,255,255,.66);backdrop-filter:blur(15px) saturate(115%);animation:palimpsests-window-in 900ms cubic-bezier(.16,.82,.24,1) both; }
+.palimpsests-profile-window span { font-size:.58rem;font-weight:700;letter-spacing:.16em;color:#747c85; }
+.palimpsests-profile-window strong { font-size:clamp(1.15rem,1.8vw,1.6rem);font-weight:650; }
+.palimpsests-profile-window small { color:#7c838b; }
+.palimpsests-profile-window--identity { top:9%;right:0;animation-delay:160ms; }
+.palimpsests-profile-window--work { left:-2%;bottom:19%;animation-delay:340ms; }
+.palimpsests-profile-window--status { right:1%;bottom:7%;grid-template-columns:auto 1fr;align-items:center;min-width:0;animation-delay:520ms; }
+.palimpsests-profile-window--status i { width:.55rem;height:.55rem;border-radius:50%;background:#8ba6ce;box-shadow:0 0 0 .35rem rgba(139,166,206,.16);animation:palimpsests-status-pulse 2.4s ease-in-out infinite; }
+.palimpsests-orbit-dots { position:absolute;inset:0;z-index:3;pointer-events:none; }
+.palimpsests-orbit-dots i { --angle:calc(var(--dot-index) * 51deg);position:absolute;left:calc(50% + cos(var(--angle)) * 45%);top:calc(48% + sin(var(--angle)) * 42%);width:clamp(.45rem,.8vw,.72rem);height:clamp(.45rem,.8vw,.72rem);border:1px solid rgba(60,68,78,.22);border-radius:50%;background:rgba(232,234,235,.8);box-shadow:0 0 0 .4rem rgba(255,255,255,.12);opacity:0;animation:palimpsests-dot-in 650ms cubic-bezier(.16,.82,.24,1) calc(450ms + var(--dot-index) * 90ms) forwards,palimpsests-dot-float 4.6s ease-in-out calc(1.2s + var(--dot-index) * 130ms) infinite; }
+@keyframes palimpsests-window-in { from{opacity:0;transform:translateY(1.1rem) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)} }
+@keyframes palimpsests-dot-in { to{opacity:1} }
+@keyframes palimpsests-dot-float { 0%,100%{translate:0 0}50%{translate:0 -.55rem} }
+@keyframes palimpsests-status-pulse { 0%,100%{transform:scale(.82);opacity:.72}50%{transform:scale(1.12);opacity:1} }
+@media(max-width:64rem){.palimpsests-artist-hero{grid-template-columns:1fr;min-height:auto;padding-bottom:0}.palimpsests-artist-hero__copy{max-width:none}.palimpsests-artist-hero h1{font-size:clamp(4rem,13vw,7rem)}.palimpsests-artist-hero__portrait{min-height:clamp(32rem,82vw,44rem)}.palimpsests-profile-window--work{left:2%}}
+@media(max-width:48rem){.palimpsests-artist-hero{padding:1rem 1rem 0;border-radius:1.5rem}.palimpsests-artist-hero__copy{gap:.65rem}.palimpsests-artist-hero h1{font-size:clamp(3.4rem,16vw,5.2rem)}.palimpsests-artist-hero__lede{font-size:1rem}.palimpsests-artist-hero__actions{display:grid;width:100%}.palimpsests-artist-hero__actions .button{width:100%}.palimpsests-artist-hero .project-dossier-nav{display:flex;max-width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.palimpsests-artist-hero__portrait{min-height:clamp(30rem,132vw,38rem);margin-inline:-1rem}.palimpsests-artist-hero__portrait>img{inset:auto -31% -5% -27%;width:158%;height:100%}.palimpsests-profile-window{min-width:0;padding:.65rem .72rem;border-radius:.8rem}.palimpsests-profile-window--identity{top:7%;right:.7rem}.palimpsests-profile-window--work{left:.7rem;bottom:20%}.palimpsests-profile-window--status{right:.7rem;bottom:7%}.palimpsests-profile-window strong{font-size:1rem}.palimpsests-profile-window small{font-size:.7rem}.palimpsests-orbit-dots i{left:calc(50% + cos(var(--angle)) * 43%);top:calc(48% + sin(var(--angle)) * 40%)}}
+@media(prefers-reduced-motion:reduce){.palimpsests-profile-window,.palimpsests-orbit-dots i,.palimpsests-profile-window--status i{animation:none;opacity:1}.palimpsests-artist-hero__portrait>img{transition:none}}
+
 /* Shared hover motion: responsive on entry, soft on arrival and return. */
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .button,
