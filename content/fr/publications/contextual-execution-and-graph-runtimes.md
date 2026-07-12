@@ -115,7 +115,7 @@ L'erreur est de commencer par un grand moteur abstrait. L'exécution contextuell
 
 Pour VASTE, l'exécution contextuelle est un principe de conception d'exécution.
 
-Pour le V6, il peut régir la contribution, la validation et la visibilité publique à travers les nœuds du savoir culturel.
+Pour le Vestiges, il peut régir la contribution, la validation et la visibilité publique à travers les nœuds du savoir culturel.
 
 Pour le centre de connaissances, il détermine quelles entités peuvent être indexées, quelles relations peuvent apparaître publiquement et comment l'état de publication affecte les métadonnées.
 

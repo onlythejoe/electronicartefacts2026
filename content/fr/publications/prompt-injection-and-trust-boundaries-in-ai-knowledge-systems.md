@@ -160,7 +160,7 @@ VASTE doit traiter l'injection de prompt comme une préoccupation de base. Tout 
 
 Le site public peut également modéliser les bonnes pratiques. Les articles peuvent citer des sources, exposer des entités de provenance et de lien sans transformer le contenu visible en instructions exécutables. Le graphique reste la couche d'autorité.
 
-Pour Palimpsests, ORETH et V6, ceci est important parce que les archives contiennent du matériel hétérogène : notes, noms de fichiers, légendes, transcriptions, commentaires et métadonnées intégrées. Tout cela peut éclairer l'interprétation. Rien de tout cela ne devrait contrôler silencieusement les outils.
+Pour Palimpsests, ORETH et Vestiges, ceci est important parce que les archives contiennent du matériel hétérogène : notes, noms de fichiers, légendes, transcriptions, commentaires et métadonnées intégrées. Tout cela peut éclairer l'interprétation. Rien de tout cela ne devrait contrôler silencieusement les outils.
 
 ## Mise en œuvre
 

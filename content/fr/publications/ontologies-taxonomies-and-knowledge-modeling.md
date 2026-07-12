@@ -113,7 +113,7 @@ L'avantage est la réactivité. Le coût est l'ambiguïté, la duplication des s
 
 Un système hybride peut préserver les balises utilisateur en tant qu'observations tout en mappant les termes sélectionnés aux concepts canoniques. La folksonomie devient un apport à la gouvernance du vocabulaire plutôt qu'un remplacement incontrôlé.
 
-V6 pourrait éventuellement avoir besoin de cet équilibre. Les intervenants devraient être en mesure de décrire les pratiques dans leur propre langue, tandis que les pages de connaissances publiques conservent des identités et des cartes stables.
+Vestiges pourrait éventuellement avoir besoin de cet équilibre. Les intervenants devraient être en mesure de décrire les pratiques dans leur propre langue, tandis que les pages de connaissances publiques conservent des identités et des cartes stables.
 
 ## Ontologies
 
@@ -177,7 +177,7 @@ Les relations directes sont pratiques mais peuvent cacher le temps et les partic
 
 Le CRM du CIDOC démontre la valeur de la modélisation axée sur les événements pour le patrimoine culturel. Il fournit une structure conceptuelle commune pour intégrer l'information sur les musées, les archives et les bibliothèques sans la réduire à un seul schéma de base de données.
 
-Electronic Artefacts prend déjà en charge les entités événementielles. Les futurs dossiers V6 peuvent les utiliser pour l'enseignement, la transmission, les expositions et l'histoire des institutions.
+Electronic Artefacts prend déjà en charge les entités événementielles. Les futurs dossiers Vestiges peuvent les utiliser pour l'enseignement, la transmission, les expositions et l'histoire des institutions.
 
 ## Modélisation de l'incertitude
 
@@ -239,7 +239,7 @@ Electronic Artefacts utilisent quatre couches complémentaires. Les types d'enti
 
 Cette architecture peut s'étendre parce que chaque couche a une responsabilité. Une publication peut appartenir à plusieurs disciplines, porter des étiquettes ciblées, documenter plusieurs concepts et se connecter à des projets sans être placé dans un seul dossier.
 
-VASTE peut rendre la même sémantique exécutable. V6 peut les étendre aux connaissances culturelles. Le centre de connaissances du public fournit des définitions lisibles et des pistes sources.
+VASTE peut rendre la même sémantique exécutable. Vestiges peut les étendre aux connaissances culturelles. Le centre de connaissances du public fournit des définitions lisibles et des pistes sources.
 
 ## Gouvernance
 
@@ -263,7 +263,7 @@ Voir [OWL](/fr/knowledge/technologies/owl/), [POUVOIRS](/fr/knowledge/technologi
 
 ## Projet connexe
 
-Voir [V6](/fr/projects/v6/) pour la modélisation des connaissances culturelles.
+Voir [Vestiges](/fr/projects/v6/) pour la modélisation des connaissances culturelles.
 
 ## Glossaire
 

@@ -70,7 +70,7 @@ This collection follows the AI and graph-runtime foundations by adding implement
 
 ## Editorial role
 
-The wave avoids product rankings. It focuses on stable concepts and standards that can support future Electronic Artefacts systems, especially VASTE, V6, ORETH, Palimpsests and the Knowledge Hub.
+The wave avoids product rankings. It focuses on stable concepts and standards that can support future Electronic Artefacts systems, especially VASTE, Vestiges, ORETH, Palimpsests and the Knowledge Hub.
 
 ## Current members
 

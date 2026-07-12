@@ -57,7 +57,7 @@ tags:
   - Living Archive
   - Provenance
   - Palimpsests
-  - V6
+  - Vestiges
 disciplines:
   - archives
   - art numérique
@@ -136,7 +136,7 @@ Pour Palimpsests, la préservation numérique signifie plus que stocker des œuv
 
 Pour ORETH, cela signifie préserver les notes de recherche et le contexte de l'analyse audio sans surclaimer les résultats de l'écoute automatique.
 
-Pour V6, la préservation est essentielle parce que la thèse de la plateforme dépend des connaissances culturelles vivantes, de la contribution, de la provenance et de l'interprétation publique.
+Pour Vestiges, la préservation est essentielle parce que la thèse de la plateforme dépend des connaissances culturelles vivantes, de la contribution, de la provenance et de l'interprétation publique.
 
 Pour le site Electronic Artefacts, il faut traiter les pages de connaissances générées comme des objets publics durables.
 
@@ -176,13 +176,13 @@ La troisième erreur est la sur-conservation sans sélection. Si tout est gardé
 
 ## Implications pour Electronic Artefacts
 
-Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d'architecture en version et d'enregistrements de licences. Les palimpsestes ont besoin d'une provenance audio, visuelle et interprétative. V6 a besoin de contribution et d'historique de validation. Le site lui-même a besoin d'instantanés et d'enregistrements sources générés parce que le graphe public fait partie de la production intellectuelle de l'institution.
+Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d'architecture en version et d'enregistrements de licences. Les palimpsestes ont besoin d'une provenance audio, visuelle et interprétative. Vestiges a besoin de contribution et d'historique de validation. Le site lui-même a besoin d'instantanés et d'enregistrements sources générés parce que le graphe public fait partie de la production intellectuelle de l'institution.
 
 Cette approche donne la valeur d'archive au-delà de la nostalgie. Il fait du site un système de mémoire de travail.
 
 ## Concepts connexes
 
-Lire [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Provenance](/fr/knowledge/concepts/provenance/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/), [Palimpsestes](/fr/projects/palimpsests/) et [V6](/fr/projects/v6/).
+Lire [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Provenance](/fr/knowledge/concepts/provenance/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/), [Palimpsestes](/fr/projects/palimpsests/) et [Vestiges](/fr/projects/v6/).
 
 ## Lecture suggérée
 
@@ -213,4 +213,4 @@ La préservation a également un coût écologique et économique. Le stockage, 
 - Coalition pour la préservation numérique. Manuel de préservation numérique, 2e édition.
 - Bibliothèque du Congrès. Durabilité des formats numériques.
 - Alliance nationale de gérance numérique. Niveaux de préservation numérique.
-- Electronic Artefacts. Palimpsestes et enregistrements V6.
+- Electronic Artefacts. Palimpsestes et enregistrements Vestiges.

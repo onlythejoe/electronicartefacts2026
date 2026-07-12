@@ -68,7 +68,7 @@ Software systems include services, data, users, permissions, queues, deployment 
 
 ## Electronic Artefacts position
 
-Systems thinking connects Runtime Theory, VASTE, ORETH, V6 and the Knowledge Hub. It provides a shared vocabulary for understanding graphs, feedback, creative workflows and long-lived infrastructures.
+Systems thinking connects Runtime Theory, VASTE, ORETH, Vestiges and the Knowledge Hub. It provides a shared vocabulary for understanding graphs, feedback, creative workflows and long-lived infrastructures.
 
 ## Limitations
 

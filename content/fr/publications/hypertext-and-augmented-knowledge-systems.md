@@ -164,7 +164,7 @@ La troisième erreur est de laisser le temps dominer la structure. Les flux chro
 
 ## Implications pour Electronic Artefacts
 
-Electronic Artefacts devraient traiter chaque article majeur comme un nœud dans un système de connaissances à long terme. VASTE, ORETH, Palimpsests et V6 doivent être liés lorsqu'ils illuminent un sujet, et non lorsqu'une promotion est nécessaire.
+Electronic Artefacts devraient traiter chaque article majeur comme un nœud dans un système de connaissances à long terme. VASTE, ORETH, Palimpsests et Vestiges doivent être liés lorsqu'ils illuminent un sujet, et non lorsqu'une promotion est nécessaire.
 
 L'avantage du site n'est pas seulement ses projets. C'est la capacité d'expliquer les idées techniques, artistiques et historiques derrière ces projets dans un graphe public réutilisable.
 

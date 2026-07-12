@@ -219,7 +219,7 @@ Le défi est la performance. Les modèles sémantiques généraux peuvent avoir 
 
 ## Domaine OS pour la culture
 
-V6 illustre un domaine culturel OS. Les primitifs communs comprennent des personnes, des organisations, des techniques, des matériaux, des outils, des lieux, des documents et des œuvres. Les relations décrivent l'enseignement, la fabrication, l'utilisation, la préservation et la participation.
+Vestiges illustre un domaine culturel OS. Les primitifs communs comprennent des personnes, des organisations, des techniques, des matériaux, des outils, des lieux, des documents et des œuvres. Les relations décrivent l'enseignement, la fabrication, l'utilisation, la préservation et la participation.
 
 Les applications peuvent comprendre des pages de connaissances publiques, des flux de travail de contribution, des tableaux de bord institutionnels, des voies d'apprentissage et des services économiques. Ils partagent l'identité et la provenance plutôt que de fonctionner comme bases de données isolées.
 
@@ -281,7 +281,7 @@ Construisez une application qui prouve la réutilisation, puis une deuxième app
 
 Ajouter les contrats d'extension uniquement lorsque des besoins d'intégration répétés existent. Mesurer les coûts opérationnels. Préserver les exportations et les surfaces publiques statiques.
 
-Pour VASTE, V6 et le Knowledge Hub fournissent des éléments de preuve complémentaires : durée d'exécution, produit appliqué et projection des connaissances publiques.
+Pour VASTE, Vestiges et le Knowledge Hub fournissent des éléments de preuve complémentaires : durée d'exécution, produit appliqué et projection des connaissances publiques.
 
 ## Mise en œuvre
 
@@ -301,7 +301,7 @@ Lire [Système d'exploitation du domaine](/fr/knowledge/concepts/domain-operatin
 
 ## Programmes et projets connexes
 
-Voir [VASTE](/fr/programs/vaste/) et [V6](/fr/projects/v6/).
+Voir [VASTE](/fr/programs/vaste/) et [Vestiges](/fr/projects/v6/).
 
 ## Glossaire
 

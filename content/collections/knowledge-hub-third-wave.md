@@ -55,7 +55,7 @@ explicitMembers:
   - id: ea:technology:cloudevents
   - id: ea:technology:owl
   - id: ea:technology:skos
-selectionNote: The collection prioritizes evergreen questions with high search demand and strong structural links to VASTE, V6, ORETH, Palimpsests and the public Knowledge Hub.
+selectionNote: The collection prioritizes evergreen questions with high search demand and strong structural links to VASTE, Vestiges, ORETH, Palimpsests and the public Knowledge Hub.
 tags:
   - Knowledge Hub
   - Third Wave
@@ -88,7 +88,7 @@ The collection includes twelve long-form publications, twelve canonical concepts
 
 ## Internal pathways
 
-LLM readers can move toward agents, local inference, RAG and multimodality. Systems readers can move toward graphs, events, Redis, service boundaries and domain operating systems. VASTE, V6, ORETH and Palimpsests provide applied contexts.
+LLM readers can move toward agents, local inference, RAG and multimodality. Systems readers can move toward graphs, events, Redis, service boundaries and domain operating systems. VASTE, Vestiges, ORETH and Palimpsests provide applied contexts.
 
 ## Future expansion
 

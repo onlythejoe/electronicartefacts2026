@@ -332,6 +332,7 @@ window.EA_ENTITIES = {
     },
     {
       id: "ea-lightweight-template",
+      canonicalId: "ea:framework:electronic-artefacts-lightweight-template",
       title: "Electronic Artefacts Lightweight Template",
       subtitle: "Vanilla Web Framework",
       kind: "program",
@@ -3142,6 +3143,7 @@ window.EA_ENTITIES = {
   researchLogs: [
     {
       id: "foundational-lineage-001",
+      canonicalId: "ea:publication:foundational-lineage-001",
       title: "Foundational Lineage #001",
       kind: "researchLog",
       type: "Research Log",

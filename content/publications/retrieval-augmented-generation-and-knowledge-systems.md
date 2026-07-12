@@ -201,7 +201,7 @@ Lewis et al. formalized retrieval as non-parametric memory combined with a gener
 
 ## Electronic Artefacts applications
 
-The Knowledge Hub can power a source-grounded research assistant, related-reading engine and semantic search interface. VASTE can provide identity-aware graph retrieval. V6 can answer questions about people, techniques, materials and institutions while exposing relation paths. ORETH can retrieve audio annotations, analyses and project context.
+The Knowledge Hub can power a source-grounded research assistant, related-reading engine and semantic search interface. VASTE can provide identity-aware graph retrieval. Vestiges can answer questions about people, techniques, materials and institutions while exposing relation paths. ORETH can retrieve audio annotations, analyses and project context.
 
 The public surface should remain useful without AI. Canonical pages, citations and navigation are primary. RAG is a way to query that structured library, not a replacement for it.
 
@@ -217,7 +217,7 @@ Read [Retrieval-Augmented Generation](/knowledge/concepts/retrieval-augmented-ge
 
 ## Related programs
 
-See [VASTE](/programs/vaste/) and [V6](/projects/v6/).
+See [VASTE](/programs/vaste/) and [Vestiges](/projects/v6/).
 
 ## Glossary
 

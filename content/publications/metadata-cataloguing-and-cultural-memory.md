@@ -126,7 +126,7 @@ It improves preservation by recording origin, format and change.
 
 It improves trust by showing what a claim depends on.
 
-In V6, metadata can connect culture, craft, institutions, techniques and sources. In Palimpsests, it can preserve audio and visual residue. In ORETH, it can document analysis outputs and machine-listening context.
+In Vestiges, metadata can connect culture, craft, institutions, techniques and sources. In Palimpsests, it can preserve audio and visual residue. In ORETH, it can document analysis outputs and machine-listening context.
 
 ## Tools
 
@@ -174,7 +174,7 @@ The Knowledge Hub should treat metadata changes as editorial changes. If a sourc
 
 ## Reader pathway
 
-Metadata can feel abstract until a reader loses context. The article should therefore guide readers from everyday questions, such as "what is this file?" or "where did this source come from?", toward archival concepts like provenance, preservation metadata and graph relations. The strongest path leads from [Metadata](/knowledge/concepts/metadata/) to [Provenance](/knowledge/concepts/provenance/), [Digital Preservation](/knowledge/concepts/digital-preservation/) and [V6](/projects/v6/).
+Metadata can feel abstract until a reader loses context. The article should therefore guide readers from everyday questions, such as "what is this file?" or "where did this source come from?", toward archival concepts like provenance, preservation metadata and graph relations. The strongest path leads from [Metadata](/knowledge/concepts/metadata/) to [Provenance](/knowledge/concepts/provenance/), [Digital Preservation](/knowledge/concepts/digital-preservation/) and [Vestiges](/projects/v6/).
 
 ## Future work
 
@@ -182,7 +182,7 @@ Future entries should cover preservation metadata, rights metadata, source criti
 
 ## Related concepts
 
-Read [Metadata](/knowledge/concepts/metadata/), [Provenance](/knowledge/concepts/provenance/), [Digital Preservation](/knowledge/concepts/digital-preservation/), [Knowledge Graph](/knowledge/concepts/knowledge-graph/) and [V6](/projects/v6/).
+Read [Metadata](/knowledge/concepts/metadata/), [Provenance](/knowledge/concepts/provenance/), [Digital Preservation](/knowledge/concepts/digital-preservation/), [Knowledge Graph](/knowledge/concepts/knowledge-graph/) and [Vestiges](/projects/v6/).
 
 ## Suggested reading
 
@@ -213,4 +213,4 @@ Metadata also costs time. The right response is not to describe everything exhau
 - Dublin Core Metadata Initiative. DCMI Metadata Terms.
 - Library of Congress. METS.
 - Library of Congress. PREMIS.
-- Electronic Artefacts. V6, Knowledge Graph and Digital Preservation records.
+- Electronic Artefacts. Vestiges, Knowledge Graph and Digital Preservation records.

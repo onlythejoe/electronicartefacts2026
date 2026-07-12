@@ -70,7 +70,7 @@ The field advances through architecture models, prototypes, implementation notes
 
 ## Applications
 
-V6 applies Runtime Theory to a cultural knowledge platform. Its public thesis depends on addressable entities and historized relationships, while its operational model requires permissions, contribution context and controlled propagation.
+Vestiges applies Runtime Theory to a cultural knowledge platform. Its public thesis depends on addressable entities and historized relationships, while its operational model requires permissions, contribution context and controlled propagation.
 
 ## Open questions
 

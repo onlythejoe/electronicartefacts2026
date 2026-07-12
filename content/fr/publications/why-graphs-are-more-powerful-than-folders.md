@@ -139,7 +139,7 @@ Les graphiques peuvent modéliser le temps à travers les entités de version, l
 
 La modélisation temporelle empêche l'état actuel d'effacer l'histoire. Les connaissances culturelles dépendent souvent de la séquence : qui a appris de qui, comment une technique a bougé, quand une institution a changé de nom.
 
-V6 a besoin de cette capacité parce que l'artisanat et la transmission culturelle sont des processus et non des profils statiques.
+Vestiges a besoin de cette capacité parce que l'artisanat et la transmission culturelle sont des processus et non des profils statiques.
 
 ## Autorisations et contexte
 
@@ -185,7 +185,7 @@ Le contrôle des versions complète également les graphiques. Git enregistre l'
 
 L'expression « modéliser le monde avec des graphiques » peut inciter à une trop grande ouverture. Aucun graphique ne capture complètement la réalité. Un modèle sélectionne les entités et les relations selon leur but.
 
-La première étape est la question des compétences. Que doit répondre le système? Pour V6 : qui pratique une technique, quels matériaux elle utilise, où elle est enseignée, quels documents appuient la revendication et comment elle a changé au fil du temps. Ces questions déterminent le graphique.
+La première étape est la question des compétences. Que doit répondre le système? Pour Vestiges : qui pratique une technique, quels matériaux elle utilise, où elle est enseignée, quels documents appuient la revendication et comment elle a changé au fil du temps. Ces questions déterminent le graphique.
 
 La deuxième étape est la preuve. Une relation doit avoir une source lorsqu'elle fait une revendication culturelle substantielle.
 
@@ -227,9 +227,9 @@ Cette approche est utile pour les systèmes où les connaissances et les flux de
 
 Il faut également renforcer les contrôles. L'exécution devrait utiliser des quartiers délimités et des prédicats validés plutôt que des traversées arbitraires.
 
-## V6
+## Vestiges
 
-V6 démontre pourquoi les dossiers sont insuffisants pour les connaissances culturelles. Une technique artisanale appartient aux personnes, aux lieux, aux matériaux, aux outils, aux institutions et aux œuvres. Aucune hiérarchie ne peut représenter tous ces chemins.
+Vestiges démontre pourquoi les dossiers sont insuffisants pour les connaissances culturelles. Une technique artisanale appartient aux personnes, aux lieux, aux matériaux, aux outils, aux institutions et aux œuvres. Aucune hiérarchie ne peut représenter tous ces chemins.
 
 Un graphique permet à la plateforme de préserver la transmission : une personne apprise d'une autre personne, enseignée dans un établissement, a utilisé un matériel et contribué à un travail. Les pages publiques peuvent ensuite raconter des histoires cohérentes à partir des mêmes documents structurés.
 
@@ -259,7 +259,7 @@ Lire [Modélisation des graphiques](/fr/knowledge/concepts/graph-modeling/), [Gr
 
 ## Programmes et projets connexes
 
-Voir [VASTE](/fr/programs/vaste/) et [V6](/fr/projects/v6/).
+Voir [VASTE](/fr/programs/vaste/) et [Vestiges](/fr/projects/v6/).
 
 ## Glossaire
 

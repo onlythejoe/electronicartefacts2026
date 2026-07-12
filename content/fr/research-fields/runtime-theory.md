@@ -71,7 +71,7 @@ Le champ avance par modèles d’architecture, prototypes, notes d’implémenta
 
 ## Applications
 
-V6 applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.
+Vestiges applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.
 
 ## Questions ouvertes
 

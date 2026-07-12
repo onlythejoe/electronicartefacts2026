@@ -6,7 +6,7 @@ slug:
 title: Graphes de connaissances pour les infrastructures culturelles
 subtitle: Article technique
 abstract: "Cet article explique comment les graphes de connaissances soutiennent l'infrastructure culturelle en donnant aux personnes, aux œuvres, aux sources, aux concepts, aux projets et aux archives des identités stables et des relations explicites."
-description: "Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au V6 et au graphique d’Electronic Artefacts."
+description: "Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au Vestiges et au graphique d’Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -57,7 +57,7 @@ tags:
   - infrastructure culturelle
   - Linked Data
   - Provenance
-  - V6
+  - Vestiges
 disciplines:
   - systèmes de connaissance
   - archives
@@ -126,11 +126,11 @@ Le schéma de mise en œuvre est simple :
 
 1. Définir les types d'entités. 2. Donnez à chaque enregistrement une identification canonique et un itinéraire. 3. Exiger des métadonnées de publication. 4. Gardez le contenu du corps suffisamment substantiel pour rester seul. 5. Entreposez les relations comme relations typées. 6. Générer des pages et JSON-LD de la même source. 7. Construire des documents de recherche à partir de titres, résumés, corps, balises et relations. 8. Rejeter les références interrompues pendant la validation.
 
-Le graphique d'Electronic Artefacts applique déjà ce modèle à VASTE, Runtime Theory, Graph Runtime et V6. Cet article étend le même modèle à un centre de connaissances plus large.
+Le graphique d'Electronic Artefacts applique déjà ce modèle à VASTE, Runtime Theory, Graph Runtime et Vestiges. Cet article étend le même modèle à un centre de connaissances plus large.
 
 ## Applications pratiques
 
-Pour V6, un graphe de connaissances peut relier les personnes, les techniques, les matériaux, les oeuvres, les documents et les institutions. Un lecteur pourrait partir d'un matériel d'artisanat, le suivre à une technique, puis à un praticien, puis à une publication, puis à un enregistrement de provenance.
+Pour Vestiges, un graphe de connaissances peut relier les personnes, les techniques, les matériaux, les oeuvres, les documents et les institutions. Un lecteur pourrait partir d'un matériel d'artisanat, le suivre à une technique, puis à un praticien, puis à une publication, puis à un enregistrement de provenance.
 
 Pour les Palimpsestes, un graphique peut connecter des pistes, des références visuelles, des analyses audio, des concepts de mémoire, l'archéologie des signaux et le contexte de publication.
 
@@ -146,7 +146,7 @@ Parmi les outils et normes utiles, mentionnons RDF pour la réflexion des graphi
 
 La construction actuelle d'Electronic Artefacts génère déjà des pages d'entités canoniques, des routes d’identification, des fichiers JSON-LD, des documents de recherche, un plan du site et des quartiers de graphes locaux. Cela signifie que le graphe de connaissances n'est pas théorique. C'est le support de publication du site.
 
-V6 est un cas d'application prévu car il cartographiera les pratiques artistiques et artisanales sans aplatir les gens, les matériaux et les techniques en cartes isolées.
+Vestiges est un cas d'application prévu car il cartographiera les pratiques artistiques et artisanales sans aplatir les gens, les matériaux et les techniques en cartes isolées.
 
 ## Concepts connexes
 
@@ -154,7 +154,7 @@ Lisez les enregistrements pour [Graphe de connaissances](/fr/knowledge/concepts/
 
 ## Lecture suggérée
 
-Commencez par W3C RDF 1.1 Concepts, l'aperçu CRM CIDOC et W3C PROV. Ensuite, comparez ces modèles avec les enregistrements Electronic Artefacts pour VASTE, Runtime Theory et V6.
+Commencez par W3C RDF 1.1 Concepts, l'aperçu CRM CIDOC et W3C PROV. Ensuite, comparez ces modèles avec les enregistrements Electronic Artefacts pour VASTE, Runtime Theory et Vestiges.
 
 ## Articles connexes
 
@@ -183,4 +183,4 @@ Le graphique devrait également éviter une fausse certitude. Les connaissances 
 - W3C. RDF 1.1 Concepts et syntaxe abstraite. 2014.
 - CRM CIDOC Groupe d'intérêt spécial. Modèle conceptuel de référence du CIDOC.
 - W3C. Aperçu de PROV. 2013.
-- Electronic Artefacts. VASTE, Runtime Theory, Graph Runtime et V6 records.
+- Electronic Artefacts. VASTE, Runtime Theory, Graph Runtime et Vestiges records.

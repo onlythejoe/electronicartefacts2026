@@ -71,7 +71,7 @@ Cette collection prolonge les fondations IA et runtime en ajoutant des standards
 
 ## Rôle éditorial
 
-La vague évite les classements de produits. Elle se concentre sur des concepts et standards stables, capables de soutenir les futurs systèmes Electronic Artefacts, notamment VASTE, V6, ORETH, Palimpsests et le Knowledge Hub.
+La vague évite les classements de produits. Elle se concentre sur des concepts et standards stables, capables de soutenir les futurs systèmes Electronic Artefacts, notamment VASTE, Vestiges, ORETH, Palimpsests et le Knowledge Hub.
 
 ## Membres actuels
 

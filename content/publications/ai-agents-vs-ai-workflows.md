@@ -177,7 +177,7 @@ Anthropic's engineering guidance distinguishes workflows with predefined orchest
 
 The Knowledge Hub can use workflows for frontmatter validation, link checking, relation generation proposals and SEO checks. Agents are better suited to investigating a topic across many source types, tracing missing graph relations or updating a set of connected pages whose scope cannot be known beforehand.
 
-VASTE provides the deeper research context. An agent operating on a graph can use identity and relation semantics as constraints. V6 could support contribution agents that propose links between people, techniques and institutions while preserving human validation. ORETH could support exploratory audio-analysis agents that choose measurements based on observed signal structure.
+VASTE provides the deeper research context. An agent operating on a graph can use identity and relation semantics as constraints. Vestiges could support contribution agents that propose links between people, techniques and institutions while preserving human validation. ORETH could support exploratory audio-analysis agents that choose measurements based on observed signal structure.
 
 In every case, the agent should strengthen human understanding rather than conceal the system behind a conversational surface.
 

@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import vm from "node:vm";
+import fg from "fast-glob";
 
 test("the canonical generated catalog overrides migrated legacy records", async () => {
   const source = await readFile(path.resolve("assets/js/catalog.js"), "utf8");
@@ -112,4 +113,14 @@ test("the canonical generated catalog overrides migrated legacy records", async 
   assert.equal(orethProgram?.semanticId, "ea:program:oreth");
   assert.equal(orethProgram?.status, "archived");
   assert.equal(catalog.artists[0]?.title, "ORETH artist");
+});
+
+test("canonical content consistently uses the Vestiges project name", async () => {
+  const files = await fg(["content/**/*.md"]);
+  const stale: string[] = [];
+  for (const file of files) {
+    const source = await readFile(path.resolve(file), "utf8");
+    if (/\bV6\b/.test(source)) stale.push(file);
+  }
+  assert.deepEqual(stale, [], `V6 remains in canonical content: ${stale.join(", ")}`);
 });

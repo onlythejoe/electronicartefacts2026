@@ -31,6 +31,7 @@ window.EA_COLLECTIONS = [
   },
   {
     id: "voice-capture-studio-collection",
+    canonicalId: "ea:collection:voice-capture-studio",
     title: "Voice Capture Studio Collection",
     kind: "collection",
     type: "Collection",

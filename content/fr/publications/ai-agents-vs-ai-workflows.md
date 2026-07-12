@@ -178,7 +178,7 @@ Le guide d'ingénierie d'Anthropic distingue les workflows avec orchestration pr
 
 Le Knowledge Hub peut utiliser des flux de travail pour la validation de la matière première, la vérification des liens, les propositions de génération de relations et les vérifications SEO. Les agents conviennent mieux à l'étude d'un sujet sur de nombreux types de sources, à la recherche de relations de graphe manquantes ou à la mise à jour d'un ensemble de pages connectées dont la portée ne peut être connue au préalable.
 
-VASTE fournit le contexte de recherche plus profond. Un agent opérant sur un graphique peut utiliser l'identité et la sémantique relation comme contraintes. V6 pourrait soutenir les agents de contribution qui proposent des liens entre les personnes, les techniques et les institutions tout en préservant la validation humaine. L'ORETH pourrait prendre en charge les agents d'analyse audio exploratoire qui choisissent des mesures basées sur la structure du signal observée.
+VASTE fournit le contexte de recherche plus profond. Un agent opérant sur un graphique peut utiliser l'identité et la sémantique relation comme contraintes. Vestiges pourrait soutenir les agents de contribution qui proposent des liens entre les personnes, les techniques et les institutions tout en préservant la validation humaine. L'ORETH pourrait prendre en charge les agents d'analyse audio exploratoire qui choisissent des mesures basées sur la structure du signal observée.
 
 Dans tous les cas, l'agent devrait renforcer la compréhension humaine plutôt que de dissimuler le système derrière une surface conversationnelle.
 

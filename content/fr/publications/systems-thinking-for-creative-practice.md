@@ -192,7 +192,7 @@ L'archivage rejeté les alternatives préserve les connaissances sur le chemin, 
 
 ## Modèle électronique Artefacts
 
-Electronic Artefacts peuvent être compris comme un système reliant programmes, projets, concepts, publications et artefacts. VASTE fournit une infrastructure d'exécution. V6 applique la connaissance graphique à la culture. ORETH relie l'analyse audio et la production artistique. Palimpsests connecte mémoire, son et archive. Le Knowledge Hub expose les concepts partagés.
+Electronic Artefacts peuvent être compris comme un système reliant programmes, projets, concepts, publications et artefacts. VASTE fournit une infrastructure d'exécution. Vestiges applique la connaissance graphique à la culture. ORETH relie l'analyse audio et la production artistique. Palimpsests connecte mémoire, son et archive. Le Knowledge Hub expose les concepts partagés.
 
 La valeur vient des relations. Un article renforce un concept; un concept explique un programme; un projet démontre le programme; une archive préserve les preuves; les pages de recherche et de graphique renvoient les lecteurs au réseau.
 
@@ -224,7 +224,7 @@ Lire [Systèmes de réflexion](/fr/knowledge/concepts/systems-thinking/), [Rétr
 
 ## Programmes connexes
 
-Voir [VASTE](/fr/programs/vaste/), [ORETH](/fr/programs/oreth/) et [V6](/fr/projects/v6/).
+Voir [VASTE](/fr/programs/vaste/), [ORETH](/fr/programs/oreth/) et [Vestiges](/fr/projects/v6/).
 
 ## Glossaire
 

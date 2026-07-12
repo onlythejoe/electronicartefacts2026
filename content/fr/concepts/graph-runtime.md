@@ -7,7 +7,7 @@ title: Runtime de graphe
 definition: Runtime de graphe désigne les environnements d'exécution où les entités, relations,
   permissions et événements du graphe participent directement au calcul.
 abstract: Electronic Artefacts emploie « runtime de graphe » pour désigner les systèmes où entités, relations, identité, contexte et événements forment une structure exécutable plutôt qu’un modèle de données passif.
-description: Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et V6.
+description: Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et Vestiges.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -62,7 +62,7 @@ L’exécution sur graphe n’est utile que si elle demeure lisible et gouvernab
 
 ## Applications
 
-VASTE est le programme principal à travers lequel Electronic Artefacts développe ce modèle. V6 applique cette thèse aux savoirs culturels et artisanaux, où personnes, techniques, matériaux, institutions, lieux et documents exigent des identités stables et des relations historiques explicites.
+VASTE est le programme principal à travers lequel Electronic Artefacts développe ce modèle. Vestiges applique cette thèse aux savoirs culturels et artisanaux, où personnes, techniques, matériaux, institutions, lieux et documents exigent des identités stables et des relations historiques explicites.
 
 La Théorie du runtime porte la question de recherche sous-jacente : quel est le minimum nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente ?
 
@@ -72,4 +72,4 @@ Un runtime de graphe introduit des coûts de modélisation et de gouvernance. De
 
 ## Références
 
-Cette définition s’appuie sur le programme VASTE, le champ Théorie du runtime, l’architecture du projet V6 et la lignée fondatrice conservée par Electronic Artefacts.
+Cette définition s’appuie sur le programme VASTE, le champ Théorie du runtime, l’architecture du projet Vestiges et la lignée fondatrice conservée par Electronic Artefacts.

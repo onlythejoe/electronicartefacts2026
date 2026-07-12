@@ -56,7 +56,7 @@ tags:
   - Living Archive
   - Provenance
   - Palimpsests
-  - V6
+  - Vestiges
 disciplines:
   - Archives
   - Digital Art
@@ -134,7 +134,7 @@ For Palimpsests, digital preservation means more than storing album artwork and 
 
 For ORETH, it means preserving research notes and audio analysis context without overclaiming machine-listening results.
 
-For V6, preservation is central because the platform thesis depends on living cultural knowledge, contribution, provenance and public interpretation.
+For Vestiges, preservation is central because the platform thesis depends on living cultural knowledge, contribution, provenance and public interpretation.
 
 For the Electronic Artefacts site, it means treating generated knowledge pages as durable public artefacts.
 
@@ -174,13 +174,13 @@ The third mistake is over-preserving without selection. If everything is kept wi
 
 ## Electronic Artefacts implications
 
-Electronic Artefacts should treat every major project as a preservation context. VASTE needs versioned architecture and licensing records. Palimpsests needs audio, visual and interpretive provenance. V6 needs contribution and validation history. The website itself needs generated snapshots and source records because the public graph is part of the institution's intellectual output.
+Electronic Artefacts should treat every major project as a preservation context. VASTE needs versioned architecture and licensing records. Palimpsests needs audio, visual and interpretive provenance. Vestiges needs contribution and validation history. The website itself needs generated snapshots and source records because the public graph is part of the institution's intellectual output.
 
 This approach gives the archive value beyond nostalgia. It makes the site a working memory system.
 
 ## Related concepts
 
-Read [Digital Preservation](/knowledge/concepts/digital-preservation/), [Provenance](/knowledge/concepts/provenance/), [Knowledge Graph](/knowledge/concepts/knowledge-graph/), [Palimpsests](/projects/palimpsests/) and [V6](/projects/v6/).
+Read [Digital Preservation](/knowledge/concepts/digital-preservation/), [Provenance](/knowledge/concepts/provenance/), [Knowledge Graph](/knowledge/concepts/knowledge-graph/), [Palimpsests](/projects/palimpsests/) and [Vestiges](/projects/v6/).
 
 ## Suggested reading
 
@@ -211,4 +211,4 @@ Preservation also has ecological and economic cost. Storage, migration and redun
 - Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition.
 - Library of Congress. Sustainability of Digital Formats.
 - National Digital Stewardship Alliance. Levels of Digital Preservation.
-- Electronic Artefacts. Palimpsests and V6 records.
+- Electronic Artefacts. Palimpsests and Vestiges records.

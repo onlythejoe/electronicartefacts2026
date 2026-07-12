@@ -62,4 +62,4 @@ This note is a concise internal lineage record, not a complete historical accoun
 
 ## References
 
-The current reference set consists of the Runtime Theory field, VASTE program record, V6 project architecture and preserved Electronic Artefacts timelines.
+The current reference set consists of the Runtime Theory field, VASTE program record, Vestiges project architecture and preserved Electronic Artefacts timelines.

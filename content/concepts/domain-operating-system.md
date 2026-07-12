@@ -57,7 +57,7 @@ An application delivers a bounded user experience. A domain operating system sup
 
 ## Electronic Artefacts position
 
-VASTE is relevant as a domain-runtime foundation for graph-shaped products. V6 can become a cultural knowledge operating layer when public pages, contributions, validation and economic services share the same entity model.
+VASTE is relevant as a domain-runtime foundation for graph-shaped products. Vestiges can become a cultural knowledge operating layer when public pages, contributions, validation and economic services share the same entity model.
 
 ## Limitations
 
@@ -65,4 +65,4 @@ The metaphor can encourage overreach. A domain operating system should start fro
 
 ## References
 
-See Graph Runtime, Contextual Execution, VASTE, V6 and Event-Driven Architecture.
+See Graph Runtime, Contextual Execution, VASTE, Vestiges and Event-Driven Architecture.

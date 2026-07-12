@@ -143,7 +143,7 @@ Les archives contiennent souvent des documents sensibles ou inédits. L'inféren
 
 Néanmoins, le stockage et la mise en cache du navigateur doivent être manipulés avec soin. Une fonctionnalité de navigateur local peut laisser des traces sur une machine partagée. L'application devrait offrir des limites de session claires et des contrôles de suppression.
 
-Pour V6, un téléspectateur WebNN pourrait classer les images ou suggérer des métadonnées tout en préservant l'examen humain. Pour Palimpsests, il pourrait aider à l'annotation audiovisuelle sans exposer les médias privés source.
+Pour Vestiges, un téléspectateur WebNN pourrait classer les images ou suggérer des métadonnées tout en préservant l'examen humain. Pour Palimpsests, il pourrait aider à l'annotation audiovisuelle sans exposer les médias privés source.
 
 ## WebNN et VASTE
 

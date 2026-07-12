@@ -152,7 +152,7 @@ Pour Electronic Artefacts, la politique de confiance pourrait être graph-aware.
 
 Electronic Artefacts pourrait utiliser des justificatifs d'identité vérifiables pour signer des documents de publication, des déclarations de contribution du créateur, des événements de dépôt d'archives, des jalons d'examen des droits ou des énoncés de projet. Ces pouvoirs ne remplaceraient pas le centre de connaissances. Ils ajouteraient une couche de confiance portable à certaines revendications.
 
-Les palimpsestes pourraient bénéficier de lettres de créances qui distinguent la contribution du créateur, la provenance des médias et l'état de diffusion publique. V6 pourrait utiliser des identifiants pour connecter les objets d'archives aux déclarations institutionnelles. VASTE pourrait valider les références dans le cadre de l'exécution contextuelle avant d'accorder l'autorisation d'accès ou de publication.
+Les palimpsestes pourraient bénéficier de lettres de créances qui distinguent la contribution du créateur, la provenance des médias et l'état de diffusion publique. Vestiges pourrait utiliser des identifiants pour connecter les objets d'archives aux déclarations institutionnelles. VASTE pourrait valider les références dans le cadre de l'exécution contextuelle avant d'accorder l'autorisation d'accès ou de publication.
 
 L'utilisation la plus précieuse est sélective. Toutes les relations n'ont pas besoin d'un justificatif. Les pouvoirs doivent être réservés aux réclamations pour lesquelles la portabilité, la vérification ou la confiance institutionnelle modifient le résultat.
 

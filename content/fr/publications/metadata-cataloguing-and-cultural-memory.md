@@ -128,7 +128,7 @@ Il améliore la conservation en enregistrant l'origine, le format et le changeme
 
 Il améliore la confiance en montrant ce dont dépend une revendication.
 
-En V6, les métadonnées peuvent relier culture, métier, institutions, techniques et sources. Dans Palimpsests, il peut préserver les résidus audio et visuels. Dans ORETH, il peut documenter les résultats d'analyse et le contexte d'écoute automatique.
+En Vestiges, les métadonnées peuvent relier culture, métier, institutions, techniques et sources. Dans Palimpsests, il peut préserver les résidus audio et visuels. Dans ORETH, il peut documenter les résultats d'analyse et le contexte d'écoute automatique.
 
 ## Outils
 
@@ -176,7 +176,7 @@ Le centre de connaissances devrait traiter les modifications apportées aux mét
 
 ## Voie de lecture
 
-Les métadonnées peuvent se sentir abstraites jusqu'à ce qu'un lecteur perde son contexte. L'article devrait donc guider les lecteurs de questions quotidiennes, comme « quel est ce fichier ? » ou « d'où vient cette source ? », vers des concepts d'archives comme la provenance, la conservation des métadonnées et les relations de graphe. Le chemin le plus fort mène de [Métadonnées](/fr/knowledge/concepts/metadata/) à [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/) et [V6](/fr/projects/v6/).
+Les métadonnées peuvent se sentir abstraites jusqu'à ce qu'un lecteur perde son contexte. L'article devrait donc guider les lecteurs de questions quotidiennes, comme « quel est ce fichier ? » ou « d'où vient cette source ? », vers des concepts d'archives comme la provenance, la conservation des métadonnées et les relations de graphe. Le chemin le plus fort mène de [Métadonnées](/fr/knowledge/concepts/metadata/) à [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/) et [Vestiges](/fr/projects/v6/).
 
 ## Travaux futurs
 
@@ -184,7 +184,7 @@ Les futures entrées devraient porter sur la conservation des métadonnées, les
 
 ## Concepts connexes
 
-Lire [Métadonnées](/fr/knowledge/concepts/metadata/), [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/) et [V6](/fr/projects/v6/).
+Lire [Métadonnées](/fr/knowledge/concepts/metadata/), [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/) et [Vestiges](/fr/projects/v6/).
 
 ## Lecture suggérée
 
@@ -215,4 +215,4 @@ Les métadonnées coûtent également du temps. La bonne réponse n'est pas de t
 - Initiative sur les métadonnées de Dublin Core. Conditions de métadonnées DCMI.
 - Bibliothèque du Congrès. Les MET.
 - Bibliothèque du Congrès. PRÉMIS.
-- Electronic Artefacts. V6, Registres de graphes de connaissances et de préservation numérique.
+- Electronic Artefacts. Vestiges, Registres de graphes de connaissances et de préservation numérique.

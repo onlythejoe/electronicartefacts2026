@@ -47,7 +47,7 @@ IIIF standardizes the presentation of digitized and born-digital cultural object
 
 ## Use
 
-Electronic Artefacts can use IIIF concepts to reason about V6 objects, Palimpsests dossiers, audio-visual collections and annotation-aware public records.
+Electronic Artefacts can use IIIF concepts to reason about Vestiges objects, Palimpsests dossiers, audio-visual collections and annotation-aware public records.
 
 ## References
 

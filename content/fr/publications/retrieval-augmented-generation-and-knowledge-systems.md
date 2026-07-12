@@ -203,7 +203,7 @@ Lewis et al. ont procédé à la récupération officielle en tant que mémoire 
 
 ## Implications pour Electronic Artefacts
 
-Le Knowledge Hub peut alimenter un assistant de recherche basé sur la source, un moteur de lecture connexe et une interface de recherche sémantique. VASTE peut fournir une recherche de graphiques identitaires. V6 peut répondre à des questions sur les personnes, les techniques, les matériaux et les institutions tout en exposant les chemins de relations. ORETH peut récupérer les annotations audio, les analyses et le contexte du projet.
+Le Knowledge Hub peut alimenter un assistant de recherche basé sur la source, un moteur de lecture connexe et une interface de recherche sémantique. VASTE peut fournir une recherche de graphiques identitaires. Vestiges peut répondre à des questions sur les personnes, les techniques, les matériaux et les institutions tout en exposant les chemins de relations. ORETH peut récupérer les annotations audio, les analyses et le contexte du projet.
 
 La surface publique devrait rester utile sans l'IA. Les pages canoniques, les citations et la navigation sont primaires. RAG est un moyen de demander cette bibliothèque structurée, pas un remplacement pour elle.
 
@@ -219,7 +219,7 @@ Lire [Génération augmentée par récupération](/fr/knowledge/concepts/retriev
 
 ## Programmes connexes
 
-Voir [VASTE](/fr/programs/vaste/) et [V6](/fr/projects/v6/).
+Voir [VASTE](/fr/programs/vaste/) et [Vestiges](/fr/projects/v6/).
 
 ## Glossaire
 

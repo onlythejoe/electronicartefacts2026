@@ -48,7 +48,7 @@ La recherche, le design et l’ingénierie ne sont pas traités comme des servic
 
 ## Produits et programmes
 
-Electronic Artefacts développe ses propres programmes, notamment VASTE et ORETH, et les applique à des projets publics comme V6 et Palimpsests. Ces programmes constituent des environnements de recherche et des actifs techniques pouvant soutenir des collaborations, des pilotes ou des produits plus larges.
+Electronic Artefacts développe ses propres programmes, notamment VASTE et ORETH, et les applique à des projets publics comme Vestiges et Palimpsests. Ces programmes constituent des environnements de recherche et des actifs techniques pouvant soutenir des collaborations, des pilotes ou des produits plus larges.
 
 ## Travail client
 

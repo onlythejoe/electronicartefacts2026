@@ -74,7 +74,7 @@ IIIF, le Cadre international d'interopérabilité de l'image, fournit des API et
 
 L'API de présentation de l'IIIF 3.0 décrit des ressources telles que des collections, des manifestes, des toiles, des gammes et des annotations. Ce ne sont pas seulement des conteneurs techniques. Ils sont une façon de dire comment un objet culturel doit être vu, navigué et contextualisé.
 
-Pour Electronic Artefacts, l'IIIF est pertinent parce que des projets comme V6 et Palimpsestes comportent des enregistrements composés. Le travail n'est pas seulement un fichier multimédia. C'est un objet structuré avec des parties, des vues, des traces, des preuves et une interprétation.
+Pour Electronic Artefacts, l'IIIF est pertinent parce que des projets comme Vestiges et Palimpsestes comportent des enregistrements composés. Le travail n'est pas seulement un fichier multimédia. C'est un objet structuré avec des parties, des vues, des traces, des preuves et une interprétation.
 
 ## Architecture
 
@@ -94,7 +94,7 @@ En IIIF, un groupe de collection manifeste et d'autres collections. Il peut repr
 
 Les collections sont utiles parce que l'infrastructure culturelle a souvent besoin d'une navigation imbriquée. Un projet peut contenir des séries. Une série peut contenir des objets. Un objet peut contenir des toiles. Cette structure permet aux lecteurs de passer d'un aperçu à un détail sans compter sur un arbre de dossiers.
 
-Pour le V6, les collections pourraient regrouper des artisanats, des institutions, des régions, des techniques ou des campagnes de documentation. Le point important est que la structure de la collection est éditoriale, et pas seulement de stockage.
+Pour le Vestiges, les collections pourraient regrouper des artisanats, des institutions, des régions, des techniques ou des campagnes de documentation. Le point important est que la structure de la collection est éditoriale, et pas seulement de stockage.
 
 ## Manifestes
 
@@ -144,9 +144,9 @@ Il ne remplace pas la fixité, la redondance de stockage, les enregistrements de
 
 Un plan de préservation devrait regrouper les actifs de source, les actifs dérivés, les manifestes, les annotations, les métadonnées sur les droits et les graphes afin que les systèmes futurs puissent reconstruire l'objet.
 
-## V6
+## Vestiges
 
-V6 est une plate-forme naturelle de l'IIIF, car les documents d'art et d'artisanat peuvent nécessiter plus d'une image et un paragraphe. Un objet artisanal peut avoir des détails matériels, le contexte du fabricant, des images d'atelier, des diagrammes d'outils et des références institutionnelles.
+Vestiges est une plate-forme naturelle de l'IIIF, car les documents d'art et d'artisanat peuvent nécessiter plus d'une image et un paragraphe. Un objet artisanal peut avoir des détails matériels, le contexte du fabricant, des images d'atelier, des diagrammes d'outils et des références institutionnelles.
 
 Un manifeste IIIF pourrait exposer l'objet à une vision interopérable. Le graphique d’Electronic Artefacts pourrait relier cet objet aux concepts, lieux, matériaux, techniques et preuves.
 

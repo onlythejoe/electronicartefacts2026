@@ -6,7 +6,7 @@ slug:
 title: Graph Runtime
 definition: A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.
 abstract: Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.
-description: A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and V6.
+description: A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -60,7 +60,7 @@ Graph execution is useful only when it remains legible and governable. Context s
 
 ## Applications
 
-VASTE is the primary program through which Electronic Artefacts develops this model. V6 applies the runtime thesis to cultural and craft knowledge, where people, techniques, materials, institutions, places and documents need stable identities and explicit historical relationships.
+VASTE is the primary program through which Electronic Artefacts develops this model. Vestiges applies the runtime thesis to cultural and craft knowledge, where people, techniques, materials, institutions, places and documents need stable identities and explicit historical relationships.
 
 Runtime Theory supplies the research question beneath the implementation: what is the minimum necessary for a universe of entities to execute events coherently?
 
@@ -70,4 +70,4 @@ A graph runtime introduces modeling and governance costs. Poorly defined relatio
 
 ## References
 
-This definition is grounded in the VASTE program, Runtime Theory research field, V6 project architecture and the preserved foundational lineage of Electronic Artefacts.
+This definition is grounded in the VASTE program, Runtime Theory research field, Vestiges project architecture and the preserved foundational lineage of Electronic Artefacts.
