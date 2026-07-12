@@ -14,7 +14,7 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.2.0
+  version: 1.3.0
   createdAt: "2026-01-01"
   publishedAt: "2026-06-23"
   modifiedAt: "2026-07-13"
@@ -49,6 +49,16 @@ media:
     src: /assets/media/projects/palimpsests/P1288759-edit-1800.webp
     alt: Palimpsests portrait visual
     caption: ORETH — Palimpsests, visual study.
+  - id: belle-instrumental-v3
+    type: audio
+    src: /assets/media/projects/palimpsests/belle/belle-instrumental-v3.m4a
+    alt: Belle instrumental studio fragment
+    caption: Belle — unfinished instrumental studio version, without final voice.
+  - id: belle-moon-fragment
+    type: video
+    src: /assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4
+    alt: Moon filmed through violet and rose light for Belle
+    caption: Belle — short visual fragment.
 visualLanguage:
   - Ink black
   - Dust rose
@@ -109,6 +119,10 @@ Palimpsests is signed by ORETH. This artistic use of the name is separate from O
 ## Knowledge role
 
 Palimpsests demonstrates the studio’s ability to produce music, media and cultural campaigns. Its public materials can connect sound, image, editorial work and research references while keeping the album’s artistic autonomy intact.
+
+## Belle — first open fragment
+
+Belle belongs to Act III, Experiences: the point where the album moves from founding narratives toward intimate lives, absence, resilience and relation. Its first public trace combines an unfinished instrumental studio version, a short lunar image and the French lyric sheet. The full album sequence remains visible, but unreleased tracks are deliberately held back rather than presented as available works.
 
 ## Archive role
 

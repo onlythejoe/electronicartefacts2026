@@ -23,3 +23,15 @@ test("project browsing publishes responsive graph, results and full-grid styles"
   assert.match(styles, /grid-template-columns: repeat\(3, minmax\(0, 1fr\)\)/);
   assert.match(styles, /@media \(max-width: 48rem\)[\s\S]*?\.project-browser/);
 });
+
+test("Palimpsests publishes Belle as the only open album fragment", async () => {
+  const page = await readFile("projects/palimpsests/index.html", "utf8");
+
+  assert.match(page, /data-palimpsests-music/);
+  assert.match(page, /class="is-available"[\s\S]*?href="#belle"[\s\S]*?<strong>Belle<\/strong>/);
+  assert.match(page, /belle-instrumental-v3\.m4a/);
+  assert.match(page, /belle-instrumental-v3\.mp3/);
+  assert.match(page, /belle-moon-fragment\.mp4/);
+  assert.match(page, /Working document — arrangement, mix and voice may still change\./);
+  assert.match(page, /Qu’est-ce qu’elle est belle/);
+});

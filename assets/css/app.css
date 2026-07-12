@@ -20265,6 +20265,53 @@ article.publication-body--vaste {
 }
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
+/* Palimpsests music dossier: first reusable artist-release module. */
+.palimpsests-music{--belle-ink:#101010;--belle-paper:#e9e4dc;display:grid;gap:clamp(2rem,5vw,5rem);padding:clamp(1.2rem,4vw,4rem);border-radius:var(--radius-xl);color:var(--belle-paper);background:var(--belle-ink);overflow:hidden}
+.palimpsests-music__head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(18rem,.65fr);gap:clamp(1.5rem,6vw,7rem);align-items:end}
+.palimpsests-music__head h2{max-width:11ch;margin:0;font-size:clamp(3rem,7vw,7.5rem);line-height:.82;letter-spacing:-.065em}
+.palimpsests-music__head>p{max-width:36rem;margin:0;color:#aaa39c;font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.55}
+.palimpsests-music__layout{display:grid;grid-template-columns:minmax(17rem,.72fr) minmax(0,1.28fr);gap:clamp(1.5rem,4vw,4.5rem);align-items:start}
+.palimpsests-tracklist{border-top:1px solid #373432}
+.palimpsests-tracklist__act{display:grid;grid-template-columns:8.5rem 1fr;border-bottom:1px solid #373432}
+.palimpsests-tracklist__act>header{display:flex;gap:.75rem;padding:1rem .7rem 1rem 0;color:#77716c;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase}
+.palimpsests-tracklist__act>header span{color:#c8c0b8}
+.palimpsests-tracklist__act ol{margin:0;padding:0;list-style:none}
+.palimpsests-tracklist__act li>a,.palimpsests-tracklist__act li>span{display:grid;grid-template-columns:2.1rem 1fr auto;gap:.55rem;align-items:center;min-height:2.35rem;padding:.35rem .5rem;border-bottom:1px solid rgba(255,255,255,.055);color:inherit;text-decoration:none}
+.palimpsests-tracklist__act li:last-child>a,.palimpsests-tracklist__act li:last-child>span{border-bottom:0}
+.palimpsests-tracklist__act i,.palimpsests-tracklist__act a>span{font-style:normal;color:#615d59;font-size:.65rem;font-variant-numeric:tabular-nums}
+.palimpsests-tracklist__act strong{overflow:hidden;font-size:.79rem;font-weight:520;letter-spacing:.01em;text-overflow:ellipsis;white-space:nowrap}
+.palimpsests-tracklist__act em{font-size:.58rem;font-style:normal;letter-spacing:.11em;text-transform:uppercase;color:#5f5a56}
+.palimpsests-tracklist__act .is-withheld{color:#77716c}
+.palimpsests-tracklist__act .is-available a{margin:.18rem 0;color:#161414;background:#e7ded4;border-radius:.45rem;transition:transform .25s ease,background .25s ease}
+.palimpsests-tracklist__act .is-available a:hover,.palimpsests-tracklist__act .is-available a:focus-visible{transform:translateX(.25rem);background:#fff8ef}
+.palimpsests-tracklist__act .is-available a>span,.palimpsests-tracklist__act .is-available em{color:#8a4e78}
+.belle-release{display:grid;background:#171515;border:1px solid #3c3734;border-radius:1.2rem;overflow:hidden}
+.belle-release__visual{position:relative;min-height:clamp(32rem,64vw,55rem);overflow:hidden;background:#292235}
+.belle-release__visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,7,9,.05),rgba(9,7,9,.08) 55%,rgba(9,7,9,.84));pointer-events:none}
+.belle-release__visual video{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:saturate(.88) contrast(1.03)}
+.belle-release__visual>span,.belle-release__visual>strong{position:absolute;z-index:2;left:clamp(1rem,4vw,3rem)}
+.belle-release__visual>span{top:clamp(1rem,4vw,3rem);font-size:.65rem;letter-spacing:.2em}
+.belle-release__visual>strong{bottom:clamp(1rem,4vw,2.5rem);font-size:clamp(5rem,14vw,13rem);line-height:.7;letter-spacing:-.08em}
+.belle-release__player{display:grid;grid-template-columns:1fr minmax(15rem,.85fr);gap:1.25rem;align-items:center;padding:clamp(1rem,3vw,2rem)}
+.belle-release__player h3{margin:.15rem 0;font-size:clamp(1.15rem,2vw,1.65rem)}
+.belle-release__player p{margin:0;color:#928b85;font-size:.76rem}
+.belle-release__player audio{width:100%;height:2.7rem;color-scheme:dark}
+.belle-release__player .belle-release__disclaimer{grid-column:1/-1;padding-top:1rem;border-top:1px solid #35312f;letter-spacing:.04em}
+.belle-lyrics{border-top:1px solid #3c3734}
+.belle-lyrics summary{display:flex;justify-content:space-between;gap:1rem;padding:1.2rem clamp(1rem,3vw,2rem);cursor:pointer;list-style:none;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.belle-lyrics summary::-webkit-details-marker{display:none}
+.belle-lyrics summary strong::after{content:" +";color:#b273a1}
+.belle-lyrics[open] summary strong::after{content:" −"}
+.belle-lyrics__sheet{display:grid;grid-template-columns:minmax(10rem,.55fr) minmax(0,1fr);gap:clamp(2rem,6vw,7rem);padding:clamp(2rem,5vw,5rem);color:#1b1918;background:#e8e1d8}
+.belle-lyrics__sheet header{position:sticky;top:2rem;align-self:start}
+.belle-lyrics__sheet header span,.belle-lyrics__sheet header p{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:#786f69}
+.belle-lyrics__sheet header h3{margin:.5rem 0;font-size:clamp(3rem,7vw,6rem);line-height:.82;letter-spacing:-.06em}
+.belle-lyrics__sheet>div{columns:2 15rem;column-gap:clamp(2rem,5vw,5rem)}
+.belle-lyrics__sheet>div p{break-inside:avoid;margin:0 0 1.8rem;font-size:clamp(1rem,1.55vw,1.25rem);line-height:1.6}
+@media(max-width:64rem){.palimpsests-music__head,.palimpsests-music__layout{grid-template-columns:1fr}.palimpsests-tracklist__act{grid-template-columns:7rem 1fr}.belle-release__visual{min-height:clamp(32rem,120vw,48rem)}}
+@media(max-width:48rem){.palimpsests-music{padding:1rem;border-radius:1.2rem}.palimpsests-music__head h2{font-size:clamp(3rem,15vw,5rem)}.palimpsests-tracklist__act{grid-template-columns:1fr}.palimpsests-tracklist__act>header{padding:.9rem 0 .35rem}.belle-release__visual{min-height:128vw}.belle-release__visual>strong{font-size:22vw}.belle-release__player,.belle-lyrics__sheet{grid-template-columns:1fr}.belle-lyrics__sheet header{position:static}.belle-lyrics__sheet>div{columns:1}.belle-lyrics summary{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.belle-release__visual video{display:none}.palimpsests-tracklist__act .is-available a{transition:none}}
+
 /* Palimpsests profile v3 — quiet campaign layout. */
 .palimpsests-artist-hero {
   background:
@@ -20293,7 +20340,7 @@ article.publication-body--vaste {
 @media(max-width:48rem){
   .palimpsests-artist-hero { padding-bottom:0; }
   .palimpsests-artist-hero__portrait { min-height:32rem;margin:0; }
-  .palimpsests-artist-hero__portrait>img { inset:auto -25% 8% auto;width:145%;height:auto;max-width:none;object-fit:initial;object-position:initial; }
+  .palimpsests-artist-hero__portrait>img { inset:auto -25% -1px auto;width:145%;height:auto;max-width:none;object-fit:initial;object-position:initial; }
   .palimpsests-profile-window--identity { top:8%;right:.8rem; }
   .palimpsests-profile-window--work { left:.8rem;bottom:8%; }
   .palimpsests-orbit-dots { opacity:.35; }

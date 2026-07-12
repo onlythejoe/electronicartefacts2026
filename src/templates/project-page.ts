@@ -574,6 +574,85 @@ const renderPalimpsestsArtistHero = (
     </section>`;
 };
 
+const palimpsestsTrackActs = [
+  ["I", "Origins", ["Intro", "Entropy", "Emergence"]],
+  ["II", "Remembrance", ["Palimpsest", "Incandescence", "Keraunos", "Les Étoiles Meurent Pour Toi"]],
+  ["III", "Experiences", ["CtrlC+CtrlV", "Forever Each Other", "Rustr", "Running Up That Hill", "Now", "La Nuit", "Belle", "Nerve Corrupted"]],
+  ["IV", "Transcendence", ["Soft Control", "Out Of Memory", "Crash"]],
+  ["V", "Heritage", ["Resilience"]],
+] as const;
+
+const belleLyrics = [
+  "Qu’est-ce qu’elle est belle|quand elle m’éclaire sans brûler.|Qu’est-ce qu’elle est belle|quand elle refuse de s’éteindre.|Qu’est-ce qu’elle est belle|quand elle danse avec le vide.",
+  "Ne cherche plus à convaincre.",
+  "On dirait|qu’elle connaît un chemin|que personne n’a tracé.|Et tout se déplace avec elle.",
+  "Il y a dans ses silences|quelque chose|qui ressemble|à ces printemps moroses.",
+  "Ces mers qui retiennent leur souffle.|Le ciel paraît plus lourd.|Des nuits de résilience.|Pour qu’on oublie sa course.",
+  "Elle disparaît.|Le monde croit qu’elle est partie.",
+  "Comme si l’absence|n’avait été|qu’une autre façon|d’exister.",
+  "Qu’est-ce qu’elle est belle|quand elle marche avec la nuit.|Qu’est-ce qu’elle est belle|quand elle refuse de s’éteindre.|Qu’est-ce qu’elle est belle|quand elle sourit à l’ennui.|Qu’est-ce qu’elle est belle|quand elle danse avec le vide.",
+] as const;
+
+const renderPalimpsestsMusic = (project: ProjectEntity): string => {
+  if (project.slug.canonical !== "palimpsests") return "";
+  let trackNumber = 0;
+  return `
+    <section class="palimpsests-music" id="project-music" data-palimpsests-music>
+      <header class="palimpsests-music__head">
+        <div>
+          <p class="eyebrow">${ui(project, "THE RECORD / WORK IN PROGRESS", "LE DISQUE / EN COURS")}</p>
+          <h2>${ui(project, "Five acts. One fragment is open.", "Cinq actes. Un fragment est ouvert.")}</h2>
+        </div>
+        <p>${ui(project, "The full sequence remains visible as an album architecture. Belle is the first accessible studio fragment: an unfinished instrumental version, published here as a trace rather than a final release.", "La séquence entière reste visible comme architecture de l’album. Belle est le premier fragment de studio accessible : une version instrumentale inachevée, publiée ici comme trace plutôt que comme sortie définitive.")}</p>
+      </header>
+      <div class="palimpsests-music__layout">
+        <nav class="palimpsests-tracklist" aria-label="${ui(project, "Palimpsests track list", "Liste des morceaux de Palimpsests")}">
+          ${palimpsestsTrackActs.map(([roman, title, tracks]) => `
+            <section class="palimpsests-tracklist__act">
+              <header><span>${roman}</span><strong>${ui(project, title, title === "Origins" ? "Origines" : title === "Remembrance" ? "Mémoire" : title === "Experiences" ? "Expériences" : title === "Transcendence" ? "Transcendance" : "Héritage")}</strong></header>
+              <ol>
+                ${tracks.map((track) => {
+                  trackNumber += 1;
+                  const isBelle = track === "Belle";
+                  return `<li class="${isBelle ? "is-available" : "is-withheld"}">
+                    ${isBelle ? `<a href="#belle"><span>${String(trackNumber).padStart(2, "0")}</span><strong>${track}</strong><em>${ui(project, "Listen", "Écouter")}</em></a>` : `<span><i>${String(trackNumber).padStart(2, "0")}</i><strong>${track}</strong><em>${ui(project, "Held back", "Réservé")}</em></span>`}
+                  </li>`;
+                }).join("")}
+              </ol>
+            </section>`).join("")}
+        </nav>
+        <article class="belle-release" id="belle">
+          <div class="belle-release__visual">
+            <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster.jpg" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
+              <source src="/assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4" type="video/mp4" />
+            </video>
+            <span>ACT III / 14</span>
+            <strong>BELLE</strong>
+          </div>
+          <div class="belle-release__player">
+            <div>
+              <p class="eyebrow">ORETH / BELLE</p>
+              <h3>${ui(project, "Instrumental studio fragment", "Fragment instrumental de studio")}</h3>
+              <p>${ui(project, "Version 3 · without final voice · 02:34", "Version 3 · sans voix définitive · 02:34")}</p>
+            </div>
+            <audio controls preload="metadata" aria-label="${ui(project, "Listen to the Belle instrumental work in progress", "Écouter la maquette instrumentale de Belle")}">
+              <source src="/assets/media/projects/palimpsests/belle/belle-instrumental-v3.m4a" type="audio/mp4" />
+              <source src="/assets/media/projects/palimpsests/belle/belle-instrumental-v3.mp3" type="audio/mpeg" />
+            </audio>
+            <p class="belle-release__disclaimer">${ui(project, "Working document — arrangement, mix and voice may still change.", "Document de travail — arrangement, mix et voix peuvent encore évoluer.")}</p>
+          </div>
+          <details class="belle-lyrics">
+            <summary><span>${ui(project, "Words / French", "Paroles / Français")}</span><strong>${ui(project, "Read the lyrics", "Lire les paroles")}</strong></summary>
+            <div class="belle-lyrics__sheet">
+              <header><span>ORETH</span><h3>Belle</h3><p>Acte III — Expériences</p></header>
+              <div>${belleLyrics.map((stanza) => `<p>${stanza.split("|").map(escapeHtml).join("<br />")}</p>`).join("")}</div>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>`;
+};
+
 const renderProjectDevelopment = (
   project: ProjectEntity,
   relations: RelationStatement[],
@@ -770,6 +849,7 @@ export const renderProjectPage = (
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
   const productionRefs = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId));
   const heroNav = [
+    ...(isPalimpsests ? [{ label: ui(project, "Listen", "Écouter"), href: "#project-music" }] : []),
     { label: "Brief", href: "#project-brief" },
     { label: "System", href: "#project-system" },
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
@@ -805,7 +885,8 @@ export const renderProjectPage = (
       ${renderHeroVisual(project)}
     </section>`;
 
-  return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}
+  return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}${isPalimpsests ? `
+    ${renderPalimpsestsMusic(project)}` : ""}
     ${renderProjectSystem(project)}
     ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}

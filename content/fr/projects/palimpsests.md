@@ -15,7 +15,7 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.2.0
+  version: 1.3.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-13
@@ -49,6 +49,16 @@ media:
     src: /assets/media/projects/palimpsests/P1288759-edit-1800.webp
     alt: Portrait Palimpsests
     caption: ORETH — Palimpsests, étude visuelle.
+  - id: belle-instrumental-v3-fr
+    type: audio
+    src: /assets/media/projects/palimpsests/belle/belle-instrumental-v3.m4a
+    alt: Fragment instrumental de studio pour Belle
+    caption: Belle — version instrumentale inachevée, sans voix définitive.
+  - id: belle-moon-fragment-fr
+    type: video
+    src: /assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4
+    alt: Lune filmée dans une lumière violette et rose pour Belle
+    caption: Belle — court fragment visuel.
 visualLanguage:
   - Noir encre
   - Rose poussière
@@ -99,6 +109,10 @@ La planche de recherche reste volontairement ouverte. Elle documente la constell
 ## Musique, médias et campagne culturelle
 
 Palimpsests montre qu’Electronic Artefacts peut produire de la musique, des médias et des campagnes culturelles. Le son, les images et la matière éditoriale prolongent une même œuvre, sans réduire l’album à un dossier technique.
+
+## Belle — premier fragment ouvert
+
+Belle appartient à l’acte III, Expériences : le moment où l’album quitte les récits fondateurs pour entrer dans les vies intimes, l’absence, la résilience et la relation. Sa première trace publique réunit une version instrumentale de studio inachevée, une courte image lunaire et le texte français. La séquence complète de l’album reste visible, mais les morceaux non publiés sont volontairement retenus plutôt que présentés comme disponibles.
 
 ## Signature ORETH
 
