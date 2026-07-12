@@ -157,3 +157,13 @@
   createdAt: "2026-07-11"
   reviewedAt: "2026-07-11"
   visibility: public
+
+- id: ear:vab-evidenced-by-interface-prototype
+  subject: ea:concept:vab-and-genesis
+  predicate: evidencedBy
+  object: ea:artefact:vab-interface-prototype
+  statement: The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.
+  confidence: observed
+  createdAt: "2026-07-07"
+  reviewedAt: "2026-07-13"
+  visibility: public

@@ -8,6 +8,16 @@
   reviewedAt: "2026-06-23"
   visibility: public
 
+- id: ear:palimpsests-produced-by-electronic-artefacts
+  subject: ea:project:palimpsests
+  predicate: producedBy
+  object: ea:organization:electronic-artefacts
+  statement: Electronic Artefacts produces Palimpsests as a five-chapter ORETH album and compound cultural project.
+  confidence: published
+  createdAt: "2026-01-01"
+  reviewedAt: "2026-07-13"
+  visibility: public
+
 - id: ear:oreth-applies-signal-archaeology
   subject: ea:program:oreth
   predicate: appliesConcept

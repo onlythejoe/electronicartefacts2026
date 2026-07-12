@@ -32,6 +32,13 @@ problem: A system that starts from rigid fields can mistake compliance for under
 hypothesis: Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form.
 currentUnderstanding: Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.
 experiments:
+  - id: assisted-boot-interface-prototype
+    title: Assisted Boot interface prototype
+    status: observed
+    summary: A preserved autonomous VAB browser prototype explores provisional understanding, editable memory projection, user confirmation and graph reveal while explicitly separating interface simulation from canonical runtime state.
+    relatedEntities:
+      - id: ea:concept:vab-and-genesis
+      - id: ea:artefact:vab-interface-prototype
   - id: conversational-brief-capture
     title: Conversational brief capture
     status: active

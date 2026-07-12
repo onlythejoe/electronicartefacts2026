@@ -33,6 +33,13 @@ problem: Un système qui commence par des champs rigides peut confondre conformi
 hypothesis: La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil.
 currentUnderstanding: La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.
 experiments:
+  - id: assisted-boot-interface-prototype
+    title: Prototype d’interface Assisted Boot
+    status: observed
+    summary: Un prototype navigateur VAB autonome et conservé explore compréhension provisoire, projection de mémoire modifiable, confirmation humaine et révélation du graphe tout en séparant explicitement simulation d’interface et état canonique du runtime.
+    relatedEntities:
+      - id: ea:concept:vab-and-genesis
+      - id: ea:artefact:vab-interface-prototype
   - id: conversational-brief-capture
     title: Capture conversationnelle du brief
     status: active
