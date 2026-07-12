@@ -20199,6 +20199,72 @@ article.publication-body--vaste {
 @media(max-width:48rem){.palimpsests-artist-hero{padding:1rem 1rem 0;border-radius:1.5rem}.palimpsests-artist-hero__copy{gap:.65rem}.palimpsests-artist-hero h1{font-size:clamp(3.4rem,16vw,5.2rem)}.palimpsests-artist-hero__lede{font-size:1rem}.palimpsests-artist-hero__actions{display:grid;width:100%}.palimpsests-artist-hero__actions .button{width:100%}.palimpsests-artist-hero .project-dossier-nav{display:flex;max-width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.palimpsests-artist-hero__portrait{min-height:clamp(30rem,132vw,38rem);margin-inline:-1rem}.palimpsests-artist-hero__portrait>img{inset:auto -31% -5% -27%;width:158%;height:100%}.palimpsests-profile-window{min-width:0;padding:.65rem .72rem;border-radius:.8rem}.palimpsests-profile-window--identity{top:7%;right:.7rem}.palimpsests-profile-window--work{left:.7rem;bottom:20%}.palimpsests-profile-window--status{right:.7rem;bottom:7%}.palimpsests-profile-window strong{font-size:1rem}.palimpsests-profile-window small{font-size:.7rem}.palimpsests-orbit-dots i{left:calc(50% + cos(var(--angle)) * 43%);top:calc(48% + sin(var(--angle)) * 40%)}}
 @media(prefers-reduced-motion:reduce){.palimpsests-profile-window,.palimpsests-orbit-dots i,.palimpsests-profile-window--status i{animation:none;opacity:1}.palimpsests-artist-hero__portrait>img{transition:none}}
 
+/* Palimpsests profile v2 — full-screen campaign composition, portrait first. */
+@media(min-width:64.0625rem){
+  .palimpsests-artist-hero {
+    display:block;
+    min-height:clamp(44rem,calc(100svh - 2rem),58rem);
+    padding:clamp(2rem,4vw,4.6rem);
+  }
+  .palimpsests-artist-hero::after {
+    content:"ORETH";
+    position:absolute;
+    right:-.03em;
+    bottom:-.12em;
+    z-index:0;
+    color:rgba(63,68,75,.065);
+    font-size:clamp(10rem,25vw,25rem);
+    font-weight:750;
+    line-height:.72;
+    letter-spacing:-.09em;
+    pointer-events:none;
+  }
+  .palimpsests-artist-hero__copy {
+    width:min(43%,39rem);
+    min-height:calc(clamp(44rem,calc(100svh - 2rem),58rem) - clamp(4rem,8vw,9.2rem));
+    justify-content:center;
+  }
+  .palimpsests-artist-hero h1 { font-size:clamp(4.8rem,7.7vw,8.5rem); }
+  .palimpsests-artist-hero__lede { max-width:31rem; }
+  .palimpsests-artist-hero__portrait {
+    position:absolute;
+    inset:0;
+    z-index:2;
+    min-height:0;
+    pointer-events:none;
+  }
+  .palimpsests-artist-hero__halo {
+    inset:6% 3% 3% 43%;
+    border-radius:50% 50% 2.8rem 2.8rem;
+    background:linear-gradient(180deg,rgba(255,255,255,.38),rgba(255,255,255,.08));
+  }
+  .palimpsests-artist-hero__portrait>img {
+    inset:-2% -3% -8% auto;
+    width:67%;
+    height:112%;
+    object-fit:contain;
+    object-position:center bottom;
+    animation:palimpsests-model-reveal 1.1s cubic-bezier(.16,.82,.24,1) both;
+  }
+  .palimpsests-profile-window--identity { top:10%;right:3%; }
+  .palimpsests-profile-window--work { left:45%;bottom:22%; }
+  .palimpsests-profile-window--status { right:3%;bottom:8%; }
+  .palimpsests-orbit-dots { inset:3% 1% 1% 40%; }
+}
+@keyframes palimpsests-model-reveal { from{opacity:0;transform:translateY(3.5%) scale(.975);filter:blur(5px) drop-shadow(0 18px 28px rgba(38,43,49,.12))}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0) drop-shadow(0 34px 46px rgba(38,43,49,.26))} }
+@media(min-width:48.0625rem) and (max-width:64rem){
+  .palimpsests-artist-hero__portrait { min-height:clamp(36rem,75vw,46rem); }
+  .palimpsests-artist-hero__portrait>img { inset:auto -11% -5% -9%;width:124%;height:106%; }
+}
+@media(max-width:48rem){
+  .palimpsests-artist-hero__portrait { min-height:clamp(34rem,142vw,42rem);margin-top:0; }
+  .palimpsests-artist-hero__portrait>img { inset:-8% -33% -2% -29%;width:162%;height:118%;object-position:center top;animation:palimpsests-model-reveal 1s cubic-bezier(.16,.82,.24,1) both; }
+  .palimpsests-profile-window--identity { top:4%; }
+  .palimpsests-profile-window--work { bottom:16%; }
+  .palimpsests-profile-window--status { bottom:4%; }
+}
+@media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
+
 /* Shared hover motion: responsive on entry, soft on arrival and return. */
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .button,
