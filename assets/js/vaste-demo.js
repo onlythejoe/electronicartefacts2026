@@ -3,6 +3,7 @@ const palettes = {
   action: "#a78bfa",
   surface: "#2dd4bf",
   environment: "#f472b6",
+  extension: "#fbbf24",
   system: "#e2e8f0",
 };
 
@@ -25,6 +26,9 @@ const copy = {
     root: "ROOT",
     dragHint: "Drag a nucleus into a membrane to nest it",
     linkHint: "Select two Vertices to create a Tie",
+    none: "None",
+    noActions: "No active Action",
+    noExtensions: "No Extension attached",
   },
   fr: {
     observable: "OBSERVABLE",
@@ -44,6 +48,9 @@ const copy = {
     root: "RACINE",
     dragHint: "Glissez un noyau dans une membrane pour l’imbriquer",
     linkHint: "Sélectionnez deux Vertex pour créer une Tie",
+    none: "Aucun",
+    noActions: "Aucune Action active",
+    noExtensions: "Aucune Extension attachée",
   },
 };
 
@@ -52,16 +59,17 @@ const sceneBlueprints = {
     label: "RUNTIME / SYSTEM:EA",
     state: { en: "SYSTEM ACTIVE", fr: "SYSTÈME ACTIF" },
     nodes: [
-      ["system:ea", "Electronic Artefacts", "system", 0.5, 0.5, 54, "Root partition and structural closure of this projection.", "Partition racine et clôture structurelle de cette projection."],
-      ["actor:founder", "Founding Actor", "vertex", 0.455, 0.46, 25, "Situated identity whose authority is resolved from graph state.", "Identité située dont l’autorité est résolue depuis l’état du graphe."],
-      ["action:publish", "Publish", "action", 0.78, 0.25, 27, "Declarative intent admitted through the runtime execution path.", "Intention déclarative admise par le chemin d’exécution du runtime."],
-      ["surface:public", "Public Surface", "surface", 0.78, 0.72, 34, "Authorityless projection for observation and interaction.", "Projection sans autorité pour l’observation et l’interaction."],
-      ["environment:local", "Local Environment", "environment", 0.22, 0.74, 31, "Ephemeral execution context: identity, location, policy and budgets.", "Contexte d’exécution éphémère : identité, position, policy et budgets."],
-      ["vertex:record", "Knowledge Record", "vertex", 0.55, 0.54, 24, "Serializable graph state with stable identity and System membership.", "État de graphe sérialisable avec identité stable et appartenance au System."],
-      ["vertex:field", "Metadata field", "vertex", 0.558, 0.535, 12, "A nested Vertex demonstrating that containment can recurse.", "Un Vertex imbriqué montrant que la contenance peut être récursive."],
+      ["system:ea:root", "Root", "system", 0.5, 0.5, 126, "The canonical root Vertex closes the Electronic Artefacts System. Every visible element belongs to its structural closure.", "Le Vertex root canonique clôt le System Electronic Artefacts. Tout élément visible appartient à sa clôture structurelle.", { state: "ACTIVE · REV 2048", properties: ["type · system:root", "visibility · private", "version · 1"], surface: ["system:surface:operations", "projection · authorityless"], environment: ["system · system:ea", "scope · runtime", "budget · 48 work units"], extensions: ["intelligence · enabled", "world-model · enabled"], actions: ["runtime:observe · running", "graph:read · admitted"] }],
+      ["extension:intelligence", "Intelligence", "extension", 0.39, 0.38, 30, "Optional advisory cognition. It can recommend and contextualize, but owns neither truth nor runtime authority.", "Cognition consultative optionnelle. Elle recommande et contextualise, sans posséder ni vérité ni autorité runtime.", { state: "ENABLED · 1.0.0", properties: ["role · advisory cognition", "activation · eager", "authority · none"], surface: ["intelligence:surface:advisory", "projection · read-only"], environment: ["rtos · region", "tick budget · 16", "locality · 2"], extensions: [], actions: ["intelligence:observe · ready", "intelligence:recommend · idle"] }],
+      ["extension:world-model", "World Model", "extension", 0.62, 0.39, 34, "Actor-scoped provisional beliefs, confidence and clarification debt. Its graph remains advisory until explicit promotion.", "Croyances provisoires, confiance et dette de clarification liées à l’Actor. Son graphe reste consultatif jusqu’à promotion explicite.", { state: "ENABLED · 1.0.0", properties: ["truth · provisional", "scope · actor", "dependency · actor"], surface: ["world-model:surface:graph-frame", "projection · live beliefs"], environment: ["rtos · region", "tick budget · 8", "locality · 1"], extensions: ["actor · required"], actions: ["world-model:delta.ingest · running", "world-model:onboarding.ingest · ready"] }],
+      ["actor:founder", "Founding Actor", "vertex", 0.62, 0.45, 20, "An Actor is a specialized Vertex supplied by the Actor extension. Authority is resolved from graph state and the current Environment.", "Un Actor est un Vertex spécialisé fourni par l’extension Actor. Son autorité est résolue depuis le graphe et l’Environment courant.", { state: "PRESENT · AUTH RESOLVED", properties: ["type · actor:identity", "scope · situated", "claims · 2"], surface: ["actor:surface:presence", "exposure · internal"], environment: ["location · system:ea:root", "session · active", "authority · contextual"], extensions: ["actor · enabled"], actions: ["actor:session.open · complete", "graph:read · admitted"] }],
+      ["action:publish", "Publish", "action", 0.69, 0.62, 24, "Declarative intent admitted through namespace, capability, policy and runtime effect gates.", "Intention déclarative admise par les contrôles de namespace, capability, policy et effets runtime.", { state: "RUNNING · EFFECT 2/3", properties: ["declarative · true", "replayable · true", "deterministic · true"], surface: ["surface:public", "interaction · submit"], environment: ["trace · ea-publish-024", "authority · admitted", "budget · 1 effect"], extensions: ["knowledge · handler"], actions: ["knowledge:publish · running"] }],
+      ["surface:public", "Public Surface", "surface", 0.42, 0.65, 28, "An authorityless membrane that binds observable graph data to interactions. It is a view, never canonical truth.", "Membrane sans autorité reliant les données observables du graphe aux interactions. C’est une vue, jamais la vérité canonique.", { state: "PROJECTED · PUBLIC", properties: ["kind · membrane", "authority · none", "exposure · public"], surface: ["binding · vertex + tie", "action binding · publish"], environment: ["medium · browser", "locale · fr-FR", "access · public"], extensions: ["knowledge · contributor"], actions: ["surface:project · complete", "knowledge:publish · available"] }],
+      ["environment:local", "Environment", "environment", 0.31, 0.53, 25, "Immutable, ephemeral execution context carrying System, Actor claims, location, authority, timing and budgets.", "Contexte d’exécution immuable et éphémère portant System, claims d’Actor, position, autorité, temps et budgets.", { state: "EPHEMERAL · TRACE 024", properties: ["immutable · true", "persistence · none", "carry-over · none"], surface: ["observed by · operations"], environment: ["system · system:ea", "location · root", "work budget · 48"], extensions: [], actions: ["environment:read · complete"] }],
+      ["vertex:record", "Knowledge", "vertex", 0.50, 0.52, 20, "Serializable graph state with stable identity, namespaced type, data and System membership.", "État de graphe sérialisable avec identité stable, type namespaced, données et appartenance au System.", { state: "OBSERVABLE · VERSION 12", properties: ["type · knowledge:record", "visibility · public", "version · 12"], surface: ["surface:public", "binding · vertex"], environment: ["system · system:ea", "location · root"], extensions: ["knowledge · owner"], actions: ["knowledge:publish · available"] }],
     ],
-    links: [[0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [2, 3], [5, 6]],
-    parents: [[0, 1], [0, 5], [5, 6]],
+    links: [[0, 1, "system:extension"], [0, 2, "system:extension"], [2, 3, "actor:owns-model"], [3, 4, "actor:requests"], [4, 5, "action:projects"], [6, 4, "environment:admits"], [7, 5, "surface:binds"]],
+    parents: [[0, 1], [0, 2], [2, 3], [0, 4], [0, 5], [0, 6], [0, 7]],
   },
   portable: {
     label: "PORTABILITY / VAST:1",
@@ -123,6 +131,12 @@ const initDemo = (root) => {
     links: root.querySelector("[data-demo-selection-links]"),
     parent: root.querySelector("[data-demo-selection-parent]"),
     children: root.querySelector("[data-demo-selection-children]"),
+    properties: root.querySelector("[data-demo-selection-properties]"),
+    surface: root.querySelector("[data-demo-selection-surface]"),
+    environment: root.querySelector("[data-demo-selection-environment]"),
+    extensions: root.querySelector("[data-demo-selection-extensions]"),
+    actions: root.querySelector("[data-demo-selection-actions]"),
+    tiesList: root.querySelector("[data-demo-selection-ties-list]"),
     linkButton: root.querySelector('[data-demo-action="link"]'),
     linksButton: root.querySelector('[data-demo-action="links"]'),
     detachButton: root.querySelector('[data-demo-action="detach"]'),
@@ -130,7 +144,7 @@ const initDemo = (root) => {
   };
 
   const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
-  const storageKey = "ea:vaste-graph-demo:v1";
+  const storageKey = "ea:vaste-graph-demo:v2";
   let width = 1;
   let height = 1;
   let ratio = 1;
@@ -172,6 +186,7 @@ const initDemo = (root) => {
     parent: null,
     children: [],
     depth: 0,
+    facts: raw[8] || {},
   });
 
   const isDescendant = (candidate, ancestor) => {
@@ -216,8 +231,9 @@ const initDemo = (root) => {
         ny: node.ny,
         radius: node.radius,
         copy: node.copy,
+        facts: node.facts,
       }));
-      const savedTies = ties.map((tie) => [tie.a.id, tie.b.id]);
+      const savedTies = ties.map((tie) => [tie.a.id, tie.b.id, tie.type]);
       const saved = readStorage();
       saved.scenes = saved.scenes || {};
       saved.scenes[activeScene] = { positions, parents, custom, ties: savedTies };
@@ -227,18 +243,40 @@ const initDemo = (root) => {
 
   const savedScene = (scene) => readStorage()?.scenes?.[scene] || {};
 
+  const renderFactList = (element, values, emptyLabel) => {
+    if (!element) return;
+    const facts = values?.length ? values : [emptyLabel];
+    element.replaceChildren(...facts.map((fact) => {
+      const item = document.createElement("li");
+      const [label, value] = String(fact).split(/\s·\s/, 2);
+      item.textContent = value ? `${label} · ${value}` : label;
+      if (/running|actif|active|enabled|admitted|complete|projected|present/i.test(String(fact))) item.dataset.status = "active";
+      return item;
+    }));
+  };
+
   const updateInspector = () => {
     const node = selected || nodes[0];
     if (!node) return;
     const count = ties.filter((tie) => tie.a === node || tie.b === node).length;
-    elements.type.textContent = node.type === "system" ? "System" : node.type[0].toUpperCase() + node.type.slice(1);
+    elements.type.textContent = node.type === "system" ? "Root Vertex · System" : node.type[0].toUpperCase() + node.type.slice(1);
     elements.title.textContent = node.name;
     elements.detail.textContent = node.copy[locale];
     elements.id.textContent = node.id;
-    elements.state.textContent = t.observable;
+    elements.state.textContent = node.facts.state || t.observable;
     elements.links.textContent = String(count);
     elements.parent.textContent = node.parent?.name || t.root;
     elements.children.textContent = String(node.children.length);
+    renderFactList(elements.properties, node.facts.properties, t.none);
+    renderFactList(elements.surface, node.facts.surface, t.none);
+    renderFactList(elements.environment, node.facts.environment, t.none);
+    renderFactList(elements.extensions, node.facts.extensions, t.noExtensions);
+    renderFactList(elements.actions, node.facts.actions, t.noActions);
+    const nodeTies = ties.filter((tie) => tie.a === node || tie.b === node).map((tie) => {
+      const other = tie.a === node ? tie.b : tie.a;
+      return `${tie.type || "graph:tie"} · ${other.name}`;
+    });
+    renderFactList(elements.tiesList, nodeTies, t.none);
     elements.detachButton.disabled = !node.parent;
   };
 
@@ -271,9 +309,9 @@ const initDemo = (root) => {
       if (!parentId) detachChild(child);
       else attachChild(byId.get(parentId), child);
     });
-    const initialTies = blueprint.links.map(([a, b]) => [nodes[a].id, nodes[b].id]);
+    const initialTies = blueprint.links.map(([a, b, type]) => [nodes[a].id, nodes[b].id, type]);
     ties = (saved.ties || initialTies)
-      .map(([a, b]) => ({ a: byId.get(a), b: byId.get(b) }))
+      .map(([a, b, type]) => ({ a: byId.get(a), b: byId.get(b), type: type || "graph:tie" }))
       .filter((tie) => tie.a && tie.b);
     selected = nodes[0];
     dragged = null;
@@ -306,6 +344,11 @@ const initDemo = (root) => {
     canvas.style.width = `${width}px`;
     canvas.style.height = `${height}px`;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
+    nodes.forEach((node) => {
+      const gutter = node.type === "system" ? 16 : Math.max(28, node.radius * 0.75);
+      node.nx = Math.max(gutter / width, Math.min(1 - gutter / width, node.nx));
+      node.ny = Math.max(gutter / height, Math.min(1 - gutter / height, node.ny));
+    });
   };
 
   const position = (node) => ({ x: node.nx * width, y: node.ny * height });
@@ -327,7 +370,8 @@ const initDemo = (root) => {
           const point = position(child);
           return Math.hypot(point.x - center.x, point.y - center.y) + visualRadius(child) + 16;
         }));
-        target = Math.max(node.radius, Math.min(142, extent / radiusScale()));
+        const viewportLimit = Math.min(210, (Math.min(width, height) * 0.43) / radiusScale());
+        target = Math.max(node.radius, Math.min(viewportLimit, extent / radiusScale()));
       }
       node.targetRadius = target;
       node.currentRadius += (node.targetRadius - node.currentRadius) * (reducedMotion ? 1 : 0.11);
@@ -382,6 +426,18 @@ const initDemo = (root) => {
     context.beginPath(); context.moveTo(a.x, a.y); context.lineTo(b.x, b.y); context.stroke();
     context.setLineDash([]);
 
+    if (selected === tie.a || selected === tie.b) {
+      const angle = Math.atan2(b.y - a.y, b.x - a.x);
+      const markerX = a.x + (b.x - a.x) * 0.62;
+      const markerY = a.y + (b.y - a.y) * 0.62;
+      context.fillStyle = "rgba(226,232,240,0.72)";
+      context.beginPath();
+      context.moveTo(markerX, markerY);
+      context.lineTo(markerX - Math.cos(angle - 0.55) * 6, markerY - Math.sin(angle - 0.55) * 6);
+      context.lineTo(markerX - Math.cos(angle + 0.55) * 6, markerY - Math.sin(angle + 0.55) * 6);
+      context.closePath(); context.fill();
+    }
+
     if (!reducedMotion) {
       const phase = ((time * 0.00013 + tie.a.phase * 0.11) % 1);
       const px = a.x + (b.x - a.x) * phase;
@@ -426,16 +482,22 @@ const initDemo = (root) => {
 
     context.shadowBlur = 10;
     context.fillStyle = color;
-    context.beginPath(); context.arc(x, y, Math.max(4.5, radius * 0.14), 0, Math.PI * 2); context.fill();
+    const nucleusRadius = contains
+      ? Math.max(4.5, Math.min(7, radius * 0.14))
+      : Math.max(4.5, Math.min(11, radius * 0.14));
+    context.beginPath(); context.arc(x, y, nucleusRadius, 0, Math.PI * 2); context.fill();
     context.restore();
 
+    const nestedLabel = node.depth > 1;
+    const labelX = nestedLabel ? x + radius + 8 : x;
+    const labelY = nestedLabel ? y - 2 : y + radius + 17;
     context.fillStyle = selectedNow ? "rgba(255,255,255,0.94)" : "rgba(255,255,255,0.67)";
     context.font = `${selectedNow ? 600 : 500} ${width < 520 ? 10 : 11}px ui-monospace, SFMono-Regular, Menlo, monospace`;
-    context.textAlign = "center";
-    context.fillText(node.name, x, y + radius + 17);
+    context.textAlign = nestedLabel ? "left" : "center";
+    context.fillText(node.name, labelX, labelY);
     context.fillStyle = `rgba(${r}, ${g}, ${b}, 0.65)`;
     context.font = "600 8px ui-monospace, SFMono-Regular, Menlo, monospace";
-    context.fillText(node.type.toUpperCase(), x, y + radius + 30);
+    context.fillText(node.type.toUpperCase(), labelX, labelY + 13);
 
     if (contains) {
       context.fillStyle = "rgba(255,255,255,0.4)";
@@ -464,7 +526,7 @@ const initDemo = (root) => {
     const y = clientY - rect.top;
     return [...nodes].sort((a, b) => b.depth - a.depth || visualRadius(a) - visualRadius(b)).find((node) => {
       const point = position(node);
-      const nucleusHitRadius = Math.max(12, Math.min(19, visualRadius(node) * 0.25));
+      const nucleusHitRadius = Math.max(width < 720 ? 22 : 14, Math.min(26, visualRadius(node) * 0.3));
       return Math.hypot(x - point.x, y - point.y) <= nucleusHitRadius;
     }) || null;
   };
@@ -478,7 +540,7 @@ const initDemo = (root) => {
     if (linkingFrom === node) return;
     const exists = ties.some((tie) => (tie.a === linkingFrom && tie.b === node) || (tie.b === linkingFrom && tie.a === node));
     if (!exists) {
-      ties.push({ a: linkingFrom, b: node });
+      ties.push({ a: linkingFrom, b: node, type: "graph:tie" });
       announce(t.linked);
     } else {
       announce(t.duplicate);
@@ -569,6 +631,14 @@ const initDemo = (root) => {
       parent: null,
       children: [],
       depth: 0,
+      facts: {
+        state: t.observable,
+        properties: ["type · demo:vertex", "version · 1"],
+        surface: ["local explanatory projection"],
+        environment: ["system · current scene"],
+        extensions: [],
+        actions: [],
+      },
     };
     nodes.push(node);
     if (container) attachChild(container, node);

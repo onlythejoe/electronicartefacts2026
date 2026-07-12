@@ -10,11 +10,17 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   ]);
 
   assert.match(template, /data-vaste-demo/);
-  assert.match(template, /vaste-demo\.css\?v=2/);
+  assert.match(template, /vaste-demo\.css\?v=3/);
   assert.doesNotMatch(template, /vaste-demo__traffic/);
   assert.match(template, /data-demo-scene="runtime"/);
   assert.match(template, /data-demo-scene="portable"/);
   assert.match(template, /data-demo-scene="boot"/);
+  assert.match(template, /data-demo-selection-properties/);
+  assert.match(template, /data-demo-selection-surface/);
+  assert.match(template, /data-demo-selection-environment/);
+  assert.match(template, /data-demo-selection-extensions/);
+  assert.match(template, /data-demo-selection-ties-list/);
+  assert.match(template, /data-demo-selection-actions/);
   assert.match(template, /projection pédagogique locale/);
   assert.match(template, /local explanatory projection/);
   assert.match(runtime, /pointerdown/);
@@ -23,9 +29,15 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   assert.match(runtime, /isDescendant/);
   assert.match(runtime, /parentId/);
   assert.match(runtime, /ResizeObserver/);
+  assert.match(runtime, /system:ea:root/);
+  assert.match(runtime, /extension:intelligence/);
+  assert.match(runtime, /extension:world-model/);
+  assert.match(runtime, /world-model:delta\.ingest · running/);
+  assert.match(runtime, /facts: raw\[8\]/);
   assert.match(runtime, /prefers-reduced-motion/);
   assert.match(styles, /@media \(max-width: 900px\)/);
   assert.match(styles, /@media \(max-width: 720px\)/);
   assert.match(styles, /width: 100vw/);
   assert.match(styles, /touch-action: none/);
+  assert.match(styles, /height: clamp\(460px, 126vw, 540px\)/);
 });

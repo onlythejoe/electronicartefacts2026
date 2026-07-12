@@ -156,19 +156,21 @@
         <a href="#definition">Definition</a><a href="#runtime-model">Runtime model</a><a href="#governed-execution">Execution</a><a href="#portability">.vast portability</a><a href="#assisted-boot">Assisted Boot</a><a href="#evidence">Evidence</a><a href="#limits">Limits</a>
       </nav>
     </section>
-    <link rel="stylesheet" href="/assets/css/vaste-demo.css?v=2" />
+    <link rel="stylesheet" href="/assets/css/vaste-demo.css?v=3" />
     <section class="zone-card hero vaste-demo" data-vaste-demo data-locale="en" aria-labelledby="vaste-demo-title">
       <div class="vaste-demo__intro">
         <div class="section-head">
           <p class="eyebrow">INTERACTIVE SURFACE</p>
           <h2 id="vaste-demo-title">Manipulate a VASTE system.</h2>
-          <p class="lede">Explore three simplified runtime projections. Move Vertices, inspect their roles and compose your own relationships.</p>
+          <p class="lede">Enter the root Vertex, its Extensions and all five primitives. Select any element to inspect properties, membrane, Environment, Ties and active Actions.</p>
         </div>
         <div class="vaste-demo__legend" aria-label="Legend">
           <span><i data-tone="vertex"></i>Vertex</span>
           <span><i data-tone="action"></i>Action</span>
           <span><i data-tone="surface"></i>Surface</span>
           <span><i data-tone="environment"></i>Environment</span>
+          <span><i data-tone="tie"></i>Tie</span>
+          <span><i data-tone="extension"></i>Extension</span>
         </div>
       </div>
 
@@ -191,17 +193,27 @@
             <p class="vaste-demo__hint" data-demo-hint>Drag a nucleus into a membrane to nest it</p>
           </div>
 
-          <aside class="vaste-demo__inspector" aria-label="Vertex inspector">
-            <p class="vaste-demo__inspector-kicker" data-demo-selection-type>System</p>
-            <h3 data-demo-selection-title>Electronic Artefacts</h3>
-            <p data-demo-selection-copy>Root partition and structural closure of this projection.</p>
-            <dl>
-              <div><dt>ID</dt><dd data-demo-selection-id>system:ea</dd></div>
+          <aside class="vaste-demo__inspector" aria-label="VASTE primitive inspector">
+            <div class="vaste-demo__selection-head">
+              <p class="vaste-demo__inspector-kicker" data-demo-selection-type>Root Vertex</p>
+              <h3 data-demo-selection-title>Root</h3>
+              <p data-demo-selection-copy>The root Vertex closes the System and contains Extensions, primitives and domain Vertices.</p>
+            </div>
+            <dl class="vaste-demo__summary">
+              <div><dt>ID</dt><dd data-demo-selection-id>system:ea:root</dd></div>
               <div><dt>STATE</dt><dd data-demo-selection-state>OBSERVABLE</dd></div>
               <div><dt>TIES</dt><dd data-demo-selection-links>5</dd></div>
               <div><dt>PARENT</dt><dd data-demo-selection-parent>—</dd></div>
               <div><dt>CHILDREN</dt><dd data-demo-selection-children>2</dd></div>
             </dl>
+            <div class="vaste-demo__facts">
+              <section><h4>PROPERTIES</h4><ul data-demo-selection-properties></ul></section>
+              <section><h4>SURFACE · MEMBRANE</h4><ul data-demo-selection-surface></ul></section>
+              <section><h4>ENVIRONMENT · LOCAL CONTEXT</h4><ul data-demo-selection-environment></ul></section>
+              <section><h4>EXTENSIONS</h4><ul data-demo-selection-extensions></ul></section>
+              <section><h4>TIES · TYPED LINKS</h4><ul data-demo-selection-ties-list></ul></section>
+              <section><h4>ACTIONS · RUNTIME STATE</h4><ul data-demo-selection-actions></ul></section>
+            </div>
             <p class="vaste-demo__inspector-note">This demo is a local explanatory projection, not a runtime instance or execution evidence.</p>
           </aside>
         </div>
@@ -215,7 +227,7 @@
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>
         </div>
       </div>
-      <script type="module" src="/assets/js/vaste-demo.js?v=1"></script>
+      <script type="module" src="/assets/js/vaste-demo.js?v=2"></script>
     </section>
   <section class="zone-card hero program-runtime-field">
     <div class="program-runtime-field__grid">
