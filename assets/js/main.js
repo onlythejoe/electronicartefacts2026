@@ -2265,7 +2265,70 @@
       `
       : "";
 
+    const forgePipelineLab = item.id === "forge" && Array.isArray(item.forgePipelines)
+      ? `
+        <section class="forge-pipeline-lab" aria-labelledby="forge-pipeline-title">
+          <div class="forge-pipeline-lab__intro">
+            <div class="section-head">
+              <p class="card__meta">Pipeline observatory / repository-backed</p>
+              <h2 class="card__title" id="forge-pipeline-title">An artefact is the visible end of a traceable run.</h2>
+              <p class="card__copy">This interface mirrors the current FORGE repository: declared inputs, explicit transformations, supporting evidence and an immutable output. Drag the released GLB to inspect the result; read its path to understand how it was produced.</p>
+            </div>
+            <div class="forge-pipeline-lab__viewer">
+              ${forgeArtifactMarkup("workbench")}
+              <div class="forge-artifact-record" aria-label="Displayed artefact record">
+                <span><small>Artefact type</small><strong>scene.glb</strong></span>
+                <span><small>Pipeline</small><strong>Artifact Ultra</strong></span>
+                <span><small>Classification</small><strong>Stable release</strong></span>
+                <span><small>Evidence</small><strong>Quality-gated</strong></span>
+              </div>
+            </div>
+          </div>
+          <div class="forge-pipeline-path" aria-label="Artifact Ultra transformation path">
+            ${item.forgePipelines[0].stages.map((stage, index) => `<span><small>${String(index + 1).padStart(2, "0")}</small>${esc(stage)}</span>`).join("")}
+          </div>
+          <div class="forge-pipeline-catalog">
+            ${item.forgePipelines.map((pipeline) => `
+              <article class="panel forge-pipeline-card" data-pipeline-status="${esc(pipeline.status.toLowerCase().replaceAll(" ", "-"))}">
+                <div class="forge-pipeline-card__head">
+                  <span class="status-badge">${esc(pipeline.status)}</span>
+                  <span class="card__meta">${esc(pipeline.family)}</span>
+                </div>
+                <h3 class="card__title">${esc(pipeline.title)}</h3>
+                <div class="forge-pipeline-io">
+                  <span><small>Input</small><strong>${esc(pipeline.input)}</strong></span>
+                  <i aria-hidden="true">→</i>
+                  <span><small>Output</small><strong>${esc(pipeline.output)}</strong></span>
+                </div>
+                <ol class="forge-pipeline-steps" aria-label="${esc(pipeline.title)} stages">
+                  ${pipeline.stages.map((stage) => `<li>${esc(stage)}</li>`).join("")}
+                </ol>
+                <p class="card__copy forge-pipeline-proof">${esc(pipeline.proof)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+        <section class="forge-roadmap" aria-labelledby="forge-roadmap-title">
+          <div class="section-head">
+            <p class="card__meta">Prepared extension points</p>
+            <h2 class="card__title" id="forge-roadmap-title">Future pipeline families, without special cases.</h2>
+            <p class="card__copy">These are directions, not released capabilities. Each must enter through the same contracts and quality evidence as today’s pipelines.</p>
+          </div>
+          <div class="forge-roadmap__grid">
+            ${(item.forgeRoadmap || []).map((line) => `
+              <article class="panel forge-roadmap__card">
+                <p class="card__meta">${esc(line.horizon)}</p>
+                <h3 class="card__title">${esc(line.title)}</h3>
+                <p class="card__copy">${esc(line.copy)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      `
+      : "";
+
     return `
+      ${forgePipelineLab}
       ${forgeCapabilities}
       <section class="detail-grid program-detail-grid">
         <article class="panel program-detail-panel program-detail-panel--lead">

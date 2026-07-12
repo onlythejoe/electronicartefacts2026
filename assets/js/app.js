@@ -561,7 +561,7 @@ window.EA_ENTITIES = {
         "creationYear": "2026",
         "creationDate": "2026-01-01",
         "releaseDate": "",
-        "lastUpdated": "2026-06-12",
+        "lastUpdated": "2026-07-12",
         "era": "foundation"
       },
       "description": "Forge is Electronic Artefacts’ internal R&D software for reproducible artefact pipelines and collaboration work. It is available on request to partners and collaborators, not as a public product.",
@@ -655,6 +655,123 @@ window.EA_ENTITIES = {
             "Quality reports",
             "Planned intake"
           ]
+        }
+      ],
+      "forgePipelines": [
+        {
+          "id": "artifact-ultra",
+          "status": "Stable release",
+          "family": "3D reconstruction",
+          "title": "Artifact Ultra",
+          "input": "Orbital object video",
+          "output": "Textured GLB + quality evidence",
+          "stages": [
+            "Frame selection",
+            "Subject masking",
+            "Sparse + dense reconstruction",
+            "Mesh refinement",
+            "8K texture bake",
+            "Release gates"
+          ],
+          "proof": "The interactive GLB shown here is an output of this pipeline."
+        },
+        {
+          "id": "object-360",
+          "status": "Active",
+          "family": "3D reconstruction",
+          "title": "Video Object 360",
+          "input": "MP4 / MOV object orbit",
+          "output": "GLB + reconstruction report",
+          "stages": [
+            "Decode",
+            "Filter",
+            "COLMAP reconstruction",
+            "Mesh export",
+            "Quality report"
+          ],
+          "proof": "Object-centric path with fast, balanced and quality presets."
+        },
+        {
+          "id": "images-to-mesh",
+          "status": "Active",
+          "family": "3D reconstruction",
+          "title": "Images to Mesh",
+          "input": "Image directory",
+          "output": "GLB / PLY + mesh report",
+          "stages": [
+            "Feature extraction",
+            "Feature matching",
+            "Sparse model",
+            "Quality gate",
+            "Dense model",
+            "Mesh export"
+          ],
+          "proof": "A multi-image photogrammetry path with explicit intermediate artefacts."
+        },
+        {
+          "id": "video-to-3d",
+          "status": "Experimental",
+          "family": "3D reconstruction",
+          "title": "Video to 3D",
+          "input": "Captured video + context metadata",
+          "output": "Normalized GLB + diagnostics",
+          "stages": [
+            "Frame extraction",
+            "Normalization",
+            "COLMAP",
+            "Scene export",
+            "Integrity checks"
+          ],
+          "proof": "A general scene path; quality gates exist, but it is not classified as production-grade."
+        },
+        {
+          "id": "image-normalization",
+          "status": "Active",
+          "family": "Media preparation",
+          "title": "Image Normalization",
+          "input": "PNG / JPEG",
+          "output": "Deterministic PNG + quality report",
+          "stages": [
+            "Decode",
+            "Resize",
+            "Convert",
+            "sRGB + orientation normalization",
+            "Resolution gate"
+          ],
+          "proof": "Strict, low-cost preparation with web and print presets."
+        },
+        {
+          "id": "voice-archive",
+          "status": "Foundation",
+          "family": "Voice data",
+          "title": "Voice Capture Archive",
+          "input": "WAV takes + transcript + timing + intent metadata",
+          "output": "Immutable voice archive + audio quality report",
+          "stages": [
+            "Contract validation",
+            "Session import",
+            "Take inventory",
+            "RIFF/WAVE checks",
+            "Archive + provenance"
+          ],
+          "proof": "Implemented intake boundary. Capture and voice-model training remain outside this pipeline."
+        }
+      ],
+      "forgeRoadmap": [
+        {
+          "horizon": "Near term",
+          "title": "Stronger capture diagnostics",
+          "copy": "Expose coverage, masking, topology, texture and release-gate evidence beside every visual artefact."
+        },
+        {
+          "horizon": "Research",
+          "title": "Voice archive → model-ready dataset",
+          "copy": "Extend the existing archive contract with silence, clipping, loudness, SNR and alignment gates before any model pipeline is considered."
+        },
+        {
+          "horizon": "Platform direction",
+          "title": "More media families, one contract",
+          "copy": "Add image, audio, video and research pipelines through the same input → steps → evidence → immutable artefact grammar."
         }
       ],
       "longTermVision": "Forge develops a small family of rigorous production pipelines: each one should make its input contract, transformation steps, quality evidence and released artefact legible."
@@ -22330,6 +22447,35 @@ window.EA_SEARCH = {
     "3D unavailable — FORGE artefact preserved as GLB": "3D indisponible — artefact FORGE préservé au format GLB",
     "Artefact 3D issu du pipeline FORGE": "Artefact 3D issu du pipeline FORGE",
     "Reconstruction texturée manipulable — glissez pour l’examiner.": "Reconstruction texturée manipulable — glissez pour l’examiner.",
+    "FORGE / ARTIFACT ULTRA": "FORGE / ARTIFACT ULTRA",
+    "RELEASE / TEXTURED GLB": "SORTIE / GLB TEXTURÉ",
+    "Immutable output / mesh.glb": "Artefact immuable / mesh.glb",
+    "Pipeline observatory / repository-backed": "Observatoire des pipelines / fondé sur le dépôt",
+    "An artefact is the visible end of a traceable run.": "Un artefact est l’aboutissement visible d’une exécution traçable.",
+    "This interface mirrors the current FORGE repository: declared inputs, explicit transformations, supporting evidence and an immutable output. Drag the released GLB to inspect the result; read its path to understand how it was produced.": "Cette interface reflète le dépôt FORGE actuel : entrées déclarées, transformations explicites, preuves associées et sortie immuable. Manipulez le GLB publié pour examiner le résultat, puis parcourez son chemin de production.",
+    "Displayed artefact record": "Fiche de l’artefact affiché",
+    "Artefact type": "Type d’artefact",
+    "Pipeline": "Pipeline",
+    "Classification": "Classification",
+    "Evidence": "Preuves",
+    "Artifact Ultra transformation path": "Chaîne de transformation Artifact Ultra",
+    "Stable release": "Sortie stable",
+    "Active": "Actif",
+    "Experimental": "Expérimental",
+    "Foundation": "Fondation",
+    "Input": "Entrée",
+    "Output": "Résultat",
+    "Prepared extension points": "Points d’extension préparés",
+    "Future pipeline families, without special cases.": "De futures familles de pipelines, sans cas particuliers.",
+    "These are directions, not released capabilities. Each must enter through the same contracts and quality evidence as today’s pipelines.": "Ce sont des pistes, pas des capacités publiées. Chacune devra respecter les mêmes contrats et preuves de qualité que les pipelines actuels.",
+    "Near term": "Prochainement",
+    "Stronger capture diagnostics": "Des diagnostics de captation plus précis",
+    "Expose coverage, masking, topology, texture and release-gate evidence beside every visual artefact.": "Présenter les preuves de couverture, masque, topologie, texture et validation aux côtés de chaque artefact visuel.",
+    "Voice archive → model-ready dataset": "Archive vocale → jeu de données prêt pour la modélisation",
+    "Extend the existing archive contract with silence, clipping, loudness, SNR and alignment gates before any model pipeline is considered.": "Étendre le contrat d’archive avec des seuils de silence, saturation, niveau sonore, rapport signal-bruit et alignement avant d’envisager tout pipeline de modèle.",
+    "Platform direction": "Direction plateforme",
+    "More media families, one contract": "Plus de familles média, un même contrat",
+    "Add image, audio, video and research pipelines through the same input → steps → evidence → immutable artefact grammar.": "Ajouter des pipelines image, audio, vidéo et recherche selon la même grammaire : entrée → étapes → preuves → artefact immuable.",
     "Live computation field": "Champ de calcul actif",
     "01 / Repository access": "01 / Accès au dépôt",
     "Review the actual program.": "Examiner le programme réel.",
@@ -23854,8 +24000,8 @@ window.EA_ANALYTICS_CONFIG = {
     </figure>
   `;
 
-  const forgeArtifactMarkup = () => `
-    <figure class="forge-artifact" data-forge-artifact data-depth="0.96">
+  const forgeArtifactMarkup = (variant = "hero") => `
+    <figure class="forge-artifact forge-artifact--${esc(variant)}" data-forge-artifact data-depth="0.96">
       <model-viewer
         class="forge-artifact__model"
         src="./assets/media/forge/artifact-ultra-object-360.glb"
@@ -23878,13 +24024,13 @@ window.EA_ANALYTICS_CONFIG = {
         </div>
       </model-viewer>
       <div class="forge-artifact__hud" aria-hidden="true">
-        <span>FORGE / OBJECT 360</span>
-        <span>TEXTURED GLB / 2026.06</span>
+        <span>FORGE / ARTIFACT ULTRA</span>
+        <span>RELEASE / TEXTURED GLB</span>
       </div>
       <div class="forge-artifact__axis" aria-hidden="true"><i></i><i></i><i></i></div>
       <figcaption>
-        <span>Artefact 3D issu du pipeline FORGE</span>
-        <strong>Reconstruction texturée manipulable — glissez pour l’examiner.</strong>
+        <span>Immutable output / mesh.glb</span>
+        <strong>Reconstruction texturée manipulable — glissez pour examiner l’artefact.</strong>
       </figcaption>
     </figure>
   `;
@@ -31442,7 +31588,70 @@ window.EA_ANALYTICS_CONFIG = {
       `
       : "";
 
+    const forgePipelineLab = item.id === "forge" && Array.isArray(item.forgePipelines)
+      ? `
+        <section class="forge-pipeline-lab" aria-labelledby="forge-pipeline-title">
+          <div class="forge-pipeline-lab__intro">
+            <div class="section-head">
+              <p class="card__meta">Pipeline observatory / repository-backed</p>
+              <h2 class="card__title" id="forge-pipeline-title">An artefact is the visible end of a traceable run.</h2>
+              <p class="card__copy">This interface mirrors the current FORGE repository: declared inputs, explicit transformations, supporting evidence and an immutable output. Drag the released GLB to inspect the result; read its path to understand how it was produced.</p>
+            </div>
+            <div class="forge-pipeline-lab__viewer">
+              ${forgeArtifactMarkup("workbench")}
+              <div class="forge-artifact-record" aria-label="Displayed artefact record">
+                <span><small>Artefact type</small><strong>scene.glb</strong></span>
+                <span><small>Pipeline</small><strong>Artifact Ultra</strong></span>
+                <span><small>Classification</small><strong>Stable release</strong></span>
+                <span><small>Evidence</small><strong>Quality-gated</strong></span>
+              </div>
+            </div>
+          </div>
+          <div class="forge-pipeline-path" aria-label="Artifact Ultra transformation path">
+            ${item.forgePipelines[0].stages.map((stage, index) => `<span><small>${String(index + 1).padStart(2, "0")}</small>${esc(stage)}</span>`).join("")}
+          </div>
+          <div class="forge-pipeline-catalog">
+            ${item.forgePipelines.map((pipeline) => `
+              <article class="panel forge-pipeline-card" data-pipeline-status="${esc(pipeline.status.toLowerCase().replaceAll(" ", "-"))}">
+                <div class="forge-pipeline-card__head">
+                  <span class="status-badge">${esc(pipeline.status)}</span>
+                  <span class="card__meta">${esc(pipeline.family)}</span>
+                </div>
+                <h3 class="card__title">${esc(pipeline.title)}</h3>
+                <div class="forge-pipeline-io">
+                  <span><small>Input</small><strong>${esc(pipeline.input)}</strong></span>
+                  <i aria-hidden="true">→</i>
+                  <span><small>Output</small><strong>${esc(pipeline.output)}</strong></span>
+                </div>
+                <ol class="forge-pipeline-steps" aria-label="${esc(pipeline.title)} stages">
+                  ${pipeline.stages.map((stage) => `<li>${esc(stage)}</li>`).join("")}
+                </ol>
+                <p class="card__copy forge-pipeline-proof">${esc(pipeline.proof)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+        <section class="forge-roadmap" aria-labelledby="forge-roadmap-title">
+          <div class="section-head">
+            <p class="card__meta">Prepared extension points</p>
+            <h2 class="card__title" id="forge-roadmap-title">Future pipeline families, without special cases.</h2>
+            <p class="card__copy">These are directions, not released capabilities. Each must enter through the same contracts and quality evidence as today’s pipelines.</p>
+          </div>
+          <div class="forge-roadmap__grid">
+            ${(item.forgeRoadmap || []).map((line) => `
+              <article class="panel forge-roadmap__card">
+                <p class="card__meta">${esc(line.horizon)}</p>
+                <h3 class="card__title">${esc(line.title)}</h3>
+                <p class="card__copy">${esc(line.copy)}</p>
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      `
+      : "";
+
     return `
+      ${forgePipelineLab}
       ${forgeCapabilities}
       <section class="detail-grid program-detail-grid">
         <article class="panel program-detail-panel program-detail-panel--lead">

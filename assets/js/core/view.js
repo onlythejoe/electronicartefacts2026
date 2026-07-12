@@ -429,8 +429,8 @@
     </figure>
   `;
 
-  const forgeArtifactMarkup = () => `
-    <figure class="forge-artifact" data-forge-artifact data-depth="0.96">
+  const forgeArtifactMarkup = (variant = "hero") => `
+    <figure class="forge-artifact forge-artifact--${esc(variant)}" data-forge-artifact data-depth="0.96">
       <model-viewer
         class="forge-artifact__model"
         src="./assets/media/forge/artifact-ultra-object-360.glb"
@@ -453,13 +453,13 @@
         </div>
       </model-viewer>
       <div class="forge-artifact__hud" aria-hidden="true">
-        <span>FORGE / OBJECT 360</span>
-        <span>TEXTURED GLB / 2026.06</span>
+        <span>FORGE / ARTIFACT ULTRA</span>
+        <span>RELEASE / TEXTURED GLB</span>
       </div>
       <div class="forge-artifact__axis" aria-hidden="true"><i></i><i></i><i></i></div>
       <figcaption>
-        <span>Artefact 3D issu du pipeline FORGE</span>
-        <strong>Reconstruction texturée manipulable — glissez pour l’examiner.</strong>
+        <span>Immutable output / mesh.glb</span>
+        <strong>Reconstruction texturée manipulable — glissez pour examiner l’artefact.</strong>
       </figcaption>
     </figure>
   `;

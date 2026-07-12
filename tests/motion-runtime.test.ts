@@ -18,6 +18,6 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(runtime, /scope\.classList\.add\("has-hero-selection"\)/);
   assert.match(runtime, /event\.key === "Escape"/);
   assert.match(styles, /\.intent-hero\.has-hero-selection/);
-  assert.match(home, /assets\/css\/app\.css\?v=56/);
-  assert.match(home, /assets\/js\/app\.js\?v=52/);
+  assert.match(home, /assets\/css\/app\.css\?v=58/);
+  assert.match(home, /assets\/js\/app\.js\?v=54/);
 });
