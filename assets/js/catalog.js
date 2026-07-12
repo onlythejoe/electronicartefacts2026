@@ -20,32 +20,52 @@
   const catalogEntities = Array.isArray(publicCatalog.entities) ? publicCatalog.entities : [];
   const catalogById = Object.fromEntries(catalogEntities.map((item) => [item.id, item]));
   const catalogByLegacyId = Object.fromEntries(catalogEntities.filter((item) => item.legacyId).map((item) => [item.legacyId, item]));
+  const catalogByLegacyIdentity = Object.fromEntries(
+    catalogEntities
+      .filter((item) => item.legacyId && item.type)
+      .map((item) => [`${item.legacyId}|${item.type}`, item]),
+  );
   const translatedBySourceId = catalogEntities.reduce((acc, item) => {
     if (item.locale === pageLocale && item.translationOf) acc[item.translationOf] = item;
     return acc;
   }, {});
 
-  const localizedCatalogRecordFor = (item) => {
-    if (pageLocale === "en" || !item?.id) return null;
-    const source = catalogByLegacyId[item.id] || catalogById[item.id];
-    return translatedBySourceId[source?.id] || null;
+  const canonicalCatalogRecordFor = (item) => {
+    if (!item?.id) return null;
+    const source = (item.canonicalId && catalogById[item.canonicalId])
+      || catalogById[item.id]
+      || catalogByLegacyIdentity[`${item.id}|${item.kind || item.type}`]
+      || null;
+    if (!source) return null;
+    return pageLocale === "en" ? source : translatedBySourceId[source.id] || source;
   };
 
   const localizeEntity = (item) => {
-    const localized = localizedCatalogRecordFor(item);
-    if (!localized) return item;
+    const canonical = canonicalCatalogRecordFor(item);
+    if (!canonical) return item;
     return {
       ...item,
-      title: localized.title || item.title,
-      subtitle: localized.subtitle || item.subtitle,
-      summary: localized.summary || item.summary,
-      description: localized.description || item.description,
-      tags: localized.tags?.length ? localized.tags : item.tags,
-      discipline: localized.discipline?.length ? localized.discipline : item.discipline,
-      route: localized.route || item.route,
-      locale: localized.locale,
-      canonicalId: localized.translationOf || item.canonicalId,
-      localizedId: localized.id,
+      canonicalId: canonical.translationOf || canonical.id,
+      semanticId: canonical.id,
+      localizedId: canonical.locale === pageLocale ? canonical.id : undefined,
+      title: canonical.title,
+      subtitle: canonical.subtitle || "",
+      summary: canonical.summary || "",
+      description: canonical.description || canonical.summary || "",
+      kind: canonical.kind || canonical.type,
+      type: canonical.type,
+      status: canonical.status,
+      statusLabel: canonical.status,
+      maturity: canonical.maturity,
+      confidence: canonical.confidence,
+      visibility: canonical.visibility,
+      publicationClass: canonical.publicationClass,
+      tags: canonical.tags || [],
+      discipline: canonical.discipline || [],
+      route: canonical.route || item.route,
+      identifier: canonical.identifier,
+      temporality: canonical.temporality || item.temporality,
+      locale: canonical.locale,
     };
   };
 
@@ -90,10 +110,14 @@
         visibility: item.visibility || "public",
       })),
       ];
-      const legacyIds = new Set(sourceEntities.map((item) => item.id).filter(Boolean));
+      const claimedCanonicalIds = new Set(sourceEntities.map((item) => item.canonicalId).filter(Boolean));
+      const legacyIdentities = new Set(
+        sourceEntities.map((item) => `${item.id}|${item.kind || item.type}`).filter(Boolean),
+      );
       const catalogOnly = catalogEntities
         .filter((item) => item.locale === pageLocale)
-        .filter((item) => !legacyIds.has(item.legacyId) && !legacyIds.has(item.id))
+        .filter((item) => !claimedCanonicalIds.has(item.id))
+        .filter((item) => !legacyIdentities.has(`${item.legacyId}|${item.type}`))
         .map(runtimeRecordFromCatalog);
       return [...sourceEntities, ...catalogOnly];
     })()
@@ -105,6 +129,7 @@
       }));
 
   const allEntities = flattenEntities();
+  const entitiesByKind = (kind) => allEntities.filter((item) => item.kind === kind || item.type === kind);
   const byId = Object.fromEntries(allEntities.map((item) => [item.id, item]));
   const byTitleSlug = allEntities.reduce((acc, item) => {
     if (!item.titleSlug || acc[item.titleSlug]) return acc;
@@ -168,9 +193,21 @@
   };
 
   const catalog = {
+    authority: "generated-public-catalog",
     taxonomies,
-    entities,
-    relations,
+    entities: {
+      programs: entitiesByKind("program"),
+      artists: entitiesByKind("artist"),
+      projects: entitiesByKind("project"),
+      artefacts: entitiesByKind("artefact"),
+      channels: entitiesByKind("channel"),
+      researchFields: entitiesByKind("researchField"),
+      researchLogs: entitiesByKind("researchLog"),
+      worldbuilding: entitiesByKind("worldbuilding"),
+      collections: entitiesByKind("collection"),
+    },
+    relations: publicCatalog.relations || relations,
+    legacy: { entities, relations, timelines, activity, collections },
     timelines,
     activity,
     collections,
@@ -178,18 +215,18 @@
     routeById,
     routeFor,
     publicCatalog,
-    programs: (entities.programs || []).filter(isPublic),
-    artists: (entities.artists || []).filter(isPublic),
-    projects: (entities.projects || []).filter(isPublic),
-    artefacts: (entities.artefacts || []).filter(isPublic),
-    channels: (entities.channels || []).filter(isPublic),
-    researchFields: (entities.researchFields || []).filter(isPublic),
+    programs: entitiesByKind("program"),
+    artists: entitiesByKind("artist"),
+    projects: entitiesByKind("project"),
+    artefacts: entitiesByKind("artefact"),
+    channels: entitiesByKind("channel"),
+    researchFields: entitiesByKind("researchField"),
     researchQuestions: catalogEntities
       .filter((item) => item.type === "researchQuestion" && item.locale === pageLocale)
       .filter(isPublic)
       .map(runtimeRecordFromCatalog),
-    researchLogs: (entities.researchLogs || []).filter(isPublic),
-    worldbuilding: (entities.worldbuilding || []).filter(isPublic),
+    researchLogs: entitiesByKind("researchLog"),
+    worldbuilding: entitiesByKind("worldbuilding"),
     schema: {
       status: Object.keys(taxonomies.statuses || {}),
       entityTypes: Object.keys(taxonomies.entityTypes || {}),

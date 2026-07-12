@@ -134,6 +134,7 @@ window.EA_ENTITIES = {
     },
     {
       id: "oreth-program",
+      canonicalId: "ea:program:oreth",
       title: "ORETH",
       subtitle: "Audio Intelligence",
       kind: "program",
