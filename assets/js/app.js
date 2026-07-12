@@ -21288,6 +21288,35 @@ window.EA_SEARCH = {
     "Review evidence": "Voir les références",
     "Projects where research takes form.": "Des projets où la recherche prend forme.",
     "Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.": "Œuvres culturelles, plateformes propriétaires et produits clients révèlent plusieurs faces d’une même pratique : transformer des idées complexes en expériences que l’on peut utiliser, comprendre ou ressentir.",
+    "BROWSE": "NAVIGUER",
+    "Browse projects by category": "Naviguer parmi les projets par catégorie",
+    "Projects matching the current filter": "Projets correspondant au filtre actif",
+    "New projects": "Nouveaux projets",
+    "New": "Nouveaux",
+    "Most relevant": "Les plus pertinents",
+    "Relevant": "Pertinents",
+    "Core systems": "Systèmes majeurs",
+    "Systems": "Systèmes",
+    "Open source": "Open source",
+    "Client work": "Réalisations clients",
+    "Client": "Clients",
+    "Cultural works": "Œuvres culturelles",
+    "Culture": "Culture",
+    "The three most recently released projects. This selection updates automatically whenever a new project is published.": "Les trois projets publiés le plus récemment. Cette sélection se met automatiquement à jour à chaque nouvelle publication.",
+    "Flagship work with the clearest public surface, evidence and connection to the studio’s current practice.": "Les projets phares dont la présence publique, les preuves et le lien avec la pratique actuelle du studio sont les plus lisibles.",
+    "Projects powered by runtimes, engines and connected-knowledge infrastructure.": "Les projets portés par des runtimes, des moteurs et des infrastructures de connaissance connectée.",
+    "Public software with inspectable code, documentation and a contribution path.": "Les logiciels publics dont le code, la documentation et les modalités de contribution peuvent être examinés.",
+    "Commissioned products and collaborations shaped by concrete operational constraints.": "Les produits commandés et collaborations façonnés par des contraintes opérationnelles concrètes.",
+    "Music, narrative and publishing projects where research becomes a cultural experience.": "Les projets musicaux, narratifs et éditoriaux où la recherche devient une expérience culturelle.",
+    "projects in view": "projets affichés",
+    "Runtimes & engines": "Runtimes et moteurs",
+    "Explore programs →": "Explorer les programmes →",
+    "SELECTED PROJECTS": "PROJETS SÉLECTIONNÉS",
+    "The list below follows the active browse filter and the graph above.": "La liste ci-dessous suit le filtre actif et le graphe ci-dessus.",
+    "ALL PROJECTS": "TOUS LES PROJETS",
+    "View every project.": "Voir tous les projets.",
+    "public projects across software, platforms, client work, collaboration and cultural publishing.": "projets publics entre logiciels, plateformes, réalisations clients, collaborations et édition culturelle.",
+    "Explore programs": "Explorer les programmes",
     "Proprietary systems for ambitious technical partners.": "Des systèmes propriétaires pour des partenaires techniques ambitieux.",
     "Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.": "Electronic Artefacts développe des programmes logiciels réutilisables pour les plateformes de connaissance, de production et de culture. Les partenaires peuvent examiner le code, tester un pilote ciblé, commander une implémentation ou discuter d’une licence.",
     "Request repo access": "Demander un accès au dépôt",
@@ -33236,51 +33265,114 @@ window.EA_ANALYTICS_CONFIG = {
       </section>
     `;
   };
-  const renderProjects = () => {
-    const publicProjectCount = (catalog.projects || []).filter((item) => item.visibility !== "internal" && item.visibility !== "restricted").length;
-    const grouped = [
-      {
-        label: "Cultural Works",
-        copy: "Projects where theory becomes a release, an image, a sound or a narrative experience.",
-        items: [entityById("palimpsests")].filter(Boolean),
-      },
-      {
-        label: "Knowledge Infrastructure",
-        copy: "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.",
-        items: [entityById("vestiges")].filter(Boolean),
-      },
-      {
-        label: "Open Source Software",
-        copy: "Public code artefacts and browser tools that expose their architecture, documentation and contribution path.",
-        items: [entityById("voice-capture-studio")].filter(Boolean),
-      },
-      {
-        label: "External Partnerships",
-        copy: "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.",
-        items: [entityById("unionmob")].filter(Boolean),
-      },
-      {
-        label: "Client Products",
-        copy: "Commissioned products and public platforms with concrete evidence of UX, interface and delivery.",
-        items: [
-          entityById("atypikhouse"),
-          entityById("oeil-de-meg"),
-        ].filter(Boolean),
-      },
-    ].filter((group) => group.items.length);
-    const indexedGroups = grouped.map((group, index) => {
-      const key = slugify(group.label) || `group-${index + 1}`;
-      const categories = [
-        ...new Set(group.items.map((item) => item.category || item.type || item.kind).filter(Boolean)),
-      ];
-      return {
-        ...group,
-        key,
-        index,
-        categories,
-        primary: group.items[0]?.title || group.label,
-      };
+  const publicProjects = () => (catalog.projects || [])
+    .filter((item) => item.visibility !== "internal" && item.visibility !== "restricted")
+    .slice()
+    .sort((a, b) => {
+      const published = (item) => Date.parse(
+        item.temporality?.releaseDate
+        || item.temporality?.creationDate
+        || `${item.temporality?.creationYear || "0000"}-01-01`,
+      ) || 0;
+      return published(b) - published(a) || String(a.id).localeCompare(String(b.id));
     });
+
+  const projectBrowserTaxonomy = (projects) => {
+    const newestIds = new Set(projects
+      .filter((item) => item.temporality?.releaseDate)
+      .slice(0, 3)
+      .map((item) => item.id));
+    const searchable = (item) => [
+      item.id,
+      item.title,
+      item.type,
+      item.category,
+      item.program,
+      ...(item.tags || []),
+      ...(item.discipline || []),
+      ...(item.medium || []),
+      ...(item.links || []).flatMap((link) => [link.label, link.href]),
+    ].filter(Boolean).join(" ").toLowerCase();
+    const flagshipIds = new Set(["voice-capture-studio", "vestiges", "palimpsests", "oeil-de-meg"]);
+    const clientIds = new Set(["atypikhouse", "oeil-de-meg", "seven-temps-seulement"]);
+
+    return [
+      {
+        id: "new",
+        label: "New projects",
+        shortLabel: "New",
+        copy: "The three most recently released projects. This selection updates automatically whenever a new project is published.",
+        matches: (item) => newestIds.has(item.id),
+      },
+      {
+        id: "relevant",
+        label: "Most relevant",
+        shortLabel: "Relevant",
+        copy: "Flagship work with the clearest public surface, evidence and connection to the studio’s current practice.",
+        matches: (item) => flagshipIds.has(item.id),
+      },
+      {
+        id: "systems",
+        label: "Core systems",
+        shortLabel: "Systems",
+        copy: "Projects powered by runtimes, engines and connected-knowledge infrastructure.",
+        matches: (item) => item.program === "vaste" || /runtime|engine|knowledge infrastructure|knowledge platform/.test(searchable(item)),
+      },
+      {
+        id: "open-source",
+        label: "Open source",
+        shortLabel: "Open source",
+        copy: "Public software with inspectable code, documentation and a contribution path.",
+        matches: (item) => /open source|github\.com/.test(searchable(item)),
+      },
+      {
+        id: "client",
+        label: "Client work",
+        shortLabel: "Client",
+        copy: "Commissioned products and collaborations shaped by concrete operational constraints.",
+        matches: (item) => clientIds.has(item.id) || /client work/.test(searchable(item)),
+      },
+      {
+        id: "cultural",
+        label: "Cultural works",
+        shortLabel: "Culture",
+        copy: "Music, narrative and publishing projects where research becomes a cultural experience.",
+        matches: (item) => /album|publication|narrative|worldbuilding/.test(searchable(item)),
+      },
+    ].map((filter) => ({ ...filter, items: projects.filter(filter.matches) }));
+  };
+
+  const projectGraphNode = (item, index, activeIds) => {
+    const href = catalog.routeFor?.(item.id) || item.route || `./project.html?id=${encodeURIComponent(item.id)}`;
+    const colors = [
+      "rgba(247, 244, 239, 0.95)",
+      "rgba(125, 211, 252, 0.94)",
+      "rgba(245, 158, 11, 0.92)",
+      "rgba(167, 139, 250, 0.92)",
+      "rgba(52, 211, 153, 0.9)",
+      "rgba(234, 220, 207, 0.9)",
+    ];
+    return `
+      <a class="graph-surface__node project-browser__node${activeIds.has(item.id) ? " is-filter-match" : ""}"
+        href="${esc(href)}"
+        data-graph-node
+        data-project-node="${esc(item.id)}"
+        data-node-index="${index}"
+        data-node-label="${esc(item.title)}"
+        data-node-note="${esc(item.category || item.type || "Project")}"
+        aria-label="${esc(`${item.title} - ${item.category || item.type || "Project"}`)}"
+        style="--node-color:${colors[index % colors.length]};">
+        <span class="graph-surface__node-pin" aria-hidden="true"></span>
+        <span class="graph-surface__node-body"><strong>${esc(item.title)}</strong><small>${esc(item.category || item.type || "Project")}</small></span>
+      </a>
+    `;
+  };
+
+  const renderProjects = () => {
+    const projects = publicProjects();
+    const filters = projectBrowserTaxonomy(projects);
+    const activeFilter = filters[0];
+    const activeIds = new Set(activeFilter.items.map((item) => item.id));
 
     return `
       <section class="zone-card hero projects-hero intent-hero intent-hero--projects">
@@ -33312,76 +33404,64 @@ window.EA_ANALYTICS_CONFIG = {
           </div>
         </div>
       </section>
-      ${pageLens("projects")}
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">THREE MODES OF OUTPUT</p>
-          <h2>Three outcomes. One standard of execution.</h2>
-          <p class="lede">Some projects test an idea, others create a cultural experience or solve an operational problem. Every project must make its intent, status and evidence legible.</p>
+      <section class="zone-card hero graph-surface graph-surface--projects project-browser" data-graph-surface data-project-browser aria-labelledby="project-browser-title">
+        <div class="graph-surface__content project-browser__content">
+          <div class="project-browser__heading">
+            <p class="eyebrow">BROWSE</p>
+            <h2 id="project-browser-title" data-project-filter-title>${esc(activeFilter.label)}</h2>
+            <p class="lede" data-project-filter-copy>${esc(activeFilter.copy)}</p>
+          </div>
+          <div class="project-browser__controls">
+            <div class="project-browser__status" aria-live="polite">
+              <span data-project-filter-count>${activeFilter.items.length}</span>
+              <strong>projects in view</strong>
+            </div>
+            <div class="project-browser__filters" role="group" aria-label="Browse projects by category">
+              ${filters.map((filter, index) => `
+                <button type="button" class="project-browser__filter${index === 0 ? " is-active" : ""}" data-project-filter="${esc(filter.id)}" aria-pressed="${index === 0 ? "true" : "false"}">
+                  <span>${esc(filter.shortLabel)}</span><small>${filter.items.length}</small>
+                </button>
+              `).join("")}
+            </div>
+            <a class="project-browser__program-link" href="./programs.html"><span>Runtimes &amp; engines</span><strong>Explore programs →</strong></a>
+          </div>
         </div>
-        <div class="split">
-          <article class="panel panel--soft">
-            <p class="card__meta">Research-led</p>
-            <h3 class="card__title">Questions become models.</h3>
-            <p class="card__copy">Systems, knowledge, perception and governance research provide reusable methods rather than a single fixed doctrine.</p>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Cultural</p>
-            <h3 class="card__title">Ideas become experiences.</h3>
-            <p class="card__copy">Music, image and editorial forms create emotional and cultural access to the wider practice.</p>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Applied</p>
-            <h3 class="card__title">Models become working systems.</h3>
-            <p class="card__copy">Runtimes, products and client platforms turn the research into operational tools and public infrastructure.</p>
-          </article>
+        <div class="graph-surface__stage project-browser__graph" aria-label="Projects matching the current filter">
+          <canvas class="graph-surface__canvas" aria-hidden="true"></canvas>
+          <div class="graph-surface__grid" aria-hidden="true"></div>
+          <div class="graph-surface__halo" aria-hidden="true"></div>
+          <div class="graph-surface__ring graph-surface__ring--outer" aria-hidden="true"></div>
+          <div class="graph-surface__ring graph-surface__ring--inner" aria-hidden="true"></div>
+          <div class="graph-surface__core" aria-hidden="true"><strong data-project-graph-label>${esc(activeFilter.shortLabel)}</strong><small data-project-graph-count>${activeFilter.items.length} / ${projects.length}</small></div>
+          <div class="graph-surface__nodes">
+            ${projects.map((item, index) => projectGraphNode(item, index, activeIds)).join("")}
+          </div>
         </div>
       </section>
-      <nav class="projects-index-rail" aria-label="Project groups">
-        ${indexedGroups
-          .map(
-            (group) => `
-              <a class="projects-index-rail__link" href="#projects-${esc(group.key)}">
-                <span>${String(group.index + 1).padStart(2, "0")}</span>
-                <strong>${esc(group.label)}</strong>
-              </a>
-            `,
-          )
-          .join("")}
-      </nav>
-      <section class="stack projects-stack">
-        ${indexedGroups
-          .map(
-            (group) => `
-              <section id="projects-${esc(group.key)}" class="zone-card hero projects-group projects-group--${esc(group.key)}" data-project-group="${esc(group.key)}">
-                <div class="projects-group__head">
-                  <div class="section-head">
-                    <p class="eyebrow">PROJECT GROUP</p>
-                    <h2>${esc(group.label)}</h2>
-                    <p class="lede">${esc(group.copy)}</p>
-                  </div>
-                  <aside class="projects-group__summary" aria-label="${esc(group.label)} summary">
-                    <div>
-                      <span>Projects</span>
-                      <strong>${group.items.length}</strong>
-                    </div>
-                    <div>
-                      <span>Lead</span>
-                      <strong>${esc(group.primary)}</strong>
-                    </div>
-                    <div>
-                      <span>Read</span>
-                      <strong>${esc(group.categories.slice(0, 2).join(" / ") || "Project")}</strong>
-                    </div>
-                  </aside>
-                </div>
-                <div class="card-grid card-grid--two projects-grid projects-grid--${group.items.length === 1 ? "single" : "multi"}">
-                  ${group.items.map(projectLandingCard).join("")}
-                </div>
-              </section>
-            `,
-          )
-          .join("")}
+      <section class="zone-card hero project-filter-results" id="filtered-projects" data-project-results>
+        <div class="section-head project-filter-results__head">
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2 data-project-results-title>${esc(activeFilter.label)}</h2>
+          <p class="lede">The list below follows the active browse filter and the graph above.</p>
+        </div>
+        <div class="card-grid projects-grid project-filter-results__grid">
+          ${projects.map((item) => `<div data-project-result="${esc(item.id)}"${activeIds.has(item.id) ? "" : " hidden"}>${projectLandingCard(item)}</div>`).join("")}
+        </div>
+      </section>
+      <section class="zone-card hero all-projects" id="all-projects">
+        <div class="all-projects__head">
+          <div class="section-head">
+            <p class="eyebrow">ALL PROJECTS</p>
+            <h2>View every project.</h2>
+            <p class="lede">${isFrench()
+              ? `${projects.length} projets publics entre logiciels, plateformes, réalisations clients, collaborations et édition culturelle.`
+              : `${projects.length} public projects across software, platforms, client work, collaboration and cultural publishing.`}</p>
+          </div>
+          <a class="button button--secondary" href="./programs.html">Explore programs</a>
+        </div>
+        <div class="card-grid projects-grid all-projects__grid">
+          ${projects.map(projectLandingCard).join("")}
+        </div>
       </section>
     `;
   };
@@ -33627,12 +33707,74 @@ window.EA_ANALYTICS_CONFIG = {
     });
   };
 
+  const initProjectBrowser = () => {
+    const browser = document.querySelector("[data-project-browser]");
+    const results = document.querySelector("[data-project-results]");
+    if (!browser || !results) return;
+
+    const projects = publicProjects();
+    const filters = projectBrowserTaxonomy(projects);
+    const filtersById = new Map(filters.map((filter) => [filter.id, filter]));
+    const buttons = [...browser.querySelectorAll("[data-project-filter]")];
+    const nodes = [...browser.querySelectorAll("[data-project-node]")];
+    const cards = [...results.querySelectorAll("[data-project-result]")];
+    const title = browser.querySelector("[data-project-filter-title]");
+    const copy = browser.querySelector("[data-project-filter-copy]");
+    const count = browser.querySelector("[data-project-filter-count]");
+    const graphLabel = browser.querySelector("[data-project-graph-label]");
+    const graphCount = browser.querySelector("[data-project-graph-count]");
+    const resultsTitle = results.querySelector("[data-project-results-title]");
+
+    const selectFilter = (filterId, options = {}) => {
+      const filter = filtersById.get(filterId) || filters[0];
+      const activeIds = new Set(filter.items.map((item) => item.id));
+
+      buttons.forEach((button) => {
+        const active = button.dataset.projectFilter === filter.id;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+      nodes.forEach((node) => {
+        const matches = activeIds.has(node.dataset.projectNode);
+        node.classList.toggle("is-filter-match", matches);
+        node.classList.toggle("is-filter-muted", !matches);
+      });
+      cards.forEach((card) => {
+        card.hidden = !activeIds.has(card.dataset.projectResult);
+      });
+
+      if (title) title.textContent = translate(filter.label);
+      if (copy) copy.textContent = translate(filter.copy);
+      if (count) count.textContent = String(filter.items.length);
+      if (graphLabel) graphLabel.textContent = translate(filter.shortLabel);
+      if (graphCount) graphCount.textContent = `${filter.items.length} / ${projects.length}`;
+      if (resultsTitle) resultsTitle.textContent = translate(filter.label);
+      browser.dataset.activeProjectFilter = filter.id;
+      results.dataset.activeProjectFilter = filter.id;
+
+      if (options.updateUrl) {
+        const url = new URL(window.location.href);
+        if (filter.id === filters[0].id) url.searchParams.delete("view");
+        else url.searchParams.set("view", filter.id);
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+    };
+
+    buttons.forEach((button) => button.addEventListener("click", () => {
+      selectFilter(button.dataset.projectFilter, { updateUrl: true });
+    }));
+
+    const requested = new URLSearchParams(window.location.search).get("view");
+    selectFilter(filtersById.has(requested) ? requested : filters[0].id);
+  };
+
   const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
     initCardLinks();
     initContactDiscovery();
     initCapabilityMaps();
+    initProjectBrowser();
     initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();
