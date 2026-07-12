@@ -3985,9 +3985,9 @@
             ${forgeArtifactMarkup()}
             ${intentHeroStats(
               [
-                { value: "04", label: "access formats" },
-                { value: "VASTE", label: "runtime core" },
-                { value: "BUILD", label: "delivery path" },
+                { value: ".mp4 → .glb", label: "Mode" },
+                { value: "FORGE", label: "Genome mode" },
+                { value: "ARTEFACT ULTRA", label: "Quality" },
               ],
               "Program statistics",
             )}

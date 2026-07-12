@@ -23400,6 +23400,9 @@ window.EA_SEARCH = {
     "Artefact 3D issu du pipeline FORGE": "Artefact 3D issu du pipeline FORGE",
     "Reconstruction texturée manipulable — glissez pour l’examiner.": "Reconstruction texturée manipulable — glissez pour l’examiner.",
     "FORGE / ARTIFACT ULTRA": "FORGE / ARTIFACT ULTRA",
+    "GENOME MODE / FORGE": "MODE GÉNOME / FORGE",
+    "PIPELINE / DIRECT ITERATION / REFINEMENT": "PIPELINE / ITÉRATION DIRECTE / RAFFINEMENT",
+    "Genome mode": "Mode Génome",
     "RELEASE / TEXTURED GLB": "SORTIE / GLB TEXTURÉ",
     "Immutable output / mesh.glb": "Artefact immuable / mesh.glb",
     "Pipeline observatory / repository-backed": "Observatoire des pipelines / fondé sur le dépôt",
@@ -24942,14 +24945,10 @@ window.EA_ANALYTICS_CONFIG = {
     <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}" data-depth="0.86">
       <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
       <div class="computation-field__hud" aria-hidden="true">
-        <span>EA.MODEL / ARCHITECTURE</span>
-        <span>CONTEXT / IDENTITY / EXECUTION</span>
+        <span>GENOME MODE / FORGE</span>
+        <span>PIPELINE / DIRECT ITERATION / REFINEMENT</span>
       </div>
       <div class="computation-field__events" data-computation-events aria-hidden="true"></div>
-      <figcaption>
-        <span>Architecture study</span>
-        <strong>A browser visualization of connected system layers, not live telemetry.</strong>
-      </figcaption>
     </figure>
   `;
 
@@ -34519,9 +34518,9 @@ window.EA_ANALYTICS_CONFIG = {
             ${forgeArtifactMarkup()}
             ${intentHeroStats(
               [
-                { value: "04", label: "access formats" },
-                { value: "VASTE", label: "runtime core" },
-                { value: "BUILD", label: "delivery path" },
+                { value: ".mp4 → .glb", label: "Mode" },
+                { value: "FORGE", label: "Genome mode" },
+                { value: "ARTEFACT ULTRA", label: "Quality" },
               ],
               "Program statistics",
             )}

@@ -16818,6 +16818,10 @@ input:focus-visible {
   min-height: 3.8rem;
 }
 
+.intent-hero__stage--programs .intent-hero__stats span:nth-child(3) strong {
+  font-size: clamp(0.54rem, 1.05vw, 0.98rem);
+}
+
 /* Research */
 .research-page-hero.intent-hero {
   display: block;

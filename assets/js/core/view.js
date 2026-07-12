@@ -418,14 +418,10 @@
     <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}" data-depth="0.86">
       <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
       <div class="computation-field__hud" aria-hidden="true">
-        <span>EA.MODEL / ARCHITECTURE</span>
-        <span>CONTEXT / IDENTITY / EXECUTION</span>
+        <span>GENOME MODE / FORGE</span>
+        <span>PIPELINE / DIRECT ITERATION / REFINEMENT</span>
       </div>
       <div class="computation-field__events" data-computation-events aria-hidden="true"></div>
-      <figcaption>
-        <span>Architecture study</span>
-        <strong>A browser visualization of connected system layers, not live telemetry.</strong>
-      </figcaption>
     </figure>
   `;
 
