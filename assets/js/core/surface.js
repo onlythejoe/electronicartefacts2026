@@ -429,7 +429,7 @@
     const nodeMarkup = records.map((record) => {
       const position = positions.get(record.id);
       const color = nodeColorFor(record.type, typeIndex.get(record.type) || 0);
-      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.25" /><text x="${position.x}" y="${position.y - 2.25}">${esc(record.title)}</text></a>`;
+      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
     }).join("");
     return `
       <section class="zone-card hero global-graph" data-global-graph>
@@ -447,13 +447,27 @@
           <button type="button" class="tag is-active" data-global-graph-filter="all" aria-pressed="true">${esc(translate("All records"))}</button>
           ${types.map((type) => `<button type="button" class="tag" data-global-graph-filter="${esc(type)}" aria-pressed="false"><i style="--node-color:${esc(nodeColorFor(type, typeIndex.get(type) || 0))}"></i>${esc(typeLabel(type))}</button>`).join("")}
         </div>
-        <div class="global-graph__canvas-wrap">
+        <div class="global-graph__workspace">
+          <div class="global-graph__canvas-wrap" data-global-graph-stage tabindex="0">
+            <div class="global-graph__controls" aria-label="${esc(translate("Graph controls"))}">
+              <button type="button" class="tag" data-global-graph-zoom="in" aria-label="${esc(translate("Zoom in"))}">+</button>
+              <button type="button" class="tag" data-global-graph-zoom="out" aria-label="${esc(translate("Zoom out"))}">−</button>
+              <button type="button" class="tag" data-global-graph-zoom="reset">${esc(translate("Reset view"))}</button>
+            </div>
           <svg class="global-graph__canvas" viewBox="0 0 100 100" role="img" aria-label="${esc(translate("Interactive global graph of public Electronic Artefacts records"))}">
-            <g class="global-graph__edges">${edgeMarkup}</g>
-            <g class="global-graph__nodes">${nodeMarkup}</g>
+            <g class="global-graph__viewport" data-global-graph-viewport><g class="global-graph__edges">${edgeMarkup}</g><g class="global-graph__nodes">${nodeMarkup}</g></g>
           </svg>
+          </div>
+          <aside class="global-graph__inspector" data-global-graph-inspector aria-live="polite">
+            <p class="card__meta" data-global-graph-inspector-kind>${esc(translate("Graph inspector"))}</p>
+            <h3 data-global-graph-inspector-title>${esc(translate("Choose a point"))}</h3>
+            <p data-global-graph-inspector-copy>${esc(translate("Select a point to reveal its immediate relations and a short description."))}</p>
+            <p class="global-graph__inspector-count" data-global-graph-inspector-count></p>
+            <a class="tag" data-global-graph-inspector-link hidden>${esc(translate("Open record"))} <span aria-hidden="true">→</span></a>
+            <button type="button" class="global-graph__clear" data-global-graph-clear hidden>${esc(translate("Clear selection"))}</button>
+          </aside>
         </div>
-        <p class="global-graph__hint">${esc(translate("The map is a public reading surface, not an exhaustive model of private work. Hover or focus a point to read it; activate it to open the record."))}</p>
+        <p class="global-graph__hint">${esc(translate("Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
       </section>`;
   };
   const compactRefs = (refs, limit, indexes) => (refs || [])

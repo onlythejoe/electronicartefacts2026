@@ -238,7 +238,8 @@
     if (anchor.closest("[data-search-results], [data-generated-search-results]")) return "search_result";
     if (anchor.closest("[data-local-graph], [data-project-graph], [data-graph-surface]")) return "graph";
     if (anchor.closest(".button-row") || anchor.classList.contains("button")) return "cta";
-    if (url.pathname.includes("contact") || anchor.href.startsWith("mailto:")) return "contact";
+    const anchorHref = typeof anchor.href === "string" ? anchor.href : anchor.getAttribute("href") || "";
+    if (url.pathname.includes("contact") || anchorHref.startsWith("mailto:")) return "contact";
     if (anchor.closest(".project-card, .program-card, .archive-card, .cross-nav-card, .panel")) return "card";
     return "link";
   };

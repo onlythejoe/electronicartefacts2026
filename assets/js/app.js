@@ -21685,6 +21685,18 @@ window.EA_SEARCH = {
     "All records": "Toutes les fiches",
     "Interactive global graph of public Electronic Artefacts records": "Graphe global interactif des fiches publiques Electronic Artefacts",
     "The map is a public reading surface, not an exhaustive model of private work. Hover or focus a point to read it; activate it to open the record.": "La carte est une surface de lecture publique, et non un modèle exhaustif des travaux privés. Survolez ou sélectionnez un point pour le lire ; activez-le pour ouvrir la fiche.",
+    "Graph controls": "Contrôles du graphe",
+    "Zoom in": "Agrandir",
+    "Zoom out": "Réduire",
+    "Reset view": "Réinitialiser la vue",
+    "Graph inspector": "Inspection du graphe",
+    "Choose a point": "Choisissez un point",
+    "Select a point to reveal its immediate relations and a short description.": "Sélectionnez un point pour révéler ses relations directes et sa courte description.",
+    "Open record": "Ouvrir la fiche",
+    "Clear selection": "Effacer la sélection",
+    "No public summary is available for this record.": "Aucun résumé public n’est disponible pour cette fiche.",
+    "direct relations": "relations directes",
+    "Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful.": "Sélectionnez un point pour inspecter ses relations directes. Utilisez les filtres de famille pour réduire le champ, ou zoomez uniquement lorsque le détail est utile.",
     "Open research question": "Ouvrir la question de recherche",
     "Started": "Démarré",
     "Current understanding": "Compréhension actuelle",
@@ -21707,6 +21719,8 @@ window.EA_SEARCH = {
     "program": "programme",
     "project": "projet",
     "framework": "cadre",
+    "organization": "organisation",
+    "research field": "domaine de recherche",
     "concept": "concept",
     "technology": "technologie",
     "publication": "publication",
@@ -22988,7 +23002,8 @@ window.EA_ANALYTICS_CONFIG = {
     if (anchor.closest("[data-search-results], [data-generated-search-results]")) return "search_result";
     if (anchor.closest("[data-local-graph], [data-project-graph], [data-graph-surface]")) return "graph";
     if (anchor.closest(".button-row") || anchor.classList.contains("button")) return "cta";
-    if (url.pathname.includes("contact") || anchor.href.startsWith("mailto:")) return "contact";
+    const anchorHref = typeof anchor.href === "string" ? anchor.href : anchor.getAttribute("href") || "";
+    if (url.pathname.includes("contact") || anchorHref.startsWith("mailto:")) return "contact";
     if (anchor.closest(".project-card, .program-card, .archive-card, .cross-nav-card, .panel")) return "card";
     return "link";
   };
@@ -25537,7 +25552,7 @@ window.EA_ANALYTICS_CONFIG = {
     const nodeMarkup = records.map((record) => {
       const position = positions.get(record.id);
       const color = nodeColorFor(record.type, typeIndex.get(record.type) || 0);
-      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.25" /><text x="${position.x}" y="${position.y - 2.25}">${esc(record.title)}</text></a>`;
+      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
     }).join("");
     return `
       <section class="zone-card hero global-graph" data-global-graph>
@@ -25555,13 +25570,27 @@ window.EA_ANALYTICS_CONFIG = {
           <button type="button" class="tag is-active" data-global-graph-filter="all" aria-pressed="true">${esc(translate("All records"))}</button>
           ${types.map((type) => `<button type="button" class="tag" data-global-graph-filter="${esc(type)}" aria-pressed="false"><i style="--node-color:${esc(nodeColorFor(type, typeIndex.get(type) || 0))}"></i>${esc(typeLabel(type))}</button>`).join("")}
         </div>
-        <div class="global-graph__canvas-wrap">
+        <div class="global-graph__workspace">
+          <div class="global-graph__canvas-wrap" data-global-graph-stage tabindex="0">
+            <div class="global-graph__controls" aria-label="${esc(translate("Graph controls"))}">
+              <button type="button" class="tag" data-global-graph-zoom="in" aria-label="${esc(translate("Zoom in"))}">+</button>
+              <button type="button" class="tag" data-global-graph-zoom="out" aria-label="${esc(translate("Zoom out"))}">−</button>
+              <button type="button" class="tag" data-global-graph-zoom="reset">${esc(translate("Reset view"))}</button>
+            </div>
           <svg class="global-graph__canvas" viewBox="0 0 100 100" role="img" aria-label="${esc(translate("Interactive global graph of public Electronic Artefacts records"))}">
-            <g class="global-graph__edges">${edgeMarkup}</g>
-            <g class="global-graph__nodes">${nodeMarkup}</g>
+            <g class="global-graph__viewport" data-global-graph-viewport><g class="global-graph__edges">${edgeMarkup}</g><g class="global-graph__nodes">${nodeMarkup}</g></g>
           </svg>
+          </div>
+          <aside class="global-graph__inspector" data-global-graph-inspector aria-live="polite">
+            <p class="card__meta" data-global-graph-inspector-kind>${esc(translate("Graph inspector"))}</p>
+            <h3 data-global-graph-inspector-title>${esc(translate("Choose a point"))}</h3>
+            <p data-global-graph-inspector-copy>${esc(translate("Select a point to reveal its immediate relations and a short description."))}</p>
+            <p class="global-graph__inspector-count" data-global-graph-inspector-count></p>
+            <a class="tag" data-global-graph-inspector-link hidden>${esc(translate("Open record"))} <span aria-hidden="true">→</span></a>
+            <button type="button" class="global-graph__clear" data-global-graph-clear hidden>${esc(translate("Clear selection"))}</button>
+          </aside>
         </div>
-        <p class="global-graph__hint">${esc(translate("The map is a public reading surface, not an exhaustive model of private work. Hover or focus a point to read it; activate it to open the record."))}</p>
+        <p class="global-graph__hint">${esc(translate("Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
       </section>`;
   };
   const compactRefs = (refs, limit, indexes) => (refs || [])
@@ -34092,18 +34121,93 @@ window.EA_ANALYTICS_CONFIG = {
     const buttons = [...graph.querySelectorAll("[data-global-graph-filter]")];
     const nodes = [...graph.querySelectorAll("[data-global-graph-node]")];
     const edges = [...graph.querySelectorAll("[data-global-graph-edge]")];
+    const stage = graph.querySelector("[data-global-graph-stage]");
+    const viewport = graph.querySelector("[data-global-graph-viewport]");
+    const inspector = graph.querySelector("[data-global-graph-inspector]");
+    const inspectorKind = graph.querySelector("[data-global-graph-inspector-kind]");
+    const inspectorTitle = graph.querySelector("[data-global-graph-inspector-title]");
+    const inspectorCopy = graph.querySelector("[data-global-graph-inspector-copy]");
+    const inspectorCount = graph.querySelector("[data-global-graph-inspector-count]");
+    const inspectorLink = graph.querySelector("[data-global-graph-inspector-link]");
+    const clearButton = graph.querySelector("[data-global-graph-clear]");
+    let activeType = "all";
+    let selectedId = "";
+    let scale = 1;
+    const resetInspector = () => {
+      selectedId = "";
+      nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
+      edges.forEach((edge) => edge.classList.remove("is-selected", "is-neighbor"));
+      inspectorKind.textContent = translate("Graph inspector");
+      inspectorTitle.textContent = translate("Choose a point");
+      inspectorCopy.textContent = translate("Select a point to reveal its immediate relations and a short description.");
+      inspectorCount.textContent = "";
+      inspectorLink.hidden = true;
+      clearButton.hidden = true;
+    };
+    const selectNode = (node) => {
+      const id = node.dataset.globalGraphId;
+      const relatedIds = new Set([id]);
+      edges.forEach((edge) => {
+        if (edge.dataset.globalGraphFrom === id) relatedIds.add(edge.dataset.globalGraphTo);
+        if (edge.dataset.globalGraphTo === id) relatedIds.add(edge.dataset.globalGraphFrom);
+      });
+      selectedId = id;
+      nodes.forEach((item) => {
+        item.classList.toggle("is-selected", item.dataset.globalGraphId === id);
+        item.classList.toggle("is-neighbor", item.dataset.globalGraphId !== id && relatedIds.has(item.dataset.globalGraphId));
+        item.classList.toggle("is-muted", !relatedIds.has(item.dataset.globalGraphId));
+      });
+      edges.forEach((edge) => {
+        const direct = edge.dataset.globalGraphFrom === id || edge.dataset.globalGraphTo === id;
+        edge.classList.toggle("is-selected", direct);
+        edge.classList.toggle("is-muted", !direct);
+      });
+      inspectorKind.textContent = translate(node.dataset.globalGraphType?.replace(/([a-z])([A-Z])/g, "$1 $2") || "");
+      inspectorTitle.textContent = node.dataset.globalGraphTitle || "";
+      inspectorCopy.textContent = node.dataset.globalGraphSummary || translate("No public summary is available for this record.");
+      inspectorCount.textContent = `${Math.max(relatedIds.size - 1, 0)} ${translate("direct relations")}`;
+      inspectorLink.href = node.dataset.globalGraphRoute || node.getAttribute("href") || "#";
+      inspectorLink.hidden = false;
+      clearButton.hidden = false;
+    };
+    const applyScale = () => {
+      viewport?.style.setProperty("--global-graph-scale", String(scale));
+    };
     const select = (type) => {
       buttons.forEach((button) => {
         const active = button.dataset.globalGraphFilter === type;
         button.classList.toggle("is-active", active);
         button.setAttribute("aria-pressed", String(active));
       });
+      activeType = type;
       const visibleIds = new Set(nodes.filter((node) => type === "all" || node.dataset.globalGraphType === type).map((node) => node.dataset.globalGraphId));
       nodes.forEach((node) => node.classList.toggle("is-muted", type !== "all" && node.dataset.globalGraphType !== type));
       edges.forEach((edge) => edge.classList.toggle("is-muted", type !== "all" && (!visibleIds.has(edge.dataset.globalGraphFrom) || !visibleIds.has(edge.dataset.globalGraphTo))));
       graph.dataset.activeGraphFilter = type;
+      resetInspector();
     };
     buttons.forEach((button) => button.addEventListener("click", () => select(button.dataset.globalGraphFilter || "all")));
+    nodes.forEach((node) => {
+      node.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        selectNode(node);
+      });
+      node.addEventListener("focus", () => selectNode(node));
+    });
+    clearButton.addEventListener("click", () => select(activeType));
+    graph.querySelectorAll("[data-global-graph-zoom]").forEach((button) => button.addEventListener("click", () => {
+      const action = button.dataset.globalGraphZoom;
+      scale = action === "in" ? Math.min(1.45, scale + 0.15) : action === "out" ? Math.max(0.78, scale - 0.15) : 1;
+      applyScale();
+    }));
+    stage?.addEventListener("keydown", (event) => {
+      if (event.key !== "+" && event.key !== "-") return;
+      event.preventDefault();
+      scale = event.key === "+" ? Math.min(1.45, scale + 0.15) : Math.max(0.78, scale - 0.15);
+      applyScale();
+    });
+    resetInspector();
   };
 
   const initPageInteractions = () => {

@@ -7428,7 +7428,8 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .global-graph {
-  gap: clamp(1rem, 2vw, 1.45rem);
+  gap: clamp(0.72rem, 1.5vw, 1rem);
+  padding: clamp(0.85rem, 1.65vw, 1.2rem);
 }
 
 .global-graph__head {
@@ -7439,7 +7440,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 .global-graph__filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.38rem;
 }
 
 .global-graph__summary span,
@@ -7447,13 +7448,13 @@ body[data-entry-id="vestiges"] .project-process__marker {
   display: inline-flex;
   align-items: center;
   gap: 0.38rem;
-  min-height: 2.1rem;
-  padding: 0.42rem 0.62rem;
+  min-height: 1.9rem;
+  padding: 0.34rem 0.54rem;
   border: 1px solid rgba(247, 244, 239, 0.12);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.025);
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -7465,6 +7466,13 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
 .global-graph__filters .tag {
   cursor: pointer;
+}
+
+.global-graph__workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 17rem);
+  gap: 0.68rem;
+  align-items: stretch;
 }
 
 .global-graph__filters .tag.is-active {
@@ -7483,7 +7491,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
 .global-graph__canvas-wrap {
   position: relative;
-  min-height: clamp(29rem, 68vw, 48rem);
+  min-height: clamp(21rem, 43vw, 33rem);
   overflow: hidden;
   border: 1px solid rgba(247, 244, 239, 0.12);
   border-radius: var(--radius-lg);
@@ -7492,7 +7500,13 @@ body[data-entry-id="vestiges"] .project-process__marker {
     linear-gradient(90deg, rgba(247, 244, 239, 0.045) 1px, transparent 1px),
     radial-gradient(circle at 50% 50%, rgba(151, 121, 255, 0.1), transparent 42%),
     rgba(255, 255, 255, 0.015);
-  background-size: 2.5rem 2.5rem, 2.5rem 2.5rem, auto, auto;
+  background-size: 2rem 2rem, 2rem 2rem, auto, auto;
+  outline: none;
+}
+
+.global-graph__canvas-wrap:focus-visible {
+  outline: 2px solid rgba(247, 244, 239, 0.72);
+  outline-offset: 0.22rem;
 }
 
 .global-graph__canvas {
@@ -7502,10 +7516,37 @@ body[data-entry-id="vestiges"] .project-process__marker {
   min-height: inherit;
 }
 
+.global-graph__viewport {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(var(--global-graph-scale, 1));
+  transition: transform 180ms ease-out;
+}
+
+.global-graph__controls {
+  position: absolute;
+  z-index: 2;
+  top: 0.56rem;
+  right: 0.56rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.global-graph__controls .tag {
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.46rem;
+  border: 1px solid rgba(247, 244, 239, 0.16);
+  border-radius: 999px;
+  background: rgba(3, 4, 6, 0.76);
+  color: var(--text);
+  cursor: pointer;
+}
+
 .global-graph__edges line {
-  stroke: rgba(247, 244, 239, 0.2);
+  stroke: rgba(247, 244, 239, 0.15);
   stroke-width: 0.08;
-  transition: opacity 160ms ease;
+  transition: opacity 140ms ease, stroke 140ms ease, stroke-width 140ms ease;
 }
 
 .global-graph__node {
@@ -7518,32 +7559,30 @@ body[data-entry-id="vestiges"] .project-process__marker {
   stroke: rgba(3, 4, 6, 0.88);
   stroke-width: 0.38;
   vector-effect: non-scaling-stroke;
-  filter: drop-shadow(0 0 0.5rem var(--node-color));
-}
-
-.global-graph__node text {
-  display: none;
-  fill: rgba(247, 244, 239, 0.72);
-  font-size: 1.25px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-anchor: middle;
-  paint-order: stroke;
-  stroke: rgba(3, 4, 6, 0.9);
-  stroke-width: 0.55px;
-  pointer-events: none;
+  filter: drop-shadow(0 0 0.32rem var(--node-color));
+  transition: r 140ms ease, filter 140ms ease, stroke-width 140ms ease;
 }
 
 .global-graph__node:hover circle,
 .global-graph__node:focus-visible circle {
-  r: 2.1;
+  r: 1.9;
+  filter: drop-shadow(0 0 0.75rem var(--node-color));
 }
 
-.global-graph__node:hover text,
-.global-graph__node:focus-visible text {
-  display: block;
-  fill: var(--text);
-  font-size: 1.6px;
+.global-graph__node.is-selected circle {
+  r: 2.15;
+  stroke: var(--text);
+  stroke-width: 0.62;
+  filter: drop-shadow(0 0 0.95rem var(--node-color));
+}
+
+.global-graph__node.is-neighbor circle {
+  r: 1.6;
+}
+
+.global-graph__edges line.is-selected {
+  stroke: rgba(247, 244, 239, 0.82);
+  stroke-width: 0.18;
 }
 
 .global-graph__node.is-muted,
@@ -7557,19 +7596,94 @@ body[data-entry-id="vestiges"] .project-process__marker {
   font-size: 0.86rem;
 }
 
+.global-graph__inspector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 0;
+  padding: 1rem;
+  border: 1px solid rgba(247, 244, 239, 0.1);
+  border-radius: calc(var(--radius-lg) - 0.2rem);
+  background: rgba(255, 255, 255, 0.022);
+}
+
+.global-graph__inspector h3 {
+  margin: 0.28rem 0 0.45rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.15;
+}
+
+.global-graph__inspector p:not(.card__meta) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.global-graph__inspector-count {
+  margin-top: 0.62rem !important;
+  color: var(--text) !important;
+  font-size: 0.7rem !important;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.global-graph__inspector .tag,
+.global-graph__clear {
+  margin-top: 0.8rem;
+}
+
+.global-graph__clear {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.76rem;
+  text-decoration: underline;
+  text-underline-offset: 0.22rem;
+}
+
 @media (max-width: 48rem) {
+  .global-graph__workspace {
+    grid-template-columns: 1fr;
+  }
+
   .global-graph__canvas-wrap {
-    min-height: 31rem;
+    min-height: clamp(18rem, 68vw, 24rem);
   }
 
-  .global-graph__node text {
-    display: none;
+  .global-graph__inspector {
+    min-height: 8.5rem;
+    padding: 0.82rem;
   }
 
-  .global-graph__node:hover text,
-  .global-graph__node:focus-visible text {
-    display: block;
-    font-size: 2.2px;
+  .global-graph__filters {
+    flex-wrap: nowrap;
+    padding-bottom: 0.16rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .global-graph__filters .tag {
+    flex: 0 0 auto;
+  }
+
+  .global-graph__controls {
+    top: 0.42rem;
+    right: 0.42rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .global-graph__viewport,
+  .global-graph__edges line,
+  .global-graph__node circle {
+    transition: none;
   }
 }
 
