@@ -3012,7 +3012,7 @@
   };
   const renderHomeHero = () => {
     const ranked = homeProjects().filter((item) => cardImageFor(item));
-    const lead = ranked[0] || entityById("vestiges");
+    const lead = entityById("voice-capture-studio") || ranked[0] || entityById("vestiges");
     const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
     const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
     const leadKicker = isFrench() ? "Notre prochain projet phare" : "Our next flagship";
