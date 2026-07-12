@@ -4717,6 +4717,9 @@
     let activeType = "all";
     let selectedId = "";
     let scale = 1;
+    let panX = 0;
+    let panY = 0;
+    let drag = null;
     const resetInspector = () => {
       selectedId = "";
       nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
@@ -4756,6 +4759,15 @@
     };
     const applyScale = () => {
       viewport?.style.setProperty("--global-graph-scale", String(scale));
+      viewport?.style.setProperty("--global-graph-pan-x", `${panX}px`);
+      viewport?.style.setProperty("--global-graph-pan-y", `${panY}px`);
+    };
+    const clampPan = () => {
+      const rect = stage?.getBoundingClientRect();
+      const limitX = Math.max(0, (rect?.width || 0) * (scale - 1) * 0.48 + 42);
+      const limitY = Math.max(0, (rect?.height || 0) * (scale - 1) * 0.48 + 42);
+      panX = Math.max(-limitX, Math.min(limitX, panX));
+      panY = Math.max(-limitY, Math.min(limitY, panY));
     };
     const select = (type) => {
       buttons.forEach((button) => {
@@ -4783,14 +4795,57 @@
     graph.querySelectorAll("[data-global-graph-zoom]").forEach((button) => button.addEventListener("click", () => {
       const action = button.dataset.globalGraphZoom;
       scale = action === "in" ? Math.min(1.45, scale + 0.15) : action === "out" ? Math.max(0.78, scale - 0.15) : 1;
+      if (action === "reset") {
+        panX = 0;
+        panY = 0;
+      }
+      clampPan();
       applyScale();
     }));
     stage?.addEventListener("keydown", (event) => {
       if (event.key !== "+" && event.key !== "-") return;
       event.preventDefault();
       scale = event.key === "+" ? Math.min(1.45, scale + 0.15) : Math.max(0.78, scale - 0.15);
+      clampPan();
       applyScale();
     });
+    stage?.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "touch" && event.isPrimary === false) return;
+      if (event.target.closest?.("[data-global-graph-node], [data-global-graph-zoom]")) return;
+      drag = { pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, panX, panY };
+      stage.setPointerCapture?.(event.pointerId);
+      stage.classList.add("is-panning");
+    });
+    stage?.addEventListener("pointermove", (event) => {
+      if (!drag || event.pointerId !== drag.pointerId) return;
+      const deltaX = event.clientX - drag.startX;
+      const deltaY = event.clientY - drag.startY;
+      if (event.pointerType === "touch" && Math.abs(deltaY) > Math.abs(deltaX)) return;
+      panX = drag.panX + deltaX;
+      panY = drag.panY + deltaY;
+      clampPan();
+      applyScale();
+    });
+    const stopPanning = (event) => {
+      if (!drag || event.pointerId !== drag.pointerId) return;
+      stage?.releasePointerCapture?.(event.pointerId);
+      stage?.classList.remove("is-panning");
+      drag = null;
+    };
+    stage?.addEventListener("pointerup", stopPanning);
+    stage?.addEventListener("pointercancel", stopPanning);
+    stage?.addEventListener("wheel", (event) => {
+      if (event.ctrlKey || event.metaKey) {
+        event.preventDefault();
+        scale = Math.max(0.78, Math.min(1.45, scale - event.deltaY * 0.0015));
+      } else {
+        event.preventDefault();
+        panX -= event.deltaX || event.deltaY * 0.45;
+        panY -= event.deltaY;
+      }
+      clampPan();
+      applyScale();
+    }, { passive: false });
     resetInspector();
   };
 
