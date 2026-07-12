@@ -52,7 +52,7 @@
   subject: ea:project:vestiges
   predicate: appliesConcept
   object: ea:concept:knowledge-graph
-  statement: V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.
+  statement: Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.
   confidence: observed
   createdAt: "2026-06-23"
   reviewedAt: "2026-06-23"

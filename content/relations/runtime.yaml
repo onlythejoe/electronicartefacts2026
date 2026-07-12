@@ -32,7 +32,7 @@
   subject: ea:project:vestiges
   predicate: poweredBy
   object: ea:program:vaste
-  statement: V6 is intended to test VASTE as its graph runtime and contextual execution foundation.
+  statement: Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.
   confidence: observed
   createdAt: "2026-06-22"
   reviewedAt: "2026-06-22"
@@ -42,7 +42,7 @@
   subject: ea:project:vestiges
   predicate: appliesConcept
   object: ea:concept:graph-runtime
-  statement: V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.
+  statement: Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.
   confidence: observed
   createdAt: "2026-06-22"
   reviewedAt: "2026-06-22"
@@ -52,7 +52,7 @@
   subject: ea:project:vestiges
   predicate: evidencedBy
   object: ea:publication:foundational-lineage-001
-  statement: Foundational Lineage #001 documents information-architecture and taxonomy concerns relevant to V6’s future research context.
+  statement: Foundational Lineage #001 documents information-architecture and taxonomy concerns relevant to Vestiges’ future research context.
   confidence: observed
   createdAt: "2026-06-22"
   reviewedAt: "2026-06-22"
@@ -72,7 +72,7 @@
   subject: ea:project:vestiges
   predicate: createdBy
   object: ea:organization:electronic-artefacts
-  statement: Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.
+  statement: Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.
   confidence: published
   createdAt: "2026-06-22"
   reviewedAt: "2026-06-22"

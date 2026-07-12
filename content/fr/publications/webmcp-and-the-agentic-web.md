@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:ai-agent
   - id: ea:concept:linked-data
+  - id: ea:program:vaste
 claims:
   - Des outils de page structurés peuvent réduire l’automatisation fragile sans remplacer l’interface web visible.
   - Les actions lisibles par agent doivent rester soumises à la sécurité des origines, à l’intention humaine, à l’accessibilité et à une autorisation explicite.

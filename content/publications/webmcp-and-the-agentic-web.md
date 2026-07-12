@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:ai-agent
   - id: ea:concept:linked-data
+  - id: ea:program:vaste
 claims:
   - Structured page tools can reduce brittle browser automation without replacing the visible web interface.
   - Agent-readable actions must remain subordinate to origin security, user intent, accessibility and explicit authorization.
