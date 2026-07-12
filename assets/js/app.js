@@ -35264,10 +35264,21 @@ window.EA_ANALYTICS_CONFIG = {
     let nodeDrag = null;
     let nodeFrame = 0;
     let viewportFrame = 0;
+    const compactGraphQuery = window.matchMedia("(max-width: 48rem)");
+    const applyIdleEdgeDensity = () => {
+      edges.forEach((edge, index) => {
+        const keepVisible = index % 3 === 0;
+        edge.classList.toggle(
+          "is-idle-suppressed",
+          compactGraphQuery.matches && !edge.classList.contains("is-selected") && !keepVisible,
+        );
+      });
+    };
     const resetInspector = () => {
       selectedId = "";
       nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
       edges.forEach((edge) => edge.classList.remove("is-selected", "is-neighbor"));
+      applyIdleEdgeDensity();
       inspectorKind.textContent = translate("Graph inspector");
       inspectorTitle.textContent = translate("Choose a point");
       inspectorCopy.textContent = translate("Select a point to reveal its immediate relations and a short description.");
@@ -35295,6 +35306,7 @@ window.EA_ANALYTICS_CONFIG = {
         edge.classList.toggle("is-selected", direct);
         edge.classList.toggle("is-muted", !direct);
       });
+      applyIdleEdgeDensity();
       inspectorKind.textContent = translate(node.dataset.globalGraphType?.replace(/([a-z])([A-Z])/g, "$1 $2") || "");
       inspectorTitle.textContent = node.dataset.globalGraphTitle || "";
       inspectorCopy.textContent = node.dataset.globalGraphSummary || translate("No public summary is available for this record.");
@@ -35458,6 +35470,11 @@ window.EA_ANALYTICS_CONFIG = {
       clampPan();
       scheduleViewport();
     }, { passive: false });
+    if (compactGraphQuery.addEventListener) {
+      compactGraphQuery.addEventListener("change", applyIdleEdgeDensity);
+    } else {
+      compactGraphQuery.addListener(applyIdleEdgeDensity);
+    }
     resetInspector();
   };
 

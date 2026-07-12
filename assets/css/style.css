@@ -7524,7 +7524,6 @@ body[data-entry-id="vestiges"] .project-process__marker {
   transform-origin: center;
   transform: translate(var(--global-graph-pan-x, 0), var(--global-graph-pan-y, 0)) scale(var(--global-graph-scale, 1));
   transition: transform 180ms ease-out;
-  will-change: transform;
 }
 
 .global-graph__canvas-wrap.is-panning,
@@ -7534,6 +7533,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
 .global-graph__canvas-wrap.is-panning .global-graph__viewport {
   transition: none;
+  will-change: transform;
 }
 
 .global-graph__controls {
@@ -7562,6 +7562,10 @@ body[data-entry-id="vestiges"] .project-process__marker {
   transition: opacity 140ms ease, stroke 140ms ease, stroke-width 140ms ease;
 }
 
+.global-graph__edges line.is-idle-suppressed {
+  display: none;
+}
+
 .global-graph__node {
   cursor: grab;
   transition: opacity 160ms ease;
@@ -7577,7 +7581,6 @@ body[data-entry-id="vestiges"] .project-process__marker {
   stroke: rgba(3, 4, 6, 0.88);
   stroke-width: 0.38;
   vector-effect: non-scaling-stroke;
-  filter: drop-shadow(0 0 0.32rem var(--node-color));
   transition: r 140ms ease, filter 140ms ease, stroke-width 140ms ease;
 }
 
