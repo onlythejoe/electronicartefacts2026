@@ -418,7 +418,7 @@
       const recordsInGroup = records.filter((item) => item.type === record.type);
       const positionInGroup = recordsInGroup.indexOf(record);
       const angle = (positionInGroup / Math.max(recordsInGroup.length, 1)) * Math.PI * 2 - Math.PI / 2 + group * 0.14;
-      const radius = 22 + (group % 4) * 10 + Math.floor(group / 4) * 4;
+      const radius = 17 + (group % 4) * 6.5 + Math.floor(group / 4) * 1.5;
       return [record.id, { x: 50 + Math.cos(angle) * radius, y: 50 + Math.sin(angle) * radius }];
     }));
     const edgeMarkup = relations.map((relation) => {
@@ -429,7 +429,7 @@
     const nodeMarkup = records.map((record) => {
       const position = positions.get(record.id);
       const color = nodeColorFor(record.type, typeIndex.get(record.type) || 0);
-      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
+      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-x="${position.x}" data-global-graph-y="${position.y}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
     }).join("");
     return `
       <section class="zone-card hero global-graph" data-global-graph>
@@ -467,7 +467,7 @@
             <button type="button" class="global-graph__clear" data-global-graph-clear hidden>${esc(translate("Clear selection"))}</button>
           </aside>
         </div>
-        <p class="global-graph__hint">${esc(translate("Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
+        <p class="global-graph__hint">${esc(translate("Drag a point to reorganize the map, or select it to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
       </section>`;
   };
   const compactRefs = (refs, limit, indexes) => (refs || [])

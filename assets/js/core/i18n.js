@@ -601,6 +601,7 @@
     "No public summary is available for this record.": "Aucun résumé public n’est disponible pour cette fiche.",
     "direct relations": "relations directes",
     "Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful.": "Sélectionnez un point pour inspecter ses relations directes. Utilisez les filtres de famille pour réduire le champ, ou zoomez uniquement lorsque le détail est utile.",
+    "Drag a point to reorganize the map, or select it to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful.": "Déplacez un point pour réorganiser la carte, ou sélectionnez-le pour inspecter ses relations directes. Utilisez les filtres de famille pour réduire le champ, ou zoomez uniquement lorsque le détail est utile.",
     "Open research question": "Ouvrir la question de recherche",
     "Started": "Démarré",
     "Current understanding": "Compréhension actuelle",

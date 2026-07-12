@@ -22497,6 +22497,7 @@ window.EA_SEARCH = {
     "No public summary is available for this record.": "Aucun résumé public n’est disponible pour cette fiche.",
     "direct relations": "relations directes",
     "Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful.": "Sélectionnez un point pour inspecter ses relations directes. Utilisez les filtres de famille pour réduire le champ, ou zoomez uniquement lorsque le détail est utile.",
+    "Drag a point to reorganize the map, or select it to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful.": "Déplacez un point pour réorganiser la carte, ou sélectionnez-le pour inspecter ses relations directes. Utilisez les filtres de famille pour réduire le champ, ou zoomez uniquement lorsque le détail est utile.",
     "Open research question": "Ouvrir la question de recherche",
     "Started": "Démarré",
     "Current understanding": "Compréhension actuelle",
@@ -26341,7 +26342,7 @@ window.EA_ANALYTICS_CONFIG = {
       const recordsInGroup = records.filter((item) => item.type === record.type);
       const positionInGroup = recordsInGroup.indexOf(record);
       const angle = (positionInGroup / Math.max(recordsInGroup.length, 1)) * Math.PI * 2 - Math.PI / 2 + group * 0.14;
-      const radius = 22 + (group % 4) * 10 + Math.floor(group / 4) * 4;
+      const radius = 17 + (group % 4) * 6.5 + Math.floor(group / 4) * 1.5;
       return [record.id, { x: 50 + Math.cos(angle) * radius, y: 50 + Math.sin(angle) * radius }];
     }));
     const edgeMarkup = relations.map((relation) => {
@@ -26352,7 +26353,7 @@ window.EA_ANALYTICS_CONFIG = {
     const nodeMarkup = records.map((record) => {
       const position = positions.get(record.id);
       const color = nodeColorFor(record.type, typeIndex.get(record.type) || 0);
-      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
+      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-x="${position.x}" data-global-graph-y="${position.y}" data-global-graph-type="${esc(record.type)}" data-global-graph-title="${esc(record.title)}" data-global-graph-summary="${esc(record.summary || record.description || "")}" data-global-graph-route="${esc(routeForRecord(record))}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.22" /></a>`;
     }).join("");
     return `
       <section class="zone-card hero global-graph" data-global-graph>
@@ -26390,7 +26391,7 @@ window.EA_ANALYTICS_CONFIG = {
             <button type="button" class="global-graph__clear" data-global-graph-clear hidden>${esc(translate("Clear selection"))}</button>
           </aside>
         </div>
-        <p class="global-graph__hint">${esc(translate("Select a point to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
+        <p class="global-graph__hint">${esc(translate("Drag a point to reorganize the map, or select it to inspect its direct relations. Use the family filters to reduce the field, or zoom only when detail is useful."))}</p>
       </section>`;
   };
   const compactRefs = (refs, limit, indexes) => (refs || [])
@@ -35128,6 +35129,8 @@ window.EA_ANALYTICS_CONFIG = {
     let panX = 0;
     let panY = 0;
     let drag = null;
+    let nodeDrag = null;
+    let nodeFrame = 0;
     const resetInspector = () => {
       selectedId = "";
       nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
@@ -35177,6 +35180,31 @@ window.EA_ANALYTICS_CONFIG = {
       panX = Math.max(-limitX, Math.min(limitX, panX));
       panY = Math.max(-limitY, Math.min(limitY, panY));
     };
+    const stagePoint = (event) => {
+      const rect = stage?.getBoundingClientRect();
+      if (!rect) return null;
+      return {
+        x: Math.max(2, Math.min(98, ((event.clientX - rect.left) / rect.width) * 100)),
+        y: Math.max(2, Math.min(98, ((event.clientY - rect.top) / rect.height) * 100)),
+      };
+    };
+    const renderNodePosition = (node) => {
+      const x = Number(node.dataset.globalGraphX);
+      const y = Number(node.dataset.globalGraphY);
+      node.querySelector("circle")?.setAttribute("cx", String(x));
+      node.querySelector("circle")?.setAttribute("cy", String(y));
+      const id = node.dataset.globalGraphId;
+      edges.forEach((edge) => {
+        if (edge.dataset.globalGraphFrom === id) {
+          edge.setAttribute("x1", String(x));
+          edge.setAttribute("y1", String(y));
+        }
+        if (edge.dataset.globalGraphTo === id) {
+          edge.setAttribute("x2", String(x));
+          edge.setAttribute("y2", String(y));
+        }
+      });
+    };
     const select = (type) => {
       buttons.forEach((button) => {
         const active = button.dataset.globalGraphFilter === type;
@@ -35192,7 +35220,43 @@ window.EA_ANALYTICS_CONFIG = {
     };
     buttons.forEach((button) => button.addEventListener("click", () => select(button.dataset.globalGraphFilter || "all")));
     nodes.forEach((node) => {
+      node.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "touch" && event.isPrimary === false) return;
+        const point = stagePoint(event);
+        if (!point) return;
+        event.stopPropagation();
+        nodeDrag = { node, pointerId: event.pointerId, startX: point.x, startY: point.y, moved: false };
+        node.setPointerCapture?.(event.pointerId);
+        node.classList.add("is-dragging");
+      });
+      node.addEventListener("pointermove", (event) => {
+        if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
+        const point = stagePoint(event);
+        if (!point) return;
+        nodeDrag.moved ||= Math.abs(point.x - nodeDrag.startX) > 0.35 || Math.abs(point.y - nodeDrag.startY) > 0.35;
+        node.dataset.globalGraphX = String(point.x);
+        node.dataset.globalGraphY = String(point.y);
+        if (nodeFrame) return;
+        nodeFrame = requestAnimationFrame(() => {
+          nodeFrame = 0;
+          renderNodePosition(node);
+        });
+      });
+      const stopNodeDrag = (event) => {
+        if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
+        node.releasePointerCapture?.(event.pointerId);
+        node.classList.remove("is-dragging");
+        if (nodeDrag.moved) node.dataset.suppressGraphClick = "true";
+        nodeDrag = null;
+      };
+      node.addEventListener("pointerup", stopNodeDrag);
+      node.addEventListener("pointercancel", stopNodeDrag);
       node.addEventListener("click", (event) => {
+        if (node.dataset.suppressGraphClick === "true") {
+          node.dataset.suppressGraphClick = "false";
+          event.preventDefault();
+          return;
+        }
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
         selectNode(node);

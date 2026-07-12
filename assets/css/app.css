@@ -2524,15 +2524,15 @@ body.is-header-hidden .shell-header.zone-card {
   border: 1px solid rgba(247, 244, 239, 0.2);
   border-radius: 0.92rem;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.008) 48%, rgba(151, 121, 255, 0.025)),
-    rgba(7, 8, 11, 0.42);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.018) 48%, rgba(151, 121, 255, 0.035)),
+    rgba(7, 8, 11, 0.7);
   box-shadow:
     0 28px 72px rgba(0, 0, 0, 0.56),
     0 8px 24px rgba(0, 0, 0, 0.28),
     inset 0 1px rgba(255, 255, 255, 0.14),
     inset 0 0 0 1px rgba(255, 255, 255, 0.025);
-  backdrop-filter: blur(42px) saturate(155%) brightness(1.1);
-  -webkit-backdrop-filter: blur(42px) saturate(155%) brightness(1.1);
+  backdrop-filter: blur(30px) saturate(145%) brightness(1.08);
+  -webkit-backdrop-filter: blur(30px) saturate(145%) brightness(1.08);
   animation: context-menu-in 120ms ease-out both;
 }
 
@@ -11223,7 +11223,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
   grid-template-columns: minmax(0, 1fr) minmax(13rem, 17rem);
   gap: 0.68rem;
   align-items: stretch;
-  margin-top: clamp(0.7rem, 1.4vw, 1rem);
+  margin-top: clamp(1.1rem, 2.5vw, 1.55rem);
 }
 
 .global-graph__filters .tag.is-active {
@@ -11307,8 +11307,13 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .global-graph__node {
-  cursor: pointer;
+  cursor: grab;
   transition: opacity 160ms ease;
+}
+
+.global-graph__node.is-dragging,
+.global-graph__node.is-dragging * {
+  cursor: grabbing;
 }
 
 .global-graph__node circle {
@@ -11348,7 +11353,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .global-graph__hint {
-  margin: 0;
+  margin: clamp(1rem, 2vw, 1.4rem) 0 0;
   color: var(--muted);
   font-size: 0.86rem;
 }

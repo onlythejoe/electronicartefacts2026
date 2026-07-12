@@ -4720,6 +4720,8 @@
     let panX = 0;
     let panY = 0;
     let drag = null;
+    let nodeDrag = null;
+    let nodeFrame = 0;
     const resetInspector = () => {
       selectedId = "";
       nodes.forEach((node) => node.classList.remove("is-selected", "is-neighbor"));
@@ -4769,6 +4771,31 @@
       panX = Math.max(-limitX, Math.min(limitX, panX));
       panY = Math.max(-limitY, Math.min(limitY, panY));
     };
+    const stagePoint = (event) => {
+      const rect = stage?.getBoundingClientRect();
+      if (!rect) return null;
+      return {
+        x: Math.max(2, Math.min(98, ((event.clientX - rect.left) / rect.width) * 100)),
+        y: Math.max(2, Math.min(98, ((event.clientY - rect.top) / rect.height) * 100)),
+      };
+    };
+    const renderNodePosition = (node) => {
+      const x = Number(node.dataset.globalGraphX);
+      const y = Number(node.dataset.globalGraphY);
+      node.querySelector("circle")?.setAttribute("cx", String(x));
+      node.querySelector("circle")?.setAttribute("cy", String(y));
+      const id = node.dataset.globalGraphId;
+      edges.forEach((edge) => {
+        if (edge.dataset.globalGraphFrom === id) {
+          edge.setAttribute("x1", String(x));
+          edge.setAttribute("y1", String(y));
+        }
+        if (edge.dataset.globalGraphTo === id) {
+          edge.setAttribute("x2", String(x));
+          edge.setAttribute("y2", String(y));
+        }
+      });
+    };
     const select = (type) => {
       buttons.forEach((button) => {
         const active = button.dataset.globalGraphFilter === type;
@@ -4784,7 +4811,43 @@
     };
     buttons.forEach((button) => button.addEventListener("click", () => select(button.dataset.globalGraphFilter || "all")));
     nodes.forEach((node) => {
+      node.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "touch" && event.isPrimary === false) return;
+        const point = stagePoint(event);
+        if (!point) return;
+        event.stopPropagation();
+        nodeDrag = { node, pointerId: event.pointerId, startX: point.x, startY: point.y, moved: false };
+        node.setPointerCapture?.(event.pointerId);
+        node.classList.add("is-dragging");
+      });
+      node.addEventListener("pointermove", (event) => {
+        if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
+        const point = stagePoint(event);
+        if (!point) return;
+        nodeDrag.moved ||= Math.abs(point.x - nodeDrag.startX) > 0.35 || Math.abs(point.y - nodeDrag.startY) > 0.35;
+        node.dataset.globalGraphX = String(point.x);
+        node.dataset.globalGraphY = String(point.y);
+        if (nodeFrame) return;
+        nodeFrame = requestAnimationFrame(() => {
+          nodeFrame = 0;
+          renderNodePosition(node);
+        });
+      });
+      const stopNodeDrag = (event) => {
+        if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
+        node.releasePointerCapture?.(event.pointerId);
+        node.classList.remove("is-dragging");
+        if (nodeDrag.moved) node.dataset.suppressGraphClick = "true";
+        nodeDrag = null;
+      };
+      node.addEventListener("pointerup", stopNodeDrag);
+      node.addEventListener("pointercancel", stopNodeDrag);
       node.addEventListener("click", (event) => {
+        if (node.dataset.suppressGraphClick === "true") {
+          node.dataset.suppressGraphClick = "false";
+          event.preventDefault();
+          return;
+        }
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
         selectNode(node);
