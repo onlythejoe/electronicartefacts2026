@@ -439,7 +439,6 @@ const palimpsestsPlates = [
   ["ea-palimpsests-cover.webp", "project", "Cover study", "Portrait, smoke and overprinted title"],
   ["ea-contemplating.webp", "project", "Contemplating", "Layered portrait experiment"],
   ["ea-hood-portrait.webp", "project", "Threshold portrait", "Body held between exposure and retreat"],
-  ["ea-founder-portrait.webp", "project", "Founder portrait", "Silhouette, garment and negative space"],
   ["ea-profile-study.webp", "project", "Profile study", "A figure read as a quiet film still"],
   ["ea-running-up-study.webp", "project", "Type / image study", "Oversized type crossing a violet memory surface"],
   ["ea-nerve-concept.webp", "project", "Nerve // corrupted", "A biological signal reduced to light"],

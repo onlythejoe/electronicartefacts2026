@@ -46,9 +46,9 @@ credits:
 media:
   - id: palimpsests-cover-fr
     type: image
-    src: /assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp
-    alt: Visuel de l’album Palimpsests
-    caption: Image principale associée à l’album Palimpsests.
+    src: /assets/media/projects/palimpsests/P1288759-edit-1800.webp
+    alt: Portrait Palimpsests
+    caption: ORETH — Palimpsests, étude visuelle.
 visualLanguage:
   - Noir encre
   - Rose poussière

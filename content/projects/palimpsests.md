@@ -46,9 +46,9 @@ credits:
 media:
   - id: palimpsests-cover
     type: image
-    src: /assets/media/projects/palimpsests/research/ea-palimpsests-cover.webp
-    alt: Palimpsests album cover visual
-    caption: Palimpsests album cover visual.
+    src: /assets/media/projects/palimpsests/P1288759-edit-1800.webp
+    alt: Palimpsests portrait visual
+    caption: ORETH — Palimpsests, visual study.
 visualLanguage:
   - Ink black
   - Dust rose
