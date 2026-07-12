@@ -35544,6 +35544,46 @@ window.EA_ANALYTICS_CONFIG = {
     });
   };
 
+  const initPalimpsestsOrbitNav = () => {
+    document.querySelectorAll("[data-palimpsests-orbit-nav]").forEach((nav) => {
+      const hero = nav.closest(".palimpsests-artist-hero");
+      const links = [...nav.querySelectorAll('a[href^="#"]')];
+      if (!hero || !links.length) return;
+      const targets = links
+        .map((link) => ({ link, target: document.querySelector(link.getAttribute("href")) }))
+        .filter((item) => item.target);
+      const select = (activeLink) => links.forEach((link) => {
+        const active = link === activeLink;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+      links.forEach((link) => link.addEventListener("click", () => {
+        select(link);
+      }));
+      const selectFromHash = () => {
+        const match = links.find((link) => link.getAttribute("href") === window.location.hash);
+        if (match) select(match);
+      };
+      window.addEventListener("hashchange", selectFromHash);
+      selectFromHash();
+      let scheduled = false;
+      const updateDepth = () => {
+        scheduled = false;
+        const rect = hero.getBoundingClientRect();
+        const progress = Math.max(-1, Math.min(1, (window.innerHeight * 0.5 - (rect.top + rect.height * 0.5)) / Math.max(rect.height, 1)));
+        hero.style.setProperty("--orbit-scroll", progress.toFixed(3));
+      };
+      const onScroll = () => {
+        if (scheduled) return;
+        scheduled = true;
+        requestAnimationFrame(updateDepth);
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      updateDepth();
+    });
+  };
+
   const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
@@ -35553,6 +35593,7 @@ window.EA_ANALYTICS_CONFIG = {
     initProjectBrowser();
     initGlobalGraph();
     initPalimpsestsBoard();
+    initPalimpsestsOrbitNav();
     initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();
