@@ -5040,9 +5040,9 @@
               const dx = bx - ax;
               const dy = by - ay;
               const distance = Math.max(1, Math.hypot(dx, dy));
-              const radiusA = Math.min(a.width, a.height) * 0.56;
-              const radiusB = Math.min(b.width, b.height) * 0.56;
-              const overlap = radiusA + radiusB + 12 - distance;
+              const radiusA = Math.min(a.width, a.height) * 0.61;
+              const radiusB = Math.min(b.width, b.height) * 0.61;
+              const overlap = radiusA + radiusB + 18 - distance;
               if (overlap <= 0) continue;
               const force = Math.min(3.2, overlap * 0.038);
               const nx = dx / distance;
@@ -5056,8 +5056,8 @@
           physics.forEach((body) => {
             body.vx *= 0.78;
             body.vy *= 0.78;
-            body.x = Math.max(-90, Math.min(90, body.x + body.vx));
-            body.y = Math.max(-90, Math.min(90, body.y + body.vy));
+            body.x = Math.max(-150, Math.min(150, body.x + body.vx));
+            body.y = Math.max(-150, Math.min(150, body.y + body.vy));
             body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
             body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
           });
