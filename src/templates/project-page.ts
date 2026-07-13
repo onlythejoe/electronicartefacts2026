@@ -546,8 +546,14 @@ const renderPalimpsestsArtistHero = (
         <p class="palimpsests-artist-hero__lede">${escapeHtml(project.abstract)}</p>
         ${renderChips(tags, "tag-cluster tag-cluster--compact palimpsests-artist-hero__tags")}
         <div class="button-row button-row--compact palimpsests-artist-hero__actions">
-          <a class="button button--primary" href="#project-moodboard">${ui(project, "Enter the visual world", "Entrer dans l’univers visuel")}</a>
-          <a class="button button--secondary" href="#project-thesis">${ui(project, "Read the artist note", "Lire la note d’artiste")}</a>
+          <a class="button button--primary" href="#project-moodboard">
+            <svg class="palimpsests-artist-hero__action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.7 12s3.4-5.2 9.3-5.2 9.3 5.2 9.3 5.2-3.4 5.2-9.3 5.2S2.7 12 2.7 12Z"></path><circle cx="12" cy="12" r="2.6"></circle></svg>
+            <span>${ui(project, "Enter the visual world", "Entrer dans l’univers visuel")}</span>
+          </a>
+          <a class="button button--secondary" href="#project-thesis">
+            <svg class="palimpsests-artist-hero__action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 3.5h9l4 4v13h-13z"></path><path d="M14.5 3.5v4h4M8.5 12h7M8.5 15.5h5"></path></svg>
+            <span>${ui(project, "Read the artist note", "Lire la note d’artiste")}</span>
+          </a>
         </div>
       </div>
       <div class="palimpsests-artist-hero__portrait" aria-label="${ui(project, "ORETH portrait", "Portrait d’ORETH")}">
@@ -563,20 +569,6 @@ const renderPalimpsestsArtistHero = (
           fetchpriority="high"
           decoding="sync"
         />
-        <aside class="palimpsests-profile-window palimpsests-profile-window--identity">
-          <span>01 / ${ui(project, "SIGNATURE", "SIGNATURE")}</span>
-          <strong>ORETH</strong>
-          <small>${ui(project, "Recording artist", "Artiste sonore")}</small>
-        </aside>
-        <aside class="palimpsests-profile-window palimpsests-profile-window--work">
-          <span>02 / ${ui(project, "CURRENT WORK", "ŒUVRE EN COURS")}</span>
-          <strong>Palimpsests</strong>
-          <small>${ui(project, "Five acts · evolving archive", "Cinq actes · archive évolutive")}</small>
-        </aside>
-        <aside class="palimpsests-profile-window palimpsests-profile-window--status">
-          <i aria-hidden="true"></i>
-          <span>${ui(project, "ACTIVE CULTURAL PRODUCTION", "PRODUCTION CULTURELLE ACTIVE")}</span>
-        </aside>
         <div class="palimpsests-orbit-dots" aria-hidden="true">
           ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
         </div>

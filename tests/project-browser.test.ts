@@ -35,7 +35,8 @@ test("Palimpsests keeps the transparent portrait on a stable Safari layer at eve
   assert.match(styles, /html\.is-safari \.palimpsests-artist-hero__portrait/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
   assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
-  assert.match(runtime, /classList\.contains\("is-safari"\)[\s\S]*?select\(hashMatch \|\| links\[0\]\);[\s\S]*?return;/);
+  assert.match(runtime, /const safariRuntime = document\.documentElement\.classList\.contains\("is-safari"\)/);
+  assert.match(runtime, /const physicsFrameInterval = safariRuntime \|\| coarsePointer \|\| lowPowerRuntime \? 24 : 16/);
 });
 
 test("Palimpsests publishes Belle as the only open album fragment", async () => {
@@ -49,4 +50,16 @@ test("Palimpsests publishes Belle as the only open album fragment", async () => 
   assert.doesNotMatch(page, /palimpsest-piano-study/);
   assert.match(page, /Working document — arrangement, mix and voice may still change\./);
   assert.match(page, /Qu’est-ce qu’elle est belle/);
+});
+
+test("Palimpsests keeps the portrait clear and publishes compact mobile hero actions", async () => {
+  const [page, styles] = await Promise.all([
+    readFile("projects/palimpsests/index.html", "utf8"),
+    readFile("assets/css/style.css", "utf8"),
+  ]);
+
+  assert.doesNotMatch(page, /palimpsests-profile-window/);
+  assert.match(page, /palimpsests-artist-hero__action-icon/);
+  assert.match(styles, /\.palimpsests-artist-hero__actions\{display:flex;align-items:center;gap:\.65rem;width:auto\}/);
+  assert.match(styles, /\.palimpsests-artist-hero__actions \.button\{display:grid;place-items:center;width:3\.25rem;height:3\.25rem/);
 });
