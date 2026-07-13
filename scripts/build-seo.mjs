@@ -413,7 +413,7 @@ for (const [file, config] of Object.entries(pages)) {
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=68");
-  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=56");
+  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=57");
 
   await writeFile(absolutePath, html);
 }
