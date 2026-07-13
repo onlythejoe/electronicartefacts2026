@@ -20661,6 +20661,50 @@ article.publication-body--vaste {
   .palimpsests-orbit-nav .tag{animation:none;translate:none}
   .palimpsests-orbit-nav .tag:hover span,.palimpsests-orbit-nav .tag:focus-visible span{animation:none}
 }
+
+/* Palimpsests orbit v6 — viewport-scale constellation. */
+.palimpsests-orbit-nav .tag {
+  min-width:clamp(10rem,14vw,16rem);
+  min-height:clamp(6rem,8vw,9rem);
+  padding:1.7rem 2.5rem;
+  font-size:clamp(.88rem,1.05vw,1.08rem);
+  rotate:var(--bubble-base-rotate,0deg);
+  transform-origin:50% 54%;
+}
+.palimpsests-orbit-nav .tag:nth-child(1){--bubble-base-rotate:-7deg;--bubble-x:10px;--bubble-y:-13px;min-width:clamp(12rem,17vw,19rem);min-height:clamp(7rem,9.5vw,10.5rem)}
+.palimpsests-orbit-nav .tag:nth-child(2){--bubble-base-rotate:5deg;--bubble-x:-8px;--bubble-y:15px;min-width:clamp(9rem,12vw,14rem);min-height:clamp(5.4rem,7vw,7.8rem)}
+.palimpsests-orbit-nav .tag:nth-child(3){--bubble-base-rotate:-3deg;--bubble-x:14px;--bubble-y:8px;min-width:clamp(14rem,20vw,22rem);min-height:clamp(8rem,10.8vw,12rem)}
+.palimpsests-orbit-nav .tag:nth-child(4){--bubble-base-rotate:9deg;--bubble-x:-12px;--bubble-y:-10px;min-width:clamp(8rem,10vw,12rem);min-height:clamp(5rem,6.3vw,7rem)}
+.palimpsests-orbit-nav .tag:nth-child(5){--bubble-base-rotate:-11deg;--bubble-x:9px;--bubble-y:16px;min-width:clamp(11rem,15vw,17rem);min-height:clamp(6.6rem,8.6vw,9.4rem)}
+.palimpsests-orbit-nav .tag:nth-child(6){--bubble-base-rotate:4deg;--bubble-x:-15px;--bubble-y:-7px;min-width:clamp(15rem,22vw,24rem);min-height:clamp(8.8rem,11.5vw,12.8rem)}
+.palimpsests-orbit-nav .tag:nth-child(7){--bubble-base-rotate:-5deg;--bubble-x:7px;--bubble-y:-16px;min-width:clamp(9rem,11vw,13rem);min-height:clamp(5.2rem,6.8vw,7.5rem)}
+.palimpsests-orbit-nav .tag:nth-child(8){--bubble-base-rotate:12deg;--bubble-x:-10px;--bubble-y:12px;min-width:clamp(12rem,18vw,20rem);min-height:clamp(7.2rem,9.8vw,10.8rem)}
+
+@media(min-width:64.0625rem){
+  .palimpsests-orbit-nav .tag:nth-child(1){top:8%;left:38%}
+  .palimpsests-orbit-nav .tag:nth-child(2){top:17%;right:-1%}
+  .palimpsests-orbit-nav .tag:nth-child(3){top:31%;left:41%}
+  .palimpsests-orbit-nav .tag:nth-child(4){top:47%;right:4%}
+  .palimpsests-orbit-nav .tag:nth-child(5){bottom:20%;left:40%}
+  .palimpsests-orbit-nav .tag:nth-child(6){bottom:-2%;right:-4%}
+  .palimpsests-orbit-nav .tag:nth-child(7){top:2%;left:68%}
+  .palimpsests-orbit-nav .tag:nth-child(8){bottom:1%;left:48%}
+}
+@media(max-width:64rem){
+  .palimpsests-orbit-nav .tag,.palimpsests-orbit-nav .tag:nth-child(2n),.palimpsests-orbit-nav .tag:nth-child(3n),.palimpsests-orbit-nav .tag:nth-child(4n){padding:1.35rem 1.8rem;font-size:.82rem}
+  .palimpsests-orbit-nav .tag:nth-child(1){top:9%;left:-4%;min-width:9.8rem;min-height:6.2rem}
+  .palimpsests-orbit-nav .tag:nth-child(2){top:2%;right:-5%;min-width:7.7rem;min-height:5rem}
+  .palimpsests-orbit-nav .tag:nth-child(3){top:25%;right:-9%;min-width:10.8rem;min-height:7rem}
+  .palimpsests-orbit-nav .tag:nth-child(4){top:42%;left:-5%;min-width:7.2rem;min-height:4.7rem}
+  .palimpsests-orbit-nav .tag:nth-child(5){bottom:28%;right:-5%;min-width:9rem;min-height:5.8rem}
+  .palimpsests-orbit-nav .tag:nth-child(6){bottom:9%;left:-11%;min-width:11.8rem;min-height:7.5rem}
+  .palimpsests-orbit-nav .tag:nth-child(7){bottom:-1%;right:-3%;min-width:8rem;min-height:5.1rem}
+  .palimpsests-orbit-nav .tag:nth-child(8){top:59%;left:-8%;min-width:9.6rem;min-height:6.4rem}
+}
+@media(max-width:48rem){
+  .palimpsests-orbit-nav .tag,.palimpsests-orbit-nav .tag:nth-child(2n),.palimpsests-orbit-nav .tag:nth-child(3n),.palimpsests-orbit-nav .tag:nth-child(4n){font-size:.78rem}
+}
+@media(prefers-reduced-motion:reduce){.palimpsests-orbit-nav .tag{rotate:var(--bubble-base-rotate,0deg)}}
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
 /* Palimpsests music dossier: first reusable artist-release module. */
