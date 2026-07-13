@@ -5054,7 +5054,7 @@
                 const dx = (b.left + b.width * 0.5 + correctionOffsets[j].x) - (a.left + a.width * 0.5 + correctionOffsets[i].x);
                 const dy = (b.top + b.height * 0.5 + correctionOffsets[j].y) - (a.top + a.height * 0.5 + correctionOffsets[i].y);
                 const distance = Math.max(1, Math.hypot(dx, dy));
-                const overlap = Math.min(a.width, a.height) * 0.57 + Math.min(b.width, b.height) * 0.57 + 16 - distance;
+                const overlap = Math.min(a.width, a.height) * 0.57 + Math.min(b.width, b.height) * 0.57 + 30 - distance;
                 if (overlap <= 0) continue;
                 const nx = dx / distance;
                 const ny = dy / distance;

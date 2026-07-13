@@ -20786,10 +20786,10 @@ article.publication-body--vaste {
   line-height:1.14;
 }
 @media(min-width:64.0625rem){
-  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(1){top:7%;left:39%}
-  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2){top:31%;right:-2%}
-  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(3){top:auto;bottom:17%;left:42%}
-  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(4){top:auto;bottom:-3%;right:1%;left:auto}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(1){top:2%;left:38%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2){top:27%;right:-2%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(3){top:auto;bottom:2%;left:36%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(4){top:auto;bottom:-4%;right:-1%;left:auto}
 }
 @media(max-width:64rem){
   .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(1){top:45%;left:-7%}
