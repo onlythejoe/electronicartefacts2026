@@ -35668,7 +35668,21 @@ window.EA_ANALYTICS_CONFIG = {
         const progress = Math.max(-1, Math.min(1, (window.innerHeight * 0.5 - (rect.top + rect.height * 0.5)) / Math.max(rect.height, 1)));
         hero.style.setProperty("--orbit-scroll", progress.toFixed(3));
       };
+      let lastScrollY = window.scrollY;
       const onScroll = () => {
+        const nextScrollY = window.scrollY;
+        const delta = Math.max(-70, Math.min(70, nextScrollY - lastScrollY));
+        lastScrollY = nextScrollY;
+        if (physicsActive && Math.abs(delta) > 0.5) {
+          physics.forEach((body, index) => {
+            const mass = Math.max(1, (body.link.offsetWidth * body.link.offsetHeight) / 15000);
+            const direction = index % 2 === 0 ? 1 : -1;
+            body.vy += (-delta * (0.032 + (index % 3) * 0.005)) / mass;
+            body.vx += (delta * direction * (0.009 + (index % 4) * 0.002)) / mass;
+            body.vx = Math.max(-9, Math.min(9, body.vx));
+            body.vy = Math.max(-12, Math.min(12, body.vy));
+          });
+        }
         if (scheduled) return;
         scheduled = true;
         requestAnimationFrame(updateDepth);
