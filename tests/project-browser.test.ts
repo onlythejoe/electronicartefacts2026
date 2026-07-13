@@ -24,10 +24,11 @@ test("project browsing publishes responsive graph, results and full-grid styles"
   assert.match(styles, /@media \(max-width: 48rem\)[\s\S]*?\.project-browser/);
 });
 
-test("Palimpsests keeps the transparent portrait on a stable Safari mobile layer", async () => {
+test("Palimpsests keeps the transparent portrait on a stable Safari layer at every viewport", async () => {
   const styles = await readFile("assets/css/style.css", "utf8");
 
   assert.match(styles, /@supports \(-webkit-touch-callout: none\)/);
+  assert.doesNotMatch(styles, /@supports \(-webkit-touch-callout: none\) \{\s*@media/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
   assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
 });

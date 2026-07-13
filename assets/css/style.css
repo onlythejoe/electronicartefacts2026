@@ -17074,38 +17074,36 @@ article.publication-body--vaste {
   .palimpsests-orbit-dots { opacity:.35; }
 }
 
-/* Safari iOS: avoid tiled white compositor failures over the transparent portrait. */
+/* Safari/WebKit: avoid tiled white compositor failures over the transparent portrait. */
 @supports (-webkit-touch-callout: none) {
-  @media (max-width:48rem) {
-    .palimpsests-artist-hero__portrait,
-    .palimpsests-artist-hero__portrait > img {
-      will-change:auto;
-      -webkit-transform:none;
-      transform:none;
-    }
+  .palimpsests-artist-hero__portrait,
+  .palimpsests-artist-hero__portrait > img {
+    will-change:auto;
+    -webkit-transform:none;
+    transform:none;
+  }
 
-    .palimpsests-artist-hero__portrait > img {
-      opacity:1;
-      filter:none;
-      animation:none;
-    }
+  .palimpsests-artist-hero__portrait > img {
+    opacity:1;
+    filter:none;
+    animation:none;
+  }
 
-    .palimpsests-orbit-nav .tag,
-    .palimpsests-orbit-nav .tag::before,
-    .palimpsests-orbit-nav .tag::after,
-    .palimpsests-orbit-nav .tag span,
-    .palimpsests-profile-window {
-      -webkit-backdrop-filter:none;
-      backdrop-filter:none;
-      will-change:auto;
-      animation:none;
-    }
+  .palimpsests-orbit-nav .tag,
+  .palimpsests-orbit-nav .tag::before,
+  .palimpsests-orbit-nav .tag::after,
+  .palimpsests-orbit-nav .tag span,
+  .palimpsests-profile-window {
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+    will-change:auto;
+    animation:none;
+  }
 
-    .palimpsests-orbit-nav .tag {
-      translate:none;
-      scale:1;
-      rotate:0deg;
-    }
+  .palimpsests-orbit-nav .tag {
+    translate:none;
+    scale:1;
+    rotate:0deg;
   }
 }
 
