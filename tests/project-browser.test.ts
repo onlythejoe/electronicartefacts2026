@@ -35,6 +35,8 @@ test("Palimpsests keeps the transparent portrait on a stable Safari layer at eve
   assert.match(styles, /html\.is-safari \.palimpsests-artist-hero__portrait/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
   assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
+  assert.match(styles, /\.palimpsests-artist-hero__portrait \{[\s\S]*?pointer-events:none;/);
+  assert.match(styles, /\.palimpsests-artist-hero > \.palimpsests-orbit-nav \.tag:nth-child\(2\)[\s\S]*?z-index:1;/);
   assert.match(runtime, /const lowPowerRuntime = cpuLimited \|\| memoryLimited/);
   assert.match(runtime, /const physicsFrameInterval = lowPowerRuntime \? 22 : 15/);
 });

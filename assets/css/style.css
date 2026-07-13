@@ -17075,6 +17075,24 @@ article.publication-body--vaste {
 }
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
+/* Let the visual-universe bubble pass behind ORETH while its hit area stays live. */
+.palimpsests-artist-hero__portrait {
+  pointer-events:none;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav {
+  z-index:auto;
+  contain:none;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag {
+  z-index:4;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2),
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2):hover,
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2):focus-visible,
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2):active {
+  z-index:1;
+}
+
 /* Palimpsests music dossier: first reusable artist-release module. */
 .palimpsests-music{--belle-ink:#101010;--belle-paper:#e9e4dc;display:grid;gap:clamp(2rem,5vw,5rem);padding:clamp(1.2rem,4vw,4rem);border-radius:var(--radius-xl);color:var(--belle-paper);background:var(--belle-ink);overflow:hidden}
 .palimpsests-music__head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(18rem,.65fr);gap:clamp(1.5rem,6vw,7rem);align-items:end}
