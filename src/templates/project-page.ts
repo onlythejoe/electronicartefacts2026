@@ -523,17 +523,6 @@ const renderPalimpsestsArtistHero = (
   const tags = project.locale === "fr"
     ? ["Cycle d’album", "ORETH", "Cinq actes", "Archives"]
     : ["Album cycle", "ORETH", "Five acts", "Archives"];
-  const sensoryNav = project.locale === "fr"
-    ? [
-        { label: "Écouter le fragment", href: "#project-music" },
-        { label: "Voir l’univers visuel", href: "#project-moodboard" },
-        { label: "Explorer le système", href: "#project-system" },
-      ]
-    : [
-        { label: "Listen to the fragment", href: "#project-music" },
-        { label: "Enter the visual world", href: "#project-moodboard" },
-        { label: "Explore the system", href: "#project-system" },
-      ];
   return `
     <section class="zone-card hero palimpsests-artist-hero" id="project-overview" data-entry-id="palimpsests">
       <div class="palimpsests-artist-hero__copy">
@@ -571,9 +560,6 @@ const renderPalimpsestsArtistHero = (
           ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
         </div>
       </div>
-      <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
-        ${sensoryNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
-      </nav>
     </section>`;
 };
 

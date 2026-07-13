@@ -25,20 +25,25 @@ test("project browsing publishes responsive graph, results and full-grid styles"
 });
 
 test("Palimpsests keeps the transparent portrait on a stable Safari layer at every viewport", async () => {
-  const [styles, runtime, layout] = await Promise.all([
+  const [styles, layout] = await Promise.all([
     readFile("assets/css/style.css", "utf8"),
-    readFile("assets/js/main.js", "utf8"),
     readFile("src/templates/layout.ts", "utf8"),
   ]);
 
   assert.match(layout, /document\.documentElement\.classList\.add\("is-safari"\)/);
   assert.match(styles, /html\.is-safari \.palimpsests-artist-hero__portrait/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
-  assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
-  assert.match(styles, /\.palimpsests-artist-hero__portrait \{[\s\S]*?pointer-events:none;/);
-  assert.match(styles, /\.palimpsests-artist-hero > \.palimpsests-orbit-nav \.tag:nth-child\(2\)[\s\S]*?z-index:1;/);
-  assert.match(runtime, /const lowPowerRuntime = cpuLimited \|\| memoryLimited/);
-  assert.match(runtime, /const physicsFrameInterval = lowPowerRuntime \? 22 : 15/);
+});
+
+test("the liquid bubble field is preserved as a reusable component, not mounted on Palimpsests", async () => {
+  const [componentStyles, componentRuntime, page] = await Promise.all([
+    readFile("assets/components/liquid-bubble-field/liquid-bubble-field.css", "utf8"),
+    readFile("assets/components/liquid-bubble-field/liquid-bubble-field.js", "utf8"),
+    readFile("projects/palimpsests/index.html", "utf8"),
+  ]);
+  assert.match(componentStyles, /\.liquid-bubble/);
+  assert.match(componentRuntime, /data-liquid-bubble-field/);
+  assert.doesNotMatch(page, /data-palimpsests-orbit-nav|data-liquid-bubble-field/);
 });
 
 test("Palimpsests publishes Belle as the only open album fragment", async () => {
