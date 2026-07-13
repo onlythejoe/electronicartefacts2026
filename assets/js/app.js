@@ -26977,40 +26977,41 @@ window.EA_ANALYTICS_CONFIG = {
 
       ctx.clearRect(0, 0, width, height);
 
-      const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
-      bg.addColorStop(0, "rgba(234,220,207,0.08)");
-      bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
-      bg.addColorStop(1, "rgba(0,0,0,0.04)");
-      ctx.fillStyle = bg;
-      ctx.fillRect(0, 0, width, height);
-
-      ctx.strokeStyle = "rgba(255,255,255,0.04)";
-      ctx.lineWidth = 1;
-      for (let x = 0; x < width; x += Math.max(52, width / 10)) {
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, height);
-        ctx.stroke();
-      }
-      for (let y = 0; y < height; y += Math.max(44, height / 8)) {
-        ctx.beginPath();
-        ctx.moveTo(0, y);
-        ctx.lineTo(width, y);
-        ctx.stroke();
-      }
-
       const orbit1 = minDim * (compactGraph ? 0.43 : 0.38);
       const orbit2 = minDim * (compactGraph ? 0.3 : 0.22);
-      ctx.strokeStyle = "rgba(255,255,255,0.08)";
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
-      ctx.stroke();
 
       if (!isResearchAtlasGraph) {
+        const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
+        bg.addColorStop(0, "rgba(234,220,207,0.08)");
+        bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
+        bg.addColorStop(1, "rgba(0,0,0,0.04)");
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.strokeStyle = "rgba(255,255,255,0.04)";
+        ctx.lineWidth = 1;
+        for (let x = 0; x < width; x += Math.max(52, width / 10)) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, height);
+          ctx.stroke();
+        }
+        for (let y = 0; y < height; y += Math.max(44, height / 8)) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(width, y);
+          ctx.stroke();
+        }
+
+        ctx.strokeStyle = "rgba(255,255,255,0.08)";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
+        ctx.stroke();
+
         ctx.beginPath();
         ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
         ctx.fillStyle = "rgba(234,220,207,0.12)";
@@ -27082,7 +27083,13 @@ window.EA_ANALYTICS_CONFIG = {
       positions.forEach((item) => {
         const z = Math.round(item.depth * 28);
         item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
-        drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
+
+        // Research Atlas nodes already have an interactive DOM pin. Drawing the
+        // same vertex on the canvas created a second, offset circle and doubled
+        // the per-frame paint work. Other graph surfaces still use canvas nodes.
+        if (!isResearchAtlasGraph) {
+          drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
+        }
       });
     };
 
