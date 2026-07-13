@@ -5027,6 +5027,8 @@
       }));
       let physicsActive = !reducedMotion.matches;
       let lastPhysicsFrame = 0;
+      let pendingScrollDelta = 0;
+      const shapeInterval = lowPowerRuntime || safariRuntime ? 48 : 32;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
         if (time - lastPhysicsFrame > physicsFrameInterval) {
@@ -5045,6 +5047,19 @@
             if (rect.top < bounds.top + edge) { body.y += bounds.top + edge - rect.top; body.vy = Math.abs(body.vy) * 0.34; }
             if (rect.bottom > bounds.bottom - edge) { body.y -= rect.bottom - bounds.bottom + edge; body.vy = -Math.abs(body.vy) * 0.34; }
           });
+          if (Math.abs(pendingScrollDelta) > 0.01) {
+            const scrollImpulse = pendingScrollDelta;
+            pendingScrollDelta *= 0.16;
+            physics.forEach((body, index) => {
+              const direction = index % 2 === 0 ? 1 : -1;
+              body.vy += (-scrollImpulse * (0.032 + (index % 3) * 0.005)) / body.mass;
+              body.vx += (scrollImpulse * direction * (0.009 + (index % 4) * 0.002)) / body.mass;
+              body.vx = Math.max(-9, Math.min(9, body.vx));
+              body.vy = Math.max(-12, Math.min(12, body.vy));
+            });
+          } else {
+            pendingScrollDelta = 0;
+          }
           const correctionOffsets = physics.map(() => ({ x: 0, y: 0 }));
           for (let pass = 0; pass < collisionPasses; pass += 1) {
             for (let i = 0; i < physics.length; i += 1) {
@@ -5097,7 +5112,6 @@
               body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
               body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
             }
-            const shapeInterval = lowPowerRuntime || safariRuntime ? 48 : 32;
             if (time - body.lastShapeTime >= shapeInterval && (!Number.isFinite(body.lastRadiusShift) || Math.abs(radiusShift - body.lastRadiusShift) > 0.045)) {
               body.lastShapeTime = time;
               body.lastRadiusShift = radiusShift;
@@ -5115,6 +5129,13 @@
         if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
       }, { rootMargin: "15%" });
       physicsObserver.observe(hero);
+      const syncMotionPreference = () => {
+        const visible = !document.hidden && hero.getBoundingClientRect().bottom > -window.innerHeight * 0.15 && hero.getBoundingClientRect().top < window.innerHeight * 1.15;
+        const wasActive = physicsActive;
+        physicsActive = !reducedMotion.matches && visible;
+        if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
+      };
+      reducedMotion.addEventListener?.("change", syncMotionPreference);
       document.addEventListener("visibilitychange", () => {
         const visible = !reducedMotion.matches && !document.hidden && hero.getBoundingClientRect().bottom > -window.innerHeight * 0.15 && hero.getBoundingClientRect().top < window.innerHeight * 1.15;
         const wasActive = physicsActive;
@@ -5153,14 +5174,7 @@
         const delta = Math.max(-70, Math.min(70, nextScrollY - lastScrollY));
         lastScrollY = nextScrollY;
         if (physicsActive && Math.abs(delta) > 0.05) {
-          physics.forEach((body, index) => {
-            const mass = Math.max(1, (body.link.offsetWidth * body.link.offsetHeight) / 15000);
-            const direction = index % 2 === 0 ? 1 : -1;
-            body.vy += (-delta * (0.032 + (index % 3) * 0.005)) / mass;
-            body.vx += (delta * direction * (0.009 + (index % 4) * 0.002)) / mass;
-            body.vx = Math.max(-9, Math.min(9, body.vx));
-            body.vy = Math.max(-12, Math.min(12, body.vy));
-          });
+          pendingScrollDelta = Math.max(-90, Math.min(90, pendingScrollDelta + delta));
         }
         if (scheduled) return;
         scheduled = true;

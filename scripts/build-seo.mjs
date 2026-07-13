@@ -412,8 +412,8 @@ for (const [file, config] of Object.entries(pages)) {
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />',
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
-  html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=68");
-  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=57");
+  html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=75");
+  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=63");
 
   await writeFile(absolutePath, html);
 }
