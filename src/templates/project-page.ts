@@ -518,11 +518,24 @@ const renderPalimpsestsResearchBoard = (project: ProjectEntity): string => {
 
 const renderPalimpsestsArtistHero = (
   project: ProjectEntity,
-  heroNav: Array<{ label: string; href: string }>,
+  _heroNav: Array<{ label: string; href: string }>,
 ): string => {
   const tags = project.locale === "fr"
     ? ["Cycle d’album", "ORETH", "Cinq actes", "Archives"]
     : ["Album cycle", "ORETH", "Five acts", "Archives"];
+  const sensoryNav = project.locale === "fr"
+    ? [
+        { label: "Écouter le fragment", href: "#project-music" },
+        { label: "Voir l’univers visuel", href: "#project-moodboard" },
+        { label: "Explorer le système", href: "#project-system" },
+        { label: "Lire la note d’artiste", href: "#project-thesis" },
+      ]
+    : [
+        { label: "Listen to the fragment", href: "#project-music" },
+        { label: "Enter the visual world", href: "#project-moodboard" },
+        { label: "Explore the system", href: "#project-system" },
+        { label: "Read the artist note", href: "#project-thesis" },
+      ];
   return `
     <section class="zone-card hero palimpsests-artist-hero" id="project-overview" data-entry-id="palimpsests">
       <div class="palimpsests-artist-hero__copy">
@@ -569,7 +582,7 @@ const renderPalimpsestsArtistHero = (
         </div>
       </div>
       <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
-        ${heroNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
+        ${sensoryNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
       </nav>
     </section>`;
 };

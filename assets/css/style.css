@@ -17027,6 +17027,26 @@ article.publication-body--vaste {
   .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(7){min-width:9.4rem;min-height:8.5rem}
   .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(8){min-width:11.3rem;min-height:10rem}
 }
+/* Palimpsests orbit v10 — four sensory calls to action. */
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag span {
+  max-width:13ch;
+  margin-inline:auto;
+  text-align:center;
+  white-space:normal;
+  line-height:1.14;
+}
+@media(min-width:64.0625rem){
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(1){top:7%;left:39%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2){top:31%;right:-2%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(3){top:auto;bottom:17%;left:42%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(4){top:auto;bottom:-3%;right:1%;left:auto}
+}
+@media(max-width:64rem){
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(1){top:45%;left:-7%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(2){top:59%;right:-9%}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(3){top:auto;bottom:12%;left:-7%;right:auto}
+  .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:nth-child(4){top:auto;bottom:-2%;right:-5%;left:auto}
+}
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
 /* Palimpsests music dossier: first reusable artist-release module. */
