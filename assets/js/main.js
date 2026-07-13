@@ -5024,7 +5024,18 @@
         renderedY: Number.NaN,
         lastShapeTime: 0,
         lastRadiusShift: Number.NaN,
+        pinned: false,
       }));
+      physics.forEach((body) => {
+        body.link.addEventListener("pointerenter", () => {
+          body.pinned = true;
+          body.vx *= 0.25;
+          body.vy *= 0.25;
+        });
+        body.link.addEventListener("pointerleave", () => {
+          body.pinned = false;
+        });
+      });
       let physicsActive = !reducedMotion.matches;
       let lastPhysicsFrame = 0;
       let pendingScrollDelta = 0;
@@ -5039,8 +5050,10 @@
           physics.forEach((body, index) => {
             const rect = rects[index];
             body.mass = Math.max(0.85, (rect.width * rect.height) / 22000);
-            body.vx += -body.x * 0.0065 * dt;
-            body.vy += -body.y * 0.0065 * dt;
+            if (!body.pinned) {
+              body.vx += -body.x * 0.0065 * dt;
+              body.vy += -body.y * 0.0065 * dt;
+            }
             const edge = 12;
             if (rect.left < bounds.left + edge) { body.x += bounds.left + edge - rect.left; body.vx = Math.abs(body.vx) * 0.34; }
             if (rect.right > bounds.right - edge) { body.x -= rect.right - bounds.right + edge; body.vx = -Math.abs(body.vx) * 0.34; }
@@ -5052,8 +5065,10 @@
             pendingScrollDelta *= 0.16;
             physics.forEach((body, index) => {
               const direction = index % 2 === 0 ? 1 : -1;
-              body.vy += (-scrollImpulse * (0.032 + (index % 3) * 0.005)) / body.mass;
-              body.vx += (scrollImpulse * direction * (0.009 + (index % 4) * 0.002)) / body.mass;
+              if (!body.pinned) {
+                body.vy += (-scrollImpulse * (0.032 + (index % 3) * 0.005)) / body.mass;
+                body.vx += (scrollImpulse * direction * (0.009 + (index % 4) * 0.002)) / body.mass;
+              }
               body.vx = Math.max(-9, Math.min(9, body.vx));
               body.vy = Math.max(-12, Math.min(12, body.vy));
             });
@@ -5073,9 +5088,10 @@
                 if (overlap <= 0) continue;
                 const nx = dx / distance;
                 const ny = dy / distance;
-                const inverseA = 1 / physics[i].mass;
-                const inverseB = 1 / physics[j].mass;
+                const inverseA = physics[i].pinned ? 0 : 1 / physics[i].mass;
+                const inverseB = physics[j].pinned ? 0 : 1 / physics[j].mass;
                 const inverseTotal = inverseA + inverseB;
+                if (inverseTotal === 0) continue;
                 const correction = Math.min(18, overlap * 0.52);
                 physics[i].x -= nx * correction * (inverseA / inverseTotal);
                 physics[i].y -= ny * correction * (inverseA / inverseTotal);
@@ -5100,8 +5116,13 @@
             const damping = Math.pow(0.88, dt);
             body.vx *= damping;
             body.vy *= damping;
-            body.x = Math.max(-170, Math.min(170, body.x + body.vx * dt));
-            body.y = Math.max(-170, Math.min(170, body.y + body.vy * dt));
+            if (body.pinned) {
+              body.vx *= 0.72;
+              body.vy *= 0.72;
+            } else {
+              body.x = Math.max(-170, Math.min(170, body.x + body.vx * dt));
+              body.y = Math.max(-170, Math.min(170, body.y + body.vy * dt));
+            }
             const speed = Math.min(1, Math.hypot(body.vx, body.vy) / 8);
             const horizontal = Math.abs(body.vx) >= Math.abs(body.vy);
             const stretch = speed * 0.06;

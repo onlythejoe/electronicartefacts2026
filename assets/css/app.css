@@ -20636,16 +20636,17 @@ article.publication-body--vaste {
 }
 .palimpsests-orbit-nav .tag:hover,
 .palimpsests-orbit-nav .tag:focus-visible {
-  --bubble-contact-scale:1.035;
+  --bubble-contact-scale:1.012;
   z-index:12;
+  transform:none;
   border-radius:49% 51% 48% 52% / 52% 48% 51% 49%;
   box-shadow:0 1.8rem 4rem rgba(38,51,65,.19),0 .35rem 1rem rgba(255,255,255,.46),inset .16rem .2rem .15rem rgba(255,255,255,.9),inset -.2rem -.24rem .4rem rgba(85,124,160,.16),inset 0 0 1.8rem rgba(255,255,255,.12);
 }
 .palimpsests-orbit-nav .tag:hover span,
 .palimpsests-orbit-nav .tag:focus-visible span {
-  font-weight:700;
-  letter-spacing:.028em;
-  scale:1.022;
+  font-weight:680;
+  letter-spacing:.024em;
+  scale:1.008;
   animation:none;
 }
 .palimpsests-orbit-nav .tag:active { --bubble-contact-scale:1.14;transition-duration:.1s; }
@@ -20681,7 +20682,7 @@ article.publication-body--vaste {
 }
 @media(max-width:48rem){
   .palimpsests-orbit-nav .tag,.palimpsests-orbit-nav .tag:nth-child(2n),.palimpsests-orbit-nav .tag:nth-child(3n),.palimpsests-orbit-nav .tag:nth-child(4n){font-size:.78rem}
-  .palimpsests-orbit-nav .tag:hover,.palimpsests-orbit-nav .tag:focus-visible{--bubble-contact-scale:1.025}
+  .palimpsests-orbit-nav .tag:hover,.palimpsests-orbit-nav .tag:focus-visible{--bubble-contact-scale:1.008}
 }
 @media(prefers-reduced-motion:reduce){
   .palimpsests-orbit-nav .tag{animation:none;translate:none}
@@ -21025,4 +21026,26 @@ html.is-safari .palimpsests-profile-window {
   .palimpsests-plate:focus-visible img {
     transform: scale(1.018);
   }
+}
+
+/* Palimpsests final motion tuning: slow hover, decisive press, static portrait. */
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag {
+  transition:scale .72s cubic-bezier(.16,1,.3,1),border-radius .42s cubic-bezier(.2,.8,.2,1),box-shadow .72s ease,background .72s ease;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag span {
+  transition:font-weight .62s cubic-bezier(.16,1,.3,1),letter-spacing .62s ease,scale .62s cubic-bezier(.16,1,.3,1),translate .62s cubic-bezier(.16,1,.3,1);
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:active {
+  transition-duration:.09s;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:hover,
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:focus-visible {
+  animation-play-state:paused;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:active span {
+  transition-duration:.09s;
+}
+.palimpsests-artist-hero:hover .palimpsests-artist-hero__portrait > img {
+  transform:translateY(0) scale(1);
+  filter:drop-shadow(0 34px 46px rgba(38,43,49,.26));
 }
