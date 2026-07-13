@@ -35569,14 +35569,14 @@ window.EA_ANALYTICS_CONFIG = {
         select(link);
       }));
       links.forEach((link) => {
-        const light = { x: 24, y: 8, targetX: 24, targetY: 8, magneticX: 0, magneticY: 0, targetMagneticX: 0, targetMagneticY: 0, frame: 0 };
+        const light = { x: 24, y: 8, targetX: 24, targetY: 8, magneticX: 0, magneticY: 0, targetMagneticX: 0, targetMagneticY: 0, width: 1, height: 1, frame: 0 };
         const renderLight = () => {
           light.x += (light.targetX - light.x) * 0.115;
           light.y += (light.targetY - light.y) * 0.115;
           light.magneticX += (light.targetMagneticX - light.magneticX) * 0.14;
           light.magneticY += (light.targetMagneticY - light.magneticY) * 0.14;
-          link.style.setProperty("--bubble-light-x", `${light.x.toFixed(2)}%`);
-          link.style.setProperty("--bubble-light-y", `${light.y.toFixed(2)}%`);
+          link.style.setProperty("--light-offset-x", `${(light.x * light.width / 100 - light.width * 0.25).toFixed(2)}px`);
+          link.style.setProperty("--light-offset-y", `${(light.y * light.height / 100 - light.height * 0.25).toFixed(2)}px`);
           link.style.setProperty("--magnetic-x", `${light.magneticX.toFixed(2)}px`);
           link.style.setProperty("--magnetic-y", `${light.magneticY.toFixed(2)}px`);
           const remaining = Math.abs(light.targetX - light.x) + Math.abs(light.targetY - light.y) + Math.abs(light.targetMagneticX - light.magneticX) * 4 + Math.abs(light.targetMagneticY - light.magneticY) * 4;
@@ -35589,6 +35589,8 @@ window.EA_ANALYTICS_CONFIG = {
         link.addEventListener("pointermove", (event) => {
           if (event.pointerType === "touch") return;
           const rect = link.getBoundingClientRect();
+          light.width = rect.width;
+          light.height = rect.height;
           const x = Math.max(0, Math.min(100, ((event.clientX - rect.left) / Math.max(rect.width, 1)) * 100));
           const y = Math.max(0, Math.min(100, ((event.clientY - rect.top) / Math.max(rect.height, 1)) * 100));
           light.targetX = x;
@@ -35621,7 +35623,7 @@ window.EA_ANALYTICS_CONFIG = {
         renderedX: Number.NaN,
         renderedY: Number.NaN,
         lastShapeTime: 0,
-        lastRadiusShift: Number.NaN,
+        lastStretch: Number.NaN,
         pinned: false,
       }));
       physics.forEach((body) => {
@@ -35637,7 +35639,7 @@ window.EA_ANALYTICS_CONFIG = {
       let physicsActive = !reducedMotion.matches;
       let lastPhysicsFrame = 0;
       let pendingScrollDelta = 0;
-      const shapeInterval = lowPowerRuntime ? 44 : 24;
+      const shapeInterval = lowPowerRuntime ? 30 : 16;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
         if (time - lastPhysicsFrame > physicsFrameInterval) {
@@ -35724,19 +35726,17 @@ window.EA_ANALYTICS_CONFIG = {
             const speed = Math.min(1, Math.hypot(body.vx, body.vy) / 8);
             const horizontal = Math.abs(body.vx) >= Math.abs(body.vy);
             const stretch = speed * 0.06;
-            const radiusShift = speed * 4.2;
             if (!Number.isFinite(body.renderedX) || Math.abs(body.x - body.renderedX) > 0.035 || Math.abs(body.y - body.renderedY) > 0.035) {
               body.renderedX = body.x;
               body.renderedY = body.y;
               body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
               body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
             }
-            if (time - body.lastShapeTime >= shapeInterval && (!Number.isFinite(body.lastRadiusShift) || Math.abs(radiusShift - body.lastRadiusShift) > 0.045)) {
+            if (time - body.lastShapeTime >= shapeInterval && (!Number.isFinite(body.lastStretch) || Math.abs(stretch - body.lastStretch) > 0.0007)) {
               body.lastShapeTime = time;
-              body.lastRadiusShift = radiusShift;
+              body.lastStretch = stretch;
               body.link.style.setProperty("--physics-scale-x", (horizontal ? stretch : -stretch * 0.42).toFixed(3));
               body.link.style.setProperty("--physics-scale-y", (horizontal ? -stretch * 0.42 : stretch).toFixed(3));
-              body.link.style.setProperty("--physics-radius", `${(50 + radiusShift).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(49 + radiusShift * 0.5).toFixed(2)}% ${(51 - radiusShift * 0.5).toFixed(2)}% / ${(49 - radiusShift * 0.35).toFixed(2)}% ${(51 + radiusShift * 0.35).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(50 + radiusShift).toFixed(2)}%`);
             }
           });
         }

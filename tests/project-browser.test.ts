@@ -35,8 +35,8 @@ test("Palimpsests keeps the transparent portrait on a stable Safari layer at eve
   assert.match(styles, /html\.is-safari \.palimpsests-artist-hero__portrait/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
   assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
-  assert.match(runtime, /const safariRuntime = document\.documentElement\.classList\.contains\("is-safari"\)/);
-  assert.match(runtime, /const physicsFrameInterval = safariRuntime \|\| coarsePointer \|\| lowPowerRuntime \? 24 : 16/);
+  assert.match(runtime, /const lowPowerRuntime = cpuLimited \|\| memoryLimited/);
+  assert.match(runtime, /const physicsFrameInterval = lowPowerRuntime \? 22 : 15/);
 });
 
 test("Palimpsests publishes Belle as the only open album fragment", async () => {
