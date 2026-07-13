@@ -536,15 +536,12 @@ const renderPalimpsestsArtistHero = (
           <a class="button button--primary" href="#project-moodboard">${ui(project, "Enter the visual world", "Entrer dans l’univers visuel")}</a>
           <a class="button button--secondary" href="#project-thesis">${ui(project, "Read the artist note", "Lire la note d’artiste")}</a>
         </div>
-        <nav class="project-dossier-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}">
-          ${heroNav.map((item) => `<a class="tag" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join("")}
-        </nav>
       </div>
       <div class="palimpsests-artist-hero__portrait" aria-label="${ui(project, "ORETH portrait", "Portrait d’ORETH")}">
         <div class="palimpsests-artist-hero__halo" aria-hidden="true"></div>
         <img
-          src="/assets/media/projects/oreth/ORETH-hero-1200.webp"
-          srcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w"
+          src="/assets/media/projects/oreth/ORETH-hero-1200.png"
+          srcset="/assets/media/projects/oreth/ORETH-hero-800.png 800w, /assets/media/projects/oreth/ORETH-hero-1200.png 1200w"
           sizes="(max-width: 48rem) 100vw, 48vw"
           width="1200"
           height="900"
@@ -570,6 +567,9 @@ const renderPalimpsestsArtistHero = (
         <div class="palimpsests-orbit-dots" aria-hidden="true">
           ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
         </div>
+        <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
+          ${heroNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
+        </nav>
       </div>
     </section>`;
 };

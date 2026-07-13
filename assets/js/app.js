@@ -35561,6 +35561,26 @@ window.EA_ANALYTICS_CONFIG = {
       links.forEach((link) => link.addEventListener("click", () => {
         select(link);
       }));
+      links.forEach((link) => {
+        link.addEventListener("pointermove", (event) => {
+          if (event.pointerType === "touch") return;
+          const rect = link.getBoundingClientRect();
+          const x = Math.max(0, Math.min(100, ((event.clientX - rect.left) / Math.max(rect.width, 1)) * 100));
+          const y = Math.max(0, Math.min(100, ((event.clientY - rect.top) / Math.max(rect.height, 1)) * 100));
+          const magneticX = ((x - 50) / 50) * 3.5;
+          const magneticY = ((y - 50) / 50) * 2.5;
+          link.style.setProperty("--bubble-light-x", `${x.toFixed(1)}%`);
+          link.style.setProperty("--bubble-light-y", `${y.toFixed(1)}%`);
+          link.style.setProperty("--magnetic-x", `${magneticX.toFixed(2)}px`);
+          link.style.setProperty("--magnetic-y", `${magneticY.toFixed(2)}px`);
+        });
+        link.addEventListener("pointerleave", () => {
+          link.style.removeProperty("--bubble-light-x");
+          link.style.removeProperty("--bubble-light-y");
+          link.style.removeProperty("--magnetic-x");
+          link.style.removeProperty("--magnetic-y");
+        });
+      });
       const selectFromHash = () => {
         const match = links.find((link) => link.getAttribute("href") === window.location.hash);
         if (match) select(match);
