@@ -567,10 +567,10 @@ const renderPalimpsestsArtistHero = (
         <div class="palimpsests-orbit-dots" aria-hidden="true">
           ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
         </div>
-        <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
-          ${heroNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
-        </nav>
       </div>
+      <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
+        ${heroNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}"><span>${escapeHtml(item.label)}</span></a>`).join("")}
+      </nav>
     </section>`;
 };
 

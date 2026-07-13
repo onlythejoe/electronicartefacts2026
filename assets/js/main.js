@@ -5007,6 +5007,68 @@
           link.style.removeProperty("--magnetic-y");
         });
       });
+      const physics = links.map((link) => ({ link, x: 0, y: 0, vx: 0, vy: 0 }));
+      let physicsActive = true;
+      let lastPhysicsFrame = 0;
+      const solveBubblePhysics = (time = 0) => {
+        if (!physicsActive) return;
+        if (time - lastPhysicsFrame > 28) {
+          lastPhysicsFrame = time;
+          const bounds = nav.getBoundingClientRect();
+          const rects = physics.map(({ link }) => link.getBoundingClientRect());
+          physics.forEach((body, index) => {
+            const rect = rects[index];
+            const edge = 10;
+            if (rect.left < bounds.left + edge) body.vx += (bounds.left + edge - rect.left) * 0.055;
+            if (rect.right > bounds.right - edge) body.vx -= (rect.right - bounds.right + edge) * 0.055;
+            if (rect.top < bounds.top + edge) body.vy += (bounds.top + edge - rect.top) * 0.055;
+            if (rect.bottom > bounds.bottom - edge) body.vy -= (rect.bottom - bounds.bottom + edge) * 0.055;
+          });
+          for (let i = 0; i < physics.length; i += 1) {
+            for (let j = i + 1; j < physics.length; j += 1) {
+              const a = rects[i];
+              const b = rects[j];
+              const ax = a.left + a.width * 0.5;
+              const ay = a.top + a.height * 0.5;
+              const bx = b.left + b.width * 0.5;
+              const by = b.top + b.height * 0.5;
+              const dx = bx - ax;
+              const dy = by - ay;
+              const distance = Math.max(1, Math.hypot(dx, dy));
+              const radiusA = Math.min(a.width, a.height) * 0.56;
+              const radiusB = Math.min(b.width, b.height) * 0.56;
+              const overlap = radiusA + radiusB + 12 - distance;
+              if (overlap <= 0) continue;
+              const force = Math.min(3.2, overlap * 0.038);
+              const nx = dx / distance;
+              const ny = dy / distance;
+              physics[i].vx -= nx * force;
+              physics[i].vy -= ny * force;
+              physics[j].vx += nx * force;
+              physics[j].vy += ny * force;
+            }
+          }
+          physics.forEach((body) => {
+            body.vx *= 0.78;
+            body.vy *= 0.78;
+            body.x = Math.max(-90, Math.min(90, body.x + body.vx));
+            body.y = Math.max(-90, Math.min(90, body.y + body.vy));
+            body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
+            body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
+          });
+        }
+        requestAnimationFrame(solveBubblePhysics);
+      };
+      const physicsObserver = new IntersectionObserver(([entry]) => {
+        const wasActive = physicsActive;
+        physicsActive = entry?.isIntersecting ?? false;
+        if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
+      }, { rootMargin: "15%" });
+      physicsObserver.observe(hero);
+      window.addEventListener("resize", () => {
+        physics.forEach((body) => { body.vx = 0; body.vy = 0; });
+      }, { passive: true });
+      requestAnimationFrame(solveBubblePhysics);
       const selectFromHash = () => {
         const match = links.find((link) => link.getAttribute("href") === window.location.hash);
         if (match) select(match);

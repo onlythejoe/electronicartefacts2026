@@ -20712,6 +20712,35 @@ article.publication-body--vaste {
   .palimpsests-orbit-nav .tag,.palimpsests-orbit-nav .tag:nth-child(2n),.palimpsests-orbit-nav .tag:nth-child(3n),.palimpsests-orbit-nav .tag:nth-child(4n){font-size:.78rem}
 }
 @media(prefers-reduced-motion:reduce){.palimpsests-orbit-nav .tag{rotate:var(--bubble-base-rotate,0deg)}}
+
+/* Palimpsests orbit v7 — card-aligned collision field. */
+.palimpsests-artist-hero { position:relative; }
+.palimpsests-artist-hero > .palimpsests-orbit-nav {
+  position:absolute;
+  z-index:9;
+  inset:0;
+  width:auto;
+  max-width:none;
+  height:auto;
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:inherit;
+  overflow:hidden;
+  pointer-events:none;
+  contain:layout paint;
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag {
+  position:absolute;
+  pointer-events:auto;
+  translate:
+    calc(var(--physics-x,0px) + var(--magnetic-x,0px))
+    calc(var(--physics-y,0px) + var(--magnetic-y,0px) + var(--orbit-scroll,0) * var(--pill-depth) * -18px);
+}
+.palimpsests-artist-hero > .palimpsests-orbit-nav .tag:focus-visible { outline-offset:-5px; }
+@media(max-width:64rem){
+  .palimpsests-artist-hero > .palimpsests-orbit-nav { inset:0; }
+}
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
 /* Palimpsests music dossier: first reusable artist-release module. */
