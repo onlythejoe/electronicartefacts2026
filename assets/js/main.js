@@ -4988,23 +4988,40 @@
         select(link);
       }));
       links.forEach((link) => {
+        const light = { x: 24, y: 8, targetX: 24, targetY: 8, magneticX: 0, magneticY: 0, targetMagneticX: 0, targetMagneticY: 0, frame: 0 };
+        const renderLight = () => {
+          light.x += (light.targetX - light.x) * 0.115;
+          light.y += (light.targetY - light.y) * 0.115;
+          light.magneticX += (light.targetMagneticX - light.magneticX) * 0.14;
+          light.magneticY += (light.targetMagneticY - light.magneticY) * 0.14;
+          link.style.setProperty("--bubble-light-x", `${light.x.toFixed(2)}%`);
+          link.style.setProperty("--bubble-light-y", `${light.y.toFixed(2)}%`);
+          link.style.setProperty("--magnetic-x", `${light.magneticX.toFixed(2)}px`);
+          link.style.setProperty("--magnetic-y", `${light.magneticY.toFixed(2)}px`);
+          const remaining = Math.abs(light.targetX - light.x) + Math.abs(light.targetY - light.y) + Math.abs(light.targetMagneticX - light.magneticX) * 4 + Math.abs(light.targetMagneticY - light.magneticY) * 4;
+          if (remaining > 0.035) light.frame = requestAnimationFrame(renderLight);
+          else light.frame = 0;
+        };
+        const scheduleLight = () => {
+          if (!light.frame) light.frame = requestAnimationFrame(renderLight);
+        };
         link.addEventListener("pointermove", (event) => {
           if (event.pointerType === "touch") return;
           const rect = link.getBoundingClientRect();
           const x = Math.max(0, Math.min(100, ((event.clientX - rect.left) / Math.max(rect.width, 1)) * 100));
           const y = Math.max(0, Math.min(100, ((event.clientY - rect.top) / Math.max(rect.height, 1)) * 100));
-          const magneticX = ((x - 50) / 50) * 3.5;
-          const magneticY = ((y - 50) / 50) * 2.5;
-          link.style.setProperty("--bubble-light-x", `${x.toFixed(1)}%`);
-          link.style.setProperty("--bubble-light-y", `${y.toFixed(1)}%`);
-          link.style.setProperty("--magnetic-x", `${magneticX.toFixed(2)}px`);
-          link.style.setProperty("--magnetic-y", `${magneticY.toFixed(2)}px`);
+          light.targetX = x;
+          light.targetY = y;
+          light.targetMagneticX = ((x - 50) / 50) * 2.2;
+          light.targetMagneticY = ((y - 50) / 50) * 1.6;
+          scheduleLight();
         });
         link.addEventListener("pointerleave", () => {
-          link.style.removeProperty("--bubble-light-x");
-          link.style.removeProperty("--bubble-light-y");
-          link.style.removeProperty("--magnetic-x");
-          link.style.removeProperty("--magnetic-y");
+          light.targetX = 24;
+          light.targetY = 8;
+          light.targetMagneticX = 0;
+          light.targetMagneticY = 0;
+          scheduleLight();
         });
       });
       const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
