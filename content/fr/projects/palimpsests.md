@@ -15,7 +15,7 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.4.0
+  version: 1.3.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
   modifiedAt: 2026-07-13
@@ -59,11 +59,6 @@ media:
     src: /assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4
     alt: Lune filmée dans une lumière violette et rose pour Belle
     caption: Belle — court fragment visuel.
-  - id: palimpsest-piano-study-fr
-    type: video
-    src: /assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study.mp4
-    alt: Champ de particules et courbes superposées accompagnant l’étude pour piano de Palimpsest
-    caption: Palimpsest — réadaptation expérimentale pour piano sans section rythmique.
 visualLanguage:
   - Noir encre
   - Rose poussière
@@ -118,10 +113,6 @@ Palimpsests montre qu’Electronic Artefacts peut produire de la musique, des m�
 ## Belle — premier fragment ouvert
 
 Belle appartient à l’acte III, Expériences : le moment où l’album quitte les récits fondateurs pour entrer dans les vies intimes, l’absence, la résilience et la relation. Sa première trace publique réunit une version instrumentale de studio inachevée, une courte image lunaire et le texte français. La séquence complète de l’album reste visible, mais les morceaux non publiés sont volontairement retenus plutôt que présentés comme disponibles.
-
-## Palimpsest — étude pour piano
-
-Le morceau-signature de l’album s’ouvre aussi sous la forme d’une réadaptation expérimentale pour piano, sans section rythmique. L’image et le son restent réunis dans un seul fragment vertical de 3 min 08. Il ne remplace pas un master : il constitue une autre inscription du même morceau, fidèle à l’idée centrale de l’œuvre selon laquelle chaque forme persiste sous ses transformations.
 
 ## Signature ORETH
 

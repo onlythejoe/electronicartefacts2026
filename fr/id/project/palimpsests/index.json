@@ -16,7 +16,7 @@
   "maturity": "development",
   "confidence": "published",
   "version": {
-    "version": "1.4.0",
+    "version": "1.3.0",
     "createdAt": "2024-01-01",
     "publishedAt": "2026-06-25",
     "modifiedAt": "2026-07-13"
@@ -62,13 +62,6 @@
       "src": "/assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4",
       "alt": "Lune filmée dans une lumière violette et rose pour Belle",
       "caption": "Belle — court fragment visuel."
-    },
-    {
-      "id": "palimpsest-piano-study-fr",
-      "type": "video",
-      "src": "/assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study.mp4",
-      "alt": "Champ de particules et courbes superposées accompagnant l’étude pour piano de Palimpsest",
-      "caption": "Palimpsest — réadaptation expérimentale pour piano sans section rythmique."
     }
   ],
   "category": "cultural",
@@ -129,14 +122,13 @@
     "Signal corrompu",
     "Relique"
   ],
-  "bodyHtml": "<h2 id=\"presentation\">Présentation</h2>\n<p>Palimpsests est un album conceptuel en cinq chapitres, signé ORETH. Il suit l’évolution d’un système : son émergence, l’accumulation de mémoire, la transformation, les limites qu’il rencontre et ce qu’il transmet.</p>\n<h2 id=\"structure\">Structure</h2>\n<p>L’album est organisé en cinq chapitres. Cette structure crée une progression plutôt qu’une simple suite de morceaux et traite de culture numérique, de mémoire, de transformation et de transmission.</p>\n<h2 id=\"direction-artistique\">Direction artistique</h2>\n<p>La direction visuelle envisage moins l’album comme une suite de pochettes que comme un film en cinq actes. Les corps deviennent paysages ; les vêtements, des dispositifs de mémoire ; le tissu, la fumée, le métal et la typographie surimprimée se comportent comme les couches successives d’une même image. La palette évolue entre noir encre, blanc os et rose poussière. Le violet intervient ponctuellement comme un signal corrompu, jamais comme un simple accent décoratif.</p>\n<p>La planche de recherche reste volontairement ouverte. Elle documente la constellation visuelle actuelle du projet et pourra accueillir de nouvelles références au fil de la production. Les matières Electronic Artefacts sont séparées des inspirations externes afin que cette surface demeure à la fois un outil de création et une archive publique honnête.</p>\n<h2 id=\"musique-medias-et-campagne-culturelle\">Musique, médias et campagne culturelle</h2>\n<p>Palimpsests montre qu’Electronic Artefacts peut produire de la musique, des médias et des campagnes culturelles. Le son, les images et la matière éditoriale prolongent une même œuvre, sans réduire l’album à un dossier technique.</p>\n<h2 id=\"belle-premier-fragment-ouvert\">Belle — premier fragment ouvert</h2>\n<p>Belle appartient à l’acte III, Expériences : le moment où l’album quitte les récits fondateurs pour entrer dans les vies intimes, l’absence, la résilience et la relation. Sa première trace publique réunit une version instrumentale de studio inachevée, une courte image lunaire et le texte français. La séquence complète de l’album reste visible, mais les morceaux non publiés sont volontairement retenus plutôt que présentés comme disponibles.</p>\n<h2 id=\"palimpsest-etude-pour-piano\">Palimpsest — étude pour piano</h2>\n<p>Le morceau-signature de l’album s’ouvre aussi sous la forme d’une réadaptation expérimentale pour piano, sans section rythmique. L’image et le son restent réunis dans un seul fragment vertical de 3 min 08. Il ne remplace pas un master : il constitue une autre inscription du même morceau, fidèle à l’idée centrale de l’œuvre selon laquelle chaque forme persiste sous ses transformations.</p>\n<h2 id=\"signature-oreth\">Signature ORETH</h2>\n<p>Palimpsests est signé par ORETH. Cet usage artistique du nom est distinct du prototype R&amp;D de synthèse vocale, aujourd’hui archivé. L’album est une œuvre musicale ; il ne prétend pas démontrer ni publier ce système historique.</p>\n<h2 id=\"etat-public\">État public</h2>\n<p>Palimpsests est en production culturelle active. Le dossier public s’enrichira avec l’album, ses médias et ses matières éditoriales au fil de leur publication.</p>\n",
+  "bodyHtml": "<h2 id=\"presentation\">Présentation</h2>\n<p>Palimpsests est un album conceptuel en cinq chapitres, signé ORETH. Il suit l’évolution d’un système : son émergence, l’accumulation de mémoire, la transformation, les limites qu’il rencontre et ce qu’il transmet.</p>\n<h2 id=\"structure\">Structure</h2>\n<p>L’album est organisé en cinq chapitres. Cette structure crée une progression plutôt qu’une simple suite de morceaux et traite de culture numérique, de mémoire, de transformation et de transmission.</p>\n<h2 id=\"direction-artistique\">Direction artistique</h2>\n<p>La direction visuelle envisage moins l’album comme une suite de pochettes que comme un film en cinq actes. Les corps deviennent paysages ; les vêtements, des dispositifs de mémoire ; le tissu, la fumée, le métal et la typographie surimprimée se comportent comme les couches successives d’une même image. La palette évolue entre noir encre, blanc os et rose poussière. Le violet intervient ponctuellement comme un signal corrompu, jamais comme un simple accent décoratif.</p>\n<p>La planche de recherche reste volontairement ouverte. Elle documente la constellation visuelle actuelle du projet et pourra accueillir de nouvelles références au fil de la production. Les matières Electronic Artefacts sont séparées des inspirations externes afin que cette surface demeure à la fois un outil de création et une archive publique honnête.</p>\n<h2 id=\"musique-medias-et-campagne-culturelle\">Musique, médias et campagne culturelle</h2>\n<p>Palimpsests montre qu’Electronic Artefacts peut produire de la musique, des médias et des campagnes culturelles. Le son, les images et la matière éditoriale prolongent une même œuvre, sans réduire l’album à un dossier technique.</p>\n<h2 id=\"belle-premier-fragment-ouvert\">Belle — premier fragment ouvert</h2>\n<p>Belle appartient à l’acte III, Expériences : le moment où l’album quitte les récits fondateurs pour entrer dans les vies intimes, l’absence, la résilience et la relation. Sa première trace publique réunit une version instrumentale de studio inachevée, une courte image lunaire et le texte français. La séquence complète de l’album reste visible, mais les morceaux non publiés sont volontairement retenus plutôt que présentés comme disponibles.</p>\n<h2 id=\"signature-oreth\">Signature ORETH</h2>\n<p>Palimpsests est signé par ORETH. Cet usage artistique du nom est distinct du prototype R&amp;D de synthèse vocale, aujourd’hui archivé. L’album est une œuvre musicale ; il ne prétend pas démontrer ni publier ce système historique.</p>\n<h2 id=\"etat-public\">État public</h2>\n<p>Palimpsests est en production culturelle active. Le dossier public s’enrichira avec l’album, ses médias et ses matières éditoriales au fil de leur publication.</p>\n",
   "headings": [
     "Présentation",
     "Structure",
     "Direction artistique",
     "Musique, médias et campagne culturelle",
     "Belle — premier fragment ouvert",
-    "Palimpsest — étude pour piano",
     "Signature ORETH",
     "État public"
   ],
@@ -165,11 +157,6 @@
       "level": 2,
       "title": "Belle — premier fragment ouvert",
       "id": "belle-premier-fragment-ouvert"
-    },
-    {
-      "level": 2,
-      "title": "Palimpsest — étude pour piano",
-      "id": "palimpsest-etude-pour-piano"
     },
     {
       "level": 2,

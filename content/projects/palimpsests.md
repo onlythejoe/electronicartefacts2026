@@ -14,7 +14,7 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.4.0
+  version: 1.3.0
   createdAt: "2026-01-01"
   publishedAt: "2026-06-23"
   modifiedAt: "2026-07-13"
@@ -59,11 +59,6 @@ media:
     src: /assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4
     alt: Moon filmed through violet and rose light for Belle
     caption: Belle — short visual fragment.
-  - id: palimpsest-piano-study
-    type: video
-    src: /assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study.mp4
-    alt: Particle field and layered curves accompanying the Palimpsest piano study
-    caption: Palimpsest — experimental piano reinterpretation without rhythmic section.
 visualLanguage:
   - Ink black
   - Dust rose
@@ -128,10 +123,6 @@ Palimpsests demonstrates the studio’s ability to produce music, media and cult
 ## Belle — first open fragment
 
 Belle belongs to Act III, Experiences: the point where the album moves from founding narratives toward intimate lives, absence, resilience and relation. Its first public trace combines an unfinished instrumental studio version, a short lunar image and the French lyric sheet. The full album sequence remains visible, but unreleased tracks are deliberately held back rather than presented as available works.
-
-## Palimpsest — piano study
-
-The album’s signature piece is also opened through an experimental reinterpretation for piano, without a rhythmic section. Image and audio remain joined in a single 3:08 vertical fragment. This is not positioned as a substitute master: it is another inscription of the same piece, consistent with the work’s central idea that every form persists beneath its transformations.
 
 ## Archive role
 

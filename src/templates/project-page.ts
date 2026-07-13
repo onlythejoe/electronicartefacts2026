@@ -536,6 +536,9 @@ const renderPalimpsestsArtistHero = (
           <a class="button button--primary" href="#project-moodboard">${ui(project, "Enter the visual world", "Entrer dans l’univers visuel")}</a>
           <a class="button button--secondary" href="#project-thesis">${ui(project, "Read the artist note", "Lire la note d’artiste")}</a>
         </div>
+        <nav class="project-dossier-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}">
+          ${heroNav.map((item) => `<a class="tag" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join("")}
+        </nav>
       </div>
       <div class="palimpsests-artist-hero__portrait" aria-label="${ui(project, "ORETH portrait", "Portrait d’ORETH")}">
         <div class="palimpsests-artist-hero__halo" aria-hidden="true"></div>
@@ -567,9 +570,6 @@ const renderPalimpsestsArtistHero = (
         <div class="palimpsests-orbit-dots" aria-hidden="true">
           ${[0, 1, 2, 3, 4, 5, 6].map((index) => `<i style="--dot-index:${index}"></i>`).join("")}
         </div>
-        <nav class="project-dossier-nav palimpsests-orbit-nav" aria-label="${ui(project, "Project sections", "Sections du projet")}" data-palimpsests-orbit-nav>
-          ${heroNav.map((item, index) => `<a class="tag" href="${escapeHtml(item.href)}" style="--pill-index:${index}">${escapeHtml(item.label)}</a>`).join("")}
-        </nav>
       </div>
     </section>`;
 };
@@ -593,42 +593,6 @@ const belleLyrics = [
   "Qu’est-ce qu’elle est belle|quand elle marche avec la nuit.|Qu’est-ce qu’elle est belle|quand elle refuse de s’éteindre.|Qu’est-ce qu’elle est belle|quand elle sourit à l’ennui.|Qu’est-ce qu’elle est belle|quand elle danse avec le vide.",
 ] as const;
 
-const palimpsestStudyNote = [
-  ["“Palimpsests” n’est pas une introduction.", "C’est un état.", "Une présence qui ne commence pas."],
-  ["La voix qui s’exprime n’appartient ni à un individu, ni à une époque.", "Elle ne précède pas le monde.", "Elle ne lui succède pas.", "Elle ne se situe pas."],
-  ["Elle existe hors du temps.", "Hors de l’espace.", "Hors des repères qui permettent de mesurer quoi que ce soit."],
-  ["Ce que l’on entend n’est pas un discours.", "Ce n’est pas une intention.", "C’est une manifestation."],
-  ["Rien n’y apparaît.", "Rien n’y disparaît.", "Tout y est déjà présent."],
-  ["Les notions d’origine et de fin s’y dissolvent.", "Il n’y a pas de début.", "Pas de progression.", "Seulement une continuité."],
-  ["Une surface faite pour se réécrire en permanence."],
-  ["Le terme “palimpseste” devient ici structurel :", "chaque trace subsiste sous les suivantes,", "chaque forme persiste sous ses transformations.", "Rien ne s’efface.", "Tout se superpose."],
-  ["Ce qui est perçu comme nouveau", "n’est qu’une variation d’un état déjà là."],
-  ["Le langage est fragmenté, minéral, presque physique.", "Il évoque la matière, le grain, la friction.", "Non pas pour décrire,", "mais pour laisser apparaître."],
-  ["La voix ne raconte rien.", "Elle n’explique pas.", "Elle ne guide pas.", "Elle énonce."],
-  ["Elle est à la fois le support, la mémoire et le phénomène.", "Elle traverse ce qui existe autant qu’elle en émerge."],
-  ["Elle ne produit pas le réel.", "Elle le contient."],
-  ["Ce que l’on perçoit comme une création", "est déjà inclus."],
-  ["Ce que l’on perçoit comme une évolution", "est déjà inscrit."],
-  ["Rien ne commence ici.", "Rien ne finit là-bas."],
-  ["Tout est déjà en cours."],
-  ["Une trace de plus sur une surface qui n’a jamais cessé d’être."],
-] as const;
-
-const palimpsestStudyLyrics = [
-  "Tu es ici,|dans cet espace|où le dialecte|s’est confondu.",
-  "Érodé,|absorbé.",
-  "Entre les parois du concret.|L’intervalle de deux pensées.",
-  "Ici, l’être|ne suffit plus.",
-  "Les mots/maux|Ils s’effacent|pour renaître.",
-  "Ici,|ou là,|pour toi…|le temps semble décousu.",
-  "Tu es ici dans cet espace où les réflexes sont contenus.",
-  "Résiduelle.|Amère.|Sensation d’effervescence.",
-  "Dans les archives invisibles.|Dans les images partagées.|Dans l’essence du sens.|Et dans les rythmes de la Terre.",
-  "La contrainte densifie.",
-  "Les mécaniques du temps sont insondables.|Sont insondées.",
-  "Tu sais qu’ils existent.|Juste là, à la portée du doigt.",
-] as const;
-
 const renderPalimpsestsMusic = (project: ProjectEntity): string => {
   if (project.slug.canonical !== "palimpsests") return "";
   let trackNumber = 0;
@@ -637,9 +601,9 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
       <header class="palimpsests-music__head">
         <div>
           <p class="eyebrow">${ui(project, "THE RECORD / WORK IN PROGRESS", "LE DISQUE / EN COURS")}</p>
-          <h2>${ui(project, "Five acts. Two fragments are open.", "Cinq actes. Deux fragments sont ouverts.")}</h2>
+          <h2>${ui(project, "Five acts. One fragment is open.", "Cinq actes. Un fragment est ouvert.")}</h2>
         </div>
-        <p>${ui(project, "The full sequence remains visible as an album architecture. Palimpsest opens as a piano reinterpretation; Belle as an unfinished instrumental version. Both are published as working traces rather than final releases.", "La séquence entière reste visible comme architecture de l’album. Palimpsest s’ouvre comme réadaptation pour piano ; Belle comme version instrumentale inachevée. Les deux sont publiés comme traces de travail plutôt que comme sorties définitives.")}</p>
+        <p>${ui(project, "The full sequence remains visible as an album architecture. Belle is the first accessible studio fragment: an unfinished instrumental version, published here as a trace rather than a final release.", "La séquence entière reste visible comme architecture de l’album. Belle est le premier fragment de studio accessible : une version instrumentale inachevée, publiée ici comme trace plutôt que comme sortie définitive.")}</p>
       </header>
       <div class="palimpsests-music__layout">
         <nav class="palimpsests-tracklist" aria-label="${ui(project, "Palimpsests track list", "Liste des morceaux de Palimpsests")}">
@@ -649,46 +613,14 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
               <ol>
                 ${tracks.map((track) => {
                   trackNumber += 1;
-                  const openFragment = track === "Belle" ? "belle" : track === "Palimpsest" ? "palimpsest-study" : null;
-                  return `<li class="${openFragment ? "is-available" : "is-withheld"}">
-                    ${openFragment ? `<a href="#${openFragment}"><span>${String(trackNumber).padStart(2, "0")}</span><strong>${track}</strong><em>${ui(project, "Open", "Ouvrir")}</em></a>` : `<span><i>${String(trackNumber).padStart(2, "0")}</i><strong>${track}</strong><em>${ui(project, "Held back", "Réservé")}</em></span>`}
+                  const isBelle = track === "Belle";
+                  return `<li class="${isBelle ? "is-available" : "is-withheld"}">
+                    ${isBelle ? `<a href="#belle"><span>${String(trackNumber).padStart(2, "0")}</span><strong>${track}</strong><em>${ui(project, "Listen", "Écouter")}</em></a>` : `<span><i>${String(trackNumber).padStart(2, "0")}</i><strong>${track}</strong><em>${ui(project, "Held back", "Réservé")}</em></span>`}
                   </li>`;
                 }).join("")}
               </ol>
             </section>`).join("")}
         </nav>
-        <div class="palimpsests-releases">
-        <article class="belle-release palimpsest-study" id="palimpsest-study">
-          <div class="belle-release__visual palimpsest-study__visual">
-            <video controls playsinline preload="metadata" poster="/assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study-poster.jpg" aria-label="${ui(project, "Watch and listen to the Palimpsest piano study", "Voir et écouter l’étude pour piano de Palimpsest")}">
-              <source src="/assets/media/projects/palimpsests/palimpsest-study/palimpsest-piano-study.mp4" type="video/mp4" />
-            </video>
-            <span>ACT II / 04 · ${ui(project, "PIANO STUDY", "ÉTUDE PIANO")}</span>
-            <strong>PALIMPSEST</strong>
-          </div>
-          <div class="belle-release__player palimpsest-study__caption">
-            <div>
-              <p class="eyebrow">ORETH / PALIMPSEST</p>
-              <h3>${ui(project, "Signature piece, rewritten for piano", "Le morceau-signature réécrit pour piano")}</h3>
-              <p>${ui(project, "Alternative study · no rhythmic section · 03:08", "Étude alternative · sans section rythmique · 03:08")}</p>
-            </div>
-            <p class="belle-release__disclaimer">${ui(project, "Experimental reinterpretation — the image and audio form one indivisible working fragment.", "Réadaptation expérimentale — l’image et le son forment ici un même fragment de travail.")}</p>
-          </div>
-          <details class="belle-lyrics palimpsest-note">
-            <summary><span>${ui(project, "Piece note", "Note de pièce")}</span><strong>${ui(project, "Read the intention", "Lire l’intention")}</strong></summary>
-            <div class="belle-lyrics__sheet palimpsest-note__sheet">
-              <header><span>01 / PALIMPSESTS</span><h3>${ui(project, "A state.", "Un état.")}</h3><p>Acte II — Mémoire</p></header>
-              <div>${palimpsestStudyNote.map((paragraph) => `<p>${paragraph.map(escapeHtml).join("<br />")}</p>`).join("")}</div>
-            </div>
-          </details>
-          <details class="belle-lyrics">
-            <summary><span>${ui(project, "Words / French", "Paroles / Français")}</span><strong>${ui(project, "Read the lyrics", "Lire les paroles")}</strong></summary>
-            <div class="belle-lyrics__sheet">
-              <header><span>ORETH</span><h3>Palimpsest</h3><p>Acte II — Mémoire</p></header>
-              <div>${palimpsestStudyLyrics.map((stanza) => `<p>${stanza.split("|").map(escapeHtml).join("<br />")}</p>`).join("")}</div>
-            </div>
-          </details>
-        </article>
         <article class="belle-release" id="belle">
           <div class="belle-release__visual">
             <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster.jpg" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
@@ -717,7 +649,6 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
             </div>
           </details>
         </article>
-        </div>
       </div>
     </section>`;
 };
