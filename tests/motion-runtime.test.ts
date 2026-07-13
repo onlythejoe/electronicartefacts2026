@@ -19,6 +19,6 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(runtime, /event\.key === "Escape"/);
   assert.match(runtime, /if \(!isResearchAtlasGraph\) \{\s*drawNode\(/);
   assert.match(styles, /\.intent-hero\.has-hero-selection/);
-  assert.match(home, /assets\/css\/app\.css\?v=76/);
+  assert.match(home, /assets\/css\/app\.css\?v=77/);
   assert.match(home, /assets\/js\/app\.js\?v=65/);
 });
