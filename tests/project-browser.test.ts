@@ -61,5 +61,6 @@ test("Palimpsests keeps the portrait clear and publishes compact mobile hero act
   assert.doesNotMatch(page, /palimpsests-profile-window/);
   assert.match(page, /palimpsests-artist-hero__action-icon/);
   assert.match(styles, /\.palimpsests-artist-hero__actions\{display:flex;align-items:center;gap:\.65rem;width:auto\}/);
-  assert.match(styles, /\.palimpsests-artist-hero__actions \.button\{display:grid;place-items:center;width:3\.25rem;height:3\.25rem/);
+  assert.match(styles, /\.palimpsests-artist-hero__actions \.button\{display:grid;place-items:center;box-sizing:border-box;inline-size:3\.25rem;block-size:3\.25rem/);
+  assert.match(styles, /aspect-ratio:1;flex:0 0 3\.25rem;[\s\S]*?border-radius:999px!important/);
 });
