@@ -35568,11 +35568,6 @@ window.EA_ANALYTICS_CONFIG = {
       links.forEach((link) => link.addEventListener("click", () => {
         select(link);
       }));
-      if (document.documentElement.classList.contains("is-safari")) {
-        const hashMatch = links.find((link) => link.getAttribute("href") === window.location.hash);
-        select(hashMatch || links[0]);
-        return;
-      }
       links.forEach((link) => {
         link.addEventListener("pointermove", (event) => {
           if (event.pointerType === "touch") return;
@@ -35593,12 +35588,17 @@ window.EA_ANALYTICS_CONFIG = {
           link.style.removeProperty("--magnetic-y");
         });
       });
+      const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+      const safariRuntime = document.documentElement.classList.contains("is-safari");
+      const lowPowerRuntime = (navigator.hardwareConcurrency || 4) <= 4 || (navigator.deviceMemory || 4) <= 4;
+      const physicsFrameInterval = safariRuntime || coarsePointer || lowPowerRuntime ? 24 : 16;
+      const collisionPasses = lowPowerRuntime ? 1 : 2;
       const physics = links.map((link) => ({ link, x: 0, y: 0, vx: 0, vy: 0, mass: 1 }));
       let physicsActive = true;
       let lastPhysicsFrame = 0;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
-        if (time - lastPhysicsFrame > 16) {
+        if (time - lastPhysicsFrame > physicsFrameInterval) {
           const dt = Math.min(1.8, Math.max(0.45, (time - lastPhysicsFrame) / 16.667));
           lastPhysicsFrame = time;
           const bounds = nav.getBoundingClientRect();
@@ -35615,7 +35615,7 @@ window.EA_ANALYTICS_CONFIG = {
             if (rect.bottom > bounds.bottom - edge) { body.y -= rect.bottom - bounds.bottom + edge; body.vy = -Math.abs(body.vy) * 0.34; }
           });
           const correctionOffsets = physics.map(() => ({ x: 0, y: 0 }));
-          for (let pass = 0; pass < 2; pass += 1) {
+          for (let pass = 0; pass < collisionPasses; pass += 1) {
             for (let i = 0; i < physics.length; i += 1) {
               for (let j = i + 1; j < physics.length; j += 1) {
                 const a = rects[i];
@@ -35675,6 +35675,12 @@ window.EA_ANALYTICS_CONFIG = {
         if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
       }, { rootMargin: "15%" });
       physicsObserver.observe(hero);
+      document.addEventListener("visibilitychange", () => {
+        const visible = !document.hidden && hero.getBoundingClientRect().bottom > -window.innerHeight * 0.15 && hero.getBoundingClientRect().top < window.innerHeight * 1.15;
+        const wasActive = physicsActive;
+        physicsActive = visible;
+        if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
+      });
       window.addEventListener("resize", () => {
         physics.forEach((body) => { body.vx = 0; body.vy = 0; });
       }, { passive: true });
