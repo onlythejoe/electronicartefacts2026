@@ -528,13 +528,11 @@ const renderPalimpsestsArtistHero = (
         { label: "Écouter le fragment", href: "#project-music" },
         { label: "Voir l’univers visuel", href: "#project-moodboard" },
         { label: "Explorer le système", href: "#project-system" },
-        { label: "Lire la note d’artiste", href: "#project-thesis" },
       ]
     : [
         { label: "Listen to the fragment", href: "#project-music" },
         { label: "Enter the visual world", href: "#project-moodboard" },
         { label: "Explore the system", href: "#project-system" },
-        { label: "Read the artist note", href: "#project-thesis" },
       ];
   return `
     <section class="zone-card hero palimpsests-artist-hero" id="project-overview" data-entry-id="palimpsests">
