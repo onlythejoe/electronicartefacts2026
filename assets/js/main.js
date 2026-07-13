@@ -4987,6 +4987,11 @@
       links.forEach((link) => link.addEventListener("click", () => {
         select(link);
       }));
+      if (document.documentElement.classList.contains("is-safari")) {
+        const hashMatch = links.find((link) => link.getAttribute("href") === window.location.hash);
+        select(hashMatch || links[0]);
+        return;
+      }
       links.forEach((link) => {
         link.addEventListener("pointermove", (event) => {
           if (event.pointerType === "touch") return;

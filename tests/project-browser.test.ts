@@ -25,12 +25,17 @@ test("project browsing publishes responsive graph, results and full-grid styles"
 });
 
 test("Palimpsests keeps the transparent portrait on a stable Safari layer at every viewport", async () => {
-  const styles = await readFile("assets/css/style.css", "utf8");
+  const [styles, runtime, layout] = await Promise.all([
+    readFile("assets/css/style.css", "utf8"),
+    readFile("assets/js/main.js", "utf8"),
+    readFile("src/templates/layout.ts", "utf8"),
+  ]);
 
-  assert.match(styles, /@supports \(-webkit-touch-callout: none\)/);
-  assert.doesNotMatch(styles, /@supports \(-webkit-touch-callout: none\) \{\s*@media/);
+  assert.match(layout, /document\.documentElement\.classList\.add\("is-safari"\)/);
+  assert.match(styles, /html\.is-safari \.palimpsests-artist-hero__portrait/);
   assert.match(styles, /\.palimpsests-artist-hero__portrait > img \{[\s\S]*?filter:none;[\s\S]*?animation:none;/);
   assert.match(styles, /\.palimpsests-orbit-nav \.tag,[\s\S]*?-webkit-backdrop-filter:none;/);
+  assert.match(runtime, /classList\.contains\("is-safari"\)[\s\S]*?select\(hashMatch \|\| links\[0\]\);[\s\S]*?return;/);
 });
 
 test("Palimpsests publishes Belle as the only open album fragment", async () => {

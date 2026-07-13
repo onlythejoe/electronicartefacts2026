@@ -60,9 +60,10 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta name="twitter:image" content="${escapeHtml(metadata.image)}" />
     <meta name="twitter:image:alt" content="${escapeHtml(metadata.imageAlt)}" />
     <title>${escapeHtml(metadata.title)}</title>
+    <script>if(/Safari/i.test(navigator.userAgent)&&!/(Chrome|Chromium|CriOS|Edg|OPR|FxiOS)/i.test(navigator.userAgent)){document.documentElement.classList.add("is-safari");}</script>
     <script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>
-    <link rel="stylesheet" href="/assets/css/app.css?v=67" />
-    <script type="module" src="/assets/js/app.js?v=55"></script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=68" />
+    <script type="module" src="/assets/js/app.js?v=56"></script>
   </head>
   <body data-page="${escapeHtml(pageClass)}" data-generated-page="true"${entryId ? ` data-entry-id="${escapeHtml(entryId)}"` : ""}>
     <a class="skip-link" href="#main">Skip to main content</a>

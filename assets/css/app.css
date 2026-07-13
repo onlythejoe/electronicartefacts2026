@@ -19659,8 +19659,12 @@ figcaption strong,
 /* Mobile reading refinements from the public review pass. */
 @media (max-width: 48rem) {
   .research-atlas__node.graph-surface__node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.32rem;
     width: min(7.2rem, 34vw);
-    min-height: 3.3rem;
+    min-height: 2.35rem;
   }
 
   .research-atlas__node-label.graph-surface__node-body,
@@ -19672,6 +19676,17 @@ figcaption strong,
     padding: 0.28rem 0.38rem;
     opacity: 1;
     transform: none;
+  }
+
+  .research-atlas__node-pin.graph-surface__node-pin {
+    position: static;
+    flex: 0 0 0.66rem;
+    width: 0.66rem;
+    height: 0.66rem;
+    transform: none;
+    box-shadow:
+      0 0 0 0.24rem color-mix(in srgb, var(--node-color), transparent 88%),
+      0 0 14px color-mix(in srgb, var(--node-color), transparent 52%);
   }
 
   .research-atlas__node-label strong {
@@ -20825,36 +20840,34 @@ article.publication-body--vaste {
 }
 
 /* Safari/WebKit: avoid tiled white compositor failures over the transparent portrait. */
-@supports (-webkit-touch-callout: none) {
-  .palimpsests-artist-hero__portrait,
-  .palimpsests-artist-hero__portrait > img {
+html.is-safari .palimpsests-artist-hero__portrait,
+html.is-safari .palimpsests-artist-hero__portrait > img {
     will-change:auto;
     -webkit-transform:none;
     transform:none;
-  }
+}
 
-  .palimpsests-artist-hero__portrait > img {
+html.is-safari .palimpsests-artist-hero__portrait > img {
     opacity:1;
     filter:none;
     animation:none;
-  }
+}
 
-  .palimpsests-orbit-nav .tag,
-  .palimpsests-orbit-nav .tag::before,
-  .palimpsests-orbit-nav .tag::after,
-  .palimpsests-orbit-nav .tag span,
-  .palimpsests-profile-window {
+html.is-safari .palimpsests-orbit-nav .tag,
+html.is-safari .palimpsests-orbit-nav .tag::before,
+html.is-safari .palimpsests-orbit-nav .tag::after,
+html.is-safari .palimpsests-orbit-nav .tag span,
+html.is-safari .palimpsests-profile-window {
     -webkit-backdrop-filter:none;
     backdrop-filter:none;
     will-change:auto;
     animation:none;
-  }
+}
 
-  .palimpsests-orbit-nav .tag {
+html.is-safari .palimpsests-orbit-nav .tag {
     translate:none;
     scale:1;
     rotate:0deg;
-  }
 }
 
 /* Shared hover motion: responsive on entry, soft on arrival and return. */
