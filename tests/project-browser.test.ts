@@ -32,6 +32,7 @@ test("Palimpsests publishes Belle as the only open album fragment", async () => 
   assert.match(page, /belle-instrumental-v3\.m4a/);
   assert.match(page, /belle-instrumental-v3\.mp3/);
   assert.match(page, /belle-moon-fragment\.mp4/);
+  assert.doesNotMatch(page, /palimpsest-piano-study/);
   assert.match(page, /Working document — arrangement, mix and voice may still change\./);
   assert.match(page, /Qu’est-ce qu’elle est belle/);
 });

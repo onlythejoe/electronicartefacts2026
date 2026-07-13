@@ -16575,6 +16575,7 @@ article.publication-body--vaste {
   --pill-depth:calc(.55 + (var(--pill-index) * .07));
   position:relative;
   isolation:isolate;
+  overflow:hidden;
   pointer-events:auto;
   min-height:3.2rem;
   padding:.82rem 1.25rem;
@@ -16762,10 +16763,9 @@ article.publication-body--vaste {
   mix-blend-mode:screen;
 }
 .palimpsests-orbit-nav .tag::after {
-  inset:-75% -42%;
-  background:linear-gradient(112deg,transparent 36%,rgba(255,255,255,.1) 42%,rgba(255,255,255,.88) 49%,rgba(255,255,255,.2) 55%,transparent 64%);
-  opacity:.7;
-  mix-blend-mode:screen;
+  display:none;
+  content:none;
+  animation:none;
 }
 .palimpsests-orbit-nav .tag span {
   position:relative;
@@ -16899,7 +16899,7 @@ article.publication-body--vaste {
 @media(max-width:48rem){
   .palimpsests-artist-hero { padding-bottom:0; }
   .palimpsests-artist-hero__portrait { min-height:32rem;margin:0; }
-  .palimpsests-artist-hero__portrait>img { inset:auto -25% -1px auto;width:145%;height:auto;max-width:none;object-fit:initial;object-position:initial; }
+  .palimpsests-artist-hero__portrait>img { inset:auto 50% -1px auto;width:min(145%,42.666rem);height:auto;max-width:none;object-fit:initial;object-position:initial;translate:50% 0; }
   .palimpsests-profile-window--identity { top:8%;right:.8rem; }
   .palimpsests-profile-window--work { left:.8rem;bottom:8%; }
   .palimpsests-orbit-dots { opacity:.35; }
