@@ -20749,8 +20749,9 @@ article.publication-body--vaste {
   position:absolute;
   pointer-events:auto;
   translate:
-    calc(var(--physics-x,0px) + var(--magnetic-x,0px))
-    calc(var(--physics-y,0px) + var(--magnetic-y,0px) + var(--orbit-scroll,0) * var(--pill-depth) * -18px);
+    calc(var(--physics-x,0px) + var(--magnetic-x,0px) + var(--scroll-x,0px))
+    calc(var(--physics-y,0px) + var(--magnetic-y,0px) + var(--scroll-y,0px));
+  rotate:calc(var(--bubble-base-rotate,0deg) + var(--scroll-rotate,0deg));
 }
 .palimpsests-artist-hero > .palimpsests-orbit-nav .tag:focus-visible { outline-offset:-5px; }
 @media(min-width:64.0625rem){

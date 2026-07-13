@@ -5086,6 +5086,15 @@
         const rect = hero.getBoundingClientRect();
         const progress = Math.max(-1, Math.min(1, (window.innerHeight * 0.5 - (rect.top + rect.height * 0.5)) / Math.max(rect.height, 1)));
         hero.style.setProperty("--orbit-scroll", progress.toFixed(3));
+        links.forEach((link, index) => {
+          const direction = index % 2 === 0 ? 1 : -1;
+          const horizontal = progress * direction * (28 + (index % 3) * 11);
+          const vertical = progress * -(54 + (index % 4) * 9);
+          const rotation = progress * direction * (2.2 + (index % 3) * 0.8);
+          link.style.setProperty("--scroll-x", `${horizontal.toFixed(2)}px`);
+          link.style.setProperty("--scroll-y", `${vertical.toFixed(2)}px`);
+          link.style.setProperty("--scroll-rotate", `${rotation.toFixed(2)}deg`);
+        });
       };
       let lastScrollY = window.scrollY;
       const onScroll = () => {
