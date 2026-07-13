@@ -548,7 +548,7 @@ const renderPalimpsestsArtistHero = (
           alt="${ui(project, "ORETH, artist behind Palimpsests", "ORETH, artiste derrière Palimpsests")}"
           loading="eager"
           fetchpriority="high"
-          decoding="async"
+          decoding="sync"
         />
         <aside class="palimpsests-profile-window palimpsests-profile-window--identity">
           <span>01 / ${ui(project, "SIGNATURE", "SIGNATURE")}</span>
