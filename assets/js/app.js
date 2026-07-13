@@ -35593,54 +35593,78 @@ window.EA_ANALYTICS_CONFIG = {
           link.style.removeProperty("--magnetic-y");
         });
       });
-      const physics = links.map((link) => ({ link, x: 0, y: 0, vx: 0, vy: 0 }));
+      const physics = links.map((link) => ({ link, x: 0, y: 0, vx: 0, vy: 0, mass: 1 }));
       let physicsActive = true;
       let lastPhysicsFrame = 0;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
-        if (time - lastPhysicsFrame > 28) {
+        if (time - lastPhysicsFrame > 16) {
+          const dt = Math.min(1.8, Math.max(0.45, (time - lastPhysicsFrame) / 16.667));
           lastPhysicsFrame = time;
           const bounds = nav.getBoundingClientRect();
           const rects = physics.map(({ link }) => link.getBoundingClientRect());
           physics.forEach((body, index) => {
             const rect = rects[index];
-            const edge = 10;
-            if (rect.left < bounds.left + edge) body.vx += (bounds.left + edge - rect.left) * 0.055;
-            if (rect.right > bounds.right - edge) body.vx -= (rect.right - bounds.right + edge) * 0.055;
-            if (rect.top < bounds.top + edge) body.vy += (bounds.top + edge - rect.top) * 0.055;
-            if (rect.bottom > bounds.bottom - edge) body.vy -= (rect.bottom - bounds.bottom + edge) * 0.055;
+            body.mass = Math.max(0.85, (rect.width * rect.height) / 22000);
+            body.vx += -body.x * 0.0065 * dt;
+            body.vy += -body.y * 0.0065 * dt;
+            const edge = 12;
+            if (rect.left < bounds.left + edge) { body.x += bounds.left + edge - rect.left; body.vx = Math.abs(body.vx) * 0.34; }
+            if (rect.right > bounds.right - edge) { body.x -= rect.right - bounds.right + edge; body.vx = -Math.abs(body.vx) * 0.34; }
+            if (rect.top < bounds.top + edge) { body.y += bounds.top + edge - rect.top; body.vy = Math.abs(body.vy) * 0.34; }
+            if (rect.bottom > bounds.bottom - edge) { body.y -= rect.bottom - bounds.bottom + edge; body.vy = -Math.abs(body.vy) * 0.34; }
           });
-          for (let i = 0; i < physics.length; i += 1) {
-            for (let j = i + 1; j < physics.length; j += 1) {
-              const a = rects[i];
-              const b = rects[j];
-              const ax = a.left + a.width * 0.5;
-              const ay = a.top + a.height * 0.5;
-              const bx = b.left + b.width * 0.5;
-              const by = b.top + b.height * 0.5;
-              const dx = bx - ax;
-              const dy = by - ay;
-              const distance = Math.max(1, Math.hypot(dx, dy));
-              const radiusA = Math.min(a.width, a.height) * 0.61;
-              const radiusB = Math.min(b.width, b.height) * 0.61;
-              const overlap = radiusA + radiusB + 18 - distance;
-              if (overlap <= 0) continue;
-              const force = Math.min(3.2, overlap * 0.038);
-              const nx = dx / distance;
-              const ny = dy / distance;
-              physics[i].vx -= nx * force;
-              physics[i].vy -= ny * force;
-              physics[j].vx += nx * force;
-              physics[j].vy += ny * force;
+          const correctionOffsets = physics.map(() => ({ x: 0, y: 0 }));
+          for (let pass = 0; pass < 2; pass += 1) {
+            for (let i = 0; i < physics.length; i += 1) {
+              for (let j = i + 1; j < physics.length; j += 1) {
+                const a = rects[i];
+                const b = rects[j];
+                const dx = (b.left + b.width * 0.5 + correctionOffsets[j].x) - (a.left + a.width * 0.5 + correctionOffsets[i].x);
+                const dy = (b.top + b.height * 0.5 + correctionOffsets[j].y) - (a.top + a.height * 0.5 + correctionOffsets[i].y);
+                const distance = Math.max(1, Math.hypot(dx, dy));
+                const overlap = Math.min(a.width, a.height) * 0.57 + Math.min(b.width, b.height) * 0.57 + 16 - distance;
+                if (overlap <= 0) continue;
+                const nx = dx / distance;
+                const ny = dy / distance;
+                const inverseA = 1 / physics[i].mass;
+                const inverseB = 1 / physics[j].mass;
+                const inverseTotal = inverseA + inverseB;
+                const correction = Math.min(18, overlap * 0.52);
+                physics[i].x -= nx * correction * (inverseA / inverseTotal);
+                physics[i].y -= ny * correction * (inverseA / inverseTotal);
+                physics[j].x += nx * correction * (inverseB / inverseTotal);
+                physics[j].y += ny * correction * (inverseB / inverseTotal);
+                correctionOffsets[i].x -= nx * correction * (inverseA / inverseTotal);
+                correctionOffsets[i].y -= ny * correction * (inverseA / inverseTotal);
+                correctionOffsets[j].x += nx * correction * (inverseB / inverseTotal);
+                correctionOffsets[j].y += ny * correction * (inverseB / inverseTotal);
+                const relativeVelocity = (physics[j].vx - physics[i].vx) * nx + (physics[j].vy - physics[i].vy) * ny;
+                if (relativeVelocity < 0) {
+                  const impulse = (-(1.18) * relativeVelocity) / inverseTotal;
+                  physics[i].vx -= impulse * nx * inverseA;
+                  physics[i].vy -= impulse * ny * inverseA;
+                  physics[j].vx += impulse * nx * inverseB;
+                  physics[j].vy += impulse * ny * inverseB;
+                }
+              }
             }
           }
           physics.forEach((body) => {
-            body.vx *= 0.78;
-            body.vy *= 0.78;
-            body.x = Math.max(-150, Math.min(150, body.x + body.vx));
-            body.y = Math.max(-150, Math.min(150, body.y + body.vy));
+            const damping = Math.pow(0.88, dt);
+            body.vx *= damping;
+            body.vy *= damping;
+            body.x = Math.max(-170, Math.min(170, body.x + body.vx * dt));
+            body.y = Math.max(-170, Math.min(170, body.y + body.vy * dt));
+            const speed = Math.min(1, Math.hypot(body.vx, body.vy) / 8);
+            const horizontal = Math.abs(body.vx) >= Math.abs(body.vy);
+            const stretch = speed * 0.06;
+            const radiusShift = speed * 4.2;
             body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
             body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
+            body.link.style.setProperty("--physics-scale-x", (horizontal ? stretch : -stretch * 0.42).toFixed(3));
+            body.link.style.setProperty("--physics-scale-y", (horizontal ? -stretch * 0.42 : stretch).toFixed(3));
+            body.link.style.setProperty("--physics-radius", `${(50 + radiusShift).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(49 + radiusShift * 0.5).toFixed(2)}% ${(51 - radiusShift * 0.5).toFixed(2)}% / ${(49 - radiusShift * 0.35).toFixed(2)}% ${(51 + radiusShift * 0.35).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(50 + radiusShift).toFixed(2)}%`);
           });
         }
         requestAnimationFrame(solveBubblePhysics);
@@ -35682,7 +35706,7 @@ window.EA_ANALYTICS_CONFIG = {
         const nextScrollY = window.scrollY;
         const delta = Math.max(-70, Math.min(70, nextScrollY - lastScrollY));
         lastScrollY = nextScrollY;
-        if (physicsActive && Math.abs(delta) > 0.5) {
+        if (physicsActive && Math.abs(delta) > 0.05) {
           physics.forEach((body, index) => {
             const mass = Math.max(1, (body.link.offsetWidth * body.link.offsetHeight) / 15000);
             const direction = index % 2 === 0 ? 1 : -1;
