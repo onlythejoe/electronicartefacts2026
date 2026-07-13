@@ -35589,12 +35589,24 @@ window.EA_ANALYTICS_CONFIG = {
         });
       });
       const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       const safariRuntime = document.documentElement.classList.contains("is-safari");
       const lowPowerRuntime = (navigator.hardwareConcurrency || 4) <= 4 || (navigator.deviceMemory || 4) <= 4;
       const physicsFrameInterval = safariRuntime || coarsePointer || lowPowerRuntime ? 24 : 16;
       const collisionPasses = lowPowerRuntime ? 1 : 2;
-      const physics = links.map((link) => ({ link, x: 0, y: 0, vx: 0, vy: 0, mass: 1 }));
-      let physicsActive = true;
+      const physics = links.map((link) => ({
+        link,
+        x: 0,
+        y: 0,
+        vx: 0,
+        vy: 0,
+        mass: 1,
+        renderedX: Number.NaN,
+        renderedY: Number.NaN,
+        lastShapeTime: 0,
+        lastRadiusShift: Number.NaN,
+      }));
+      let physicsActive = !reducedMotion.matches;
       let lastPhysicsFrame = 0;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
@@ -35660,23 +35672,32 @@ window.EA_ANALYTICS_CONFIG = {
             const horizontal = Math.abs(body.vx) >= Math.abs(body.vy);
             const stretch = speed * 0.06;
             const radiusShift = speed * 4.2;
-            body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
-            body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
-            body.link.style.setProperty("--physics-scale-x", (horizontal ? stretch : -stretch * 0.42).toFixed(3));
-            body.link.style.setProperty("--physics-scale-y", (horizontal ? -stretch * 0.42 : stretch).toFixed(3));
-            body.link.style.setProperty("--physics-radius", `${(50 + radiusShift).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(49 + radiusShift * 0.5).toFixed(2)}% ${(51 - radiusShift * 0.5).toFixed(2)}% / ${(49 - radiusShift * 0.35).toFixed(2)}% ${(51 + radiusShift * 0.35).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(50 + radiusShift).toFixed(2)}%`);
+            if (!Number.isFinite(body.renderedX) || Math.abs(body.x - body.renderedX) > 0.035 || Math.abs(body.y - body.renderedY) > 0.035) {
+              body.renderedX = body.x;
+              body.renderedY = body.y;
+              body.link.style.setProperty("--physics-x", `${body.x.toFixed(2)}px`);
+              body.link.style.setProperty("--physics-y", `${body.y.toFixed(2)}px`);
+            }
+            const shapeInterval = lowPowerRuntime || safariRuntime ? 48 : 32;
+            if (time - body.lastShapeTime >= shapeInterval && (!Number.isFinite(body.lastRadiusShift) || Math.abs(radiusShift - body.lastRadiusShift) > 0.045)) {
+              body.lastShapeTime = time;
+              body.lastRadiusShift = radiusShift;
+              body.link.style.setProperty("--physics-scale-x", (horizontal ? stretch : -stretch * 0.42).toFixed(3));
+              body.link.style.setProperty("--physics-scale-y", (horizontal ? -stretch * 0.42 : stretch).toFixed(3));
+              body.link.style.setProperty("--physics-radius", `${(50 + radiusShift).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(49 + radiusShift * 0.5).toFixed(2)}% ${(51 - radiusShift * 0.5).toFixed(2)}% / ${(49 - radiusShift * 0.35).toFixed(2)}% ${(51 + radiusShift * 0.35).toFixed(2)}% ${(50 - radiusShift).toFixed(2)}% ${(50 + radiusShift).toFixed(2)}%`);
+            }
           });
         }
         requestAnimationFrame(solveBubblePhysics);
       };
       const physicsObserver = new IntersectionObserver(([entry]) => {
         const wasActive = physicsActive;
-        physicsActive = entry?.isIntersecting ?? false;
+        physicsActive = !reducedMotion.matches && (entry?.isIntersecting ?? false);
         if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
       }, { rootMargin: "15%" });
       physicsObserver.observe(hero);
       document.addEventListener("visibilitychange", () => {
-        const visible = !document.hidden && hero.getBoundingClientRect().bottom > -window.innerHeight * 0.15 && hero.getBoundingClientRect().top < window.innerHeight * 1.15;
+        const visible = !reducedMotion.matches && !document.hidden && hero.getBoundingClientRect().bottom > -window.innerHeight * 0.15 && hero.getBoundingClientRect().top < window.innerHeight * 1.15;
         const wasActive = physicsActive;
         physicsActive = visible;
         if (physicsActive && !wasActive) requestAnimationFrame(solveBubblePhysics);
