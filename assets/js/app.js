@@ -35605,11 +35605,11 @@ window.EA_ANALYTICS_CONFIG = {
           scheduleLight();
         });
       });
-      const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-      const safariRuntime = document.documentElement.classList.contains("is-safari");
-      const lowPowerRuntime = (navigator.hardwareConcurrency || 4) <= 4 || (navigator.deviceMemory || 4) <= 4;
-      const physicsFrameInterval = safariRuntime || coarsePointer || lowPowerRuntime ? 24 : 16;
+      const cpuLimited = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+      const memoryLimited = typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 3;
+      const lowPowerRuntime = cpuLimited || memoryLimited;
+      const physicsFrameInterval = lowPowerRuntime ? 22 : 15;
       const collisionPasses = lowPowerRuntime ? 1 : 2;
       const physics = links.map((link) => ({
         link,
@@ -35637,7 +35637,7 @@ window.EA_ANALYTICS_CONFIG = {
       let physicsActive = !reducedMotion.matches;
       let lastPhysicsFrame = 0;
       let pendingScrollDelta = 0;
-      const shapeInterval = lowPowerRuntime || safariRuntime ? 48 : 32;
+      const shapeInterval = lowPowerRuntime ? 44 : 24;
       const solveBubblePhysics = (time = 0) => {
         if (!physicsActive) return;
         if (time - lastPhysicsFrame > physicsFrameInterval) {
