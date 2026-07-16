@@ -54,7 +54,7 @@ credits:
 media:
   - id: voice-capture-studio-capture-screen
     type: image
-    src: /assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png
+    src: /assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp
     alt: Voice Capture Studio live capture screen showing dataset, dubbing and master audio modes.
     caption: Live GitHub Pages capture screen with local browser storage, recording modes and calibration status.
   - id: voice-capture-studio-quality-screen

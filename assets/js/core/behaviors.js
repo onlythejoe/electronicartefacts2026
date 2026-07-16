@@ -60,6 +60,8 @@
   const initMediaReadiness = (root = document) => {
     root.querySelectorAll(".site-main img:not(.project-butterfly__wing):not(.project-meg-badge__picto)").forEach((image) => {
       if (image.dataset.boundMediaReadiness === "true") return;
+      /* Preserve the first paint of eager and already decoded images. */
+      if (image.loading !== "lazy" || (image.complete && image.naturalWidth > 0)) return;
       image.dataset.boundMediaReadiness = "true";
       const markReady = () => {
         image.dataset.mediaState = "ready";
@@ -110,12 +112,6 @@
     };
 
     const routeLocale = (path) => path.startsWith("/fr/") || path === "/fr" ? "fr" : "en";
-
-    const preferredFromBrowser = () => {
-      const languages = navigator.languages?.length ? navigator.languages : [navigator.language].filter(Boolean);
-      const match = languages.map((language) => String(language).toLowerCase().split("-")[0]).find((language) => supported.includes(language));
-      return match || "en";
-    };
 
     const readPreference = () => {
       try {
@@ -199,10 +195,9 @@
     };
 
     const stored = readPreference();
-    const preferred = stored || preferredFromBrowser();
     const active = routeLocale(currentPath);
     sync(active);
-    if (currentPath === "/" && preferred !== active && currentAlternates[preferred]) navigateTo(preferred);
+    if (currentPath === "/" && stored && stored !== active && currentAlternates[stored]) navigateTo(stored);
 
     trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
     options.forEach((option) => {
@@ -1061,14 +1056,13 @@
     );
 
     targets.forEach((target, index) => {
+      const rect = target.getBoundingClientRect();
+      /* Do not mutate content already visible: that would trigger a second
+         candidate paint for headings and hero media. */
+      if (rect.top < window.innerHeight * 1.08) return;
       if (target.dataset.boundReveal === "true") return;
       target.dataset.boundReveal = "true";
       target.style.setProperty("--reveal-index", String(index % 8));
-      const rect = target.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 1.08) {
-        target.classList.add("is-visible");
-        return;
-      }
       target.classList.add("is-reveal-pending");
       observer.observe(target);
     });
@@ -2272,6 +2266,8 @@
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    /* Touch layouts keep their native links and static composition. */
+    if (coarsePointer) return;
     const automaticLayerSelector = [
       ".intent-hero__copy > .eyebrow",
       ".intent-hero__copy > .display-title",
@@ -2696,9 +2692,9 @@
       }
     });
     if (!activeLink) return;
-    const nav = activeLink.closest(".site-nav");
-    if (!nav || nav.scrollWidth <= nav.clientWidth) return;
     requestAnimationFrame(() => {
+      const nav = activeLink.closest(".site-nav");
+      if (!nav || nav.scrollWidth <= nav.clientWidth) return;
       activeLink.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "auto" });
     });
   };

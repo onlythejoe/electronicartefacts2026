@@ -4625,6 +4625,7 @@
     Object.entries(pageRenderers).forEach(([selector, renderer]) => {
       const target = document.querySelector(`[data-render="${selector}"]`);
       if (!target) return;
+      if (target.dataset.runtimeStatic === "true") return;
       try {
         target.innerHTML = renderer();
       } catch (error) {

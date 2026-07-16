@@ -12,7 +12,7 @@
       "dateModified": "2026-07-09",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png",
+        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp",
         "caption": "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.",
         "description": "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio."
       },
@@ -43,7 +43,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png",
+        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp",
         "caption": "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.",
         "description": "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio."
       },

@@ -508,7 +508,7 @@ const renderPalimpsestsResearchBoard = (project: ProjectEntity): string => {
       <div class="palimpsests-board__grid">
         ${palimpsestsPlates.map(([file, kind, title, note], index) => `
           <button class="palimpsests-plate palimpsests-plate--${kind}${index % 7 === 0 ? " palimpsests-plate--wide" : ""}" type="button" data-board-item="${kind}" data-board-open>
-            <img src="/assets/media/projects/palimpsests/research/${file}" alt="${escapeHtml(title)}" loading="${index < 4 ? "eager" : "lazy"}" decoding="async" />
+            <img src="/assets/media/projects/palimpsests/research/${file}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" />
             <span><em>${kind === "project" ? "EA / PROJECT" : ui(project, "RESEARCH REFERENCE", "RÉFÉRENCE DE RECHERCHE")}</em><strong>${escapeHtml(title)}</strong><small>${escapeHtml(note)}</small></span>
           </button>`).join("")}
       </div>
@@ -550,8 +550,8 @@ const renderPalimpsestsArtistHero = (
       <div class="palimpsests-artist-hero__portrait" aria-label="${ui(project, "ORETH portrait", "Portrait d’ORETH")}">
         <div class="palimpsests-artist-hero__halo" aria-hidden="true"></div>
         <img
-          src="/assets/media/projects/oreth/ORETH-hero-1200.png"
-          srcset="/assets/media/projects/oreth/ORETH-hero-800.png 800w, /assets/media/projects/oreth/ORETH-hero-1200.png 1200w"
+          src="/assets/media/projects/oreth/ORETH-hero-1200.webp"
+          srcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w"
           sizes="(max-width: 48rem) 100vw, 48vw"
           width="1200"
           height="900"
@@ -616,7 +616,7 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
         </nav>
         <article class="belle-release" id="belle">
           <div class="belle-release__visual">
-            <video autoplay muted loop playsinline preload="metadata" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster.jpg" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
+            <video controls muted playsinline preload="none" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster.jpg" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
               <source src="/assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4" type="video/mp4" />
             </video>
             <span>ACT III / 14</span>
@@ -628,7 +628,7 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
               <h3>${ui(project, "Instrumental studio fragment", "Fragment instrumental de studio")}</h3>
               <p>${ui(project, "Version 3 · without final voice · 02:34", "Version 3 · sans voix définitive · 02:34")}</p>
             </div>
-            <audio controls preload="metadata" aria-label="${ui(project, "Listen to the Belle instrumental work in progress", "Écouter la maquette instrumentale de Belle")}">
+            <audio controls preload="none" aria-label="${ui(project, "Listen to the Belle instrumental work in progress", "Écouter la maquette instrumentale de Belle")}">
               <source src="/assets/media/projects/palimpsests/belle/belle-instrumental-v3.m4a" type="audio/mp4" />
               <source src="/assets/media/projects/palimpsests/belle/belle-instrumental-v3.mp3" type="audio/mpeg" />
             </audio>

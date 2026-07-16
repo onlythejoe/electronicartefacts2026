@@ -14636,7 +14636,11 @@ body[data-page="home"] .home-intent-stage__channels {
 
 @media (max-width: 48rem) {
   body {
-    --header-offset: clamp(6.95rem, 29vw, 7.85rem);
+    --header-offset: 152px;
+  }
+
+  body[data-locale="fr"] {
+    --header-offset: 166px;
   }
 
   .shell-header.zone-card {

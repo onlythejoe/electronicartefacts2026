@@ -55,7 +55,7 @@ credits:
 media:
   - id: voice-capture-studio-capture-screen-fr
     type: image
-    src: /assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png
+    src: /assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp
     alt: Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio.
     caption: Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.
   - id: voice-capture-studio-quality-screen-fr

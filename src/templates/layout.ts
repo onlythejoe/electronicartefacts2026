@@ -12,7 +12,17 @@ interface LayoutInput {
   entryId?: string;
 }
 
-export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => `<!doctype html>
+export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => {
+  const styles = pageClass === "project"
+    ? `<link rel="stylesheet" href="/assets/css/project.css?v=1" />
+    <link rel="preload" as="style" href="/assets/css/app.css?v=87" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/assets/css/app.css?v=87" /></noscript>`
+    : `<link rel="stylesheet" href="/assets/css/app.css?v=87" />`;
+  const heroPreload = entryId === "palimpsests"
+    ? `<link rel="preload" as="image" href="/assets/media/projects/oreth/ORETH-hero-800.webp" imagesrcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w" imagesizes="(max-width: 48rem) 100vw, 48vw" fetchpriority="high" />`
+    : "";
+
+  return `<!doctype html>
 <html lang="${metadata.language || site.language}">
   <head>
     <meta charset="utf-8" />
@@ -62,8 +72,11 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <title>${escapeHtml(metadata.title)}</title>
     <script>if(/Safari/i.test(navigator.userAgent)&&!/(Chrome|Chromium|CriOS|Edg|OPR|FxiOS)/i.test(navigator.userAgent)){document.documentElement.classList.add("is-safari");}</script>
     <script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>
-    <link rel="stylesheet" href="/assets/css/app.css?v=86" />
-    <script type="module" src="/assets/js/app.js?v=70"></script>
+    ${heroPreload}
+    ${styles}
+    <!-- PERFORMANCE_RUNTIME_START -->
+    <script type="module">window.addEventListener("load", () => window.setTimeout(() => import("/assets/js/app.js?v=71"), 1500), { once: true });</script>
+    <!-- PERFORMANCE_RUNTIME_END -->
   </head>
   <body data-page="${escapeHtml(pageClass)}" data-generated-page="true"${entryId ? ` data-entry-id="${escapeHtml(entryId)}"` : ""}>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -73,3 +86,4 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
   </body>
 </html>
 `.replace(/[ \t]+$/gm, "");
+};

@@ -93,6 +93,20 @@ for (const page of pages) {
   for (const [locale, file] of Object.entries(page.files)) {
     const absolutePath = path.join(rootDir, file);
     const html = await readFile(absolutePath, "utf8");
+    if (page.selectors[0] === "home-hero") {
+      const secondaryPage = { ...page, selectors: page.selectors.slice(1) };
+      const secondaryPattern = page.selectors.slice(1)
+        .map((selector) => `<section data-render="${selector}"></section>`)
+        .join("\\s*");
+      const updatedHtml = html.replace(
+        new RegExp(secondaryPattern),
+        renderFallback(secondaryPage, page.copy[locale]),
+      );
+      if (updatedHtml === html) throw new Error(`Missing home fallback targets in ${file}`);
+      await writeFile(absolutePath, updatedHtml);
+      updated += 1;
+      continue;
+    }
     const mainMatch = /(<main\b[^>]*>)([\s\S]*?)(<\/main>)/i.exec(html);
     if (!mainMatch) throw new Error(`Missing <main> in ${file}`);
     const microdata = mainMatch[2].match(/<!-- CREATIVEWORK MICRODATA START -->[\s\S]*?<!-- CREATIVEWORK MICRODATA END -->/)?.[0] || "";

@@ -1679,7 +1679,7 @@ window.EA_ENTITIES = {
         folder: "./assets/media/projects/voice-capture-studio",
         gallery: [
           {
-            src: "./assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png",
+            src: "./assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp",
             alt: "Voice Capture Studio capture screen",
             caption: "Live GitHub Pages capture screen with local browser storage and recording modes.",
             width: 1280,
@@ -2248,7 +2248,7 @@ window.EA_ENTITIES = {
         folder: "./assets/media/projects/unionmob",
         gallery: [
           {
-            src: "./assets/media/projects/unionmob/unionmob-world-900.webp",
+            src: "./assets/media/projects/unionmob/unionmob-world-360.webp",
             alt: "UnionMob spherical visual composed of compass interfaces and UnionMob marks",
             caption: "UnionMob visual universe.",
             width: 900,
@@ -2415,7 +2415,7 @@ window.EA_ENTITIES = {
       media: {
         folder: "./assets/media/projects/oeil-de-meg",
         gallery: [
-          { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png", alt: "L’Œil de Meg wordmark", caption: "Wordmark version of the logo." },
+          { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.webp", alt: "L’Œil de Meg wordmark", caption: "Wordmark version of the logo." },
           { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg", alt: "L’Œil de Meg pictogram", caption: "Compact pictogram used as a signature mark." },
           {
             src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-home-hero-butterflies.png",
