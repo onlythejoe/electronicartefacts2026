@@ -874,6 +874,7 @@ export const renderProjectPage = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
+  const bodyHtml = project.bodyHtml.replaceAll(' id="project-thesis"', "");
   const connected = connectedRelationsFor(project, relations, byId);
   const tags = uniqueStrings([...(project.disciplines || []), ...(project.tags || [])]);
   const documentaryMediaCount = documentaryMediaFor(project).length;
@@ -946,7 +947,7 @@ export const renderProjectPage = (
         <p class="eyebrow">${ui(project, "PROJECT THESIS", "THÈSE DU PROJET")}</p>
         <h2>${ui(project, "Detailed reading notes.", "Notes de lecture détaillées.")}</h2>
       </div>
-      ${project.bodyHtml}
+      ${bodyHtml}
     </article>
     ${renderRelationshipGroups(project, relations, byId, routeById)}
     ${renderRecordDetails(project, `

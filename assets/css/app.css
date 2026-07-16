@@ -121,37 +121,11 @@ body::before,
 body::after {
   content: "";
   position: fixed;
-  right: -12vw;
-  left: -12vw;
+  inset: 0;
   z-index: -1;
-  height: clamp(7rem, 22svh, 15rem);
   pointer-events: none;
-  filter: blur(22px);
-  opacity: 0.72;
-  transform: translateZ(0);
-}
-
-body::before {
-  top: calc(-1 * clamp(2.5rem, 7svh, 5.5rem));
-  background:
-    radial-gradient(ellipse at 24% 100%, rgba(234, 220, 207, 0.13), transparent 56%),
-    radial-gradient(ellipse at 78% 88%, rgba(124, 58, 237, 0.1), transparent 52%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 78%);
-}
-
-body::after {
-  bottom: calc(-1 * clamp(2.5rem, 7svh, 5.5rem));
-  background:
-    radial-gradient(ellipse at 70% 4%, rgba(234, 220, 207, 0.1), transparent 52%),
-    radial-gradient(ellipse at 20% 10%, rgba(148, 163, 184, 0.08), transparent 52%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.44), transparent 78%);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body::before,
-  body::after {
-    transform: none;
-  }
+  filter: none;
+  transform: none;
 }
 
 body > main,
@@ -212,30 +186,16 @@ body.is-page-leaving .scroll-progress {
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.009) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%;
   opacity: 0.22;
-  height: auto;
-  filter: none;
-  transform: none;
 }
 
 body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
   background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.22) 100%);
   opacity: 0.9;
-  height: auto;
-  filter: none;
-  transform: none;
 }
 
 .ambient-field {

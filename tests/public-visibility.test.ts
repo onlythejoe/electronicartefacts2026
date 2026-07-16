@@ -141,6 +141,18 @@ test("project pages render each declared visual once", async () => {
   }
 });
 
+test("project pages keep fragment identifiers unique", async () => {
+  const { entities, byId, routeById } = await loadFixture();
+
+  for (const project of entities.filter((entity): entity is ProjectEntity => entity.type === "project")) {
+    const html = renderProjectPage(project, [], byId, routeById);
+    const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
+    const duplicates = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+
+    assert.deepEqual(duplicates, [], `${project.id} should not repeat fragment identifiers`);
+  }
+});
+
 test("editorial and publication renderers hide non-public typed references", async () => {
   const { byId, routeById } = await loadFixture();
   const hiddenConcept: Entity = {
