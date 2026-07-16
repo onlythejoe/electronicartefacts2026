@@ -194,6 +194,7 @@ const renderRefCards = (
   refs: EntityRef[],
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
+  openLabel = "Open page",
 ): string => {
   if (!refs.length) return "";
   return `
@@ -210,7 +211,7 @@ const renderRefCards = (
               <p class="card__meta">${escapeHtml(upperLabel(item.type))}</p>
               <h3 class="card__title"><a href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a></h3>
               <p class="card__copy">${escapeHtml(item.copy)}</p>
-              <div class="link-row"><a class="tag" href="${escapeHtml(item.route)}">Open page</a></div>
+              <div class="link-row"><a class="tag" href="${escapeHtml(item.route)}">${escapeHtml(openLabel)}</a></div>
             </article>`;
         }).join("")}
       </div>
@@ -228,27 +229,27 @@ const renderProjectTabs = (
     {
       id: "brief",
       label: "Brief",
-      eyebrow: "PROJECT BRIEF",
-      title: "The problem this project addresses.",
+      eyebrow: ui(project, "PROJECT BRIEF", "BRIEF PROJET"),
+      title: ui(project, "The problem this project addresses.", "Le problème auquel répond ce projet."),
       body: `<p class="lede">${escapeHtml(project.brief)}</p>`,
     },
     {
       id: "context",
-      label: "Context",
-      eyebrow: "OPERATING CONTEXT",
-      title: "Why this system needs to exist.",
+      label: ui(project, "Context", "Contexte"),
+      eyebrow: ui(project, "OPERATING CONTEXT", "CONTEXTE D’USAGE"),
+      title: ui(project, "Why this system needs to exist.", "Pourquoi ce système doit exister."),
       body: `<p class="lede">${escapeHtml(project.context)}</p>`,
     },
     {
       id: "approach",
-      label: "Approach",
-      eyebrow: "SYSTEM APPROACH",
-      title: "How the work is structured.",
+      label: ui(project, "Approach", "Approche"),
+      eyebrow: ui(project, "SYSTEM APPROACH", "APPROCHE SYSTÈME"),
+      title: ui(project, "How the work is structured.", "Comment le travail est structuré."),
       body: `
         <ol class="project-process" data-project-process>
           ${project.approach.map((step, index) => `
             <li class="project-process__item${index === 0 ? " is-active" : ""}" data-project-step>
-              <button class="project-process__marker" type="button" aria-label="Focus approach step ${index + 1}">
+              <button class="project-process__marker" type="button" aria-label="${ui(project, "Focus approach step", "Afficher l’étape d’approche")} ${index + 1}">
                 ${String(index + 1).padStart(2, "0")}
               </button>
               <p>${escapeHtml(step)}</p>
@@ -257,9 +258,9 @@ const renderProjectTabs = (
     },
     {
       id: "proof",
-      label: "Proof",
-      eyebrow: "PUBLIC EVIDENCE",
-      title: evidenceCards.length ? "Current evidence supporting the project." : "Evidence is attached when public.",
+      label: ui(project, "Proof", "Preuves"),
+      eyebrow: ui(project, "PUBLIC EVIDENCE", "PREUVES PUBLIQUES"),
+      title: evidenceCards.length ? ui(project, "Current evidence supporting the project.", "Preuves actuelles étayant le projet.") : ui(project, "Evidence is attached when public.", "Les preuves sont jointes lorsqu’elles sont publiques."),
       body: evidenceCards.length
         ? `<div class="project-proof-list">${evidenceCards.map((item) => `
             <article class="panel panel--soft">
@@ -267,7 +268,7 @@ const renderProjectTabs = (
               <h3 class="card__title"><a href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a></h3>
               <p class="card__copy">${escapeHtml(item.copy)}</p>
             </article>`).join("")}</div>`
-        : `<p class="lede">Public evidence will appear here when references are attached to this project.</p>`,
+        : `<p class="lede">${ui(project, "Public evidence will appear here when references are attached to this project.", "Les preuves publiques apparaîtront ici lorsque des références seront rattachées au projet.")}</p>`,
     },
   ];
 
@@ -275,9 +276,9 @@ const renderProjectTabs = (
     <section class="zone-card hero project-command" id="project-brief" data-project-tabs>
       <div class="project-command__top">
         <div class="section-head">
-          <p class="eyebrow">PROJECT READING</p>
-          <h2>${isVestiges ? "Read Vestiges from thesis to evidence." : "A concise guide to the project dossier."}</h2>
-          <p class="lede">${isVestiges ? "Move from the cultural problem to the contribution model and current public evidence." : "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page."}</p>
+          <p class="eyebrow">${ui(project, "PROJECT READING", "LECTURE DU PROJET")}</p>
+          <h2>${isVestiges ? ui(project, "Read Vestiges from thesis to evidence.", "Lire Vestiges de la thèse aux preuves.") : ui(project, "A concise guide to the project dossier.", "Un guide concis du dossier projet.")}</h2>
+          <p class="lede">${isVestiges ? ui(project, "Move from the cultural problem to the contribution model and current public evidence.", "Passez du problème culturel au modèle de contribution et aux preuves publiques actuelles.") : ui(project, "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page.", "Naviguez entre cadre stratégique, contexte, logique d’implémentation et preuves sans perdre le fil de la page.")}</p>
         </div>
         <div class="project-command__nav" role="tablist" aria-label="Project dossier sections">
           ${tabs.map((tab, index) => `
@@ -317,9 +318,9 @@ const renderProjectSystem = (project: ProjectEntity): string => {
   return `
     <section class="zone-card hero project-intelligence" id="project-system">
       <div class="section-head">
-        <p class="eyebrow">PROJECT FRAME</p>
-        <h2>${isVestiges ? "Knowledge, trust and activation in one operating model." : "Brief, context and operating frame in one place."}</h2>
-        <p class="lede">${isVestiges ? "Vestiges treats living know-how as shared infrastructure: attributable, reviewable and reusable across public and professional contexts." : "This section gathers the brief, constraints, outcomes and public evidence into one readable project frame."}</p>
+        <p class="eyebrow">${ui(project, "PROJECT FRAME", "CADRE DU PROJET")}</p>
+        <h2>${isVestiges ? ui(project, "Knowledge, trust and activation in one operating model.", "Connaissance, confiance et activation dans un même modèle opératoire.") : ui(project, "Brief, context and operating frame in one place.", "Brief, contexte et cadre opératoire réunis.")}</h2>
+        <p class="lede">${isVestiges ? ui(project, "Vestiges treats living know-how as shared infrastructure: attributable, reviewable and reusable across public and professional contexts.", "Vestiges considère les savoir-faire vivants comme une infrastructure partagée : attribuable, révisable et réutilisable dans des contextes publics et professionnels.") : ui(project, "This section gathers the brief, constraints, outcomes and public evidence into one readable project frame.", "Cette section rassemble brief, contraintes, résultats et preuves publiques dans un cadre lisible.")}</p>
       </div>
       <div class="project-intelligence__grid">
         <article class="panel project-intelligence__card project-intelligence__card--lead">
@@ -327,19 +328,19 @@ const renderProjectSystem = (project: ProjectEntity): string => {
           <h3 class="card__title">${escapeHtml(project.brief)}</h3>
         </article>
         <article class="panel project-intelligence__card project-intelligence__card--context">
-          <p class="card__meta">Context</p>
+          <p class="card__meta">${ui(project, "Context", "Contexte")}</p>
           <p class="card__copy">${escapeHtml(project.context)}</p>
         </article>
         ${hasConstraints ? `
           <article class="panel project-intelligence__card">
-            <p class="card__meta">Constraints</p>
+            <p class="card__meta">${ui(project, "Constraints", "Contraintes")}</p>
             <ul class="project-list">
               ${project.constraints?.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
             </ul>
           </article>` : ""}
         ${hasOutcomes ? `
           <article class="panel project-intelligence__card">
-            <p class="card__meta">Outcomes</p>
+            <p class="card__meta">${ui(project, "Outcomes", "Résultats")}</p>
             <ul class="project-list">
               ${project.outcomes?.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
             </ul>
@@ -664,19 +665,19 @@ const renderProjectDevelopment = (
   return `
     <section class="zone-card hero project-discipline project-discipline--dev" id="project-dev">
       <div class="section-head">
-        <p class="eyebrow">DEVELOPMENT</p>
-        <h2>${isVestiges ? "A technical foundation for cultural transmission." : "Architecture, implementation logic and delivery surface."}</h2>
-        <p class="lede">${isVestiges ? "Stable identities, provenance and contextual permissions turn cultural material into a usable and governable system." : "The technical read combines approach steps, implementation choices, current constraints and delivery state."}</p>
+        <p class="eyebrow">${ui(project, "DEVELOPMENT", "DÉVELOPPEMENT")}</p>
+        <h2>${isVestiges ? ui(project, "A technical foundation for cultural transmission.", "Une fondation technique pour la transmission culturelle.") : ui(project, "Architecture, implementation logic and delivery surface.", "Architecture, logique d’implémentation et surface de livraison.")}</h2>
+        <p class="lede">${isVestiges ? ui(project, "Stable identities, provenance and contextual permissions turn cultural material into a usable and governable system.", "Identités stables, provenance et permissions contextuelles transforment les matériaux culturels en un système utilisable et gouvernable.") : ui(project, "The technical read combines approach steps, implementation choices, current constraints and delivery state.", "La lecture technique réunit étapes d’approche, choix d’implémentation, contraintes actuelles et état de livraison.")}</p>
       </div>
       <div class="project-discipline__grid">
         <article class="panel project-discipline__card project-discipline__card--lead">
-          <p class="card__meta">Build thesis</p>
+          <p class="card__meta">${ui(project, "Build thesis", "Thèse de construction")}</p>
           <h3 class="card__title">${escapeHtml(project.approach[0] || project.brief)}</h3>
           ${project.approach.length > 1 ? `
             <ol class="project-process project-process--compact" data-project-process>
               ${project.approach.slice(1, 5).map((step, index) => `
                 <li class="project-process__item${index === 0 ? " is-active" : ""}" data-project-step>
-                  <button class="project-process__marker" type="button" aria-label="Focus development step ${index + 1}">
+                  <button class="project-process__marker" type="button" aria-label="${ui(project, "Focus development step", "Afficher l’étape de développement")} ${index + 1}">
                     ${String(index + 1).padStart(2, "0")}
                   </button>
                   <p>${escapeHtml(step)}</p>
@@ -698,7 +699,7 @@ const renderProjectDevelopment = (
           ${project.constraints?.length ? `
             <ul class="project-list">
               ${project.constraints.slice(0, 4).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-            </ul>` : `<p class="card__copy">Technical constraints appear here when they are useful to the public dossier.</p>`}
+            </ul>` : `<p class="card__copy">${ui(project, "Technical constraints appear here when they are useful to the public dossier.", "Les contraintes techniques apparaissent ici lorsqu’elles sont utiles au dossier public.")}</p>`}
         </article>
         <article class="panel project-discipline__card project-discipline__card--stack">
           <p class="card__meta">${ui(project, "Technical focus", "Axes techniques")}</p>
@@ -714,7 +715,7 @@ const renderProjectMarketing = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
-  const isVestiges = project.slug.canonical === "vestiges";
+  const isVestiges = isVestigesProject(project);
   const audience = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId))
     .map((ref) => refDetails(ref, byId, routeById))
     .slice(0, 6);
@@ -732,12 +733,12 @@ const renderProjectMarketing = (
     <section class="zone-card hero project-discipline project-discipline--marketing" id="project-marketing">
       <div class="section-head">
         <p class="eyebrow">MARKETING</p>
-        <h2>${isVestiges ? "From public knowledge to professional utility." : "Positioning, audience and proof."}</h2>
-        <p class="lede">${isVestiges ? "The offer begins with trustworthy discovery, then extends into contribution, learning, collaboration and specialist services." : "This view turns the project into a public-facing offer: who it speaks to, what it promises and what can already be shown."}</p>
+        <h2>${isVestiges ? ui(project, "From public knowledge to professional utility.", "De la connaissance publique à l’utilité professionnelle.") : ui(project, "Positioning, audience and proof.", "Positionnement, publics et preuves.")}</h2>
+        <p class="lede">${isVestiges ? ui(project, "The offer begins with trustworthy discovery, then extends into contribution, learning, collaboration and specialist services.", "La proposition commence par une découverte digne de confiance, puis s’ouvre à la contribution, à l’apprentissage, à la collaboration et aux services spécialisés.") : ui(project, "This view turns the project into a public-facing offer: who it speaks to, what it promises and what can already be shown.", "Cette vue transforme le projet en proposition publique : à qui elle s’adresse, ce qu’elle promet et ce qui peut déjà être montré.")}</p>
       </div>
       <div class="project-marketing__grid">
         <article class="panel project-marketing__statement">
-          <p class="card__meta">Positioning</p>
+          <p class="card__meta">${ui(project, "Positioning", "Positionnement")}</p>
           <h3 class="card__title">${escapeHtml(project.brief)}</h3>
           <p class="card__copy">${escapeHtml(project.context)}</p>
         </article>
@@ -755,7 +756,7 @@ const renderProjectMarketing = (
           ${proofSignals.length ? `<ul class="project-list">${proofSignals.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : `<p class="card__copy">Outcomes, evidence and media will populate this block.</p>`}
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Messaging fields</p>
+          <p class="card__meta">${ui(project, "Messaging fields", "Axes de communication")}</p>
           <h3 class="card__title">${escapeHtml(project.subtitle || labelFrom(project.category))}</h3>
           ${renderChips(marketingFocus, "tag-cluster tag-cluster--compact")}
         </article>
@@ -935,14 +936,14 @@ export const renderProjectPage = (
     ${renderProjectMarketing(project, byId, routeById)}
     ${renderProjectTabs(project, byId, routeById)}
     <section class="zone-card hero project-output-section">
-      ${renderRefCards("Addressable outputs.", "OUTPUTS", outputRefs, byId, routeById)}
-      ${renderRefCards("Stakeholders and credits.", "PRODUCTION", productionRefs, byId, routeById)}
+      ${renderRefCards(ui(project, "Addressable outputs.", "Livrables adressables."), ui(project, "OUTPUTS", "LIVRABLES"), outputRefs, byId, routeById, ui(project, "Open page", "Ouvrir la page"))}
+      ${renderRefCards(ui(project, "Stakeholders and credits.", "Parties prenantes et crédits."), "PRODUCTION", productionRefs, byId, routeById, ui(project, "Open page", "Ouvrir la page"))}
     </section>
     ${isPalimpsests ? "" : renderProjectMedia(project)}
     ${renderProjectGraph(project, relations, byId, routeById)}
     <article class="zone-card hero publication-body project-dossier-body" id="project-thesis">
       <div class="section-head">
-        <p class="eyebrow">PROJECT THESIS</p>
+        <p class="eyebrow">${ui(project, "PROJECT THESIS", "THÈSE DU PROJET")}</p>
         <h2>${ui(project, "Detailed reading notes.", "Notes de lecture détaillées.")}</h2>
       </div>
       ${project.bodyHtml}

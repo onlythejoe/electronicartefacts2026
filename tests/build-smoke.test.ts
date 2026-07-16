@@ -77,6 +77,9 @@ test("Vestiges dossier hands product participation to the official Vestiges surf
     }
     assert.match(englishHtml, /The product conversation continues on Vestiges\./);
     assert.match(frenchHtml, /La conversation produit continue sur Vestiges\./);
+    assert.match(frenchHtml, /Une fondation technique pour la transmission culturelle\./);
+    assert.match(frenchHtml, /Livrables adressables\./);
+    assert.doesNotMatch(frenchHtml, /Read Vestiges from thesis to evidence|Knowledge, trust and activation|A technical foundation for cultural transmission|Addressable outputs|Stakeholders and credits/);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
       context.skip("Run npm run build to generate static output");
