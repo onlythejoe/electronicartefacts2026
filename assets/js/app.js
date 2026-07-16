@@ -3013,12 +3013,12 @@ window.EA_ENTITIES = {
     {
       "id": "vestiges",
       "title": "Vestiges",
-      "subtitle": "Art and Craft Mapping Platform",
+      "subtitle": "Connected Cultural and Editorial Dossiers",
       "kind": "project",
-      "type": "Knowledge Infrastructure Platform",
+      "type": "Cultural and Editorial Project",
       "category": "Platform",
       "status": "development",
-      "statusLabel": "In development / 2027 target",
+      "statusLabel": "Research and prefiguration",
       "maturity": "prototype",
       "confidence": "observed",
       "visibility": "public",
@@ -3026,28 +3026,29 @@ window.EA_ENTITIES = {
         "creationYear": "2025",
         "creationDate": "2025-01-01",
         "releaseDate": "",
-        "lastUpdated": "2026-06-22",
+        "lastUpdated": "2026-07-16",
         "era": "vestiges"
       },
       "program": "vaste",
       "medium": [
-        "Software",
+        "Editorial",
         "Interactive",
-        "Data",
-        "3D"
+        "Software",
+        "Data"
       ],
       "discipline": [
-        "Technology",
-        "Knowledge Graphs",
         "Culture",
+        "Art",
         "Craft",
-        "Design"
+        "Editorial Design",
+        "Knowledge Graphs",
+        "Technology"
       ],
-      "description": "Future platform for mapping art and craft practices and developing CRM-oriented workflows as an applied test context for VASTE.",
-      "summary": "Future art and craft mapping and CRM platform; applied VASTE test context.",
-      "mission": "Test how art and craft practices can be mapped and managed as connected context.",
-      "coreResource": "Art and craft relationships",
-      "productPosition": "Vestiges is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
+      "description": "Cultural and editorial project in prefiguration, co-designing digital dossiers that connect a work with its gestures, materials, sources and history.",
+      "summary": "Public prefiguration for connected cultural dossiers, with a human first-contact path and explicit publication boundaries.",
+      "mission": "Help people discover, understand and verify what surrounds a work or practice without reducing it to an isolated profile.",
+      "coreResource": "Situated cultural knowledge and its sources",
+      "productPosition": "Vestiges currently operates as a public prefiguration landing page, a demonstrative dossier and a human contact path. It is not yet a validated public service, catalogue or marketplace.",
       "graphPrinciple": "Every person, organisation, technique, material, tool, work, place, project and document receives a durable identity. Teaching, making, using, restoring, supplying and certifying remain explicit, navigable and historised.",
       "graphNodeTypes": [
         "People",
@@ -3235,12 +3236,16 @@ window.EA_ENTITIES = {
       ],
       "links": [
         {
-          "label": "Explore VASTE",
-          "href": "https://www.vaste.space/"
+          "label": "Visit Vestiges",
+          "href": "https://www.vestiges.world/"
         },
         {
-          "label": "Vestiges research platform",
-          "href": "./projects.html"
+          "label": "Present your project",
+          "href": "https://www.vestiges.world/participer/"
+        },
+        {
+          "label": "Write to Vestiges",
+          "href": "mailto:contact@vestiges.world"
         }
       ]
     },
@@ -9781,9 +9786,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:project:vestiges",
       "title": "Vestiges",
-      "subtitle": "Plateforme de cartographie art et artisanat",
-      "summary": "Vestiges est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
-      "description": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
+      "subtitle": "Dossiers culturels et éditoriaux reliés",
+      "summary": "Vestiges est un projet culturel et éditorial en préfiguration qui conçoit, avec les artistes, les ateliers et les lieux culturels, des dossiers numériques reliant une œuvre à ses gestes, ses matières, ses sources et son histoire.",
+      "description": "La landing publique de Vestiges présente la proposition, la méthode et les parcours de participation. Cette fiche Electronic Artefacts en documente le cadre, les fondations techniques et l’état réel.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
@@ -9791,23 +9796,24 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Artisanat",
-        "CRM",
-        "Cartographie"
+        "Transmission",
+        "Provenance",
+        "Connaissance reliée"
       ],
       "discipline": [
-        "Technologie",
+        "Culture",
         "Art",
         "Artisanat",
-        "design"
+        "design",
+        "Technologie"
       ],
       "route": "/fr/projects/v6/",
       "identifier": "/fr/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-16",
         "releaseDate": "2026-06-25",
         "creationYear": "2025"
       }
@@ -12932,9 +12938,9 @@ window.EA_PUBLIC_CATALOG = {
       "type": "project",
       "locale": "en",
       "title": "Vestiges",
-      "subtitle": "Art and Craft Mapping Platform",
-      "summary": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
-      "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
+      "subtitle": "Connected cultural and editorial dossiers",
+      "summary": "Vestiges is a cultural and editorial project in prefiguration, co-designing digital dossiers with artists, workshops and cultural organisations to connect a work with its gestures, materials, sources and history.",
+      "description": "The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and actual state.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
@@ -12942,23 +12948,24 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Craft",
-        "CRM",
-        "Mapping"
+        "Transmission",
+        "Provenance",
+        "Connected knowledge"
       ],
       "discipline": [
-        "Technology",
+        "Culture",
         "Art",
         "Craft",
-        "Design"
+        "Design",
+        "Technology"
       ],
       "route": "/projects/v6/",
       "identifier": "/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-16",
         "releaseDate": "2026-06-22",
         "creationYear": "2025"
       }
@@ -27702,8 +27709,9 @@ window.EA_ANALYTICS_CONFIG = {
 
     const stored = readPreference();
     const preferred = stored || preferredFromBrowser();
-    sync(stored || routeLocale(currentPath));
-    if (preferred !== routeLocale(currentPath) && currentAlternates[preferred]) navigateTo(preferred);
+    const active = routeLocale(currentPath);
+    sync(active);
+    if (currentPath === "/" && preferred !== active && currentAlternates[preferred]) navigateTo(preferred);
 
     trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
     options.forEach((option) => {
@@ -32320,61 +32328,69 @@ window.EA_ANALYTICS_CONFIG = {
 
     return [
       panelShell(
-        "Product definition",
-        "Vestiges is the flagship public application of VASTE: a living knowledge infrastructure rather than a directory, encyclopedia or marketplace.",
+        "Current proposition",
+        "Vestiges is a cultural and editorial project in prefiguration. Its public surface helps people understand the proposition and open a first human conversation.",
         `<div class="stack">
-          ${softPanel("Position", "Living knowledge, made operational", item.productPosition || "")}
-          ${softPanel("Mission", item.mission || "", "A durable infrastructure for documenting, connecting and reactivating human know-how.")}
-          ${softPanel("Primary resource", item.coreResource || "Knowledge", "Profiles, services and transactions remain useful, but trusted knowledge and its provenance form the durable foundation.")}
+          ${softPanel("Position", "Neither portfolio nor marketplace", item.productPosition || "")}
+          ${softPanel("Mission", item.mission || "", "A dossier brings a work, its gestures, materials, sources and history back into relation.")}
+          ${softPanel("Product boundary", "Vestiges receives the conversation", "Electronic Artefacts documents the project and its foundations. Vestiges is the product surface for discovery and participation.", linkRow({ label: "Visit Vestiges", href: "https://www.vestiges.world/", target: "_blank" }))}
         </div>`,
       ),
       panelShell(
-        "The living knowledge base",
-        "The system preserves both the entities and the paths through which knowledge moves.",
+        "Three ways to enter",
+        "Each path starts with a real situation and a limited question rather than a promise of automatic publication.",
         `<div class="stack">
-          ${softPanel("Identity principle", "Every important element keeps a durable identity", item.graphPrinciple || "")}
-          <div class="card-grid card-grid--two">
-            ${softPanel("Knowledge families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places and works can each become durable public surfaces.", chipList(item.graphNodeTypes, 12))}
-            ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Teaching, making, use, restoration, supply and certification reveal how know-how is transmitted.", chipList(item.relationshipTypes, 10))}
+          <div class="card-grid card-grid--three">
+            ${softPanel("Create", "Artists and workshops", "Document a practice beyond the final image: gestures, materials, choices, places and transmission.")}
+            ${softPanel("Transmit", "Research and mediation", "Connect a source, corpus, vocabulary or teaching use while preserving attribution and nuance.")}
+            ${softPanel("Structure", "Institutions and territories", "Test a bounded corpus or cultural context with explicit responsibilities and success criteria.")}
+          </div>
+          ${linkRow({ label: "Choose a participation path", href: "https://www.vestiges.world/participer/", target: "_blank" })}
+        </div>`,
+      ),
+      panelShell(
+        "What a dossier produces",
+        "The proposed form offers several depths without turning every subject into the same profile.",
+        `<div class="stack">
+          <div class="card-grid card-grid--three">
+            ${softPanel("See", "An editorial entry", "A work, image, gesture or material gives the first movement.")}
+            ${softPanel("Understand", "A situated narrative", "People, places, decisions and transmission recover their context.")}
+            ${softPanel("Verify", "Sourced relations", "Facts, attributed statements, interpretations and hypotheses remain distinct.")}
           </div>
         </div>`,
       ),
       panelShell(
-        "Public discovery",
-        "Public pages and relation paths make the knowledge base readable without separating publishing from the model.",
+        "Method and control",
+        "A first exchange remains a first exchange. It does not automatically create a profile, publication, newsletter subscription or selection.",
         `<div class="stack">
-          ${softPanel("Knowledge projection", "One canonical surface per node", item.seoModel || "")}
-          ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
+          ${softPanel("Process", "Listen, compose, connect, verify, decide", "Media, statements, relations and visibility levels are reviewed with the people concerned before any publication decision.")}
+          ${softPanel("Knowledge status", "Do not call everything truth", "A verifiable fact, an attributed statement, an editorial interpretation and an open hypothesis retain different statuses.")}
+          ${softPanel("Rights", "Visibility is decided element by element", "Discussing a work does not authorise every image, private file, exact location or provenance detail to become public.")}
         </div>`,
       ),
       panelShell(
-        "Contribution and trust",
-        "Expertise can enter from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
+        "What exists today",
+        "The public presence establishes the proposition and prepares first conversations without overstating product maturity.",
         `<div class="stack">
-          ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
-          ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, contextual, reviewable and connected to the same shared graph.", chipList(item.collaborationCapabilities))}
+          ${softPanel("Public", "A landing page and demonstrative dossier", "The current site explains the audiences, candidate process, safeguards and actual stage of the project.")}
+          ${softPanel("Contact", "A guided email path", "The participation form prepares an email in the visitor's own mail application. It does not automatically submit data or publish anything.", linkRow({ label: "Present your project", href: "https://www.vestiges.world/participer/", target: "_blank" }))}
+          ${softPanel("Direct", "contact@vestiges.world", "A simple email is enough to open a human conversation.", linkRow({ label: "Write to Vestiges", href: "mailto:contact@vestiges.world" }))}
         </div>`,
       ),
       panelShell(
-        "Explore relation paths",
-        "Knowledge can be read as paths, maps and constellations rather than as isolated profiles.",
+        "Technical foundations",
+        "Electronic Artefacts documents the relational model under study; this research is not presented as a completed product.",
         `<div class="stack">
-          ${softPanel("Visualisation", "From graph to navigable space", "A technique can reveal its materials, tools, practitioners, places, schools and institutions in one connected view.", chipList(item.visualizationModes))}
+          ${softPanel("Identity and provenance", "Keep context addressable", item.graphPrinciple || "")}
+          ${softPanel("Governance", "Contribution remains attributable and reviewable", "Contextual permissions, knowledge statuses and explicit relations are candidate foundations for future dossiers.", chipList(item.collaborationCapabilities))}
         </div>`,
       ),
       panelShell(
-        "Professional activation",
-        "Services emerge from trusted knowledge and explicit relationships; they do not replace the platform's cultural purpose.",
+        "Horizon under hypotheses",
+        "The long view remains visible, but none of these capabilities is described as available until real use validates it.",
         `<div class="stack">
-          ${softPanel("Service model", "Utility grows from trusted knowledge", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
-        </div>`,
-      ),
-      panelShell(
-        "Long-term horizon",
-        "Vestiges is conceived as durable infrastructure for knowledge that continues to change.",
-        `<div class="stack">
-          ${softPanel("Long view", "A living map of human know-how", "Craft, heritage, production, learning, research and innovation remain connected inside the same evolving system.", chipList(item.longTermDomains))}
-          ${softPanel("Public channel", "@vestiges.world", "Visual identity, editorial research and product development.", linkRow({ label: "Open Instagram", href: "https://www.instagram.com/vestiges.world/", target: "_blank" }))}
+          ${softPanel("Possible extensions", "To be tested through bounded pilots", "Connected public dossiers, collaboration, 3D, specialist services and economic activation remain future hypotheses.", chipList(item.economicModel))}
+          ${softPanel("Reference boundary", "Electronic Artefacts documents; Vestiges activates", "Technical documentation and project history remain on Electronic Artefacts. Discovery and first contact belong on Vestiges.", linkRow({ label: "Visit Vestiges", href: "https://www.vestiges.world/", target: "_blank" }))}
         </div>`,
       ),
     ].join("");

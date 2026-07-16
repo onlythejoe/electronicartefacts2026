@@ -86,7 +86,7 @@
     "collection": 12,
     "artefact": 6
   },
-  "lastModified": "2026-07-13",
+  "lastModified": "2026-07-16",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -312,50 +312,52 @@
       "translationOf": "ea:project:vestiges",
       "type": "project",
       "title": "Vestiges",
-      "summary": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
+      "summary": "La landing publique de Vestiges présente la proposition, la méthode et les parcours de participation. Cette fiche Electronic Artefacts en documente le cadre, les fondations techniques et l’état réel.",
       "url": "https://electronicartefacts.com/fr/projects/v6/",
       "route": "/fr/projects/v6/",
       "identifier": "https://electronicartefacts.com/fr/id/project/v6/",
       "jsonLd": "https://electronicartefacts.com/fr/id/project/v6/index.jsonld",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Artisanat",
-        "CRM",
-        "Cartographie",
-        "Technologie",
-        "design"
+        "Transmission",
+        "Provenance",
+        "Connaissance reliée",
+        "Culture",
+        "design",
+        "Technologie"
       ],
       "status": "development",
       "confidence": "observed",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-16"
     },
     {
       "id": "ea:project:vestiges",
       "locale": "en",
       "type": "project",
       "title": "Vestiges",
-      "summary": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
+      "summary": "The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and actual state.",
       "url": "https://electronicartefacts.com/projects/v6/",
       "route": "/projects/v6/",
       "identifier": "https://electronicartefacts.com/id/project/v6/",
       "jsonLd": "https://electronicartefacts.com/id/project/v6/index.jsonld",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Craft",
-        "CRM",
-        "Mapping",
-        "Technology",
-        "Design"
+        "Transmission",
+        "Provenance",
+        "Connected knowledge",
+        "Culture",
+        "Design",
+        "Technology"
       ],
       "status": "development",
       "confidence": "observed",
       "publishedAt": "2026-06-22",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-16"
     },
     {
       "id": "ea:project:voice-capture-studio-fr",

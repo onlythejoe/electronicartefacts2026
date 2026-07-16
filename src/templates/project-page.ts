@@ -30,6 +30,9 @@ const upperLabel = (value: string): string => labelFrom(value).toUpperCase();
 
 const compactId = (id: string): string => id.split(":").at(-1) || id;
 
+const isVestigesProject = (project: ProjectEntity): boolean =>
+  project.id === "ea:project:vestiges" || project.translationOf === "ea:project:vestiges";
+
 const colorMap: Record<string, string> = {
   amber: "#d89f4f",
   black: "#050505",
@@ -219,7 +222,7 @@ const renderProjectTabs = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
-  const isVestiges = project.slug.canonical === "vestiges";
+  const isVestiges = isVestigesProject(project);
   const evidenceCards = publicRefs(project.evidence, byId).map((ref) => refDetails(ref, byId, routeById));
   const tabs = [
     {
@@ -309,7 +312,7 @@ const renderProjectTabs = (
 const renderProjectSystem = (project: ProjectEntity): string => {
   const hasConstraints = Boolean(project.constraints?.length);
   const hasOutcomes = Boolean(project.outcomes?.length);
-  const isVestiges = project.slug.canonical === "vestiges";
+  const isVestiges = isVestigesProject(project);
 
   return `
     <section class="zone-card hero project-intelligence" id="project-system">
@@ -648,7 +651,7 @@ const renderProjectDevelopment = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
-  const isVestiges = project.slug.canonical === "vestiges";
+  const isVestiges = isVestigesProject(project);
   const implementation = connectedRelationsFor(project, relations, byId)
     .filter((relation) => predicateDefinitions[relation.predicate]?.group === "implementation")
     .map((relation) => relationDisplay(relation, project, byId, routeById));
@@ -820,6 +823,47 @@ const renderProjectGraph = (
             </button>`;
         }).join("")}
       </div>
+  </section>`;
+};
+
+const renderVestigesGateway = (project: ProjectEntity): string => {
+  if (!isVestigesProject(project)) return "";
+  return `
+    <section class="zone-card hero project-vestiges-gateway" id="project-vestiges">
+      <div class="section-head">
+        <p class="eyebrow">${ui(project, "ENTER VESTIGES", "ENTRER DANS VESTIGES")}</p>
+        <h2>${ui(project, "The product conversation continues on Vestiges.", "La conversation produit continue sur Vestiges.")}</h2>
+        <p class="lede">${ui(
+          project,
+          "Electronic Artefacts documents the project, its research and its technical foundations. Vestiges is the public product surface for discovering the proposition, choosing a path and opening a first conversation.",
+          "Electronic Artefacts documente le projet, sa recherche et ses fondations techniques. Vestiges est la surface produit publique pour découvrir la proposition, choisir un parcours et ouvrir une première conversation.",
+        )}</p>
+      </div>
+      <div class="card-grid card-grid--three">
+        <article class="panel panel--soft">
+          <p class="card__meta">${ui(project, "Discover", "Découvrir")}</p>
+          <h3 class="card__title">${ui(project, "Understand the Vestiges proposition", "Comprendre la proposition Vestiges")}</h3>
+          <p class="card__copy">${ui(project, "See the public landing page, audiences, method and current prefiguration boundaries.", "Consultez la landing publique, les parcours, la méthode et les limites actuelles de la préfiguration.")}</p>
+          <div class="link-row"><a class="button button--primary" href="https://www.vestiges.world/" target="_blank" rel="noreferrer">${ui(project, "Visit Vestiges", "Visiter Vestiges")}</a></div>
+        </article>
+        <article class="panel panel--soft">
+          <p class="card__meta">${ui(project, "Participate", "Participer")}</p>
+          <h3 class="card__title">${ui(project, "Talk about a practice or a cultural context", "Parler d’une pratique ou d’un terrain culturel")}</h3>
+          <p class="card__copy">${ui(project, "Artists, workshops, researchers, mediators and organisations can prepare a first message without creating a profile or triggering publication.", "Artistes, ateliers, chercheurs, médiateurs et organisations peuvent préparer un premier message sans créer de profil ni déclencher de publication.")}</p>
+          <div class="link-row"><a class="button button--secondary" href="https://www.vestiges.world/participer/" target="_blank" rel="noreferrer">${ui(project, "Present your project", "Présenter votre projet")}</a></div>
+        </article>
+        <article class="panel panel--soft">
+          <p class="card__meta">${ui(project, "Direct contact", "Contact direct")}</p>
+          <h3 class="card__title">contact@vestiges.world</h3>
+          <p class="card__copy">${ui(project, "A simple email is enough to open a human conversation with Vestiges.", "Un simple e-mail suffit pour ouvrir une conversation humaine avec Vestiges.")}</p>
+          <div class="link-row"><a class="button button--secondary" href="mailto:contact@vestiges.world">${ui(project, "Write to Vestiges", "Écrire à Vestiges")}</a></div>
+        </article>
+      </div>
+      <p class="card__copy">${ui(
+        project,
+        "A first contact does not automatically create a profile, publication, newsletter subscription or selection. Any next step is proposed separately.",
+        "Un premier contact ne crée automatiquement ni profil, ni publication, ni abonnement à une newsletter, ni sélection. Toute suite éventuelle est proposée séparément.",
+      )}</p>
     </section>`;
 };
 
@@ -835,10 +879,12 @@ export const renderProjectPage = (
   const hasGraph = connected.length > 0;
   const hasArtDirection = projectHasArtDirection(project);
   const isPalimpsests = project.slug.canonical === "palimpsests";
+  const isVestiges = isVestigesProject(project);
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
   const productionRefs = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId));
   const heroNav = [
     ...(isPalimpsests ? [{ label: ui(project, "Listen", "Écouter"), href: "#project-music" }] : []),
+    ...(isVestiges ? [{ label: ui(project, "Enter Vestiges", "Entrer dans Vestiges"), href: "#project-vestiges" }] : []),
     { label: "Brief", href: "#project-brief" },
     { label: "System", href: "#project-system" },
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
@@ -858,9 +904,15 @@ export const renderProjectPage = (
         ${project.subtitle ? `<p class="card__meta">${escapeHtml(project.subtitle)}</p>` : ""}
         <p class="lede">${escapeHtml(project.abstract)}</p>
         <div class="button-row button-row--compact">
-          <a class="button button--primary" href="#project-brief">${ui(project, "Read the brief", "Lire le brief")}</a>
-          <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? ui(project, "See related context", "Voir le contexte associé") : ui(project, "Read thesis", "Lire la thèse")}</a>
-          ${(project.socialLinks || []).map((link) => `<a class="button button--secondary" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}
+          ${isVestiges ? `
+            <a class="button button--primary" href="https://www.vestiges.world/" target="_blank" rel="noreferrer">${ui(project, "Visit Vestiges", "Visiter Vestiges")}</a>
+            <a class="button button--secondary" href="https://www.vestiges.world/participer/" target="_blank" rel="noreferrer">${ui(project, "Present your project", "Présenter votre projet")}</a>
+            <a class="button button--secondary" href="#project-brief">${ui(project, "Read the reference dossier", "Lire le dossier de référence")}</a>
+          ` : `
+            <a class="button button--primary" href="#project-brief">${ui(project, "Read the brief", "Lire le brief")}</a>
+            <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? ui(project, "See related context", "Voir le contexte associé") : ui(project, "Read thesis", "Lire la thèse")}</a>
+            ${(project.socialLinks || []).map((link) => `<a class="button button--secondary" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}
+          `}
         </div>
         <div class="metric-rail">
           ${renderMetric(ui(project, "Status", "État"), labelFrom(project.status), project.maturity, "surface")}
@@ -876,6 +928,7 @@ export const renderProjectPage = (
 
   return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}${isPalimpsests ? `
     ${renderPalimpsestsMusic(project)}` : ""}
+    ${renderVestigesGateway(project)}
     ${renderProjectSystem(project)}
     ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}

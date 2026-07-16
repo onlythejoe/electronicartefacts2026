@@ -1739,61 +1739,69 @@
 
     return [
       panelShell(
-        "Product definition",
-        "Vestiges is the flagship public application of VASTE: a living knowledge infrastructure rather than a directory, encyclopedia or marketplace.",
+        "Current proposition",
+        "Vestiges is a cultural and editorial project in prefiguration. Its public surface helps people understand the proposition and open a first human conversation.",
         `<div class="stack">
-          ${softPanel("Position", "Living knowledge, made operational", item.productPosition || "")}
-          ${softPanel("Mission", item.mission || "", "A durable infrastructure for documenting, connecting and reactivating human know-how.")}
-          ${softPanel("Primary resource", item.coreResource || "Knowledge", "Profiles, services and transactions remain useful, but trusted knowledge and its provenance form the durable foundation.")}
+          ${softPanel("Position", "Neither portfolio nor marketplace", item.productPosition || "")}
+          ${softPanel("Mission", item.mission || "", "A dossier brings a work, its gestures, materials, sources and history back into relation.")}
+          ${softPanel("Product boundary", "Vestiges receives the conversation", "Electronic Artefacts documents the project and its foundations. Vestiges is the product surface for discovery and participation.", linkRow({ label: "Visit Vestiges", href: "https://www.vestiges.world/", target: "_blank" }))}
         </div>`,
       ),
       panelShell(
-        "The living knowledge base",
-        "The system preserves both the entities and the paths through which knowledge moves.",
+        "Three ways to enter",
+        "Each path starts with a real situation and a limited question rather than a promise of automatic publication.",
         `<div class="stack">
-          ${softPanel("Identity principle", "Every important element keeps a durable identity", item.graphPrinciple || "")}
-          <div class="card-grid card-grid--two">
-            ${softPanel("Knowledge families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places and works can each become durable public surfaces.", chipList(item.graphNodeTypes, 12))}
-            ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Teaching, making, use, restoration, supply and certification reveal how know-how is transmitted.", chipList(item.relationshipTypes, 10))}
+          <div class="card-grid card-grid--three">
+            ${softPanel("Create", "Artists and workshops", "Document a practice beyond the final image: gestures, materials, choices, places and transmission.")}
+            ${softPanel("Transmit", "Research and mediation", "Connect a source, corpus, vocabulary or teaching use while preserving attribution and nuance.")}
+            ${softPanel("Structure", "Institutions and territories", "Test a bounded corpus or cultural context with explicit responsibilities and success criteria.")}
+          </div>
+          ${linkRow({ label: "Choose a participation path", href: "https://www.vestiges.world/participer/", target: "_blank" })}
+        </div>`,
+      ),
+      panelShell(
+        "What a dossier produces",
+        "The proposed form offers several depths without turning every subject into the same profile.",
+        `<div class="stack">
+          <div class="card-grid card-grid--three">
+            ${softPanel("See", "An editorial entry", "A work, image, gesture or material gives the first movement.")}
+            ${softPanel("Understand", "A situated narrative", "People, places, decisions and transmission recover their context.")}
+            ${softPanel("Verify", "Sourced relations", "Facts, attributed statements, interpretations and hypotheses remain distinct.")}
           </div>
         </div>`,
       ),
       panelShell(
-        "Public discovery",
-        "Public pages and relation paths make the knowledge base readable without separating publishing from the model.",
+        "Method and control",
+        "A first exchange remains a first exchange. It does not automatically create a profile, publication, newsletter subscription or selection.",
         `<div class="stack">
-          ${softPanel("Knowledge projection", "One canonical surface per node", item.seoModel || "")}
-          ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
+          ${softPanel("Process", "Listen, compose, connect, verify, decide", "Media, statements, relations and visibility levels are reviewed with the people concerned before any publication decision.")}
+          ${softPanel("Knowledge status", "Do not call everything truth", "A verifiable fact, an attributed statement, an editorial interpretation and an open hypothesis retain different statuses.")}
+          ${softPanel("Rights", "Visibility is decided element by element", "Discussing a work does not authorise every image, private file, exact location or provenance detail to become public.")}
         </div>`,
       ),
       panelShell(
-        "Contribution and trust",
-        "Expertise can enter from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
+        "What exists today",
+        "The public presence establishes the proposition and prepares first conversations without overstating product maturity.",
         `<div class="stack">
-          ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
-          ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, contextual, reviewable and connected to the same shared graph.", chipList(item.collaborationCapabilities))}
+          ${softPanel("Public", "A landing page and demonstrative dossier", "The current site explains the audiences, candidate process, safeguards and actual stage of the project.")}
+          ${softPanel("Contact", "A guided email path", "The participation form prepares an email in the visitor's own mail application. It does not automatically submit data or publish anything.", linkRow({ label: "Present your project", href: "https://www.vestiges.world/participer/", target: "_blank" }))}
+          ${softPanel("Direct", "contact@vestiges.world", "A simple email is enough to open a human conversation.", linkRow({ label: "Write to Vestiges", href: "mailto:contact@vestiges.world" }))}
         </div>`,
       ),
       panelShell(
-        "Explore relation paths",
-        "Knowledge can be read as paths, maps and constellations rather than as isolated profiles.",
+        "Technical foundations",
+        "Electronic Artefacts documents the relational model under study; this research is not presented as a completed product.",
         `<div class="stack">
-          ${softPanel("Visualisation", "From graph to navigable space", "A technique can reveal its materials, tools, practitioners, places, schools and institutions in one connected view.", chipList(item.visualizationModes))}
+          ${softPanel("Identity and provenance", "Keep context addressable", item.graphPrinciple || "")}
+          ${softPanel("Governance", "Contribution remains attributable and reviewable", "Contextual permissions, knowledge statuses and explicit relations are candidate foundations for future dossiers.", chipList(item.collaborationCapabilities))}
         </div>`,
       ),
       panelShell(
-        "Professional activation",
-        "Services emerge from trusted knowledge and explicit relationships; they do not replace the platform's cultural purpose.",
+        "Horizon under hypotheses",
+        "The long view remains visible, but none of these capabilities is described as available until real use validates it.",
         `<div class="stack">
-          ${softPanel("Service model", "Utility grows from trusted knowledge", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
-        </div>`,
-      ),
-      panelShell(
-        "Long-term horizon",
-        "Vestiges is conceived as durable infrastructure for knowledge that continues to change.",
-        `<div class="stack">
-          ${softPanel("Long view", "A living map of human know-how", "Craft, heritage, production, learning, research and innovation remain connected inside the same evolving system.", chipList(item.longTermDomains))}
-          ${softPanel("Public channel", "@vestiges.world", "Visual identity, editorial research and product development.", linkRow({ label: "Open Instagram", href: "https://www.instagram.com/vestiges.world/", target: "_blank" }))}
+          ${softPanel("Possible extensions", "To be tested through bounded pilots", "Connected public dossiers, collaboration, 3D, specialist services and economic activation remain future hypotheses.", chipList(item.economicModel))}
+          ${softPanel("Reference boundary", "Electronic Artefacts documents; Vestiges activates", "Technical documentation and project history remain on Electronic Artefacts. Discovery and first contact belong on Vestiges.", linkRow({ label: "Visit Vestiges", href: "https://www.vestiges.world/", target: "_blank" }))}
         </div>`,
       ),
     ].join("");

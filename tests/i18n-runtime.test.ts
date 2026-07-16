@@ -117,7 +117,7 @@ test("dynamic localization scopes mutation work to the changed subtree", async (
   assert.equal(harness.walkedRoots[0], link, "the observer should localize only the changed link subtree");
 });
 
-test("language switcher preserves query strings and fragments on legacy detail pages", async () => {
+test("language switcher respects an explicitly requested localized detail page", async () => {
   const source = await readFile(path.resolve("assets/js/core/behaviors.js"), "utf8");
   let assignedUrl = "";
   const optionNodes = ["en", "fr"].map((language) => ({
@@ -175,5 +175,5 @@ test("language switcher preserves query strings and fragments on legacy detail p
   vm.runInNewContext(source, context, { filename: "assets/js/core/behaviors.js" });
   await (context.window as typeof context.window & { EA_BEHAVIORS: { initLanguageSwitcher: () => Promise<void> } }).EA_BEHAVIORS.initLanguageSwitcher();
 
-  assert.equal(assignedUrl, "/program.html?id=oraclehub#runtime");
+  assert.equal(assignedUrl, "");
 });

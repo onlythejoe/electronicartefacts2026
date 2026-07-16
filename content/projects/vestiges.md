@@ -4,9 +4,9 @@ type: project
 slug:
   canonical: v6
 title: Vestiges
-subtitle: Art and Craft Mapping Platform
-abstract: Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.
-description: An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
+subtitle: Connected cultural and editorial dossiers
+abstract: Vestiges is a cultural and editorial project in prefiguration, co-designing digital dossiers with artists, workshops and cultural organisations to connect a work with its gestures, materials, sources and history.
+description: The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and actual state.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -14,32 +14,36 @@ status: development
 maturity: prototype
 confidence: observed
 version:
-  version: 1.2.0
+  version: 1.3.0
   createdAt: "2025-01-01"
   publishedAt: "2026-06-22"
-  modifiedAt: "2026-07-11"
-  changeSummary: Restored the Vestiges name for the in-development VASTE test platform.
+  modifiedAt: "2026-07-16"
+  changeSummary: Aligned the record with the public prefiguration landing page, clarified the roles of Vestiges and Electronic Artefacts and added participation paths.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: internal
-brief: Build a future art and craft mapping platform with CRM-oriented workflows as an applied test context for VASTE.
-context: Art and craft practices are distributed across people, workshops, institutions, materials, places and documents. Vestiges will explore how those relationships can be mapped and managed without flattening their context.
+brief: Design an editorial form that helps people discover, understand and verify what surrounds a work or practice, without reducing a person to a profile or confusing narrative, source and interpretation.
+context: Public works are often reduced to an image, a title and a few metadata fields. The gestures, materials, places, lineages, people and decisions that made them possible remain scattered or invisible. Vestiges explores how to gather them into a readable, sourced dossier governed with the people concerned.
 stakeholders:
   - id: ea:organization:electronic-artefacts
 constraints:
-  - Preserve the context and provenance of mapped practices.
-  - Do not present the platform as a live service before it is available.
-  - Keep Vestiges distinct from the future VASTE product it helps to test.
+  - Present Vestiges as a research and prefiguration project, not as a validated public service.
+  - No form, interview or shared media automatically becomes a profile or publication.
+  - Preserve provenance, knowledge status, rights and visibility levels.
+  - Keep the cultural mission separate from future economic uses that remain to be tested.
 approach:
-  - Map people, organizations, practices, materials, tools, works, places and documents as connected entities.
-  - Explore CRM workflows suited to art and craft.
-  - Use VASTE as the runtime research foundation for graph identity, context, events and public projection.
+  - Listen to a real situation and choose a limited starting point — a work, gesture, material, corpus or territory.
+  - Compose the narrative and select useful media with the people concerned.
+  - Connect people, practices, materials, places, works and sources without erasing their differences.
+  - Distinguish verifiable facts, attributed statements, interpretations and hypotheses.
+  - Review together, then decide separately what may become visible, be corrected or be withdrawn.
 outputs:
   - id: ea:project:vestiges
 outcomes:
-  - A future art and craft mapping and CRM platform.
-  - An applied VASTE test context.
+  - A public prefiguration landing page explaining the proposition, audiences, method and present limits.
+  - A first-contact path that prepares an email without publishing a profile or automatically submitting data to the site.
+  - A candidate framework for co-designing initial dossiers and bounded pilot contexts.
 evidence:
   - id: ea:program:vaste
 credits:
@@ -49,43 +53,84 @@ media:
     type: image
     src: /assets/media/projects/vestiges/logo-vestiges.png
     alt: Vestiges monogram
-    caption: Vestiges monogram for the future art and craft platform.
+    caption: Vestiges monogram for the cultural and editorial project in prefiguration.
 tags:
   - Vestiges
-  - VASTE
   - Art
   - Craft
-  - CRM
-  - Mapping
+  - Transmission
+  - Provenance
+  - Connected knowledge
 disciplines:
-  - Technology
+  - Culture
   - Art
   - Craft
   - Design
+  - Technology
 developmentFocus:
-  - Practice mapping
-  - Relationship management
-  - Graph identity
+  - Durable identity
+  - Explicit relations
+  - Provenance
   - Contextual permissions
   - Public projection
+  - Contribution and review
 marketingFocus:
-  - Art and craft mapping
-  - CRM research
-  - VASTE test platform
+  - Artists and workshops
+  - Research and transmission
+  - Institutions and territories
+  - Cultural dossiers
+  - First pilot context
+socialLinks:
+  - label: Visit Vestiges
+    href: https://www.vestiges.world/
+  - label: Present your project
+    href: https://www.vestiges.world/participer/
 ---
 
-## Position
+## The role of this record
 
-Vestiges is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation.
+This page belongs to the Electronic Artefacts portfolio and evidence system. It documents why Vestiges exists, what is publicly available, the principles guiding its design and the technical foundations under study. It does not replace the product and does not collect applications.
 
-## Platform thesis
+The entry point for artists, workshops, researchers, mediators, schools, institutions and territories is [the official Vestiges website](https://www.vestiges.world/). Anyone wishing to discuss a practice, propose a contribution, test a bounded context or join the first conversations can [present a project to Vestiges](https://www.vestiges.world/participer/) or write to [contact@vestiges.world](mailto:contact@vestiges.world).
 
-The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system.
+## The current proposition
 
-## Applied VASTE research
+Vestiges designs digital dossiers with several levels of depth. A sensitive entry helps people see; a situated narrative helps them understand; sourced relations help them verify. The result is neither a standard portfolio, a marketplace nor an isolated encyclopaedic record.
 
-Vestiges is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product.
+A dossier can begin with a work, gesture, material, practice or transmission story. It aims to make the people, places, decisions, sources and relationships that give the subject meaning readable without claiming to inventory everything.
 
-## Development status
+## Three ways to enter
 
-Vestiges is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.
+### Artists and workshops
+
+Vestiges is for people who want to document a practice beyond the final image: gestures, materials, decisions, workplaces, transmissions and works can recover their context. The first exchange is exploratory and commits nobody to publication.
+
+### Research and transmission
+
+Researchers, mediators and teachers can propose a corpus, source, vocabulary, critique or bounded teaching use. Each contribution should remain attributed, while its status — fact, point of view, interpretation or open question — remains visible.
+
+### Institutions and territories
+
+An institution, school, collection or territory can begin with a bounded context rather than a platform promise: name the use, limit the corpus, distribute responsibilities and define in advance the evidence that will support continuing, adjusting or stopping.
+
+## Method and control
+
+Vestiges listens before publishing. The candidate process begins with a human exchange, limits collection, composes with the people concerned, preserves sources and organises review before any visibility decision. Permission applies to identified elements; it is never inferred from a general agreement.
+
+A person should be able to correct, limit visibility or request withdrawal. Discussing a work does not automatically authorise publication of all its images, exact location, private files or provenance information. Commerce, data uses and future extensions remain separate from first contact.
+
+## Actual state and horizon
+
+Today, Vestiges has a doctrine, identity, public landing page, demonstrative dossier, experience hypotheses and a contact infrastructure under validation. It is preparing its first conversations and bounded pilot contexts from Clermont-Ferrand and Auvergne, while allowing remote exchanges across France.
+
+Vestiges does not yet present a real catalogue, guaranteed audience, marketplace, established community or industrialised public service. Professional workspaces, collaboration, 3D, specialist services or economic activation belong to a horizon to be tested; they are not described as currently available.
+
+## Electronic Artefacts foundations
+
+Electronic Artefacts carries the project, documents its decisions and explores the relational foundations it may require: durable identities, explicit relations, provenance, contextual permissions, knowledge statuses and public projections. VASTE is a research program and possible technical foundation; that relationship is not evidence of a completed product.
+
+Electronic Artefacts remains the reference surface for technical documentation, research links and project history. Vestiges remains the product surface for discovery, contextualisation and opening conversations with future participants.
+
+## Enter Vestiges
+
+To discover the project as it exists today, visit [www.vestiges.world](https://www.vestiges.world/). To discuss your practice, contribute to the transmission of knowledge, propose a cultural context or join the first exchanges, use [the participation path](https://www.vestiges.world/participer/) or email [contact@vestiges.world](mailto:contact@vestiges.world).

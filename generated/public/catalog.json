@@ -4247,9 +4247,9 @@
       "locale": "fr",
       "translationOf": "ea:project:vestiges",
       "title": "Vestiges",
-      "subtitle": "Plateforme de cartographie art et artisanat",
-      "summary": "Vestiges est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
-      "description": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
+      "subtitle": "Dossiers culturels et éditoriaux reliés",
+      "summary": "Vestiges est un projet culturel et éditorial en préfiguration qui conçoit, avec les artistes, les ateliers et les lieux culturels, des dossiers numériques reliant une œuvre à ses gestes, ses matières, ses sources et son histoire.",
+      "description": "La landing publique de Vestiges présente la proposition, la méthode et les parcours de participation. Cette fiche Electronic Artefacts en documente le cadre, les fondations techniques et l’état réel.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
@@ -4257,23 +4257,24 @@
       "publicationClass": "canonical",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Artisanat",
-        "CRM",
-        "Cartographie"
+        "Transmission",
+        "Provenance",
+        "Connaissance reliée"
       ],
       "discipline": [
-        "Technologie",
+        "Culture",
         "Art",
         "Artisanat",
-        "design"
+        "design",
+        "Technologie"
       ],
       "route": "/fr/projects/v6/",
       "identifier": "/fr/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-16",
         "releaseDate": "2026-06-25",
         "creationYear": "2025"
       }
@@ -7398,9 +7399,9 @@
       "type": "project",
       "locale": "en",
       "title": "Vestiges",
-      "subtitle": "Art and Craft Mapping Platform",
-      "summary": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
-      "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
+      "subtitle": "Connected cultural and editorial dossiers",
+      "summary": "Vestiges is a cultural and editorial project in prefiguration, co-designing digital dossiers with artists, workshops and cultural organisations to connect a work with its gestures, materials, sources and history.",
+      "description": "The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and actual state.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
@@ -7408,23 +7409,24 @@
       "publicationClass": "canonical",
       "tags": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Craft",
-        "CRM",
-        "Mapping"
+        "Transmission",
+        "Provenance",
+        "Connected knowledge"
       ],
       "discipline": [
-        "Technology",
+        "Culture",
         "Art",
         "Craft",
-        "Design"
+        "Design",
+        "Technology"
       ],
       "route": "/projects/v6/",
       "identifier": "/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-16",
         "releaseDate": "2026-06-22",
         "creationYear": "2025"
       }

@@ -60,3 +60,28 @@ test("generated project pages keep machine details secondary and avoid fake tele
     throw error;
   }
 });
+
+test("Vestiges dossier hands product participation to the official Vestiges surface", async (context) => {
+  const englishFile = path.resolve("projects/v6/index.html");
+  const frenchFile = path.resolve("fr/projects/v6/index.html");
+  try {
+    const [englishHtml, frenchHtml] = await Promise.all([
+      readFile(englishFile, "utf8"),
+      readFile(frenchFile, "utf8"),
+    ]);
+    for (const html of [englishHtml, frenchHtml]) {
+      assert.match(html, /href="https:\/\/www\.vestiges\.world\/"/);
+      assert.match(html, /href="https:\/\/www\.vestiges\.world\/participer\/"/);
+      assert.match(html, /href="mailto:contact@vestiges\.world"/);
+      assert.doesNotMatch(html, /future platform for mapping art and craft|future plateforme de cartographie/i);
+    }
+    assert.match(englishHtml, /The product conversation continues on Vestiges\./);
+    assert.match(frenchHtml, /La conversation produit continue sur Vestiges\./);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      context.skip("Run npm run build to generate static output");
+      return;
+    }
+    throw error;
+  }
+});

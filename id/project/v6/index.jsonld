@@ -6,14 +6,14 @@
       "@id": "https://electronicartefacts.com/projects/v6/#webpage",
       "url": "https://electronicartefacts.com/projects/v6/",
       "name": "Vestiges",
-      "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
+      "description": "The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and actual state.",
       "inLanguage": "en",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-16",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Vestiges monogram for the future art and craft platform.",
+        "caption": "Vestiges monogram for the cultural and editorial project in prefiguration.",
         "description": "Vestiges monogram"
       },
       "breadcrumb": {
@@ -35,8 +35,8 @@
       "@id": "https://electronicartefacts.com/id/project/v6/",
       "identifier": "ea:project:vestiges",
       "name": "Vestiges",
-      "abstract": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
-      "description": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "abstract": "Vestiges is a cultural and editorial project in prefiguration, co-designing digital dossiers with artists, workshops and cultural organisations to connect a work with its gestures, materials, sources and history.",
+      "description": "Vestiges is a cultural and editorial project in prefiguration, co-designing digital dossiers with artists, workshops and cultural organisations to connect a work with its gestures, materials, sources and history.",
       "url": "https://electronicartefacts.com/projects/v6/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/projects/v6/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Vestiges monogram for the future art and craft platform.",
+        "caption": "Vestiges monogram for the cultural and editorial project in prefiguration.",
         "description": "Vestiges monogram"
       },
       "author": [
@@ -59,18 +59,19 @@
       ],
       "keywords": [
         "Vestiges",
-        "VASTE",
         "Art",
         "Craft",
-        "CRM",
-        "Mapping",
-        "Technology",
-        "Design"
+        "Transmission",
+        "Provenance",
+        "Connected knowledge",
+        "Culture",
+        "Design",
+        "Technology"
       ],
       "inLanguage": "en",
       "dateCreated": "2025-01-01",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-16",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,7 +79,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 144
+      "wordCount": 579,
+      "sameAs": [
+        "https://www.vestiges.world/",
+        "https://www.vestiges.world/participer/"
+      ]
     },
     {
       "@type": "Organization",

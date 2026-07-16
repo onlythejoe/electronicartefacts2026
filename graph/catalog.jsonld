@@ -11,7 +11,7 @@
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "dateModified": "2026-07-13",
+      "dateModified": "2026-07-16",
       "dataset": {
         "@id": "https://electronicartefacts.com/graph/catalog.jsonld#dataset"
       }
@@ -49,7 +49,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "dateModified": "2026-07-13",
+      "dateModified": "2026-07-16",
       "measurementTechnique": "Typed static entity records, JSON-LD identifiers, validated public relation statements and generated search documents.",
       "variableMeasured": [
         {

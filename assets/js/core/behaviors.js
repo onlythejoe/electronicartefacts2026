@@ -200,8 +200,9 @@
 
     const stored = readPreference();
     const preferred = stored || preferredFromBrowser();
-    sync(stored || routeLocale(currentPath));
-    if (preferred !== routeLocale(currentPath) && currentAlternates[preferred]) navigateTo(preferred);
+    const active = routeLocale(currentPath);
+    sync(active);
+    if (currentPath === "/" && preferred !== active && currentAlternates[preferred]) navigateTo(preferred);
 
     trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
     options.forEach((option) => {
