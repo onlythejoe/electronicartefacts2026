@@ -424,6 +424,7 @@ for (const [file, config] of Object.entries(pages)) {
   );
   const runtime = ["graph.html", "search.html"].includes(file) ? "app-full.js" : "app.js";
   const performanceRuntime = `<!-- PERFORMANCE_RUNTIME_START -->
+    <script defer src="/assets/js/analytics.js?v=1"></script>
     <script type="module">window.addEventListener("load", () => window.setTimeout(() => import("/assets/js/${runtime}?v=71"), 1500), { once: true });</script>
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(
