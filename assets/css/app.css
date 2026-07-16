@@ -221,6 +221,9 @@ body::before {
     linear-gradient(90deg, rgba(255, 255, 255, 0.009) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%;
   opacity: 0.22;
+  height: auto;
+  filter: none;
+  transform: none;
 }
 
 body::after {
@@ -230,6 +233,9 @@ body::after {
   pointer-events: none;
   background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.22) 100%);
   opacity: 0.9;
+  height: auto;
+  filter: none;
+  transform: none;
 }
 
 .ambient-field {
@@ -240,7 +246,7 @@ body::after {
   pointer-events: none;
   opacity: 0.46;
   mix-blend-mode: screen;
-  filter: blur(0.2px);
+  contain: strict;
 }
 
 .ambient-field canvas {
@@ -17498,7 +17504,6 @@ input:focus-visible {
     box-shadow 220ms ease,
     filter 220ms ease,
     opacity 220ms ease;
-  will-change: translate, scale, filter;
 }
 
 .home-intent-stage__frame img,
@@ -17508,6 +17513,30 @@ input:focus-visible {
   transition:
     transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 260ms ease;
+}
+
+.intent-hero.is-intent-active .home-intent-stage__frame,
+.intent-hero.is-intent-active .home-intent-stage__channels a,
+.intent-hero.is-intent-active .intent-media-stack a,
+.intent-hero.is-intent-active .projects-hero__frame,
+.intent-hero.is-intent-active .archive-stack__sheet,
+.intent-hero.is-intent-active .research-constellation__node,
+.intent-hero.is-intent-active .about-orbit__node,
+.intent-hero.is-intent-active .contact-signal__card,
+.intent-hero.is-intent-active .knowledge-graph-stage__node,
+.intent-hero.is-intent-active .intent-hero__stats span,
+.intent-hero.is-intent-active .intent-hero__copy .button,
+.intent-hero.is-intent-active .intent-hero__copy .chip,
+.intent-hero.is-intent-active .intent-hero__copy .tag,
+.intent-hero.is-intent-active .computation-field,
+.intent-hero .is-hero-dragging {
+  will-change: translate, scale;
+}
+
+.intent-hero.is-intent-active .home-intent-stage__frame img,
+.intent-hero.is-intent-active .intent-media-stack img,
+.intent-hero.is-intent-active .projects-hero__frame img,
+.intent-hero.is-intent-active .archive-stack__sheet img {
   will-change: transform;
 }
 

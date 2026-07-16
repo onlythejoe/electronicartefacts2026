@@ -28322,13 +28322,18 @@ window.EA_ANALYTICS_CONFIG = {
     if (!canvas || !ctx) return;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
     let width = 0;
     let height = 0;
     let particles = [];
     let rafId = 0;
+    let resizeFrame = 0;
+    let lastPaint = 0;
+    const paintInterval = 1000 / (coarsePointer ? 24 : 30);
 
     const resize = () => {
-      const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+      const dprLimit = coarsePointer ? 1.25 : 1.5;
+      const dpr = Math.max(1, Math.min(dprLimit, window.devicePixelRatio || 1));
       width = Math.max(1, window.innerWidth);
       height = Math.max(1, window.innerHeight);
       canvas.width = Math.round(width * dpr);
@@ -28342,7 +28347,9 @@ window.EA_ANALYTICS_CONFIG = {
         { x: 0.75, y: 0.34, spreadX: 0.3, spreadY: 0.24, warmth: 0.78 },
         { x: 0.45, y: 0.74, spreadX: 0.42, spreadY: 0.2, warmth: 0.9 },
       ];
-      const count = Math.min(150, Math.max(72, Math.round((width * height) / 14500)));
+      const minParticles = coarsePointer ? 42 : 56;
+      const maxParticles = coarsePointer ? 64 : 96;
+      const count = Math.min(maxParticles, Math.max(minParticles, Math.round((width * height) / 22000)));
       particles = Array.from({ length: count }, (_, index) => {
         const anchor = anchors[index % anchors.length];
         const angle = index * 2.399963229728653;
@@ -28365,9 +28372,9 @@ window.EA_ANALYTICS_CONFIG = {
       });
     };
 
-    const draw = () => {
+    const paint = (now) => {
       ctx.clearRect(0, 0, width, height);
-      const time = Date.now() * 0.001;
+      const time = now * 0.001;
       ctx.globalCompositeOperation = "lighter";
 
       particles.forEach((particle) => {
@@ -28399,8 +28406,18 @@ window.EA_ANALYTICS_CONFIG = {
         ctx.fill();
       });
       ctx.globalCompositeOperation = "source-over";
+    };
 
-      if (!reduceMotion && !document.hidden) rafId = requestAnimationFrame(draw);
+    const draw = (now = performance.now()) => {
+      if (reduceMotion) {
+        paint(now);
+        return;
+      }
+      if (now - lastPaint >= paintInterval) {
+        lastPaint = now;
+        paint(now);
+      }
+      if (!document.hidden) rafId = requestAnimationFrame(draw);
     };
 
     const start = () => {
@@ -28416,9 +28433,13 @@ window.EA_ANALYTICS_CONFIG = {
     resize();
     draw();
     window.addEventListener("resize", () => {
-      resize();
-      if (reduceMotion) draw();
-    });
+      if (resizeFrame) cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        resizeFrame = 0;
+        resize();
+        paint(performance.now());
+      });
+    }, { passive: true });
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) stop();
       else start();
@@ -29143,6 +29164,8 @@ window.EA_ANALYTICS_CONFIG = {
       let boost = 0;
       let boostUntil = 0;
       let last = performance.now();
+      let frame = 0;
+      let visible = !("IntersectionObserver" in window);
 
       const shiftCadence = (now) => {
         if (now < nextShift) return;
@@ -29166,6 +29189,10 @@ window.EA_ANALYTICS_CONFIG = {
       });
 
       const tick = (now) => {
+        if (!visible || document.hidden) {
+          frame = 0;
+          return;
+        }
         const dt = Math.min(52, now - last) / 1000;
         last = now;
         shiftCadence(now);
@@ -29184,10 +29211,33 @@ window.EA_ANALYTICS_CONFIG = {
         stage.style.transform = `translate3d(0, ${bob.toFixed(2)}px, 0) rotateZ(${roll.toFixed(2)}deg)`;
         left.style.transform = `rotateZ(${-8 + torsion * 0.35}deg) rotateY(${(-flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(torsion * 0.3).toFixed(2)}deg)`;
         right.style.transform = `rotateZ(${8 - torsion * 0.35}deg) rotateY(${(flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(-torsion * 0.3).toFixed(2)}deg)`;
-        window.requestAnimationFrame(tick);
+        frame = window.requestAnimationFrame(tick);
       };
 
-      window.requestAnimationFrame(tick);
+      const start = () => {
+        if (frame || !visible || document.hidden) return;
+        last = performance.now();
+        frame = window.requestAnimationFrame(tick);
+      };
+      const stop = () => {
+        if (!frame) return;
+        cancelAnimationFrame(frame);
+        frame = 0;
+      };
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(([entry]) => {
+          visible = Boolean(entry?.isIntersecting);
+          if (visible) start();
+          else stop();
+        }, { rootMargin: "120px" });
+        observer.observe(butterfly);
+      }
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) stop();
+        else start();
+      });
+      start();
     });
   };
 
