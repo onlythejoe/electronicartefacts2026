@@ -16635,24 +16635,111 @@ article.publication-body--vaste {
 
 /* Voice Capture Studio — product-specific documentary surface. */
 body[data-entry-id="voice-capture-studio"] {
-  --vcs-ink: #121416;
-  --vcs-muted: #64676a;
-  --vcs-line: rgba(18, 20, 22, 0.13);
-  --vcs-blue: #dff5fb;
-  --vcs-blue-strong: #159bc6;
-  --vcs-rose: #d58a92;
+  --vcs-ink: #101416;
+  --vcs-muted: #3f484c;
+  --vcs-line: rgba(16, 20, 22, 0.24);
+  --vcs-surface: rgba(255, 255, 253, 0.94);
+  --vcs-blue: #d9f1f7;
+  --vcs-blue-strong: #006f93;
+  --vcs-rose: #a94f5c;
 }
 
 body[data-entry-id="voice-capture-studio"] .project-dossier-hero {
+  color: var(--vcs-ink);
+  border-color: var(--vcs-line);
   background:
-    radial-gradient(circle at 84% 18%, rgba(200, 239, 249, 0.7), transparent 31%),
-    linear-gradient(135deg, rgba(255, 255, 253, 0.98), rgba(247, 246, 242, 0.92));
+    radial-gradient(circle at 84% 18%, rgba(200, 239, 249, 0.78), transparent 31%),
+    linear-gradient(135deg, #fffefd, #f1f3f1);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .display-title,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .card__meta,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .lede {
+  color: var(--vcs-ink);
+  text-shadow: none;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .lede {
+  color: var(--vcs-muted);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .eyebrow {
+  color: #74451d;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-breadcrumbs,
+body[data-entry-id="voice-capture-studio"] .project-dossier-breadcrumbs a,
+body[data-entry-id="voice-capture-studio"] .project-dossier-breadcrumbs span {
+  color: #4d565a;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-breadcrumbs a:hover,
+body[data-entry-id="voice-capture-studio"] .project-dossier-breadcrumbs a:focus-visible {
+  color: var(--vcs-ink);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .button--primary {
+  border-color: var(--vcs-ink);
+  color: #fff;
+  background: var(--vcs-ink);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .button--secondary {
+  border-color: rgba(16, 20, 22, 0.32);
+  color: var(--vcs-ink);
+  background: rgba(255, 255, 253, 0.86);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .button--secondary:hover,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .button--secondary:focus-visible {
+  border-color: var(--vcs-blue-strong);
+  background: var(--vcs-blue);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .metric-pill {
+  border-color: var(--vcs-line);
+  color: var(--vcs-ink);
+  background: rgba(255, 255, 253, 0.88);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .metric-pill span,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .metric-pill em {
+  color: #4d565a;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .chip,
+body[data-entry-id="voice-capture-studio"] .project-dossier-nav .tag {
+  border-color: rgba(16, 20, 22, 0.25);
+  color: #30383c;
+  background: rgba(255, 255, 253, 0.82);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-nav {
+  border-color: rgba(16, 20, 22, 0.2);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-nav .tag:hover,
+body[data-entry-id="voice-capture-studio"] .project-dossier-nav .tag:focus-visible {
+  border-color: var(--vcs-blue-strong);
+  color: var(--vcs-ink);
+  background: var(--vcs-blue);
 }
 
 body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   border-color: var(--vcs-line);
-  background: rgba(255, 255, 255, 0.58);
+  background: var(--vcs-surface);
   box-shadow: 0 2rem 5rem rgba(35, 45, 48, 0.14);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual figcaption {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  background: rgba(10, 14, 16, 0.93);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual figcaption span,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual figcaption strong {
+  color: #fff;
 }
 
 .vcs-experience {
@@ -16683,6 +16770,10 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   margin-bottom: clamp(1.5rem, 4vw, 3rem);
 }
 
+.vcs-experience .eyebrow {
+  color: #74451d;
+}
+
 .vcs-experience__intro .lede,
 .vcs-knowledge-roadmap .lede {
   color: var(--vcs-muted);
@@ -16702,7 +16793,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   overflow: hidden;
   border: 1px solid var(--vcs-line);
   border-radius: clamp(1.45rem, 3vw, 2.6rem);
-  background: rgba(255, 255, 255, 0.61);
+  background: var(--vcs-surface);
   box-shadow:
     0 2.5rem 6rem rgba(30, 39, 42, 0.13),
     inset 0 1px 0 rgba(255, 255, 255, 0.92);
@@ -16733,7 +16824,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
 .vcs-instrument__signal span {
   position: absolute;
   inset: auto 1rem 0.9rem;
-  color: rgba(18, 20, 22, 0.48);
+  color: #435156;
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -16761,7 +16852,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   border: 1px solid var(--vcs-line);
   border-radius: 999px;
   color: var(--vcs-muted);
-  background: rgba(255, 255, 255, 0.7);
+  background: #fff;
   box-shadow: 0 0.7rem 1.8rem rgba(29, 38, 41, 0.06);
   font: inherit;
   font-size: 0.82rem;
@@ -16773,7 +16864,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
 .vcs-mode-tab:focus-visible,
 .vcs-mode-tab.is-active {
   color: var(--vcs-ink);
-  border-color: rgba(21, 155, 198, 0.48);
+  border-color: var(--vcs-blue-strong);
   background: var(--vcs-blue);
   transform: translateY(-1px);
 }
@@ -16797,6 +16888,10 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   letter-spacing: -0.055em;
 }
 
+.vcs-mode-panel > div > p:first-child {
+  color: var(--vcs-blue-strong);
+}
+
 .vcs-mode-panel > div > p:last-child {
   max-width: 31rem;
   color: var(--vcs-muted);
@@ -16815,7 +16910,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   padding: 1rem 1.1rem;
   border: 1px solid var(--vcs-line);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.62);
+  background: var(--vcs-surface);
 }
 
 .vcs-mode-panel dt {
@@ -16854,7 +16949,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   padding: 1rem;
   border-block: 1px solid var(--vcs-line);
   border-left: 1px solid var(--vcs-line);
-  background: rgba(255, 255, 255, 0.44);
+  background: var(--vcs-surface);
 }
 
 .vcs-pipeline__steps li:first-child {
@@ -16909,7 +17004,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   border-left: 3px solid var(--vcs-rose);
   border-radius: 0 1rem 1rem 0;
   color: var(--vcs-muted);
-  background: rgba(255, 255, 255, 0.58);
+  background: var(--vcs-surface);
 }
 
 .vcs-knowledge-roadmap__index {
@@ -16929,7 +17024,7 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   border: 1px solid var(--vcs-line);
   border-radius: 1rem;
   color: var(--vcs-ink);
-  background: rgba(255, 255, 255, 0.58);
+  background: var(--vcs-surface);
   font-weight: 650;
   text-decoration: none;
   transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
@@ -16937,8 +17032,8 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
 
 .vcs-knowledge-roadmap__index a:hover,
 .vcs-knowledge-roadmap__index a:focus-visible {
-  border-color: rgba(21, 155, 198, 0.5);
-  background: rgba(223, 245, 251, 0.82);
+  border-color: var(--vcs-blue-strong);
+  background: var(--vcs-blue);
   transform: translateY(-2px);
 }
 
@@ -16954,13 +17049,14 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   padding: clamp(1.2rem, 2.5vw, 1.8rem);
   border: 1px solid var(--vcs-line);
   border-radius: 1.35rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--vcs-surface);
   box-shadow: 0 1.4rem 3.2rem rgba(35, 45, 48, 0.07);
 }
 
 .vcs-knowledge-roadmap__briefs article:target {
-  outline: 3px solid rgba(21, 155, 198, 0.23);
-  background: rgba(238, 250, 252, 0.92);
+  outline: 3px solid var(--vcs-blue-strong);
+  outline-offset: 3px;
+  background: #eefafc;
 }
 
 .vcs-knowledge-roadmap__briefs article > p:first-child {
@@ -16991,6 +17087,13 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero__visual {
   color: var(--vcs-ink);
   font-size: 0.76rem;
   font-weight: 700;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero a:focus-visible,
+.vcs-experience a:focus-visible,
+.vcs-experience button:focus-visible {
+  outline: 3px solid #006f93;
+  outline-offset: 3px;
 }
 
 @media (max-width: 70rem) {
