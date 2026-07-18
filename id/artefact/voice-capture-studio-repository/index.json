@@ -6,8 +6,8 @@
   },
   "title": "Voice Capture Studio Repository",
   "subtitle": "Open Source Code Artefact",
-  "abstract": "The Voice Capture Studio repository contains the open-source React, Vite and TypeScript application, documentation, tests and GitHub Pages deployment workflow for local-first voice capture.",
-  "description": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+  "abstract": "The Voice Capture Studio repository contains the open-source five-mode voice instrument, its signal-grounded design constitution, deterministic observation pipelines, tests and GitHub Pages deployment workflow.",
+  "description": "A code artefact record for the public Voice Capture Studio repository, local audio architecture, evidence contracts and browser-native interaction design.",
   "locale": "en",
   "visibility": "public",
   "publicationClass": "published",
@@ -15,10 +15,10 @@
   "maturity": "development",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "createdAt": "2026-07-09",
     "publishedAt": "2026-07-09",
-    "modifiedAt": "2026-07-09"
+    "modifiedAt": "2026-07-18"
   },
   "authors": [
     {
@@ -43,13 +43,13 @@
       "title": "Voice Capture Studio repository",
       "url": "https://github.com/electronicartefacts/voice-capture-studio",
       "publisher": "GitHub",
-      "accessedAt": "2026-07-09"
+      "accessedAt": "2026-07-18"
     },
     {
       "title": "Voice Capture Studio live demo",
       "url": "https://electronicartefacts.github.io/voice-capture-studio/",
       "publisher": "GitHub Pages",
-      "accessedAt": "2026-07-09"
+      "accessedAt": "2026-07-18"
     }
   ],
   "rights": "Copyright 2026 Electronic Artefacts.",
@@ -63,7 +63,7 @@
   "format": "Git repository",
   "preservationStatus": "active",
   "significance": "The repository is the public source of truth for the application code, architecture notes, export contracts, tests, contribution workflow and GitHub Pages deployment.",
-  "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>The repository contains the open-source implementation of Voice Capture Studio: a static browser application for guided speech recording, local workspace state and structured WAV plus JSON exports.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>Electronic Artefacts publishes and maintains the repository at <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>. The live application is deployed through GitHub Pages at <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a>.</p>\n<h2 id=\"significance\">Significance</h2>\n<p>This code artefact makes the product inspectable. It preserves the architecture doctrine, system model, corpus structure, workspace structure, export structure, tests, contribution guidelines and deployment workflow used to evaluate the application.</p>\n<h2 id=\"rights\">Rights</h2>\n<p>Voice Capture Studio is released under the MIT License. User voice data and generated workspaces do not belong in the repository.</p>\n",
+  "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>The repository contains the shipped implementation of five voice workflows, local PCM capture and media segmentation, signal-derived interaction surfaces, versioned observation graphs, browser-private workspaces and structured WAV, JSON, JSONL and CSV exports.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>Electronic Artefacts publishes and maintains the repository at <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>. The live application is deployed through GitHub Pages at <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a>.</p>\n<h2 id=\"significance\">Significance</h2>\n<p>This code artefact makes both product and research claims inspectable. It preserves the phenomenology, mode experience grid, architecture doctrine, system model, capture audit, corpus and workspace contracts, export structure, tests and deployment workflow used to evaluate the application.</p>\n<h2 id=\"rights\">Rights</h2>\n<p>Voice Capture Studio is released under the MIT License. User voice data and generated workspaces do not belong in the repository.</p>\n",
   "headings": [
     "Description",
     "Provenance",

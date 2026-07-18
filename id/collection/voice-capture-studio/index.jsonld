@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/archive/collections/voice-capture-studio/#webpage",
       "url": "https://electronicartefacts.com/archive/collections/voice-capture-studio/",
       "name": "Voice Capture Studio Collection",
-      "description": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+      "description": "A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.",
       "inLanguage": "en",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/id/collection/voice-capture-studio/",
       "identifier": "ea:collection:voice-capture-studio",
       "name": "Voice Capture Studio Collection",
-      "abstract": "The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.",
-      "description": "The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.",
+      "abstract": "The Voice Capture Studio Collection connects the five-mode product, source repository and knowledge needed to understand signal-grounded UX, local audio pipelines, deterministic evidence and open voice datasets.",
+      "description": "The Voice Capture Studio Collection connects the five-mode product, source repository and knowledge needed to understand signal-grounded UX, local audio pipelines, deterministic evidence and open voice datasets.",
       "url": "https://electronicartefacts.com/archive/collections/voice-capture-studio/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/archive/collections/voice-capture-studio/#webpage"
@@ -69,7 +69,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-07-09",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145
+      "wordCount": 157
     },
     {
       "@type": "Organization",

@@ -5,8 +5,8 @@ slug:
   canonical: voice-capture-studio
 title: Voice Capture Studio Collection
 subtitle: Voice Workflow Collection
-abstract: The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.
-description: A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.
+abstract: The Voice Capture Studio Collection connects the five-mode product, source repository and knowledge needed to understand signal-grounded UX, local audio pipelines, deterministic evidence and open voice datasets.
+description: A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.
 locale: en
 visibility: public
 publicationClass: published
@@ -14,14 +14,14 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 2.0.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-09"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Voice Capture Studio is best understood as a browser software artefact where speech recording, local-first privacy, metadata and downstream machine-learning workflows meet.
+thesis: Voice Capture Studio is best understood where acoustic interaction design, local-first browser engineering, deterministic observation, metadata provenance and downstream voice workflows meet.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -38,7 +38,7 @@ explicitMembers:
   - id: ea:concept:provenance
   - id: ea:concept:human-computer-interaction
   - id: ea:technology:web-audio-api
-selectionNote: The collection keeps the live app close to the vocabulary needed to evaluate its recording model, privacy boundary and export structure.
+selectionNote: The collection keeps the live instrument close to the vocabulary needed to evaluate its five modes, signal claims, decision boundaries, privacy model and export structure.
 tags:
   - Voice Capture Studio
   - Voice Technology
@@ -54,7 +54,7 @@ disciplines:
 
 ## Thesis
 
-Voice Capture Studio is not only a product page. It is a compact knowledge neighborhood around local speech recording, structured exports and browser-based privacy boundaries.
+Voice Capture Studio is not only a product page. It is a compact knowledge neighborhood around trustworthy audio interaction, local processing, structured evidence, open exports and browser capability boundaries.
 
 ## Selection logic
 
@@ -70,4 +70,4 @@ The collection starts with the project and repository, then connects them to the
 
 ## Future expansion
 
-Future members should include release notes, screenshots, export examples and dataset-readiness reports once those artefacts can be published without exposing private voice data.
+Future members should include the six proposed Knowledge articles in the project dossier, release notes, export examples and dataset-readiness reports once those artefacts can be published without exposing private voice data.

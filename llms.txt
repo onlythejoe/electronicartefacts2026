@@ -31,7 +31,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 
 ## Canonical Records
 
-- [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.
+- [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A signal-grounded voice studio in the browser, combining five capture and segmentation modes, glass-like interaction design, deterministic evidence pipelines and open...
 - [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.
 - [VASTE](https://electronicartefacts.com/programs/vaste/): The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record...
 - [Vestiges](https://electronicartefacts.com/projects/v6/): The public Vestiges landing page presents the proposition, method and participation paths. This Electronic Artefacts record documents its frame, technical foundations and...
@@ -41,7 +41,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
 - [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during...
 - [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
-- [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées...
+- [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio vocal ancré dans le signal, réunissant cinq modes de capture et segmentation, un design de verre translucide, des pipelines de preuves déterministes et des exports...
 - [Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?](https://electronicartefacts.com/fr/research/questions/speech-dataset-reproducibility/): Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.
 - [Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?](https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/): Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
 - [Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?](https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/): Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.
@@ -58,4 +58,4 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Humans.txt](https://electronicartefacts.com/humans.txt)
 - [Security.txt](https://electronicartefacts.com/.well-known/security.txt)
 
-Last curated source update: 2026-07-16
+Last curated source update: 2026-07-18

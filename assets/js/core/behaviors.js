@@ -1821,6 +1821,148 @@
   };
 
   const initProjectDossier = (root = document) => {
+    root.querySelectorAll("[data-vcs-experience]").forEach((experience) => {
+      if (experience.dataset.boundVcsExperience === "true") return;
+      experience.dataset.boundVcsExperience = "true";
+
+      const instrument = experience.querySelector("[data-vcs-instrument]");
+      const signal = instrument?.querySelector(".vcs-instrument__signal");
+      const canvas = signal?.querySelector("[data-vcs-signal-canvas]");
+      const context = canvas?.getContext("2d");
+      const tabs = [...(instrument?.querySelectorAll("[data-vcs-mode]") || [])];
+      const panels = [...(instrument?.querySelectorAll("[data-vcs-mode-panel]") || [])];
+      if (!instrument || !signal || !canvas || !context || !tabs.length) return;
+
+      const profiles = {
+        free: { frequency: 2.2, detail: 7.1, amplitude: 0.29, color: "#159bc6" },
+        lexical: { frequency: 4.7, detail: 12.2, amplitude: 0.19, color: "#b75c7a" },
+        dataset: { frequency: 3.4, detail: 8.8, amplitude: 0.25, color: "#168eb6" },
+        dubbing: { frequency: 2.7, detail: 15.1, amplitude: 0.22, color: "#d27b65" },
+        performance: { frequency: 1.8, detail: 6.2, amplitude: 0.34, color: "#7b6bc1" },
+      };
+      const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches || false;
+      let activeMode = tabs[0].dataset.vcsMode || "free";
+      let width = 1;
+      let height = 1;
+      let pointerX = 0.5;
+      let pointerY = 0.5;
+      let pointerActive = false;
+      let animationFrame = 0;
+
+      const resize = () => {
+        const rect = signal.getBoundingClientRect();
+        const dpr = Math.max(1, Math.min(1.75, window.devicePixelRatio || 1));
+        width = Math.max(1, rect.width);
+        height = Math.max(1, rect.height);
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+
+      const draw = (now = 0) => {
+        const profile = profiles[activeMode] || profiles.free;
+        const time = reduceMotion ? 0 : now * 0.00018;
+        const centerY = height * 0.5;
+        const pointerGain = pointerActive ? 0.76 + (1 - pointerY) * 0.55 : 0.86;
+        const amplitude = height * profile.amplitude * pointerGain;
+        context.clearRect(0, 0, width, height);
+
+        const glow = context.createLinearGradient(0, 0, width, 0);
+        glow.addColorStop(0, "rgba(21, 155, 198, 0.08)");
+        glow.addColorStop(Math.max(0, pointerX - 0.16), "rgba(21, 155, 198, 0.2)");
+        glow.addColorStop(Math.min(1, pointerX + 0.16), "rgba(213, 138, 146, 0.18)");
+        glow.addColorStop(1, "rgba(123, 107, 193, 0.07)");
+        context.fillStyle = glow;
+        context.fillRect(0, 0, width, height);
+
+        context.beginPath();
+        for (let x = 0; x <= width; x += 2) {
+          const progress = x / width;
+          const envelope = Math.pow(Math.sin(Math.PI * progress), 0.58);
+          const primary = Math.sin(progress * Math.PI * 2 * profile.frequency + time * 2.1);
+          const detail = Math.sin(progress * Math.PI * 2 * profile.detail - time * 1.4) * 0.24;
+          const pointerRipple = pointerActive
+            ? Math.sin((progress - pointerX) * Math.PI * 17) * Math.exp(-Math.abs(progress - pointerX) * 9) * 0.28
+            : 0;
+          const y = centerY + (primary + detail + pointerRipple) * amplitude * envelope;
+          if (x === 0) context.moveTo(x, y);
+          else context.lineTo(x, y);
+        }
+        context.lineWidth = 10;
+        context.strokeStyle = `${profile.color}1f`;
+        context.stroke();
+        context.lineWidth = 1.65;
+        context.strokeStyle = profile.color;
+        context.stroke();
+
+        if (!reduceMotion && experience.isConnected) animationFrame = window.requestAnimationFrame(draw);
+      };
+
+      const activate = (tab) => {
+        activeMode = tab.dataset.vcsMode || "free";
+        tabs.forEach((item) => {
+          const active = item === tab;
+          item.classList.toggle("is-active", active);
+          item.setAttribute("aria-selected", active ? "true" : "false");
+          item.tabIndex = active ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          const active = panel.dataset.vcsModePanel === activeMode;
+          panel.classList.toggle("is-active", active);
+          panel.hidden = !active;
+        });
+        if (reduceMotion) draw();
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.tabIndex = index === 0 ? 0 : -1;
+        tab.addEventListener("click", () => activate(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+          event.preventDefault();
+          const nextIndex = event.key === "Home"
+            ? 0
+            : event.key === "End"
+              ? tabs.length - 1
+              : event.key === "ArrowRight"
+                ? (index + 1) % tabs.length
+                : (index - 1 + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          activate(tabs[nextIndex]);
+        });
+      });
+
+      signal.addEventListener("pointerenter", () => {
+        pointerActive = true;
+      }, { passive: true });
+      signal.addEventListener("pointermove", (event) => {
+        const rect = signal.getBoundingClientRect();
+        pointerX = Math.max(0, Math.min(1, (event.clientX - rect.left) / Math.max(1, rect.width)));
+        pointerY = Math.max(0, Math.min(1, (event.clientY - rect.top) / Math.max(1, rect.height)));
+        if (reduceMotion) draw();
+      }, { passive: true });
+      signal.addEventListener("pointerleave", () => {
+        pointerActive = false;
+        if (reduceMotion) draw();
+      }, { passive: true });
+
+      const resizeObserver = typeof ResizeObserver === "function" ? new ResizeObserver(() => {
+        resize();
+        if (reduceMotion) draw();
+      }) : null;
+      resizeObserver?.observe(signal);
+      resize();
+      draw();
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden || reduceMotion) return;
+        window.cancelAnimationFrame(animationFrame);
+        animationFrame = window.requestAnimationFrame(draw);
+      });
+    });
+
     root.querySelectorAll("[data-project-moodboard]").forEach((board) => {
       if (board.dataset.boundProjectMoodboard === "true") return;
       board.dataset.boundProjectMoodboard = "true";

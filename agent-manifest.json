@@ -86,7 +86,7 @@
     "collection": 12,
     "artefact": 6
   },
-  "lastModified": "2026-07-16",
+  "lastModified": "2026-07-18",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -365,7 +365,7 @@
       "translationOf": "ea:project:voice-capture-studio",
       "type": "project",
       "title": "Voice Capture Studio",
-      "summary": "Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.",
+      "summary": "Un studio vocal ancré dans le signal, réunissant cinq modes de capture et segmentation, un design de verre translucide, des pipelines de preuves déterministes et des exports WAV/métadonnées ouverts.",
       "url": "https://electronicartefacts.com/fr/projects/voice-capture-studio/",
       "route": "/fr/projects/voice-capture-studio/",
       "identifier": "https://electronicartefacts.com/fr/id/project/voice-capture-studio/",
@@ -379,22 +379,24 @@
         "open source",
         "local-first",
         "vie privée",
+        "recherche déterministe",
+        "interaction humain-machine",
+        "pipeline audio",
         "ingénierie audio",
         "développement web",
-        "interaction humain-machine",
         "apprentissage automatique"
       ],
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:project:voice-capture-studio",
       "locale": "en",
       "type": "project",
       "title": "Voice Capture Studio",
-      "summary": "A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.",
+      "summary": "A signal-grounded voice studio in the browser, combining five capture and segmentation modes, glass-like interaction design, deterministic evidence pipelines and open WAV/metadata exports.",
       "url": "https://electronicartefacts.com/projects/voice-capture-studio/",
       "route": "/projects/voice-capture-studio/",
       "identifier": "https://electronicartefacts.com/id/project/voice-capture-studio/",
@@ -408,15 +410,17 @@
         "Open Source",
         "Local First",
         "Privacy",
+        "Deterministic Research",
+        "Human Computer Interaction",
+        "Audio Pipeline",
         "Audio Engineering",
         "Web Development",
-        "Human Computer Interaction",
         "Machine Learning"
       ],
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:researchField:runtime-theory",
@@ -6333,7 +6337,7 @@
       "translationOf": "ea:collection:voice-capture-studio",
       "type": "collection",
       "title": "Collection Voice Capture Studio",
-      "summary": "Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.",
+      "summary": "Collection éditoriale autour de Voice Capture Studio comme instrument vocal browser-native et surface de recherche.",
       "url": "https://electronicartefacts.com/fr/archive/collections/voice-capture-studio/",
       "route": "/fr/archive/collections/voice-capture-studio/",
       "identifier": "https://electronicartefacts.com/fr/id/collection/voice-capture-studio/",
@@ -6353,7 +6357,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:collection:knowledge-hub-foundations-fr",
@@ -6641,7 +6645,7 @@
       "locale": "en",
       "type": "collection",
       "title": "Voice Capture Studio Collection",
-      "summary": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+      "summary": "A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.",
       "url": "https://electronicartefacts.com/archive/collections/voice-capture-studio/",
       "route": "/archive/collections/voice-capture-studio/",
       "identifier": "https://electronicartefacts.com/id/collection/voice-capture-studio/",
@@ -6661,7 +6665,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:artefact:voice-capture-studio-repository-fr",
@@ -6669,7 +6673,7 @@
       "translationOf": "ea:artefact:voice-capture-studio-repository",
       "type": "artefact",
       "title": "Dépôt Voice Capture Studio",
-      "summary": "Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.",
+      "summary": "Fiche d’artefact pour le dépôt public Voice Capture Studio, son architecture audio locale, ses contrats de preuves et son design browser-native.",
       "url": "https://electronicartefacts.com/fr/archive/artefacts/voice-capture-studio-repository/",
       "route": "/fr/archive/artefacts/voice-capture-studio-repository/",
       "identifier": "https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/",
@@ -6687,7 +6691,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:artefact:vab-interface-prototype-fr",
@@ -6794,7 +6798,7 @@
       "locale": "en",
       "type": "artefact",
       "title": "Voice Capture Studio Repository",
-      "summary": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+      "summary": "A code artefact record for the public Voice Capture Studio repository, local audio architecture, evidence contracts and browser-native interaction design.",
       "url": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/",
       "route": "/archive/artefacts/voice-capture-studio-repository/",
       "identifier": "https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/",
@@ -6812,7 +6816,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     }
   ]
 }

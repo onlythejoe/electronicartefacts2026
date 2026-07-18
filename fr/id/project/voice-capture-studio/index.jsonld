@@ -6,15 +6,15 @@
       "@id": "https://electronicartefacts.com/fr/projects/voice-capture-studio/#webpage",
       "url": "https://electronicartefacts.com/fr/projects/voice-capture-studio/",
       "name": "Voice Capture Studio",
-      "description": "Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.",
+      "description": "Un studio vocal ancré dans le signal, réunissant cinq modes de capture et segmentation, un design de verre translucide, des pipelines de preuves déterministes et des exports WAV/métadonnées ouverts.",
       "inLanguage": "fr",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp",
-        "caption": "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.",
-        "description": "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio."
+        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
+        "caption": "Interface livrée en juillet 2026 : panneaux de verre blanc chaud, capsules des cinq modes et découpe lexicale locale.",
+        "description": "Interface actuelle de Voice Capture Studio montrant les cinq modes et la console locale de découpe lexicale."
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/projects/voice-capture-studio/#breadcrumb"
@@ -35,17 +35,17 @@
       "@id": "https://electronicartefacts.com/fr/id/project/voice-capture-studio/",
       "identifier": "ea:project:voice-capture-studio-fr",
       "name": "Voice Capture Studio",
-      "abstract": "Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.",
-      "description": "Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.",
+      "abstract": "Voice Capture Studio est un instrument de navigateur open source et local-first pour capturer, interpréter, réviser et découper la voix au sein de cinq parcours spécialisés.",
+      "description": "Voice Capture Studio est un instrument de navigateur open source et local-first pour capturer, interpréter, réviser et découper la voix au sein de cinq parcours spécialisés.",
       "url": "https://electronicartefacts.com/fr/projects/voice-capture-studio/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/projects/voice-capture-studio/#webpage"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-capture-640.webp",
-        "caption": "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.",
-        "description": "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio."
+        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
+        "caption": "Interface livrée en juillet 2026 : panneaux de verre blanc chaud, capsules des cinq modes et découpe lexicale locale.",
+        "description": "Interface actuelle de Voice Capture Studio montrant les cinq modes et la console locale de découpe lexicale."
       },
       "author": [
         {
@@ -66,15 +66,17 @@
         "open source",
         "local-first",
         "vie privée",
+        "recherche déterministe",
+        "interaction humain-machine",
+        "pipeline audio",
         "ingénierie audio",
         "développement web",
-        "interaction humain-machine",
         "apprentissage automatique"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-07-09",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -83,7 +85,7 @@
       },
       "license": "MIT",
       "isAccessibleForFree": true,
-      "wordCount": 957,
+      "wordCount": 1427,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -101,6 +103,24 @@
           "@type": "CreativeWork",
           "name": "Voice Capture Studio architecture doctrine",
           "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md",
+          "publisher": "GitHub"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Voice Capture Studio phenomenology",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/design/PHENOMENOLOGY.md",
+          "publisher": "GitHub"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Voice Capture Studio mode experience grid",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/mode-experience-grid.md",
+          "publisher": "GitHub"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Voice Capture Studio capture technology audit",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/capture-technology-audit.md",
           "publisher": "GitHub"
         }
       ],

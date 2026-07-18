@@ -6,8 +6,8 @@ slug:
   canonical: voice-capture-studio
 title: Collection Voice Capture Studio
 subtitle: Collection de workflows vocaux
-abstract: La collection Voice Capture Studio réunit le projet, le dépôt source et le vocabulaire utile pour comprendre l’enregistrement vocal local-first, les datasets vocaux, le logiciel de navigateur et les exports privacy-first.
-description: Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.
+abstract: La collection Voice Capture Studio relie le produit à cinq modes, son dépôt et les connaissances utiles pour comprendre UX ancrée dans le signal, pipelines audio locaux, preuves déterministes et datasets vocaux ouverts.
+description: Collection éditoriale autour de Voice Capture Studio comme instrument vocal browser-native et surface de recherche.
 locale: fr
 visibility: public
 publicationClass: published
@@ -15,14 +15,14 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 2.0.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-09"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Voice Capture Studio se comprend comme un artefact logiciel de navigateur où enregistrement vocal, vie privée local-first, métadonnées et workflows de machine learning en aval se rencontrent.
+thesis: Voice Capture Studio se comprend au croisement du design d’interaction acoustique, de l’ingénierie navigateur local-first, de l’observation déterministe, de la provenance et des workflows vocaux en aval.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -39,7 +39,7 @@ explicitMembers:
   - id: ea:concept:provenance
   - id: ea:concept:human-computer-interaction
   - id: ea:technology:web-audio-api
-selectionNote: La collection garde l’application live proche du vocabulaire nécessaire pour évaluer son modèle d’enregistrement, sa frontière de vie privée et sa structure d’export.
+selectionNote: La collection garde l’instrument live proche du vocabulaire nécessaire pour évaluer ses cinq modes, ses affirmations de signal, ses frontières de décision, son modèle de vie privée et ses exports.
 tags:
   - Voice Capture Studio
   - technologie vocale
@@ -55,7 +55,7 @@ disciplines:
 
 ## Thèse
 
-Voice Capture Studio n’est pas seulement une fiche produit. C’est un petit voisinage de connaissance autour de l’enregistrement vocal local, des exports structurés et des frontières de vie privée dans le navigateur.
+Voice Capture Studio n’est pas seulement une fiche produit. C’est un voisinage de connaissance autour de l’interaction audio digne de confiance, du traitement local, des preuves structurées, des exports ouverts et des limites du navigateur.
 
 ## Logique de sélection
 
@@ -71,4 +71,4 @@ La collection commence par le projet et le dépôt, puis les relie aux concepts 
 
 ## Évolution
 
-Les futurs membres devraient inclure notes de release, captures, exemples d’export et rapports de préparation dataset dès que ces artefacts pourront être publiés sans exposer de données vocales privées.
+Les futurs membres devraient inclure les six articles Connaissance proposés dans le dossier projet, des notes de release, exemples d’export et rapports de préparation dataset publiables sans exposer de voix privées.

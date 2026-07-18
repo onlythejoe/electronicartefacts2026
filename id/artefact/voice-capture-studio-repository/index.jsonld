@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/#webpage",
       "url": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/",
       "name": "Voice Capture Studio Repository",
-      "description": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+      "description": "A code artefact record for the public Voice Capture Studio repository, local audio architecture, evidence contracts and browser-native interaction design.",
       "inLanguage": "en",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/",
       "identifier": "ea:artefact:voice-capture-studio-repository",
       "name": "Voice Capture Studio Repository",
-      "abstract": "The Voice Capture Studio repository contains the open-source React, Vite and TypeScript application, documentation, tests and GitHub Pages deployment workflow for local-first voice capture.",
-      "description": "The Voice Capture Studio repository contains the open-source React, Vite and TypeScript application, documentation, tests and GitHub Pages deployment workflow for local-first voice capture.",
+      "abstract": "The Voice Capture Studio repository contains the open-source five-mode voice instrument, its signal-grounded design constitution, deterministic observation pipelines, tests and GitHub Pages deployment workflow.",
+      "description": "The Voice Capture Studio repository contains the open-source five-mode voice instrument, its signal-grounded design constitution, deterministic observation pipelines, tests and GitHub Pages deployment workflow.",
       "url": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/#webpage"
@@ -67,7 +67,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-07-09",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
       },
       "license": "MIT",
       "isAccessibleForFree": true,
-      "wordCount": 104,
+      "wordCount": 116,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -33,6 +33,10 @@ const compactId = (id: string): string => id.split(":").at(-1) || id;
 const isVestigesProject = (project: ProjectEntity): boolean =>
   project.id === "ea:project:vestiges" || project.translationOf === "ea:project:vestiges";
 
+const isVoiceCaptureStudioProject = (project: ProjectEntity): boolean =>
+  project.id === "ea:project:voice-capture-studio" ||
+  project.translationOf === "ea:project:voice-capture-studio";
+
 const colorMap: Record<string, string> = {
   amber: "#d89f4f",
   black: "#050505",
@@ -868,6 +872,121 @@ const renderVestigesGateway = (project: ProjectEntity): string => {
     </section>`;
 };
 
+const renderVoiceCaptureStudioExperience = (project: ProjectEntity): string => {
+  if (!isVoiceCaptureStudioProject(project)) return "";
+
+  const modes = project.locale === "fr"
+    ? [
+        ["free", "Capture libre", "Une prise immédiate sans corpus", "Micro, voix, langue", "WAV local + provenance", "Arrêt manuel, jusqu’à dix minutes"],
+        ["lexical", "Découpe lexicale", "Un média transformé en mots vérifiables", "Audio ou vidéo locale", "ZIP de WAV + JSON + CSV", "Chaque mot garde son timecode et sa preuve"],
+        ["dataset", "Dataset ML", "Une voix cohérente, comparable et traçable", "Corpus, profil, calibration", "Prises + manifeste dataset", "Seuls les keepers font progresser la couverture"],
+        ["dubbing", "Doublage", "Une réplique jouée contre l’image", "Script, SRT/VTT, vidéo", "Voix isolée + repères de scène", "Voir, caler, jouer et reprendre sans sortir du studio"],
+        ["performance", "Interprétation", "Une performance guidée sans contaminer la voix", "Texte, support audio, casque", "Voix isolée + manifeste", "Le support reste séparé du WAV capturé"],
+      ]
+    : [
+        ["free", "Free capture", "An immediate take without a corpus", "Microphone, voice, language", "Local WAV + provenance", "Manual stop, up to ten minutes"],
+        ["lexical", "Lexical segmentation", "Media transformed into verifiable words", "Local audio or video", "WAV ZIP + JSON + CSV", "Every word keeps its timecode and evidence"],
+        ["dataset", "ML dataset", "A coherent, comparable and traceable voice", "Corpus, profile, calibration", "Takes + dataset manifest", "Only keepers advance coverage"],
+        ["dubbing", "Dubbing", "A line performed against picture", "Script, SRT/VTT, video", "Isolated voice + scene cues", "See, cue, perform and retry inside one studio"],
+        ["performance", "Performance", "A guided performance without contaminating the voice", "Text, audio support, headphones", "Isolated voice + manifest", "The guide track stays out of the captured WAV"],
+      ];
+
+  const articles = project.locale === "fr"
+    ? [
+        ["knowledge-article-01", "Concevoir une interface audio qui ne simule jamais la mesure", "UX / signal", "Filament, halo, silence, latence et mouvement réduit comme lois d’un instrument plutôt que décor d’une application."],
+        ["knowledge-article-02", "Du microphone au dataset : anatomie d’une prise vocale traçable", "Pipeline / provenance", "PCM, observations, qualité, persistance, checksums et manifeste d’entraînement sans confondre préparation et entraînement."],
+        ["knowledge-article-03", "Recherche déterministe : décider sans transformer une estimation en vérité", "Méthode / confiance", "Comment séparer corpus déclaré, signal mesuré, ASR optionnel, alignement estimé, décision fusionnée et validation acoustique externe."],
+        ["knowledge-article-04", "Découper localement la parole et le chant, mot par mot", "Audio / IA locale", "Décodage 16 kHz, VAD adaptatif, Whisper local, séparation vocale, consensus multi-passes et export vérifiable."],
+        ["knowledge-article-05", "Pourquoi cinq modes de voix exigent cinq critères de réussite", "Produit / UX", "Capture libre, Dataset ML, Doublage, Interprétation et Découpe lexicale comparés par entrées, gestes et sorties."],
+        ["knowledge-article-06", "Le navigateur comme studio local-first", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA et dégradation progressive sur les navigateurs réels."],
+      ]
+    : [
+        ["knowledge-article-01", "Designing an audio interface that never simulates measurement", "UX / signal", "Filament, halo, silence, latency and reduced motion as laws of an instrument rather than app decoration."],
+        ["knowledge-article-02", "From microphone to dataset: anatomy of a traceable voice take", "Pipeline / provenance", "PCM, observations, quality, persistence, checksums and training manifests without conflating preparation with training."],
+        ["knowledge-article-03", "Deterministic research: deciding without turning estimates into truth", "Method / trust", "How declared corpus, measured signal, optional ASR, estimated alignment, fused decisions and external acoustic validation remain separate."],
+        ["knowledge-article-04", "Segmenting speech and song locally, word by word", "Audio / local AI", "16 kHz decoding, adaptive VAD, local Whisper, vocal separation, multi-pass consensus and verifiable exports."],
+        ["knowledge-article-05", "Why five voice modes need five success criteria", "Product / UX", "Free capture, ML Dataset, Dubbing, Performance and Lexical Segmentation compared through inputs, gestures and outputs."],
+        ["knowledge-article-06", "The browser as a local-first studio", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA and progressive capability handling in real browsers."],
+      ];
+
+  return `
+    <section class="zone-card hero vcs-experience" id="voice-capture-experience" data-vcs-experience>
+      <div class="vcs-experience__intro">
+        <p class="eyebrow">${ui(project, "VOICE AS AN INSTRUMENT", "LA VOIX COMME INSTRUMENT")}</p>
+        <h2>${ui(project, "Five workflows, one signal-grounded studio.", "Cinq parcours, un même studio ancré dans le signal.")}</h2>
+        <p class="lede">${ui(
+          project,
+          "The interface borrows the calm precision of an acoustic instrument: warm white, black typography, translucent glass, diffuse depth and a filament that only claims to be live when a fresh signal exists.",
+          "L’interface emprunte la précision calme d’un instrument acoustique : blanc chaud, typographie noire, verre translucide, profondeur diffuse et filament qui ne se dit vivant que lorsqu’un signal frais existe.",
+        )}</p>
+      </div>
+      <div class="vcs-instrument" data-vcs-instrument>
+        <div class="vcs-instrument__signal" aria-hidden="true">
+          <canvas data-vcs-signal-canvas></canvas>
+          <span>${ui(project, "DOCUMENTARY SIGNAL VIEW — NOT AN AUDIO READING", "VUE DOCUMENTAIRE DU SIGNAL — PAS UNE MESURE AUDIO")}</span>
+        </div>
+        <div class="vcs-instrument__body">
+          <div class="vcs-mode-tabs" role="tablist" aria-label="${ui(project, "Voice Capture Studio modes", "Modes de Voice Capture Studio")}">
+            ${modes.map((mode, index) => `<button class="vcs-mode-tab${index === 0 ? " is-active" : ""}" type="button" role="tab" aria-selected="${index === 0 ? "true" : "false"}" aria-controls="vcs-mode-${mode[0]}" data-vcs-mode="${mode[0]}">${escapeHtml(mode[1])}</button>`).join("")}
+          </div>
+          <div class="vcs-mode-panels">
+            ${modes.map((mode, index) => `
+              <article class="vcs-mode-panel${index === 0 ? " is-active" : ""}" id="vcs-mode-${mode[0]}" role="tabpanel" data-vcs-mode-panel="${mode[0]}"${index === 0 ? "" : " hidden"}>
+                <div>
+                  <p class="card__meta">${String(index + 1).padStart(2, "0")} / 05</p>
+                  <h3>${escapeHtml(mode[1])}</h3>
+                  <p>${escapeHtml(mode[2])}</p>
+                </div>
+                <dl>
+                  <div><dt>${ui(project, "Inputs", "Entrées")}</dt><dd>${escapeHtml(mode[3])}</dd></div>
+                  <div><dt>${ui(project, "Useful output", "Sortie utile")}</dt><dd>${escapeHtml(mode[4])}</dd></div>
+                  <div><dt>${ui(project, "Success", "Réussite")}</dt><dd>${escapeHtml(mode[5])}</dd></div>
+                </dl>
+              </article>`).join("")}
+          </div>
+        </div>
+      </div>
+      <div class="vcs-pipeline" id="voice-capture-pipeline">
+        <div class="section-head">
+          <p class="eyebrow">${ui(project, "DECISION FLOW", "FLUX DÉCISIONNEL")}</p>
+          <h2>${ui(project, "A pipeline that preserves what is measured, inferred and decided.", "Un pipeline qui sépare ce qui est mesuré, estimé et décidé.")}</h2>
+        </div>
+        <ol class="vcs-pipeline__steps">
+          <li><span>01</span><strong>${ui(project, "Capability check", "Capacités")}</strong><small>${ui(project, "Microphone, storage, workers, local files", "Micro, stockage, workers, fichiers locaux")}</small></li>
+          <li><span>02</span><strong>${ui(project, "Signal", "Signal")}</strong><small>${ui(project, "PCM capture or 16 kHz media decoding", "Capture PCM ou décodage média 16 kHz")}</small></li>
+          <li><span>03</span><strong>${ui(project, "Observations", "Observations")}</strong><small>${ui(project, "Corpus, acoustics, VAD, optional ASR, G2P", "Corpus, acoustique, VAD, ASR optionnel, G2P")}</small></li>
+          <li><span>04</span><strong>${ui(project, "Deterministic fusion", "Fusion déterministe")}</strong><small>${ui(project, "Evidence-linked reasons and confidence", "Raisons et confiance reliées aux preuves")}</small></li>
+          <li><span>05</span><strong>${ui(project, "Persistence", "Persistance")}</strong><small>${ui(project, "IndexedDB, folder or explicit download", "IndexedDB, dossier ou téléchargement explicite")}</small></li>
+          <li><span>06</span><strong>${ui(project, "Open package", "Paquet ouvert")}</strong><small>${ui(project, "WAV, JSON, JSONL, CSV, checksums", "WAV, JSON, JSONL, CSV, checksums")}</small></li>
+        </ol>
+        <p class="vcs-pipeline__boundary">${ui(
+          project,
+          "Browser word and phoneme timing remains explicitly estimated. A forced-alignment import or downstream Forge validation may replace it; the browser does not silently promote an estimate into acoustic ground truth.",
+          "Le timing mot et phonème produit dans le navigateur reste explicitement estimé. Un import d’alignement forcé ou une validation Forge en aval peut le remplacer ; le navigateur ne transforme jamais silencieusement une estimation en vérité acoustique.",
+        )}</p>
+      </div>
+      <div class="vcs-knowledge-roadmap" id="voice-capture-knowledge-roadmap">
+        <div class="section-head">
+          <p class="eyebrow">${ui(project, "KNOWLEDGE EDITORIAL ROADMAP", "FEUILLE ÉDITORIALE CONNAISSANCE")}</p>
+          <h2>${ui(project, "Six articles ready to turn this software into reusable knowledge.", "Six articles prêts à transformer ce logiciel en connaissance réutilisable.")}</h2>
+          <p class="lede">${ui(project, "Each brief below has a stable anchor from this dossier. The future Knowledge article should link back to the relevant product evidence and replace this anchor when published.", "Chaque brief ci-dessous possède une ancre stable depuis ce dossier. Le futur article Connaissance devra revenir vers les preuves produit concernées et remplacer cette ancre lors de sa publication.")}</p>
+        </div>
+        <div class="vcs-knowledge-roadmap__index" aria-label="${ui(project, "Proposed articles", "Articles proposés")}">
+          ${articles.map((article, index) => `<a href="#${article[0]}"><span>${String(index + 1).padStart(2, "0")}</span>${escapeHtml(article[1])}</a>`).join("")}
+        </div>
+        <div class="vcs-knowledge-roadmap__briefs">
+          ${articles.map((article, index) => `
+            <article id="${article[0]}">
+              <p><span>${String(index + 1).padStart(2, "0")}</span>${escapeHtml(article[2])}</p>
+              <h3>${escapeHtml(article[1])}</h3>
+              <p>${escapeHtml(article[3])}</p>
+              <a href="#voice-capture-pipeline">${ui(project, "Return to product evidence", "Revenir aux preuves produit")}</a>
+            </article>`).join("")}
+        </div>
+      </div>
+    </section>`;
+};
+
 export const renderProjectPage = (
   project: ProjectEntity,
   relations: RelationStatement[],
@@ -882,11 +1001,13 @@ export const renderProjectPage = (
   const hasArtDirection = projectHasArtDirection(project);
   const isPalimpsests = project.slug.canonical === "palimpsests";
   const isVestiges = isVestigesProject(project);
+  const isVoiceCaptureStudio = isVoiceCaptureStudioProject(project);
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
   const productionRefs = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId));
   const heroNav = [
     ...(isPalimpsests ? [{ label: ui(project, "Listen", "Écouter"), href: "#project-music" }] : []),
     ...(isVestiges ? [{ label: ui(project, "Enter Vestiges", "Entrer dans Vestiges"), href: "#project-vestiges" }] : []),
+    ...(isVoiceCaptureStudio ? [{ label: ui(project, "Experience", "Expérience"), href: "#voice-capture-experience" }] : []),
     { label: "Brief", href: "#project-brief" },
     { label: "System", href: "#project-system" },
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
@@ -930,7 +1051,7 @@ export const renderProjectPage = (
 
   return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}${isPalimpsests ? `
     ${renderPalimpsestsMusic(project)}` : ""}
-    ${renderVestigesGateway(project)}
+    ${renderVestigesGateway(project)}${renderVoiceCaptureStudioExperience(project)}
     ${renderProjectSystem(project)}
     ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}

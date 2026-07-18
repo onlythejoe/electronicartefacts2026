@@ -6,8 +6,8 @@ slug:
   canonical: voice-capture-studio-repository
 title: Dépôt Voice Capture Studio
 subtitle: Artefact de code open source
-abstract: Le dépôt Voice Capture Studio contient l’application open source React, Vite et TypeScript, sa documentation, ses tests et son workflow GitHub Pages pour la capture vocale local-first.
-description: Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.
+abstract: Le dépôt Voice Capture Studio contient l’instrument vocal open source à cinq modes, sa constitution graphique ancrée dans le signal, ses pipelines d’observation déterministes, ses tests et son déploiement GitHub Pages.
+description: Fiche d’artefact pour le dépôt public Voice Capture Studio, son architecture audio locale, ses contrats de preuves et son design browser-native.
 locale: fr
 visibility: public
 publicationClass: published
@@ -15,10 +15,10 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.0.0
+  version: 2.0.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-09"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -33,11 +33,11 @@ significance: Le dépôt est la source publique pour le code applicatif, les not
 sources:
   - title: Voice Capture Studio repository
     publisher: GitHub
-    accessedAt: "2026-07-09"
+    accessedAt: "2026-07-18"
     url: https://github.com/electronicartefacts/voice-capture-studio
   - title: Voice Capture Studio live demo
     publisher: GitHub Pages
-    accessedAt: "2026-07-09"
+    accessedAt: "2026-07-18"
     url: https://electronicartefacts.github.io/voice-capture-studio/
 rights: Copyright 2026 Electronic Artefacts.
 license: MIT
@@ -55,7 +55,7 @@ disciplines:
 
 ## Description
 
-Le dépôt contient l’implémentation open source de Voice Capture Studio : une application statique de navigateur pour l’enregistrement vocal guidé, l’état local du workspace et les exports structurés WAV et JSON.
+Le dépôt contient l’implémentation livrée de cinq workflows vocaux, de la capture PCM et de la segmentation média locales, des surfaces interactives dérivées du signal, des graphes d’observation versionnés, des workspaces privés et des exports WAV, JSON, JSONL et CSV.
 
 ## Provenance
 
@@ -63,7 +63,7 @@ Electronic Artefacts publie et maintient le dépôt sur [github.com/electronicar
 
 ## Importance
 
-Cet artefact de code rend le produit inspectable. Il conserve doctrine d’architecture, modèle système, structure de corpus, structure de workspace, structure d’export, tests, règles de contribution et workflow de déploiement.
+Cet artefact rend inspectables les affirmations produit et recherche. Il conserve phénoménologie, grille des modes, doctrine d’architecture, modèle système, audit de capture, contrats de corpus et workspace, structure d’export, tests et workflow de déploiement.
 
 ## Droits
 

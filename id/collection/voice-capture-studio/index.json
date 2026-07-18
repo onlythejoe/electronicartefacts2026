@@ -6,8 +6,8 @@
   },
   "title": "Voice Capture Studio Collection",
   "subtitle": "Voice Workflow Collection",
-  "abstract": "The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.",
-  "description": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+  "abstract": "The Voice Capture Studio Collection connects the five-mode product, source repository and knowledge needed to understand signal-grounded UX, local audio pipelines, deterministic evidence and open voice datasets.",
+  "description": "A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.",
   "locale": "en",
   "visibility": "public",
   "publicationClass": "published",
@@ -15,10 +15,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "createdAt": "2026-07-09",
     "publishedAt": "2026-07-09",
-    "modifiedAt": "2026-07-09"
+    "modifiedAt": "2026-07-18"
   },
   "authors": [
     {
@@ -39,7 +39,7 @@
     "Human Computer Interaction",
     "Machine Learning"
   ],
-  "thesis": "Voice Capture Studio is best understood as a browser software artefact where speech recording, local-first privacy, metadata and downstream machine-learning workflows meet.",
+  "thesis": "Voice Capture Studio is best understood where acoustic interaction design, local-first browser engineering, deterministic observation, metadata provenance and downstream voice workflows meet.",
   "curator": [
     {
       "id": "ea:organization:electronic-artefacts"
@@ -86,8 +86,8 @@
       "id": "ea:technology:web-audio-api"
     }
   ],
-  "selectionNote": "The collection keeps the live app close to the vocabulary needed to evaluate its recording model, privacy boundary and export structure.",
-  "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>Voice Capture Studio is not only a product page. It is a compact knowledge neighborhood around local speech recording, structured exports and browser-based privacy boundaries.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection includes the live project, the repository artefact and a small vocabulary of concepts that make the workflow understandable: speech recording, speech datasets, browser software, voice technology, machine-learning workflows, open source, web audio, metadata, provenance and HCI.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>Use this collection when the question is not simply “what is the app?” but “what kind of recording workflow does this app represent?”</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The collection starts with the project and repository, then connects them to the durable concepts and technology records that explain their role in the Electronic Artefacts graph.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>Future members should include release notes, screenshots, export examples and dataset-readiness reports once those artefacts can be published without exposing private voice data.</p>\n",
+  "selectionNote": "The collection keeps the live instrument close to the vocabulary needed to evaluate its five modes, signal claims, decision boundaries, privacy model and export structure.",
+  "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>Voice Capture Studio is not only a product page. It is a compact knowledge neighborhood around trustworthy audio interaction, local processing, structured evidence, open exports and browser capability boundaries.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection includes the live project, the repository artefact and a small vocabulary of concepts that make the workflow understandable: speech recording, speech datasets, browser software, voice technology, machine-learning workflows, open source, web audio, metadata, provenance and HCI.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>Use this collection when the question is not simply “what is the app?” but “what kind of recording workflow does this app represent?”</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The collection starts with the project and repository, then connects them to the durable concepts and technology records that explain their role in the Electronic Artefacts graph.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>Future members should include the six proposed Knowledge articles in the project dossier, release notes, export examples and dataset-readiness reports once those artefacts can be published without exposing private voice data.</p>\n",
   "headings": [
     "Thesis",
     "Selection logic",

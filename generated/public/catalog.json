@@ -79,8 +79,8 @@
       "locale": "en",
       "title": "Voice Capture Studio Repository",
       "subtitle": "Open Source Code Artefact",
-      "summary": "The Voice Capture Studio repository contains the open-source React, Vite and TypeScript application, documentation, tests and GitHub Pages deployment workflow for local-first voice capture.",
-      "description": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+      "summary": "The Voice Capture Studio repository contains the open-source five-mode voice instrument, its signal-grounded design constitution, deterministic observation pipelines, tests and GitHub Pages deployment workflow.",
+      "description": "A code artefact record for the public Voice Capture Studio repository, local audio architecture, evidence contracts and browser-native interaction design.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -102,7 +102,7 @@
       "identifier": "/id/artefact/voice-capture-studio-repository/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
@@ -305,8 +305,8 @@
       "locale": "en",
       "title": "Voice Capture Studio Collection",
       "subtitle": "Voice Workflow Collection",
-      "summary": "The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.",
-      "description": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+      "summary": "The Voice Capture Studio Collection connects the five-mode product, source repository and knowledge needed to understand signal-grounded UX, local audio pipelines, deterministic evidence and open voice datasets.",
+      "description": "A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -329,7 +329,7 @@
       "identifier": "/id/collection/voice-capture-studio/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
@@ -2076,8 +2076,8 @@
       "translationOf": "ea:artefact:voice-capture-studio-repository",
       "title": "Dépôt Voice Capture Studio",
       "subtitle": "Artefact de code open source",
-      "summary": "Le dépôt Voice Capture Studio contient l’application open source React, Vite et TypeScript, sa documentation, ses tests et son workflow GitHub Pages pour la capture vocale local-first.",
-      "description": "Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.",
+      "summary": "Le dépôt Voice Capture Studio contient l’instrument vocal open source à cinq modes, sa constitution graphique ancrée dans le signal, ses pipelines d’observation déterministes, ses tests et son déploiement GitHub Pages.",
+      "description": "Fiche d’artefact pour le dépôt public Voice Capture Studio, son architecture audio locale, ses contrats de preuves et son design browser-native.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -2099,7 +2099,7 @@
       "identifier": "/fr/id/artefact/voice-capture-studio-repository/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
@@ -2308,8 +2308,8 @@
       "translationOf": "ea:collection:voice-capture-studio",
       "title": "Collection Voice Capture Studio",
       "subtitle": "Collection de workflows vocaux",
-      "summary": "La collection Voice Capture Studio réunit le projet, le dépôt source et le vocabulaire utile pour comprendre l’enregistrement vocal local-first, les datasets vocaux, le logiciel de navigateur et les exports privacy-first.",
-      "description": "Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.",
+      "summary": "La collection Voice Capture Studio relie le produit à cinq modes, son dépôt et les connaissances utiles pour comprendre UX ancrée dans le signal, pipelines audio locaux, preuves déterministes et datasets vocaux ouverts.",
+      "description": "Collection éditoriale autour de Voice Capture Studio comme instrument vocal browser-native et surface de recherche.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -2332,7 +2332,7 @@
       "identifier": "/fr/id/collection/voice-capture-studio/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
@@ -4287,9 +4287,9 @@
       "locale": "fr",
       "translationOf": "ea:project:voice-capture-studio",
       "title": "Voice Capture Studio",
-      "subtitle": "Studio d’enregistrement vocal local-first",
-      "summary": "Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.",
-      "description": "Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.",
+      "subtitle": "Instrument vocal local-first",
+      "summary": "Voice Capture Studio est un instrument de navigateur open source et local-first pour capturer, interpréter, réviser et découper la voix au sein de cinq parcours spécialisés.",
+      "description": "Un studio vocal ancré dans le signal, réunissant cinq modes de capture et segmentation, un design de verre translucide, des pipelines de preuves déterministes et des exports WAV/métadonnées ouverts.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -4303,7 +4303,10 @@
         "Web Audio",
         "open source",
         "local-first",
-        "vie privée"
+        "vie privée",
+        "recherche déterministe",
+        "interaction humain-machine",
+        "pipeline audio"
       ],
       "discipline": [
         "ingénierie audio",
@@ -4316,7 +4319,7 @@
       "identifier": "/fr/id/project/voice-capture-studio/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
@@ -7438,9 +7441,9 @@
       "type": "project",
       "locale": "en",
       "title": "Voice Capture Studio",
-      "subtitle": "Local-First Voice Recording Studio",
-      "summary": "Voice Capture Studio is an open-source browser application for directed speech recording, local review and dataset-ready voice exports.",
-      "description": "A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.",
+      "subtitle": "Local-First Voice Instrument",
+      "summary": "Voice Capture Studio is an open-source, local-first browser instrument for capturing, performing, reviewing and segmenting voice across five purpose-built workflows.",
+      "description": "A signal-grounded voice studio in the browser, combining five capture and segmentation modes, glass-like interaction design, deterministic evidence pipelines and open WAV/metadata exports.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -7454,7 +7457,10 @@
         "Web Audio",
         "Open Source",
         "Local First",
-        "Privacy"
+        "Privacy",
+        "Deterministic Research",
+        "Human Computer Interaction",
+        "Audio Pipeline"
       ],
       "discipline": [
         "Audio Engineering",
@@ -7467,7 +7473,7 @@
       "identifier": "/id/project/voice-capture-studio/",
       "temporality": {
         "creationDate": "2026-07-09",
-        "lastUpdated": "2026-07-09",
+        "lastUpdated": "2026-07-18",
         "releaseDate": "2026-07-09",
         "creationYear": "2026"
       }
