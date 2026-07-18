@@ -1,0 +1,170 @@
+{
+  "id": "local:ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+  "kind": "local",
+  "focus": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:voice-technology-fr",
+      "type": "concept",
+      "title": "Technologie vocale",
+      "route": "/fr/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:web-audio-fr",
+      "type": "concept",
+      "title": "Audio web",
+      "route": "/fr/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:multimodal-ai-fr",
+      "type": "concept",
+      "title": "IA multimodale",
+      "route": "/fr/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:signal-archaeology-fr",
+      "type": "concept",
+      "title": "Archéologie du signal",
+      "route": "/fr/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:web-audio-api-fr",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/fr/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Segmenting Speech and Song Locally, Word by Word is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-voice-capture-studio",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-voice-technology",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:voice-technology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Voice Technology as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:web-audio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-multimodal-ai",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:multimodal-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Multimodal AI as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-signal-archaeology",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Signal Archaeology as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-oreth",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:program:oreth-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents ORETH as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio-api",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:technology:web-audio-api-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio API as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

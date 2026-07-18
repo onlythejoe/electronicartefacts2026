@@ -1,0 +1,170 @@
+{
+  "id": "local:ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+  "kind": "local",
+  "focus": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "type": "publication",
+      "title": "Du microphone au dataset, anatomie d’une prise vocale traçable",
+      "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:speech-recording-fr",
+      "type": "concept",
+      "title": "Enregistrement vocal",
+      "route": "/fr/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:speech-datasets-fr",
+      "type": "concept",
+      "title": "Jeux de données vocales",
+      "route": "/fr/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows-fr",
+      "type": "concept",
+      "title": "Workflows de machine learning",
+      "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-voice-capture-studio",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-recording",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:speech-recording-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Speech Recording as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-datasets",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:speech-datasets-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Speech Datasets as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-metadata",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Metadata as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-provenance",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-machine-learning-workflows",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Machine Learning Workflows as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-digital-preservation",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Digital Preservation as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

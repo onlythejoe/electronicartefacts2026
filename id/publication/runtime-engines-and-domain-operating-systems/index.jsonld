@@ -9,7 +9,7 @@
       "description": "Understand runtime engines and domain operating systems, and how shared entities, permissions and events can support many applications.",
       "inLanguage": "en",
       "datePublished": "2026-06-24",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -70,7 +70,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-24",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 2200,
+      "wordCount": 2283,
       "citation": [
         "Electronic Artefacts. \"Runtime Engines and Domain Operating Systems.\" Technical article, version 1.0.0, 2026.",
         {
@@ -121,6 +121,21 @@
         },
         {
           "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/microservice-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/artefact/vab-interface-prototype/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/situated-actors-and-governance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/vaste-extension-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/vaste-five-primitives/"
         }
       ],
       "mentions": [
@@ -142,7 +157,7 @@
         "Runtime Engine",
         "Domain OS"
       ],
-      "timeRequired": "PT10M",
+      "timeRequired": "PT11M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

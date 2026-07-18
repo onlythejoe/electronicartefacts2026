@@ -66,6 +66,14 @@
       "route": "/knowledge/concepts/creative-coding/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -148,6 +156,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Web Audio and Browser-Based Sound Systems documents Creative Coding as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-voice-capture-studio",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Voice Capture Studio as one of its declared subjects.",
       "confidence": "published"
     }
   ]

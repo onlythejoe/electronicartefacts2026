@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:signal-archaeology
   - id: ea:program:oreth
   - id: ea:concept:creative-coding
+  - id: ea:project:voice-capture-studio
 claims:
   - "Web Audio transforme le navigateur en un environnement viable pour les outils sonores publics, pas seulement la lecture intégrée."
   - "Les systèmes sonores basés sur le navigateur ont besoin d'une réflexion graphique, d'une discipline de performance et d'enregistrements de conservation."
@@ -151,6 +152,8 @@ La troisième erreur est de traiter la production d'analyse comme une vérité o
 Web Audio donne à Electronic Artefacts une voie vers la recherche publique. Au lieu de décrire les expériences audio uniquement en prose, le site peut éventuellement héberger des outils d'écoute qui restent connectés aux sources et aux concepts.
 
 ORETH doit être l'ancrage méthodologique. Les palimpsestes peuvent fournir un contexte artistique. L'archéologie des signaux peut fournir une discipline d'interprétation.
+
+Voice Capture Studio apporte le cas opérationnel qui manquait à la première version de cet article. Ses cinq parcours relient microphone, feedback piloté par analyseur, décodage local, relecture, observations structurées et paquets WAV ouverts. Poursuivre avec [Le navigateur comme studio vocal local-first](/fr/publications/browser-as-a-local-first-voice-studio/) pour les capacités et la persistance, puis [Une interface audio digne de confiance ne simule jamais la mesure](/fr/publications/trustworthy-audio-interfaces-and-measurement/) pour le contrat perceptif.
 
 ## Rôle du graphe de connaissances
 

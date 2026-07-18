@@ -58,6 +58,14 @@
       "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:algorithmic-composition",
+      "type": "concept",
+      "title": "Algorithmic Composition",
+      "route": "/knowledge/concepts/algorithmic-composition/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -122,6 +130,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Generative Systems, Cybernetics and Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-cybernetics-and-creative-coding-documents-algorithmic-composition",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:algorithmic-composition",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding documents Algorithmic Composition as one of its declared subjects.",
       "confidence": "published"
     }
   ]

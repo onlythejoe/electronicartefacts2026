@@ -546,6 +546,10 @@
     "fr": "/fr/publications/algorithmic-composition-and-rule-based-music/",
     "en": "/publications/algorithmic-composition-and-rule-based-music/"
   },
+  "/fr/publications/browser-as-a-local-first-voice-studio/": {
+    "fr": "/fr/publications/browser-as-a-local-first-voice-studio/",
+    "en": "/publications/browser-as-a-local-first-voice-studio/"
+  },
   "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/": {
     "fr": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
     "en": "/publications/c2pa-content-credentials-and-generative-media-provenance/"
@@ -558,6 +562,10 @@
     "fr": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
     "en": "/publications/creative-coding-pedagogy-from-logo-to-p5js/"
   },
+  "/fr/publications/deterministic-research-and-evidence-fusion/": {
+    "fr": "/fr/publications/deterministic-research-and-evidence-fusion/",
+    "en": "/publications/deterministic-research-and-evidence-fusion/"
+  },
   "/fr/publications/digital-preservation-and-living-archives/": {
     "fr": "/fr/publications/digital-preservation-and-living-archives/",
     "en": "/publications/digital-preservation-and-living-archives/"
@@ -569,6 +577,10 @@
   "/fr/publications/event-driven-architecture-and-event-streams/": {
     "fr": "/fr/publications/event-driven-architecture-and-event-streams/",
     "en": "/publications/event-driven-architecture-and-event-streams/"
+  },
+  "/fr/publications/five-voice-modes-five-success-criteria/": {
+    "fr": "/fr/publications/five-voice-modes-five-success-criteria/",
+    "en": "/publications/five-voice-modes-five-success-criteria/"
   },
   "/fr/publications/foundational-lineage-001/": {
     "fr": "/fr/publications/foundational-lineage-001/",
@@ -609,6 +621,10 @@
   "/fr/publications/local-and-open-source-ai-systems/": {
     "fr": "/fr/publications/local-and-open-source-ai-systems/",
     "en": "/publications/local-and-open-source-ai-systems/"
+  },
+  "/fr/publications/local-lexical-segmentation-for-speech-and-song/": {
+    "fr": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+    "en": "/publications/local-lexical-segmentation-for-speech-and-song/"
   },
   "/fr/publications/metadata-cataloguing-and-cultural-memory/": {
     "fr": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
@@ -677,6 +693,14 @@
   "/fr/publications/systems-thinking-for-creative-practice/": {
     "fr": "/fr/publications/systems-thinking-for-creative-practice/",
     "en": "/publications/systems-thinking-for-creative-practice/"
+  },
+  "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/": {
+    "fr": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "en": "/publications/traceable-voice-capture-from-microphone-to-dataset/"
+  },
+  "/fr/publications/trustworthy-audio-interfaces-and-measurement/": {
+    "fr": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+    "en": "/publications/trustworthy-audio-interfaces-and-measurement/"
   },
   "/fr/publications/typography-reading-systems-and-digital-interfaces/": {
     "fr": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
@@ -1106,6 +1130,10 @@
     "fr": "/fr/publications/algorithmic-composition-and-rule-based-music/",
     "en": "/publications/algorithmic-composition-and-rule-based-music/"
   },
+  "/publications/browser-as-a-local-first-voice-studio/": {
+    "fr": "/fr/publications/browser-as-a-local-first-voice-studio/",
+    "en": "/publications/browser-as-a-local-first-voice-studio/"
+  },
   "/publications/c2pa-content-credentials-and-generative-media-provenance/": {
     "fr": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
     "en": "/publications/c2pa-content-credentials-and-generative-media-provenance/"
@@ -1118,6 +1146,10 @@
     "fr": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
     "en": "/publications/creative-coding-pedagogy-from-logo-to-p5js/"
   },
+  "/publications/deterministic-research-and-evidence-fusion/": {
+    "fr": "/fr/publications/deterministic-research-and-evidence-fusion/",
+    "en": "/publications/deterministic-research-and-evidence-fusion/"
+  },
   "/publications/digital-preservation-and-living-archives/": {
     "fr": "/fr/publications/digital-preservation-and-living-archives/",
     "en": "/publications/digital-preservation-and-living-archives/"
@@ -1129,6 +1161,10 @@
   "/publications/event-driven-architecture-and-event-streams/": {
     "fr": "/fr/publications/event-driven-architecture-and-event-streams/",
     "en": "/publications/event-driven-architecture-and-event-streams/"
+  },
+  "/publications/five-voice-modes-five-success-criteria/": {
+    "fr": "/fr/publications/five-voice-modes-five-success-criteria/",
+    "en": "/publications/five-voice-modes-five-success-criteria/"
   },
   "/publications/foundational-lineage-001/": {
     "fr": "/fr/publications/foundational-lineage-001/",
@@ -1169,6 +1205,10 @@
   "/publications/local-and-open-source-ai-systems/": {
     "fr": "/fr/publications/local-and-open-source-ai-systems/",
     "en": "/publications/local-and-open-source-ai-systems/"
+  },
+  "/publications/local-lexical-segmentation-for-speech-and-song/": {
+    "fr": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+    "en": "/publications/local-lexical-segmentation-for-speech-and-song/"
   },
   "/publications/metadata-cataloguing-and-cultural-memory/": {
     "fr": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
@@ -1237,6 +1277,14 @@
   "/publications/systems-thinking-for-creative-practice/": {
     "fr": "/fr/publications/systems-thinking-for-creative-practice/",
     "en": "/publications/systems-thinking-for-creative-practice/"
+  },
+  "/publications/traceable-voice-capture-from-microphone-to-dataset/": {
+    "fr": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "en": "/publications/traceable-voice-capture-from-microphone-to-dataset/"
+  },
+  "/publications/trustworthy-audio-interfaces-and-measurement/": {
+    "fr": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+    "en": "/publications/trustworthy-audio-interfaces-and-measurement/"
   },
   "/publications/typography-reading-systems-and-digital-interfaces/": {
     "fr": "/fr/publications/typography-reading-systems-and-digital-interfaces/",

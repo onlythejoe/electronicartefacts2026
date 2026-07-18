@@ -1,0 +1,148 @@
+{
+  "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+  "slug": {
+    "canonical": "local-lexical-segmentation-for-speech-and-song"
+  },
+  "title": "Découper localement la parole et le chant, mot par mot",
+  "subtitle": "Analyse adaptative sans téléversement distant",
+  "abstract": "La segmentation lexicale locale combine décodage borné, activité vocale, hypothèses adaptatives et consensus temporel tout en conservant l’audio original comme preuve.",
+  "description": "Le pipeline lexical de Voice Capture Studio pour voix parlée, chant et médias mixtes.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Segmentation lexicale",
+    "IA locale",
+    "Chant",
+    "Whisper",
+    "Preuve audio"
+  ],
+  "disciplines": [
+    "ingénierie audio",
+    "apprentissage automatique",
+    "développement web"
+  ],
+  "sources": [
+    {
+      "title": "Audit des technologies de capture",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/capture-technology-audit.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "ONNX Runtime Web Execution Providers",
+      "url": "https://onnxruntime.ai/docs/tutorials/web/ep-webgpu.html",
+      "publisher": "Microsoft",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:voice-technology"
+    },
+    {
+      "id": "ea:concept:web-audio"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    },
+    {
+      "id": "ea:concept:signal-archaeology"
+    },
+    {
+      "id": "ea:program:oreth"
+    },
+    {
+      "id": "ea:technology:web-audio-api"
+    }
+  ],
+  "claims": [
+    "Les clips lexicaux doivent provenir de la source décodée intacte même lorsque des signaux dérivés aident la transcription.",
+    "Un budget adaptatif doit conserver une vérification indépendante sur les appareils contraints."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. « Découper localement la parole et le chant, mot par mot ». Article technique, 2026."
+  },
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>La segmentation lexicale transforme un audio ou une vidéo locale en extraits mot à mot avec timecodes et preuves. Une simple transcription suivie de coupes échoue vite sur chant, musique, réverbération, silences ambigus et appareils contraints.</p>\n<p>Le mode de <a href=\"/fr/projects/voice-capture-studio/\">Voice Capture Studio</a> traite la découpe comme un pipeline de preuves. Les pixels vidéo sont ignorés ; seule la piste audio décodée entre dans l’analyse. La taille et la durée sont contrôlées avant le décodage complet.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Une première hypothèse locale et une activité vocale indépendante classent la scène. Une parole claire peut s’arrêter après une passe. Chant, musique et voix difficile justifient une vérification plus forte et des signaux vocal-focus. Le budget suit la performance mesurée sur la source réelle, pas une supposition liée au navigateur.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Résidu mid/side, accentuation vocale ou référence de salle peuvent aider le modèle et introduire des artefacts. Ils proposent ou vérifient donc les limites, tandis que les clips exportés viennent de la source intacte. Ce choix relie <a href=\"/fr/knowledge/concepts/voice-technology/\">technologie vocale</a> et <a href=\"/fr/knowledge/concepts/signal-archaeology/\">archéologie du signal</a>.</p>\n<h2 id=\"parole-et-chant\">Parole et chant</h2>\n<p>Un VAD de parole interprète mal voyelles tenues, silences instrumentaux et phrasé mélodique. Le pipeline fusionne activité de parole et soutien vocal continu sans prétendre que le chant est simplement de la parole. Dans un conteneur vidéo, cette restriction explicite relève aussi de l’<a href=\"/fr/knowledge/concepts/multimodal-ai/\">IA multimodale</a> : le mode choisit d’étudier le son.</p>\n<h2 id=\"consensus-et-export\">Consensus et export</h2>\n<p>Le consensus temporel rapproche variantes lexicales, récupère les omissions soutenues par plusieurs passes et rejette les propositions isolées. Chaque mot garde début, fin, hypothèses sources, confiance et révision. Le ZIP contient WAV mono, JSON et CSV ; le manifeste décrit scène, budget, modèles, signaux, masque vocal, consensus et performance observée.</p>\n<p>L’<a href=\"/fr/knowledge/concepts/web-audio/\">Audio web</a> et son <a href=\"/fr/knowledge/technologies/web-audio-api/\">API</a> assurent décodage et accès au signal ; workers et inférence locale protègent l’interface. <a href=\"/fr/programs/oreth/\">ORETH</a> donne le cadre de recherche : relier média, activité vocale, hypothèses lexicales, temps source et preuve exportée.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>L’audit des technologies de capture documente classifieur de scène, budget adaptatif, règles de consensus et champs de manifeste utilisés par l’implémentation.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La transcription locale dépend de l’appareil, le chant reste plus difficile que la parole claire et les limites de mots exigent une révision lorsque les hypothèses indépendantes divergent.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Voice Capture Studio. Audit des technologies de capture.</li>\n<li>ONNX Runtime. Guide des fournisseurs d’exécution web.</li>\n</ul>\n",
+  "headings": [
+    "Problème",
+    "Architecture",
+    "Mise en œuvre",
+    "Parole et chant",
+    "Consensus et export",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problème",
+      "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
+    },
+    {
+      "level": 2,
+      "title": "Parole et chant",
+      "id": "parole-et-chant"
+    },
+    {
+      "level": 2,
+      "title": "Consensus et export",
+      "id": "consensus-et-export"
+    },
+    {
+      "level": 2,
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Limites",
+      "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

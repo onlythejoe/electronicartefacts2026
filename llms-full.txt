@@ -9,7 +9,7 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 258
+- Public records: 270
 - Last curated source update: 2026-07-18
 
 ## organization
@@ -114,7 +114,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:researchQuestion:speech-dataset-reproducibility-fr
   - Identifier: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/index.jsonld
-  - Modified: 2026-07-09
+  - Modified: 2026-07-18
   - Keywords: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?, Datasets vocaux, Confidentialité, Web Audio, Local First, open source, ingénierie audio, apprentissage automatique
 - [Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?](https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/): Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
   - Entity ID: ea:researchQuestion:self-explaining-knowledge-graph-software-fr
@@ -144,7 +144,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:researchQuestion:speech-dataset-reproducibility
   - Identifier: https://electronicartefacts.com/id/research-question/speech-dataset-reproducibility/
   - JSON-LD: https://electronicartefacts.com/id/research-question/speech-dataset-reproducibility/index.jsonld
-  - Modified: 2026-07-09
+  - Modified: 2026-07-18
   - Keywords: How can speech datasets become reproducible, structured and privacy-first?, Speech Datasets, Privacy, Web Audio, Local First, Open Source, Audio Engineering, Machine Learning
 
 ## publication
@@ -165,13 +165,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:ai-agents-vs-ai-workflows-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Agents d'IA et workflows d'IA, agents d'IA, workflows d'IA, orchestration, usage d'outils, automatisation, intelligence artificielle, conception de systèmes
 - [AI Agents vs AI Workflows](https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/): Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.
   - Entity ID: ea:publication:ai-agents-vs-ai-workflows
   - Identifier: https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/
   - JSON-LD: https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/index.jsonld
-  - Modified: 2026-06-24
+  - Modified: 2026-07-18
   - Keywords: AI Agents vs AI Workflows, AI Agents, AI Workflows, Orchestration, Tool Use, Automation, Artificial Intelligence, Systems Design
 - [AI Search, Structured Content and Knowledge Graph SEO](https://electronicartefacts.com/publications/ai-search-structured-content-and-knowledge-graph-seo/): Understand how AI search changes SEO strategy through helpful content, structured data, crawlable pages, entity identity and knowledge graph architecture.
   - Entity ID: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
@@ -225,7 +225,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:contextual-execution-and-graph-runtimes
   - Identifier: https://electronicartefacts.com/id/publication/contextual-execution-and-graph-runtimes/
   - JSON-LD: https://electronicartefacts.com/id/publication/contextual-execution-and-graph-runtimes/index.jsonld
-  - Modified: 2026-06-23
+  - Modified: 2026-07-18
   - Keywords: Contextual Execution and Graph Runtimes, Contextual Execution, Graph Runtime, Runtime Theory, VASTE, Systems Design, Programming, Knowledge Systems
 - [Creative Coding Pedagogy from Logo to p5.js](https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/): A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.
   - Entity ID: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
@@ -233,6 +233,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/creative-coding-pedagogy-from-logo-to-p5js/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Creative Coding Pedagogy from Logo to p5.js, Creative Coding, Processing, p5.js, Education, Programming, Design, Open Source
+- [Découper localement la parole et le chant, mot par mot](https://electronicartefacts.com/fr/publications/local-lexical-segmentation-for-speech-and-song/): Le pipeline lexical de Voice Capture Studio pour voix parlée, chant et médias mixtes.
+  - Entity ID: ea:publication:local-lexical-segmentation-for-speech-and-song-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/local-lexical-segmentation-for-speech-and-song/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/local-lexical-segmentation-for-speech-and-song/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Découper localement la parole et le chant, mot par mot, Segmentation lexicale, IA locale, Chant, Whisper, Preuve audio, ingénierie audio, apprentissage automatique
+- [Deterministic Research: Deciding Without Turning Estimates into Truth](https://electronicartefacts.com/publications/deterministic-research-and-evidence-fusion/): A method for evidence-linked decisions in Voice Capture Studio, VASTE and graph-based research systems.
+  - Entity ID: ea:publication:deterministic-research-and-evidence-fusion
+  - Identifier: https://electronicartefacts.com/id/publication/deterministic-research-and-evidence-fusion/
+  - JSON-LD: https://electronicartefacts.com/id/publication/deterministic-research-and-evidence-fusion/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Deterministic Research: Deciding Without Turning Estimates into Truth, Deterministic Research, Evidence, Uncertainty, Provenance, Graph, Research Design, Data Engineering
 - [Digital Preservation and Living Archives](https://electronicartefacts.com/publications/digital-preservation-and-living-archives/): A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.
   - Entity ID: ea:publication:digital-preservation-and-living-archives
   - Identifier: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/
@@ -243,8 +255,14 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:linked-data-and-public-knowledge-pages-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Données liées et pages publiques de connaissance, Linked Data, JSON-LD, Structured Data, SEO, Knowledge Pages, développement web, systèmes de connaissance
+- [Du microphone au dataset, anatomie d’une prise vocale traçable](https://electronicartefacts.com/fr/publications/traceable-voice-capture-from-microphone-to-dataset/): Le pipeline Voice Capture Studio, de la capture PCM au paquet dataset local et vérifiable.
+  - Entity ID: ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Du microphone au dataset, anatomie d’une prise vocale traçable, dataset vocal, Provenance, PCM, métadonnées, Local First, ingénierie audio, ingénierie des données
 - [EU AI Act Transparency, Content Provenance and Creative Practice](https://electronicartefacts.com/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/): Prepare creative and cultural AI workflows for EU transparency rules with a layered approach to machine-readable marks, visible disclosure, provenance and editorial records.
   - Entity ID: ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice
   - Identifier: https://electronicartefacts.com/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/
@@ -261,7 +279,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:contextual-execution-and-graph-runtimes-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/contextual-execution-and-graph-runtimes/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/contextual-execution-and-graph-runtimes/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Exécution contextuelle et runtimes de graphe, Contextual Exécution, Graph Runtime, Runtime Theory, VASTE, conception de systèmes, programmation, systèmes de connaissance
 - [Foundational Lineage #001](https://electronicartefacts.com/fr/publications/foundational-lineage-001/): Repères pour comprendre Foundational Lineage #001 dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:foundational-lineage-001-fr
@@ -275,6 +293,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/foundational-lineage-001/index.jsonld
   - Modified: 2026-06-22
   - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information Architecture
+- [From Microphone to Dataset: Anatomy of a Traceable Voice Take](https://electronicartefacts.com/publications/traceable-voice-capture-from-microphone-to-dataset/): A step-by-step account of the Voice Capture Studio pipeline from PCM capture to a verifiable local dataset package.
+  - Entity ID: ea:publication:traceable-voice-capture-from-microphone-to-dataset
+  - Identifier: https://electronicartefacts.com/id/publication/traceable-voice-capture-from-microphone-to-dataset/
+  - JSON-LD: https://electronicartefacts.com/id/publication/traceable-voice-capture-from-microphone-to-dataset/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: From Microphone to Dataset: Anatomy of a Traceable Voice Take, Voice Dataset, Provenance, PCM, Metadata, Local First, Audio Engineering, Data Engineering
 - [Génération augmentée par récupération et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Découvrez comment fonctionne la génération augmentée par la récupération et comment construire des systèmes RAG basés sur des sources avec des métadonnées, des graphes de connaissances et une évaluation.
   - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/
@@ -291,7 +315,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:generative-systems-cybernetics-and-creative-coding
   - Identifier: https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/
   - JSON-LD: https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/index.jsonld
-  - Modified: 2026-06-23
+  - Modified: 2026-07-18
   - Keywords: Generative Systems, Cybernetics and Creative Coding, Generative Systems, Cybernetics, Creative Coding, Algorithmic Composition, Digital Art, Music Production, Systems Design
 - [Gouvernance responsable de l'IA pour les systèmes créatifs et culturels](https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/): Découvrez comment une gouvernance responsable de l'IA s'applique aux technologies créatives, aux infrastructures culturelles, aux archives, aux médias générateurs et aux flux de connaissances assistés par l'IA.
   - Entity ID: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr
@@ -321,7 +345,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:human-computer-interaction-for-creative-tools
   - Identifier: https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/
   - JSON-LD: https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
-  - Modified: 2026-06-24
+  - Modified: 2026-07-18
   - Keywords: Human Computer Interaction for Creative Tools, HCI, Creative Tools, Augmented Intelligence, Accessibility, Human Computer Interaction, Design, Creative Coding
 - [Hypertext and Augmented Knowledge Systems](https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/): A technical article on hypertext, augmented intelligence, linked pages, knowledge graphs and Electronic Artefacts knowledge publishing.
   - Entity ID: ea:publication:hypertext-and-augmented-knowledge-systems
@@ -375,7 +399,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:human-computer-interaction-for-creative-tools-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Interaction humain-machine pour les outils créatifs, interaction humain-machine, outils créatifs, intelligence augmentée, accessibilité, design, programmation créative, intelligence artificielle
 - [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.
   - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure
@@ -389,17 +413,23 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/index.jsonld
   - Modified: 2026-07-12
   - Keywords: L’open source comme infrastructure culturelle, open source, programmation créative, infrastructure, Maintainers, programmation, culture Internet
+- [Le navigateur comme studio vocal local-first](https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/): L’architecture browser-native de Voice Capture Studio et son modèle de vie privée local-first.
+  - Entity ID: ea:publication:browser-as-a-local-first-voice-studio-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Le navigateur comme studio vocal local-first, Logiciel navigateur, Local First, Web Audio, IndexedDB, open source, architecture web, ingénierie audio
 - [Linked Data and Public Knowledge Pages](https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/): A technical article on Linked Data, JSON-LD, canonical URLs, identifiers and SEO for static knowledge platforms.
   - Entity ID: ea:publication:linked-data-and-public-knowledge-pages
   - Identifier: https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/
   - JSON-LD: https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/index.jsonld
-  - Modified: 2026-06-23
+  - Modified: 2026-07-18
   - Keywords: Linked Data and Public Knowledge Pages, Linked Data, JSON-LD, Structured Data, SEO, Knowledge Pages, Web Development, Knowledge Systems
 - [Local and Open Source AI Systems](https://electronicartefacts.com/publications/local-and-open-source-ai-systems/): Understand local AI and open-source AI systems, including model weights, quantization, llama.cpp, privacy, hardware and licensing.
   - Entity ID: ea:publication:local-and-open-source-ai-systems
   - Identifier: https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/
   - JSON-LD: https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/index.jsonld
-  - Modified: 2026-06-24
+  - Modified: 2026-07-18
   - Keywords: Local and Open Source AI Systems, Local AI, Open Source AI, Open Weights, Quantization, llama.cpp, Artificial Intelligence, Open Source
 - [Metadata, Cataloguing and Cultural Memory](https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/): A technical article on metadata, cataloguing, cultural memory, preservation standards and Electronic Artefacts graph records.
   - Entity ID: ea:publication:metadata-cataloguing-and-cultural-memory
@@ -441,7 +471,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:runtime-engines-and-domain-operating-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Moteurs d'exécution et systèmes d'exploitation de domaine, moteur d'exécution, système d'exploitation de domaine, système d'exploitation métier, VASTE, systèmes composables, conception de systèmes, architecture logicielle
 - [Motion design, temps et sémantique d'interface](https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/): Un article technique sur la conception de mouvement, l'animation web, l'état de l'interface, l'accessibilité et les systèmes visuels temporels.
   - Entity ID: ea:publication:motion-design-time-and-interface-semantics-fr
@@ -509,6 +539,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Personal Knowledge Systems and Digital Gardens, Personal Knowledge Management, Digital Gardens, Backlinks, Research Methods, Knowledge Systems, Internet Culture, Archives
+- [Pourquoi cinq modes vocaux exigent cinq critères de réussite](https://electronicartefacts.com/fr/publications/five-voice-modes-five-success-criteria/): Un cadre produit pour décider quand un workflow vocal devient un mode plutôt qu’un preset.
+  - Entity ID: ea:publication:five-voice-modes-five-success-criteria-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/five-voice-modes-five-success-criteria/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/five-voice-modes-five-success-criteria/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Pourquoi cinq modes vocaux exigent cinq critères de réussite, Modes produit, UX vocale, Dataset, Doublage, design d’interaction, Design produit, interaction humain-machine
 - [Pourquoi les graphes sont plus puissants que les dossiers](https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/): Apprenez quand les modèles graphiques surpassent les hiérarchies de dossiers, pourquoi les relations comptent, et comment garder les dossiers comme projections utiles sur les données connectées.
   - Entity ID: ea:publication:why-graphs-are-more-powerful-than-folders-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/
@@ -533,6 +569,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Prompt Injection and Trust Boundaries in AI Knowledge Systems, Prompt Injection, AI Security, AI Agents, MCP, Trust Boundaries, Artificial Intelligence, Security
+- [Recherche déterministe, décider sans transformer une estimation en vérité](https://electronicartefacts.com/fr/publications/deterministic-research-and-evidence-fusion/): Une méthode de décision reliée aux preuves dans Voice Capture Studio, VASTE et les systèmes de recherche en graphe.
+  - Entity ID: ea:publication:deterministic-research-and-evidence-fusion-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/deterministic-research-and-evidence-fusion/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/deterministic-research-and-evidence-fusion/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Recherche déterministe, décider sans transformer une estimation en vérité, recherche déterministe, Preuve, Incertitude, Provenance, Graphe, Design de recherche, ingénierie des données
 - [Recherche IA, contenu structuré et SEO par graphe de connaissances](https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/): Comprendre comment la recherche d'IA change la stratégie de référencement à travers des contenus utiles, des données structurées, des pages explorables, l'identité de l'entité et l'architecture de graphe de connaissances.
   - Entity ID: ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/
@@ -567,8 +609,14 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:runtime-engines-and-domain-operating-systems
   - Identifier: https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/
   - JSON-LD: https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/index.jsonld
-  - Modified: 2026-06-24
+  - Modified: 2026-07-18
   - Keywords: Runtime Engines and Domain Operating Systems, Runtime Engine, Domain OS, Business OS, VASTE, Composable Systems, Systems Design, Software Architecture
+- [Segmenting Speech and Song Locally, Word by Word](https://electronicartefacts.com/publications/local-lexical-segmentation-for-speech-and-song/): Inside the Voice Capture Studio lexical pipeline for spoken voice, singing and mixed media.
+  - Entity ID: ea:publication:local-lexical-segmentation-for-speech-and-song
+  - Identifier: https://electronicartefacts.com/id/publication/local-lexical-segmentation-for-speech-and-song/
+  - JSON-LD: https://electronicartefacts.com/id/publication/local-lexical-segmentation-for-speech-and-song/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Segmenting Speech and Song Locally, Word by Word, Lexical Segmentation, Local AI, Singing Voice, Whisper, Audio Evidence, Audio Engineering, Machine Learning
 - [Signal Archaeology, Audio Memory and Machine Listening](https://electronicartefacts.com/publications/signal-archaeology-audio-memory-and-machine-listening/): A technical article on signal archaeology, audio memory, machine listening, ORETH and Palimpsests.
   - Entity ID: ea:publication:signal-archaeology-audio-memory-and-machine-listening
   - Identifier: https://electronicartefacts.com/id/publication/signal-archaeology-audio-memory-and-machine-listening/
@@ -579,13 +627,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:local-and-open-source-ai-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Systèmes d’IA locaux et open source, IA locale, IA open source, poids ouverts, quantification, llama.cpp, intelligence artificielle, open source
 - [Systèmes génératifs, cybernétique et programmation créative](https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/): Un article technique sur les systèmes génératifs, la rétroaction cybernétique, le codage créatif, la composition algorithmique et les projets d'Electronic Artefacts.
   - Entity ID: ea:publication:generative-systems-cybernetics-and-creative-coding-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Systèmes génératifs, cybernétique et programmation créative, Generative Systems, Cybernetics, programmation créative, Algorithmic Composition, art numérique, Music Production, conception de systèmes
 - [Systèmes personnels de connaissance et jardins numériques](https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/): Un article technique sur les systèmes de connaissances personnelles, les jardins numériques, les rétroliens, la mémoire de recherche et les centres de connaissances publics.
   - Entity ID: ea:publication:personal-knowledge-systems-and-digital-gardens-fr
@@ -599,12 +647,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/systems-thinking-for-creative-practice/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Systems Thinking for Creative Practice, Systems Thinking, Creative Practice, Feedback, Complexity, Leverage Points, Systems Design, Cybernetics
+- [The Browser as a Local-First Voice Studio](https://electronicartefacts.com/publications/browser-as-a-local-first-voice-studio/): The browser-native architecture behind Voice Capture Studio and its local-first privacy model.
+  - Entity ID: ea:publication:browser-as-a-local-first-voice-studio
+  - Identifier: https://electronicartefacts.com/id/publication/browser-as-a-local-first-voice-studio/
+  - JSON-LD: https://electronicartefacts.com/id/publication/browser-as-a-local-first-voice-studio/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: The Browser as a Local-First Voice Studio, Browser Software, Local First, Web Audio, IndexedDB, Open Source, Web Architecture, Audio Engineering
 - [Transparence de l’AI Act, provenance des contenus et pratique créative](https://electronicartefacts.com/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/): Préparer les workflows culturels et créatifs aux règles européennes avec une approche combinant marquage machine, information visible, provenance et dossier éditorial.
   - Entity ID: ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/index.jsonld
   - Modified: 2026-07-12
   - Keywords: Transparence de l’AI Act, provenance des contenus et pratique créative, AI Act, transparence de l’IA, médias synthétiques, provenance des contenus, C2PA, gouvernance de l’IA, médias numériques
+- [Trustworthy Audio Interfaces Never Simulate Measurement](https://electronicartefacts.com/publications/trustworthy-audio-interfaces-and-measurement/): How Voice Capture Studio turns signal integrity, silence, latency and reduced motion into rules for trustworthy audio UX.
+  - Entity ID: ea:publication:trustworthy-audio-interfaces-and-measurement
+  - Identifier: https://electronicartefacts.com/id/publication/trustworthy-audio-interfaces-and-measurement/
+  - JSON-LD: https://electronicartefacts.com/id/publication/trustworthy-audio-interfaces-and-measurement/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Trustworthy Audio Interfaces Never Simulate Measurement, Audio UX, Trustworthy Interfaces, Signal, Motion Design, Voice Capture Studio, Human Computer Interaction, Audio Engineering
 - [Typographie, systèmes de lecture et interfaces numériques](https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/): Un article technique sur la typographie, les systèmes de lecture, les interfaces web, l'accessibilité et la conception éditoriale d'Electronic Artefacts.
   - Entity ID: ea:publication:typography-reading-systems-and-digital-interfaces-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/typography-reading-systems-and-digital-interfaces/
@@ -617,6 +677,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/typography-reading-systems-and-digital-interfaces/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Typography, Reading Systems and Digital Interfaces, Typography, Reading Systems, Interface Design, Accessibility, Design, Web Development, Human Computer Interaction
+- [Une interface audio digne de confiance ne simule jamais la mesure](https://electronicartefacts.com/fr/publications/trustworthy-audio-interfaces-and-measurement/): Comment Voice Capture Studio transforme intégrité du signal, silence, latence et mouvement réduit en règles d’UX audio.
+  - Entity ID: ea:publication:trustworthy-audio-interfaces-and-measurement-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/trustworthy-audio-interfaces-and-measurement/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/trustworthy-audio-interfaces-and-measurement/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Une interface audio digne de confiance ne simule jamais la mesure, UX audio, Interface digne de confiance, Signal, Motion Design, Voice Capture Studio, interaction humain-machine, ingénierie audio
 - [Verifiable Credentials for Cultural Archives and Creator Identity](https://electronicartefacts.com/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Understand how verifiable credentials can support creator identity, archive provenance, rights workflows and trusted claims in cultural knowledge systems.
   - Entity ID: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
   - Identifier: https://electronicartefacts.com/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/
@@ -627,13 +693,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:publication:web-audio-and-browser-based-sound-systems
   - Identifier: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/
   - JSON-LD: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
-  - Modified: 2026-06-24
+  - Modified: 2026-07-18
   - Keywords: Web Audio and Browser-Based Sound Systems, Web Audio, Audio Graph, Browser Sound, ORETH, Audio Engineering, Web Development, Creative Coding
 - [Web Audio et systèmes sonores dans le navigateur](https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/): Un article technique sur Web Audio, les graphiques audio, le son du navigateur, ORETH, l'écoute automatique et les médias interactifs.
   - Entity ID: ea:publication:web-audio-and-browser-based-sound-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/web-audio-and-browser-based-sound-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
-  - Modified: 2026-07-12
+  - Modified: 2026-07-18
   - Keywords: Web Audio et systèmes sonores dans le navigateur, Web Audio, Audio Graph, Browser Sound, ORETH, ingénierie audio, développement web, programmation créative
 - [WebMCP and the Agentic Web](https://electronicartefacts.com/publications/webmcp-and-the-agentic-web/): Explore WebMCP, structured browser tools, declarative forms, permissions and why an agent-readable website still needs semantic HTML and accessible human interfaces.
   - Entity ID: ea:publication:webmcp-and-the-agentic-web
@@ -659,6 +725,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/webnn-and-local-ai-in-the-browser/index.jsonld
   - Modified: 2026-07-12
   - Keywords: WebNN et IA locale dans le navigateur, WebNN, IA dans le navigateur, inférence locale, apprentissage automatique Web, interaction humain-machine, intelligence artificielle, développement web
+- [Why Five Voice Modes Need Five Success Criteria](https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/): A product-design framework for deciding when a voice workflow is a mode rather than a preset.
+  - Entity ID: ea:publication:five-voice-modes-five-success-criteria
+  - Identifier: https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/
+  - JSON-LD: https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/index.jsonld
+  - Modified: 2026-07-18
+  - Keywords: Why Five Voice Modes Need Five Success Criteria, Product Modes, Voice UX, Dataset, Dubbing, Interaction Design, Product Design, Human Computer Interaction
 - [Why Graphs Are More Powerful Than Folders](https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/): Learn when graph models outperform folder hierarchies, why relationships matter, and how to keep folders as useful projections over connected data.
   - Entity ID: ea:publication:why-graphs-are-more-powerful-than-folders
   - Identifier: https://electronicartefacts.com/id/publication/why-graphs-are-more-powerful-than-folders/

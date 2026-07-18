@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,8 @@ subjects:
   - id: ea:technology:json-ld
   - id: ea:technology:rdf
   - id: ea:concept:knowledge-graph
+  - id: ea:technology:activitypub
+  - id: ea:framework:electronic-artefacts-lightweight-template
 claims:
   - "Les pages de connaissances statiques peuvent participer aux données liées lorsqu'elles publient des identifiants stables, des routes canoniques et des données structurées."
   - "JSON-LD est un pont pratique entre l'édition éditoriale et la représentation sémantique des graphiques."
@@ -166,6 +168,8 @@ Pour Electronic Artefacts, Linked Data est une discipline d'édition. Il aide le
 Cela compte le plus à mesure que le corpus grandit. Un site de dix pages peut compter sur la mémoire humaine. Un site avec mille dossiers de connaissances a besoin d'identité persistante, de validation des relations et d'index générés.
 
 ## Concepts connexes
+
+[ActivityPub](/fr/knowledge/technologies/activitypub/) montre comment identités publiques stables et ressources liées peuvent passer de la publication à la fédération. Le [framework léger Electronic Artefacts](/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/) constitue l’application éditoriale : pages canoniques, JSON-LD, routes localisées, voisinages de graphe et index machine naissent des mêmes entités.
 
 Lire [Données liées](/fr/knowledge/concepts/linked-data/), [Identité de l'entité](/fr/knowledge/concepts/entity-identity/), [RDF](/fr/knowledge/technologies/rdf/), [JSON-LD](/fr/knowledge/technologies/json-ld/) et [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/).
 

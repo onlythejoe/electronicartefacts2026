@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-24"
   publishedAt: "2026-06-24"
-  modifiedAt: "2026-06-24"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,9 @@ subjects:
   - id: ea:concept:motion-design
   - id: ea:concept:creative-coding
   - id: ea:program:vaste
+  - id: ea:project:voice-capture-studio
+  - id: ea:artefact:vab-interface-prototype
+  - id: ea:technology:webmcp
 claims:
   - Creative tools should preserve agency by making state, history, constraints and recovery visible.
   - HCI for creative systems is not only usability; it includes flow, ambiguity, exploration and interpretation.
@@ -157,6 +160,8 @@ Electronic Artefacts should make HCI a recurring lens for programs and projects.
 
 As tools become more intelligent, interaction design becomes more ethical and cultural. The user must remain able to inspect, guide and contest the system.
 
+Voice Capture Studio adds a second applied context: an operator must understand microphone authority, live versus stale signal, durable storage, review state and the different success conditions of five voice workflows. [Why Five Voice Modes Need Five Success Criteria](/publications/five-voice-modes-five-success-criteria/) shows why coherent interaction sometimes requires domain-specific divergence rather than a uniform dashboard. [Trustworthy Audio Interfaces Never Simulate Measurement](/publications/trustworthy-audio-interfaces-and-measurement/) extends the same principle to motion and audio feedback.
+
 ## Knowledge graph role
 
 HCI also shapes how the graph is experienced. A graph can be formally correct and still difficult to use. Readers need orientation, progressive disclosure and meaningful relation labels. A project page should not overload a newcomer with every possible edge. It should surface relations that help the current task.
@@ -190,6 +195,8 @@ That overlap should shape future EA tools.
 Future entries should cover undo systems, creative flow, graph interface patterns, machine-listening UI, prompt interfaces, accessibility for generative tools and public knowledge navigation.
 
 ## Related concepts
+
+The [VAB interface prototype](/archive/artefacts/vab-interface-prototype/) tests this interaction model inside VASTE, while [WebMCP](/knowledge/technologies/webmcp/) extends the question to browser interfaces that expose structured actions to agents without removing visible user authority.
 
 Read [Human Computer Interaction](/knowledge/concepts/human-computer-interaction/), [Augmented Intelligence](/knowledge/concepts/augmented-intelligence/), [Motion Design](/knowledge/concepts/motion-design/), [Creative Coding](/knowledge/concepts/creative-coding/) and [VASTE](/programs/vaste/).
 

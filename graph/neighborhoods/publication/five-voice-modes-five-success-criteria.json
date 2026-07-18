@@ -1,0 +1,153 @@
+{
+  "id": "local:ea:publication:five-voice-modes-five-success-criteria",
+  "kind": "local",
+  "focus": "ea:publication:five-voice-modes-five-success-criteria",
+  "nodes": [
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria",
+      "type": "publication",
+      "title": "Why Five Voice Modes Need Five Success Criteria",
+      "route": "/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Voice Technology",
+      "route": "/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:speech-recording",
+      "type": "concept",
+      "title": "Speech Recording",
+      "route": "/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:speech-datasets",
+      "type": "concept",
+      "title": "Speech Datasets",
+      "route": "/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Why Five Voice Modes Need Five Success Criteria is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-voice-capture-studio",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-human-computer-interaction",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-voice-technology",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:voice-technology",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Voice Technology as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-systems-thinking",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:systems-thinking",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-speech-recording",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:speech-recording",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Speech Recording as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-speech-datasets",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:speech-datasets",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Speech Datasets as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

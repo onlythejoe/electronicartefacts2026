@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-23"
   publishedAt: "2026-06-23"
-  modifiedAt: "2026-06-23"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:program:oreth
   - id: ea:project:palimpsests
+  - id: ea:concept:algorithmic-composition
 claims:
   - Generative work is best understood through constraints, feedback, material selection and curation rather than novelty alone.
   - Cybernetic feedback remains a useful concept for creative systems when used with technical precision.
@@ -180,6 +181,8 @@ The Knowledge Hub should therefore document generative systems at two levels: th
 Future articles should cover algorithmic composition, procedural graphics, generative identity systems, AI-assisted production methods, output evaluation, dataset provenance and preservation strategies for generated artefacts.
 
 ## Related concepts
+
+[Algorithmic Composition](/knowledge/concepts/algorithmic-composition/) is the musical branch of this system: rules generate possibilities, feedback changes selection and the artist remains responsible for curation. This creates a direct path from ORETH and Palimpsests toward the dedicated article [Algorithmic Composition and Rule-Based Music](/publications/algorithmic-composition-and-rule-based-music/).
 
 Read [Generative System](/knowledge/concepts/generative-system/), [Cybernetic Feedback](/knowledge/concepts/cybernetic-feedback/), [Creative Coding](/knowledge/concepts/creative-coding/), [ORETH](/programs/oreth/) and [Palimpsests](/projects/palimpsests/).
 

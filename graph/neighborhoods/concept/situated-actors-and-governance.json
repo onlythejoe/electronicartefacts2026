@@ -18,6 +18,22 @@
       "route": "/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +45,24 @@
       "label": "Has part",
       "statement": "VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-situated-actors-and-governance",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:situated-actors-and-governance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents Situated Actors and Topological Governance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-situated-actors-and-governance",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:situated-actors-and-governance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Situated Actors and Topological Governance as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

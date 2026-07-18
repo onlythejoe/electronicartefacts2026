@@ -84,6 +84,22 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:five-voice-modes-five-success-criteria",
+      "type": "publication",
+      "title": "Why Five Voice Modes Need Five Success Criteria",
+      "route": "/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:webmcp-and-the-agentic-web",
       "type": "publication",
       "title": "WebMCP and the Agentic Web",
@@ -173,6 +189,24 @@
       "label": "Member of collection",
       "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-human-computer-interaction",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-human-computer-interaction",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:webmcp-and-the-agentic-web-documents-human-computer-interaction",

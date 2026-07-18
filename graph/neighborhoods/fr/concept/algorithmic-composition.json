@@ -26,6 +26,14 @@
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "type": "publication",
+      "title": "Systèmes génératifs, cybernétique et programmation créative",
+      "route": "/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Member of collection",
       "statement": "Algorithmic Composition is an explicit member of the Knowledge Hub Second Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:generative-systems-cybernetics-and-creative-coding-documents-algorithmic-composition",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "target": "ea:concept:algorithmic-composition-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding documents Algorithmic Composition as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

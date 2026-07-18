@@ -114,6 +114,14 @@
       "route": "/publications/iiif-and-compound-cultural-objects/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -232,6 +240,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-metadata",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Metadata as one of its declared subjects.",
       "confidence": "published"
     }
   ]

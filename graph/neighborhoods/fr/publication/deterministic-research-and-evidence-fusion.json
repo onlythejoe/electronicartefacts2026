@@ -1,0 +1,153 @@
+{
+  "id": "local:ea:publication:deterministic-research-and-evidence-fusion-fr",
+  "kind": "local",
+  "focus": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "type": "publication",
+      "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+      "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:graph-modeling-fr",
+      "type": "concept",
+      "title": "Modélisation de graphe",
+      "route": "/fr/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:systems-thinking-fr",
+      "type": "concept",
+      "title": "Pensée systémique",
+      "route": "/fr/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-voice-capture-studio",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-provenance",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-graph-modeling",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Graph Modeling as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-systems-thinking",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-contextual-execution",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-vaste",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

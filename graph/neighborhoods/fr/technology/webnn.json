@@ -42,6 +42,14 @@
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "type": "publication",
+      "title": "Le navigateur comme studio vocal local-first",
+      "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +88,15 @@
       "label": "Member of collection",
       "statement": "WebNN is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-webnn",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:technology:webnn-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents WebNN as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

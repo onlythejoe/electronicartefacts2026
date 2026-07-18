@@ -26,6 +26,14 @@
       "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-agent2agent-protocol",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:technology:agent2agent-protocol",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents Agent2Agent Protocol as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,9 @@ subjects:
   - id: ea:concept:motion-design
   - id: ea:concept:creative-coding
   - id: ea:program:vaste
+  - id: ea:project:voice-capture-studio
+  - id: ea:artefact:vab-interface-prototype
+  - id: ea:technology:webmcp
 claims:
   - "Les outils créatifs devraient préserver l’agentivité en rendant visible l'état, l'histoire, les contraintes et la récupération."
   - "L’IHM pour les systèmes créatifs n'est pas seulement une facilité d'utilisation; elle comprend le flux, l'ambiguïté, l'exploration et l'interprétation."
@@ -159,6 +162,8 @@ Electronic Artefacts devrait faire de IHM une lentille récurrente pour les prog
 
 À mesure que les outils deviennent plus intelligents, la conception de l'interaction devient plus éthique et culturelle. L'utilisateur doit rester en mesure d'inspecter, de guider et de contester le système.
 
+Voice Capture Studio ajoute un second contexte appliqué : l’opérateur doit comprendre autorité du microphone, signal frais ou périmé, stockage durable, état de révision et réussite propre à cinq parcours vocaux. [Pourquoi cinq modes vocaux exigent cinq critères de réussite](/fr/publications/five-voice-modes-five-success-criteria/) montre pourquoi une interaction cohérente exige parfois une divergence métier plutôt qu’un tableau de bord uniforme. [Une interface audio digne de confiance ne simule jamais la mesure](/fr/publications/trustworthy-audio-interfaces-and-measurement/) étend ce principe au mouvement et au feedback audio.
+
 ## Rôle du graphe de connaissances
 
 IHM façonne également comment le graphique est vécu. Un graphique peut être formellement correct et encore difficile à utiliser. Les lecteurs ont besoin d'orientation, de divulgation progressive et d'étiquettes de relations significatives. Une page de projet ne devrait pas surcharger un nouveau venu avec tous les bords possibles. Il devrait faire surface aux relations qui aident la tâche actuelle.
@@ -192,6 +197,8 @@ Ce chevauchement devrait façonner les futurs outils d'EE.
 Les futures entrées devraient porter sur les systèmes d'annulation, le flux créatif, les modèles d'interface graphique, l'interface utilisateur d'écoute automatique, les interfaces rapides, l'accessibilité pour les outils génériques et la navigation des connaissances publiques.
 
 ## Concepts connexes
+
+Le [prototype d’interface VAB](/fr/archive/artefacts/vab-interface-prototype/) teste ce modèle dans VASTE, tandis que [WebMCP](/fr/knowledge/technologies/webmcp/) étend la question aux interfaces navigateur qui exposent des actions structurées aux agents sans retirer l’autorité visible de l’utilisateur.
 
 Lire [Interaction informatique humaine](/fr/knowledge/concepts/human-computer-interaction/), [Intelligence augmentée](/fr/knowledge/concepts/augmented-intelligence/), [Conception de mouvement](/fr/knowledge/concepts/motion-design/), [Codage créatif](/fr/knowledge/concepts/creative-coding/) et [VASTE](/fr/programs/vaste/).
 

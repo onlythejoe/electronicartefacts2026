@@ -1,0 +1,187 @@
+{
+  "id": "local:ea:publication:browser-as-a-local-first-voice-studio-fr",
+  "kind": "local",
+  "focus": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "type": "publication",
+      "title": "Le navigateur comme studio vocal local-first",
+      "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:browser-software-fr",
+      "type": "concept",
+      "title": "Logiciel de navigateur",
+      "route": "/fr/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source-fr",
+      "type": "concept",
+      "title": "open source",
+      "route": "/fr/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:web-audio-fr",
+      "type": "concept",
+      "title": "Audio web",
+      "route": "/fr/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows-fr",
+      "type": "concept",
+      "title": "Workflows de machine learning",
+      "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:web-audio-api-fr",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/fr/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webnn-fr",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/fr/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The Browser as a Local-First Voice Studio is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-voice-capture-studio",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-browser-software",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:concept:browser-software-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Browser Software as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-open-source",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Open Source as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:concept:web-audio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-machine-learning-workflows",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Machine Learning Workflows as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-vaste",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio-api",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:technology:web-audio-api-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Web Audio API as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-webnn",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:technology:webnn-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents WebNN as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
       "description": "Un article technique sur les données liées, JSON-LD, les URL canoniques, les identifiants et le référencement pour les plateformes de connaissances statiques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-12",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -68,7 +68,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-12",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1639,
+      "wordCount": 1680,
       "citation": [
         "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.1.1, 2026.",
         {
@@ -115,6 +115,12 @@
         },
         {
           "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/activitypub/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/framework/electronic-artefacts-lightweight-template/"
         }
       ],
       "mentions": [

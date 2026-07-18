@@ -106,6 +106,22 @@
       "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "type": "publication",
+      "title": "Segmenting Speech and Song Locally, Word by Word",
+      "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -216,6 +232,24 @@
       "label": "Member of collection",
       "statement": "ORETH is an explicit member of the Knowledge Hub Foundations collection.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-oreth",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents ORETH as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-oreth",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents ORETH as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

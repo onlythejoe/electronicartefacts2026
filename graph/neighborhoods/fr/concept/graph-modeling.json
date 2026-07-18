@@ -44,6 +44,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "type": "publication",
+      "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+      "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:systems-thinking-for-creative-practice-fr",
       "type": "publication",
       "title": "Pensée systémique pour la pratique créative",
@@ -88,6 +96,15 @@
       "label": "Member of collection",
       "statement": "Graph Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-graph-modeling",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Graph Modeling as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:systems-thinking-for-creative-practice-documents-graph-modeling",

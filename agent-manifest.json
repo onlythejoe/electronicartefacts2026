@@ -79,7 +79,7 @@
     "project": 6,
     "researchField": 2,
     "researchQuestion": 6,
-    "publication": 86,
+    "publication": 98,
     "concept": 92,
     "technology": 40,
     "framework": 2,
@@ -502,7 +502,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
@@ -644,7 +644,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-09"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
@@ -725,7 +725,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:ai-agents-vs-ai-workflows",
@@ -752,7 +752,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-24",
-      "modifiedAt": "2026-06-24"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
@@ -994,7 +994,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-23",
-      "modifiedAt": "2026-06-23"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
@@ -1020,6 +1020,59 @@
       "confidence": "published",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "summary": "Le pipeline lexical de Voice Capture Studio pour voix parlée, chant et médias mixtes.",
+      "url": "https://electronicartefacts.com/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/local-lexical-segmentation-for-speech-and-song/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/local-lexical-segmentation-for-speech-and-song/index.jsonld",
+      "tags": [
+        "Découper localement la parole et le chant, mot par mot",
+        "Segmentation lexicale",
+        "IA locale",
+        "Chant",
+        "Whisper",
+        "Preuve audio",
+        "ingénierie audio",
+        "apprentissage automatique",
+        "développement web"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion",
+      "locale": "en",
+      "type": "publication",
+      "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+      "summary": "A method for evidence-linked decisions in Voice Capture Studio, VASTE and graph-based research systems.",
+      "url": "https://electronicartefacts.com/publications/deterministic-research-and-evidence-fusion/",
+      "route": "/publications/deterministic-research-and-evidence-fusion/",
+      "identifier": "https://electronicartefacts.com/id/publication/deterministic-research-and-evidence-fusion/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/deterministic-research-and-evidence-fusion/index.jsonld",
+      "tags": [
+        "Deterministic Research: Deciding Without Turning Estimates into Truth",
+        "Deterministic Research",
+        "Evidence",
+        "Uncertainty",
+        "Provenance",
+        "Graph",
+        "Research Design",
+        "Data Engineering",
+        "Software Architecture"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:digital-preservation-and-living-archives",
@@ -1072,7 +1125,34 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "Du microphone au dataset, anatomie d’une prise vocale traçable",
+      "summary": "Le pipeline Voice Capture Studio, de la capture PCM au paquet dataset local et vérifiable.",
+      "url": "https://electronicartefacts.com/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/index.jsonld",
+      "tags": [
+        "Du microphone au dataset, anatomie d’une prise vocale traçable",
+        "dataset vocal",
+        "Provenance",
+        "PCM",
+        "métadonnées",
+        "Local First",
+        "ingénierie audio",
+        "ingénierie des données",
+        "apprentissage automatique"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
@@ -1153,7 +1233,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:foundational-lineage-001-fr",
@@ -1199,6 +1279,32 @@
       "confidence": "published",
       "publishedAt": "2026-06-12",
       "modifiedAt": "2026-06-22"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "locale": "en",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "summary": "A step-by-step account of the Voice Capture Studio pipeline from PCM capture to a verifiable local dataset package.",
+      "url": "https://electronicartefacts.com/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "identifier": "https://electronicartefacts.com/id/publication/traceable-voice-capture-from-microphone-to-dataset/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/traceable-voice-capture-from-microphone-to-dataset/index.jsonld",
+      "tags": [
+        "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+        "Voice Dataset",
+        "Provenance",
+        "PCM",
+        "Metadata",
+        "Local First",
+        "Audio Engineering",
+        "Data Engineering",
+        "Machine Learning"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
@@ -1277,7 +1383,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-23",
-      "modifiedAt": "2026-06-23"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
@@ -1412,7 +1518,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-24",
-      "modifiedAt": "2026-06-24"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
@@ -1656,7 +1762,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
@@ -1711,6 +1817,33 @@
       "modifiedAt": "2026-07-12"
     },
     {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "Le navigateur comme studio vocal local-first",
+      "summary": "L’architecture browser-native de Voice Capture Studio et son modèle de vie privée local-first.",
+      "url": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/",
+      "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/index.jsonld",
+      "tags": [
+        "Le navigateur comme studio vocal local-first",
+        "Logiciel navigateur",
+        "Local First",
+        "Web Audio",
+        "IndexedDB",
+        "open source",
+        "architecture web",
+        "ingénierie audio",
+        "ingénierie logicielle"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
+    },
+    {
       "id": "ea:publication:linked-data-and-public-knowledge-pages",
       "locale": "en",
       "type": "publication",
@@ -1733,7 +1866,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-23",
-      "modifiedAt": "2026-06-23"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:local-and-open-source-ai-systems",
@@ -1760,7 +1893,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-24",
-      "modifiedAt": "2026-06-24"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
@@ -1945,7 +2078,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:motion-design-time-and-interface-semantics-fr",
@@ -2238,6 +2371,33 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:five-voice-modes-five-success-criteria",
+      "type": "publication",
+      "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+      "summary": "Un cadre produit pour décider quand un workflow vocal devient un mode plutôt qu’un preset.",
+      "url": "https://electronicartefacts.com/fr/publications/five-voice-modes-five-success-criteria/",
+      "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/five-voice-modes-five-success-criteria/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/five-voice-modes-five-success-criteria/index.jsonld",
+      "tags": [
+        "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+        "Modes produit",
+        "UX vocale",
+        "Dataset",
+        "Doublage",
+        "design d’interaction",
+        "Design produit",
+        "interaction humain-machine",
+        "ingénierie audio"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
+    },
+    {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
       "locale": "fr",
       "translationOf": "ea:publication:why-graphs-are-more-powerful-than-folders",
@@ -2344,6 +2504,33 @@
       "confidence": "published",
       "publishedAt": "2026-06-25",
       "modifiedAt": "2026-06-25"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:deterministic-research-and-evidence-fusion",
+      "type": "publication",
+      "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+      "summary": "Une méthode de décision reliée aux preuves dans Voice Capture Studio, VASTE et les systèmes de recherche en graphe.",
+      "url": "https://electronicartefacts.com/fr/publications/deterministic-research-and-evidence-fusion/",
+      "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/deterministic-research-and-evidence-fusion/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/deterministic-research-and-evidence-fusion/index.jsonld",
+      "tags": [
+        "Recherche déterministe, décider sans transformer une estimation en vérité",
+        "recherche déterministe",
+        "Preuve",
+        "Incertitude",
+        "Provenance",
+        "Graphe",
+        "Design de recherche",
+        "ingénierie des données",
+        "architecture logicielle"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
@@ -2506,7 +2693,33 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-24",
-      "modifiedAt": "2026-06-24"
+      "modifiedAt": "2026-07-18"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "locale": "en",
+      "type": "publication",
+      "title": "Segmenting Speech and Song Locally, Word by Word",
+      "summary": "Inside the Voice Capture Studio lexical pipeline for spoken voice, singing and mixed media.",
+      "url": "https://electronicartefacts.com/publications/local-lexical-segmentation-for-speech-and-song/",
+      "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+      "identifier": "https://electronicartefacts.com/id/publication/local-lexical-segmentation-for-speech-and-song/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/local-lexical-segmentation-for-speech-and-song/index.jsonld",
+      "tags": [
+        "Segmenting Speech and Song Locally, Word by Word",
+        "Lexical Segmentation",
+        "Local AI",
+        "Singing Voice",
+        "Whisper",
+        "Audio Evidence",
+        "Audio Engineering",
+        "Machine Learning",
+        "Web Development"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
@@ -2562,7 +2775,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
@@ -2588,7 +2801,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
@@ -2643,6 +2856,32 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "locale": "en",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "summary": "The browser-native architecture behind Voice Capture Studio and its local-first privacy model.",
+      "url": "https://electronicartefacts.com/publications/browser-as-a-local-first-voice-studio/",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "identifier": "https://electronicartefacts.com/id/publication/browser-as-a-local-first-voice-studio/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/browser-as-a-local-first-voice-studio/index.jsonld",
+      "tags": [
+        "The Browser as a Local-First Voice Studio",
+        "Browser Software",
+        "Local First",
+        "Web Audio",
+        "IndexedDB",
+        "Open Source",
+        "Web Architecture",
+        "Audio Engineering",
+        "Software Engineering"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
+    },
+    {
       "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
       "locale": "fr",
       "translationOf": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
@@ -2669,6 +2908,32 @@
       "confidence": "published",
       "publishedAt": "2026-07-12",
       "modifiedAt": "2026-07-12"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "locale": "en",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "summary": "How Voice Capture Studio turns signal integrity, silence, latency and reduced motion into rules for trustworthy audio UX.",
+      "url": "https://electronicartefacts.com/publications/trustworthy-audio-interfaces-and-measurement/",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "identifier": "https://electronicartefacts.com/id/publication/trustworthy-audio-interfaces-and-measurement/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/trustworthy-audio-interfaces-and-measurement/index.jsonld",
+      "tags": [
+        "Trustworthy Audio Interfaces Never Simulate Measurement",
+        "Audio UX",
+        "Trustworthy Interfaces",
+        "Signal",
+        "Motion Design",
+        "Voice Capture Studio",
+        "Human Computer Interaction",
+        "Audio Engineering",
+        "Interaction Design"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
@@ -2722,6 +2987,33 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "locale": "fr",
+      "translationOf": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+      "summary": "Comment Voice Capture Studio transforme intégrité du signal, silence, latence et mouvement réduit en règles d’UX audio.",
+      "url": "https://electronicartefacts.com/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "identifier": "https://electronicartefacts.com/fr/id/publication/trustworthy-audio-interfaces-and-measurement/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/publication/trustworthy-audio-interfaces-and-measurement/index.jsonld",
+      "tags": [
+        "Une interface audio digne de confiance ne simule jamais la mesure",
+        "UX audio",
+        "Interface digne de confiance",
+        "Signal",
+        "Motion Design",
+        "Voice Capture Studio",
+        "interaction humain-machine",
+        "ingénierie audio",
+        "design d’interaction"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
+    },
+    {
       "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "locale": "en",
       "type": "publication",
@@ -2771,7 +3063,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-24",
-      "modifiedAt": "2026-06-24"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
@@ -2798,7 +3090,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-12"
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:webmcp-and-the-agentic-web",
@@ -2906,6 +3198,32 @@
       "confidence": "published",
       "publishedAt": "2026-06-25",
       "modifiedAt": "2026-07-12"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria",
+      "locale": "en",
+      "type": "publication",
+      "title": "Why Five Voice Modes Need Five Success Criteria",
+      "summary": "A product-design framework for deciding when a voice workflow is a mode rather than a preset.",
+      "url": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/",
+      "route": "/publications/five-voice-modes-five-success-criteria/",
+      "identifier": "https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/",
+      "jsonLd": "https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/index.jsonld",
+      "tags": [
+        "Why Five Voice Modes Need Five Success Criteria",
+        "Product Modes",
+        "Voice UX",
+        "Dataset",
+        "Dubbing",
+        "Interaction Design",
+        "Product Design",
+        "Human Computer Interaction",
+        "Audio Engineering"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-18",
+      "modifiedAt": "2026-07-18"
     },
     {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders",

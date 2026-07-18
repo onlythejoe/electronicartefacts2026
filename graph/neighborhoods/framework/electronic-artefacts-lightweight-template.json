@@ -26,6 +26,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "implementedBy",
       "label": "Implemented by",
       "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-electronic-artefacts-lightweight-template",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:framework:electronic-artefacts-lightweight-template",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Electronic Artefacts Lightweight Template as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -1,0 +1,138 @@
+{
+  "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+  "type": "publication",
+  "slug": {
+    "canonical": "trustworthy-audio-interfaces-and-measurement"
+  },
+  "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+  "subtitle": "Signal-Grounded Interaction Design",
+  "abstract": "A practical design doctrine for audio interfaces in which waveforms, meters, halos and motion remain traceable to fresh signal, explicit state or user action.",
+  "description": "How Voice Capture Studio turns signal integrity, silence, latency and reduced motion into rules for trustworthy audio UX.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Audio UX",
+    "Trustworthy Interfaces",
+    "Signal",
+    "Motion Design",
+    "Voice Capture Studio"
+  ],
+  "disciplines": [
+    "Human Computer Interaction",
+    "Audio Engineering",
+    "Interaction Design"
+  ],
+  "sources": [
+    {
+      "title": "Voice Capture Studio Phenomenology",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/design/PHENOMENOLOGY.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "Web Audio API 1.1",
+      "url": "https://www.w3.org/TR/webaudio/",
+      "publisher": "W3C",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "caseStudy",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:motion-design"
+    },
+    {
+      "id": "ea:concept:web-audio"
+    },
+    {
+      "id": "ea:program:oreth"
+    },
+    {
+      "id": "ea:concept:signal-archaeology"
+    }
+  ],
+  "claims": [
+    "An audio visualization should distinguish fresh measurement, recorded evidence, estimated state and decorative motion.",
+    "Reduced motion should remove choreography without removing the meaning of a state change."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Trustworthy Audio Interfaces Never Simulate Measurement.\" Case study, 2026."
+  },
+  "bodyHtml": "<h2 id=\"context\">Context</h2>\n<p>Audio interfaces can look convincing while saying very little about the sound they claim to represent. A smooth waveform may be a prerecorded animation. A pulsing halo may follow elapsed time rather than amplitude. A percentage may look measured even when it is only a progress estimate. These shortcuts are not harmless decoration: they teach the operator to trust a surface that cannot explain its own readings.</p>\n<p><a href=\"/projects/voice-capture-studio/\">Voice Capture Studio</a> treats this as an interaction-design problem. Its visual language is soft—warm white, translucent glass, diffuse depth and a continuous filament—but its behavioral rules are strict. Anything that resembles a reading must be attached to a fresh signal, a decoded recording or an explicit system state.</p>\n<h2 id=\"constraints\">Constraints</h2>\n<p>A trustworthy audio surface separates four classes that many products blur together.</p>\n<ol>\n<li><strong>Live measurement</strong> comes from a current microphone or analyzer frame and expires when that frame becomes stale.</li>\n<li><strong>Recorded evidence</strong> comes from the decoded take during replay and must follow the take’s own amplitude and timing.</li>\n<li><strong>Estimated state</strong> includes alignment, confidence or progress inferred from a bounded method; it must be labeled as estimated.</li>\n<li><strong>Choreography</strong> communicates entry, exit or attention. It may clarify state, but it must never impersonate measurement.</li>\n</ol>\n<p>This distinction connects the project to <a href=\"/knowledge/concepts/human-computer-interaction/\">human-computer interaction</a> and <a href=\"/knowledge/concepts/motion-design/\">motion design</a>. Motion is semantic when it helps a person understand what changed, where agency sits and whether the instrument is observing, waiting, recording or reviewing.</p>\n<h2 id=\"approach\">Approach</h2>\n<p>The central curve is useful because it has a freshness contract. When recent samples exist, it represents the live signal. When they do not, the interface falls back to an unmistakably idle carrier instead of freezing the last energetic frame. The important decision is not the curve style; it is the refusal to present stale evidence as current.</p>\n<p>The same rule applies during replay. Energy should be derived from the decoded take, not from a generic timer. Silence remains data: room tone and pauses should look quiet but still visibly belong to an active measurement process.</p>\n<p>This is where <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> becomes more than an implementation detail. Its graph of sources, analyzers and destinations provides the causal chain the interface needs. The public surface can say which node produced which visual observation.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>An acoustic instrument has a priority order. Capture comes first; rendering and flourish come after it. Device strain may reduce background blur, decorative particles or ambient animation, but it must not downgrade the representation of an active recording. Latency-critical transitions may skip choreography when the microphone is being armed, while downstream review states can emerge more gradually.</p>\n<p>This hierarchy is especially important on mobile devices, where a beautiful but over-budget interface can compete with recording, decoding or storage. Perceived continuity is achieved through explicit priorities, not by animating everything.</p>\n<h2 id=\"reduced-motion-without-reduced-meaning\">Reduced motion without reduced meaning</h2>\n<p>Accessibility settings should collapse duration, not information. A state that normally sweeps into place can appear immediately under <code>prefers-reduced-motion</code>, but the status, label and causal relationship must remain. The user still needs to know that permission is pending, capture has started or an export is complete.</p>\n<h2 id=\"outcome\">Outcome</h2>\n<p>For every meter, waveform, halo, progress ring or animated number, ask:</p>\n<ul>\n<li>What exact signal or event drives it?</li>\n<li>How old may that evidence become before the visual changes state?</li>\n<li>Is the value measured, estimated or merely directional?</li>\n<li>What happens in silence, on replay and after permission denial?</li>\n<li>Does reduced motion preserve the information?</li>\n<li>Can lower rendering budgets remove decoration without weakening capture?</li>\n</ul>\n<p>This checklist extends beyond Voice Capture Studio. <a href=\"/programs/oreth/\">ORETH</a> can apply it to machine-listening surfaces, while <a href=\"/knowledge/concepts/signal-archaeology/\">signal archaeology</a> supplies an interpretive caution: a trace is evidence of a process, not the process itself.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The working implementation and its behavioral constitution live in the <a href=\"/archive/artefacts/voice-capture-studio-repository/\">Voice Capture Studio repository</a>. The project dossier explains the five workflows and the decision pipeline. Together they make a broader claim: visual calm becomes trustworthy only when every perceptual phenomenon has an identifiable cause.</p>\n",
+  "headings": [
+    "Context",
+    "Constraints",
+    "Approach",
+    "Implementation",
+    "Reduced motion without reduced meaning",
+    "Outcome",
+    "Evidence"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "Constraints",
+      "id": "constraints"
+    },
+    {
+      "level": 2,
+      "title": "Approach",
+      "id": "approach"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Reduced motion without reduced meaning",
+      "id": "reduced-motion-without-reduced-meaning"
+    },
+    {
+      "level": 2,
+      "title": "Outcome",
+      "id": "outcome"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    }
+  ]
+}

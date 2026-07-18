@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:large-language-model
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
+  - id: ea:project:voice-capture-studio
 claims:
   - "L'inférence locale peut améliorer le contrôle, la confidentialité et la disponibilité hors ligne, mais elle transfère les responsabilités en matière de matériel, de sécurité et de maintenance à l'opérateur."
   - "Les poids téléchargeables ne devraient pas être décrites comme de l'IA open-source sans examiner le code, les informations sur les données de formation et les libertés de licence."
@@ -201,6 +202,8 @@ La définition de l'OSI établit des critères pour l'IA open-source au-delà de
 L'IA locale s'adapte aux Electronic Artefacts lorsqu'elle renforce le contrôle du savoir et du matériel culturel. Il peut soutenir un assistant de recherche privé sur les enregistrements du graphe, un service d'analyse ORETH, un outil de codage en studio ou une interface d'archive multimodale.
 
 Le principe durable est la compasabilité. Les modèles devraient être des éléments remplaçables derrière des contrats clairs. Les sources, l'identité de l'entité et les autorisations devraient demeurer indépendantes d'un seul fournisseur modèle. La provenance devrait saisir comment l'IA a contribué à un artefact.
+
+Voice Capture Studio démontre un contrat d’IA locale plus étroit qu’un assistant général. Transcription quantifiée, activité vocale et hypothèses de signal dérivé s’exécutent près du média privé, tandis que runtime, confiance et provenance restent visibles. L’audio original demeure la preuve et les estimations navigateur restent remplaçables. Lire [Découper localement la parole et le chant, mot par mot](/fr/publications/local-lexical-segmentation-for-speech-and-song/) pour le pipeline adaptatif et [Recherche déterministe](/fr/publications/deterministic-research-and-evidence-fusion/) pour sa frontière de décision.
 
 ## Limites
 

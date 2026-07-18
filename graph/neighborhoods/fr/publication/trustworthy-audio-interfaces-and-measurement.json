@@ -1,0 +1,153 @@
+{
+  "id": "local:ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+  "kind": "local",
+  "focus": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "type": "publication",
+      "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+      "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:motion-design-fr",
+      "type": "concept",
+      "title": "Motion design",
+      "route": "/fr/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:web-audio-fr",
+      "type": "concept",
+      "title": "Audio web",
+      "route": "/fr/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:signal-archaeology-fr",
+      "type": "concept",
+      "title": "Archéologie du signal",
+      "route": "/fr/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-voice-capture-studio",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-human-computer-interaction",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-motion-design",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:motion-design-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Motion Design as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-web-audio",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:web-audio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-oreth",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:program:oreth-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents ORETH as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-signal-archaeology",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Signal Archaeology as one of its declared subjects.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
       "description": "A technical article on generative systems, cybernetic feedback, creative coding, algorithmic composition and Electronic Artefacts projects.",
       "inLanguage": "en",
       "datePublished": "2026-06-23",
-      "dateModified": "2026-06-23",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -68,7 +68,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-23",
-      "dateModified": "2026-06-23",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1341,
+      "wordCount": 1382,
       "citation": [
         "Electronic Artefacts. \"Generative Systems, Cybernetics and Creative Coding.\" Technical article, version 1.0.0, 2026.",
         {
@@ -117,6 +117,9 @@
         },
         {
           "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/algorithmic-composition/"
         }
       ],
       "mentions": [

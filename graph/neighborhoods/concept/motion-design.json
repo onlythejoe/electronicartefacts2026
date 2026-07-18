@@ -42,6 +42,14 @@
       "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +88,15 @@
       "label": "Member of collection",
       "statement": "Motion Design is an explicit member of the Knowledge Hub Second Wave collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-motion-design",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "target": "ea:concept:motion-design",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Motion Design as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

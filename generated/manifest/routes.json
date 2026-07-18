@@ -726,6 +726,12 @@
     "identifier": "/fr/id/publication/algorithmic-composition-and-rule-based-music/"
   },
   {
+    "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+    "locale": "fr",
+    "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+    "identifier": "/fr/id/publication/browser-as-a-local-first-voice-studio/"
+  },
+  {
     "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
     "locale": "fr",
     "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
@@ -744,6 +750,12 @@
     "identifier": "/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
   },
   {
+    "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+    "locale": "fr",
+    "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+    "identifier": "/fr/id/publication/deterministic-research-and-evidence-fusion/"
+  },
+  {
     "id": "ea:publication:digital-preservation-and-living-archives-fr",
     "locale": "fr",
     "route": "/fr/publications/digital-preservation-and-living-archives/",
@@ -760,6 +772,12 @@
     "locale": "fr",
     "route": "/fr/publications/event-driven-architecture-and-event-streams/",
     "identifier": "/fr/id/publication/event-driven-architecture-and-event-streams/"
+  },
+  {
+    "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+    "locale": "fr",
+    "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+    "identifier": "/fr/id/publication/five-voice-modes-five-success-criteria/"
   },
   {
     "id": "ea:publication:foundational-lineage-001-fr",
@@ -820,6 +838,12 @@
     "locale": "fr",
     "route": "/fr/publications/local-and-open-source-ai-systems/",
     "identifier": "/fr/id/publication/local-and-open-source-ai-systems/"
+  },
+  {
+    "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+    "locale": "fr",
+    "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+    "identifier": "/fr/id/publication/local-lexical-segmentation-for-speech-and-song/"
   },
   {
     "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
@@ -922,6 +946,18 @@
     "locale": "fr",
     "route": "/fr/publications/systems-thinking-for-creative-practice/",
     "identifier": "/fr/id/publication/systems-thinking-for-creative-practice/"
+  },
+  {
+    "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+    "locale": "fr",
+    "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "identifier": "/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/"
+  },
+  {
+    "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+    "locale": "fr",
+    "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+    "identifier": "/fr/id/publication/trustworthy-audio-interfaces-and-measurement/"
   },
   {
     "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
@@ -1170,6 +1206,12 @@
     "identifier": "/id/publication/algorithmic-composition-and-rule-based-music/"
   },
   {
+    "id": "ea:publication:browser-as-a-local-first-voice-studio",
+    "locale": "en",
+    "route": "/publications/browser-as-a-local-first-voice-studio/",
+    "identifier": "/id/publication/browser-as-a-local-first-voice-studio/"
+  },
+  {
     "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
     "locale": "en",
     "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
@@ -1188,6 +1230,12 @@
     "identifier": "/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
   },
   {
+    "id": "ea:publication:deterministic-research-and-evidence-fusion",
+    "locale": "en",
+    "route": "/publications/deterministic-research-and-evidence-fusion/",
+    "identifier": "/id/publication/deterministic-research-and-evidence-fusion/"
+  },
+  {
     "id": "ea:publication:digital-preservation-and-living-archives",
     "locale": "en",
     "route": "/publications/digital-preservation-and-living-archives/",
@@ -1204,6 +1252,12 @@
     "locale": "en",
     "route": "/publications/event-driven-architecture-and-event-streams/",
     "identifier": "/id/publication/event-driven-architecture-and-event-streams/"
+  },
+  {
+    "id": "ea:publication:five-voice-modes-five-success-criteria",
+    "locale": "en",
+    "route": "/publications/five-voice-modes-five-success-criteria/",
+    "identifier": "/id/publication/five-voice-modes-five-success-criteria/"
   },
   {
     "id": "ea:publication:foundational-lineage-001",
@@ -1264,6 +1318,12 @@
     "locale": "en",
     "route": "/publications/local-and-open-source-ai-systems/",
     "identifier": "/id/publication/local-and-open-source-ai-systems/"
+  },
+  {
+    "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "locale": "en",
+    "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+    "identifier": "/id/publication/local-lexical-segmentation-for-speech-and-song/"
   },
   {
     "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
@@ -1366,6 +1426,18 @@
     "locale": "en",
     "route": "/publications/systems-thinking-for-creative-practice/",
     "identifier": "/id/publication/systems-thinking-for-creative-practice/"
+  },
+  {
+    "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "locale": "en",
+    "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "identifier": "/id/publication/traceable-voice-capture-from-microphone-to-dataset/"
+  },
+  {
+    "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "locale": "en",
+    "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+    "identifier": "/id/publication/trustworthy-audio-interfaces-and-measurement/"
   },
   {
     "id": "ea:publication:typography-reading-systems-and-digital-interfaces",

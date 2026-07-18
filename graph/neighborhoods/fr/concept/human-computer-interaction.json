@@ -84,6 +84,22 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "type": "publication",
+      "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+      "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "type": "publication",
+      "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+      "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:webmcp-and-the-agentic-web-fr",
       "type": "publication",
       "title": "WebMCP et le web agentique",
@@ -173,6 +189,24 @@
       "label": "Member of collection",
       "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-human-computer-interaction",
+      "source": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-human-computer-interaction",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:webmcp-and-the-agentic-web-documents-human-computer-interaction",

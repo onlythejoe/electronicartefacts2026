@@ -58,6 +58,22 @@
       "route": "/fr/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "type": "publication",
+      "title": "Le navigateur comme studio vocal local-first",
+      "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -114,6 +130,24 @@
       "label": "Member of collection",
       "statement": "Web Audio API is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio-api",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:technology:web-audio-api-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Web Audio API as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio-api",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:technology:web-audio-api-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio API as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:web-audio-and-browser-based-sound-systems-documents-web-audio-api",

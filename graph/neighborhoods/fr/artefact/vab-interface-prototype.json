@@ -18,6 +18,22 @@
       "route": "/fr/knowledge/concepts/vab-and-genesis/",
       "status": "experimental",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "type": "publication",
+      "title": "Interaction humain-machine pour les outils créatifs",
+      "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +45,24 @@
       "label": "Evidenced by",
       "statement": "The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-vab-interface-prototype",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:artefact:vab-interface-prototype-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents VAB Interface Prototype as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vab-interface-prototype",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:artefact:vab-interface-prototype-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents VAB Interface Prototype as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

@@ -16,15 +16,15 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-09"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 started: "2026-02-01"
-updated: "2026-07-09"
+updated: "2026-07-18"
 priority: 2
 featured: true
 homepage: true
@@ -62,6 +62,12 @@ relatedArticles:
   - id: ea:publication:local-and-open-source-ai-systems
   - id: ea:publication:open-source-as-cultural-infrastructure
   - id: ea:publication:webnn-and-local-ai-in-the-browser
+  - id: ea:publication:trustworthy-audio-interfaces-and-measurement
+  - id: ea:publication:traceable-voice-capture-from-microphone-to-dataset
+  - id: ea:publication:deterministic-research-and-evidence-fusion
+  - id: ea:publication:local-lexical-segmentation-for-speech-and-song
+  - id: ea:publication:five-voice-modes-five-success-criteria
+  - id: ea:publication:browser-as-a-local-first-voice-studio
 relatedCollections:
   - id: ea:collection:voice-capture-studio
 relatedConcepts:
@@ -92,6 +98,9 @@ timeline:
   - date: "2026-07-09"
     title: Publication open source
     summary: Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question.
+  - date: "2026-07-18"
+    title: Couche éditoriale en six articles
+    summary: Six publications bilingues relient interaction, provenance de capture, preuve déterministe, segmentation, modes produit et architecture navigateur à la question de recherche.
 tags:
   - Datasets vocaux
   - Confidentialité

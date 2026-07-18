@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-23"
   publishedAt: "2026-06-23"
-  modifiedAt: "2026-06-23"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,11 @@ subjects:
   - id: ea:researchField:runtime-theory
   - id: ea:program:vaste
   - id: ea:concept:entity-identity
+  - id: ea:concept:situated-actors-and-governance
+  - id: ea:concept:vaste-extension-architecture
+  - id: ea:concept:vaste-five-primitives
+  - id: ea:concept:vast-portable-graph-format
+  - id: ea:concept:autonomous-system
 claims:
   - A graph runtime becomes operationally meaningful when relations and identity affect execution rather than only description.
   - Context should be explicit when it determines permissions, visibility, propagation or interpretation.
@@ -154,6 +159,8 @@ The Knowledge Hub already shows why contextual execution matters. A public relat
 Future VASTE work can extend this principle into dynamic contribution systems, archive permissions, AI-agent action limits and event-driven projections.
 
 ## Related concepts
+
+The runtime neighborhood now makes its internal bridge explicit: [Situated Actors and Governance](/knowledge/concepts/situated-actors-and-governance/) constrains who acts, [VASTE’s Five Primitives](/knowledge/concepts/vaste-five-primitives/) describe the shared model, [VASTE Extension Architecture](/knowledge/concepts/vaste-extension-architecture/) bounds replaceable capabilities, and the [VAST Portable Graph Format](/knowledge/concepts/vast-portable-graph-format/) carries state across runtimes. [Autonomous Systems](/knowledge/concepts/autonomous-system/) remain downstream of those constraints, not outside them.
 
 Read [Contextual Execution](/knowledge/concepts/contextual-execution/), [Graph Runtime](/knowledge/concepts/graph-runtime/), [Runtime Theory](/research/fields/runtime-theory/), [Entity Identity](/knowledge/concepts/entity-identity/) and [Cybernetic Feedback](/knowledge/concepts/cybernetic-feedback/).
 

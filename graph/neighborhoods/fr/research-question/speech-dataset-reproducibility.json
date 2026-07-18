@@ -148,6 +148,54 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "type": "publication",
+      "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+      "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "type": "publication",
+      "title": "Du microphone au dataset, anatomie d’une prise vocale traçable",
+      "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "type": "publication",
+      "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+      "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "type": "publication",
+      "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+      "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "type": "publication",
+      "title": "Le navigateur comme studio vocal local-first",
+      "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:voice-capture-studio-fr",
       "type": "collection",
       "title": "Collection Voice Capture Studio",
@@ -308,6 +356,60 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
     },
     {

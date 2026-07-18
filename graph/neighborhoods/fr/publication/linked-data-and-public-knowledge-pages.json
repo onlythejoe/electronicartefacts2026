@@ -66,6 +66,22 @@
       "route": "/fr/knowledge/concepts/knowledge-graph/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:activitypub-fr",
+      "type": "technology",
+      "title": "ActivityPub",
+      "route": "/fr/knowledge/technologies/activitypub/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -157,6 +173,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Linked Data and Public Knowledge Pages documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-activitypub",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:technology:activitypub-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents ActivityPub as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-electronic-artefacts-lightweight-template",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Electronic Artefacts Lightweight Template as one of its declared subjects.",
       "confidence": "published"
     }
   ]

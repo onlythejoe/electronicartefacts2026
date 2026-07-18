@@ -42,6 +42,22 @@
       "route": "/fr/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "type": "publication",
+      "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+      "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +96,24 @@
       "label": "Member of collection",
       "statement": "Voice Technology is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-voice-technology",
+      "source": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "target": "ea:concept:voice-technology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Voice Technology as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-voice-technology",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:voice-technology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Voice Technology as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-24"
   publishedAt: "2026-06-24"
-  modifiedAt: "2026-06-24"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -29,6 +29,11 @@ subjects:
   - id: ea:concept:event-driven-architecture
   - id: ea:program:vaste
   - id: ea:project:vestiges
+  - id: ea:concept:microservice-architecture
+  - id: ea:artefact:vab-interface-prototype
+  - id: ea:concept:situated-actors-and-governance
+  - id: ea:concept:vaste-extension-architecture
+  - id: ea:concept:vaste-five-primitives
 claims:
   - A domain operating system is credible when several applications reuse shared identity, entity, permission and event semantics.
   - Runtime engines should separate stable domain contracts from replaceable storage, transport and interface implementations.
@@ -294,6 +299,10 @@ General operating-system standards demonstrate the value of stable shared interf
 The operating-system metaphor can encourage platform maximalism. A domain runtime should remain smaller than the applications it supports, offer export paths and avoid centralizing unrelated capabilities.
 
 ## Related concepts
+
+[Microservice Architecture](/knowledge/concepts/microservice-architecture/) provides a useful contrast: a domain runtime may deploy modular services, but its defining value lies in shared identity, authority and event semantics rather than service count. See [Microservices, Modular Monoliths and System Boundaries](/publications/microservices-modular-monoliths-and-system-boundaries/) for the deployment trade-off.
+
+Within VASTE, the [VAB interface prototype](/archive/artefacts/vab-interface-prototype/) is the visible boot surface, [situated actors and governance](/knowledge/concepts/situated-actors-and-governance/) define authority, the [five primitives](/knowledge/concepts/vaste-five-primitives/) provide the shared vocabulary and the [extension architecture](/knowledge/concepts/vaste-extension-architecture/) keeps capabilities replaceable. These are complementary layers of one runtime rather than isolated doctrine pages.
 
 Read [Domain Operating System](/knowledge/concepts/domain-operating-system/), [Graph Runtime](/knowledge/concepts/graph-runtime/), [Contextual Execution](/knowledge/concepts/contextual-execution/) and [Event-Driven Architecture](/knowledge/concepts/event-driven-architecture/).
 

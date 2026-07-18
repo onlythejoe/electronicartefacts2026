@@ -66,6 +66,30 @@
       "route": "/fr/knowledge/concepts/creative-coding/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:artefact:vab-interface-prototype-fr",
+      "type": "artefact",
+      "title": "Prototype d’interface VAB",
+      "route": "/fr/archive/artefacts/vab-interface-prototype/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:webmcp-fr",
+      "type": "technology",
+      "title": "WebMCP",
+      "route": "/fr/knowledge/technologies/webmcp/",
+      "status": "experimental",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -139,6 +163,33 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Human Computer Interaction for Creative Tools documents Creative Coding as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-voice-capture-studio",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents Voice Capture Studio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-vab-interface-prototype",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:artefact:vab-interface-prototype-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents VAB Interface Prototype as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-webmcp",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:technology:webmcp-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents WebMCP as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "type": "publication",
+      "title": "Segmenting Speech and Song Locally, Word by Word",
+      "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Member of collection",
       "statement": "Multimodal AI is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-multimodal-ai",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "target": "ea:concept:multimodal-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Multimodal AI as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

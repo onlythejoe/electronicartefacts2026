@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-23"
   publishedAt: "2026-06-23"
-  modifiedAt: "2026-06-23"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,8 @@ subjects:
   - id: ea:technology:json-ld
   - id: ea:technology:rdf
   - id: ea:concept:knowledge-graph
+  - id: ea:technology:activitypub
+  - id: ea:framework:electronic-artefacts-lightweight-template
 claims:
   - Static knowledge pages can participate in Linked Data when they publish stable identifiers, canonical routes and structured data.
   - JSON-LD is a practical bridge between editorial publishing and semantic graph representation.
@@ -171,6 +173,8 @@ For Electronic Artefacts, Linked Data is a publishing discipline. It helps the s
 This matters most as the corpus grows. A site with ten pages can rely on human memory. A site with one thousand knowledge records needs persistent identity, relation validation and generated indexes.
 
 ## Related concepts
+
+[ActivityPub](/knowledge/technologies/activitypub/) shows how stable public identities and linked resources can move from publication into federation. The [Electronic Artefacts Lightweight Template](/knowledge/frameworks/electronic-artefacts-lightweight-template/) is the applied publishing framework: canonical pages, JSON-LD, localized routes, graph neighborhoods and machine-readable indexes are generated from the same editorial entities.
 
 Read [Linked Data](/knowledge/concepts/linked-data/), [Entity Identity](/knowledge/concepts/entity-identity/), [RDF](/knowledge/technologies/rdf/), [JSON-LD](/knowledge/technologies/json-ld/) and [Knowledge Graph](/knowledge/concepts/knowledge-graph/).
 

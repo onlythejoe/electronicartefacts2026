@@ -276,6 +276,22 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion",
+      "type": "publication",
+      "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+      "route": "/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:webmcp-and-the-agentic-web",
       "type": "publication",
       "title": "WebMCP and the Agentic Web",
@@ -580,6 +596,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-vaste",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-vaste",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents VASTE as one of its declared subjects.",
       "confidence": "published"
     },
     {

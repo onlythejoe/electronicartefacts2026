@@ -20,6 +20,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:webmcp-and-the-agentic-web",
       "type": "publication",
       "title": "WebMCP and the Agentic Web",
@@ -37,6 +45,15 @@
       "label": "Member of collection",
       "statement": "WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-webmcp",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools",
+      "target": "ea:technology:webmcp",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents WebMCP as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:webmcp-and-the-agentic-web-documents-webmcp",

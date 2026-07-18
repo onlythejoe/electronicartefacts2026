@@ -132,6 +132,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion",
+      "type": "publication",
+      "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+      "route": "/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
       "type": "publication",
       "title": "Microservices, Modular Monoliths and System Boundaries",
@@ -282,6 +290,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-contextual-execution",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Contextual Execution as one of its declared subjects.",
       "confidence": "published"
     },
     {

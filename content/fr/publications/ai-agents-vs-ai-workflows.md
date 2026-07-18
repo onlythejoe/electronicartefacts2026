@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:concept:autonomous-system
   - id: ea:program:vaste
+  - id: ea:technology:agent2agent-protocol
 claims:
   - "Les flux de travail fournissent des chemins prévisibles pour les tâches répétables, tandis que les agents laissent les modèles choisir des actions dynamiquement dans l'incertitude."
   - "Les systèmes de production les plus fiables combinent flexibilité du modèle avec permissions déterministes, validation et conditions d'arrêt."
@@ -193,6 +194,8 @@ Les questions de recherche durable ne sont pas combien d'agents un système cont
 La terminologie demeure incohérente entre les produits et la recherche. Certains systèmes combinent les propriétés de workflow et d'agent, de sorte que la classification devrait décrire le contrôle réel, les permissions et le comportement d'exécution plutôt que de compter sur une étiquette de fournisseur.
 
 ## Concepts connexes
+
+Le [protocole Agent2Agent](/fr/knowledge/technologies/agent2agent-protocol/) étend la distinction au-delà d’un runtime : un workflow peut déléguer des tâches bornées à des agents indépendants tout en gardant gouvernance, identité et conditions d’arrêt explicites. Poursuivre avec [Interopérabilité A2A et délégation gouvernée](/fr/publications/a2a-agent-interoperability-and-governed-delegation/).
 
 Lire [Agent d'IA](/fr/knowledge/concepts/ai-agent/), [Grand modèle de langage](/fr/knowledge/concepts/large-language-model/), [Système autonome](/fr/knowledge/concepts/autonomous-system/), [Exécution contextuelle](/fr/knowledge/concepts/contextual-execution/) et [Runtime de graphe](/fr/knowledge/concepts/graph-runtime/).
 

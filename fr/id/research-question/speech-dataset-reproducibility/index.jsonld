@@ -9,7 +9,7 @@
       "description": "Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.",
       "inLanguage": "fr",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -69,7 +69,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-07-09",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-09",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -83,7 +83,7 @@
         "@type": "Answer",
         "text": "Capturer les données est aussi important qu'entraîner les modèles. Un workflow vocal utile doit préserver prompt, locuteur, timing, qualité, revue et contexte d'export avant tout travail de modèle.",
         "dateCreated": "2026-02-01",
-        "dateModified": "2026-07-09"
+        "dateModified": "2026-07-18"
       },
       "about": [
         {
@@ -138,6 +138,24 @@
         },
         {
           "@id": "https://electronicartefacts.com/id/publication/webnn-and-local-ai-in-the-browser/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/trustworthy-audio-interfaces-and-measurement/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/traceable-voice-capture-from-microphone-to-dataset/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/deterministic-research-and-evidence-fusion/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/local-lexical-segmentation-for-speech-and-song/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/publication/browser-as-a-local-first-voice-studio/"
         },
         {
           "@id": "https://electronicartefacts.com/id/collection/voice-capture-studio/"

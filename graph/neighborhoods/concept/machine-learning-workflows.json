@@ -42,6 +42,22 @@
       "route": "/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +96,24 @@
       "label": "Member of collection",
       "statement": "Machine Learning Workflows is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-machine-learning-workflows",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:concept:machine-learning-workflows",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Machine Learning Workflows as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-machine-learning-workflows",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "target": "ea:concept:machine-learning-workflows",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Machine Learning Workflows as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

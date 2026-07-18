@@ -1,0 +1,159 @@
+{
+  "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+  "type": "publication",
+  "slug": {
+    "canonical": "traceable-voice-capture-from-microphone-to-dataset"
+  },
+  "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+  "subtitle": "Capture, Provenance and Open Packages",
+  "abstract": "A voice take becomes reusable data only when raw audio, prompt, room context, observations, review decisions, persistence and export manifests remain connected.",
+  "description": "A step-by-step account of the Voice Capture Studio pipeline from PCM capture to a verifiable local dataset package.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Voice Dataset",
+    "Provenance",
+    "PCM",
+    "Metadata",
+    "Local First"
+  ],
+  "disciplines": [
+    "Audio Engineering",
+    "Data Engineering",
+    "Machine Learning"
+  ],
+  "sources": [
+    {
+      "title": "Voice Capture Studio Capture Technology Audit",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/capture-technology-audit.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "Voice Capture Studio Export Structure",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/export-structure.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:speech-recording"
+    },
+    {
+      "id": "ea:concept:speech-datasets"
+    },
+    {
+      "id": "ea:concept:metadata"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows"
+    },
+    {
+      "id": "ea:concept:digital-preservation"
+    }
+  ],
+  "claims": [
+    "A voice dataset begins at capture time, not when model training starts.",
+    "Immutable raw audio and explicitly derived artifacts should coexist in one provenance-aware package."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"From Microphone to Dataset: Anatomy of a Traceable Voice Take.\" Technical article, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>A WAV can preserve sound and still lose the conditions that make the recording useful. Which prompt was spoken? Which corpus version supplied it? Who reviewed the take? Was the room calibrated? Did a transcript come from declared text, browser recognition or acoustic alignment? Where was the file stored, and did the export preserve its checksum?</p>\n<p><a href=\"/projects/voice-capture-studio/\">Voice Capture Studio</a> treats the recording tool as part of the dataset methodology. The pipeline begins before the red button and ends only when audio, context, observations and decisions can travel together.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>The browser first establishes available microphone, storage, worker and file capabilities. A missing optional feature should degrade only the workflow that needs it. The instrument then measures room tone separately from the voice-optimized capture stream. That separation avoids pretending that browser processing and raw ambient measurement are the same source.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>The canonical recording is mono PCM WAV. Actual track settings, timing and capture context belong in provenance. Post-processing may derive a voice-first signal for inspection or downstream ASR, but it must not overwrite the immutable take. Raw and derived hashes make that boundary checkable.</p>\n<p>This is a practical application of <a href=\"/knowledge/concepts/speech-recording/\">speech recording</a> and <a href=\"/knowledge/concepts/digital-preservation/\">digital preservation</a>: preserve the source, name every transformation and retain enough context to repeat or contest a decision.</p>\n<h2 id=\"3-separate-observations\">3. Separate observations</h2>\n<p>The system keeps different evidence channels independent:</p>\n<ul>\n<li>corpus observations contain declared text, language, intention and prompt structure;</li>\n<li>signal observations contain measured acoustic and prosodic features, silence and voice activity;</li>\n<li>browser ASR remains an optional hypothesis;</li>\n<li>word and phoneme alignment remains estimated until stronger acoustic evidence replaces it;</li>\n<li>fused decisions cite the observations and reasons that produced them.</li>\n</ul>\n<p>That separation prevents a plausible transcript from becoming an authority over a physically valid recording. It also makes later correction possible without rewriting history.</p>\n<h2 id=\"4-review-and-persistence\">4. Review and persistence</h2>\n<p>A dataset does not progress because a file exists. It progresses when a take is accepted and stored durably. Voice Capture Studio can persist in IndexedDB, a user-selected folder or an explicit download path. The interface exposes the boundary because browser storage is not automatically permanent.</p>\n<p>Review state is therefore part of <a href=\"/knowledge/concepts/metadata/\">metadata</a>, not a transient UI flag. A keeper decision, rejection reason, quality report and storage outcome should remain attached to the same take identity.</p>\n<h2 id=\"5-open-package\">5. Open package</h2>\n<p>A useful export connects session, speaker and corpus records to WAV files, transcript, timing, phonemes, intention, observations, quality reports, checksums and a JSONL training manifest. Open formats matter because the package must remain inspectable outside the application.</p>\n<p>This is where <a href=\"/knowledge/concepts/provenance/\">provenance</a> becomes operational. A downstream tool can choose raw or derived audio, see whether alignment is estimated, verify hashes and identify what still requires review.</p>\n<h2 id=\"preparation-is-not-training\">Preparation is not training</h2>\n<p>Voice Capture Studio supports <a href=\"/knowledge/concepts/machine-learning-workflows/\">machine-learning workflows</a> by preparing structured material. It does not train a model, certify a dataset or silently promote browser estimates into research-grade ground truth. That boundary prevents the capture product from making claims that belong to later evaluation.</p>\n<p>The corresponding research question—<a href=\"/research/questions/speech-dataset-reproducibility/\">How can speech datasets become reproducible, structured and privacy-first?</a>—uses the project as its current software experiment. The result is a compact principle: capture once, preserve context immediately, and defer stronger claims until stronger evidence exists.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The project repository exposes the capture technology audit, export contracts and tests that keep raw and derived artifacts separate.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Browser storage is not automatically permanent, local alignment remains preparatory and a structured package still requires downstream consent, review and model-specific evaluation.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Voice Capture Studio. Capture Technology Audit.</li>\n<li>Voice Capture Studio. Export Structure.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "3. Separate observations",
+    "4. Review and persistence",
+    "5. Open package",
+    "Preparation is not training",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "3. Separate observations",
+      "id": "3-separate-observations"
+    },
+    {
+      "level": 2,
+      "title": "4. Review and persistence",
+      "id": "4-review-and-persistence"
+    },
+    {
+      "level": 2,
+      "title": "5. Open package",
+      "id": "5-open-package"
+    },
+    {
+      "level": 2,
+      "title": "Preparation is not training",
+      "id": "preparation-is-not-training"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

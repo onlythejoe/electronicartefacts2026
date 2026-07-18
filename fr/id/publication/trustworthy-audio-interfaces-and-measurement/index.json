@@ -1,0 +1,133 @@
+{
+  "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+  "slug": {
+    "canonical": "trustworthy-audio-interfaces-and-measurement"
+  },
+  "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+  "subtitle": "Design d’interaction ancré dans le signal",
+  "abstract": "Une doctrine pratique où courbes, niveaux, halos et mouvements restent reliés à un signal frais, un état explicite ou une action humaine.",
+  "description": "Comment Voice Capture Studio transforme intégrité du signal, silence, latence et mouvement réduit en règles d’UX audio.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "UX audio",
+    "Interface digne de confiance",
+    "Signal",
+    "Motion Design",
+    "Voice Capture Studio"
+  ],
+  "disciplines": [
+    "interaction humain-machine",
+    "ingénierie audio",
+    "design d’interaction"
+  ],
+  "sources": [
+    {
+      "title": "Phénoménologie de Voice Capture Studio",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/design/PHENOMENOLOGY.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "Web Audio API 1.1",
+      "url": "https://www.w3.org/TR/webaudio/",
+      "publisher": "W3C",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "caseStudy",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:motion-design"
+    },
+    {
+      "id": "ea:concept:web-audio"
+    },
+    {
+      "id": "ea:program:oreth"
+    },
+    {
+      "id": "ea:concept:signal-archaeology"
+    }
+  ],
+  "claims": [
+    "Une visualisation audio doit distinguer mesure fraîche, preuve enregistrée, estimation et mouvement décoratif.",
+    "Le mouvement réduit doit retirer la chorégraphie sans retirer le sens du changement d’état."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. « Une interface audio digne de confiance ne simule jamais la mesure ». Étude de cas, 2026."
+  },
+  "bodyHtml": "<h2 id=\"contexte\">Contexte</h2>\n<p>Une interface audio peut sembler précise sans rien dire de fiable sur le son. Une courbe peut être préenregistrée, un halo suivre une minuterie et un pourcentage prendre l’apparence d’une mesure alors qu’il ne représente qu’une progression estimée. Ces raccourcis apprennent à faire confiance à une surface incapable d’expliquer ses propres lectures.</p>\n<p><a href=\"/fr/projects/voice-capture-studio/\">Voice Capture Studio</a> adopte un langage doux — blanc chaud, verre translucide, profondeur diffuse, filament continu — mais lui impose des lois strictes. Tout ce qui ressemble à une lecture doit provenir d’un signal récent, d’une prise décodée ou d’un état système nommé.</p>\n<h2 id=\"contraintes\">Contraintes</h2>\n<ol>\n<li>La <strong>mesure live</strong> vient du microphone ou de l’analyseur et expire lorsque sa trame devient ancienne.</li>\n<li>La <strong>preuve enregistrée</strong> vient de la prise décodée pendant la relecture.</li>\n<li>L’<strong>estimation</strong> — alignement, confiance, progression — reste associée à une méthode bornée.</li>\n<li>La <strong>chorégraphie</strong> explique entrée, sortie ou attention, sans jamais imiter une mesure.</li>\n</ol>\n<p>Cette distinction relie le projet à l’<a href=\"/fr/knowledge/concepts/human-computer-interaction/\">interaction humain-machine</a> et au <a href=\"/fr/knowledge/concepts/motion-design/\">motion design</a>. Le mouvement devient sémantique lorsqu’il aide à comprendre si l’instrument attend, observe, enregistre ou relit.</p>\n<h2 id=\"approche\">Approche</h2>\n<p>La courbe principale possède un contrat de fraîcheur. Avec des échantillons récents, elle représente le signal. Sans eux, elle revient à une porteuse manifestement inactive au lieu de figer une ancienne énergie comme si elle était actuelle. En relecture, l’énergie vient du WAV décodé, pas d’un minuteur générique. Le silence reste une donnée : calme, mais toujours inscrit dans un processus actif.</p>\n<p>L’<a href=\"/fr/knowledge/concepts/web-audio/\">Audio web</a> fournit la chaîne causale : source, analyseur, destination et observation visible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La capture conserve la priorité absolue. Un appareil contraint peut perdre flous et décor ambiant, jamais la représentation de l’enregistrement en cours. L’armement du microphone peut ignorer une transition pour protéger la latence ; les états de révision peuvent émerger plus lentement.</p>\n<p>Le mouvement réduit suit la même logique : <code>prefers-reduced-motion</code> raccourcit la durée, pas l’information. Permission, capture et export restent compréhensibles.</p>\n<h2 id=\"resultat\">Résultat</h2>\n<p>Pour chaque niveau, courbe, halo ou anneau, demander : quelle donnée le pilote ? combien de temps reste-t-elle fraîche ? est-elle mesurée, estimée ou directionnelle ? que se passe-t-il dans le silence et en relecture ? le mouvement réduit conserve-t-il le sens ?</p>\n<p><a href=\"/fr/programs/oreth/\">ORETH</a> peut appliquer cette grille aux surfaces d’écoute automatique. L’<a href=\"/fr/knowledge/concepts/signal-archaeology/\">archéologie du signal</a> rappelle qu’une trace est une preuve d’un processus, pas le processus lui-même.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Le <a href=\"/fr/archive/artefacts/voice-capture-studio-repository/\">dépôt Voice Capture Studio</a> et sa constitution phénoménologique rendent ces principes inspectables dans le produit réel.</p>\n",
+  "headings": [
+    "Contexte",
+    "Contraintes",
+    "Approche",
+    "Mise en œuvre",
+    "Résultat",
+    "Éléments de preuve"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Contraintes",
+      "id": "contraintes"
+    },
+    {
+      "level": 2,
+      "title": "Approche",
+      "id": "approche"
+    },
+    {
+      "level": 2,
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
+    },
+    {
+      "level": 2,
+      "title": "Résultat",
+      "id": "resultat"
+    },
+    {
+      "level": 2,
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
+    }
+  ]
+}

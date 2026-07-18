@@ -66,6 +66,14 @@
       "route": "/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -131,6 +139,15 @@
       "label": "Member of collection",
       "statement": "Open Source is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-open-source",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:concept:open-source",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Open Source as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

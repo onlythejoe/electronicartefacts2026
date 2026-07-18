@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-24"
   publishedAt: "2026-06-24"
-  modifiedAt: "2026-06-24"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:concept:autonomous-system
   - id: ea:program:vaste
+  - id: ea:technology:agent2agent-protocol
 claims:
   - Workflows provide predictable paths for repeatable tasks, while agents let models choose actions dynamically under uncertainty.
   - The most reliable production systems combine model flexibility with deterministic permissions, validation and stopping conditions.
@@ -192,6 +193,8 @@ The durable research questions are not how many agents a system contains. They a
 Terminology remains inconsistent across products and research. Some systems combine workflow and agent properties, so classification should describe actual control, permissions and runtime behavior rather than rely on a vendor label.
 
 ## Related concepts
+
+The [Agent2Agent Protocol](/knowledge/technologies/agent2agent-protocol/) extends the distinction beyond one runtime: workflows can delegate bounded tasks to independent agents while governance, identity and stopping conditions remain explicit. Continue with [A2A Agent Interoperability and Governed Delegation](/publications/a2a-agent-interoperability-and-governed-delegation/).
 
 Read [AI Agent](/knowledge/concepts/ai-agent/), [Large Language Model](/knowledge/concepts/large-language-model/), [Autonomous System](/knowledge/concepts/autonomous-system/), [Contextual Execution](/knowledge/concepts/contextual-execution/) and [Graph Runtime](/knowledge/concepts/graph-runtime/).
 

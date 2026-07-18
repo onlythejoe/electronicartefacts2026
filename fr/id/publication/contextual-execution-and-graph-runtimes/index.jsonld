@@ -9,7 +9,7 @@
       "description": "Un article technique reliant l'exécution contextuelle, l'exécution graphique, la théorie d'exécution et VASTE.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-12",
+      "dateModified": "2026-07-18",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -69,7 +69,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-12",
+      "dateModified": "2026-07-18",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 1640,
+      "wordCount": 1692,
       "citation": [
         "Electronic Artefacts. \"Exécution contextuelle et runtimes de graphe\". Article technique, version 1.1.1, 2026."
       ],
@@ -96,6 +96,21 @@
         },
         {
           "@id": "https://electronicartefacts.com/id/concept/entity-identity/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/situated-actors-and-governance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/vaste-extension-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/vaste-five-primitives/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/vast-portable-graph-format/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/autonomous-system/"
         }
       ],
       "mentions": [

@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-07-09",
     "publishedAt": "2026-07-09",
-    "modifiedAt": "2026-07-09"
+    "modifiedAt": "2026-07-18"
   },
   "authors": [
     {
@@ -42,7 +42,7 @@
   ],
   "featured": true,
   "started": "2026-02-01",
-  "updated": "2026-07-09",
+  "updated": "2026-07-18",
   "priority": 2,
   "homepage": true,
   "observation": "Voice datasets are often assembled through inconsistent tools, loose folders and missing metadata, which makes later review, consent checking and reproduction difficult.",
@@ -110,6 +110,24 @@
     },
     {
       "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio"
     }
   ],
   "relatedCollections": [
@@ -175,6 +193,11 @@
       "date": "2026-07-09",
       "title": "Open-source project publication",
       "summary": "Voice Capture Studio became the public software answer and evidence source for the question."
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Six-part editorial evidence layer",
+      "summary": "Six bilingual publications connected interaction, capture provenance, deterministic evidence, segmentation, product modes and browser architecture back to the research question."
     }
   ],
   "bodyHtml": "<h2 id=\"observation\">Observation</h2>\n<p>Speech material is often recorded before the dataset has a structure. A team may have usable audio, but not the speaker profile, prompt version, room condition, review state or export manifest needed to reproduce the work.</p>\n<h2 id=\"problem\">Problem</h2>\n<p>The cost appears later. Without structure, a dataset becomes difficult to audit. Without explicit local storage and export boundaries, privacy claims are hard to inspect.</p>\n<h2 id=\"hypothesis\">Hypothesis</h2>\n<p>A browser recorder can behave like a small research instrument. It can make microphone state, storage, corpus version, review status and export structure visible at capture time.</p>\n<h2 id=\"current-understanding\">Current Understanding</h2>\n<p>The recording tool is part of the dataset methodology. It should not be treated as a replaceable utility if its choices determine what can be reviewed, reused or deleted.</p>\n<h2 id=\"unknowns\">Unknowns</h2>\n<p>The next questions concern scale and governance. The studio still needs to test how multilingual corpora, consent notes, quality reports and downstream evaluation records should travel together without making the capture workflow heavy.</p>\n",

@@ -26,6 +26,14 @@
       "route": "/fr/archive/artefacts/vaste-validation-record/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "type": "publication",
+      "title": "Exécution contextuelle et runtimes de graphe",
+      "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Evidenced by",
       "statement": "The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vast-portable-graph-format",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:concept:vast-portable-graph-format-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents .vast Portable Graph Format as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

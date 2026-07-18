@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,11 @@ subjects:
   - id: ea:researchField:runtime-theory
   - id: ea:program:vaste
   - id: ea:concept:entity-identity
+  - id: ea:concept:situated-actors-and-governance
+  - id: ea:concept:vaste-extension-architecture
+  - id: ea:concept:vaste-five-primitives
+  - id: ea:concept:vast-portable-graph-format
+  - id: ea:concept:autonomous-system
 claims:
   - "L'exécution d'un graphique devient opérationnellement significative lorsque les relations et l'identité affectent l'exécution plutôt que seulement la description."
   - "Le contexte devrait être explicite lorsqu'il détermine les permissions, la visibilité, la propagation ou l'interprétation."
@@ -156,6 +161,8 @@ Le Knowledge Hub montre déjà pourquoi l'exécution contextuelle compte. Une re
 Les futurs travaux VASTE peuvent étendre ce principe aux systèmes de contribution dynamiques, aux autorisations d'archivage, aux limites d'action de l'agent d'IA et aux projections axées sur les événements.
 
 ## Concepts connexes
+
+Le voisinage runtime explicite désormais son pont interne : les [acteurs situés et leur gouvernance](/fr/knowledge/concepts/situated-actors-and-governance/) contraignent l’action, les [cinq primitives VASTE](/fr/knowledge/concepts/vaste-five-primitives/) décrivent le modèle partagé, l’[architecture d’extensions VASTE](/fr/knowledge/concepts/vaste-extension-architecture/) borne les capacités remplaçables et le [format graphe portable VAST](/fr/knowledge/concepts/vast-portable-graph-format/) transporte l’état entre runtimes. Les [systèmes autonomes](/fr/knowledge/concepts/autonomous-system/) restent en aval de ces contraintes.
 
 Lire [Exécution contextuelle](/fr/knowledge/concepts/contextual-execution/), [Runtime de graphe](/fr/knowledge/concepts/graph-runtime/), [Théorie des temps d'exécution](/fr/research/fields/runtime-theory/), [Identité de l'entité](/fr/knowledge/concepts/entity-identity/) et [Rétroaction cybernétique](/fr/knowledge/concepts/cybernetic-feedback/).
 

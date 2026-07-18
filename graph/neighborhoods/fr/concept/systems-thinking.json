@@ -44,6 +44,22 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "type": "publication",
+      "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+      "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "type": "publication",
+      "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+      "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
       "type": "publication",
       "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
@@ -88,6 +104,24 @@
       "label": "Member of collection",
       "statement": "Systems Thinking is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-systems-thinking",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-systems-thinking",
+      "source": "ea:publication:five-voice-modes-five-success-criteria-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:responsible-ai-governance-for-creative-and-cultural-systems-documents-systems-thinking",

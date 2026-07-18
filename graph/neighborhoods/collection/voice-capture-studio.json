@@ -130,6 +130,54 @@
       "route": "/knowledge/technologies/web-audio-api/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion",
+      "type": "publication",
+      "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+      "route": "/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "type": "publication",
+      "title": "Segmenting Speech and Song Locally, Word by Word",
+      "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria",
+      "type": "publication",
+      "title": "Why Five Voice Modes Need Five Success Criteria",
+      "route": "/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -267,6 +315,60 @@
       "label": "Member of collection",
       "statement": "Web Audio API is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:deterministic-research-and-evidence-fusion-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Segmenting Speech and Song Locally, Word by Word is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Why Five Voice Modes Need Five Success Criteria is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-member-of-collection-voice-capture-studio",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The Browser as a Local-First Voice Studio is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "published"
     }
   ]
 }

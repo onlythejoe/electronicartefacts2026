@@ -50,6 +50,22 @@
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "type": "publication",
+      "title": "Découper localement la parole et le chant, mot par mot",
+      "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "type": "publication",
+      "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+      "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +113,24 @@
       "label": "Member of collection",
       "statement": "Signal Archaeology is an explicit member of the Knowledge Hub Foundations collection.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-signal-archaeology",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Signal Archaeology as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-signal-archaeology",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Signal Archaeology as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

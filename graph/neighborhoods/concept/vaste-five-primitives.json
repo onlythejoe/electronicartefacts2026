@@ -18,6 +18,22 @@
       "route": "/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +45,24 @@
       "label": "Has part",
       "statement": "VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-five-primitives",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:vaste-five-primitives",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents The Five VASTE Primitives as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-five-primitives",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:vaste-five-primitives",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents The Five VASTE Primitives as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

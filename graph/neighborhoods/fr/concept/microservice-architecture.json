@@ -26,6 +26,14 @@
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Member of collection",
       "statement": "Microservice Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-microservice-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:concept:microservice-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Microservice Architecture as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

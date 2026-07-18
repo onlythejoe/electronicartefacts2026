@@ -15,11 +15,11 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 2.0.0
+  version: 2.1.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
   modifiedAt: "2026-07-18"
-  changeSummary: Refonte du dossier depuis l’interface cinq modes livrée, la philosophie du signal, le pipeline d’observation déterministe et les contrats d’export actuels.
+  changeSummary: Publication de la couche Connaissance en six articles et connexion du dossier à son voisinage éditorial complet.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -245,7 +245,7 @@ Points d’entrée utiles dans les sources :
 
 ## Relais Connaissance
 
-Les six briefs éditoriaux présentés plus haut sont conçus pour devenir des articles Connaissance, pas des notes de version. Chacun peut rester utile après une évolution de l’interface parce qu’il traite un problème durable : UX audio digne de confiance, provenance, recherche déterministe, segmentation locale, conception des modes ou architecture browser-native.
+Les six briefs sont désormais des articles Connaissance complets plutôt que des notes de version : [interfaces audio dignes de confiance](/fr/publications/trustworthy-audio-interfaces-and-measurement/), [capture vocale traçable](/fr/publications/traceable-voice-capture-from-microphone-to-dataset/), [fusion déterministe des preuves](/fr/publications/deterministic-research-and-evidence-fusion/), [segmentation lexicale locale](/fr/publications/local-lexical-segmentation-for-speech-and-song/), [cinq contrats de modes](/fr/publications/five-voice-modes-five-success-criteria/) et [architecture navigateur local-first](/fr/publications/browser-as-a-local-first-voice-studio/). Chacun reste utile après une évolution de l’interface parce qu’il traite un problème durable.
 
 Voice Capture Studio se situe près d’[ORETH](/fr/programs/oreth/) parce que les deux traitent l’audio comme matériau structuré. Il se relie à l’[Audio web](/fr/knowledge/concepts/web-audio/), à la [Web Audio API](/fr/knowledge/technologies/web-audio-api/), à l’[interaction humain-machine](/fr/knowledge/concepts/human-computer-interaction/), aux [métadonnées](/fr/knowledge/concepts/metadata/) et à l’[open source](/fr/knowledge/concepts/open-source/) comme mise à l’épreuve concrète de ces idées.
 

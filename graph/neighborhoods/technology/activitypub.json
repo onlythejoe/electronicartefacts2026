@@ -26,6 +26,14 @@
       "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-activitypub",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:activitypub",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents ActivityPub as one of its declared subjects.",
       "confidence": "published"
     }
   ]

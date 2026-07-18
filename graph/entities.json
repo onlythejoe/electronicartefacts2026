@@ -4392,7 +4392,7 @@
     "identifier": "/fr/id/publication/ai-agents-vs-ai-workflows/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -4473,6 +4473,43 @@
     }
   },
   {
+    "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+    "legacyId": "browser-as-a-local-first-voice-studio-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:browser-as-a-local-first-voice-studio",
+    "title": "Le navigateur comme studio vocal local-first",
+    "subtitle": "Capacités, stockage et dégradation progressive",
+    "summary": "Le navigateur peut accueillir une capture vocale sérieuse lorsque microphone, traitement audio, workers, persistance locale, exports ouverts et limites de capacités forment un seul système.",
+    "description": "L’architecture browser-native de Voice Capture Studio et son modèle de vie privée local-first.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Logiciel navigateur",
+      "Local First",
+      "Web Audio",
+      "IndexedDB",
+      "open source"
+    ],
+    "discipline": [
+      "architecture web",
+      "ingénierie audio",
+      "ingénierie logicielle"
+    ],
+    "route": "/fr/publications/browser-as-a-local-first-voice-studio/",
+    "identifier": "/fr/id/publication/browser-as-a-local-first-voice-studio/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
     "legacyId": "c2pa-content-credentials-and-generative-media-provenance-fr",
     "kind": "publication",
@@ -4543,7 +4580,7 @@
     "identifier": "/fr/id/publication/contextual-execution-and-graph-runtimes/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -4582,6 +4619,43 @@
       "creationDate": "2026-06-24",
       "lastUpdated": "2026-07-12",
       "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+    "legacyId": "deterministic-research-and-evidence-fusion-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:deterministic-research-and-evidence-fusion",
+    "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+    "subtitle": "Fusion de preuves et incertitude explicite",
+    "summary": "La recherche déterministe sépare données déclarées, signal mesuré, hypothèses de modèles, estimations d’alignement et décisions de politique afin de reproduire et contester chaque conclusion.",
+    "description": "Une méthode de décision reliée aux preuves dans Voice Capture Studio, VASTE et les systèmes de recherche en graphe.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "recherche déterministe",
+      "Preuve",
+      "Incertitude",
+      "Provenance",
+      "Graphe"
+    ],
+    "discipline": [
+      "Design de recherche",
+      "ingénierie des données",
+      "architecture logicielle"
+    ],
+    "route": "/fr/publications/deterministic-research-and-evidence-fusion/",
+    "identifier": "/fr/id/publication/deterministic-research-and-evidence-fusion/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -4700,6 +4774,43 @@
     }
   },
   {
+    "id": "ea:publication:five-voice-modes-five-success-criteria-fr",
+    "legacyId": "five-voice-modes-five-success-criteria-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:five-voice-modes-five-success-criteria",
+    "title": "Pourquoi cinq modes vocaux exigent cinq critères de réussite",
+    "subtitle": "Les modes produit comme contrats de travail distincts",
+    "summary": "Capture libre, dataset, doublage, interprétation et découpe lexicale méritent des modes séparés parce qu’ils changent entrées, gestes, règles d’acceptation et sorties utiles.",
+    "description": "Un cadre produit pour décider quand un workflow vocal devient un mode plutôt qu’un preset.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Modes produit",
+      "UX vocale",
+      "Dataset",
+      "Doublage",
+      "design d’interaction"
+    ],
+    "discipline": [
+      "Design produit",
+      "interaction humain-machine",
+      "ingénierie audio"
+    ],
+    "route": "/fr/publications/five-voice-modes-five-success-criteria/",
+    "identifier": "/fr/id/publication/five-voice-modes-five-success-criteria/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:publication:foundational-lineage-001-fr",
     "legacyId": "foundational-lineage-001-fr",
     "kind": "publication",
@@ -4802,7 +4913,7 @@
     "identifier": "/fr/id/publication/generative-systems-cybernetics-and-creative-coding/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -4877,7 +4988,7 @@
     "identifier": "/fr/id/publication/human-computer-interaction-for-creative-tools/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -5028,7 +5139,7 @@
     "identifier": "/fr/id/publication/linked-data-and-public-knowledge-pages/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -5066,8 +5177,45 @@
     "identifier": "/fr/id/publication/local-and-open-source-ai-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:local-lexical-segmentation-for-speech-and-song-fr",
+    "legacyId": "local-lexical-segmentation-for-speech-and-song-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "title": "Découper localement la parole et le chant, mot par mot",
+    "subtitle": "Analyse adaptative sans téléversement distant",
+    "summary": "La segmentation lexicale locale combine décodage borné, activité vocale, hypothèses adaptatives et consensus temporel tout en conservant l’audio original comme preuve.",
+    "description": "Le pipeline lexical de Voice Capture Studio pour voix parlée, chant et médias mixtes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Segmentation lexicale",
+      "IA locale",
+      "Chant",
+      "Whisper",
+      "Preuve audio"
+    ],
+    "discipline": [
+      "ingénierie audio",
+      "apprentissage automatique",
+      "développement web"
+    ],
+    "route": "/fr/publications/local-lexical-segmentation-for-speech-and-song/",
+    "identifier": "/fr/id/publication/local-lexical-segmentation-for-speech-and-song/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -5630,7 +5778,7 @@
     "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -5709,6 +5857,80 @@
       "creationDate": "2026-06-24",
       "lastUpdated": "2026-07-12",
       "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+    "legacyId": "traceable-voice-capture-from-microphone-to-dataset-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "title": "Du microphone au dataset, anatomie d’une prise vocale traçable",
+    "subtitle": "Capture, provenance et paquets ouverts",
+    "summary": "Une prise devient une donnée réutilisable lorsque son audio brut, son prompt, son contexte, ses observations, sa révision, sa persistance et son manifeste restent reliés.",
+    "description": "Le pipeline Voice Capture Studio, de la capture PCM au paquet dataset local et vérifiable.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "dataset vocal",
+      "Provenance",
+      "PCM",
+      "métadonnées",
+      "Local First"
+    ],
+    "discipline": [
+      "ingénierie audio",
+      "ingénierie des données",
+      "apprentissage automatique"
+    ],
+    "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "identifier": "/fr/id/publication/traceable-voice-capture-from-microphone-to-dataset/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:trustworthy-audio-interfaces-and-measurement-fr",
+    "legacyId": "trustworthy-audio-interfaces-and-measurement-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "title": "Une interface audio digne de confiance ne simule jamais la mesure",
+    "subtitle": "Design d’interaction ancré dans le signal",
+    "summary": "Une doctrine pratique où courbes, niveaux, halos et mouvements restent reliés à un signal frais, un état explicite ou une action humaine.",
+    "description": "Comment Voice Capture Studio transforme intégrité du signal, silence, latence et mouvement réduit en règles d’UX audio.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "UX audio",
+      "Interface digne de confiance",
+      "Signal",
+      "Motion Design",
+      "Voice Capture Studio"
+    ],
+    "discipline": [
+      "interaction humain-machine",
+      "ingénierie audio",
+      "design d’interaction"
+    ],
+    "route": "/fr/publications/trustworthy-audio-interfaces-and-measurement/",
+    "identifier": "/fr/id/publication/trustworthy-audio-interfaces-and-measurement/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -5819,7 +6041,7 @@
     "identifier": "/fr/id/publication/web-audio-and-browser-based-sound-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-07-12",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -6374,7 +6596,7 @@
     "route": "/fr/research/questions/speech-dataset-reproducibility/",
     "identifier": "/fr/id/research-question/speech-dataset-reproducibility/",
     "started": "2026-02-01",
-    "updated": "2026-07-09",
+    "updated": "2026-07-18",
     "priority": 2,
     "homepage": true,
     "observation": "Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles.",
@@ -6442,6 +6664,24 @@
       },
       {
         "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+      },
+      {
+        "id": "ea:publication:trustworthy-audio-interfaces-and-measurement"
+      },
+      {
+        "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset"
+      },
+      {
+        "id": "ea:publication:deterministic-research-and-evidence-fusion"
+      },
+      {
+        "id": "ea:publication:local-lexical-segmentation-for-speech-and-song"
+      },
+      {
+        "id": "ea:publication:five-voice-modes-five-success-criteria"
+      },
+      {
+        "id": "ea:publication:browser-as-a-local-first-voice-studio"
       }
     ],
     "relatedCollections": [
@@ -6507,11 +6747,16 @@
         "date": "2026-07-09",
         "title": "Publication open source",
         "summary": "Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question."
+      },
+      {
+        "date": "2026-07-18",
+        "title": "Couche éditoriale en six articles",
+        "summary": "Six publications bilingues relient interaction, provenance de capture, preuve déterministe, segmentation, modes produit et architecture navigateur à la question de recherche."
       }
     ],
     "temporality": {
       "creationDate": "2026-07-09",
-      "lastUpdated": "2026-07-09",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-07-09",
       "creationYear": "2026"
     }
@@ -7544,7 +7789,7 @@
     "identifier": "/id/publication/ai-agents-vs-ai-workflows/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-06-24",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-24",
       "creationYear": "2026"
     }
@@ -7623,6 +7868,42 @@
     }
   },
   {
+    "id": "ea:publication:browser-as-a-local-first-voice-studio",
+    "legacyId": "browser-as-a-local-first-voice-studio",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "The Browser as a Local-First Voice Studio",
+    "subtitle": "Capability, Storage and Progressive Degradation",
+    "summary": "A browser can host serious voice capture when microphone, audio processing, workers, local persistence, open exports and capability boundaries are designed as one system.",
+    "description": "The browser-native architecture behind Voice Capture Studio and its local-first privacy model.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Browser Software",
+      "Local First",
+      "Web Audio",
+      "IndexedDB",
+      "Open Source"
+    ],
+    "discipline": [
+      "Web Architecture",
+      "Audio Engineering",
+      "Software Engineering"
+    ],
+    "route": "/publications/browser-as-a-local-first-voice-studio/",
+    "identifier": "/id/publication/browser-as-a-local-first-voice-studio/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
     "legacyId": "c2pa-content-credentials-and-generative-media-provenance",
     "kind": "publication",
@@ -7691,7 +7972,7 @@
     "identifier": "/id/publication/contextual-execution-and-graph-runtimes/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-06-23",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-23",
       "creationYear": "2026"
     }
@@ -7729,6 +8010,42 @@
       "creationDate": "2026-06-24",
       "lastUpdated": "2026-06-24",
       "releaseDate": "2026-06-24",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:deterministic-research-and-evidence-fusion",
+    "legacyId": "deterministic-research-and-evidence-fusion",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+    "subtitle": "Evidence Fusion and Explicit Uncertainty",
+    "summary": "Deterministic research separates declared inputs, measured signal, model hypotheses, alignment estimates and policy decisions so every conclusion can be reproduced and challenged.",
+    "description": "A method for evidence-linked decisions in Voice Capture Studio, VASTE and graph-based research systems.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Deterministic Research",
+      "Evidence",
+      "Uncertainty",
+      "Provenance",
+      "Graph"
+    ],
+    "discipline": [
+      "Research Design",
+      "Data Engineering",
+      "Software Architecture"
+    ],
+    "route": "/publications/deterministic-research-and-evidence-fusion/",
+    "identifier": "/id/publication/deterministic-research-and-evidence-fusion/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -7844,6 +8161,42 @@
     }
   },
   {
+    "id": "ea:publication:five-voice-modes-five-success-criteria",
+    "legacyId": "five-voice-modes-five-success-criteria",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "Why Five Voice Modes Need Five Success Criteria",
+    "subtitle": "Product Modes as Distinct Work Contracts",
+    "summary": "Free capture, dataset recording, dubbing, performance and lexical segmentation deserve separate modes only because they change inputs, operator gestures, acceptance rules and useful outputs.",
+    "description": "A product-design framework for deciding when a voice workflow is a mode rather than a preset.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Product Modes",
+      "Voice UX",
+      "Dataset",
+      "Dubbing",
+      "Interaction Design"
+    ],
+    "discipline": [
+      "Product Design",
+      "Human Computer Interaction",
+      "Audio Engineering"
+    ],
+    "route": "/publications/five-voice-modes-five-success-criteria/",
+    "identifier": "/id/publication/five-voice-modes-five-success-criteria/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:publication:foundational-lineage-001",
     "legacyId": "foundational-lineage-001",
     "kind": "publication",
@@ -7943,7 +8296,7 @@
     "identifier": "/id/publication/generative-systems-cybernetics-and-creative-coding/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-06-23",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-23",
       "creationYear": "2026"
     }
@@ -8016,7 +8369,7 @@
     "identifier": "/id/publication/human-computer-interaction-for-creative-tools/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-06-24",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-24",
       "creationYear": "2026"
     }
@@ -8163,7 +8516,7 @@
     "identifier": "/id/publication/linked-data-and-public-knowledge-pages/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-06-23",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-23",
       "creationYear": "2026"
     }
@@ -8200,8 +8553,44 @@
     "identifier": "/id/publication/local-and-open-source-ai-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-06-24",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-24",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "legacyId": "local-lexical-segmentation-for-speech-and-song",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "Segmenting Speech and Song Locally, Word by Word",
+    "subtitle": "Adaptive Analysis Without Remote Upload",
+    "summary": "Local lexical segmentation combines bounded media decoding, vocal activity, adaptive transcription hypotheses and temporal consensus while preserving original audio as evidence.",
+    "description": "Inside the Voice Capture Studio lexical pipeline for spoken voice, singing and mixed media.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Lexical Segmentation",
+      "Local AI",
+      "Singing Voice",
+      "Whisper",
+      "Audio Evidence"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Machine Learning",
+      "Web Development"
+    ],
+    "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+    "identifier": "/id/publication/local-lexical-segmentation-for-speech-and-song/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -8749,7 +9138,7 @@
     "identifier": "/id/publication/runtime-engines-and-domain-operating-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-06-24",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-24",
       "creationYear": "2026"
     }
@@ -8826,6 +9215,78 @@
       "creationDate": "2026-06-24",
       "lastUpdated": "2026-06-24",
       "releaseDate": "2026-06-24",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "legacyId": "traceable-voice-capture-from-microphone-to-dataset",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+    "subtitle": "Capture, Provenance and Open Packages",
+    "summary": "A voice take becomes reusable data only when raw audio, prompt, room context, observations, review decisions, persistence and export manifests remain connected.",
+    "description": "A step-by-step account of the Voice Capture Studio pipeline from PCM capture to a verifiable local dataset package.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Voice Dataset",
+      "Provenance",
+      "PCM",
+      "Metadata",
+      "Local First"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Data Engineering",
+      "Machine Learning"
+    ],
+    "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+    "identifier": "/id/publication/traceable-voice-capture-from-microphone-to-dataset/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "legacyId": "trustworthy-audio-interfaces-and-measurement",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "en",
+    "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+    "subtitle": "Signal-Grounded Interaction Design",
+    "summary": "A practical design doctrine for audio interfaces in which waveforms, meters, halos and motion remain traceable to fresh signal, explicit state or user action.",
+    "description": "How Voice Capture Studio turns signal integrity, silence, latency and reduced motion into rules for trustworthy audio UX.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Audio UX",
+      "Trustworthy Interfaces",
+      "Signal",
+      "Motion Design",
+      "Voice Capture Studio"
+    ],
+    "discipline": [
+      "Human Computer Interaction",
+      "Audio Engineering",
+      "Interaction Design"
+    ],
+    "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+    "identifier": "/id/publication/trustworthy-audio-interfaces-and-measurement/",
+    "temporality": {
+      "creationDate": "2026-07-18",
+      "lastUpdated": "2026-07-18",
+      "releaseDate": "2026-07-18",
       "creationYear": "2026"
     }
   },
@@ -8933,7 +9394,7 @@
     "identifier": "/id/publication/web-audio-and-browser-based-sound-systems/",
     "temporality": {
       "creationDate": "2026-06-24",
-      "lastUpdated": "2026-06-24",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-06-24",
       "creationYear": "2026"
     }
@@ -9481,7 +9942,7 @@
     "route": "/research/questions/speech-dataset-reproducibility/",
     "identifier": "/id/research-question/speech-dataset-reproducibility/",
     "started": "2026-02-01",
-    "updated": "2026-07-09",
+    "updated": "2026-07-18",
     "priority": 2,
     "homepage": true,
     "observation": "Voice datasets are often assembled through inconsistent tools, loose folders and missing metadata, which makes later review, consent checking and reproduction difficult.",
@@ -9549,6 +10010,24 @@
       },
       {
         "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+      },
+      {
+        "id": "ea:publication:trustworthy-audio-interfaces-and-measurement"
+      },
+      {
+        "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset"
+      },
+      {
+        "id": "ea:publication:deterministic-research-and-evidence-fusion"
+      },
+      {
+        "id": "ea:publication:local-lexical-segmentation-for-speech-and-song"
+      },
+      {
+        "id": "ea:publication:five-voice-modes-five-success-criteria"
+      },
+      {
+        "id": "ea:publication:browser-as-a-local-first-voice-studio"
       }
     ],
     "relatedCollections": [
@@ -9614,11 +10093,16 @@
         "date": "2026-07-09",
         "title": "Open-source project publication",
         "summary": "Voice Capture Studio became the public software answer and evidence source for the question."
+      },
+      {
+        "date": "2026-07-18",
+        "title": "Six-part editorial evidence layer",
+        "summary": "Six bilingual publications connected interaction, capture provenance, deterministic evidence, segmentation, product modes and browser architecture back to the research question."
       }
     ],
     "temporality": {
       "creationDate": "2026-07-09",
-      "lastUpdated": "2026-07-09",
+      "lastUpdated": "2026-07-18",
       "releaseDate": "2026-07-09",
       "creationYear": "2026"
     }

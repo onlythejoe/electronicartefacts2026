@@ -14,11 +14,11 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 2.0.0
+  version: 2.1.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
   modifiedAt: "2026-07-18"
-  changeSummary: Rebuilt the dossier from the shipped five-mode interface, current signal philosophy, deterministic observation pipeline and export contracts.
+  changeSummary: Published the six-part Knowledge layer and connected the dossier to its complete editorial neighborhood.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -244,7 +244,7 @@ Useful source entry points:
 
 ## Knowledge relay
 
-The six editorial briefs above are designed to become Knowledge articles, not release notes. Each can remain useful after the interface changes because it addresses a durable problem: trustworthy audio UX, provenance, deterministic research, local segmentation, mode design or browser-native architecture.
+The six editorial briefs are now complete Knowledge articles rather than release notes: [trustworthy audio interfaces](/publications/trustworthy-audio-interfaces-and-measurement/), [traceable voice capture](/publications/traceable-voice-capture-from-microphone-to-dataset/), [deterministic evidence fusion](/publications/deterministic-research-and-evidence-fusion/), [local lexical segmentation](/publications/local-lexical-segmentation-for-speech-and-song/), [five mode contracts](/publications/five-voice-modes-five-success-criteria/) and [browser-native local-first architecture](/publications/browser-as-a-local-first-voice-studio/). Each remains useful after interface changes because it addresses a durable problem.
 
 Voice Capture Studio sits near [ORETH](/programs/oreth/) because both treat audio as structured material. It connects to [Web Audio](/knowledge/concepts/web-audio/), the [Web Audio API](/knowledge/technologies/web-audio-api/), [Human–Computer Interaction](/knowledge/concepts/human-computer-interaction/), [Metadata](/knowledge/concepts/metadata/) and [Open Source](/knowledge/concepts/open-source/) as a practical test of those ideas.
 

@@ -66,6 +66,46 @@
       "route": "/knowledge/concepts/entity-identity/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:situated-actors-and-governance",
+      "type": "concept",
+      "title": "Situated Actors and Topological Governance",
+      "route": "/knowledge/concepts/situated-actors-and-governance/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vaste-extension-architecture",
+      "type": "concept",
+      "title": "VASTE Extension Architecture",
+      "route": "/knowledge/concepts/vaste-extension-architecture/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vaste-five-primitives",
+      "type": "concept",
+      "title": "The Five VASTE Primitives",
+      "route": "/knowledge/concepts/vaste-five-primitives/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vast-portable-graph-format",
+      "type": "concept",
+      "title": ".vast Portable Graph Format",
+      "route": "/knowledge/concepts/vast-portable-graph-format/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:autonomous-system",
+      "type": "concept",
+      "title": "Autonomous System",
+      "route": "/knowledge/concepts/autonomous-system/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -139,6 +179,51 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Contextual Execution and Graph Runtimes documents Entity Identity as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-situated-actors-and-governance",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:situated-actors-and-governance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents Situated Actors and Topological Governance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-extension-architecture",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:vaste-extension-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents VASTE Extension Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-five-primitives",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:vaste-five-primitives",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents The Five VASTE Primitives as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vast-portable-graph-format",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:vast-portable-graph-format",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents .vast Portable Graph Format as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-autonomous-system",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:autonomous-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents Autonomous System as one of its declared subjects.",
       "confidence": "published"
     }
   ]

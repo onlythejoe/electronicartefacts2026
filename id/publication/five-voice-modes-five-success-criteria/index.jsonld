@@ -1,0 +1,252 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/#webpage",
+      "url": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/",
+      "name": "Why Five Voice Modes Need Five Success Criteria",
+      "description": "A product-design framework for deciding when a voice workflow is a mode rather than a preset.",
+      "inLanguage": "en",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-18",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Why Five Voice Modes Need Five Success Criteria"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "Article",
+      "@id": "https://electronicartefacts.com/id/publication/five-voice-modes-five-success-criteria/",
+      "identifier": "ea:publication:five-voice-modes-five-success-criteria",
+      "name": "Why Five Voice Modes Need Five Success Criteria",
+      "headline": "Why Five Voice Modes Need Five Success Criteria",
+      "abstract": "Free capture, dataset recording, dubbing, performance and lexical segmentation deserve separate modes only because they change inputs, operator gestures, acceptance rules and useful outputs.",
+      "description": "Free capture, dataset recording, dubbing, performance and lexical segmentation deserve separate modes only because they change inputs, operator gestures, acceptance rules and useful outputs.",
+      "url": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Why Five Voice Modes Need Five Success Criteria"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Product Modes",
+        "Voice UX",
+        "Dataset",
+        "Dubbing",
+        "Interaction Design",
+        "Product Design",
+        "Human Computer Interaction",
+        "Audio Engineering"
+      ],
+      "inLanguage": "en",
+      "dateCreated": "2026-07-18",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-18",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 557,
+      "citation": [
+        "Electronic Artefacts. \"Why Five Voice Modes Need Five Success Criteria.\" Case study, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "Voice Capture Studio Mode Experience Grid",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/mode-experience-grid.md",
+          "publisher": "Electronic Artefacts"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/human-computer-interaction/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/voice-technology/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/systems-thinking/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/speech-recording/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/speech-datasets/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/"
+        }
+      ],
+      "articleSection": [
+        "Product Design",
+        "Human Computer Interaction",
+        "Audio Engineering",
+        "Product Modes",
+        "Voice UX",
+        "Dataset"
+      ],
+      "timeRequired": "PT3M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Voice Capture Studio Mode Experience Grid",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/mode-experience-grid.md",
+          "publisher": "Electronic Artefacts"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
+      "keywords": [
+        "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
+        "contentUrl": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
+        "width": 1024,
+        "height": 1024
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
+      "keywords": [
+        "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-07-10",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Five Voice Modes Need Five Success Criteria",
+          "item": "https://electronicartefacts.com/publications/five-voice-modes-five-success-criteria/"
+        }
+      ]
+    }
+  ]
+}

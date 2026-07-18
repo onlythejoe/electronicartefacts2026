@@ -50,6 +50,30 @@
       "route": "/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "type": "publication",
+      "title": "Segmenting Speech and Song Locally, Word by Word",
+      "route": "/publications/local-lexical-segmentation-for-speech-and-song/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "type": "publication",
+      "title": "Trustworthy Audio Interfaces Never Simulate Measurement",
+      "route": "/publications/trustworthy-audio-interfaces-and-measurement/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +121,33 @@
       "label": "Member of collection",
       "statement": "Web Audio is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio",
+      "source": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-web-audio",
+      "source": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Web Audio as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

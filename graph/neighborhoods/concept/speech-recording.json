@@ -34,6 +34,22 @@
       "route": "/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria",
+      "type": "publication",
+      "title": "Why Five Voice Modes Need Five Success Criteria",
+      "route": "/publications/five-voice-modes-five-success-criteria/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +79,24 @@
       "label": "Member of collection",
       "statement": "Speech Recording is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:five-voice-modes-five-success-criteria-documents-speech-recording",
+      "source": "ea:publication:five-voice-modes-five-success-criteria",
+      "target": "ea:concept:speech-recording",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Five Voice Modes Need Five Success Criteria documents Speech Recording as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-recording",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "target": "ea:concept:speech-recording",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Speech Recording as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

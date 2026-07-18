@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -29,6 +29,11 @@ subjects:
   - id: ea:concept:event-driven-architecture
   - id: ea:program:vaste
   - id: ea:project:vestiges
+  - id: ea:concept:microservice-architecture
+  - id: ea:artefact:vab-interface-prototype
+  - id: ea:concept:situated-actors-and-governance
+  - id: ea:concept:vaste-extension-architecture
+  - id: ea:concept:vaste-five-primitives
 claims:
   - "Un système d'exploitation de domaine est crédible lorsque plusieurs applications réutilisent l'identité partagée, l'entité, la permission et la sémantique d'événement."
   - "Les moteurs d'exécution devraient séparer les contrats de domaine stables des implémentations de stockage, de transport et d'interface remplaçables."
@@ -296,6 +301,10 @@ Les normes générales du système d'exploitation démontrent la valeur des inte
 La métaphore du système d'exploitation peut encourager le maximisme de la plateforme. Un domaine devrait rester plus petit que les applications qu'il supporte, offrir des chemins d'exportation et éviter de centraliser des capacités non liées.
 
 ## Concepts connexes
+
+L’[architecture microservices](/fr/knowledge/concepts/microservice-architecture/) fournit un contraste utile : un runtime de domaine peut déployer des services modulaires, mais sa valeur tient aux sémantiques partagées d’identité, d’autorité et d’événement plutôt qu’au nombre de services. Voir [Microservices, monolithes modulaires et frontières système](/fr/publications/microservices-modular-monoliths-and-system-boundaries/).
+
+Dans VASTE, le [prototype d’interface VAB](/fr/archive/artefacts/vab-interface-prototype/) constitue la surface de démarrage, les [acteurs situés et leur gouvernance](/fr/knowledge/concepts/situated-actors-and-governance/) définissent l’autorité, les [cinq primitives](/fr/knowledge/concepts/vaste-five-primitives/) fournissent le vocabulaire partagé et l’[architecture d’extensions](/fr/knowledge/concepts/vaste-extension-architecture/) garde les capacités remplaçables. Ce sont les couches complémentaires d’un runtime, pas des doctrines isolées.
 
 Lire [Système d'exploitation du domaine](/fr/knowledge/concepts/domain-operating-system/), [Runtime de graphe](/fr/knowledge/concepts/graph-runtime/), [Exécution contextuelle](/fr/knowledge/concepts/contextual-execution/) et [Architecture d'événements](/fr/knowledge/concepts/event-driven-architecture/).
 

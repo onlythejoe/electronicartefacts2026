@@ -893,21 +893,23 @@ const renderVoiceCaptureStudioExperience = (project: ProjectEntity): string => {
 
   const articles = project.locale === "fr"
     ? [
-        ["knowledge-article-01", "Concevoir une interface audio qui ne simule jamais la mesure", "UX / signal", "Filament, halo, silence, latence et mouvement réduit comme lois d’un instrument plutôt que décor d’une application."],
-        ["knowledge-article-02", "Du microphone au dataset : anatomie d’une prise vocale traçable", "Pipeline / provenance", "PCM, observations, qualité, persistance, checksums et manifeste d’entraînement sans confondre préparation et entraînement."],
-        ["knowledge-article-03", "Recherche déterministe : décider sans transformer une estimation en vérité", "Méthode / confiance", "Comment séparer corpus déclaré, signal mesuré, ASR optionnel, alignement estimé, décision fusionnée et validation acoustique externe."],
-        ["knowledge-article-04", "Découper localement la parole et le chant, mot par mot", "Audio / IA locale", "Décodage 16 kHz, VAD adaptatif, Whisper local, séparation vocale, consensus multi-passes et export vérifiable."],
-        ["knowledge-article-05", "Pourquoi cinq modes de voix exigent cinq critères de réussite", "Produit / UX", "Capture libre, Dataset ML, Doublage, Interprétation et Découpe lexicale comparés par entrées, gestes et sorties."],
-        ["knowledge-article-06", "Le navigateur comme studio local-first", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA et dégradation progressive sur les navigateurs réels."],
+        ["knowledge-article-01", "Concevoir une interface audio qui ne simule jamais la mesure", "UX / signal", "Filament, halo, silence, latence et mouvement réduit comme lois d’un instrument plutôt que décor d’une application.", "trustworthy-audio-interfaces-and-measurement"],
+        ["knowledge-article-02", "Du microphone au dataset : anatomie d’une prise vocale traçable", "Pipeline / provenance", "PCM, observations, qualité, persistance, checksums et manifeste d’entraînement sans confondre préparation et entraînement.", "traceable-voice-capture-from-microphone-to-dataset"],
+        ["knowledge-article-03", "Recherche déterministe : décider sans transformer une estimation en vérité", "Méthode / confiance", "Comment séparer corpus déclaré, signal mesuré, ASR optionnel, alignement estimé, décision fusionnée et validation acoustique externe.", "deterministic-research-and-evidence-fusion"],
+        ["knowledge-article-04", "Découper localement la parole et le chant, mot par mot", "Audio / IA locale", "Décodage 16 kHz, VAD adaptatif, Whisper local, séparation vocale, consensus multi-passes et export vérifiable.", "local-lexical-segmentation-for-speech-and-song"],
+        ["knowledge-article-05", "Pourquoi cinq modes de voix exigent cinq critères de réussite", "Produit / UX", "Capture libre, Dataset ML, Doublage, Interprétation et Découpe lexicale comparés par entrées, gestes et sorties.", "five-voice-modes-five-success-criteria"],
+        ["knowledge-article-06", "Le navigateur comme studio local-first", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA et dégradation progressive sur les navigateurs réels.", "browser-as-a-local-first-voice-studio"],
       ]
     : [
-        ["knowledge-article-01", "Designing an audio interface that never simulates measurement", "UX / signal", "Filament, halo, silence, latency and reduced motion as laws of an instrument rather than app decoration."],
-        ["knowledge-article-02", "From microphone to dataset: anatomy of a traceable voice take", "Pipeline / provenance", "PCM, observations, quality, persistence, checksums and training manifests without conflating preparation with training."],
-        ["knowledge-article-03", "Deterministic research: deciding without turning estimates into truth", "Method / trust", "How declared corpus, measured signal, optional ASR, estimated alignment, fused decisions and external acoustic validation remain separate."],
-        ["knowledge-article-04", "Segmenting speech and song locally, word by word", "Audio / local AI", "16 kHz decoding, adaptive VAD, local Whisper, vocal separation, multi-pass consensus and verifiable exports."],
-        ["knowledge-article-05", "Why five voice modes need five success criteria", "Product / UX", "Free capture, ML Dataset, Dubbing, Performance and Lexical Segmentation compared through inputs, gestures and outputs."],
-        ["knowledge-article-06", "The browser as a local-first studio", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA and progressive capability handling in real browsers."],
+        ["knowledge-article-01", "Designing an audio interface that never simulates measurement", "UX / signal", "Filament, halo, silence, latency and reduced motion as laws of an instrument rather than app decoration.", "trustworthy-audio-interfaces-and-measurement"],
+        ["knowledge-article-02", "From microphone to dataset: anatomy of a traceable voice take", "Pipeline / provenance", "PCM, observations, quality, persistence, checksums and training manifests without conflating preparation with training.", "traceable-voice-capture-from-microphone-to-dataset"],
+        ["knowledge-article-03", "Deterministic research: deciding without turning estimates into truth", "Method / trust", "How declared corpus, measured signal, optional ASR, estimated alignment, fused decisions and external acoustic validation remain separate.", "deterministic-research-and-evidence-fusion"],
+        ["knowledge-article-04", "Segmenting speech and song locally, word by word", "Audio / local AI", "16 kHz decoding, adaptive VAD, local Whisper, vocal separation, multi-pass consensus and verifiable exports.", "local-lexical-segmentation-for-speech-and-song"],
+        ["knowledge-article-05", "Why five voice modes need five success criteria", "Product / UX", "Free capture, ML Dataset, Dubbing, Performance and Lexical Segmentation compared through inputs, gestures and outputs.", "five-voice-modes-five-success-criteria"],
+        ["knowledge-article-06", "The browser as a local-first studio", "Architecture / web", "Web Audio, AudioWorklet, IndexedDB, File System Access, Workers, PWA and progressive capability handling in real browsers.", "browser-as-a-local-first-voice-studio"],
       ];
+
+  const articleHref = (slug: string): string => `${project.locale === "fr" ? "/fr" : ""}/publications/${slug}/`;
 
   return `
     <section class="zone-card hero vcs-experience" id="voice-capture-experience" data-vcs-experience>
@@ -968,11 +970,11 @@ const renderVoiceCaptureStudioExperience = (project: ProjectEntity): string => {
       <div class="vcs-knowledge-roadmap" id="voice-capture-knowledge-roadmap">
         <div class="section-head">
           <p class="eyebrow">${ui(project, "KNOWLEDGE EDITORIAL ROADMAP", "FEUILLE ÉDITORIALE CONNAISSANCE")}</p>
-          <h2>${ui(project, "Six articles ready to turn this software into reusable knowledge.", "Six articles prêts à transformer ce logiciel en connaissance réutilisable.")}</h2>
-          <p class="lede">${ui(project, "Each brief below has a stable anchor from this dossier. The future Knowledge article should link back to the relevant product evidence and replace this anchor when published.", "Chaque brief ci-dessous possède une ancre stable depuis ce dossier. Le futur article Connaissance devra revenir vers les preuves produit concernées et remplacer cette ancre lors de sa publication.")}</p>
+          <h2>${ui(project, "Six published articles turn this software into reusable knowledge.", "Six articles publiés transforment ce logiciel en connaissance réutilisable.")}</h2>
+          <p class="lede">${ui(project, "Each article links product evidence to a wider neighborhood of concepts, technologies, programs and research questions.", "Chaque article relie les preuves produit à un voisinage plus large de concepts, technologies, programmes et questions de recherche.")}</p>
         </div>
-        <div class="vcs-knowledge-roadmap__index" aria-label="${ui(project, "Proposed articles", "Articles proposés")}">
-          ${articles.map((article, index) => `<a href="#${article[0]}"><span>${String(index + 1).padStart(2, "0")}</span>${escapeHtml(article[1])}</a>`).join("")}
+        <div class="vcs-knowledge-roadmap__index" aria-label="${ui(project, "Published articles", "Articles publiés")}">
+          ${articles.map((article, index) => `<a href="${articleHref(article[4])}"><span>${String(index + 1).padStart(2, "0")}</span>${escapeHtml(article[1])}</a>`).join("")}
         </div>
         <div class="vcs-knowledge-roadmap__briefs">
           ${articles.map((article, index) => `
@@ -980,7 +982,7 @@ const renderVoiceCaptureStudioExperience = (project: ProjectEntity): string => {
               <p><span>${String(index + 1).padStart(2, "0")}</span>${escapeHtml(article[2])}</p>
               <h3>${escapeHtml(article[1])}</h3>
               <p>${escapeHtml(article[3])}</p>
-              <a href="#voice-capture-pipeline">${ui(project, "Return to product evidence", "Revenir aux preuves produit")}</a>
+              <a href="${articleHref(article[4])}">${ui(project, "Read the complete article", "Lire l’article complet")}</a>
             </article>`).join("")}
         </div>
       </div>

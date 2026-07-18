@@ -66,6 +66,46 @@
       "route": "/knowledge/concepts/event-driven-architecture/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:microservice-architecture",
+      "type": "concept",
+      "title": "Microservice Architecture",
+      "route": "/knowledge/concepts/microservice-architecture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:artefact:vab-interface-prototype",
+      "type": "artefact",
+      "title": "VAB Interface Prototype",
+      "route": "/archive/artefacts/vab-interface-prototype/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:situated-actors-and-governance",
+      "type": "concept",
+      "title": "Situated Actors and Topological Governance",
+      "route": "/knowledge/concepts/situated-actors-and-governance/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vaste-extension-architecture",
+      "type": "concept",
+      "title": "VASTE Extension Architecture",
+      "route": "/knowledge/concepts/vaste-extension-architecture/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vaste-five-primitives",
+      "type": "concept",
+      "title": "The Five VASTE Primitives",
+      "route": "/knowledge/concepts/vaste-five-primitives/",
+      "status": "experimental",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -139,6 +179,51 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Runtime Engines and Domain Operating Systems documents Event-Driven Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-microservice-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:microservice-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Microservice Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vab-interface-prototype",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:artefact:vab-interface-prototype",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents VAB Interface Prototype as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-situated-actors-and-governance",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:situated-actors-and-governance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Situated Actors and Topological Governance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-extension-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:vaste-extension-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents VASTE Extension Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-five-primitives",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:vaste-five-primitives",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents The Five VASTE Primitives as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -1,0 +1,151 @@
+{
+  "id": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:browser-as-a-local-first-voice-studio",
+  "slug": {
+    "canonical": "browser-as-a-local-first-voice-studio"
+  },
+  "title": "Le navigateur comme studio vocal local-first",
+  "subtitle": "Capacités, stockage et dégradation progressive",
+  "abstract": "Le navigateur peut accueillir une capture vocale sérieuse lorsque microphone, traitement audio, workers, persistance locale, exports ouverts et limites de capacités forment un seul système.",
+  "description": "L’architecture browser-native de Voice Capture Studio et son modèle de vie privée local-first.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Logiciel navigateur",
+    "Local First",
+    "Web Audio",
+    "IndexedDB",
+    "open source"
+  ],
+  "disciplines": [
+    "architecture web",
+    "ingénierie audio",
+    "ingénierie logicielle"
+  ],
+  "sources": [
+    {
+      "title": "Manifeste d’ingénierie browser-native",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/browser-native-engineering-manifesto.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "Web Audio API 1.1",
+      "url": "https://www.w3.org/TR/webaudio/",
+      "publisher": "W3C",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:browser-software"
+    },
+    {
+      "id": "ea:concept:open-source"
+    },
+    {
+      "id": "ea:concept:web-audio"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows"
+    },
+    {
+      "id": "ea:program:vaste"
+    },
+    {
+      "id": "ea:technology:web-audio-api"
+    },
+    {
+      "id": "ea:technology:webnn"
+    }
+  ],
+  "claims": [
+    "Un logiciel navigateur local-first doit exposer durabilité et chemins d’export au lieu d’assimiler stockage local et stockage permanent.",
+    "La dégradation progressive doit préserver la capture et isoler les fonctions optionnelles."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. « Le navigateur comme studio vocal local-first ». Article technique, 2026."
+  },
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Un studio navigateur n’imite pas une station audio native. Il organise les forces du web : microphone sous permission, distribution immédiate, calcul local, stockage structuré, téléchargements explicites et code inspectable.</p>\n<p><a href=\"/fr/projects/voice-capture-studio/\">Voice Capture Studio</a> garde les voix dans le stockage navigateur, un dossier choisi ou un export explicite tant que l’opérateur ne décide pas d’une autre destination.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le produit vérifie microphone, traitement audio, stockage persistant, dossiers, workers, wake lock et inférence optionnelle. L’absence de File System Access mène au téléchargement. L’absence d’ASR retire une hypothèse, pas la capture. Un runtime contraint réduit la profondeur d’analyse tout en conservant une vérification indépendante.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>L’<a href=\"/fr/knowledge/concepts/web-audio/\">Audio web</a> fournit le graphe de signal ; AudioWorklet protège le traitement du thread d’interface. L’<a href=\"/fr/knowledge/technologies/web-audio-api/\">API Web Audio</a> alimente le feedback live, sans laisser le rendu concurrencer l’enregistreur. Décodage, transcription et packaging passent dans des workers après la capture critique.</p>\n<h2 id=\"local-first-n-est-pas-permanent\">Local-first n’est pas permanent</h2>\n<p>Un <a href=\"/fr/knowledge/concepts/browser-software/\">logiciel de navigateur</a> peut garder la matière privée près de l’utilisateur, mais IndexedDB peut être évincé. Le produit expose donc trois chemins : workspace intégré, dossier visible et paquet téléchargeable. Une couverture dataset ne progresse pas si l’audio n’a pas atteint un stockage durable.</p>\n<h2 id=\"portabilite-ouverte\">Portabilité ouverte</h2>\n<p>WAV, JSON, JSONL, CSV et checksums permettent de rejoindre archives, aligneurs, systèmes de révision et <a href=\"/fr/knowledge/concepts/machine-learning-workflows/\">workflows de machine learning</a>. L’<a href=\"/fr/knowledge/concepts/open-source/\">open source</a> rend le comportement inspectable ; les formats ouverts préservent le droit de partir avec un matériau utilisable.</p>\n<p>WASM, WebGPU et <a href=\"/fr/knowledge/technologies/webnn/\">WebNN</a> étendent l’analyse locale sans rendre tous les appareils équivalents. Le manifeste doit dire ce qui a réellement tourné et conserver l’alignement navigateur comme estimation.</p>\n<p>Cette architecture rejoint <a href=\"/fr/programs/vaste/\">VASTE</a> : découverte de capacités, autorité explicite, exécution locale bornée, traces durables et sorties portables. Local-first n’est pas un slogan sur la position des octets, mais un contrat d’autorité, de durabilité, d’échec et de sortie.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Le manifeste d’ingénierie browser-native et le dépôt public documentent vérification des capacités, fallbacks de stockage, frontières de workers et contrats d’export ouverts.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>APIs, durabilité du stockage, mémoire et inférence locale varient selon l’appareil. Cette architecture ne garantit ni performance de DAW native ni permanence sans action explicite.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Voice Capture Studio. Manifeste d’ingénierie browser-native.</li>\n<li>W3C. Web Audio API 1.1.</li>\n</ul>\n",
+  "headings": [
+    "Problème",
+    "Architecture",
+    "Mise en œuvre",
+    "Local-first n’est pas permanent",
+    "Portabilité ouverte",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problème",
+      "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
+    },
+    {
+      "level": 2,
+      "title": "Local-first n’est pas permanent",
+      "id": "local-first-n-est-pas-permanent"
+    },
+    {
+      "level": 2,
+      "title": "Portabilité ouverte",
+      "id": "portabilite-ouverte"
+    },
+    {
+      "level": 2,
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Limites",
+      "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

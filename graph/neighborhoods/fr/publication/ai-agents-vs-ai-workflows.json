@@ -66,6 +66,14 @@
       "route": "/fr/knowledge/concepts/large-language-model/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:agent2agent-protocol-fr",
+      "type": "technology",
+      "title": "Protocole Agent2Agent",
+      "route": "/fr/knowledge/technologies/agent2agent-protocol/",
+      "status": "experimental",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -139,6 +147,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "AI Agents vs AI Workflows documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-agent2agent-protocol",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:technology:agent2agent-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents Agent2Agent Protocol as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-24"
   publishedAt: "2026-06-24"
-  modifiedAt: "2026-06-24"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:signal-archaeology
   - id: ea:program:oreth
   - id: ea:concept:creative-coding
+  - id: ea:project:voice-capture-studio
 claims:
   - Web Audio turns the browser into a viable environment for public sound tools, not only embedded playback.
   - Browser-based sound systems need graph thinking, performance discipline and preservation records.
@@ -149,6 +150,8 @@ The third mistake is treating analysis output as objective truth. An analyzer pr
 Web Audio gives Electronic Artefacts a path toward public sound research. Instead of describing audio experiments only in prose, the site can eventually host listening tools that remain connected to sources and concepts.
 
 ORETH should be the methodological anchor. Palimpsests can provide artistic context. Signal archaeology can provide interpretive discipline.
+
+Voice Capture Studio provides the operational case that was missing from the first version of this article. Its five workflows connect microphone capture, analyzer-driven feedback, local decoding, replay, structured observations and open WAV packages. Continue with [The Browser as a Local-First Voice Studio](/publications/browser-as-a-local-first-voice-studio/) for the capability and persistence layer, then [Trustworthy Audio Interfaces Never Simulate Measurement](/publications/trustworthy-audio-interfaces-and-measurement/) for the perceptual contract.
 
 ## Knowledge graph role
 

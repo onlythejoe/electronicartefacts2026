@@ -66,6 +66,14 @@
       "route": "/knowledge/concepts/large-language-model/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -148,6 +156,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Local and Open Source AI Systems documents llama.cpp as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-voice-capture-studio",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents Voice Capture Studio as one of its declared subjects.",
       "confidence": "published"
     }
   ]

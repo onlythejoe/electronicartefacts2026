@@ -3393,7 +3393,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3405,7 +3405,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3417,7 +3417,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3429,7 +3429,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3441,7 +3441,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3453,7 +3453,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3465,7 +3465,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3477,7 +3477,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3489,7 +3489,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3501,7 +3501,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3513,7 +3513,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3525,7 +3525,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3537,7 +3537,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3549,7 +3549,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3561,7 +3561,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3573,7 +3573,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3585,7 +3585,79 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-speech-dataset-reproducibility",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:researchQuestion:speech-dataset-reproducibility",
+    "statement": "The Browser as a Local-First Voice Studio documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+    "confidence": "published",
+    "validFrom": "2026-02-01",
+    "createdAt": "2026-02-01",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3597,7 +3669,7 @@
     "confidence": "published",
     "validFrom": "2026-02-01",
     "createdAt": "2026-02-01",
-    "reviewedAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3762,7 +3834,7 @@
     "statement": "Linked Data and Public Knowledge Pages is an explicit member of the Knowledge Hub Foundations collection.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3773,7 +3845,7 @@
     "statement": "Contextual Execution and Graph Runtimes is an explicit member of the Knowledge Hub Foundations collection.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -3795,7 +3867,7 @@
     "statement": "Generative Systems, Cybernetics and Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4125,7 +4197,7 @@
     "statement": "Web Audio and Browser-Based Sound Systems is an explicit member of the Knowledge Hub Second Wave collection.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4180,7 +4252,7 @@
     "statement": "Human Computer Interaction for Creative Tools is an explicit member of the Knowledge Hub Second Wave collection.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4411,7 +4483,7 @@
     "statement": "AI Agents vs AI Workflows is an explicit member of the Knowledge Hub Third Wave collection.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4422,7 +4494,7 @@
     "statement": "Local and Open Source AI Systems is an explicit member of the Knowledge Hub Third Wave collection.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4521,7 +4593,7 @@
     "statement": "Runtime Engines and Domain Operating Systems is an explicit member of the Knowledge Hub Third Wave collection.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4844,6 +4916,72 @@
     "visibility": "public"
   },
   {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "Segmenting Speech and Song Locally, Word by Word is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "Why Five Voice Modes Need Five Success Criteria is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-member-of-collection-voice-capture-studio",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:voice-capture-studio",
+    "statement": "The Browser as a Local-First Voice Studio is an explicit member of the Voice Capture Studio Collection collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
     "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-agent2agent-protocol",
     "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
     "predicate": "documents",
@@ -4917,7 +5055,18 @@
     "statement": "AI Agents vs AI Workflows documents Large Language Model as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:ai-agents-vs-ai-workflows-documents-agent2agent-protocol",
+    "subject": "ea:publication:ai-agents-vs-ai-workflows",
+    "predicate": "documents",
+    "object": "ea:technology:agent2agent-protocol",
+    "statement": "AI Agents vs AI Workflows documents Agent2Agent Protocol as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -4954,6 +5103,94 @@
     "visibility": "public"
   },
   {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-voice-capture-studio",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "The Browser as a Local-First Voice Studio documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-browser-software",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:concept:browser-software",
+    "statement": "The Browser as a Local-First Voice Studio documents Browser Software as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-open-source",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:concept:open-source",
+    "statement": "The Browser as a Local-First Voice Studio documents Open Source as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:concept:web-audio",
+    "statement": "The Browser as a Local-First Voice Studio documents Web Audio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-machine-learning-workflows",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:concept:machine-learning-workflows",
+    "statement": "The Browser as a Local-First Voice Studio documents Machine Learning Workflows as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-vaste",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:program:vaste",
+    "statement": "The Browser as a Local-First Voice Studio documents VASTE as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-web-audio-api",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:technology:web-audio-api",
+    "statement": "The Browser as a Local-First Voice Studio documents Web Audio API as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-as-a-local-first-voice-studio-documents-webnn",
+    "subject": "ea:publication:browser-as-a-local-first-voice-studio",
+    "predicate": "documents",
+    "object": "ea:technology:webnn",
+    "statement": "The Browser as a Local-First Voice Studio documents WebNN as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
     "id": "ear:c2pa-content-credentials-and-generative-media-provenance-documents-digital-preservation",
     "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
     "predicate": "documents",
@@ -4983,7 +5220,128 @@
     "statement": "Contextual Execution and Graph Runtimes documents Entity Identity as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-and-graph-runtimes-documents-situated-actors-and-governance",
+    "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+    "predicate": "documents",
+    "object": "ea:concept:situated-actors-and-governance",
+    "statement": "Contextual Execution and Graph Runtimes documents Situated Actors and Topological Governance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-extension-architecture",
+    "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+    "predicate": "documents",
+    "object": "ea:concept:vaste-extension-architecture",
+    "statement": "Contextual Execution and Graph Runtimes documents VASTE Extension Architecture as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-five-primitives",
+    "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+    "predicate": "documents",
+    "object": "ea:concept:vaste-five-primitives",
+    "statement": "Contextual Execution and Graph Runtimes documents The Five VASTE Primitives as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-and-graph-runtimes-documents-vast-portable-graph-format",
+    "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+    "predicate": "documents",
+    "object": "ea:concept:vast-portable-graph-format",
+    "statement": "Contextual Execution and Graph Runtimes documents .vast Portable Graph Format as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-and-graph-runtimes-documents-autonomous-system",
+    "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+    "predicate": "documents",
+    "object": "ea:concept:autonomous-system",
+    "statement": "Contextual Execution and Graph Runtimes documents Autonomous System as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-voice-capture-studio",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-provenance",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:concept:provenance",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Provenance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-graph-modeling",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:concept:graph-modeling",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Graph Modeling as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-systems-thinking",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:concept:systems-thinking",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Systems Thinking as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-contextual-execution",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:concept:contextual-execution",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Contextual Execution as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:deterministic-research-and-evidence-fusion-documents-vaste",
+    "subject": "ea:publication:deterministic-research-and-evidence-fusion",
+    "predicate": "documents",
+    "object": "ea:program:vaste",
+    "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents VASTE as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5075,6 +5433,83 @@
     "visibility": "public"
   },
   {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-voice-capture-studio",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-human-computer-interaction",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:concept:human-computer-interaction",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Human Computer Interaction as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-voice-technology",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:concept:voice-technology",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Voice Technology as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-systems-thinking",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:concept:systems-thinking",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Systems Thinking as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-speech-recording",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:concept:speech-recording",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Speech Recording as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:five-voice-modes-five-success-criteria-documents-speech-datasets",
+    "subject": "ea:publication:five-voice-modes-five-success-criteria",
+    "predicate": "documents",
+    "object": "ea:concept:speech-datasets",
+    "statement": "Why Five Voice Modes Need Five Success Criteria documents Speech Datasets as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:generative-systems-cybernetics-and-creative-coding-documents-algorithmic-composition",
+    "subject": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+    "predicate": "documents",
+    "object": "ea:concept:algorithmic-composition",
+    "statement": "Generative Systems, Cybernetics and Creative Coding documents Algorithmic Composition as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
     "id": "ear:how-large-language-models-actually-work-documents-transformer-architecture",
     "subject": "ea:publication:how-large-language-models-actually-work",
     "predicate": "documents",
@@ -5104,7 +5539,40 @@
     "statement": "Human Computer Interaction for Creative Tools documents Creative Coding as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:human-computer-interaction-for-creative-tools-documents-voice-capture-studio",
+    "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Human Computer Interaction for Creative Tools documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:human-computer-interaction-for-creative-tools-documents-vab-interface-prototype",
+    "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+    "predicate": "documents",
+    "object": "ea:artefact:vab-interface-prototype",
+    "statement": "Human Computer Interaction for Creative Tools documents VAB Interface Prototype as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:human-computer-interaction-for-creative-tools-documents-webmcp",
+    "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+    "predicate": "documents",
+    "object": "ea:technology:webmcp",
+    "statement": "Human Computer Interaction for Creative Tools documents WebMCP as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5159,7 +5627,7 @@
     "statement": "Linked Data and Public Knowledge Pages documents JSON-LD as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5170,7 +5638,7 @@
     "statement": "Linked Data and Public Knowledge Pages documents RDF as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5181,7 +5649,29 @@
     "statement": "Linked Data and Public Knowledge Pages documents Knowledge Graph as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-23",
-    "reviewedAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:linked-data-and-public-knowledge-pages-documents-activitypub",
+    "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+    "predicate": "documents",
+    "object": "ea:technology:activitypub",
+    "statement": "Linked Data and Public Knowledge Pages documents ActivityPub as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:linked-data-and-public-knowledge-pages-documents-electronic-artefacts-lightweight-template",
+    "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+    "predicate": "documents",
+    "object": "ea:framework:electronic-artefacts-lightweight-template",
+    "statement": "Linked Data and Public Knowledge Pages documents Electronic Artefacts Lightweight Template as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5192,7 +5682,7 @@
     "statement": "Local and Open Source AI Systems documents Large Language Model as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5203,7 +5693,95 @@
     "statement": "Local and Open Source AI Systems documents llama.cpp as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-and-open-source-ai-systems-documents-voice-capture-studio",
+    "subject": "ea:publication:local-and-open-source-ai-systems",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Local and Open Source AI Systems documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-voice-capture-studio",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-voice-technology",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:concept:voice-technology",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Voice Technology as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:concept:web-audio",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-multimodal-ai",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:concept:multimodal-ai",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Multimodal AI as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-signal-archaeology",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:concept:signal-archaeology",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Signal Archaeology as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-oreth",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:program:oreth",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents ORETH as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:local-lexical-segmentation-for-speech-and-song-documents-web-audio-api",
+    "subject": "ea:publication:local-lexical-segmentation-for-speech-and-song",
+    "predicate": "documents",
+    "object": "ea:technology:web-audio-api",
+    "statement": "Segmenting Speech and Song Locally, Word by Word documents Web Audio API as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5412,7 +5990,62 @@
     "statement": "Runtime Engines and Domain Operating Systems documents Event-Driven Architecture as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-engines-and-domain-operating-systems-documents-microservice-architecture",
+    "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "predicate": "documents",
+    "object": "ea:concept:microservice-architecture",
+    "statement": "Runtime Engines and Domain Operating Systems documents Microservice Architecture as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-engines-and-domain-operating-systems-documents-vab-interface-prototype",
+    "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "predicate": "documents",
+    "object": "ea:artefact:vab-interface-prototype",
+    "statement": "Runtime Engines and Domain Operating Systems documents VAB Interface Prototype as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-engines-and-domain-operating-systems-documents-situated-actors-and-governance",
+    "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "predicate": "documents",
+    "object": "ea:concept:situated-actors-and-governance",
+    "statement": "Runtime Engines and Domain Operating Systems documents Situated Actors and Topological Governance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-extension-architecture",
+    "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "predicate": "documents",
+    "object": "ea:concept:vaste-extension-architecture",
+    "statement": "Runtime Engines and Domain Operating Systems documents VASTE Extension Architecture as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-five-primitives",
+    "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "predicate": "documents",
+    "object": "ea:concept:vaste-five-primitives",
+    "statement": "Runtime Engines and Domain Operating Systems documents The Five VASTE Primitives as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5424,6 +6057,149 @@
     "confidence": "published",
     "createdAt": "2026-06-24",
     "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-voice-capture-studio",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-recording",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:speech-recording",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Speech Recording as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-speech-datasets",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:speech-datasets",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Speech Datasets as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-metadata",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:metadata",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Metadata as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-provenance",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:provenance",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Provenance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-machine-learning-workflows",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:machine-learning-workflows",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Machine Learning Workflows as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-digital-preservation",
+    "subject": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "predicate": "documents",
+    "object": "ea:concept:digital-preservation",
+    "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Digital Preservation as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-voice-capture-studio",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-human-computer-interaction",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:concept:human-computer-interaction",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Human Computer Interaction as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-motion-design",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:concept:motion-design",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Motion Design as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-web-audio",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:concept:web-audio",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Web Audio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-oreth",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:program:oreth",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents ORETH as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:trustworthy-audio-interfaces-and-measurement-documents-signal-archaeology",
+    "subject": "ea:publication:trustworthy-audio-interfaces-and-measurement",
+    "predicate": "documents",
+    "object": "ea:concept:signal-archaeology",
+    "statement": "Trustworthy Audio Interfaces Never Simulate Measurement documents Signal Archaeology as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-18",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5467,7 +6243,7 @@
     "statement": "Web Audio and Browser-Based Sound Systems documents Web Audio API as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {
@@ -5478,7 +6254,18 @@
     "statement": "Web Audio and Browser-Based Sound Systems documents Creative Coding as one of its declared subjects.",
     "confidence": "published",
     "createdAt": "2026-06-24",
-    "reviewedAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:web-audio-and-browser-based-sound-systems-documents-voice-capture-studio",
+    "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+    "predicate": "documents",
+    "object": "ea:project:voice-capture-studio",
+    "statement": "Web Audio and Browser-Based Sound Systems documents Voice Capture Studio as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-07-18",
     "visibility": "public"
   },
   {

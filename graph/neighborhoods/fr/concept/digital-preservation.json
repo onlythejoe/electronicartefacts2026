@@ -106,6 +106,14 @@
       "route": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "type": "publication",
+      "title": "Du microphone au dataset, anatomie d’une prise vocale traçable",
+      "route": "/fr/publications/traceable-voice-capture-from-microphone-to-dataset/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -215,6 +223,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-digital-preservation",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Digital Preservation as one of its declared subjects.",
       "confidence": "published"
     }
   ]

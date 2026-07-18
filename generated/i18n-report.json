@@ -9,13 +9,13 @@
     ]
   },
   "canonicalEntities": {
-    "english": 129,
-    "french": 129,
+    "english": 135,
+    "french": 135,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 79312,
-    "sourceWordsCoveredByFrenchRecords": 79312,
+    "englishSourceWords": 83021,
+    "sourceWordsCoveredByFrenchRecords": 83021,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
@@ -85,12 +85,15 @@
     "ea:publication:ai-agents-vs-ai-workflows",
     "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
     "ea:publication:algorithmic-composition-and-rule-based-music",
+    "ea:publication:browser-as-a-local-first-voice-studio",
     "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
     "ea:publication:contextual-execution-and-graph-runtimes",
     "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+    "ea:publication:deterministic-research-and-evidence-fusion",
     "ea:publication:digital-preservation-and-living-archives",
     "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
     "ea:publication:event-driven-architecture-and-event-streams",
+    "ea:publication:five-voice-modes-five-success-criteria",
     "ea:publication:foundational-lineage-001",
     "ea:publication:generative-ai-latent-space-and-creative-workflows",
     "ea:publication:generative-systems-cybernetics-and-creative-coding",
@@ -101,6 +104,7 @@
     "ea:publication:knowledge-graphs-for-cultural-infrastructure",
     "ea:publication:linked-data-and-public-knowledge-pages",
     "ea:publication:local-and-open-source-ai-systems",
+    "ea:publication:local-lexical-segmentation-for-speech-and-song",
     "ea:publication:metadata-cataloguing-and-cultural-memory",
     "ea:publication:microservices-modular-monoliths-and-system-boundaries",
     "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -118,6 +122,8 @@
     "ea:publication:runtime-engines-and-domain-operating-systems",
     "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
     "ea:publication:systems-thinking-for-creative-practice",
+    "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+    "ea:publication:trustworthy-audio-interfaces-and-measurement",
     "ea:publication:typography-reading-systems-and-digital-interfaces",
     "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
     "ea:publication:web-audio-and-browser-based-sound-systems",

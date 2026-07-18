@@ -18,6 +18,22 @@
       "route": "/fr/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "type": "publication",
+      "title": "Exécution contextuelle et runtimes de graphe",
+      "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +45,24 @@
       "label": "Has part",
       "statement": "VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-vaste-extension-architecture",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:concept:vaste-extension-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents VASTE Extension Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-vaste-extension-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:concept:vaste-extension-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents VASTE Extension Architecture as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

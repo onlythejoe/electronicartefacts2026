@@ -1,0 +1,136 @@
+{
+  "id": "ea:publication:deterministic-research-and-evidence-fusion-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:deterministic-research-and-evidence-fusion",
+  "slug": {
+    "canonical": "deterministic-research-and-evidence-fusion"
+  },
+  "title": "Recherche déterministe, décider sans transformer une estimation en vérité",
+  "subtitle": "Fusion de preuves et incertitude explicite",
+  "abstract": "La recherche déterministe sépare données déclarées, signal mesuré, hypothèses de modèles, estimations d’alignement et décisions de politique afin de reproduire et contester chaque conclusion.",
+  "description": "Une méthode de décision reliée aux preuves dans Voice Capture Studio, VASTE et les systèmes de recherche en graphe.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "publishedAt": "2026-07-18",
+    "modifiedAt": "2026-07-18"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "recherche déterministe",
+    "Preuve",
+    "Incertitude",
+    "Provenance",
+    "Graphe"
+  ],
+  "disciplines": [
+    "Design de recherche",
+    "ingénierie des données",
+    "architecture logicielle"
+  ],
+  "sources": [
+    {
+      "title": "Audit des technologies de capture",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/capture-technology-audit.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    },
+    {
+      "title": "Doctrine d’architecture Voice Capture Studio",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md",
+      "publisher": "Electronic Artefacts",
+      "accessedAt": "2026-07-18"
+    }
+  ],
+  "format": "researchNote",
+  "subjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:graph-modeling"
+    },
+    {
+      "id": "ea:concept:systems-thinking"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:program:vaste"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility"
+    }
+  ],
+  "claims": [
+    "Le déterminisme appartient à la politique de décision et au graphe de preuves, pas à une certitude supposée de toutes les observations.",
+    "Une preuve plus forte doit remplacer une estimation bornée sans effacer son historique."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. « Recherche déterministe, décider sans transformer une estimation en vérité ». Note de recherche, 2026."
+  },
+  "bodyHtml": "<h2 id=\"question\">Question</h2>\n<p>Le sens utile est précis : avec les mêmes observations bornées et la même politique explicite, le système produit la même décision et peut l’expliquer. Dans <a href=\"/fr/projects/voice-capture-studio/\">Voice Capture Studio</a>, corpus, PCM, VAD, reconnaissance vocale, alignement local et validation externe ne possèdent ni la même origine ni la même autorité.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>Chaque observation conserve identité, méthode, horodatage, source et confiance. Une décision référence ses preuves au lieu d’en copier les valeurs dans un résultat opaque : <code>source → observation → politique → décision → révision</code>.</p>\n<p>La <a href=\"/fr/knowledge/concepts/graph-modeling/\">modélisation en graphe</a> permet plusieurs hypothèses sur une même prise. Un consensus peut toutes les citer. Un alignement forcé peut remplacer un timing estimé tout en préservant ce dernier pour l’audit.</p>\n<h2 id=\"observation\">Observation</h2>\n<p>Le déclaré n’est pas mesuré : le prompt appartient au corpus. L’estimé n’est pas validé : VAD énergétique, G2P et confiance modèle sont des intermédiaires. Le décidé n’est pas observé : accepter une prise est le résultat d’une règle, pas une propriété du microphone.</p>\n<p>Ces frontières sont une forme de <a href=\"/fr/knowledge/concepts/provenance/\">provenance</a>. Elles indiquent quelle méthode soutient une affirmation et quelle preuve pourrait la remplacer.</p>\n<h2 id=\"interpretation\">Interprétation</h2>\n<p>Normalisation, poids, seuils et règles de départage doivent être versionnés. La confiance décrit le support d’une décision bornée, jamais une probabilité théâtrale de vérité. Voice Capture Studio applique ce principe au prompt, au support acoustique, au VAD et aux alignements.</p>\n<p><a href=\"/fr/programs/vaste/\">VASTE</a> rencontre le même problème à une autre échelle : l’<a href=\"/fr/knowledge/concepts/contextual-execution/\">exécution contextuelle</a> agit selon identité, autorité, état du graphe et historique d’événements sans effacer ce contexte.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Une preuve plus forte ajoute une nouvelle observation, indique quelle décision change, conserve la version de politique précédente et expose le désaccord restant. On évite ainsi de figer une faible estimation ou de réécrire le passé comme si le système avait toujours su.</p>\n<p>Le déterminisme est précieux non parce qu’il supprime l’incertitude, mais parce qu’il empêche de la cacher dans un résultat d’apparence autoritaire.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Voice Capture Studio. Audit des technologies de capture et doctrine d’architecture.</li>\n<li>Electronic Artefacts. <a href=\"/fr/publications/contextual-execution-and-graph-runtimes/\">Exécution contextuelle et runtimes en graphe</a>.</li>\n</ul>\n",
+  "headings": [
+    "Question",
+    "Contexte",
+    "Observation",
+    "Interprétation",
+    "Limites",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Question",
+      "id": "question"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Observation",
+      "id": "observation"
+    },
+    {
+      "level": 2,
+      "title": "Interprétation",
+      "id": "interpretation"
+    },
+    {
+      "level": 2,
+      "title": "Limites",
+      "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

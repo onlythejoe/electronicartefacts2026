@@ -44,6 +44,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio",
+      "type": "publication",
+      "title": "The Browser as a Local-First Voice Studio",
+      "route": "/publications/browser-as-a-local-first-voice-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:webmcp-and-the-agentic-web",
       "type": "publication",
       "title": "WebMCP and the Agentic Web",
@@ -88,6 +96,15 @@
       "label": "Member of collection",
       "statement": "Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-as-a-local-first-voice-studio-documents-browser-software",
+      "source": "ea:publication:browser-as-a-local-first-voice-studio",
+      "target": "ea:concept:browser-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Browser as a Local-First Voice Studio documents Browser Software as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:webmcp-and-the-agentic-web-documents-browser-software",

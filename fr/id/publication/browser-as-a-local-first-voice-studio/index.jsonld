@@ -1,0 +1,273 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/",
+      "name": "Le navigateur comme studio vocal local-first",
+      "description": "L’architecture browser-native de Voice Capture Studio et son modèle de vie privée local-first.",
+      "inLanguage": "fr",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-18",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Le navigateur comme studio vocal local-first"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/browser-as-a-local-first-voice-studio/",
+      "identifier": "ea:publication:browser-as-a-local-first-voice-studio-fr",
+      "name": "Le navigateur comme studio vocal local-first",
+      "headline": "Le navigateur comme studio vocal local-first",
+      "abstract": "Le navigateur peut accueillir une capture vocale sérieuse lorsque microphone, traitement audio, workers, persistance locale, exports ouverts et limites de capacités forment un seul système.",
+      "description": "Le navigateur peut accueillir une capture vocale sérieuse lorsque microphone, traitement audio, workers, persistance locale, exports ouverts et limites de capacités forment un seul système.",
+      "url": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Le navigateur comme studio vocal local-first"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Logiciel navigateur",
+        "Local First",
+        "Web Audio",
+        "IndexedDB",
+        "open source",
+        "architecture web",
+        "ingénierie audio",
+        "ingénierie logicielle"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-07-18",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-18",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 367,
+      "citation": [
+        "Electronic Artefacts. « Le navigateur comme studio vocal local-first ». Article technique, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "Manifeste d’ingénierie browser-native",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/browser-native-engineering-manifesto.md",
+          "publisher": "Electronic Artefacts"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Web Audio API 1.1",
+          "url": "https://www.w3.org/TR/webaudio/",
+          "publisher": "W3C"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/browser-software/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/open-source/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/web-audio/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/machine-learning-workflows/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/web-audio-api/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/webnn/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/"
+        }
+      ],
+      "articleSection": [
+        "architecture web",
+        "ingénierie audio",
+        "ingénierie logicielle",
+        "Logiciel navigateur",
+        "Local First",
+        "Web Audio"
+      ],
+      "timeRequired": "PT2M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Manifeste d’ingénierie browser-native",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/browser-native-engineering-manifesto.md",
+          "publisher": "Electronic Artefacts"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Web Audio API 1.1",
+          "url": "https://www.w3.org/TR/webaudio/",
+          "publisher": "W3C"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
+      "keywords": [
+        "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
+        "contentUrl": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
+        "width": 1024,
+        "height": 1024
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
+      "keywords": [
+        "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-07-10",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Le navigateur comme studio vocal local-first",
+          "item": "https://electronicartefacts.com/fr/publications/browser-as-a-local-first-voice-studio/"
+        }
+      ]
+    }
+  ]
+}

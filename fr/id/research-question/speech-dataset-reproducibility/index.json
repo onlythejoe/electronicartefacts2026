@@ -17,10 +17,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-07-09",
     "publishedAt": "2026-07-09",
-    "modifiedAt": "2026-07-09"
+    "modifiedAt": "2026-07-18"
   },
   "authors": [
     {
@@ -43,7 +43,7 @@
   ],
   "featured": true,
   "started": "2026-02-01",
-  "updated": "2026-07-09",
+  "updated": "2026-07-18",
   "priority": 2,
   "homepage": true,
   "observation": "Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles.",
@@ -111,6 +111,24 @@
     },
     {
       "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+    },
+    {
+      "id": "ea:publication:trustworthy-audio-interfaces-and-measurement"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset"
+    },
+    {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion"
+    },
+    {
+      "id": "ea:publication:local-lexical-segmentation-for-speech-and-song"
+    },
+    {
+      "id": "ea:publication:five-voice-modes-five-success-criteria"
+    },
+    {
+      "id": "ea:publication:browser-as-a-local-first-voice-studio"
     }
   ],
   "relatedCollections": [
@@ -176,6 +194,11 @@
       "date": "2026-07-09",
       "title": "Publication open source",
       "summary": "Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question."
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Couche éditoriale en six articles",
+      "summary": "Six publications bilingues relient interaction, provenance de capture, preuve déterministe, segmentation, modes produit et architecture navigateur à la question de recherche."
     }
   ],
   "bodyHtml": "<h2 id=\"observation\">Observation</h2>\n<p>La matière vocale est souvent enregistrée avant que le dataset ait une structure. L’audio peut être utilisable sans que le profil locuteur, la version du prompt ou le manifeste d’export soient présents.</p>\n<h2 id=\"probleme\">Problème</h2>\n<p>Le coût apparaît plus tard. Sans structure, le dataset devient difficile à auditer. Sans stockage local explicite, les promesses de confidentialité sont difficiles à inspecter.</p>\n<h2 id=\"hypothese\">Hypothèse</h2>\n<p>Un enregistreur navigateur peut agir comme un instrument de recherche léger. Il rend visibles état du micro, stockage, version du corpus, revue et export au moment de la capture.</p>\n<h2 id=\"comprehension-actuelle\">Compréhension actuelle</h2>\n<p>L’outil d’enregistrement fait partie de la méthodologie du dataset. Il ne doit pas être traité comme un utilitaire interchangeable si ses choix déterminent ce qui peut être revu, réutilisé ou supprimé.</p>\n<h2 id=\"inconnues\">Inconnues</h2>\n<p>Les prochaines questions concernent l’échelle et la gouvernance : corpus multilingues, consentement, rapports qualité et évaluations aval.</p>\n",

@@ -172,10 +172,26 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:deterministic-research-and-evidence-fusion",
+      "type": "publication",
+      "title": "Deterministic Research: Deciding Without Turning Estimates into Truth",
+      "route": "/publications/deterministic-research-and-evidence-fusion/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "type": "publication",
       "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
       "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "type": "publication",
+      "title": "From Microphone to Dataset: Anatomy of a Traceable Voice Take",
+      "route": "/publications/traceable-voice-capture-from-microphone-to-dataset/",
       "status": "active",
       "confidence": "published"
     },
@@ -370,12 +386,30 @@
       "confidence": "published"
     },
     {
+      "id": "ear:deterministic-research-and-evidence-fusion-documents-provenance",
+      "source": "ea:publication:deterministic-research-and-evidence-fusion",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Deterministic Research: Deciding Without Turning Estimates into Truth documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
       "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-provenance",
       "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "target": "ea:concept:provenance",
       "predicate": "documents",
       "label": "Documents",
       "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:traceable-voice-capture-from-microphone-to-dataset-documents-provenance",
+      "source": "ea:publication:traceable-voice-capture-from-microphone-to-dataset",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "From Microphone to Dataset: Anatomy of a Traceable Voice Take documents Provenance as one of its declared subjects.",
       "confidence": "published"
     },
     {

@@ -15,7 +15,7 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 2.0.0
+  version: 3.0.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
   modifiedAt: "2026-07-18"
@@ -39,6 +39,12 @@ explicitMembers:
   - id: ea:concept:provenance
   - id: ea:concept:human-computer-interaction
   - id: ea:technology:web-audio-api
+  - id: ea:publication:trustworthy-audio-interfaces-and-measurement
+  - id: ea:publication:traceable-voice-capture-from-microphone-to-dataset
+  - id: ea:publication:deterministic-research-and-evidence-fusion
+  - id: ea:publication:local-lexical-segmentation-for-speech-and-song
+  - id: ea:publication:five-voice-modes-five-success-criteria
+  - id: ea:publication:browser-as-a-local-first-voice-studio
 selectionNote: La collection garde l’instrument live proche du vocabulaire nécessaire pour évaluer ses cinq modes, ses affirmations de signal, ses frontières de décision, son modèle de vie privée et ses exports.
 tags:
   - Voice Capture Studio
@@ -67,8 +73,8 @@ Utilisez cette collection lorsque la question n’est pas seulement “qu’est-
 
 ## Membres actuels
 
-La collection commence par le projet et le dépôt, puis les relie aux concepts et technologies durables qui expliquent leur rôle dans le graphe Electronic Artefacts.
+La collection commence par le projet et le dépôt, puis les relie aux concepts, technologies et six articles complets. Ces publications ouvrent des chemins vers l’UX audio, la provenance, la recherche déterministe, la segmentation lexicale, le design des modes et l’architecture browser-native.
 
 ## Évolution
 
-Les futurs membres devraient inclure les six articles Connaissance proposés dans le dossier projet, des notes de release, exemples d’export et rapports de préparation dataset publiables sans exposer de voix privées.
+Les futurs membres devraient inclure des notes de release, exemples d’export et rapports de préparation dataset publiables sans exposer de voix privées.

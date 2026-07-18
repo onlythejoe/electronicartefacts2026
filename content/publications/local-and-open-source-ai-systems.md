@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: "2026-06-24"
   publishedAt: "2026-06-24"
-  modifiedAt: "2026-06-24"
+  modifiedAt: "2026-07-18"
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:large-language-model
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
+  - id: ea:project:voice-capture-studio
 claims:
   - Local inference can improve control, privacy and offline availability but transfers hardware, security and maintenance responsibilities to the operator.
   - Downloadable weights should not be described as open-source AI without examining code, training-data information and license freedoms.
@@ -199,6 +200,8 @@ The OSI definition establishes criteria for open-source AI beyond downloadable w
 Local AI fits Electronic Artefacts when it strengthens control over knowledge and cultural material. It can support a private research assistant over graph records, an ORETH analysis service, a studio coding tool or a multimodal archive interface.
 
 The durable principle is composability. Models should be replaceable components behind clear contracts. Sources, entity identities and permissions should remain independent of one model vendor. Provenance should capture how AI contributed to an artefact.
+
+Voice Capture Studio demonstrates a narrower local-AI contract than a general assistant. Quantized transcription, vocal activity and derived signal hypotheses run near private media, but their runtime, confidence and provenance remain visible. The original audio remains evidence and browser estimates remain replaceable. Read [Segmenting Speech and Song Locally, Word by Word](/publications/local-lexical-segmentation-for-speech-and-song/) for the adaptive pipeline and [Deterministic Research](/publications/deterministic-research-and-evidence-fusion/) for its decision boundary.
 
 ## Limitations
 

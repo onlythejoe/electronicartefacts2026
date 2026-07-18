@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.1.1
+  version: 1.2.0
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
-  modifiedAt: 2026-07-12
+  modifiedAt: 2026-07-18
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -28,6 +28,7 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:program:oreth
   - id: ea:project:palimpsests
+  - id: ea:concept:algorithmic-composition
 claims:
   - "Le travail génératif est mieux compris par les contraintes, la rétroaction, la sélection du matériel et la curation plutôt que par la nouveauté seule."
   - "La rétroaction cybernétique reste un concept utile pour les systèmes créatifs lorsqu'ils sont utilisés avec précision technique."
@@ -182,6 +183,8 @@ Le centre de connaissances devrait donc documenter les systèmes générateurs �
 Les futurs articles devraient porter sur la composition algorithmique, les graphiques procéduraux, les systèmes d'identité génériques, les méthodes de production assistée par l'IA, l'évaluation des extrants, la provenance des ensembles de données et les stratégies de préservation des objets générés.
 
 ## Concepts connexes
+
+La [composition algorithmique](/fr/knowledge/concepts/algorithmic-composition/) forme la branche musicale de ce système : les règles génèrent des possibilités, le feedback modifie la sélection et l’artiste reste responsable de la curation. Ce pont relie ORETH et Palimpsests à l’article [Composition algorithmique et musique fondée sur des règles](/fr/publications/algorithmic-composition-and-rule-based-music/).
 
 Lire [Système générateur](/fr/knowledge/concepts/generative-system/), [Rétroaction cybernétique](/fr/knowledge/concepts/cybernetic-feedback/), [Codage créatif](/fr/knowledge/concepts/creative-coding/), [ORETH](/fr/programs/oreth/) et [Palimpsestes](/fr/projects/palimpsests/).
 
