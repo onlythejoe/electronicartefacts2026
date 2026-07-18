@@ -4,6 +4,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { transform } from "esbuild";
 import { PurgeCSS } from "purgecss";
+import fg from "fast-glob";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -41,6 +42,26 @@ const jsSources = [
 ];
 
 const flowSource = "assets/js/core/flow.js";
+const editorialSources = [
+  "assets/js/core/context-menu.js",
+  "assets/js/core/editorial.js",
+];
+
+const buildEditorialTranslations = async () => {
+  const source = await readFile(path.join(rootDir, "assets/js/core/i18n.js"), "utf8");
+  const marker = "  const french = ";
+  const start = source.indexOf(marker);
+  const end = source.indexOf("\n\n  const normalizeWhitespace", start);
+  if (start < 0 || end < 0) throw new Error("Unable to extract the French runtime dictionary");
+  const dictionarySource = source.slice(start, end);
+  const dictionary = vm.runInNewContext(`(() => {${dictionarySource}; return french;})()`);
+  const files = await fg([
+    "fr/archive/**/*.html", "fr/knowledge/**/*.html", "fr/publications/**/*.html", "fr/research/**/*.html",
+    "fr/organizations/**/*.html", "fr/programs/**/*.html",
+  ], { cwd: rootDir, absolute: true });
+  const corpus = (await Promise.all(files.map((file) => readFile(file, "utf8")))).join("\n");
+  return Object.fromEntries(Object.entries(dictionary).filter(([english]) => corpus.includes(english)));
+};
 
 const buildPublicData = async () => {
   const context = vm.createContext({ window: {} });
@@ -152,6 +173,31 @@ const [projectCss] = await new PurgeCSS().purge({
 });
 await writeFile(path.join(rootDir, "assets/css/project.css"), await minify(projectCss.css, "css"));
 await bundle([flowSource], "assets/js/flow.js", "/* Generated critical navigation and loading runtime. */", "js");
+const editorialTranslations = await buildEditorialTranslations();
+await bundle(
+  editorialSources,
+  "assets/js/editorial.js",
+  `/* Generated route-scoped editorial runtime. */\nwindow.EA_EDITORIAL_TRANSLATIONS=${JSON.stringify(editorialTranslations)};`,
+  "js",
+);
+const [editorialCss] = await new PurgeCSS().purge({
+  content: [
+    "archive/**/*.html", "knowledge/**/*.html", "publications/**/*.html", "research/**/*.html",
+    "organizations/**/*.html", "programs/**/*.html", "search/index.html",
+    "fr/archive/**/*.html", "fr/knowledge/**/*.html", "fr/publications/**/*.html", "fr/research/**/*.html",
+    "fr/organizations/**/*.html", "fr/programs/**/*.html",
+    "assets/partials/header.html", "assets/partials/footer.html", flowSource, "assets/js/core/editorial.js",
+  ].map((pattern) => path.join(rootDir, pattern)),
+  css: [publishedCssPath],
+  safelist: {
+    greedy: [
+      /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
+      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-palette/, /ux-dock/,
+      /image-lightbox/, /quick-view/, /toast/, /language-switcher/,
+    ],
+  },
+});
+await writeFile(path.join(rootDir, "assets/css/editorial.css"), await minify(editorialCss.css, "css"));
 const publicData = await buildPublicData();
 let generatedCatalog = null;
 try {

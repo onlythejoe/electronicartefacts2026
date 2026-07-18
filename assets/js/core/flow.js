@@ -4,6 +4,7 @@
   if (!body || body.dataset.boundFlowRuntime === "true") return;
   body.dataset.boundFlowRuntime = "true";
   root.classList.add("has-flow-runtime");
+  performance.mark?.("ea:flow-ready");
 
   const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? true;
   const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
@@ -17,6 +18,25 @@
   let intentTimer = 0;
   const prefetched = new Set();
   const prefetchLimit = 8;
+  const performanceState = { lcp: 0, cls: 0, inp: 0, longTaskTotal: 0, longTaskMax: 0 };
+  const observePerformance = (type, callback, options = {}) => {
+    if (!("PerformanceObserver" in window) || !PerformanceObserver.supportedEntryTypes?.includes(type)) return;
+    try {
+      const observer = new PerformanceObserver((list) => list.getEntries().forEach(callback));
+      observer.observe({ type, buffered: true, ...options });
+    } catch {}
+  };
+  observePerformance("largest-contentful-paint", (entry) => { performanceState.lcp = Math.round(entry.startTime); });
+  observePerformance("layout-shift", (entry) => { if (!entry.hadRecentInput) performanceState.cls += entry.value; });
+  observePerformance("event", (entry) => { performanceState.inp = Math.max(performanceState.inp, Math.round(entry.duration)); }, { durationThreshold: 40 });
+  observePerformance("longtask", (entry) => {
+    performanceState.longTaskTotal += Math.round(entry.duration);
+    performanceState.longTaskMax = Math.max(performanceState.longTaskMax, Math.round(entry.duration));
+  });
+  window.EA_PERFORMANCE = Object.freeze({ snapshot: () => ({ ...performanceState, cls: Number(performanceState.cls.toFixed(4)) }) });
+  window.addEventListener("pagehide", () => {
+    window.EA_ANALYTICS?.track?.("ea_web_vitals", window.EA_PERFORMANCE.snapshot());
+  }, { once: true });
 
   const destinationFor = (anchor) => {
     if (!anchor?.href || anchor.hasAttribute("download")) return null;
@@ -34,6 +54,7 @@
     const url = destinationFor(anchor);
     if (!url || prefetched.has(url.href)) return;
     prefetched.add(url.href);
+    performance.mark?.("ea:navigation-prefetch");
     const link = document.createElement("link");
     link.rel = "prefetch";
     link.as = "document";
@@ -65,6 +86,7 @@
     if (body.classList.contains("is-page-leaving")) return;
     body.classList.add("is-page-leaving");
     root.dataset.navigationPending = "true";
+    performance.mark?.("ea:navigation-intent");
     progress.classList.add("is-travelling");
     window.clearTimeout(navigationTimer);
     const destination = `${url.pathname}${url.search}${anchor.hash || ""}`;

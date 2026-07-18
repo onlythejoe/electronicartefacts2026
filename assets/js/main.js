@@ -5000,6 +5000,7 @@
   };
 
   const load = async () => {
+    performance.mark?.("ea:app-runtime-start");
     const current = document.body.dataset.page;
     syncSeoMeta({ current, entityById });
     const includesReady = loadIncludes();
@@ -5016,6 +5017,12 @@
     });
     initPageInteractions();
     document.body.classList.add("is-ready");
+    performance.mark?.("ea:app-interactive");
+    try {
+      performance.measure?.("ea:app-start-to-interactive", "ea:app-runtime-start", "ea:app-interactive");
+    } catch {
+      /* Performance marks are diagnostic only. */
+    }
     setYear();
   };
 

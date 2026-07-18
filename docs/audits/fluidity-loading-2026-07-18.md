@@ -96,3 +96,68 @@ Objectif recommandé : moins de 120 Ko de JavaScript non compressé sur une fich
 - budgets CSS/JS respectés par famille de route ;
 - navigation interne chaude perçue comme instantanée sur les pages de projet, d'artefact et de connaissance ;
 - zéro régression console et zéro déplacement de mise en page provoqué par les révélations.
+
+---
+
+## Deuxième passe — découpage par route
+
+### Situation après intervention
+
+La priorité 0 est terminée pour les surfaces éditoriales. Les artefacts, publications, concepts, méthodes, technologies, collections, organisations, programmes, questions de recherche, hubs et la recherche canonique ne téléchargent plus le renderer historique.
+
+| Budget d'une fiche canonique | Avant | Après | Évolution |
+| --- | ---: | ---: | ---: |
+| JavaScript applicatif | 636 634 octets | 24 864 octets | −96,1 % |
+| CSS de route | 348 876 octets | 97 946 octets | −71,9 % |
+| JS + CSS | 985 510 octets | 122 810 octets | −87,5 % |
+
+Ces valeurs sont les tailles minifiées non compressées. Sur le serveur local, les transferts observés avec les en-têtes HTTP étaient de 25 164 octets pour le runtime éditorial et 98 246 octets pour le CSS.
+
+### Architecture livrée
+
+- `flow.js` reste la couche critique commune : anticipation, continuité de navigation, marques de performance et observation des signaux Web Vitals ;
+- `editorial.js` couvre uniquement les comportements nécessaires aux pages déjà rendues en HTML : langue, liens localisés, navigation active, médias, progression de lecture, en-tête auto-masqué, révélations, ambiance, curseur, partage, palette rapide, dock UX et menu contextuel ;
+- `app.js` reste réservé aux projets nécessitant des instruments ou visualisations riches, notamment les cinq modes de Voice Capture Studio ;
+- `app-full.js` reste limité aux routes avancées `graph.html` et `search.html` ; la recherche canonique `/search/` utilise désormais `editorial.js` et son client de recherche spécialisé ;
+- `editorial.css` est purgé à partir des seules familles de pages concernées ;
+- le dictionnaire français éditorial est généré automatiquement à partir des chaînes réellement présentes dans les sorties françaises. Le gros dictionnaire général n'est plus expédié à chaque fiche.
+
+### Mesure navigateur finale
+
+Mesure locale Chromium sur `/fr/archive/artefacts/voice-capture-studio-repository/`, après reconstruction complète :
+
+- LCP : 392 ms ;
+- CLS : 0,0111 ;
+- INP : aucune interaction lente observée pendant le scénario ;
+- longues tâches : 0 ;
+- démarrage du runtime éditorial → état interactif : 16 ms ;
+- débordement horizontal à 390 × 844 px : 0 px ;
+- erreurs et avertissements console : 0.
+
+Le serveur local ne simule pas une 4G réelle ; ces chiffres démontrent surtout l'absence de blocage, de longue tâche et de régression de mise en page dans le scénario contrôlé.
+
+### Mesure continue et confidentialité
+
+La couche commune observe désormais LCP, CLS, INP et les longues tâches. Un instantané est disponible via `window.EA_PERFORMANCE.snapshot()`. Lors de `pagehide`, ces métriques passent par le runtime analytique existant : elles ne sont envoyées que si la personne a accepté la mesure d'audience. Aucun texte, recherche, contenu de page ou identifiant personnel n'est ajouté.
+
+### Contrats de non-régression
+
+Les tests bloquent désormais la release si :
+
+- `flow.js` dépasse 5 Ko ;
+- `editorial.js` dépasse 40 Ko ;
+- `editorial.css` dépasse 120 Ko ;
+- une fiche d'artefact ou publication recharge `app.js` ;
+- la recherche canonique recharge `app.js` ou `app-full.js` ;
+- les marques de performance ou le dictionnaire éditorial disparaissent.
+
+### Périmètre restant
+
+Le travail initial de fluidité des pages éditoriales est terminé. Les optimisations suivantes constituent une troisième phase distincte, plus risquée car elles touchent les outils riches :
+
+1. découper les 637 Ko de `app.js` par famille de projet sans casser Voice Capture Studio, Palimpsests, Forge ou VASTE ;
+2. découper les 992 Ko de `app-full.js` entre recherche historique et graphe global ;
+3. confronter les nouvelles métriques à des appareils Safari/iPhone et Android physiques ainsi qu'à une vraie connexion contrainte ;
+4. n'activer un pré-rendu par Speculation Rules qu'après observation d'un taux de prédiction suffisamment fiable en production.
+
+Ces travaux ne sont plus nécessaires pour résoudre le temps mort des fiches canoniques. Ils représentent la prochaine frontière de performance des surfaces applicatives.

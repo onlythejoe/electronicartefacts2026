@@ -2814,9 +2814,17 @@
       artist: "work",
       channel: "work",
       collection: "archive",
+      concept: "knowledge",
       entity: "research",
+      framework: "knowledge",
+      method: "knowledge",
+      organization: "about",
       program: "programs",
       project: "projects",
+      publication: "knowledge",
+      researchField: "research",
+      researchQuestion: "research",
+      technology: "knowledge",
     };
     const navCurrent =
       current === "detail"
