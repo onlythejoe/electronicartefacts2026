@@ -53,10 +53,11 @@
     </script>
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/app.css?v=87" />
+    <link rel="stylesheet" href="/assets/css/app.css?v=88" />
     <!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script type="module">window.addEventListener("load", () => window.setTimeout(() => import("/assets/js/app.js?v=71"), 1500), { once: true });</script>
+    <script defer src="/assets/js/flow.js?v=1"></script>
+    <script type="module">{const boot=()=>import("/assets/js/app.js?v=72");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
     <!-- PERFORMANCE_RUNTIME_END -->
   </head>
   <body data-page="detail" data-detail-kind="artefact">

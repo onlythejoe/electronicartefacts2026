@@ -40,6 +40,8 @@ const jsSources = [
   "assets/js/main.js",
 ];
 
+const flowSource = "assets/js/core/flow.js";
+
 const buildPublicData = async () => {
   const context = vm.createContext({ window: {} });
   let collectionRuntime = "";
@@ -136,7 +138,7 @@ const [purgedCss] = await new PurgeCSS().purge({
 });
 await writeFile(publishedCssPath, await minify(purgedCss.css, "css"));
 const [homeCss] = await new PurgeCSS().purge({
-  content: ["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html"]
+  content: ["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html", flowSource]
     .map((file) => path.join(rootDir, file)),
   css: [publishedCssPath],
   safelist: { greedy: [/\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/] },
@@ -149,6 +151,7 @@ const [projectCss] = await new PurgeCSS().purge({
   safelist: { greedy: [/\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/] },
 });
 await writeFile(path.join(rootDir, "assets/css/project.css"), await minify(projectCss.css, "css"));
+await bundle([flowSource], "assets/js/flow.js", "/* Generated critical navigation and loading runtime. */", "js");
 const publicData = await buildPublicData();
 let generatedCatalog = null;
 try {

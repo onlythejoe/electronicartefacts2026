@@ -415,9 +415,9 @@ for (const [file, config] of Object.entries(pages)) {
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   const performanceStyles = file === "index.html" ? `<!-- PERFORMANCE_STYLES_START -->
     <link rel="stylesheet" href="/assets/css/home.css?v=1" />
-    <link rel="preload" as="style" href="/assets/css/app.css?v=87" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="/assets/css/app.css?v=87" /></noscript>
-    <!-- PERFORMANCE_STYLES_END -->` : '<link rel="stylesheet" href="/assets/css/app.css?v=87" />';
+    <link rel="preload" as="style" href="/assets/css/app.css?v=88" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/assets/css/app.css?v=88" /></noscript>
+    <!-- PERFORMANCE_STYLES_END -->` : '<link rel="stylesheet" href="/assets/css/app.css?v=88" />';
   html = html.replace(
     /<!-- PERFORMANCE_STYLES_START -->[\s\S]*?<!-- PERFORMANCE_STYLES_END -->|<link\s+rel="stylesheet"\s+href="(?:\.\/|\/)assets\/css\/app\.css\?v=\d+"\s*\/>/,
     performanceStyles,
@@ -425,7 +425,8 @@ for (const [file, config] of Object.entries(pages)) {
   const runtime = ["graph.html", "search.html"].includes(file) ? "app-full.js" : "app.js";
   const performanceRuntime = `<!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script type="module">window.addEventListener("load", () => window.setTimeout(() => import("/assets/js/${runtime}?v=71"), 1500), { once: true });</script>
+    <script defer src="/assets/js/flow.js?v=1"></script>
+    <script type="module">{const boot=()=>import("/assets/js/${runtime}?v=72");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(
     /<!-- PERFORMANCE_RUNTIME_START -->[\s\S]*?<!-- PERFORMANCE_RUNTIME_END -->|<script\s+type="module"\s+src="(?:\.\/|\/)assets\/js\/app(?:-full)?\.js\?v=\d+"><\/script>/,

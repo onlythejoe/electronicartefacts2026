@@ -3,12 +3,14 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("the published runtime provides progressive page and media transitions", async () => {
-  const [behaviors, main, surface, base, styles, runtimeBundle, fullRuntimeBundle, styleBundle, homeStyleBundle, projectStyleBundle, home, project, graph, search] = await Promise.all([
+  const [behaviors, flow, main, surface, base, styles, flowBundle, runtimeBundle, fullRuntimeBundle, styleBundle, homeStyleBundle, projectStyleBundle, home, project, graph, search] = await Promise.all([
     readFile("assets/js/core/behaviors.js", "utf8"),
+    readFile("assets/js/core/flow.js", "utf8"),
     readFile("assets/js/main.js", "utf8"),
     readFile("assets/js/core/surface.js", "utf8"),
     readFile("assets/css/base.css", "utf8"),
     readFile("assets/css/style.css", "utf8"),
+    readFile("assets/js/flow.js", "utf8"),
     readFile("assets/js/app.js", "utf8"),
     readFile("assets/js/app-full.js", "utf8"),
     readFile("assets/css/app.css", "utf8"),
@@ -19,10 +21,14 @@ test("the published runtime provides progressive page and media transitions", as
     readFile("graph.html", "utf8"),
     readFile("search.html", "utf8"),
   ]);
-  const runtime = `${behaviors}\n${main}\n${surface}`;
+  const runtime = `${flow}\n${behaviors}\n${main}\n${surface}`;
   const sourceStyles = `${base}\n${styles}`;
 
   assert.match(runtimeBundle, /window\.EA_EMBEDDED_INCLUDES/);
+  assert.match(flow, /body\.dataset\.boundFlowRuntime/);
+  assert.match(flow, /connection\?\.saveData/);
+  assert.match(flow, /link\.rel = "prefetch"/);
+  assert.ok(flowBundle.length < 5_000, `critical flow runtime should stay tiny (${flowBundle.length} bytes)`);
   assert.match(runtime, /const initPageTransitions = \(\) =>/);
   assert.match(runtime, /const initMediaReadiness = \(root = document\) =>/);
   assert.match(runtime, /const paintInterval = 1000 \/ \(coarsePointer \? 24 : 30\)/);
@@ -42,9 +48,10 @@ test("the published runtime provides progressive page and media transitions", as
   assert.ok(runtimeBundle.length < 800_000, `default JavaScript should stay route-scoped (${runtimeBundle.length} bytes)`);
   assert.ok(fullRuntimeBundle.length < 1_000_000, `full JavaScript should stay minified (${fullRuntimeBundle.length} bytes)`);
   assert.match(home, /assets\/css\/home\.css\?v=1/);
-  assert.match(home, /assets\/css\/app\.css\?v=87/);
-  assert.match(home, /assets\/js\/app\.js\?v=71/);
+  assert.match(home, /assets\/css\/app\.css\?v=88/);
+  assert.match(home, /assets\/js\/flow\.js\?v=1/);
+  assert.match(home, /assets\/js\/app\.js\?v=72/);
   assert.match(project, /assets\/css\/project\.css\?v=1/);
-  assert.match(graph, /assets\/js\/app-full\.js\?v=71/);
-  assert.match(search, /assets\/js\/app-full\.js\?v=71/);
+  assert.match(graph, /assets\/js\/app-full\.js\?v=72/);
+  assert.match(search, /assets\/js\/app-full\.js\?v=72/);
 });

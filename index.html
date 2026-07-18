@@ -49,12 +49,13 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- PERFORMANCE_STYLES_START -->
     <link rel="stylesheet" href="/assets/css/home.css?v=1" />
-    <link rel="preload" as="style" href="/assets/css/app.css?v=87" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="/assets/css/app.css?v=87" /></noscript>
+    <link rel="preload" as="style" href="/assets/css/app.css?v=88" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/assets/css/app.css?v=88" /></noscript>
     <!-- PERFORMANCE_STYLES_END -->
     <!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script type="module">window.addEventListener("load", () => window.setTimeout(() => import("/assets/js/app.js?v=71"), 1500), { once: true });</script>
+    <script defer src="/assets/js/flow.js?v=1"></script>
+    <script type="module">{const boot=()=>import("/assets/js/app.js?v=72");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
     <!-- PERFORMANCE_RUNTIME_END -->
   </head>
   <body data-page="home" itemscope itemtype="https://schema.org/Organization" itemid="https://electronicartefacts.com/id/organization/electronic-artefacts/">
