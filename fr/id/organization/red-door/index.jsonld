@@ -75,7 +75,15 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145
+      "wordCount": 156,
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "RED DOOR sur Instagram",
+          "url": "https://www.instagram.com/red.door.projects/",
+          "publisher": "Instagram"
+        }
+      ]
     },
     {
       "@type": "Organization",

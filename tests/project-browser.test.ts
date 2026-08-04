@@ -12,6 +12,8 @@ test("project browsing keeps the newest view capped at three releases", async ()
   assert.match(runtime, /data-project-filter="\$\{esc\(filter\.id\)\}"/);
   assert.match(runtime, /data-project-result="\$\{esc\(item\.id\)\}"/);
   assert.match(runtime, /data-project-node="\$\{esc\(item\.id\)\}"/);
+  assert.match(runtime, /const flagshipIds = new Set\(\["innerside"/);
+  assert.match(runtime, /id: "collaboration"[\s\S]*?item\.category === "collaboration"/);
 });
 
 test("project browsing publishes responsive graph, results and full-grid styles", async () => {

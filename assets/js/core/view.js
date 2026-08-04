@@ -871,6 +871,7 @@
     if (item.id === "vestiges") return ["Living knowledge", "VASTE", "Cultural memory", "Public infrastructure"];
     if (item.id === "voice-capture-studio") return ["Live demo", "Open source", "Local-first", "Voice capture"];
     if (item.id === "unionmob") return ["External project", "CTO", "UMOS licence", "Violet identity"];
+    if (item.id === "innerside") return ["RED DOOR", "R&D collaboration", "Technology strategy", "Prototype"];
 
     const pills = [
       item.category || item.type || item.kind || "",
@@ -889,6 +890,7 @@
     if (item.id === "vestiges") return "Platform for connecting people, practices, materials and institutions.";
     if (item.id === "voice-capture-studio") return "Open-source browser studio for local speech capture and structured voice exports.";
     if (item.id === "unionmob") return "External CTO partnership with a clear separation between UnionMob and UMOS.";
+    if (item.id === "innerside") return "A discreet R&D collaboration with RED DOOR around an emerging software product.";
     if (item.category === "Client Work" || item.category === "External Work") return "Applied work with public-facing UX, visual evidence and delivery context.";
     if (item.category === "Platform" || item.type === "Platform") return "Product structure, workflow and operational logic.";
     return `${item.category || item.type || "Project"} inside the Electronic Artefacts world.`;

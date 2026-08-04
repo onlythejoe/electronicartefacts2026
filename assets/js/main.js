@@ -4228,7 +4228,7 @@
       ...(item.medium || []),
       ...(item.links || []).flatMap((link) => [link.label, link.href]),
     ].filter(Boolean).join(" ").toLowerCase();
-    const flagshipIds = new Set(["voice-capture-studio", "vestiges", "palimpsests", "oeil-de-meg"]);
+    const flagshipIds = new Set(["innerside", "voice-capture-studio", "vestiges", "palimpsests", "oeil-de-meg"]);
     const clientIds = new Set(["atypikhouse", "oeil-de-meg", "seven-temps-seulement"]);
 
     return [
@@ -4259,6 +4259,13 @@
         shortLabel: "Open source",
         copy: "Public software with inspectable code, documentation and a contribution path.",
         matches: (item) => /open source|github\.com/.test(searchable(item)),
+      },
+      {
+        id: "collaboration",
+        label: "Collaborations",
+        shortLabel: "Collaborations",
+        copy: "Projects carried with external collectives and partners, with leadership and contributions kept explicit.",
+        matches: (item) => item.category === "collaboration",
       },
       {
         id: "client",

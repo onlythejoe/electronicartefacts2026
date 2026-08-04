@@ -16,11 +16,11 @@
   "maturity": "development",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "createdAt": "2026-08-04",
     "publishedAt": "2026-08-04",
     "modifiedAt": "2026-08-04",
-    "changeSummary": "Première fiche publique de RED DOOR et de sa collaboration avec Electronic Artefacts autour d’InnerSide."
+    "changeSummary": "Ajout du canal Instagram public officiel de RED DOOR."
   },
   "authors": [
     {
@@ -46,13 +46,22 @@
     "Recherche et développement",
     "architecture logicielle"
   ],
+  "sources": [
+    {
+      "title": "RED DOOR sur Instagram",
+      "url": "https://www.instagram.com/red.door.projects/",
+      "publisher": "Instagram",
+      "accessedAt": "2026-08-04"
+    }
+  ],
   "rights": "© RED DOOR. Fiche publiée par Electronic Artefacts.",
   "organizationType": "collective",
-  "bodyHtml": "<h2 id=\"le-collectif\">Le collectif</h2>\n<p>RED DOOR est un collectif indépendant de création produit et un incubateur. Il porte la direction et le développement d’InnerSide, son premier produit.</p>\n<p>Le contour public reste volontairement partiel. InnerSide se construit par la recherche produit, l’architecture système et le prototypage ; l’expérience elle-même demeure, pour le moment, derrière la porte.</p>\n<h2 id=\"collaboration-avec-electronic-artefacts\">Collaboration avec Electronic Artefacts</h2>\n<p>Electronic Artefacts intervient auprès de RED DOOR comme collaborateur stratégique et technologique. Sa contribution réunit conseil produit et technologique, R&amp;D active, travail d’architecture et développement de fondations techniques.</p>\n<p>Les rôles restent explicites : RED DOOR incube et porte le projet ; Electronic Artefacts apporte technologie, recherche et soutien stratégique sans se présenter comme le porteur du produit.</p>\n<h2 id=\"travail-actuel\">Travail actuel</h2>\n<p>La collaboration se trouve aujourd’hui en phase de R&amp;D. Le travail est réel et actif, mais cette fiche n’annonce ni sortie publique, ni validation de marché, ni produit achevé.</p>\n",
+  "bodyHtml": "<h2 id=\"le-collectif\">Le collectif</h2>\n<p>RED DOOR est un collectif indépendant de création produit et un incubateur. Il porte la direction et le développement d’InnerSide, son premier produit.</p>\n<p>Le contour public reste volontairement partiel. InnerSide se construit par la recherche produit, l’architecture système et le prototypage ; l’expérience elle-même demeure, pour le moment, derrière la porte.</p>\n<h2 id=\"collaboration-avec-electronic-artefacts\">Collaboration avec Electronic Artefacts</h2>\n<p>Electronic Artefacts intervient auprès de RED DOOR comme collaborateur stratégique et technologique. Sa contribution réunit conseil produit et technologique, R&amp;D active, travail d’architecture et développement de fondations techniques.</p>\n<p>Les rôles restent explicites : RED DOOR incube et porte le projet ; Electronic Artefacts apporte technologie, recherche et soutien stratégique sans se présenter comme le porteur du produit.</p>\n<h2 id=\"travail-actuel\">Travail actuel</h2>\n<p>La collaboration se trouve aujourd’hui en phase de R&amp;D. Le travail est réel et actif, mais cette fiche n’annonce ni sortie publique, ni validation de marché, ni produit achevé.</p>\n<h2 id=\"canal-public\">Canal public</h2>\n<p>RED DOOR partage ses signaux publics sur <a href=\"https://www.instagram.com/red.door.projects/\">@red.door.projects</a>.</p>\n",
   "headings": [
     "Le collectif",
     "Collaboration avec Electronic Artefacts",
-    "Travail actuel"
+    "Travail actuel",
+    "Canal public"
   ],
   "headingItems": [
     {
@@ -69,6 +78,11 @@
       "level": 2,
       "title": "Travail actuel",
       "id": "travail-actuel"
+    },
+    {
+      "level": 2,
+      "title": "Canal public",
+      "id": "canal-public"
     }
   ]
 }

@@ -14,11 +14,11 @@ status: active
 maturity: development
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.0.1
   createdAt: "2026-08-04"
   publishedAt: "2026-08-04"
   modifiedAt: "2026-08-04"
-  changeSummary: First public record of RED DOOR and its collaboration with Electronic Artefacts around InnerSide.
+  changeSummary: Added RED DOOR's official public Instagram channel.
 authors:
   - id: ea:organization:red-door
 publisher: ea:organization:electronic-artefacts
@@ -36,6 +36,11 @@ disciplines:
   - Product Strategy
   - Research and Development
   - Software Architecture
+sources:
+  - title: RED DOOR on Instagram
+    publisher: Instagram
+    accessedAt: "2026-08-04"
+    url: https://www.instagram.com/red.door.projects/
 rights: © RED DOOR. Record published by Electronic Artefacts.
 ---
 
@@ -54,3 +59,7 @@ The roles remain explicit: RED DOOR incubates and leads the project; Electronic 
 ## Current focus
 
 The collaboration is currently in an R&D phase. The work is real and active, but no public release, market validation or finished product is claimed by this record.
+
+## Public channel
+
+RED DOOR shares selected public signals at [@red.door.projects](https://www.instagram.com/red.door.projects/).
