@@ -1,0 +1,43 @@
+{
+  "id": "local:ea:organization:red-door-fr",
+  "kind": "local",
+  "focus": "ea:organization:red-door-fr",
+  "nodes": [
+    {
+      "id": "ea:organization:red-door-fr",
+      "type": "organization",
+      "title": "RED DOOR",
+      "route": "/fr/organizations/red-door/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:innerside-fr",
+      "type": "project",
+      "title": "InnerSide",
+      "route": "/fr/projects/innerside/",
+      "status": "research",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:innerside-created-by-red-door",
+      "source": "ea:project:innerside-fr",
+      "target": "ea:organization:red-door-fr",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "RED DOOR incubates and leads InnerSide as its first software product.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:red-door-has-part-innerside",
+      "source": "ea:organization:red-door-fr",
+      "target": "ea:project:innerside-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "InnerSide is the first product incubated and carried by the RED DOOR collective.",
+      "confidence": "validated"
+    }
+  ]
+}

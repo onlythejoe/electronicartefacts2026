@@ -672,6 +672,12 @@
     "identifier": "/fr/id/organization/electronic-artefacts/"
   },
   {
+    "id": "ea:organization:red-door-fr",
+    "locale": "fr",
+    "route": "/fr/organizations/red-door/",
+    "identifier": "/fr/id/organization/red-door/"
+  },
+  {
     "id": "ea:program:oreth-fr",
     "locale": "fr",
     "route": "/fr/programs/oreth/",
@@ -682,6 +688,12 @@
     "locale": "fr",
     "route": "/fr/programs/vaste/",
     "identifier": "/fr/id/program/vaste/"
+  },
+  {
+    "id": "ea:project:innerside-fr",
+    "locale": "fr",
+    "route": "/fr/projects/innerside/",
+    "identifier": "/fr/id/project/innerside/"
   },
   {
     "id": "ea:project:palimpsests-fr",
@@ -1152,6 +1164,12 @@
     "identifier": "/id/organization/electronic-artefacts/"
   },
   {
+    "id": "ea:organization:red-door",
+    "locale": "en",
+    "route": "/organizations/red-door/",
+    "identifier": "/id/organization/red-door/"
+  },
+  {
     "id": "ea:program:oreth",
     "locale": "en",
     "route": "/programs/oreth/",
@@ -1162,6 +1180,12 @@
     "locale": "en",
     "route": "/programs/vaste/",
     "identifier": "/id/program/vaste/"
+  },
+  {
+    "id": "ea:project:innerside",
+    "locale": "en",
+    "route": "/projects/innerside/",
+    "identifier": "/id/project/innerside/"
   },
   {
     "id": "ea:project:palimpsests",

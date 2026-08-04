@@ -9,13 +9,13 @@
     ]
   },
   "canonicalEntities": {
-    "english": 135,
-    "french": 135,
+    "english": 137,
+    "french": 137,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 83021,
-    "sourceWordsCoveredByFrenchRecords": 83021,
+    "englishSourceWords": 83401,
+    "sourceWordsCoveredByFrenchRecords": 83401,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
@@ -76,8 +76,10 @@
     "ea:concept:web-audio",
     "ea:framework:electronic-artefacts-lightweight-template",
     "ea:organization:electronic-artefacts",
+    "ea:organization:red-door",
     "ea:program:oreth",
     "ea:program:vaste",
+    "ea:project:innerside",
     "ea:project:palimpsests",
     "ea:project:vestiges",
     "ea:project:voice-capture-studio",

@@ -55,6 +55,39 @@
     "visibility": "public"
   },
   {
+    "id": "ear:innerside-created-by-red-door",
+    "subject": "ea:project:innerside",
+    "predicate": "createdBy",
+    "object": "ea:organization:red-door",
+    "statement": "RED DOOR incubates and leads InnerSide as its first software product.",
+    "confidence": "validated",
+    "createdAt": "2026-08-04",
+    "reviewedAt": "2026-08-04",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:innerside-contributed-by-electronic-artefacts",
+    "subject": "ea:project:innerside",
+    "predicate": "contributedBy",
+    "object": "ea:organization:electronic-artefacts",
+    "statement": "Electronic Artefacts contributes actively to InnerSide as RED DOOR’s strategic and technology collaborator across product counsel, R&D, architecture and technical development.",
+    "confidence": "validated",
+    "createdAt": "2026-08-04",
+    "reviewedAt": "2026-08-04",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:red-door-has-part-innerside",
+    "subject": "ea:organization:red-door",
+    "predicate": "hasPart",
+    "object": "ea:project:innerside",
+    "statement": "InnerSide is the first product incubated and carried by the RED DOOR collective.",
+    "confidence": "validated",
+    "createdAt": "2026-08-04",
+    "reviewedAt": "2026-08-04",
+    "visibility": "public"
+  },
+  {
     "id": "ear:mcp-article-documents-mcp",
     "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
     "predicate": "documents",

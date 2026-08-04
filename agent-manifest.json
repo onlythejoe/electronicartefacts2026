@@ -74,9 +74,9 @@
     }
   ],
   "countsByType": {
-    "organization": 2,
+    "organization": 4,
     "program": 4,
-    "project": 6,
+    "project": 8,
     "researchField": 2,
     "researchQuestion": 6,
     "publication": 98,
@@ -86,7 +86,7 @@
     "collection": 12,
     "artefact": 6
   },
-  "lastModified": "2026-07-18",
+  "lastModified": "2026-08-04",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -136,6 +136,55 @@
       "confidence": "canonical",
       "publishedAt": "2026-06-22",
       "modifiedAt": "2026-06-22"
+    },
+    {
+      "id": "ea:organization:red-door-fr",
+      "locale": "fr",
+      "translationOf": "ea:organization:red-door",
+      "type": "organization",
+      "title": "RED DOOR",
+      "summary": "Un collectif qui façonne un produit encore tenu secret par la recherche, la stratégie, l’architecture et le prototypage, avec Electronic Artefacts comme collaborateur stratégique et technologique.",
+      "url": "https://electronicartefacts.com/fr/organizations/red-door/",
+      "route": "/fr/organizations/red-door/",
+      "identifier": "https://electronicartefacts.com/fr/id/organization/red-door/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/organization/red-door/index.jsonld",
+      "tags": [
+        "RED DOOR",
+        "InnerSide",
+        "Collectif produit",
+        "Recherche et développement",
+        "logiciel",
+        "Stratégie produit",
+        "architecture logicielle"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-08-04",
+      "modifiedAt": "2026-08-04"
+    },
+    {
+      "id": "ea:organization:red-door",
+      "locale": "en",
+      "type": "organization",
+      "title": "RED DOOR",
+      "summary": "A collective shaping an undisclosed product through research, strategy, architecture and prototyping, with Electronic Artefacts as a strategic and technology collaborator.",
+      "url": "https://electronicartefacts.com/organizations/red-door/",
+      "route": "/organizations/red-door/",
+      "identifier": "https://electronicartefacts.com/id/organization/red-door/",
+      "jsonLd": "https://electronicartefacts.com/id/organization/red-door/index.jsonld",
+      "tags": [
+        "RED DOOR",
+        "InnerSide",
+        "Product Collective",
+        "Research and Development",
+        "Software",
+        "Product Strategy",
+        "Software Architecture"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-08-04",
+      "modifiedAt": "2026-08-04"
     },
     {
       "id": "ea:program:oreth-fr",
@@ -250,6 +299,57 @@
       "confidence": "validated",
       "publishedAt": "2026-01-01",
       "modifiedAt": "2026-07-12"
+    },
+    {
+      "id": "ea:project:innerside-fr",
+      "locale": "fr",
+      "translationOf": "ea:project:innerside",
+      "type": "project",
+      "title": "InnerSide",
+      "summary": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+      "url": "https://electronicartefacts.com/fr/projects/innerside/",
+      "route": "/fr/projects/innerside/",
+      "identifier": "https://electronicartefacts.com/fr/id/project/innerside/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/project/innerside/index.jsonld",
+      "tags": [
+        "InnerSide",
+        "RED DOOR",
+        "logiciel",
+        "Recherche produit",
+        "Stratégie technologique",
+        "Recherche et développement",
+        "Stratégie produit",
+        "architecture logicielle"
+      ],
+      "status": "research",
+      "confidence": "observed",
+      "publishedAt": "2026-08-04",
+      "modifiedAt": "2026-08-04"
+    },
+    {
+      "id": "ea:project:innerside",
+      "locale": "en",
+      "type": "project",
+      "title": "InnerSide",
+      "summary": "A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.",
+      "url": "https://electronicartefacts.com/projects/innerside/",
+      "route": "/projects/innerside/",
+      "identifier": "https://electronicartefacts.com/id/project/innerside/",
+      "jsonLd": "https://electronicartefacts.com/id/project/innerside/index.jsonld",
+      "tags": [
+        "InnerSide",
+        "RED DOOR",
+        "Software",
+        "Product Research",
+        "Technology Strategy",
+        "Research and Development",
+        "Product Strategy",
+        "Software Architecture"
+      ],
+      "status": "research",
+      "confidence": "observed",
+      "publishedAt": "2026-08-04",
+      "modifiedAt": "2026-08-04"
     },
     {
       "id": "ea:project:palimpsests-fr",

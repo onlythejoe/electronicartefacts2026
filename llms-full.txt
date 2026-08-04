@@ -9,8 +9,8 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 270
-- Last curated source update: 2026-07-18
+- Public records: 274
+- Last curated source update: 2026-08-04
 
 ## organization
 
@@ -26,6 +26,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/organization/electronic-artefacts/index.jsonld
   - Modified: 2026-06-22
   - Keywords: Electronic Artefacts, Creative Technology, Software, Research, Culture, Publishing
+- [RED DOOR](https://electronicartefacts.com/fr/organizations/red-door/): Un collectif qui façonne un produit encore tenu secret par la recherche, la stratégie, l’architecture et le prototypage, avec Electronic Artefacts comme collaborateur stratégique et technologique.
+  - Entity ID: ea:organization:red-door-fr
+  - Identifier: https://electronicartefacts.com/fr/id/organization/red-door/
+  - JSON-LD: https://electronicartefacts.com/fr/id/organization/red-door/index.jsonld
+  - Modified: 2026-08-04
+  - Keywords: RED DOOR, InnerSide, Collectif produit, Recherche et développement, logiciel, Stratégie produit, architecture logicielle
+- [RED DOOR](https://electronicartefacts.com/organizations/red-door/): A collective shaping an undisclosed product through research, strategy, architecture and prototyping, with Electronic Artefacts as a strategic and technology collaborator.
+  - Entity ID: ea:organization:red-door
+  - Identifier: https://electronicartefacts.com/id/organization/red-door/
+  - JSON-LD: https://electronicartefacts.com/id/organization/red-door/index.jsonld
+  - Modified: 2026-08-04
+  - Keywords: RED DOOR, InnerSide, Product Collective, Research and Development, Software, Product Strategy, Software Architecture
 
 ## program
 
@@ -56,6 +68,18 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## project
 
+- [InnerSide](https://electronicartefacts.com/fr/projects/innerside/): Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.
+  - Entity ID: ea:project:innerside-fr
+  - Identifier: https://electronicartefacts.com/fr/id/project/innerside/
+  - JSON-LD: https://electronicartefacts.com/fr/id/project/innerside/index.jsonld
+  - Modified: 2026-08-04
+  - Keywords: InnerSide, RED DOOR, logiciel, Recherche produit, Stratégie technologique, Recherche et développement, Stratégie produit, architecture logicielle
+- [InnerSide](https://electronicartefacts.com/projects/innerside/): A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.
+  - Entity ID: ea:project:innerside
+  - Identifier: https://electronicartefacts.com/id/project/innerside/
+  - JSON-LD: https://electronicartefacts.com/id/project/innerside/index.jsonld
+  - Modified: 2026-08-04
+  - Keywords: InnerSide, RED DOOR, Software, Product Research, Technology Strategy, Research and Development, Product Strategy, Software Architecture
 - [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Un dossier culturel cinématographique pour Palimpsests, album d’ORETH en cinq actes, réunissant son, image, recherche vestimentaire et matière de campagne dans un même monde visuel en évolution.
   - Entity ID: ea:project:palimpsests-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/palimpsests/

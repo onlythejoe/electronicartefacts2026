@@ -4098,6 +4098,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "organizationType": "studio",
     "tags": [
       "technologies créatives",
       "systèmes de connaissance",
@@ -4118,6 +4119,44 @@
       "lastUpdated": "2026-06-25",
       "releaseDate": "2026-06-25",
       "creationYear": "2023"
+    }
+  },
+  {
+    "id": "ea:organization:red-door-fr",
+    "legacyId": "red-door-fr",
+    "kind": "organization",
+    "type": "organization",
+    "locale": "fr",
+    "translationOf": "ea:organization:red-door",
+    "title": "RED DOOR",
+    "subtitle": "Collectif indépendant de création produit",
+    "summary": "RED DOOR est un collectif indépendant et un incubateur qui développe InnerSide, son premier projet logiciel.",
+    "description": "Un collectif qui façonne un produit encore tenu secret par la recherche, la stratégie, l’architecture et le prototypage, avec Electronic Artefacts comme collaborateur stratégique et technologique.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "organizationType": "collective",
+    "tags": [
+      "RED DOOR",
+      "InnerSide",
+      "Collectif produit",
+      "Recherche et développement",
+      "logiciel"
+    ],
+    "discipline": [
+      "Stratégie produit",
+      "Recherche et développement",
+      "architecture logicielle"
+    ],
+    "route": "/fr/organizations/red-door/",
+    "identifier": "/fr/id/organization/red-door/",
+    "temporality": {
+      "creationDate": "2026-08-04",
+      "lastUpdated": "2026-08-04",
+      "releaseDate": "2026-08-04",
+      "creationYear": "2026"
     }
   },
   {
@@ -4199,6 +4238,45 @@
     }
   },
   {
+    "id": "ea:project:innerside-fr",
+    "legacyId": "innerside-fr",
+    "kind": "project",
+    "type": "project",
+    "locale": "fr",
+    "translationOf": "ea:project:innerside",
+    "title": "InnerSide",
+    "subtitle": "Un projet logiciel encore secret porté par RED DOOR",
+    "summary": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
+    "description": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+    "status": "research",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "category": "collaboration",
+    "tags": [
+      "InnerSide",
+      "RED DOOR",
+      "logiciel",
+      "Recherche produit",
+      "Stratégie technologique",
+      "Recherche et développement"
+    ],
+    "discipline": [
+      "Stratégie produit",
+      "architecture logicielle",
+      "Recherche et développement"
+    ],
+    "route": "/fr/projects/innerside/",
+    "identifier": "/fr/id/project/innerside/",
+    "temporality": {
+      "creationDate": "2026-07-24",
+      "lastUpdated": "2026-08-04",
+      "releaseDate": "2026-08-04",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:project:palimpsests-fr",
     "legacyId": "palimpsests-fr",
     "kind": "project",
@@ -4214,6 +4292,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "cultural",
     "tags": [
       "Palimpsests",
       "ORETH",
@@ -4253,6 +4332,7 @@
     "confidence": "observed",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "internal",
     "tags": [
       "Vestiges",
       "Art",
@@ -4293,6 +4373,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "internal",
     "tags": [
       "Voice Capture Studio",
       "enregistrement vocal",
@@ -6776,6 +6857,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "ActivityPub",
       "Federation",
@@ -6810,6 +6892,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "A2A",
       "Agents IA",
@@ -6845,6 +6928,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "C2PA",
       "Content Credentials",
@@ -6880,6 +6964,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "CloudEvents",
       "Event Schema",
@@ -6914,6 +6999,7 @@
     "confidence": "validated",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "CSS Fonts",
       "Typography",
@@ -6948,6 +7034,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "IIIF",
       "Digital Archives",
@@ -6984,6 +7071,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "published",
+    "category": "protocol",
     "tags": [
       "JSON-LD",
       "Linked Data",
@@ -7019,6 +7107,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "library",
     "tags": [
       "llama.cpp",
       "IA locale",
@@ -7054,6 +7143,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "MCP",
       "outils d'IA",
@@ -7089,6 +7179,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "OpenTelemetry",
       "Observability",
@@ -7124,6 +7215,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "language",
     "tags": [
       "OWL",
       "Ontology",
@@ -7158,6 +7250,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "published",
+    "category": "protocol",
     "tags": [
       "RDF",
       "Semantic Web",
@@ -7192,6 +7285,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "database",
     "tags": [
       "Redis Streams",
       "Event Log",
@@ -7227,6 +7321,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "language",
     "tags": [
       "SKOS",
       "Taxonomy",
@@ -7261,6 +7356,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "approach",
     "tags": [
       "Transformer",
       "Attention",
@@ -7294,6 +7390,7 @@
     "confidence": "validated",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "Web Animations",
       "Motion Design",
@@ -7328,6 +7425,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "Web Audio API",
       "Browser Audio",
@@ -7362,6 +7460,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "WebGL",
       "Shaders",
@@ -7396,6 +7495,7 @@
     "confidence": "observed",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "approach",
     "tags": [
       "WebMCP",
       "web agentique",
@@ -7431,6 +7531,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "WebNN",
       "IA dans le navigateur",
@@ -7505,6 +7606,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "organizationType": "studio",
     "tags": [
       "Creative Technology",
       "Software",
@@ -7520,6 +7622,43 @@
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-06-22",
       "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:organization:red-door",
+    "legacyId": "red-door",
+    "kind": "organization",
+    "type": "organization",
+    "locale": "en",
+    "title": "RED DOOR",
+    "subtitle": "Independent Product Collective",
+    "summary": "RED DOOR is an independent product collective and incubator developing InnerSide as its first software project.",
+    "description": "A collective shaping an undisclosed product through research, strategy, architecture and prototyping, with Electronic Artefacts as a strategic and technology collaborator.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "organizationType": "collective",
+    "tags": [
+      "RED DOOR",
+      "InnerSide",
+      "Product Collective",
+      "Research and Development",
+      "Software"
+    ],
+    "discipline": [
+      "Product Strategy",
+      "Research and Development",
+      "Software Architecture"
+    ],
+    "route": "/organizations/red-door/",
+    "identifier": "/id/organization/red-door/",
+    "temporality": {
+      "creationDate": "2026-08-04",
+      "lastUpdated": "2026-08-04",
+      "releaseDate": "2026-08-04",
+      "creationYear": "2026"
     }
   },
   {
@@ -7599,6 +7738,44 @@
     }
   },
   {
+    "id": "ea:project:innerside",
+    "legacyId": "innerside",
+    "kind": "project",
+    "type": "project",
+    "locale": "en",
+    "title": "InnerSide",
+    "subtitle": "An Undisclosed Software Project by RED DOOR",
+    "summary": "InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.",
+    "description": "A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.",
+    "status": "research",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "category": "collaboration",
+    "tags": [
+      "InnerSide",
+      "RED DOOR",
+      "Software",
+      "Product Research",
+      "Technology Strategy",
+      "Research and Development"
+    ],
+    "discipline": [
+      "Product Strategy",
+      "Software Architecture",
+      "Research and Development"
+    ],
+    "route": "/projects/innerside/",
+    "identifier": "/id/project/innerside/",
+    "temporality": {
+      "creationDate": "2026-07-24",
+      "lastUpdated": "2026-08-04",
+      "releaseDate": "2026-08-04",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:project:palimpsests",
     "legacyId": "palimpsests",
     "kind": "project",
@@ -7613,6 +7790,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "cultural",
     "tags": [
       "Palimpsests",
       "ORETH",
@@ -7653,6 +7831,7 @@
     "confidence": "observed",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "internal",
     "tags": [
       "Vestiges",
       "Art",
@@ -7692,6 +7871,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "internal",
     "tags": [
       "Voice Capture Studio",
       "Speech Recording",
@@ -10121,6 +10301,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "ActivityPub",
       "Federation",
@@ -10154,6 +10335,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "A2A",
       "AI Agents",
@@ -10188,6 +10370,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "C2PA",
       "Content Credentials",
@@ -10222,6 +10405,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "CloudEvents",
       "Event Schema",
@@ -10255,6 +10439,7 @@
     "confidence": "validated",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "CSS Fonts",
       "Typography",
@@ -10288,6 +10473,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "IIIF",
       "Digital Archives",
@@ -10323,6 +10509,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "published",
+    "category": "protocol",
     "tags": [
       "JSON-LD",
       "Linked Data",
@@ -10357,6 +10544,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "library",
     "tags": [
       "llama.cpp",
       "Local AI",
@@ -10391,6 +10579,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "protocol",
     "tags": [
       "MCP",
       "AI Tools",
@@ -10425,6 +10614,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "OpenTelemetry",
       "Observability",
@@ -10459,6 +10649,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "language",
     "tags": [
       "OWL",
       "Ontology",
@@ -10492,6 +10683,7 @@
     "confidence": "published",
     "visibility": "public",
     "publicationClass": "published",
+    "category": "protocol",
     "tags": [
       "RDF",
       "Semantic Web",
@@ -10525,6 +10717,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "database",
     "tags": [
       "Redis Streams",
       "Event Log",
@@ -10559,6 +10752,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "language",
     "tags": [
       "SKOS",
       "Taxonomy",
@@ -10592,6 +10786,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "approach",
     "tags": [
       "Transformer",
       "Attention",
@@ -10624,6 +10819,7 @@
     "confidence": "validated",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "Web Animations",
       "Motion Design",
@@ -10657,6 +10853,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "Web Audio API",
       "Browser Audio",
@@ -10690,6 +10887,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "WebGL",
       "Shaders",
@@ -10723,6 +10921,7 @@
     "confidence": "observed",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "approach",
     "tags": [
       "WebMCP",
       "Agentic Web",
@@ -10757,6 +10956,7 @@
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
+    "category": "platform",
     "tags": [
       "WebNN",
       "Browser AI",

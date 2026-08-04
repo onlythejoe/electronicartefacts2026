@@ -482,6 +482,10 @@
     "fr": "/fr/organizations/electronic-artefacts/",
     "en": "/organizations/electronic-artefacts/"
   },
+  "/fr/organizations/red-door/": {
+    "fr": "/fr/organizations/red-door/",
+    "en": "/organizations/red-door/"
+  },
   "/fr/palimpsests.html": {
     "en": "/palimpsests.html",
     "fr": "/fr/palimpsests.html"
@@ -513,6 +517,10 @@
   "/fr/projects.html": {
     "en": "/projects.html",
     "fr": "/fr/projects.html"
+  },
+  "/fr/projects/innerside/": {
+    "fr": "/fr/projects/innerside/",
+    "en": "/projects/innerside/"
   },
   "/fr/projects/palimpsests/": {
     "fr": "/fr/projects/palimpsests/",
@@ -1066,6 +1074,10 @@
     "fr": "/fr/organizations/electronic-artefacts/",
     "en": "/organizations/electronic-artefacts/"
   },
+  "/organizations/red-door/": {
+    "fr": "/fr/organizations/red-door/",
+    "en": "/organizations/red-door/"
+  },
   "/palimpsests.html": {
     "en": "/palimpsests.html",
     "fr": "/fr/palimpsests.html"
@@ -1097,6 +1109,10 @@
   "/projects.html": {
     "en": "/projects.html",
     "fr": "/fr/projects.html"
+  },
+  "/projects/innerside/": {
+    "fr": "/fr/projects/innerside/",
+    "en": "/projects/innerside/"
   },
   "/projects/palimpsests/": {
     "fr": "/fr/projects/palimpsests/",
