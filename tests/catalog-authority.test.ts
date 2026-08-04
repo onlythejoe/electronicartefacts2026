@@ -115,6 +115,16 @@ test("the canonical generated catalog overrides migrated legacy records", async 
   assert.equal(catalog.artists[0]?.title, "ORETH artist");
 });
 
+test("the route-scoped runtime carries canonical project-only records", async () => {
+  const source = await readFile(path.resolve("scripts/build-assets.mjs"), "utf8");
+  const bundle = await readFile(path.resolve("assets/js/app.js"), "utf8");
+
+  assert.match(source, /"publicationClass", "category", "tags"/);
+  assert.match(source, /entity\.type === "researchQuestion" \|\| entity\.type === "project"/);
+  assert.match(bundle, /ea:project:innerside/);
+  assert.match(bundle, /legacyId:"innerside"/);
+});
+
 test("canonical content consistently uses the Vestiges project name", async () => {
   const files = await fg(["content/**/*.md"]);
   const stale: string[] = [];

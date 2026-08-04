@@ -18,7 +18,7 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <link rel="preload" as="style" href="/assets/css/app.css?v=88" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="/assets/css/app.css?v=88" /></noscript>`
     : `<link rel="stylesheet" href="/assets/css/editorial.css?v=1" />`;
-  const runtime = pageClass === "project" ? "app.js?v=72" : "editorial.js?v=1";
+  const runtime = pageClass === "project" ? "app.js?v=73" : "editorial.js?v=1";
   const heroPreload = entryId === "palimpsests"
     ? `<link rel="preload" as="image" href="/assets/media/projects/oreth/ORETH-hero-800.webp" imagesrcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w" imagesizes="(max-width: 48rem) 100vw, 48vw" fetchpriority="high" />`
     : "";

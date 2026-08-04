@@ -13,6 +13,7 @@ test("project browsing keeps the newest view capped at three releases", async ()
   assert.match(runtime, /data-project-result="\$\{esc\(item\.id\)\}"/);
   assert.match(runtime, /data-project-node="\$\{esc\(item\.id\)\}"/);
   assert.match(runtime, /const flagshipIds = new Set\(\["innerside"/);
+  assert.match(runtime, /flagshipIds\.has\(flagshipIdFor\(item\)\)/);
   assert.match(runtime, /id: "collaboration"[\s\S]*?item\.category === "collaboration"/);
 });
 

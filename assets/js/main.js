@@ -4229,6 +4229,7 @@
       ...(item.links || []).flatMap((link) => [link.label, link.href]),
     ].filter(Boolean).join(" ").toLowerCase();
     const flagshipIds = new Set(["innerside", "voice-capture-studio", "vestiges", "palimpsests", "oeil-de-meg"]);
+    const flagshipIdFor = (item) => String(item.canonicalId || item.id || "").replace(/^ea:project:/, "").replace(/-fr$/, "");
     const clientIds = new Set(["atypikhouse", "oeil-de-meg", "seven-temps-seulement"]);
 
     return [
@@ -4244,7 +4245,7 @@
         label: "Most relevant",
         shortLabel: "Relevant",
         copy: "Flagship work with the clearest public surface, evidence and connection to the studio’s current practice.",
-        matches: (item) => flagshipIds.has(item.id),
+        matches: (item) => flagshipIds.has(flagshipIdFor(item)),
       },
       {
         id: "systems",

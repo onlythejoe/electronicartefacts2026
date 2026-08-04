@@ -426,7 +426,7 @@ for (const [file, config] of Object.entries(pages)) {
   const performanceRuntime = `<!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
     <script defer src="/assets/js/flow.js?v=1"></script>
-    <script type="module">{const boot=()=>import("/assets/js/${runtime}?v=72");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
+    <script type="module">{const boot=()=>import("/assets/js/${runtime}?v=73");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(
     /<!-- PERFORMANCE_RUNTIME_START -->[\s\S]*?<!-- PERFORMANCE_RUNTIME_END -->|<script\s+type="module"\s+src="(?:\.\/|\/)assets\/js\/app(?:-full)?\.js\?v=\d+"><\/script>/,
