@@ -29,6 +29,8 @@
     if (item.locale === pageLocale && item.translationOf) acc[item.translationOf] = item;
     return acc;
   }, {});
+  const canonicalCatalogSourceFor = (item) =>
+    item?.translationOf ? catalogById[item.translationOf] || item : item;
 
   const canonicalCatalogRecordFor = (item) => {
     if (!item?.id) return null;
@@ -69,27 +71,30 @@
     };
   };
 
-  const runtimeRecordFromCatalog = (item) => ({
-    ...item,
-    id: item.legacyId || item.id,
-    canonicalId: item.translationOf || item.id,
-    localizedId: item.locale === pageLocale ? item.id : undefined,
-    title: item.title,
-    subtitle: item.subtitle,
-    kind: item.type,
-    type: item.type,
-    status: item.status,
-    statusLabel: item.status,
-    maturity: item.maturity,
-    confidence: item.confidence,
-    visibility: item.visibility,
-    summary: item.summary,
-    description: item.description,
-    tags: item.tags || [],
-    discipline: item.discipline || [],
-    route: item.route,
-    temporality: item.temporality,
-  });
+  const runtimeRecordFromCatalog = (item) => {
+    const source = canonicalCatalogSourceFor(item);
+    return {
+      ...item,
+      id: source.legacyId || item.legacyId || item.id,
+      canonicalId: item.translationOf || item.id,
+      localizedId: item.locale === pageLocale ? item.id : undefined,
+      title: item.title,
+      subtitle: item.subtitle,
+      kind: item.type,
+      type: item.type,
+      status: item.status,
+      statusLabel: item.status,
+      maturity: item.maturity,
+      confidence: item.confidence,
+      visibility: item.visibility,
+      summary: item.summary,
+      description: item.description,
+      tags: item.tags || [],
+      discipline: item.discipline || [],
+      route: item.route,
+      temporality: item.temporality,
+    };
+  };
 
   const flattenEntities = () =>
     (() => {
@@ -116,8 +121,12 @@
       );
       const catalogOnly = catalogEntities
         .filter((item) => item.locale === pageLocale)
-        .filter((item) => !claimedCanonicalIds.has(item.id))
-        .filter((item) => !legacyIdentities.has(`${item.legacyId}|${item.type}`))
+        .filter((item) => {
+          const source = canonicalCatalogSourceFor(item);
+          const legacyId = source.legacyId || item.legacyId;
+          return !claimedCanonicalIds.has(source.id)
+            && !legacyIdentities.has(`${legacyId}|${item.type}`);
+        })
         .map(runtimeRecordFromCatalog);
       return [...sourceEntities, ...catalogOnly];
     })()

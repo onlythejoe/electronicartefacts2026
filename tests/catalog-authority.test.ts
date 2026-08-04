@@ -115,6 +115,81 @@ test("the canonical generated catalog overrides migrated legacy records", async 
   assert.equal(catalog.artists[0]?.title, "ORETH artist");
 });
 
+test("localized catalog-only projects do not duplicate migrated projects", async () => {
+  const source = await readFile(path.resolve("assets/js/catalog.js"), "utf8");
+  const window: Record<string, unknown> = {
+    location: { pathname: "/fr/projects.html" },
+    EA_TAXONOMIES: {},
+    EA_RELATIONS: { graph: [] },
+    EA_TIMELINES: [],
+    EA_ACTIVITY: [],
+    EA_COLLECTIONS: [],
+    EA_ENTITIES: {
+      projects: [{
+        id: "voice-capture-studio",
+        kind: "project",
+        type: "project",
+        title: "Legacy Voice Capture Studio",
+        status: "released",
+        visibility: "public",
+      }],
+    },
+    EA_PUBLIC_CATALOG: {
+      entities: [
+        {
+          id: "ea:project:voice-capture-studio",
+          legacyId: "voice-capture-studio",
+          locale: "en",
+          type: "project",
+          title: "Voice Capture Studio",
+          status: "released",
+          visibility: "public",
+        },
+        {
+          id: "ea:project:voice-capture-studio-fr",
+          legacyId: "voice-capture-studio-fr",
+          translationOf: "ea:project:voice-capture-studio",
+          locale: "fr",
+          type: "project",
+          title: "Voice Capture Studio",
+          status: "released",
+          visibility: "public",
+        },
+        {
+          id: "ea:project:innerside",
+          legacyId: "innerside",
+          locale: "en",
+          type: "project",
+          title: "InnerSide",
+          status: "research",
+          visibility: "public",
+        },
+        {
+          id: "ea:project:innerside-fr",
+          legacyId: "innerside-fr",
+          translationOf: "ea:project:innerside",
+          locale: "fr",
+          type: "project",
+          title: "InnerSide",
+          status: "research",
+          visibility: "public",
+        },
+      ],
+      relations: [],
+      routes: {},
+    },
+  };
+  const context = vm.createContext({
+    window,
+    document: { documentElement: { lang: "fr" } },
+  });
+  vm.runInContext(source, context, { filename: "assets/js/catalog.js" });
+
+  const catalog = window.EA_CATALOG as { projects: Array<Record<string, unknown>> };
+  assert.deepEqual(Array.from(catalog.projects, (project) => project.id), ["voice-capture-studio", "innerside"]);
+  assert.deepEqual(Array.from(catalog.projects, (project) => project.title), ["Voice Capture Studio", "InnerSide"]);
+});
+
 test("the route-scoped runtime carries canonical project-only records", async () => {
   const source = await readFile(path.resolve("scripts/build-assets.mjs"), "utf8");
   const bundle = await readFile(path.resolve("assets/js/app.js"), "utf8");
