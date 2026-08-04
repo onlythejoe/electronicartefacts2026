@@ -102,7 +102,7 @@
     return `
       data-filter-card
       data-entry-id="${esc(item.id || "")}"
-      ${image ? `data-card-media="true" style="--card-image:url('${esc(cardCssUrl(image.src))}');"` : ""}
+      ${image ? `data-card-media="true" data-card-image="${esc(cardCssUrl(image.previewSrc || image.src))}"` : ""}
       data-status="${esc(item.status || "")}"
       data-category="${esc(item.category || item.type || "")}"
       data-medium="${esc(medium)}"
@@ -833,8 +833,8 @@
     const label = options.label || media.caption || item.title || "Visual";
     const showCaption = options.caption !== false;
     const imageAttrs = [
-      `src="${esc(media.src)}"`,
-      media.srcset ? `srcset="${esc(media.srcset)}"` : "",
+      `data-src="${esc(media.src)}"`,
+      media.srcset ? `data-srcset="${esc(media.srcset)}"` : "",
       media.sizes ? `sizes="${esc(media.sizes)}"` : "",
       `alt=""`,
       `loading="lazy"`,
@@ -846,7 +846,7 @@
 
     return `
       <figure class="card-media-plate"${options.action ? "" : ' aria-hidden="true"'}>
-        <img ${imageAttrs} />
+        <img data-deferred-media ${imageAttrs} />
         ${
           showCaption
             ? `<figcaption>

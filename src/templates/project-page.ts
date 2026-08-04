@@ -620,7 +620,7 @@ const renderPalimpsestsMusic = (project: ProjectEntity): string => {
         </nav>
         <article class="belle-release" id="belle">
           <div class="belle-release__visual">
-            <video controls muted playsinline preload="none" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster.jpg" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
+            <video controls muted playsinline preload="none" poster="/assets/media/projects/palimpsests/belle/belle-moon-poster-640.webp" aria-label="${ui(project, "Moon fragment for Belle", "Fragment lunaire pour Belle")}">
               <source src="/assets/media/projects/palimpsests/belle/belle-moon-fragment.mp4" type="video/mp4" />
             </video>
             <span>ACT III / 14</span>

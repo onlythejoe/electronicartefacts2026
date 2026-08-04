@@ -7519,6 +7519,34 @@ body[data-entry-id="vestiges"] .project-process__marker {
   padding: clamp(0.85rem, 1.65vw, 1.2rem);
 }
 
+body[data-page="graph"] [data-render="global-graph"] {
+  min-height: 48rem;
+}
+
+body[data-page="search"] [data-render="search-page"] {
+  min-height: 52rem;
+}
+
+body[data-page="graph"] [data-render="cross-navigation"],
+body[data-page="search"] [data-render="cross-navigation"] {
+  min-height: 30rem;
+}
+
+@media (max-width: 48rem) {
+  body[data-page="graph"] [data-render="global-graph"] {
+    min-height: 74rem;
+  }
+
+  body[data-page="search"] [data-render="search-page"] {
+    min-height: 64rem;
+  }
+
+  body[data-page="graph"] [data-render="cross-navigation"],
+  body[data-page="search"] [data-render="cross-navigation"] {
+    min-height: 55rem;
+  }
+}
+
 .global-graph__head {
   max-width: 64rem;
 }
@@ -17420,7 +17448,6 @@ html.is-safari .palimpsests-profile-window {
   .palimpsests-plate img {
     transition-duration: 560ms;
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: transform;
   }
 
   .project-card:hover .card-media-plate img,

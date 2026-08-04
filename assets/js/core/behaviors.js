@@ -76,6 +76,36 @@
     });
   };
 
+  const initDeferredCardMedia = (root = document) => {
+    const cards = [...root.querySelectorAll("[data-card-image]")].filter((card) => card.dataset.boundDeferredMedia !== "true");
+    if (!cards.length) return;
+    const activate = (card) => {
+      if (card.dataset.mediaActivated === "true") return;
+      card.dataset.mediaActivated = "true";
+      const imageUrl = card.dataset.cardImage;
+      if (imageUrl) card.style.setProperty("--card-image", `url(${JSON.stringify(imageUrl)})`);
+      card.querySelectorAll("img[data-deferred-media]").forEach((image) => {
+        if (image.dataset.srcset) image.srcset = image.dataset.srcset;
+        if (image.dataset.src) image.src = image.dataset.src;
+        delete image.dataset.srcset;
+        delete image.dataset.src;
+      });
+    };
+    if (!("IntersectionObserver" in window)) {
+      cards.forEach(activate);
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      activate(entry.target);
+      observer.unobserve(entry.target);
+    }), { rootMargin: "900px 0px", threshold: 0 });
+    cards.forEach((card) => {
+      card.dataset.boundDeferredMedia = "true";
+      observer.observe(card);
+    });
+  };
+
   const animateContentRefresh = (root) => {
     if (!root || reduceMotion() || typeof root.animate !== "function") return;
     root.getAnimations?.().forEach((animation) => animation.cancel());
@@ -2688,6 +2718,7 @@
 
   const initUXEnhancements = (filterState) => {
     initPageTransitions();
+    initDeferredCardMedia();
     initMediaReadiness();
     initAmbientField();
     initScrollProgress();
@@ -2711,6 +2742,7 @@
   };
 
   const refreshCardSurfaces = (root = document) => {
+    initDeferredCardMedia(root);
     initMediaReadiness(root);
     initCardSpotlight(root);
     initQuickView(root);

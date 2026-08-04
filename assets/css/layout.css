@@ -53,7 +53,6 @@ section[data-render] {
   overflow: visible;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
-  will-change: transform, opacity;
   transition:
     transform 220ms ease,
     opacity 220ms ease;

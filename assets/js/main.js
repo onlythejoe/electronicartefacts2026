@@ -4337,11 +4337,11 @@
               <figcaption><span>Cultural work</span><strong>Palimpsests</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=atypikhouse" data-depth="1.18" aria-label="Open AtypikHouse project">
-              <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
+              <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad-640.webp" srcset="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad-640.webp 640w, ./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad-1280.webp 1280w, ./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg 5094w" sizes="(max-width: 48rem) 48vw, 26vw" width="5094" height="2865" alt="AtypikHouse tablet dashboard" loading="lazy" decoding="async" />
               <figcaption><span>Product platform</span><strong>AtypikHouse</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" data-depth="1.48" aria-label="Open L’Œil de Meg project">
-              <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
+              <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-640.webp" srcset="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-640.webp 640w, ./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-1280.webp 1280w, ./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png 3456w" sizes="(max-width: 48rem) 48vw, 26vw" width="3456" height="1992" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" decoding="async" />
               <figcaption><span>Client delivery</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
           </div>

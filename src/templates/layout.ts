@@ -14,9 +14,9 @@ interface LayoutInput {
 
 export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => {
   const styles = pageClass === "project"
-    ? `<link rel="stylesheet" href="/assets/css/project.css?v=3" />`
-    : `<link rel="stylesheet" href="/assets/css/editorial.css?v=2" />`;
-  const runtime = pageClass === "project" ? "project.js?v=2" : "editorial.js?v=2";
+    ? `<link rel="stylesheet" href="/assets/css/project.css?v=4" />`
+    : `<link rel="stylesheet" href="/assets/css/editorial.css?v=3" />`;
+  const runtime = pageClass === "project" ? "project.js?v=3" : "editorial.js?v=2";
   const heroPreload = entryId === "palimpsests"
     ? `<link rel="preload" as="image" href="/assets/media/projects/oreth/ORETH-hero-800.webp" imagesrcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w" imagesizes="(max-width: 48rem) 100vw, 48vw" fetchpriority="high" />`
     : "";

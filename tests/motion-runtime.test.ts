@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("the published runtime provides progressive page and media transitions", async () => {
-  const [behaviors, flow, editorial, projectRuntime, main, surface, base, styles, flowBundle, editorialBundle, projectBundle, runtimeBundle, fullRuntimeBundle, styleBundle, editorialStyleBundle, homeStyleBundle, projectStyleBundle, home, project, artefact, publication, canonicalSearch, graph, search] = await Promise.all([
+  const [behaviors, flow, editorial, projectRuntime, main, surface, base, styles, flowBundle, editorialBundle, projectBundle, runtimeBundle, graphBundle, searchBundle, styleBundle, editorialStyleBundle, homeStyleBundle, projectStyleBundle, graphStyleBundle, searchStyleBundle, home, project, artefact, publication, canonicalSearch, graph, search] = await Promise.all([
     readFile("assets/js/core/behaviors.js", "utf8"),
     readFile("assets/js/core/flow.js", "utf8"),
     readFile("assets/js/core/editorial.js", "utf8"),
@@ -16,11 +16,14 @@ test("the published runtime provides progressive page and media transitions", as
     readFile("assets/js/editorial.js", "utf8"),
     readFile("assets/js/project.js", "utf8"),
     readFile("assets/js/app.js", "utf8"),
-    readFile("assets/js/app-full.js", "utf8"),
+    readFile("assets/js/graph.js", "utf8"),
+    readFile("assets/js/search.js", "utf8"),
     readFile("assets/css/app.css", "utf8"),
     readFile("assets/css/editorial.css", "utf8"),
     readFile("assets/css/home.css", "utf8"),
     readFile("assets/css/project.css", "utf8"),
+    readFile("assets/css/graph.css", "utf8"),
+    readFile("assets/css/search.css", "utf8"),
     readFile("index.html", "utf8"),
     readFile("projects/palimpsests/index.html", "utf8"),
     readFile("archive/artefacts/voice-capture-studio-repository/index.html", "utf8"),
@@ -56,7 +59,7 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(sourceStyles, /cursor:\s*none\s*!important/);
   assert.match(sourceStyles, /\.ea-cursor\s*\{/);
   assert.doesNotMatch(`${behaviors}\n${editorial}`, /ea-cursor|has-desktop-cursor|initDesktopCursor|const initCursor/);
-  assert.doesNotMatch(`${editorialBundle}\n${projectBundle}\n${runtimeBundle}\n${fullRuntimeBundle}`, /ea-cursor|has-desktop-cursor/);
+  assert.doesNotMatch(`${editorialBundle}\n${projectBundle}\n${runtimeBundle}\n${graphBundle}\n${searchBundle}`, /ea-cursor|has-desktop-cursor/);
   assert.match(sourceStyles, /@view-transition\s*\{\s*navigation: auto;/);
   assert.match(sourceStyles, /\.ambient-field\s*\{[^}]*contain: strict;/s);
   assert.match(sourceStyles, /body\.is-page-leaving > main/);
@@ -69,25 +72,33 @@ test("the published runtime provides progressive page and media transitions", as
   assert.ok(editorialStyleBundle.length < 120_000, `editorial CSS should stay route-scoped (${editorialStyleBundle.length} bytes)`);
   assert.ok(homeStyleBundle.length < 180_000, `homepage CSS should stay route-scoped (${homeStyleBundle.length} bytes)`);
   assert.ok(projectStyleBundle.length < 180_000, `project CSS should stay route-scoped (${projectStyleBundle.length} bytes)`);
+  assert.ok(graphStyleBundle.length < 120_000, `graph CSS should stay route-scoped (${graphStyleBundle.length} bytes)`);
+  assert.ok(searchStyleBundle.length < 140_000, `legacy search CSS should stay route-scoped (${searchStyleBundle.length} bytes)`);
   assert.ok(runtimeBundle.length < 800_000, `default JavaScript should stay route-scoped (${runtimeBundle.length} bytes)`);
-  assert.ok(fullRuntimeBundle.length < 1_000_000, `full JavaScript should stay minified (${fullRuntimeBundle.length} bytes)`);
-  assert.match(home, /assets\/css\/home\.css\?v=3/);
+  assert.ok(graphBundle.length < 260_000, `graph JavaScript should stay route-scoped (${graphBundle.length} bytes)`);
+  assert.ok(searchBundle.length < 260_000, `legacy search JavaScript should stay route-scoped (${searchBundle.length} bytes)`);
+  assert.match(home, /assets\/css\/home\.css\?v=4/);
   assert.doesNotMatch(home, /assets\/css\/app\.css/);
   assert.match(home, /assets\/js\/flow\.js\?v=2/);
-  assert.match(home, /assets\/js\/app\.js\?v=77/);
+  assert.match(home, /assets\/js\/app\.js\?v=78/);
   assert.match(home, /\["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"\]/);
   assert.match(home, /data-language-trigger/);
-  assert.match(project, /assets\/css\/project\.css\?v=3/);
-  assert.match(project, /assets\/js\/project\.js\?v=2/);
+  assert.match(project, /assets\/css\/project\.css\?v=4/);
+  assert.match(project, /assets\/js\/project\.js\?v=3/);
   assert.match(project, /assets\/js\/flow\.js\?v=2/);
   assert.doesNotMatch(project, /assets\/(?:css\/app\.css|js\/app\.js)/);
-  assert.match(artefact, /assets\/css\/editorial\.css\?v=2/);
+  assert.match(artefact, /assets\/css\/editorial\.css\?v=3/);
   assert.match(artefact, /assets\/js\/editorial\.js\?v=2/);
   assert.match(artefact, /assets\/js\/flow\.js\?v=2/);
   assert.doesNotMatch(artefact, /assets\/js\/app\.js/);
   assert.match(publication, /assets\/js\/editorial\.js\?v=2/);
   assert.match(canonicalSearch, /assets\/js\/editorial\.js\?v=2/);
   assert.doesNotMatch(canonicalSearch, /assets\/js\/app(?:-full)?\.js/);
-  assert.match(graph, /assets\/js\/app-full\.js\?v=77/);
-  assert.match(search, /assets\/js\/app-full\.js\?v=77/);
+  assert.match(graph, /assets\/css\/graph\.css\?v=1/);
+  assert.match(graph, /assets\/js\/graph\.js\?v=1/);
+  assert.doesNotMatch(graph, /assets\/js\/app(?:-full)?\.js/);
+  assert.match(search, /assets\/css\/search\.css\?v=1/);
+  assert.match(search, /assets\/js\/search\.js\?v=1/);
+  assert.doesNotMatch(search, /assets\/js\/app(?:-full)?\.js/);
+  assert.match(`${behaviors}\n${main}`, /data-card-image|initDeferredCardMedia/);
 });

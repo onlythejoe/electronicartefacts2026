@@ -1680,6 +1680,9 @@ window.EA_ENTITIES = {
         gallery: [
           {
             src: "./assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
+            previewSrc: "./assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026-1280.webp",
+            srcset: "./assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026-640.webp 640w, ./assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026-1280.webp 1280w",
+            sizes: "(max-width: 48rem) 92vw, 44vw",
             alt: "Current Voice Capture Studio lexical segmentation console with five modes",
             caption: "Current warm-white interface with five mode capsules and local lexical segmentation.",
             width: 1280,
@@ -2331,7 +2334,16 @@ window.EA_ENTITIES = {
       media: {
         folder: "./assets/media/projects/atypikhouse",
         gallery: [
-          { src: "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
+          {
+            src: "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg",
+            previewSrc: "./assets/media/projects/atypikhouse/atypikhouse-landing-page-1280.webp",
+            srcset: "./assets/media/projects/atypikhouse/atypikhouse-landing-page-640.webp 640w, ./assets/media/projects/atypikhouse/atypikhouse-landing-page-1280.webp 1280w, ./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg 2480w",
+            sizes: "(max-width: 48rem) 92vw, 44vw",
+            alt: "AtypikHouse landing page with logo",
+            caption: "Landing page.",
+            width: 2480,
+            height: 3508,
+          },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg", alt: "AtypikHouse dashboard home view", caption: "Dashboard home." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg", alt: "AtypikHouse dashboard on a tablet", caption: "Tablet view." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-mobile-filters.jpg", alt: "AtypikHouse mobile filter interface", caption: "Filter flow." },
@@ -2451,8 +2463,13 @@ window.EA_ENTITIES = {
           },
           {
             src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png",
+            previewSrc: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-1280.webp",
+            srcset: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-640.webp 640w, ./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop-1280.webp 1280w, ./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png 3456w",
+            sizes: "(max-width: 48rem) 92vw, 44vw",
             alt: "PageSpeed Insights desktop result",
             caption: "Desktop performance snapshot.",
+            width: 3456,
+            height: 1992,
           },
           {
             src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-mobile.png",

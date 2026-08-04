@@ -51,6 +51,16 @@ const projectSources = [
   "assets/js/core/behaviors.js",
   "assets/js/core/project.js",
 ];
+const graphSources = [
+  "assets/js/core/graph-page.js",
+  "assets/js/core/context-menu.js",
+  "assets/js/core/editorial.js",
+];
+const searchSources = [
+  "assets/js/core/search-page.js",
+  "assets/js/core/context-menu.js",
+  "assets/js/core/editorial.js",
+];
 
 const buildTranslationsFor = async (patterns) => {
   const source = await readFile(path.join(rootDir, "assets/js/core/i18n.js"), "utf8");
@@ -272,6 +282,18 @@ const fullRuntimeCatalog = generatedCatalog ? {
   relations: (generatedCatalog.relations || []).map(({ id, subject, predicate, object }) => ({ id, subject, predicate, object })),
   routes: generatedCatalog.routes || {},
 } : null;
+const graphRuntimeCatalog = generatedCatalog ? {
+  entities: (generatedCatalog.entities || []).map((entity) => compactEntity(entity, [
+    "id", "translationOf", "locale", "type", "title", "summary", "visibility", "route",
+  ])),
+  relations: (generatedCatalog.relations || []).map(({ subject, object }) => ({ subject, object })),
+} : { entities: [], relations: [] };
+const searchRuntimeCatalog = generatedCatalog ? {
+  entities: (generatedCatalog.entities || []).map((entity) => compactEntity(entity, [
+    "id", "translationOf", "locale", "type", "title", "subtitle", "summary", "abstract",
+    "status", "tags", "discipline", "category", "visibility", "route",
+  ])),
+} : { entities: [] };
 const researchAtlasQuestions = (generatedCatalog?.entities || [])
   .filter((entity) => entity.type === "researchQuestion")
   .map((entity) => compactEntity(entity, researchAtlasEntityKeys));
@@ -326,9 +348,52 @@ const writeRuntime = async (destination, catalog) => {
   await writeFile(path.join(rootDir, destination), await minify(`${chunks.join("\n\n")}\n`, "js"));
 };
 
+await writeRuntime("assets/js/app.js", runtimeCatalog);
+
+const explorerTranslations = await buildTranslationsFor([
+  "fr/graph.html", "fr/search.html", "assets/js/core/graph-page.js", "assets/js/core/search-page.js",
+]);
 await Promise.all([
-  writeRuntime("assets/js/app.js", runtimeCatalog),
-  writeRuntime("assets/js/app-full.js", fullRuntimeCatalog),
+  bundle(
+    graphSources,
+    "assets/js/graph.js",
+    `/* Generated route-scoped knowledge graph runtime. */
+window.EA_EDITORIAL_TRANSLATIONS=${JSON.stringify(explorerTranslations)};
+window.EA_GRAPH_CATALOG=${JSON.stringify(graphRuntimeCatalog)};`,
+    "js",
+  ),
+  bundle(
+    searchSources,
+    "assets/js/search.js",
+    `/* Generated route-scoped legacy search runtime. */
+window.EA_EDITORIAL_TRANSLATIONS=${JSON.stringify(explorerTranslations)};
+window.EA_SEARCH_CATALOG=${JSON.stringify(searchRuntimeCatalog)};`,
+    "js",
+  ),
+]);
+
+const explorerSafelist = {
+  greedy: [
+    /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
+    /ambient-field/, /scroll-progress/, /command-/, /ux-dock/, /toast/,
+    /language-switcher/, /site-context-menu/, /consent-banner/, /flow-progress/,
+    /reveal-/, /card-link/, /global-graph/, /catalog-/,
+  ],
+};
+const buildExplorerCss = async (page, runtime, destination) => {
+  const [result] = await new PurgeCSS().purge({
+    content: [
+      `${page}.html`, `fr/${page}.html`, "assets/partials/header.html", "assets/partials/footer.html",
+      flowSource, runtime, "assets/js/core/editorial.js", "assets/js/core/context-menu.js",
+    ].map((file) => path.join(rootDir, file)),
+    css: [publishedCssPath],
+    safelist: explorerSafelist,
+  });
+  await writeFile(path.join(rootDir, destination), await minify(result.css, "css"));
+};
+await Promise.all([
+  buildExplorerCss("graph", "assets/js/core/graph-page.js", "assets/css/graph.css"),
+  buildExplorerCss("search", "assets/js/core/search-page.js", "assets/css/search.css"),
 ]);
 
 process.stdout.write("Built minified CSS and route-scoped JavaScript bundles\n");
