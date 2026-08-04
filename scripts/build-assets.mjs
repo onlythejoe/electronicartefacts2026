@@ -167,7 +167,7 @@ const [homeCss] = await new PurgeCSS().purge({
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
-      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-/, /ux-dock/,
+      /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
       /consent-banner/, /flow-progress/, /reveal-/, /card-link/, /card-media-plate/,
       /graph-surface/, /home-intent-stage/, /intent-hero/, /latests-/,
@@ -190,7 +190,7 @@ const [projectCss] = await new PurgeCSS().purge({
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
-      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-/, /ux-dock/,
+      /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
       /consent-banner/, /flow-progress/, /reveal-/, /card-link/,
       /data-media-state/, /data-spotlight/,
@@ -239,7 +239,7 @@ const [editorialCss] = await new PurgeCSS().purge({
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
-      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-palette/, /ux-dock/,
+      /ambient-field/, /scroll-progress/, /command-palette/, /ux-dock/,
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/,
     ],
   },

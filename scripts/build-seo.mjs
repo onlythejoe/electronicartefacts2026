@@ -414,19 +414,19 @@ for (const [file, config] of Object.entries(pages)) {
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   const performanceStyles = file === "index.html" ? `<!-- PERFORMANCE_STYLES_START -->
-    <link rel="stylesheet" href="/assets/css/home.css?v=2" />
-    <!-- PERFORMANCE_STYLES_END -->` : '<link rel="stylesheet" href="/assets/css/app.css?v=88" />';
+    <link rel="stylesheet" href="/assets/css/home.css?v=3" />
+    <!-- PERFORMANCE_STYLES_END -->` : '<link rel="stylesheet" href="/assets/css/app.css?v=89" />';
   html = html.replace(
     /<!-- PERFORMANCE_STYLES_START -->[\s\S]*?<!-- PERFORMANCE_STYLES_END -->|<link\s+rel="stylesheet"\s+href="(?:\.\/|\/)assets\/css\/app\.css\?v=\d+"\s*\/>/,
     performanceStyles,
   );
   const runtime = ["graph.html", "search.html"].includes(file) ? "app-full.js" : "app.js";
   const runtimeBoot = file === "index.html"
-    ? `{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/${runtime}?v=75"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}`
-    : `{const boot=()=>import("/assets/js/${runtime}?v=75");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}`;
+    ? `{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/${runtime}?v=76"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}`
+    : `{const boot=()=>import("/assets/js/${runtime}?v=76");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}`;
   const performanceRuntime = `<!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script defer src="/assets/js/flow.js?v=1"></script>
+    <script defer src="/assets/js/flow.js?v=2"></script>
     <script type="module">${runtimeBoot}</script>
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(

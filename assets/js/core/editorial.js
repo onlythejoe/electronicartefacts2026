@@ -215,37 +215,6 @@
     });
   };
 
-  const initCursor = () => {
-    if (!finePointer) return;
-    document.documentElement.classList.add("has-desktop-cursor");
-    const cursor = document.createElement("div");
-    cursor.className = "ea-cursor";
-    cursor.ariaHidden = "true";
-    body.append(cursor);
-    let frame = 0;
-    let x = innerWidth / 2;
-    let y = innerHeight / 2;
-    let targetX = x;
-    let targetY = y;
-    const render = () => {
-      frame = 0;
-      x += (targetX - x) * 0.3;
-      y += (targetY - y) * 0.3;
-      cursor.style.transform = `translate3d(${x}px,${y}px,0) translate(-50%,-50%)`;
-      if (Math.abs(targetX - x) > 0.2 || Math.abs(targetY - y) > 0.2) frame = requestAnimationFrame(render);
-    };
-    document.addEventListener("pointermove", (event) => {
-      targetX = event.clientX;
-      targetY = event.clientY;
-      cursor.style.opacity = "1";
-      cursor.classList.toggle("is-interactive", Boolean(event.target.closest?.("a,button,input,summary,[role=button]")));
-      cursor.classList.toggle("is-text", Boolean(event.target.closest?.("p,h1,h2,h3,li,blockquote,figcaption")));
-      if (!frame) frame = requestAnimationFrame(render);
-    }, { passive: true });
-    document.addEventListener("pointerdown", () => cursor.classList.add("is-pressed"));
-    document.addEventListener("pointerup", () => cursor.classList.remove("is-pressed"));
-  };
-
   const toast = (message) => {
     let stack = document.querySelector("[data-toast-stack]");
     if (!stack) {
@@ -340,7 +309,6 @@
   initScroll();
   initReveal();
   initAmbient();
-  initCursor();
   initEngagement();
   document.querySelectorAll(".site-main .zone-card").forEach((zone, index) => {
     zone.dataset.zoneIndex = String(index + 1);
