@@ -140,10 +140,17 @@
       }
     };
 
-    const alternates = await fetchAlternates();
     const currentUrl = new URL(window.location.href, window.location.origin);
     const currentPath = normalizePath(currentUrl.href);
-    const currentAlternates = alternates[currentPath] || alternates[normalizePath(currentPath)] || { [routeLocale(currentPath)]: currentPath };
+    const linkedAlternates = Object.fromEntries(
+      [...(document.querySelectorAll?.('link[rel="alternate"][hreflang]') || [])]
+        .filter((link) => supported.includes(link.hreflang))
+        .map((link) => [link.hreflang, normalizePath(link.href)]),
+    );
+    const alternates = Object.keys(linkedAlternates).length ? null : await fetchAlternates();
+    const currentAlternates = Object.keys(linkedAlternates).length
+      ? linkedAlternates
+      : alternates?.[currentPath] || alternates?.[normalizePath(currentPath)] || { [routeLocale(currentPath)]: currentPath };
     const preserveCurrentUrlState = (target) => {
       const targetUrl = new URL(target, window.location.origin);
       if (!targetUrl.search && currentUrl.search) targetUrl.search = currentUrl.search;
@@ -1848,6 +1855,7 @@
       let pointerY = 0.5;
       let pointerActive = false;
       let animationFrame = 0;
+      let visible = !("IntersectionObserver" in window);
 
       const resize = () => {
         const rect = signal.getBoundingClientRect();
@@ -1897,7 +1905,14 @@
         context.strokeStyle = profile.color;
         context.stroke();
 
-        if (!reduceMotion && experience.isConnected) animationFrame = window.requestAnimationFrame(draw);
+        if (!reduceMotion && visible && !document.hidden && experience.isConnected) animationFrame = window.requestAnimationFrame(draw);
+      };
+
+      const syncAnimation = () => {
+        window.cancelAnimationFrame(animationFrame);
+        animationFrame = 0;
+        if (reduceMotion || !visible || document.hidden || !experience.isConnected) return;
+        animationFrame = window.requestAnimationFrame(draw);
       };
 
       const activate = (tab) => {
@@ -1956,10 +1971,16 @@
       resize();
       draw();
 
+      if ("IntersectionObserver" in window) {
+        const visibilityObserver = new IntersectionObserver(([entry]) => {
+          visible = Boolean(entry?.isIntersecting);
+          syncAnimation();
+        }, { rootMargin: "160px 0px" });
+        visibilityObserver.observe(experience);
+      }
+
       document.addEventListener("visibilitychange", () => {
-        if (document.hidden || reduceMotion) return;
-        window.cancelAnimationFrame(animationFrame);
-        animationFrame = window.requestAnimationFrame(draw);
+        syncAnimation();
       });
     });
 
@@ -2054,6 +2075,47 @@
         if (statement) statement.textContent = node.dataset.relationStatement || "";
       };
       nodes.forEach((node) => node.addEventListener("click", () => activate(node)));
+    });
+  };
+
+  const initPalimpsestsBoard = (root = document) => {
+    root.querySelectorAll("[data-palimpsests-board]").forEach((board) => {
+      if (board.dataset.boundPalimpsestsBoard === "true") return;
+      board.dataset.boundPalimpsestsBoard = "true";
+      const filters = [...board.querySelectorAll("[data-board-filter]")];
+      const items = [...board.querySelectorAll("[data-board-item]")];
+      const dialog = board.querySelector("[data-board-dialog]");
+      const dialogImage = dialog?.querySelector("[data-board-dialog-image]");
+      filters.forEach((button) => button.addEventListener("click", () => {
+        const filter = button.dataset.boardFilter || "all";
+        filters.forEach((candidate) => {
+          const active = candidate === button;
+          candidate.classList.toggle("is-active", active);
+          candidate.setAttribute("aria-pressed", String(active));
+        });
+        items.forEach((item) => {
+          item.hidden = filter !== "all" && item.dataset.boardItem !== filter;
+        });
+      }));
+      items.forEach((item) => item.addEventListener("click", () => {
+        const image = item.querySelector("img");
+        if (!dialog || !image || !dialogImage) return;
+        dialogImage.src = image.currentSrc || image.src;
+        dialogImage.alt = image.alt;
+        const copy = (selector) => item.querySelector(selector)?.textContent || "";
+        const set = (selector, value) => {
+          const target = dialog.querySelector(selector);
+          if (target) target.textContent = value;
+        };
+        set("[data-board-dialog-kind]", copy("em"));
+        set("[data-board-dialog-title]", copy("strong") || image.alt);
+        set("[data-board-dialog-note]", copy("small"));
+        dialog.showModal?.();
+      }));
+      dialog?.querySelector("[data-board-close]")?.addEventListener("click", () => dialog.close());
+      dialog?.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
     });
   };
 
@@ -3074,6 +3136,7 @@
     initIntentHeroes,
     initUXEnhancements,
     initProjectButterflies,
+    initPalimpsestsBoard,
     animateContentRefresh,
     refreshCardSurfaces,
     syncNavigationState,

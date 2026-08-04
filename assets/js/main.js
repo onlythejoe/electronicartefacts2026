@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initEngagementPanels, initPalimpsestsBoard, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const { init: initContextMenu } = window.EA_CONTEXT_MENU || {};
   const {
     cardBaseAttrs,
@@ -4959,32 +4959,6 @@
       compactGraphQuery.addListener(applyIdleEdgeDensity);
     }
     resetInspector();
-  };
-
-  const initPalimpsestsBoard = () => {
-    document.querySelectorAll("[data-palimpsests-board]").forEach((board) => {
-      const filters = [...board.querySelectorAll("[data-board-filter]")];
-      const items = [...board.querySelectorAll("[data-board-item]")];
-      const dialog = board.querySelector("[data-board-dialog]");
-      const dialogImage = dialog?.querySelector("[data-board-dialog-image]");
-      filters.forEach((button) => button.addEventListener("click", () => {
-        const filter = button.dataset.boardFilter || "all";
-        filters.forEach((candidate) => { const active = candidate === button; candidate.classList.toggle("is-active", active); candidate.setAttribute("aria-pressed", String(active)); });
-        items.forEach((item) => { item.hidden = filter !== "all" && item.dataset.boardItem !== filter; });
-      }));
-      items.forEach((item) => item.addEventListener("click", () => {
-        const image = item.querySelector("img");
-        if (!dialog || !image || !dialogImage) return;
-        dialogImage.src = image.currentSrc || image.src;
-        dialogImage.alt = image.alt;
-        const copy = (selector) => item.querySelector(selector)?.textContent || "";
-        const set = (selector, value) => { const target = dialog.querySelector(selector); if (target) target.textContent = value; };
-        set("[data-board-dialog-kind]", copy("em")); set("[data-board-dialog-title]", copy("strong") || image.alt); set("[data-board-dialog-note]", copy("small"));
-        dialog.showModal?.();
-      }));
-      dialog?.querySelector("[data-board-close]")?.addEventListener("click", () => dialog.close());
-      dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
-    });
   };
 
   const initPageInteractions = () => {

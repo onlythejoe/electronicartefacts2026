@@ -46,8 +46,13 @@ const editorialSources = [
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
 ];
+const projectSources = [
+  "assets/js/core/context-menu.js",
+  "assets/js/core/behaviors.js",
+  "assets/js/core/project.js",
+];
 
-const buildEditorialTranslations = async () => {
+const buildTranslationsFor = async (patterns) => {
   const source = await readFile(path.join(rootDir, "assets/js/core/i18n.js"), "utf8");
   const marker = "  const french = ";
   const start = source.indexOf(marker);
@@ -55,10 +60,7 @@ const buildEditorialTranslations = async () => {
   if (start < 0 || end < 0) throw new Error("Unable to extract the French runtime dictionary");
   const dictionarySource = source.slice(start, end);
   const dictionary = vm.runInNewContext(`(() => {${dictionarySource}; return french;})()`);
-  const files = await fg([
-    "fr/archive/**/*.html", "fr/knowledge/**/*.html", "fr/publications/**/*.html", "fr/research/**/*.html",
-    "fr/organizations/**/*.html", "fr/programs/**/*.html",
-  ], { cwd: rootDir, absolute: true });
+  const files = await fg(patterns, { cwd: rootDir, absolute: true });
   const corpus = (await Promise.all(files.map((file) => readFile(file, "utf8")))).join("\n");
   return Object.fromEntries(Object.entries(dictionary).filter(([english]) => corpus.includes(english)));
 };
@@ -162,22 +164,67 @@ const [homeCss] = await new PurgeCSS().purge({
   content: ["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html", flowSource]
     .map((file) => path.join(rootDir, file)),
   css: [publishedCssPath],
-  safelist: { greedy: [/\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/] },
+  safelist: {
+    greedy: [
+      /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
+      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-/, /ux-dock/,
+      /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
+      /consent-banner/, /flow-progress/, /reveal-/, /card-link/, /card-media-plate/,
+      /graph-surface/, /home-intent-stage/, /intent-hero/, /latests-/,
+      /metric-pill/, /metric-rail/, /pill-cloud/, /program-card/,
+      /project-butterfly/, /project-card/, /project-meg-badge/,
+      /research-atlas/, /selected-works/, /signature-banner/,
+      /status-badge/, /taxonomy-pill/, /vast-banner/, /vast-engine/,
+      /data-media-state/, /data-spotlight/,
+    ],
+  },
 });
 await writeFile(path.join(rootDir, "assets/css/home.css"), await minify(homeCss.css, "css"));
 const [projectCss] = await new PurgeCSS().purge({
-  content: ["projects/**/*.html", "fr/projects/**/*.html", "assets/partials/header.html", "assets/partials/footer.html"]
+  content: [
+    "projects/**/*.html", "fr/projects/**/*.html", "assets/partials/header.html", "assets/partials/footer.html",
+    flowSource, "assets/js/core/project.js", "assets/js/core/context-menu.js",
+  ]
     .map((pattern) => path.join(rootDir, pattern)),
   css: [publishedCssPath],
-  safelist: { greedy: [/\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/] },
+  safelist: {
+    greedy: [
+      /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
+      /ambient-field/, /scroll-progress/, /ea-cursor/, /command-/, /ux-dock/,
+      /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
+      /consent-banner/, /flow-progress/, /reveal-/, /card-link/,
+      /data-media-state/, /data-spotlight/,
+    ],
+  },
 });
 await writeFile(path.join(rootDir, "assets/css/project.css"), await minify(projectCss.css, "css"));
 await bundle([flowSource], "assets/js/flow.js", "/* Generated critical navigation and loading runtime. */", "js");
-const editorialTranslations = await buildEditorialTranslations();
+const editorialTranslations = await buildTranslationsFor([
+  "fr/archive/**/*.html", "fr/knowledge/**/*.html", "fr/publications/**/*.html", "fr/research/**/*.html",
+  "fr/organizations/**/*.html", "fr/programs/**/*.html",
+]);
 await bundle(
   editorialSources,
   "assets/js/editorial.js",
   `/* Generated route-scoped editorial runtime. */\nwindow.EA_EDITORIAL_TRANSLATIONS=${JSON.stringify(editorialTranslations)};`,
+  "js",
+);
+const projectTranslations = await buildTranslationsFor([
+  "fr/projects/**/*.html", "assets/js/core/behaviors.js",
+]);
+await bundle(
+  projectSources,
+  "assets/js/project.js",
+  `/* Generated route-scoped project runtime. */
+window.EA_PROJECT_TRANSLATIONS=${JSON.stringify(projectTranslations)};
+window.EA_UTILS=Object.freeze({
+  esc:(value)=>String(value??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;"),
+  slugify:(value)=>String(value??"").toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").replace(/['’]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")
+});
+window.EA_I18N=Object.freeze({
+  locale:document.documentElement.lang==="fr"||location.pathname.startsWith("/fr/")?"fr":"en",
+  translateText:(value)=>window.EA_PROJECT_TRANSLATIONS[value]||value
+});`,
   "js",
 );
 const [editorialCss] = await new PurgeCSS().purge({

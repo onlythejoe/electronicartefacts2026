@@ -4,6 +4,8 @@
   if (!body || body.dataset.boundFlowRuntime === "true") return;
   body.dataset.boundFlowRuntime = "true";
   root.classList.add("has-flow-runtime");
+  const year = document.getElementById("current-year");
+  if (year) year.textContent = String(new Date().getFullYear());
   performance.mark?.("ea:flow-ready");
 
   const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? true;
