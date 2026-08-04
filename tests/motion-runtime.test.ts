@@ -74,7 +74,7 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(home, /assets\/css\/home\.css\?v=3/);
   assert.doesNotMatch(home, /assets\/css\/app\.css/);
   assert.match(home, /assets\/js\/flow\.js\?v=2/);
-  assert.match(home, /assets\/js\/app\.js\?v=76/);
+  assert.match(home, /assets\/js\/app\.js\?v=77/);
   assert.match(home, /\["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"\]/);
   assert.match(home, /data-language-trigger/);
   assert.match(project, /assets\/css\/project\.css\?v=3/);
@@ -88,6 +88,6 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(publication, /assets\/js\/editorial\.js\?v=2/);
   assert.match(canonicalSearch, /assets\/js\/editorial\.js\?v=2/);
   assert.doesNotMatch(canonicalSearch, /assets\/js\/app(?:-full)?\.js/);
-  assert.match(graph, /assets\/js\/app-full\.js\?v=76/);
-  assert.match(search, /assets\/js\/app-full\.js\?v=76/);
+  assert.match(graph, /assets\/js\/app-full\.js\?v=77/);
+  assert.match(search, /assets\/js\/app-full\.js\?v=77/);
 });

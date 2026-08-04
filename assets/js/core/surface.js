@@ -373,11 +373,16 @@
     return {
       byId: Object.fromEntries(records.map((item) => [item.id, item])),
       byLegacyId: Object.fromEntries(records.filter((item) => item.legacyId).map((item) => [item.legacyId, item])),
+      localizedBySourceId: Object.fromEntries(
+        records
+          .filter((item) => item.locale === pageLocale && item.translationOf)
+          .map((item) => [item.translationOf, item]),
+      ),
     };
   };
   const recordForRef = (ref, indexes = recordIndexes()) => {
     const id = typeof ref === "string" ? ref : ref?.id;
-    return indexes.byId[id] || indexes.byLegacyId[id] || null;
+    return indexes.localizedBySourceId[id] || indexes.byId[id] || indexes.byLegacyId[id] || null;
   };
   const routeForRecord = (record) => record?.route || catalog.routeFor?.(record?.id) || "";
   const researchQuestions = () => {

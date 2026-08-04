@@ -190,14 +190,24 @@ test("localized catalog-only projects do not duplicate migrated projects", async
   assert.deepEqual(Array.from(catalog.projects, (project) => project.title), ["Voice Capture Studio", "InnerSide"]);
 });
 
-test("the route-scoped runtime carries canonical project-only records", async () => {
-  const source = await readFile(path.resolve("scripts/build-assets.mjs"), "utf8");
+test("the route-scoped runtime carries projects and the complete compact research atlas", async () => {
+  const [source, surface] = await Promise.all([
+    readFile(path.resolve("scripts/build-assets.mjs"), "utf8"),
+    readFile(path.resolve("assets/js/core/surface.js"), "utf8"),
+  ]);
   const bundle = await readFile(path.resolve("assets/js/app.js"), "utf8");
 
   assert.match(source, /"publicationClass", "category", "tags"/);
-  assert.match(source, /entity\.type === "researchQuestion" \|\| entity\.type === "project"/);
+  assert.match(source, /const researchAtlasReferenceIds = new Set/);
+  assert.match(source, /"updated", "observation", "hypothesis", "currentUnderstanding"/);
+  assert.match(source, /researchAtlasReferenceIds\.has\(entity\.translationOf\)/);
+  assert.match(surface, /localizedBySourceId/);
   assert.match(bundle, /ea:project:innerside/);
   assert.match(bundle, /legacyId:"innerside"/);
+  assert.match(bundle, /currentUnderstanding/);
+  assert.match(bundle, /relatedProjects/);
+  assert.match(bundle, /ea:concept:ai-agent/);
+  assert.match(bundle, /ea:program:vaste/);
 });
 
 test("canonical content consistently uses the Vestiges project name", async () => {
