@@ -60,6 +60,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:studio-fr",
+      "type": "collection",
+      "title": "Studio",
+      "route": "/fr/archive/collections/studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:voice-capture-studio-fr",
       "type": "collection",
       "title": "Collection Voice Capture Studio",
@@ -129,6 +137,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-studio",
+      "source": "ea:concept:open-source-fr",
+      "target": "ea:collection:studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Studio collection.",
       "confidence": "canonical"
     },
     {

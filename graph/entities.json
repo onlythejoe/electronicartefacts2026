@@ -296,6 +296,43 @@
     }
   },
   {
+    "id": "ea:collection:studio",
+    "legacyId": "studio",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "en",
+    "title": "Studio",
+    "subtitle": "Open-Source Software Series",
+    "summary": "Studio is Electronic Artefacts’ open-source software series: local-first browser instruments that turn specialist creative workflows into inspectable, portable and freely usable tools.",
+    "description": "An editorial collection for the open-source Studio line, beginning with Voice Capture Studio and prepared to receive Spatial Mapping Studio as its public record matures.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Studio",
+      "Open Source",
+      "Local First",
+      "Browser Software",
+      "Creative Tools"
+    ],
+    "discipline": [
+      "Web Development",
+      "Human Computer Interaction",
+      "Open Source",
+      "Creative Technology"
+    ],
+    "route": "/archive/collections/studio/",
+    "identifier": "/id/collection/studio/",
+    "temporality": {
+      "creationDate": "2026-08-17",
+      "lastUpdated": "2026-08-17",
+      "releaseDate": "2026-08-17",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:collection:voice-capture-studio",
     "legacyId": "voice-capture-studio",
     "kind": "collection",
@@ -2294,6 +2331,44 @@
       "creationDate": "2026-06-24",
       "lastUpdated": "2026-07-04",
       "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:collection:studio-fr",
+    "legacyId": "studio-fr",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "fr",
+    "translationOf": "ea:collection:studio",
+    "title": "Studio",
+    "subtitle": "Série de logiciels open source",
+    "summary": "Studio est la série de logiciels open source d’Electronic Artefacts : des instruments de navigateur local-first qui transforment des pratiques créatives spécialisées en outils inspectables, portables et librement utilisables.",
+    "description": "Collection éditoriale de la gamme Studio open source, ouverte avec Voice Capture Studio et préparée pour accueillir Spatial Mapping Studio lorsque sa fiche publique aura la maturité nécessaire.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Studio",
+      "open source",
+      "local-first",
+      "logiciel de navigateur",
+      "outils créatifs"
+    ],
+    "discipline": [
+      "développement web",
+      "interaction humain-machine",
+      "open source",
+      "technologie créative"
+    ],
+    "route": "/fr/archive/collections/studio/",
+    "identifier": "/fr/id/collection/studio/",
+    "temporality": {
+      "creationDate": "2026-08-17",
+      "lastUpdated": "2026-08-17",
+      "releaseDate": "2026-08-17",
       "creationYear": "2026"
     }
   },
@@ -4398,7 +4473,7 @@
     "identifier": "/fr/id/project/voice-capture-studio/",
     "temporality": {
       "creationDate": "2026-07-09",
-      "lastUpdated": "2026-07-18",
+      "lastUpdated": "2026-08-17",
       "releaseDate": "2026-07-09",
       "creationYear": "2026"
     }
@@ -7896,7 +7971,7 @@
     "identifier": "/id/project/voice-capture-studio/",
     "temporality": {
       "creationDate": "2026-07-09",
-      "lastUpdated": "2026-07-18",
+      "lastUpdated": "2026-08-17",
       "releaseDate": "2026-07-09",
       "creationYear": "2026"
     }

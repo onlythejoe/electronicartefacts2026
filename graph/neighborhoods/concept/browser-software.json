@@ -36,6 +36,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:studio",
+      "type": "collection",
+      "title": "Studio",
+      "route": "/archive/collections/studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:voice-capture-studio",
       "type": "collection",
       "title": "Voice Capture Studio Collection",
@@ -86,6 +94,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-software-member-of-collection-studio",
+      "source": "ea:concept:browser-software",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Browser Software is an explicit member of the Studio collection.",
       "confidence": "validated"
     },
     {

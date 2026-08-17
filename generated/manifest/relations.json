@@ -4828,6 +4828,61 @@
     "visibility": "public"
   },
   {
+    "id": "ear:voice-capture-studio-member-of-collection-studio",
+    "subject": "ea:project:voice-capture-studio",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:studio",
+    "statement": "Voice Capture Studio is an explicit member of the Studio collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-09",
+    "reviewedAt": "2026-08-17",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:voice-capture-studio-repository-member-of-collection-studio",
+    "subject": "ea:artefact:voice-capture-studio-repository",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:studio",
+    "statement": "Voice Capture Studio Repository is an explicit member of the Studio collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-09",
+    "reviewedAt": "2026-07-18",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:open-source-member-of-collection-studio",
+    "subject": "ea:concept:open-source",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:studio",
+    "statement": "Open Source is an explicit member of the Studio collection.",
+    "confidence": "canonical",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-software-member-of-collection-studio",
+    "subject": "ea:concept:browser-software",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:studio",
+    "statement": "Browser Software is an explicit member of the Studio collection.",
+    "confidence": "validated",
+    "createdAt": "2026-07-09",
+    "reviewedAt": "2026-07-09",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:provenance-member-of-collection-studio",
+    "subject": "ea:concept:provenance",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:studio",
+    "statement": "Provenance is an explicit member of the Studio collection.",
+    "confidence": "validated",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-06-23",
+    "visibility": "public"
+  },
+  {
     "id": "ear:speech-recording-member-of-collection-voice-capture-studio",
     "subject": "ea:concept:speech-recording",
     "predicate": "memberOfCollection",

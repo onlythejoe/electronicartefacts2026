@@ -18,8 +18,8 @@ version:
   version: 2.1.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-18"
-  changeSummary: Publication de la couche Connaissance en six articles et connexion du dossier à son voisinage éditorial complet.
+  modifiedAt: "2026-08-17"
+  changeSummary: Publication de la couche Connaissance en six articles, connexion du dossier à son voisinage éditorial complet et à la série de logiciels open source Studio.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -169,6 +169,12 @@ featured: true
 Voice Capture Studio est un instrument vocal local-first qui fonctionne dans le navigateur. Il réunit désormais cinq workflows distincts : enregistrement immédiat, production de corpus ML, doublage à l’image, interprétation avec support séparé et découpe mot à mot d’un audio ou d’une vidéo locale.
 
 L’application est disponible sur [electronicartefacts.github.io/voice-capture-studio](https://electronicartefacts.github.io/voice-capture-studio/) et le code source est public sur [github.com/electronicartefacts/voice-capture-studio](https://github.com/electronicartefacts/voice-capture-studio).
+
+## Gamme Studio
+
+Voice Capture Studio est la première application publiée de [Studio](/fr/archive/collections/studio/), la gamme de logiciels open source d’Electronic Artefacts. Le lien relève d’une même éthique de fonctionnement, non d’une coque produit partagée : des outils spécialisés doivent rester utilisables de façon autonome, local-first lorsque c’est possible, sans publicité, publiés avec un code inspectable et capables d’exporter des matériaux durables vers d’autres workflows.
+
+La prochaine fiche prévue, Spatial Mapping Studio, aborde un autre matériau — payloads 3D finaux et régions sémantiques — sans déplacer ces engagements. Son travail V0 n’est ni une intégration avec Voice Capture Studio, ni une intégration avec Forge ; il établit une frontière de mapping portable sur laquelle des workflows ultérieurs pourront s’appuyer.
 
 ## L’expérience fait partie de l’instrument
 

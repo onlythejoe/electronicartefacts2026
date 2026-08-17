@@ -9,8 +9,8 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 274
-- Last curated source update: 2026-08-04
+- Public records: 276
+- Last curated source update: 2026-08-17
 
 ## organization
 
@@ -108,13 +108,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:project:voice-capture-studio-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/voice-capture-studio/
   - JSON-LD: https://electronicartefacts.com/fr/id/project/voice-capture-studio/index.jsonld
-  - Modified: 2026-07-18
+  - Modified: 2026-08-17
   - Keywords: Voice Capture Studio, enregistrement vocal, dataset vocal, logiciel de navigateur, Web Audio, open source, local-first, vie privée
 - [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A signal-grounded voice studio in the browser, combining five capture and segmentation modes, glass-like interaction design, deterministic evidence pipelines and open WAV/metadata exports.
   - Entity ID: ea:project:voice-capture-studio
   - Identifier: https://electronicartefacts.com/id/project/voice-capture-studio/
   - JSON-LD: https://electronicartefacts.com/id/project/voice-capture-studio/index.jsonld
-  - Modified: 2026-07-18
+  - Modified: 2026-08-17
   - Keywords: Voice Capture Studio, Speech Recording, Voice Dataset, Browser Software, Web Audio, Open Source, Local First, Privacy
 
 ## research field
@@ -1643,6 +1643,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-third-wave/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Knowledge Hub Third Wave, Knowledge Hub, Third Wave, Artificial Intelligence, Systems Architecture, Graph Computing, Systems Design, Knowledge Systems
+- [Studio](https://electronicartefacts.com/archive/collections/studio/): An editorial collection for the open-source Studio line, beginning with Voice Capture Studio and prepared to receive Spatial Mapping Studio as its public record matures.
+  - Entity ID: ea:collection:studio
+  - Identifier: https://electronicartefacts.com/id/collection/studio/
+  - JSON-LD: https://electronicartefacts.com/id/collection/studio/index.jsonld
+  - Modified: 2026-08-17
+  - Keywords: Studio, Open Source, Local First, Browser Software, Creative Tools, Web Development, Human Computer Interaction, Creative Technology
+- [Studio](https://electronicartefacts.com/fr/archive/collections/studio/): Collection éditoriale de la gamme Studio open source, ouverte avec Voice Capture Studio et préparée pour accueillir Spatial Mapping Studio lorsque sa fiche publique aura la maturité nécessaire.
+  - Entity ID: ea:collection:studio-fr
+  - Identifier: https://electronicartefacts.com/fr/id/collection/studio/
+  - JSON-LD: https://electronicartefacts.com/fr/id/collection/studio/index.jsonld
+  - Modified: 2026-08-17
+  - Keywords: Studio, open source, local-first, logiciel de navigateur, outils créatifs, développement web, interaction humain-machine, technologie créative
 - [Voice Capture Studio Collection](https://electronicartefacts.com/archive/collections/voice-capture-studio/): A curated collection around Voice Capture Studio as a browser-native voice instrument and research surface.
   - Entity ID: ea:collection:voice-capture-studio
   - Identifier: https://electronicartefacts.com/id/collection/voice-capture-studio/

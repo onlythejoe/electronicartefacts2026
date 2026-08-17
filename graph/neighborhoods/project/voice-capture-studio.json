@@ -148,6 +148,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:studio",
+      "type": "collection",
+      "title": "Studio",
+      "route": "/archive/collections/studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:browser-as-a-local-first-voice-studio",
       "type": "publication",
       "title": "The Browser as a Local-First Voice Studio",
@@ -399,6 +407,15 @@
       "predicate": "implementedBy",
       "label": "Implemented by",
       "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-member-of-collection-studio",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Capture Studio is an explicit member of the Studio collection.",
       "confidence": "published"
     },
     {

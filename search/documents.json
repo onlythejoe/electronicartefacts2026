@@ -99,12 +99,14 @@
     "relationLabels": [
       "evidencedBy The public GitHub repository provides source evidence for Voice Capture Studio, including code, documentation, tests and deployment configuration.",
       "documents The Voice Capture Studio repository documents the application architecture, export structure, privacy boundary and GitHub Pages deployment.",
-      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact."
+      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "memberOfCollection Voice Capture Studio Repository is an explicit member of the Studio collection."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
       "ea:project:voice-capture-studio",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:voice-capture-studio",
+      "ea:collection:studio"
     ],
     "status": "active",
     "confidence": "published",
@@ -562,6 +564,48 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:collection:studio",
+    "locale": "en",
+    "route": "/archive/collections/studio/",
+    "type": "collection",
+    "title": "Studio",
+    "alternateNames": [],
+    "abstract": "Studio is Electronic Artefacts’ open-source software series: local-first browser instruments that turn specialist creative workflows into inspectable, portable and freely usable tools.",
+    "headings": [
+      "Thesis",
+      "First instrument",
+      "The next record",
+      "A shared grammar",
+      "How the series grows"
+    ],
+    "body": "Thesis Studio is a software line, not a product suite with a shared account or a closed platform. Each tool starts from a concrete practice and remains independently usable: the source is public, the runtime is browser-native where it serves the work, and user material stays in the user’s hands. First instrument Voice Capture Studio is the first published Studio application. It treats voice capture, review and segmentation as local workflows with open WAV and metadata exports, rather than as a service that absorbs recordings into a remote system. The next record Spatial Mapping Studio is the next planned Studio record. Its current V0 repository defines a local authoring workflow for a final GLB and a portable semantic manifest: an author can select stable triangle regions, name and tag them, then export an artifact.json that a separate viewer can resolve. This is deliberately a preparation note, not a release claim. Scene understanding, automated segmentation, Forge integration and broader downstream integrations remain future directions until they are documented and published in the Spatial Mapping Studio record. A shared grammar The applications do not need the same interface to belong together. Their common grammar is more structural: free and inspectable code; no advertising; no account or cloud dependency as a precondition for the core workflow; explicit local storage and export boundaries; and portable outputs that can move into other tools without giving up their provenance. Forge belongs near this line as a separate internal research system for reproducible artefact pipelines. The intended route is directional rather than a claimed integration: source material can be made into a final, stable 3D payload through Forge-shaped preparation, then Spatial Mapping Studio can attach semantic regions to that final payload. The V0 specification is explicit that topology or triangle order must not change after mapping. How the series grows New Studio records should enter only with a public source, a stated license, an honest maturity label and a useful explanation of what remains local, what is exported and what is not yet implemented. The collection is designed to grow one precise tool at a time.",
+    "tags": [
+      "Studio",
+      "Open Source",
+      "Local First",
+      "Browser Software",
+      "Creative Tools"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection Voice Capture Studio is an explicit member of the Studio collection.",
+      "memberOfCollection Voice Capture Studio Repository is an explicit member of the Studio collection.",
+      "memberOfCollection Open Source is an explicit member of the Studio collection.",
+      "memberOfCollection Browser Software is an explicit member of the Studio collection.",
+      "memberOfCollection Provenance is an explicit member of the Studio collection."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:artefact:voice-capture-studio-repository",
+      "ea:concept:open-source",
+      "ea:concept:browser-software",
+      "ea:concept:provenance"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-08-17"
+  },
+  {
     "id": "ea:collection:voice-capture-studio",
     "locale": "en",
     "route": "/archive/collections/voice-capture-studio/",
@@ -837,6 +881,7 @@
       "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
       "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Studio collection.",
       "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
       "documents The Browser as a Local-First Voice Studio documents Browser Software as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects."
@@ -845,6 +890,7 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
       "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:browser-as-a-local-first-voice-studio",
       "ea:publication:webmcp-and-the-agentic-web"
@@ -2005,6 +2051,7 @@
       "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
       "memberOfCollection Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "memberOfCollection Open Source is an explicit member of the Studio collection.",
       "memberOfCollection Open Source is an explicit member of the Voice Capture Studio Collection collection.",
       "documents The Browser as a Local-First Voice Studio documents Open Source as one of its declared subjects."
     ],
@@ -2015,6 +2062,7 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
       "ea:collection:knowledge-hub-second-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:browser-as-a-local-first-voice-studio"
     ],
@@ -2183,6 +2231,7 @@
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "memberOfCollection Provenance is an explicit member of the Studio collection.",
       "memberOfCollection Provenance is an explicit member of the Voice Capture Studio Collection collection.",
       "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
       "documents Deterministic Research: Deciding Without Turning Estimates into Truth documents Provenance as one of its declared subjects.",
@@ -2209,6 +2258,7 @@
       "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:deterministic-research-and-evidence-fusion",
@@ -2865,12 +2915,14 @@
     "relationLabels": [
       "evidencedBy The public GitHub repository provides source evidence for Voice Capture Studio, including code, documentation, tests and deployment configuration.",
       "documents The Voice Capture Studio repository documents the application architecture, export structure, privacy boundary and GitHub Pages deployment.",
-      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact."
+      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "memberOfCollection Voice Capture Studio Repository is an explicit member of the Studio collection."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
       "ea:project:voice-capture-studio",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:voice-capture-studio",
+      "ea:collection:studio"
     ],
     "status": "active",
     "confidence": "published",
@@ -3328,6 +3380,48 @@
     "modifiedAt": "2026-07-04"
   },
   {
+    "id": "ea:collection:studio-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/studio/",
+    "type": "collection",
+    "title": "Studio",
+    "alternateNames": [],
+    "abstract": "Studio est la série de logiciels open source d’Electronic Artefacts : des instruments de navigateur local-first qui transforment des pratiques créatives spécialisées en outils inspectables, portables et librement utilisables.",
+    "headings": [
+      "Thèse",
+      "Premier instrument",
+      "Prochaine fiche",
+      "Grammaire commune",
+      "Évolution de la gamme"
+    ],
+    "body": "Thèse Studio est une gamme logicielle, non une suite de produits avec compte partagé ni une plateforme fermée. Chaque outil part d’une pratique concrète et reste utilisable de façon autonome : le code est public, le runtime est browser-native quand il sert le travail, et les matériaux des personnes restent entre leurs mains. Premier instrument Voice Capture Studio est la première application Studio publiée. Il traite capture, révision et segmentation de la voix comme des workflows locaux avec exports WAV et métadonnées ouverts, plutôt que comme un service qui absorbe les enregistrements dans une infrastructure distante. Prochaine fiche Spatial Mapping Studio est la prochaine fiche prévue de Studio. Son dépôt V0 définit aujourd’hui un workflow d’auteur local autour d’un GLB final et d’un manifeste sémantique portable : on peut sélectionner des régions triangulaires stables, les nommer et les étiqueter, puis exporter un artifact.json qu’un viewer séparé sait résoudre. Cette mention prépare le terrain ; elle ne constitue pas une promesse de release. Compréhension de scènes, segmentation automatisée, intégration Forge et intégrations aval plus larges restent des directions futures tant qu’elles ne sont pas documentées et publiées dans la fiche Spatial Mapping Studio. Grammaire commune Les applications n’ont pas besoin de partager la même interface pour appartenir à la même gamme. Leur grammaire est plus structurelle : code libre et inspectable ; absence de publicité ; aucun compte ni dépendance cloud comme condition du workflow central ; frontières explicites entre stockage local et export ; sorties portables qui circulent vers d’autres outils sans perdre leur provenance. Forge se situe près de cette gamme comme système de recherche interne pour des pipelines d’artefacts reproductibles. Le trajet envisagé est directionnel, et non une intégration déjà affirmée : un matériau source peut devenir un payload 3D final et stable via une préparation inspirée de Forge ; Spatial Mapping Studio peut ensuite y attacher des régions sémantiques. La spécification V0 précise que topologie et ordre des triangles ne doivent plus changer après le mapping. Évolution de la gamme Une nouvelle fiche Studio ne doit entrer qu’avec une source publique, une licence déclarée, un niveau de maturité honnête et une explication utile de ce qui reste local, de ce qui est exporté et de ce qui n’est pas encore implémenté. La collection est faite pour grandir outil précis après outil précis.",
+    "tags": [
+      "Studio",
+      "open source",
+      "local-first",
+      "logiciel de navigateur",
+      "outils créatifs"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection Voice Capture Studio is an explicit member of the Studio collection.",
+      "memberOfCollection Voice Capture Studio Repository is an explicit member of the Studio collection.",
+      "memberOfCollection Open Source is an explicit member of the Studio collection.",
+      "memberOfCollection Browser Software is an explicit member of the Studio collection.",
+      "memberOfCollection Provenance is an explicit member of the Studio collection."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:artefact:voice-capture-studio-repository",
+      "ea:concept:open-source",
+      "ea:concept:browser-software",
+      "ea:concept:provenance"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-08-17"
+  },
+  {
     "id": "ea:collection:voice-capture-studio-fr",
     "locale": "fr",
     "route": "/fr/archive/collections/voice-capture-studio/",
@@ -3598,6 +3692,7 @@
       "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
       "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Studio collection.",
       "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
       "documents The Browser as a Local-First Voice Studio documents Browser Software as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects."
@@ -3606,6 +3701,7 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
       "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:browser-as-a-local-first-voice-studio",
       "ea:publication:webmcp-and-the-agentic-web"
@@ -4734,6 +4830,7 @@
       "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
       "memberOfCollection Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "memberOfCollection Open Source is an explicit member of the Studio collection.",
       "memberOfCollection Open Source is an explicit member of the Voice Capture Studio Collection collection.",
       "documents The Browser as a Local-First Voice Studio documents Open Source as one of its declared subjects."
     ],
@@ -4744,6 +4841,7 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
       "ea:collection:knowledge-hub-second-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:browser-as-a-local-first-voice-studio"
     ],
@@ -4905,6 +5003,7 @@
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "memberOfCollection Provenance is an explicit member of the Studio collection.",
       "memberOfCollection Provenance is an explicit member of the Voice Capture Studio Collection collection.",
       "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
       "documents Deterministic Research: Deciding Without Turning Estimates into Truth documents Provenance as one of its declared subjects.",
@@ -4931,6 +5030,7 @@
       "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:collection:studio",
       "ea:collection:voice-capture-studio",
       "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:deterministic-research-and-evidence-fusion",
@@ -5963,6 +6063,7 @@
     "abstract": "Voice Capture Studio est un instrument de navigateur open source et local-first pour capturer, interpréter, réviser et découper la voix au sein de cinq parcours spécialisés.",
     "headings": [
       "Vue d’ensemble",
+      "Gamme Studio",
       "L’expérience fait partie de l’instrument",
       "Cinq modes, cinq résultats",
       "Du signal à la décision",
@@ -5973,7 +6074,7 @@
       "Documentation et preuves",
       "Relais Connaissance"
     ],
-    "body": "Vue d’ensemble Voice Capture Studio est un instrument vocal local-first qui fonctionne dans le navigateur. Il réunit désormais cinq workflows distincts : enregistrement immédiat, production de corpus ML, doublage à l’image, interprétation avec support séparé et découpe mot à mot d’un audio ou d’une vidéo locale. L’application est disponible sur electronicartefacts.github.io/voice-capture-studio et le code source est public sur github.com/electronicartefacts/voice-capture-studio . L’expérience fait partie de l’instrument L’interface actuelle est volontairement calme : blanc chaud plutôt que noir studio, typographie carbone très ample, capsules arrondies, bordures fines, focus bleu glacier, alertes rose poudré et panneaux translucides qui gardent la page légère tout en créant de la profondeur. Le glassmorphism sert ici de couche d’information : le contexte reste perceptible pendant que mode, disponibilité, calibration et export demeurent lisibles. La courbe principale — le filament — forme la colonne perceptive du produit. Dans l’application d’enregistrement, elle représente un audio frais, jamais une boucle arbitraire. Son halo tire son énergie de l’amplitude mesurée. Pendant la réécoute, le même langage visuel suit la prise décodée. Si une frame live devient obsolète, la surface revient vers un signal de repos honnête au lieu d’exposer une ancienne mesure comme actuelle. Cette règle s’étend au mouvement entier : rien de ce qui ressemble à une mesure ne peut être simulé. Le silence reste une donnée. La capture reçoit le budget de rendu complet. Le mouvement réduit supprime la chorégraphie sans supprimer le sens. L’interface se comporte donc davantage comme une vitre posée sur un instrument acoustique que comme un tableau de bord classique. Cinq modes, cinq résultats Capture libre démarre directement, sans corpus, et enregistre jusqu’à dix minutes avec arrêt manuel, WAV et provenance. Découpe lexicale reçoit un audio ou une vidéo locale, écarte l’image, analyse parole ou chant et exporte un WAV horodaté pour chaque mot soutenu par les preuves, avec JSON et CSV. Dataset ML planifie les phrases depuis la couverture du corpus, calibre la pièce, produit des prises comparables et ne fait progresser la couverture que si le matériau est accepté et stocké durablement. Doublage associe un script local ou des cues SRT/VTT à une vidéo locale ou une référence YouTube explicitement activée. L’interprète voit la scène, conserve les timecodes et exporte une voix isolée. Interprétation enregistre une performance continue ou segmentée contre un support audio optionnel au casque. Le support guide la voix sans jamais être mixé dans le WAV capturé. Ce sont des modes produit, pas des presets de format. Chacun change les entrées, le geste de capture, la définition de réussite et la sortie utile. Le podcast reste un scénario de Capture libre ; la voix off, un scénario de Doublage ; le livre audio, un scénario d’Interprétation tant que ces usages n’exigent pas de moteurs vraiment différents. Du signal à la décision Le parcours commence par une inspection progressive des capacités : permission et entrées micro, Web Audio, durabilité du stockage, accès dossier, téléchargements, wake lock, APIs de parole optionnelles, Workers et rendu accéléré. L’absence d’une capacité optionnelle ne dégrade que le workflow qui en dépend. La capture micro utilise getUserMedia et un recorder PCM. Elle privilégie AudioWorkletNode , conserve ScriptProcessorNode comme compatibilité, encode un WAV mono RIFF-padded en 48 kHz / 24-bit lorsque le runtime le permet et calcule les premières métriques techniques depuis le signal enregistré. Les médias importés sont décodés vers des signaux d’analyse 16 kHz avant segmentation locale. Après la capture, les observations restent séparées : le corpus immuable déclare texte attendu, langue, intention et direction de jeu ; le signal PCM fournit mesures physiques et prosodiques, VAD énergétique, segments, silences et pauses ; la reconnaissance vocale navigateur, lorsqu’elle existe, reste une hypothèse optionnelle ; la conversion graphème-phonème et le timing des mots restent des estimations préparatoires ; les décisions fusionnées citent leurs preuves, raisons et confiance sans effacer les observations qui les ont produites. C’est la couche de recherche déterministe : des observations bornées identiques alimentent des politiques explicites et l’incertitude reste visible. L’ASR navigateur peut demander une révision, mais il ne peut ni rejeter ni autoriser une capture physique. Une divergence de transcript n’efface pas une prise techniquement valide. Un import d’alignement acoustique forcé peut remplacer une carte de timing estimée sans réécrire la preuve brute. Pipeline de découpe lexicale La Découpe lexicale est le cinquième mode et l’exemple le plus net du pipeline local. Elle accepte jusqu’à 200 Mo et dix minutes, décode le média sur l’appareil, reconnaît le type de scène et choisit un budget rapide, vérifié ou approfondi. Une première passe Whisper explore la source. Une parole difficile, du chant ou de la musique peuvent déclencher une passe de modèle base, un signal vocal-focus, une séparation spectrale mid/side et un consensus temporel par majorité floue. Chaque mot exporté conserve début, fin, contexte de clip, support acoustique, confiance, votes de consensus et classe de preuve. Le ZIP contient les extraits WAV mono 16 kHz / 24-bit, un manifeste versionné et une timeline. Les pixels vidéo ne sont pas traités dans ce mode ; seule la piste audio entre dans le pipeline. Persistance local-first et exports ouverts Le workspace privilégie IndexedDB, peut utiliser un dossier choisi via la File System Access API et conserve toujours le téléchargement explicite comme fallback. Une prise ne peut pas créditer la couverture dataset si son audio n’a pas été accepté par un stockage local durable. Les archives de workspace sont vérifiées avant restauration et n’écrasent pas silencieusement les WAV existants. Le paquet principal contient session, locuteur et corpus ; WAV, transcript, timing, phonèmes, intention, qualité, observation et preuves par prise ; rapports dataset ; manifeste d’entraînement JSONL ; checksums SHA-256. Les estimations navigateur restent marquées forcedAlignmentRequired tant qu’une validation acoustique ne les a pas remplacées ou confirmées. Voice Capture Studio prépare le matériau pour archives, recherche, doublage et workflows de machine learning. Il n’entraîne pas de modèle, ne promet pas un alignement acoustique de niveau recherche dans tous les navigateurs et ne téléverse pas les prises privées vers un service distant. Architecture et technologies L’application repose sur React 19, TypeScript et Vite. Web Audio, AudioWorklet, le décodage média du navigateur, IndexedDB, la File System Access API, les Workers, l’analyse locale capable d’utiliser WebAssembly/WebGPU, le service worker PWA et GitHub Pages constituent le châssis navigateur. Les domaines portent corpus, sessions, workspace, couverture, recording, observations, phonétique, locuteurs, settings et contrats d’export. Ils n’importent ni React, ni CSS, ni DOM, ni API navigateur. Le shell applicatif porte l’orchestration et les adaptateurs. Cette direction des dépendances garde planification, règles keeper, fusion des preuves et contrats de paquet testables hors d’une interface particulière. La gate de release couvre formatage, linting, références TypeScript, couverture unitaire, budgets de bundle et build de production. Les suites end-to-end exercent capture, layouts responsives, Chromium, Firefox, WebKit, redémarrage offline et contrôles d’accessibilité automatisés. Open source, vie privée et frontières Le dépôt sous licence MIT rend le comportement inspectable. Les enregistrements et workspaces générés restent des données utilisateur ; ils appartiennent au stockage navigateur, au dossier local choisi ou à un téléchargement explicite, jamais au dépôt public. Local-first ne signifie pas que le stockage navigateur est permanent. L’interface expose durabilité, capacités manquantes et chemins d’export afin que l’utilisateur sache ce qui survivra à un rechargement, ce qui doit être téléchargé et ce qu’un navigateur donné ne peut pas fournir. Documentation et preuves Points d’entrée utiles dans les sources : Phénoménologie — lois du signal, du mouvement et des états perceptifs. Grille d’expérience des modes — publics, entrées, gestes, sorties et réussite des cinq modes. Modèle système — flux runtime observé et tensions actuelles. Audit des technologies de capture — pipeline d’observation, limites du timing et frontière de validation. Structure d’export — paquet, qualité et étapes Forge en aval. Manifeste d’ingénierie browser-native — capacités progressives et principes local-first. Relais Connaissance Les six briefs sont désormais des articles Connaissance complets plutôt que des notes de version : interfaces audio dignes de confiance , capture vocale traçable , fusion déterministe des preuves , segmentation lexicale locale , cinq contrats de modes et architecture navigateur local-first . Chacun reste utile après une évolution de l’interface parce qu’il traite un problème durable. Voice Capture Studio se situe près d’ ORETH parce que les deux traitent l’audio comme matériau structuré. Il se relie à l’ Audio web , à la Web Audio API , à l’ interaction humain-machine , aux métadonnées et à l’ open source comme mise à l’épreuve concrète de ces idées. Le rôle du projet est précis : rendre le premier artefact vocal plus propre, plus inspectable et plus réutilisable avant qu’une archive, un modèle, un montage de doublage ou un workflow de production ne le reçoive.",
+    "body": "Vue d’ensemble Voice Capture Studio est un instrument vocal local-first qui fonctionne dans le navigateur. Il réunit désormais cinq workflows distincts : enregistrement immédiat, production de corpus ML, doublage à l’image, interprétation avec support séparé et découpe mot à mot d’un audio ou d’une vidéo locale. L’application est disponible sur electronicartefacts.github.io/voice-capture-studio et le code source est public sur github.com/electronicartefacts/voice-capture-studio . Gamme Studio Voice Capture Studio est la première application publiée de Studio , la gamme de logiciels open source d’Electronic Artefacts. Le lien relève d’une même éthique de fonctionnement, non d’une coque produit partagée : des outils spécialisés doivent rester utilisables de façon autonome, local-first lorsque c’est possible, sans publicité, publiés avec un code inspectable et capables d’exporter des matériaux durables vers d’autres workflows. La prochaine fiche prévue, Spatial Mapping Studio, aborde un autre matériau — payloads 3D finaux et régions sémantiques — sans déplacer ces engagements. Son travail V0 n’est ni une intégration avec Voice Capture Studio, ni une intégration avec Forge ; il établit une frontière de mapping portable sur laquelle des workflows ultérieurs pourront s’appuyer. L’expérience fait partie de l’instrument L’interface actuelle est volontairement calme : blanc chaud plutôt que noir studio, typographie carbone très ample, capsules arrondies, bordures fines, focus bleu glacier, alertes rose poudré et panneaux translucides qui gardent la page légère tout en créant de la profondeur. Le glassmorphism sert ici de couche d’information : le contexte reste perceptible pendant que mode, disponibilité, calibration et export demeurent lisibles. La courbe principale — le filament — forme la colonne perceptive du produit. Dans l’application d’enregistrement, elle représente un audio frais, jamais une boucle arbitraire. Son halo tire son énergie de l’amplitude mesurée. Pendant la réécoute, le même langage visuel suit la prise décodée. Si une frame live devient obsolète, la surface revient vers un signal de repos honnête au lieu d’exposer une ancienne mesure comme actuelle. Cette règle s’étend au mouvement entier : rien de ce qui ressemble à une mesure ne peut être simulé. Le silence reste une donnée. La capture reçoit le budget de rendu complet. Le mouvement réduit supprime la chorégraphie sans supprimer le sens. L’interface se comporte donc davantage comme une vitre posée sur un instrument acoustique que comme un tableau de bord classique. Cinq modes, cinq résultats Capture libre démarre directement, sans corpus, et enregistre jusqu’à dix minutes avec arrêt manuel, WAV et provenance. Découpe lexicale reçoit un audio ou une vidéo locale, écarte l’image, analyse parole ou chant et exporte un WAV horodaté pour chaque mot soutenu par les preuves, avec JSON et CSV. Dataset ML planifie les phrases depuis la couverture du corpus, calibre la pièce, produit des prises comparables et ne fait progresser la couverture que si le matériau est accepté et stocké durablement. Doublage associe un script local ou des cues SRT/VTT à une vidéo locale ou une référence YouTube explicitement activée. L’interprète voit la scène, conserve les timecodes et exporte une voix isolée. Interprétation enregistre une performance continue ou segmentée contre un support audio optionnel au casque. Le support guide la voix sans jamais être mixé dans le WAV capturé. Ce sont des modes produit, pas des presets de format. Chacun change les entrées, le geste de capture, la définition de réussite et la sortie utile. Le podcast reste un scénario de Capture libre ; la voix off, un scénario de Doublage ; le livre audio, un scénario d’Interprétation tant que ces usages n’exigent pas de moteurs vraiment différents. Du signal à la décision Le parcours commence par une inspection progressive des capacités : permission et entrées micro, Web Audio, durabilité du stockage, accès dossier, téléchargements, wake lock, APIs de parole optionnelles, Workers et rendu accéléré. L’absence d’une capacité optionnelle ne dégrade que le workflow qui en dépend. La capture micro utilise getUserMedia et un recorder PCM. Elle privilégie AudioWorkletNode , conserve ScriptProcessorNode comme compatibilité, encode un WAV mono RIFF-padded en 48 kHz / 24-bit lorsque le runtime le permet et calcule les premières métriques techniques depuis le signal enregistré. Les médias importés sont décodés vers des signaux d’analyse 16 kHz avant segmentation locale. Après la capture, les observations restent séparées : le corpus immuable déclare texte attendu, langue, intention et direction de jeu ; le signal PCM fournit mesures physiques et prosodiques, VAD énergétique, segments, silences et pauses ; la reconnaissance vocale navigateur, lorsqu’elle existe, reste une hypothèse optionnelle ; la conversion graphème-phonème et le timing des mots restent des estimations préparatoires ; les décisions fusionnées citent leurs preuves, raisons et confiance sans effacer les observations qui les ont produites. C’est la couche de recherche déterministe : des observations bornées identiques alimentent des politiques explicites et l’incertitude reste visible. L’ASR navigateur peut demander une révision, mais il ne peut ni rejeter ni autoriser une capture physique. Une divergence de transcript n’efface pas une prise techniquement valide. Un import d’alignement acoustique forcé peut remplacer une carte de timing estimée sans réécrire la preuve brute. Pipeline de découpe lexicale La Découpe lexicale est le cinquième mode et l’exemple le plus net du pipeline local. Elle accepte jusqu’à 200 Mo et dix minutes, décode le média sur l’appareil, reconnaît le type de scène et choisit un budget rapide, vérifié ou approfondi. Une première passe Whisper explore la source. Une parole difficile, du chant ou de la musique peuvent déclencher une passe de modèle base, un signal vocal-focus, une séparation spectrale mid/side et un consensus temporel par majorité floue. Chaque mot exporté conserve début, fin, contexte de clip, support acoustique, confiance, votes de consensus et classe de preuve. Le ZIP contient les extraits WAV mono 16 kHz / 24-bit, un manifeste versionné et une timeline. Les pixels vidéo ne sont pas traités dans ce mode ; seule la piste audio entre dans le pipeline. Persistance local-first et exports ouverts Le workspace privilégie IndexedDB, peut utiliser un dossier choisi via la File System Access API et conserve toujours le téléchargement explicite comme fallback. Une prise ne peut pas créditer la couverture dataset si son audio n’a pas été accepté par un stockage local durable. Les archives de workspace sont vérifiées avant restauration et n’écrasent pas silencieusement les WAV existants. Le paquet principal contient session, locuteur et corpus ; WAV, transcript, timing, phonèmes, intention, qualité, observation et preuves par prise ; rapports dataset ; manifeste d’entraînement JSONL ; checksums SHA-256. Les estimations navigateur restent marquées forcedAlignmentRequired tant qu’une validation acoustique ne les a pas remplacées ou confirmées. Voice Capture Studio prépare le matériau pour archives, recherche, doublage et workflows de machine learning. Il n’entraîne pas de modèle, ne promet pas un alignement acoustique de niveau recherche dans tous les navigateurs et ne téléverse pas les prises privées vers un service distant. Architecture et technologies L’application repose sur React 19, TypeScript et Vite. Web Audio, AudioWorklet, le décodage média du navigateur, IndexedDB, la File System Access API, les Workers, l’analyse locale capable d’utiliser WebAssembly/WebGPU, le service worker PWA et GitHub Pages constituent le châssis navigateur. Les domaines portent corpus, sessions, workspace, couverture, recording, observations, phonétique, locuteurs, settings et contrats d’export. Ils n’importent ni React, ni CSS, ni DOM, ni API navigateur. Le shell applicatif porte l’orchestration et les adaptateurs. Cette direction des dépendances garde planification, règles keeper, fusion des preuves et contrats de paquet testables hors d’une interface particulière. La gate de release couvre formatage, linting, références TypeScript, couverture unitaire, budgets de bundle et build de production. Les suites end-to-end exercent capture, layouts responsives, Chromium, Firefox, WebKit, redémarrage offline et contrôles d’accessibilité automatisés. Open source, vie privée et frontières Le dépôt sous licence MIT rend le comportement inspectable. Les enregistrements et workspaces générés restent des données utilisateur ; ils appartiennent au stockage navigateur, au dossier local choisi ou à un téléchargement explicite, jamais au dépôt public. Local-first ne signifie pas que le stockage navigateur est permanent. L’interface expose durabilité, capacités manquantes et chemins d’export afin que l’utilisateur sache ce qui survivra à un rechargement, ce qui doit être téléchargé et ce qu’un navigateur donné ne peut pas fournir. Documentation et preuves Points d’entrée utiles dans les sources : Phénoménologie — lois du signal, du mouvement et des états perceptifs. Grille d’expérience des modes — publics, entrées, gestes, sorties et réussite des cinq modes. Modèle système — flux runtime observé et tensions actuelles. Audit des technologies de capture — pipeline d’observation, limites du timing et frontière de validation. Structure d’export — paquet, qualité et étapes Forge en aval. Manifeste d’ingénierie browser-native — capacités progressives et principes local-first. Relais Connaissance Les six briefs sont désormais des articles Connaissance complets plutôt que des notes de version : interfaces audio dignes de confiance , capture vocale traçable , fusion déterministe des preuves , segmentation lexicale locale , cinq contrats de modes et architecture navigateur local-first . Chacun reste utile après une évolution de l’interface parce qu’il traite un problème durable. Voice Capture Studio se situe près d’ ORETH parce que les deux traitent l’audio comme matériau structuré. Il se relie à l’ Audio web , à la Web Audio API , à l’ interaction humain-machine , aux métadonnées et à l’ open source comme mise à l’épreuve concrète de ces idées. Le rôle du projet est précis : rendre le premier artefact vocal plus propre, plus inspectable et plus réutilisable avant qu’une archive, un modèle, un montage de doublage ou un workflow de production ne le reçoive.",
     "tags": [
       "Voice Capture Studio",
       "enregistrement vocal",
@@ -6009,6 +6110,7 @@
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "memberOfCollection Voice Capture Studio is an explicit member of the Studio collection.",
       "documents The Browser as a Local-First Voice Studio documents Voice Capture Studio as one of its declared subjects.",
       "documents Deterministic Research: Deciding Without Turning Estimates into Truth documents Voice Capture Studio as one of its declared subjects.",
       "documents Why Five Voice Modes Need Five Success Criteria documents Voice Capture Studio as one of its declared subjects.",
@@ -6040,6 +6142,7 @@
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:researchQuestion:speech-dataset-reproducibility",
+      "ea:collection:studio",
       "ea:publication:browser-as-a-local-first-voice-studio",
       "ea:publication:deterministic-research-and-evidence-fusion",
       "ea:publication:five-voice-modes-five-success-criteria",
@@ -6052,7 +6155,7 @@
     ],
     "status": "active",
     "confidence": "published",
-    "modifiedAt": "2026-07-18"
+    "modifiedAt": "2026-08-17"
   },
   {
     "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
@@ -10718,6 +10821,7 @@
     "abstract": "Voice Capture Studio is an open-source, local-first browser instrument for capturing, performing, reviewing and segmenting voice across five purpose-built workflows.",
     "headings": [
       "Overview",
+      "Studio line",
       "The experience is part of the instrument",
       "Five modes, five outcomes",
       "From signal to decision",
@@ -10728,7 +10832,7 @@
       "Documentation and evidence",
       "Knowledge relay"
     ],
-    "body": "Overview Voice Capture Studio is a local-first voice instrument that runs in the browser. It now joins five distinct workflows in one surface: immediate recording, ML corpus production, picture-led dubbing, interpreted performance with a separate guide track, and word-by-word segmentation of local audio or video. The application is live at electronicartefacts.github.io/voice-capture-studio and the source code is public at github.com/electronicartefacts/voice-capture-studio . The experience is part of the instrument The current interface is deliberately quiet: warm white rather than studio black, large carbon typography, rounded capsules, fine borders, ice-blue focus, dusty-rose warnings and translucent panels that keep the page light while preserving depth. Glassmorphism is used as an information layer, not an ornamental effect: the background stays perceptible while readiness, mode, calibration and export state remain legible. The main curve — the filament — is the product’s perceptual spine. In the recording application it represents fresh audio, never an arbitrary loop. Its halo derives energy from measured amplitude. During replay, the same visual language follows the decoded take. If a live frame becomes stale, the surface returns to an honest idle carrier instead of presenting old data as current. That rule extends to the entire motion system: nothing that looks like a reading may be simulated. Silence remains data. Capture receives the full rendering budget. Reduced motion removes choreography without removing meaning. The interface is therefore closer to a pane of glass over an acoustic instrument than to a conventional dashboard. Five modes, five outcomes Free Capture starts directly, without a corpus, and records up to ten minutes with manual stop, WAV and provenance. Lexical Segmentation takes local audio or video, discards the image, analyzes speech or song and exports a timestamped WAV for each supported word plus JSON and CSV evidence. ML Dataset plans phrases from corpus coverage, calibrates the room, records comparable takes and advances coverage only when accepted material is both valid and durably stored. Dubbing combines a local script or SRT/VTT cues with local video or an explicitly activated YouTube reference. The performer sees the scene, preserves cue timing and exports an isolated voice lane. Performance records continuous or segmented interpretation against an optional headphone guide. The guide supports the performer but is never mixed into the captured voice WAV. These are product modes rather than file-format presets. Each changes the inputs, the capture gesture, the definition of success and the useful output. Podcasting remains a Free Capture scenario; voice-over remains a Dubbing scenario; audiobook work remains a Performance scenario until those uses require genuinely different engines. From signal to decision The recording path begins with progressive capability inspection: microphone permission and inputs, Web Audio, storage durability, folder access, downloads, wake lock, optional speech APIs, Workers and accelerated rendering. A missing optional capability degrades only the workflow that depends on it. Microphone capture uses getUserMedia and a PCM recorder. It prefers AudioWorkletNode , keeps a ScriptProcessorNode compatibility fallback, encodes mono RIFF-padded WAV at 48 kHz / 24-bit when the runtime permits, and derives first-pass technical metrics from the recorded signal. Imported media is decoded to 16 kHz analysis signals before local segmentation. After capture, observations remain separate: the immutable corpus declares the expected text, language, intent and delivery; the PCM signal supplies physical and prosodic measurements, energy VAD, segments, silences and pauses; browser speech recognition, when available, remains an optional hypothesis; grapheme-to-phoneme and word timing remain preparatory estimates; fused decisions cite their evidence, reasons and confidence rather than erasing the observations that produced them. This is the deterministic research layer: identical bounded observations feed explicit policies, and uncertainty stays visible. Browser ASR can request review but cannot reject or authorize a physical recording. A transcript mismatch does not erase a technically valid take. An acoustic forced-alignment import can replace an estimated timing map without rewriting the raw evidence. Lexical segmentation pipeline Lexical Segmentation is the fifth mode and the clearest example of the local pipeline. It accepts up to 200 MB and ten minutes, decodes the media on the device, classifies the scene and chooses a fast, verified or deep analysis budget. A first Whisper pass scouts the source. Difficult speech, singing or music can trigger a base-model pass, a vocal-focus signal, spectral mid/side separation and temporal fuzzy-majority consensus. Each exported word keeps its start, end, clip context, acoustic support, confidence, consensus votes and evidence class. The ZIP contains 16 kHz / 24-bit mono WAV clips, a versioned manifest and a timeline. Video pixels are not processed by this mode; only the audio track enters the pipeline. Local-first persistence and open exports The workspace prefers IndexedDB, can use a user-selected File System Access folder, and always keeps explicit downloads as a fallback. A take cannot credit dataset coverage when its audio was not accepted by durable local storage. Workspace archives are verified before restoration and do not silently overwrite existing WAV files. The main capture package contains session, speaker and corpus records; take-level WAV, transcript, timing, phoneme, intent, quality, observation and evidence files; dataset reports; a JSONL training manifest; and SHA-256 checksums. Browser estimates remain labeled forcedAlignmentRequired until acoustic validation replaces or confirms them. Voice Capture Studio prepares material for archives, research, dubbing and machine-learning workflows. It does not train a model, promise research-grade acoustic alignment in every browser or upload private recordings to a remote service. Architecture and technology The app is built with React 19, TypeScript and Vite. Web Audio, AudioWorklet, browser media decoding, IndexedDB, the File System Access API, Workers, WebAssembly/WebGPU-capable local analysis, PWA service-worker distribution and GitHub Pages form the browser chassis. Domain modules own corpus, sessions, workspace, coverage, recording, observations, phonetics, speakers, settings and export contracts. They do not import React, CSS, DOM or browser APIs. The application shell owns orchestration and adapters. This dependency direction keeps planning, keeper rules, evidence fusion and package contracts testable outside a specific interface. The repository release gate covers formatting, linting, TypeScript project references, unit coverage, bundle budgets and production build. End-to-end suites exercise capture, responsive layouts, Chromium, Firefox, WebKit, offline restart and automated accessibility checks. Open source, privacy and boundaries The MIT-licensed repository makes the behavior inspectable. Voice recordings and generated workspaces remain user data; they belong in browser storage, a chosen local folder or an explicit download, never in the public source repository. Local-first is not a claim that browser storage is permanent. The interface exposes storage durability, capability gaps and export paths because users need to know what will survive a reload, what requires a download and what a particular browser cannot provide. Documentation and evidence Useful source entry points: Phenomenology — signal, movement and perceptual laws. Mode experience grid — users, inputs, gestures, outputs and success criteria for the five modes. System model — observed runtime flow and current tensions. Capture technology audit — observation pipeline, timing limits and validation boundary. Export structure — package layout, quality records and Forge-shaped downstream stages. Browser-native engineering manifesto — progressive capability and local-first principles. Knowledge relay The six editorial briefs are now complete Knowledge articles rather than release notes: trustworthy audio interfaces , traceable voice capture , deterministic evidence fusion , local lexical segmentation , five mode contracts and browser-native local-first architecture . Each remains useful after interface changes because it addresses a durable problem. Voice Capture Studio sits near ORETH because both treat audio as structured material. It connects to Web Audio , the Web Audio API , Human–Computer Interaction , Metadata and Open Source as a practical test of those ideas. The project’s role is precise: make the first voice artifact cleaner, more inspectable and more reusable before an archive, model, dubbing edit or production workflow receives it.",
+    "body": "Overview Voice Capture Studio is a local-first voice instrument that runs in the browser. It now joins five distinct workflows in one surface: immediate recording, ML corpus production, picture-led dubbing, interpreted performance with a separate guide track, and word-by-word segmentation of local audio or video. The application is live at electronicartefacts.github.io/voice-capture-studio and the source code is public at github.com/electronicartefacts/voice-capture-studio . Studio line Voice Capture Studio is the first published application in Studio , Electronic Artefacts’ open-source software line. The connection is a shared operating ethic rather than a shared product shell: specialist tools should be independently usable, local-first where possible, free of advertising, published with inspectable source and able to export durable material into other workflows. The next planned record, Spatial Mapping Studio, approaches a different material — final 3D payloads and their semantic regions — without changing those commitments. Its V0 work is not an integration with Voice Capture Studio or Forge; it establishes the portable mapping boundary that later workflows can build on. The experience is part of the instrument The current interface is deliberately quiet: warm white rather than studio black, large carbon typography, rounded capsules, fine borders, ice-blue focus, dusty-rose warnings and translucent panels that keep the page light while preserving depth. Glassmorphism is used as an information layer, not an ornamental effect: the background stays perceptible while readiness, mode, calibration and export state remain legible. The main curve — the filament — is the product’s perceptual spine. In the recording application it represents fresh audio, never an arbitrary loop. Its halo derives energy from measured amplitude. During replay, the same visual language follows the decoded take. If a live frame becomes stale, the surface returns to an honest idle carrier instead of presenting old data as current. That rule extends to the entire motion system: nothing that looks like a reading may be simulated. Silence remains data. Capture receives the full rendering budget. Reduced motion removes choreography without removing meaning. The interface is therefore closer to a pane of glass over an acoustic instrument than to a conventional dashboard. Five modes, five outcomes Free Capture starts directly, without a corpus, and records up to ten minutes with manual stop, WAV and provenance. Lexical Segmentation takes local audio or video, discards the image, analyzes speech or song and exports a timestamped WAV for each supported word plus JSON and CSV evidence. ML Dataset plans phrases from corpus coverage, calibrates the room, records comparable takes and advances coverage only when accepted material is both valid and durably stored. Dubbing combines a local script or SRT/VTT cues with local video or an explicitly activated YouTube reference. The performer sees the scene, preserves cue timing and exports an isolated voice lane. Performance records continuous or segmented interpretation against an optional headphone guide. The guide supports the performer but is never mixed into the captured voice WAV. These are product modes rather than file-format presets. Each changes the inputs, the capture gesture, the definition of success and the useful output. Podcasting remains a Free Capture scenario; voice-over remains a Dubbing scenario; audiobook work remains a Performance scenario until those uses require genuinely different engines. From signal to decision The recording path begins with progressive capability inspection: microphone permission and inputs, Web Audio, storage durability, folder access, downloads, wake lock, optional speech APIs, Workers and accelerated rendering. A missing optional capability degrades only the workflow that depends on it. Microphone capture uses getUserMedia and a PCM recorder. It prefers AudioWorkletNode , keeps a ScriptProcessorNode compatibility fallback, encodes mono RIFF-padded WAV at 48 kHz / 24-bit when the runtime permits, and derives first-pass technical metrics from the recorded signal. Imported media is decoded to 16 kHz analysis signals before local segmentation. After capture, observations remain separate: the immutable corpus declares the expected text, language, intent and delivery; the PCM signal supplies physical and prosodic measurements, energy VAD, segments, silences and pauses; browser speech recognition, when available, remains an optional hypothesis; grapheme-to-phoneme and word timing remain preparatory estimates; fused decisions cite their evidence, reasons and confidence rather than erasing the observations that produced them. This is the deterministic research layer: identical bounded observations feed explicit policies, and uncertainty stays visible. Browser ASR can request review but cannot reject or authorize a physical recording. A transcript mismatch does not erase a technically valid take. An acoustic forced-alignment import can replace an estimated timing map without rewriting the raw evidence. Lexical segmentation pipeline Lexical Segmentation is the fifth mode and the clearest example of the local pipeline. It accepts up to 200 MB and ten minutes, decodes the media on the device, classifies the scene and chooses a fast, verified or deep analysis budget. A first Whisper pass scouts the source. Difficult speech, singing or music can trigger a base-model pass, a vocal-focus signal, spectral mid/side separation and temporal fuzzy-majority consensus. Each exported word keeps its start, end, clip context, acoustic support, confidence, consensus votes and evidence class. The ZIP contains 16 kHz / 24-bit mono WAV clips, a versioned manifest and a timeline. Video pixels are not processed by this mode; only the audio track enters the pipeline. Local-first persistence and open exports The workspace prefers IndexedDB, can use a user-selected File System Access folder, and always keeps explicit downloads as a fallback. A take cannot credit dataset coverage when its audio was not accepted by durable local storage. Workspace archives are verified before restoration and do not silently overwrite existing WAV files. The main capture package contains session, speaker and corpus records; take-level WAV, transcript, timing, phoneme, intent, quality, observation and evidence files; dataset reports; a JSONL training manifest; and SHA-256 checksums. Browser estimates remain labeled forcedAlignmentRequired until acoustic validation replaces or confirms them. Voice Capture Studio prepares material for archives, research, dubbing and machine-learning workflows. It does not train a model, promise research-grade acoustic alignment in every browser or upload private recordings to a remote service. Architecture and technology The app is built with React 19, TypeScript and Vite. Web Audio, AudioWorklet, browser media decoding, IndexedDB, the File System Access API, Workers, WebAssembly/WebGPU-capable local analysis, PWA service-worker distribution and GitHub Pages form the browser chassis. Domain modules own corpus, sessions, workspace, coverage, recording, observations, phonetics, speakers, settings and export contracts. They do not import React, CSS, DOM or browser APIs. The application shell owns orchestration and adapters. This dependency direction keeps planning, keeper rules, evidence fusion and package contracts testable outside a specific interface. The repository release gate covers formatting, linting, TypeScript project references, unit coverage, bundle budgets and production build. End-to-end suites exercise capture, responsive layouts, Chromium, Firefox, WebKit, offline restart and automated accessibility checks. Open source, privacy and boundaries The MIT-licensed repository makes the behavior inspectable. Voice recordings and generated workspaces remain user data; they belong in browser storage, a chosen local folder or an explicit download, never in the public source repository. Local-first is not a claim that browser storage is permanent. The interface exposes storage durability, capability gaps and export paths because users need to know what will survive a reload, what requires a download and what a particular browser cannot provide. Documentation and evidence Useful source entry points: Phenomenology — signal, movement and perceptual laws. Mode experience grid — users, inputs, gestures, outputs and success criteria for the five modes. System model — observed runtime flow and current tensions. Capture technology audit — observation pipeline, timing limits and validation boundary. Export structure — package layout, quality records and Forge-shaped downstream stages. Browser-native engineering manifesto — progressive capability and local-first principles. Knowledge relay The six editorial briefs are now complete Knowledge articles rather than release notes: trustworthy audio interfaces , traceable voice capture , deterministic evidence fusion , local lexical segmentation , five mode contracts and browser-native local-first architecture . Each remains useful after interface changes because it addresses a durable problem. Voice Capture Studio sits near ORETH because both treat audio as structured material. It connects to Web Audio , the Web Audio API , Human–Computer Interaction , Metadata and Open Source as a practical test of those ideas. The project’s role is precise: make the first voice artifact cleaner, more inspectable and more reusable before an archive, model, dubbing edit or production workflow receives it.",
     "tags": [
       "Voice Capture Studio",
       "Speech Recording",
@@ -10764,6 +10868,7 @@
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "memberOfCollection Voice Capture Studio is an explicit member of the Studio collection.",
       "documents The Browser as a Local-First Voice Studio documents Voice Capture Studio as one of its declared subjects.",
       "documents Deterministic Research: Deciding Without Turning Estimates into Truth documents Voice Capture Studio as one of its declared subjects.",
       "documents Why Five Voice Modes Need Five Success Criteria documents Voice Capture Studio as one of its declared subjects.",
@@ -10795,6 +10900,7 @@
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:researchQuestion:speech-dataset-reproducibility",
+      "ea:collection:studio",
       "ea:publication:browser-as-a-local-first-voice-studio",
       "ea:publication:deterministic-research-and-evidence-fusion",
       "ea:publication:five-voice-modes-five-success-criteria",
@@ -10807,7 +10913,7 @@
     ],
     "status": "active",
     "confidence": "published",
-    "modifiedAt": "2026-07-18"
+    "modifiedAt": "2026-08-17"
   },
   {
     "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",

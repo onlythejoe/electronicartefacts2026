@@ -48,6 +48,12 @@
     "identifier": "/id/collection/knowledge-hub-third-wave/"
   },
   {
+    "id": "ea:collection:studio",
+    "locale": "en",
+    "route": "/archive/collections/studio/",
+    "identifier": "/id/collection/studio/"
+  },
+  {
     "id": "ea:collection:voice-capture-studio",
     "locale": "en",
     "route": "/archive/collections/voice-capture-studio/",
@@ -376,6 +382,12 @@
     "locale": "fr",
     "route": "/fr/archive/collections/knowledge-hub-third-wave/",
     "identifier": "/fr/id/collection/knowledge-hub-third-wave/"
+  },
+  {
+    "id": "ea:collection:studio-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/studio/",
+    "identifier": "/fr/id/collection/studio/"
   },
   {
     "id": "ea:collection:voice-capture-studio-fr",

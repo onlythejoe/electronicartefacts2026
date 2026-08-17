@@ -17,8 +17,8 @@ version:
   version: 2.1.0
   createdAt: "2026-07-09"
   publishedAt: "2026-07-09"
-  modifiedAt: "2026-07-18"
-  changeSummary: Published the six-part Knowledge layer and connected the dossier to its complete editorial neighborhood.
+  modifiedAt: "2026-08-17"
+  changeSummary: Published the six-part Knowledge layer and connected the dossier to its complete editorial neighborhood and the Studio open-source software series.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -168,6 +168,12 @@ featured: true
 Voice Capture Studio is a local-first voice instrument that runs in the browser. It now joins five distinct workflows in one surface: immediate recording, ML corpus production, picture-led dubbing, interpreted performance with a separate guide track, and word-by-word segmentation of local audio or video.
 
 The application is live at [electronicartefacts.github.io/voice-capture-studio](https://electronicartefacts.github.io/voice-capture-studio/) and the source code is public at [github.com/electronicartefacts/voice-capture-studio](https://github.com/electronicartefacts/voice-capture-studio).
+
+## Studio line
+
+Voice Capture Studio is the first published application in [Studio](/archive/collections/studio/), Electronic Artefacts’ open-source software line. The connection is a shared operating ethic rather than a shared product shell: specialist tools should be independently usable, local-first where possible, free of advertising, published with inspectable source and able to export durable material into other workflows.
+
+The next planned record, Spatial Mapping Studio, approaches a different material — final 3D payloads and their semantic regions — without changing those commitments. Its V0 work is not an integration with Voice Capture Studio or Forge; it establishes the portable mapping boundary that later workflows can build on.
 
 ## The experience is part of the instrument
 

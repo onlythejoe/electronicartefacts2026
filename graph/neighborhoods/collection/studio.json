@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:collection:studio",
+  "kind": "local",
+  "focus": "ea:collection:studio",
+  "nodes": [
+    {
+      "id": "ea:collection:studio",
+      "type": "collection",
+      "title": "Studio",
+      "route": "/archive/collections/studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository",
+      "type": "artefact",
+      "title": "Voice Capture Studio Repository",
+      "route": "/archive/artefacts/voice-capture-studio-repository/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Browser Software",
+      "route": "/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-member-of-collection-studio",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Capture Studio is an explicit member of the Studio collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-repository-member-of-collection-studio",
+      "source": "ea:artefact:voice-capture-studio-repository",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Capture Studio Repository is an explicit member of the Studio collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-studio",
+      "source": "ea:concept:open-source",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Studio collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:browser-software-member-of-collection-studio",
+      "source": "ea:concept:browser-software",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Browser Software is an explicit member of the Studio collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-studio",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Studio collection.",
+      "confidence": "validated"
+    }
+  ]
+}

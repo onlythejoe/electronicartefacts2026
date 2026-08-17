@@ -83,10 +83,10 @@
     "concept": 92,
     "technology": 40,
     "framework": 2,
-    "collection": 12,
+    "collection": 14,
     "artefact": 6
   },
-  "lastModified": "2026-08-04",
+  "lastModified": "2026-08-17",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -489,7 +489,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-18"
+      "modifiedAt": "2026-08-17"
     },
     {
       "id": "ea:project:voice-capture-studio",
@@ -520,7 +520,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-07-09",
-      "modifiedAt": "2026-07-18"
+      "modifiedAt": "2026-08-17"
     },
     {
       "id": "ea:researchField:runtime-theory",
@@ -7057,6 +7057,57 @@
       "confidence": "published",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:collection:studio",
+      "locale": "en",
+      "type": "collection",
+      "title": "Studio",
+      "summary": "An editorial collection for the open-source Studio line, beginning with Voice Capture Studio and prepared to receive Spatial Mapping Studio as its public record matures.",
+      "url": "https://electronicartefacts.com/archive/collections/studio/",
+      "route": "/archive/collections/studio/",
+      "identifier": "https://electronicartefacts.com/id/collection/studio/",
+      "jsonLd": "https://electronicartefacts.com/id/collection/studio/index.jsonld",
+      "tags": [
+        "Studio",
+        "Open Source",
+        "Local First",
+        "Browser Software",
+        "Creative Tools",
+        "Web Development",
+        "Human Computer Interaction",
+        "Creative Technology"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-08-17",
+      "modifiedAt": "2026-08-17"
+    },
+    {
+      "id": "ea:collection:studio-fr",
+      "locale": "fr",
+      "translationOf": "ea:collection:studio",
+      "type": "collection",
+      "title": "Studio",
+      "summary": "Collection éditoriale de la gamme Studio open source, ouverte avec Voice Capture Studio et préparée pour accueillir Spatial Mapping Studio lorsque sa fiche publique aura la maturité nécessaire.",
+      "url": "https://electronicartefacts.com/fr/archive/collections/studio/",
+      "route": "/fr/archive/collections/studio/",
+      "identifier": "https://electronicartefacts.com/fr/id/collection/studio/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/collection/studio/index.jsonld",
+      "tags": [
+        "Studio",
+        "open source",
+        "local-first",
+        "logiciel de navigateur",
+        "outils créatifs",
+        "développement web",
+        "interaction humain-machine",
+        "technologie créative"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-08-17",
+      "modifiedAt": "2026-08-17"
     },
     {
       "id": "ea:collection:voice-capture-studio",

@@ -9,7 +9,7 @@
       "description": "Un studio vocal ancré dans le signal, réunissant cinq modes de capture et segmentation, un design de verre translucide, des pipelines de preuves déterministes et des exports WAV/métadonnées ouverts.",
       "inLanguage": "fr",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-18",
+      "dateModified": "2026-08-17",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
@@ -76,7 +76,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-07-09",
       "datePublished": "2026-07-09",
-      "dateModified": "2026-07-18",
+      "dateModified": "2026-08-17",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -85,7 +85,7 @@
       },
       "license": "MIT",
       "isAccessibleForFree": true,
-      "wordCount": 1434,
+      "wordCount": 1552,
       "citation": [
         {
           "@type": "CreativeWork",

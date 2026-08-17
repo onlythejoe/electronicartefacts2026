@@ -1665,7 +1665,7 @@ window.EA_ENTITIES = {
       description:
         "Voice Capture Studio is an open-source, local-first browser instrument for free capture, lexical segmentation, ML datasets, dubbing and interpreted performance. Its signal-grounded interface and deterministic evidence pipeline prepare structured voice material without training models or uploading recordings.",
       summary:
-        "Five-mode browser voice studio with local audio processing, deterministic observations and open WAV plus metadata exports.",
+        "First published Studio application: a five-mode browser voice instrument with local audio processing, deterministic observations and open WAV plus metadata exports.",
       mission: "Make voice capture and segmentation local, signal-faithful, inspectable and exportable.",
       coreIdea:
         "A voice instrument should preserve measured signal, declared context, estimates, decisions and provenance without presenting one as another.",

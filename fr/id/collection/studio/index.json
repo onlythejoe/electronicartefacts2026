@@ -1,0 +1,116 @@
+{
+  "id": "ea:collection:studio-fr",
+  "type": "collection",
+  "translationOf": "ea:collection:studio",
+  "slug": {
+    "canonical": "studio"
+  },
+  "title": "Studio",
+  "subtitle": "Série de logiciels open source",
+  "abstract": "Studio est la série de logiciels open source d’Electronic Artefacts : des instruments de navigateur local-first qui transforment des pratiques créatives spécialisées en outils inspectables, portables et librement utilisables.",
+  "description": "Collection éditoriale de la gamme Studio open source, ouverte avec Voice Capture Studio et préparée pour accueillir Spatial Mapping Studio lorsque sa fiche publique aura la maturité nécessaire.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "development",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-08-17",
+    "publishedAt": "2026-08-17",
+    "modifiedAt": "2026-08-17"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Studio",
+    "open source",
+    "local-first",
+    "logiciel de navigateur",
+    "outils créatifs"
+  ],
+  "disciplines": [
+    "développement web",
+    "interaction humain-machine",
+    "open source",
+    "technologie créative"
+  ],
+  "sources": [
+    {
+      "title": "Dépôt Voice Capture Studio",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio",
+      "publisher": "GitHub",
+      "accessedAt": "2026-08-17"
+    },
+    {
+      "title": "Dépôt Spatial Mapping Studio",
+      "url": "https://github.com/electronicartefacts/spatial-mapping-studio",
+      "publisher": "GitHub",
+      "accessedAt": "2026-08-17"
+    }
+  ],
+  "thesis": "Studio rend lisible une famille d’outils créatifs spécialisés comme logiciels publics : chaque application est utile seule, reste locale quand c’est possible, paraît avec son code inspectable et échange des artefacts durables plutôt que de retenir les personnes dans une plateforme.",
+  "curator": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "explicitMembers": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository"
+    },
+    {
+      "id": "ea:concept:open-source"
+    },
+    {
+      "id": "ea:concept:browser-software"
+    },
+    {
+      "id": "ea:concept:provenance"
+    }
+  ],
+  "selectionNote": "Cette collection réunit des logiciels publics et inspectables, ainsi que les notions nécessaires pour lire leurs frontières local-first, leurs sorties portables et leurs engagements de maintenance. Spatial Mapping Studio la rejoindra lorsque sa fiche projet et son dépôt public seront prêts à être publiés.",
+  "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Studio est une gamme logicielle, non une suite de produits avec compte partagé ni une plateforme fermée. Chaque outil part d’une pratique concrète et reste utilisable de façon autonome : le code est public, le runtime est browser-native quand il sert le travail, et les matériaux des personnes restent entre leurs mains.</p>\n<h2 id=\"premier-instrument\">Premier instrument</h2>\n<p><a href=\"/fr/projects/voice-capture-studio/\">Voice Capture Studio</a> est la première application Studio publiée. Il traite capture, révision et segmentation de la voix comme des workflows locaux avec exports WAV et métadonnées ouverts, plutôt que comme un service qui absorbe les enregistrements dans une infrastructure distante.</p>\n<h2 id=\"prochaine-fiche\">Prochaine fiche</h2>\n<p>Spatial Mapping Studio est la prochaine fiche prévue de Studio. Son dépôt V0 définit aujourd’hui un workflow d’auteur local autour d’un GLB final et d’un manifeste sémantique portable : on peut sélectionner des régions triangulaires stables, les nommer et les étiqueter, puis exporter un <code>artifact.json</code> qu’un viewer séparé sait résoudre.</p>\n<p>Cette mention prépare le terrain ; elle ne constitue pas une promesse de release. Compréhension de scènes, segmentation automatisée, intégration Forge et intégrations aval plus larges restent des directions futures tant qu’elles ne sont pas documentées et publiées dans la fiche Spatial Mapping Studio.</p>\n<h2 id=\"grammaire-commune\">Grammaire commune</h2>\n<p>Les applications n’ont pas besoin de partager la même interface pour appartenir à la même gamme. Leur grammaire est plus structurelle : code libre et inspectable ; absence de publicité ; aucun compte ni dépendance cloud comme condition du workflow central ; frontières explicites entre stockage local et export ; sorties portables qui circulent vers d’autres outils sans perdre leur provenance.</p>\n<p>Forge se situe près de cette gamme comme système de recherche interne pour des pipelines d’artefacts reproductibles. Le trajet envisagé est directionnel, et non une intégration déjà affirmée : un matériau source peut devenir un payload 3D final et stable via une préparation inspirée de Forge ; Spatial Mapping Studio peut ensuite y attacher des régions sémantiques. La spécification V0 précise que topologie et ordre des triangles ne doivent plus changer après le mapping.</p>\n<h2 id=\"evolution-de-la-gamme\">Évolution de la gamme</h2>\n<p>Une nouvelle fiche Studio ne doit entrer qu’avec une source publique, une licence déclarée, un niveau de maturité honnête et une explication utile de ce qui reste local, de ce qui est exporté et de ce qui n’est pas encore implémenté. La collection est faite pour grandir outil précis après outil précis.</p>\n",
+  "headings": [
+    "Thèse",
+    "Premier instrument",
+    "Prochaine fiche",
+    "Grammaire commune",
+    "Évolution de la gamme"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Thèse",
+      "id": "these"
+    },
+    {
+      "level": 2,
+      "title": "Premier instrument",
+      "id": "premier-instrument"
+    },
+    {
+      "level": 2,
+      "title": "Prochaine fiche",
+      "id": "prochaine-fiche"
+    },
+    {
+      "level": 2,
+      "title": "Grammaire commune",
+      "id": "grammaire-commune"
+    },
+    {
+      "level": 2,
+      "title": "Évolution de la gamme",
+      "id": "evolution-de-la-gamme"
+    }
+  ]
+}

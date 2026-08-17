@@ -3,24 +3,23 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://electronicartefacts.com/projects/voice-capture-studio/#webpage",
-      "url": "https://electronicartefacts.com/projects/voice-capture-studio/",
-      "name": "Voice Capture Studio",
-      "description": "A signal-grounded voice studio in the browser, combining five capture and segmentation modes, glass-like interaction design, deterministic evidence pipelines and open WAV/metadata exports.",
+      "@id": "https://electronicartefacts.com/archive/collections/studio/#webpage",
+      "url": "https://electronicartefacts.com/archive/collections/studio/",
+      "name": "Studio",
+      "description": "An editorial collection for the open-source Studio line, beginning with Voice Capture Studio and prepared to receive Spatial Mapping Studio as its public record matures.",
       "inLanguage": "en",
-      "datePublished": "2026-07-09",
+      "datePublished": "2026-08-17",
       "dateModified": "2026-08-17",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
-        "caption": "Shipped July 2026 interface: warm-white glass panels, five mode capsules and local lexical segmentation.",
-        "description": "Current Voice Capture Studio interface showing the five modes and the local lexical segmentation console."
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Studio"
       },
       "breadcrumb": {
-        "@id": "https://electronicartefacts.com/projects/voice-capture-studio/#breadcrumb"
+        "@id": "https://electronicartefacts.com/archive/collections/studio/#breadcrumb"
       },
       "mainEntity": {
-        "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/"
+        "@id": "https://electronicartefacts.com/id/collection/studio/"
       },
       "isPartOf": {
         "@id": "https://electronicartefacts.com/#website"
@@ -32,20 +31,19 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://electronicartefacts.com/id/project/voice-capture-studio/",
-      "identifier": "ea:project:voice-capture-studio",
-      "name": "Voice Capture Studio",
-      "abstract": "Voice Capture Studio is an open-source, local-first browser instrument for capturing, performing, reviewing and segmenting voice across five purpose-built workflows.",
-      "description": "Voice Capture Studio is an open-source, local-first browser instrument for capturing, performing, reviewing and segmenting voice across five purpose-built workflows.",
-      "url": "https://electronicartefacts.com/projects/voice-capture-studio/",
+      "@id": "https://electronicartefacts.com/id/collection/studio/",
+      "identifier": "ea:collection:studio",
+      "name": "Studio",
+      "abstract": "Studio is Electronic Artefacts’ open-source software series: local-first browser instruments that turn specialist creative workflows into inspectable, portable and freely usable tools.",
+      "description": "Studio is Electronic Artefacts’ open-source software series: local-first browser instruments that turn specialist creative workflows into inspectable, portable and freely usable tools.",
+      "url": "https://electronicartefacts.com/archive/collections/studio/",
       "mainEntityOfPage": {
-        "@id": "https://electronicartefacts.com/projects/voice-capture-studio/#webpage"
+        "@id": "https://electronicartefacts.com/archive/collections/studio/#webpage"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/voice-capture-studio/voice-capture-studio-lexical-2026.png",
-        "caption": "Shipped July 2026 interface: warm-white glass panels, five mode capsules and local lexical segmentation.",
-        "description": "Current Voice Capture Studio interface showing the five modes and the local lexical segmentation console."
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+        "description": "Studio"
       },
       "author": [
         {
@@ -58,24 +56,18 @@
         }
       ],
       "keywords": [
-        "Voice Capture Studio",
-        "Speech Recording",
-        "Voice Dataset",
-        "Browser Software",
-        "Web Audio",
+        "Studio",
         "Open Source",
         "Local First",
-        "Privacy",
-        "Deterministic Research",
-        "Human Computer Interaction",
-        "Audio Pipeline",
-        "Audio Engineering",
+        "Browser Software",
+        "Creative Tools",
         "Web Development",
-        "Machine Learning"
+        "Human Computer Interaction",
+        "Creative Technology"
       ],
       "inLanguage": "en",
-      "dateCreated": "2026-07-09",
-      "datePublished": "2026-07-09",
+      "dateCreated": "2026-08-17",
+      "datePublished": "2026-08-17",
       "dateModified": "2026-08-17",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
@@ -83,16 +75,9 @@
       "copyrightHolder": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "license": "MIT",
       "isAccessibleForFree": true,
-      "wordCount": 1369,
+      "wordCount": 349,
       "citation": [
-        {
-          "@type": "CreativeWork",
-          "name": "Voice Capture Studio live demo",
-          "url": "https://electronicartefacts.github.io/voice-capture-studio/",
-          "publisher": "GitHub Pages"
-        },
         {
           "@type": "CreativeWork",
           "name": "Voice Capture Studio repository",
@@ -101,33 +86,10 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Voice Capture Studio architecture doctrine",
-          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md",
-          "publisher": "GitHub"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Voice Capture Studio phenomenology",
-          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/design/PHENOMENOLOGY.md",
-          "publisher": "GitHub"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Voice Capture Studio mode experience grid",
-          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/mode-experience-grid.md",
-          "publisher": "GitHub"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Voice Capture Studio capture technology audit",
-          "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/capture-technology-audit.md",
+          "name": "Spatial Mapping Studio repository",
+          "url": "https://github.com/electronicartefacts/spatial-mapping-studio",
           "publisher": "GitHub"
         }
-      ],
-      "sameAs": [
-        "https://electronicartefacts.github.io/voice-capture-studio/",
-        "https://github.com/electronicartefacts/voice-capture-studio",
-        "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs"
       ]
     },
     {
@@ -226,7 +188,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://electronicartefacts.com/projects/voice-capture-studio/#breadcrumb",
+      "@id": "https://electronicartefacts.com/archive/collections/studio/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -237,14 +199,14 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Projects",
-          "item": "https://electronicartefacts.com/projects.html"
+          "name": "Archive",
+          "item": "https://electronicartefacts.com/archive/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Voice Capture Studio",
-          "item": "https://electronicartefacts.com/projects/voice-capture-studio/"
+          "name": "Studio",
+          "item": "https://electronicartefacts.com/archive/collections/studio/"
         }
       ]
     }

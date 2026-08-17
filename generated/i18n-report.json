@@ -9,13 +9,13 @@
     ]
   },
   "canonicalEntities": {
-    "english": 137,
-    "french": 137,
+    "english": 138,
+    "french": 138,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 83410,
-    "sourceWordsCoveredByFrenchRecords": 83410,
+    "englishSourceWords": 83857,
+    "sourceWordsCoveredByFrenchRecords": 83857,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
@@ -27,6 +27,7 @@
     "ea:collection:knowledge-hub-fourth-wave",
     "ea:collection:knowledge-hub-second-wave",
     "ea:collection:knowledge-hub-third-wave",
+    "ea:collection:studio",
     "ea:collection:voice-capture-studio",
     "ea:concept:ai-agent",
     "ea:concept:algorithmic-composition",

@@ -54,6 +54,10 @@
     "en": "/archive/collections/knowledge-hub-third-wave/",
     "fr": "/fr/archive/collections/knowledge-hub-third-wave/"
   },
+  "/archive/collections/studio/": {
+    "en": "/archive/collections/studio/",
+    "fr": "/fr/archive/collections/studio/"
+  },
   "/archive/collections/voice-capture-studio/": {
     "en": "/archive/collections/voice-capture-studio/",
     "fr": "/fr/archive/collections/voice-capture-studio/"
@@ -145,6 +149,10 @@
   "/fr/archive/collections/knowledge-hub-third-wave/": {
     "en": "/archive/collections/knowledge-hub-third-wave/",
     "fr": "/fr/archive/collections/knowledge-hub-third-wave/"
+  },
+  "/fr/archive/collections/studio/": {
+    "en": "/archive/collections/studio/",
+    "fr": "/fr/archive/collections/studio/"
   },
   "/fr/archive/collections/voice-capture-studio/": {
     "en": "/archive/collections/voice-capture-studio/",

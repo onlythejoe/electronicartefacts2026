@@ -41,6 +41,17 @@ window.EA_COLLECTIONS = [
     rules: { entityIds: ["voice-capture-studio", "oreth-program", "ea-lightweight-template"], tags: ["Voice Capture Studio", "Speech Recording", "Voice Dataset", "Web Audio"], kinds: ["project", "program", "artefact"] },
   },
   {
+    id: "studio-collection",
+    canonicalId: "ea:collection:studio",
+    title: "Studio",
+    kind: "collection",
+    type: "Collection",
+    status: "active",
+    visibility: "public",
+    summary: "Electronic Artefacts’ open-source software line: independently usable, local-first browser tools with inspectable source and portable outputs.",
+    rules: { entityIds: ["voice-capture-studio"], tags: ["Open Source", "Local First", "Browser Software"], kinds: ["project", "artefact"] },
+  },
+  {
     id: "visual-research-collection",
     title: "Visual Research Collection",
     kind: "collection",
