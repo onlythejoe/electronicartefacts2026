@@ -2351,6 +2351,72 @@
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
     const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    root.querySelectorAll("[data-home-project-card]").forEach((card) => {
+      if (card.dataset.homeResizeBound === "true") return;
+      card.dataset.homeResizeBound = "true";
+      const stage = card.closest("[data-intent-stage]");
+      if (!stage) return;
+
+      const setCardSize = (width, height) => {
+        const stageRect = stage.getBoundingClientRect();
+        if (!stageRect.width || !stageRect.height) return;
+        const clampedWidth = Math.min(Math.max(width, 112), stageRect.width * 0.92);
+        const clampedHeight = Math.min(Math.max(height, 88), stageRect.height * 0.88);
+        card.style.width = `${((clampedWidth / stageRect.width) * 100).toFixed(2)}%`;
+        card.style.height = `${((clampedHeight / stageRect.height) * 100).toFixed(2)}%`;
+        card.dataset.homeCardResized = "true";
+        card.classList.add("is-home-card-resized");
+      };
+
+      card.querySelectorAll("[data-home-card-size]").forEach((control) => {
+        control.addEventListener("pointerdown", (event) => event.stopPropagation());
+        control.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const action = control.dataset.homeCardSize;
+          if (action === "reset") {
+            card.style.removeProperty("width");
+            card.style.removeProperty("height");
+            delete card.dataset.homeCardResized;
+            card.classList.remove("is-home-card-resized");
+            return;
+          }
+          const rect = card.getBoundingClientRect();
+          const factor = action === "larger" ? 1.14 : 0.86;
+          setCardSize(rect.width * factor, rect.height * factor);
+        });
+      });
+
+      const handle = card.querySelector("[data-home-card-resize]");
+      if (!handle) return;
+      let resize = null;
+      handle.addEventListener("pointerdown", (event) => {
+        if (event.button !== 0) return;
+        event.preventDefault();
+        event.stopPropagation();
+        const rect = card.getBoundingClientRect();
+        resize = { pointerId: event.pointerId, x: event.clientX, y: event.clientY, width: rect.width, height: rect.height };
+        handle.setPointerCapture?.(event.pointerId);
+        card.classList.add("is-home-card-resizing");
+      });
+      handle.addEventListener("pointermove", (event) => {
+        if (!resize || event.pointerId !== resize.pointerId) return;
+        event.preventDefault();
+        setCardSize(resize.width + event.clientX - resize.x, resize.height + event.clientY - resize.y);
+      });
+      const finishResize = () => {
+        if (!resize) return;
+        handle.releasePointerCapture?.(resize.pointerId);
+        resize = null;
+        card.classList.remove("is-home-card-resizing");
+      };
+      handle.addEventListener("pointerup", finishResize);
+      handle.addEventListener("pointercancel", finishResize);
+      handle.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+    });
     /* Touch layouts keep their native links and static composition. */
     if (coarsePointer) return;
     const automaticLayerSelector = [
@@ -2515,7 +2581,7 @@
         };
 
         layer.addEventListener("pointerdown", (event) => {
-          if (event.button !== 0 || drag) return;
+          if (event.button !== 0 || drag || (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize]"))) return;
           pressWasSelected = selectedMovableLayer === layer;
           selectMovableLayer(layer);
           pendingPress = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
@@ -2547,6 +2613,7 @@
           if (drag) event.preventDefault();
         });
         layer.addEventListener("click", (event) => {
+          if (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize]")) return;
           if (event.detail === 0) return;
           if (performance.now() <= suppressClickUntil) {
             event.preventDefault();

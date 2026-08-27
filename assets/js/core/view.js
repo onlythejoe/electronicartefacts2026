@@ -1351,6 +1351,8 @@
     ].map(entityById);
     if (!lead) return "";
     const supporting = [oeilDeMeg, vaste, vestiges, forge].filter(Boolean);
+    const reservedIds = [lead, ...supporting].map((item) => item?.id).filter(Boolean);
+    const moreProjects = homeProjects(reservedIds).slice(0, 4);
     const signalCopy = document.documentElement.lang?.startsWith("fr")
       ? "Choisissez un système pour l’explorer directement : un signal, une destination."
       : "Choose a system to explore it directly — one signal, one destination.";
@@ -1414,9 +1416,24 @@
             </div>
           </div>
         </div>
+        ${moreProjects.length ? `
+          <div class="selected-works-panel__more" id="selected-works-more" data-selected-works-more hidden>
+            <div class="selected-works-panel__stack-head">
+              <p class="card__meta">MORE WORK</p>
+              <span>${esc(countLabel(moreProjects.length, "item"))}</span>
+            </div>
+            <div class="selected-works-panel__more-grid">
+              ${moreProjects.map((item) => selectedWorksCard(item, { featured: false })).join("")}
+            </div>
+          </div>` : ""}
         <div class="link-row selected-works-panel__links">
-          <a class="tag" href="./projects.html">Browse Projects</a>
-          <a class="tag" href="./work.html">See More Work</a>
+          ${moreProjects.length ? `
+            <button class="tag selected-works-action selected-works-action--more" type="button" data-selected-works-toggle aria-expanded="false" aria-controls="selected-works-more">
+              <span class="selected-works-action__label">See More Work</span><span class="selected-works-action__icon" aria-hidden="true">+</span>
+            </button>` : ""}
+          <a class="tag selected-works-action selected-works-action--browse" href="./projects.html">
+            <span class="selected-works-action__label">Browse Projects</span><span class="selected-works-action__icon" aria-hidden="true">↘</span>
+          </a>
         </div>
       </section>
     `;

@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/projects/innerside/#webpage",
       "url": "https://electronicartefacts.com/projects/innerside/",
       "name": "InnerSide",
-      "description": "A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.",
+      "description": "Product vision and public technical dossier for InnerSide, RED DOOR’s first software product, developed with strategic and technology contributions from Electronic Artefacts.",
       "inLanguage": "en",
       "datePublished": "2026-08-04",
-      "dateModified": "2026-08-04",
+      "dateModified": "2026-08-27",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/id/project/innerside/",
       "identifier": "ea:project:innerside",
       "name": "InnerSide",
-      "abstract": "InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.",
-      "description": "InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.",
+      "abstract": "InnerSide explores a more intentional relationship between people, places and digital experiences—showing less, at the right moment.",
+      "description": "InnerSide explores a more intentional relationship between people, places and digital experiences—showing less, at the right moment.",
       "url": "https://electronicartefacts.com/projects/innerside/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/projects/innerside/#webpage"
@@ -68,7 +68,7 @@
       "inLanguage": "en",
       "dateCreated": "2026-07-24",
       "datePublished": "2026-08-04",
-      "dateModified": "2026-08-04",
+      "dateModified": "2026-08-27",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 240
+      "wordCount": 315
     },
     {
       "@type": "Organization",

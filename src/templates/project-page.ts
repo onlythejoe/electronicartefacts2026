@@ -37,6 +37,9 @@ const isVoiceCaptureStudioProject = (project: ProjectEntity): boolean =>
   project.id === "ea:project:voice-capture-studio" ||
   project.translationOf === "ea:project:voice-capture-studio";
 
+const isInnerSideProject = (project: ProjectEntity): boolean =>
+  project.id === "ea:project:innerside" || project.translationOf === "ea:project:innerside";
+
 const colorMap: Record<string, string> = {
   amber: "#d89f4f",
   black: "#050505",
@@ -180,6 +183,78 @@ const renderHeroVisual = (project: ProjectEntity): string => {
       </figcaption>
     </figure>`;
 };
+
+const renderInnerSideHero = (project: ProjectEntity, heroNav: Array<{ label: string; href: string }>): string => `
+  <section class="zone-card hero innerside-hero" id="project-overview" data-entry-id="innerside">
+    <div class="innerside-hero__copy">
+      ${renderProjectBreadcrumb(project)}
+      <p class="eyebrow">RED DOOR × ELECTRONIC ARTEFACTS</p>
+      <p class="innerside-wordmark" aria-label="InnerSide"><span>Inner</span><strong>Side</strong></p>
+      <h1>${ui(project, "The digital layer of a place should appear only when it matters.", "La couche numérique d’un lieu ne devrait apparaître que lorsqu’elle compte.")}</h1>
+      <p class="lede">${ui(
+        project,
+        "InnerSide explores a more contextual relationship between people, places and digital experiences. A living software system, designed to reveal less—and make each appearance more meaningful.",
+        "InnerSide explore une relation plus contextuelle entre les personnes, les lieux et les expériences numériques. Un système logiciel vivant, conçu pour moins montrer — et rendre chaque apparition plus signifiante.",
+      )}</p>
+      <div class="button-row button-row--compact">
+        <a class="button button--primary" href="#innerside-vision">${ui(project, "Discover the vision", "Découvrir la vision")}</a>
+        <a class="button button--secondary" href="#innerside-dossier">${ui(project, "Open the technical dossier", "Ouvrir le dossier technique")}</a>
+      </div>
+      <div class="innerside-availability" role="note">
+        <span aria-hidden="true"></span>
+        <strong>${ui(project, "Research prototype", "Prototype de recherche")}</strong>
+        <small>${ui(project, "Public access is not yet open", "L’accès public n’est pas encore ouvert")}</small>
+      </div>
+      <nav class="project-dossier-nav innerside-hero__nav" aria-label="${ui(project, "InnerSide sections", "Sections InnerSide")}">
+        ${heroNav.map((item) => `<a class="tag" href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join("")}
+      </nav>
+    </div>
+    <div class="innerside-hero__visual" aria-label="${ui(project, "Abstract representation of a contextual digital territory", "Représentation abstraite d’un territoire numérique contextuel")}">
+      <div class="innerside-signal"><span>CONTEXT / 01</span><i></i><i></i><i></i></div>
+      <div class="innerside-threshold" aria-hidden="true"><i></i><i></i><span>IN</span></div>
+      <div class="innerside-orbit innerside-orbit--one" aria-hidden="true"><b></b><span>${ui(project, "Place", "Lieu")}</span></div>
+      <div class="innerside-orbit innerside-orbit--two" aria-hidden="true"><b></b><span>${ui(project, "Context", "Contexte")}</span></div>
+      <div class="innerside-orbit innerside-orbit--three" aria-hidden="true"><b></b><span>${ui(project, "Agency", "Choix")}</span></div>
+      <p>${ui(project, "A public interpretation—not a product interface.", "Une interprétation publique — pas une interface produit.")}</p>
+    </div>
+  </section>`;
+
+const renderInnerSideExperience = (project: ProjectEntity): string => `
+  <section class="zone-card hero innerside-experience" id="innerside-vision">
+    <div class="innerside-experience__intro">
+      <p class="eyebrow">${ui(project, "A DIFFERENT DIGITAL PRESENCE", "UNE AUTRE PRÉSENCE NUMÉRIQUE")}</p>
+      <h2>${ui(project, "Not another feed. A situated layer.", "Pas un flux de plus. Une couche située.")}</h2>
+      <p class="lede">${ui(
+        project,
+        "InnerSide starts from a simple conviction: digital experiences can respect the place, the moment and the person. The product is being shaped around three public principles.",
+        "InnerSide part d’une conviction simple : une expérience numérique peut respecter le lieu, le moment et la personne. Le produit se construit autour de trois principes publics.",
+      )}</p>
+    </div>
+    <div class="innerside-principles">
+      <article><span>01</span><h3>${ui(project, "Territory is context", "Le territoire est contexte")}</h3><p>${ui(project, "Place is not a pin on a map. It changes what can become relevant.", "Un lieu n’est pas un point sur une carte. Il modifie ce qui peut devenir pertinent.")}</p></article>
+      <article><span>02</span><h3>${ui(project, "Visibility is intentional", "La visibilité est intentionnelle")}</h3><p>${ui(project, "Presence is contextual, chosen and limited—not a permanent public broadcast.", "La présence est contextuelle, choisie et limitée — jamais une diffusion publique permanente.")}</p></article>
+      <article><span>03</span><h3>${ui(project, "Experience stays human", "L’expérience reste humaine")}</h3><p>${ui(project, "Technology supports encounters and meaning without demanding constant attention.", "La technologie soutient les rencontres et le sens sans réclamer une attention constante.")}</p></article>
+    </div>
+  </section>
+  <section class="zone-card hero innerside-dossier" id="innerside-dossier">
+    <div class="section-head">
+      <p class="eyebrow">${ui(project, "PUBLIC TECHNICAL DOSSIER", "DOSSIER TECHNIQUE PUBLIC")}</p>
+      <h2>${ui(project, "A composed system, disclosed by layers.", "Un système composé, révélé par couches.")}</h2>
+      <p class="lede">${ui(project, "This diagram describes the public architecture of intent. It deliberately excludes internal contracts, algorithms, security mechanisms and unpublished interaction flows.", "Ce schéma décrit l’architecture publique d’intention. Il exclut volontairement les contrats internes, algorithmes, mécanismes de sécurité et parcours d’interaction non publiés.")}</p>
+    </div>
+    <div class="innerside-stack" role="img" aria-label="${ui(project, "Public architecture: surfaces, contextual domains, and trust foundation", "Architecture publique : surfaces, domaines contextuels et socle de confiance")}">
+      <div class="innerside-stack__layer innerside-stack__layer--surface"><span>${ui(project, "Surfaces", "Surfaces")}</span><strong>${ui(project, "Web · Mobile · Operational", "Web · Mobile · Opérationnel")}</strong><small>${ui(project, "One product language, adapted to each situation", "Un même langage produit, adapté à chaque situation")}</small></div>
+      <div class="innerside-stack__domains">
+        <span>${ui(project, "Identity", "Identité")}</span><span>${ui(project, "Territory", "Territoire")}</span><span>${ui(project, "Experience", "Expérience")}</span><span>${ui(project, "Publishing", "Publication")}</span><span>${ui(project, "Relations", "Relations")}</span><span>${ui(project, "Value", "Valeur")}</span>
+      </div>
+      <div class="innerside-stack__layer innerside-stack__layer--trust"><span>${ui(project, "Trust foundation", "Socle de confiance")}</span><strong>${ui(project, "Explicit context · least disclosure · bounded authority", "Contexte explicite · divulgation minimale · autorité bornée")}</strong><small>${ui(project, "The system closes rather than inventing permission", "Le système se ferme plutôt que d’inventer une permission")}</small></div>
+    </div>
+    <div class="innerside-boundary" id="innerside-boundary">
+      <article><p class="eyebrow">${ui(project, "VISIBLE", "VISIBLE")}</p><h3>${ui(project, "What we can responsibly say", "Ce que nous pouvons dire avec justesse")}</h3><ul><li>${ui(project, "A contextual, map-first product direction", "Une direction produit contextuelle, pensée depuis le territoire")}</li><li>${ui(project, "Modular domains with explicit responsibilities", "Des domaines modulaires aux responsabilités explicites")}</li><li>${ui(project, "Privacy and agency treated as product architecture", "La confidentialité et le choix traités comme architecture produit")}</li><li>${ui(project, "Executable research prototypes and local validation", "Des prototypes de recherche exécutables et des validations locales")}</li></ul></article>
+      <article><p class="eyebrow">${ui(project, "BEHIND THE DOOR", "DERRIÈRE LA PORTE")}</p><h3>${ui(project, "What remains deliberately private", "Ce qui reste volontairement privé")}</h3><ul><li>${ui(project, "Detailed interaction and release scenarios", "Les scénarios détaillés d’interaction et de sortie")}</li><li>${ui(project, "Internal contracts and orchestration mechanics", "Les contrats internes et mécanismes d’orchestration")}</li><li>${ui(project, "Security, identity and trust implementation", "L’implémentation de la sécurité, de l’identité et de la confiance")}</li><li>${ui(project, "Unannounced capabilities and research hypotheses", "Les capacités non annoncées et hypothèses de recherche")}</li></ul></article>
+    </div>
+    <p class="innerside-evidence"><strong>${ui(project, "Evidence boundary", "Frontière de preuve")}</strong> ${ui(project, "The foundations described here are supported by current research and prototype work. This page does not claim production readiness, public availability, market validation or provider/device validation.", "Les fondations décrites ici sont étayées par les travaux actuels de recherche et de prototypage. Cette page ne revendique ni disponibilité publique, ni maturité de production, ni validation marché, fournisseur ou appareil.")}</p>
+  </section>`;
 
 const refDetails = (ref: EntityRef, byId: Map<string, Entity>, routeById: Record<string, string>) => {
   const entity = byId.get(ref.id);
@@ -1004,12 +1079,18 @@ export const renderProjectPage = (
   const isPalimpsests = project.slug.canonical === "palimpsests";
   const isVestiges = isVestigesProject(project);
   const isVoiceCaptureStudio = isVoiceCaptureStudioProject(project);
+  const isInnerSide = isInnerSideProject(project);
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
   const productionRefs = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId));
   const heroNav = [
     ...(isPalimpsests ? [{ label: ui(project, "Listen", "Écouter"), href: "#project-music" }] : []),
     ...(isVestiges ? [{ label: ui(project, "Enter Vestiges", "Entrer dans Vestiges"), href: "#project-vestiges" }] : []),
     ...(isVoiceCaptureStudio ? [{ label: ui(project, "Experience", "Expérience"), href: "#voice-capture-experience" }] : []),
+    ...(isInnerSide ? [
+      { label: ui(project, "Vision", "Vision"), href: "#innerside-vision" },
+      { label: ui(project, "Architecture", "Architecture"), href: "#innerside-dossier" },
+      { label: ui(project, "Boundary", "Frontière"), href: "#innerside-boundary" },
+    ] : []),
     { label: "Brief", href: "#project-brief" },
     { label: "System", href: "#project-system" },
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
@@ -1051,9 +1132,15 @@ export const renderProjectPage = (
       ${renderHeroVisual(project)}
     </section>`;
 
-  return `${isPalimpsests ? renderPalimpsestsArtistHero(project, heroNav) : defaultHero}${isPalimpsests ? `
+  const hero = isPalimpsests
+    ? renderPalimpsestsArtistHero(project, heroNav)
+    : isInnerSide
+      ? renderInnerSideHero(project, heroNav)
+      : defaultHero;
+
+  return `${hero}${isPalimpsests ? `
     ${renderPalimpsestsMusic(project)}` : ""}
-    ${renderVestigesGateway(project)}${renderVoiceCaptureStudioExperience(project)}
+    ${renderVestigesGateway(project)}${renderVoiceCaptureStudioExperience(project)}${isInnerSide ? renderInnerSideExperience(project) : ""}
     ${renderProjectSystem(project)}
     ${isPalimpsests ? renderPalimpsestsResearchBoard(project) : renderProjectMoodboard(project)}
     ${renderProjectDevelopment(project, relations, byId, routeById)}

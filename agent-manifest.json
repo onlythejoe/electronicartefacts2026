@@ -86,7 +86,7 @@
     "collection": 14,
     "artefact": 6
   },
-  "lastModified": "2026-08-17",
+  "lastModified": "2026-08-27",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -306,7 +306,7 @@
       "translationOf": "ea:project:innerside",
       "type": "project",
       "title": "InnerSide",
-      "summary": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+      "summary": "Vision produit et dossier technique public d’InnerSide, premier logiciel de RED DOOR, développé avec la contribution stratégique et technologique d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/projects/innerside/",
       "route": "/fr/projects/innerside/",
       "identifier": "https://electronicartefacts.com/fr/id/project/innerside/",
@@ -324,14 +324,14 @@
       "status": "research",
       "confidence": "observed",
       "publishedAt": "2026-08-04",
-      "modifiedAt": "2026-08-04"
+      "modifiedAt": "2026-08-27"
     },
     {
       "id": "ea:project:innerside",
       "locale": "en",
       "type": "project",
       "title": "InnerSide",
-      "summary": "A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.",
+      "summary": "Product vision and public technical dossier for InnerSide, RED DOOR’s first software product, developed with strategic and technology contributions from Electronic Artefacts.",
       "url": "https://electronicartefacts.com/projects/innerside/",
       "route": "/projects/innerside/",
       "identifier": "https://electronicartefacts.com/id/project/innerside/",
@@ -349,7 +349,7 @@
       "status": "research",
       "confidence": "observed",
       "publishedAt": "2026-08-04",
-      "modifiedAt": "2026-08-04"
+      "modifiedAt": "2026-08-27"
     },
     {
       "id": "ea:project:palimpsests-fr",

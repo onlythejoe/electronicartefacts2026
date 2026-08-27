@@ -4,9 +4,9 @@ type: project
 slug:
   canonical: innerside
 title: InnerSide
-subtitle: An Undisclosed Software Project by RED DOOR
-abstract: InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.
-description: A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.
+subtitle: A contextual digital layer by RED DOOR
+abstract: InnerSide explores a more intentional relationship between people, places and digital experiences—showing less, at the right moment.
+description: Product vision and public technical dossier for InnerSide, RED DOOR’s first software product, developed with strategic and technology contributions from Electronic Artefacts.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -14,11 +14,11 @@ status: research
 maturity: prototype
 confidence: observed
 version:
-  version: 0.1.0
+  version: 0.2.0
   createdAt: "2026-07-24"
   publishedAt: "2026-08-04"
-  modifiedAt: "2026-08-04"
-  changeSummary: First public project record, establishing project leadership, collaboration roles and the current R&D boundary.
+  modifiedAt: "2026-08-27"
+  changeSummary: New product page and public technical dossier covering vision, principles, intent architecture and an explicit confidentiality boundary.
 authors:
   - id: ea:organization:red-door
 publisher: ea:organization:electronic-artefacts
@@ -26,8 +26,8 @@ contributors:
   - id: ea:organization:electronic-artefacts
     role: Strategic and technology collaborator
 category: collaboration
-brief: Help RED DOOR shape its first product into a coherent and testable technical system without prematurely revealing the experience it is preparing.
-context: InnerSide is an emerging software project at the intersection of territory, context and human experience. Its detailed proposition remains deliberately undisclosed while RED DOOR and its collaborators establish the product and technical foundations.
+brief: Design a coherent, testable contextual product with RED DOOR that respects human agency without prematurely revealing its differentiating mechanisms.
+context: InnerSide is an emerging software system at the intersection of territory, context and human experience. Its public vision can be understood; internal contracts, trust mechanisms and unannounced flows remain deliberately confidential.
 stakeholders:
   - id: ea:organization:red-door
   - id: ea:organization:electronic-artefacts
@@ -72,11 +72,11 @@ developmentFocus:
   - Research governance
 ---
 
-## Only the threshold
+## Digital, in the right place
 
-InnerSide is RED DOOR’s first product. Its field is territorial, contextual and human; its exact form remains deliberately out of view.
+InnerSide is RED DOOR’s first product. It explores what a digital experience becomes when it starts with territory, understands context and leaves people in control of their presence.
 
-This page documents the existence of the work, the people carrying it and the contribution made by Electronic Artefacts. It is not a reveal, a feature list or a launch announcement.
+This page opens the project’s vision and architecture principles. It is not a feature list, a launch announcement or a publication of its internal mechanisms.
 
 ## Carried by RED DOOR
 
@@ -88,9 +88,15 @@ Electronic Artefacts supports RED DOOR as a strategic and technology collaborato
 
 This is a technology contribution to a project carried by RED DOOR. Electronic Artefacts does not present InnerSide as one of its own products.
 
-## Current state
+## An architecture shaped by boundaries
 
-The project is in research and prototyping. The work includes a governed product framework, architecture studies and executable experiments, but none of these is presented here as a finished service or a production system.
+Current work explicitly separates the responsibilities of identity, territory, experience, publishing, relations and value. This composition allows each domain to be tested without transferring authority that does not belong to it.
+
+Privacy is not a setting added later. Context must be explicit, disclosure minimal and every capability bounded by its owner. This page exposes those principles without publishing their contracts or implementation.
+
+## State and evidence
+
+The project is in research and prototyping. Current work includes a governed product framework, a composed architecture and executable experiments validated locally. It is not yet a public service, market validation or a system claimed to be production-ready.
 
 ## What remains behind the door
 

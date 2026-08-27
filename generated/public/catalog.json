@@ -4322,9 +4322,9 @@
       "locale": "fr",
       "translationOf": "ea:project:innerside",
       "title": "InnerSide",
-      "subtitle": "Un projet logiciel encore secret porté par RED DOOR",
-      "summary": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
-      "description": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+      "subtitle": "Une couche numérique contextuelle portée par RED DOOR",
+      "summary": "InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.",
+      "description": "Vision produit et dossier technique public d’InnerSide, premier logiciel de RED DOOR, développé avec la contribution stratégique et technologique d’Electronic Artefacts.",
       "status": "research",
       "maturity": "prototype",
       "confidence": "observed",
@@ -4348,7 +4348,7 @@
       "identifier": "/fr/id/project/innerside/",
       "temporality": {
         "creationDate": "2026-07-24",
-        "lastUpdated": "2026-08-04",
+        "lastUpdated": "2026-08-27",
         "releaseDate": "2026-08-04",
         "creationYear": "2026"
       }
@@ -7821,9 +7821,9 @@
       "type": "project",
       "locale": "en",
       "title": "InnerSide",
-      "subtitle": "An Undisclosed Software Project by RED DOOR",
-      "summary": "InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.",
-      "description": "A deliberately partial view of an emerging software project carried by RED DOOR and supported by Electronic Artefacts through strategy, technology and R&D.",
+      "subtitle": "A contextual digital layer by RED DOOR",
+      "summary": "InnerSide explores a more intentional relationship between people, places and digital experiences—showing less, at the right moment.",
+      "description": "Product vision and public technical dossier for InnerSide, RED DOOR’s first software product, developed with strategic and technology contributions from Electronic Artefacts.",
       "status": "research",
       "maturity": "prototype",
       "confidence": "observed",
@@ -7847,7 +7847,7 @@
       "identifier": "/id/project/innerside/",
       "temporality": {
         "creationDate": "2026-07-24",
-        "lastUpdated": "2026-08-04",
+        "lastUpdated": "2026-08-27",
         "releaseDate": "2026-08-04",
         "creationYear": "2026"
       }

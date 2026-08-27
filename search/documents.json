@@ -5886,15 +5886,16 @@
     "type": "project",
     "title": "InnerSide",
     "alternateNames": [],
-    "abstract": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
+    "abstract": "InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.",
     "headings": [
-      "Seulement le seuil",
+      "Le numérique, au bon endroit",
       "Porté par RED DOOR",
       "La contribution d’Electronic Artefacts",
-      "État actuel",
+      "Une architecture guidée par les limites",
+      "État et preuve",
       "Ce qui reste derrière la porte"
     ],
-    "body": "Seulement le seuil InnerSide est le premier produit de RED DOOR. Son territoire est contextuel et humain ; sa forme exacte demeure volontairement hors champ. Cette page documente l’existence du travail, le collectif qui le porte et la contribution d’Electronic Artefacts. Elle ne constitue ni une révélation, ni une liste de fonctionnalités, ni une annonce de lancement. Porté par RED DOOR RED DOOR incube et porte InnerSide. Le collectif tient la direction produit et décide de ce que le projet devient, de ce qui reste privé et du moment où une ouverture publique plus large devient pertinente. La contribution d’Electronic Artefacts Electronic Artefacts accompagne RED DOOR comme collaborateur stratégique et technologique. Le studio contribue activement à la R&amp;D par le conseil produit et technologique, l’architecture logicielle, l’exploration technique, le prototypage et le développement de fondations destinées à rendre le projet cohérent et durable. Il s’agit d’une contribution technologique à un projet porté par RED DOOR. Electronic Artefacts ne présente pas InnerSide comme l’un de ses propres produits. État actuel Le projet se trouve en phase de recherche et de prototypage. Le travail comprend un cadre produit gouverné, des études d’architecture et des expériences exécutables, sans que ces éléments soient présentés ici comme un service achevé ou un système de production. Ce qui reste derrière la porte L’expérience détaillée, son premier usage public et son chemin de sortie sont volontairement absents de cette fiche. Pour le moment, le signal visible est la collaboration elle-même : RED DOOR construit InnerSide et Electronic Artefacts contribue à lui donner une forme stratégique et technologique.",
+    "body": "Le numérique, au bon endroit InnerSide est le premier produit de RED DOOR. Il explore ce que devient une expérience numérique lorsqu’elle commence par le territoire, tient compte du contexte et laisse à la personne la maîtrise de sa présence. Cette page ouvre la vision et les principes d’architecture du projet. Elle ne constitue ni une liste de fonctionnalités, ni une annonce de lancement, ni la publication de ses mécanismes internes. Porté par RED DOOR RED DOOR incube et porte InnerSide. Le collectif tient la direction produit et décide de ce que le projet devient, de ce qui reste privé et du moment où une ouverture publique plus large devient pertinente. La contribution d’Electronic Artefacts Electronic Artefacts accompagne RED DOOR comme collaborateur stratégique et technologique. Le studio contribue activement à la R&amp;D par le conseil produit et technologique, l’architecture logicielle, l’exploration technique, le prototypage et le développement de fondations destinées à rendre le projet cohérent et durable. Il s’agit d’une contribution technologique à un projet porté par RED DOOR. Electronic Artefacts ne présente pas InnerSide comme l’un de ses propres produits. Une architecture guidée par les limites Les travaux en cours séparent explicitement les responsabilités liées à l’identité, au territoire, aux expériences, à la publication, aux relations et à la valeur. Cette composition permet d’éprouver chaque domaine sans lui transférer une autorité qui ne lui appartient pas. La confidentialité n’est pas un réglage ajouté après coup. Le contexte doit être explicite, la divulgation minimale et toute capacité rester bornée par son propriétaire. Cette page expose ces principes sans publier leurs contrats ni leur implémentation. État et preuve Le projet se trouve en phase de recherche et de prototypage. Le travail actuel comprend un cadre produit gouverné, une architecture composée et des expériences exécutables validées localement. Il ne s’agit pas encore d’un service public, d’une validation de marché ou d’un système déclaré prêt pour la production. Ce qui reste derrière la porte L’expérience détaillée, son premier usage public et son chemin de sortie sont volontairement absents de cette fiche. Pour le moment, le signal visible est la collaboration elle-même : RED DOOR construit InnerSide et Electronic Artefacts contribue à lui donner une forme stratégique et technologique.",
     "tags": [
       "InnerSide",
       "RED DOOR",
@@ -5916,7 +5917,7 @@
     ],
     "status": "research",
     "confidence": "observed",
-    "modifiedAt": "2026-08-04"
+    "modifiedAt": "2026-08-27"
   },
   {
     "id": "ea:project:palimpsests-fr",
@@ -10642,15 +10643,16 @@
     "type": "project",
     "title": "InnerSide",
     "alternateNames": [],
-    "abstract": "InnerSide is RED DOOR’s first product, currently being shaped through research, architecture and prototyping with active strategic and technology support from Electronic Artefacts.",
+    "abstract": "InnerSide explores a more intentional relationship between people, places and digital experiences—showing less, at the right moment.",
     "headings": [
-      "Only the threshold",
+      "Digital, in the right place",
       "Carried by RED DOOR",
       "The Electronic Artefacts contribution",
-      "Current state",
+      "An architecture shaped by boundaries",
+      "State and evidence",
       "What remains behind the door"
     ],
-    "body": "Only the threshold InnerSide is RED DOOR’s first product. Its field is territorial, contextual and human; its exact form remains deliberately out of view. This page documents the existence of the work, the people carrying it and the contribution made by Electronic Artefacts. It is not a reveal, a feature list or a launch announcement. Carried by RED DOOR RED DOOR incubates and leads InnerSide. The collective holds the product direction and decides what the project becomes, what remains private and when a wider public view is appropriate. The Electronic Artefacts contribution Electronic Artefacts supports RED DOOR as a strategic and technology collaborator. The studio contributes actively to R&amp;D through product and technology counsel, software architecture, technical exploration, prototyping and the development of foundations intended to make the project coherent and durable. This is a technology contribution to a project carried by RED DOOR. Electronic Artefacts does not present InnerSide as one of its own products. Current state The project is in research and prototyping. The work includes a governed product framework, architecture studies and executable experiments, but none of these is presented here as a finished service or a production system. What remains behind the door The detailed product experience, its first public use and its release path are intentionally absent from this record. For now, the visible signal is the collaboration itself: RED DOOR is building InnerSide, and Electronic Artefacts is helping give it strategic and technological form.",
+    "body": "Digital, in the right place InnerSide is RED DOOR’s first product. It explores what a digital experience becomes when it starts with territory, understands context and leaves people in control of their presence. This page opens the project’s vision and architecture principles. It is not a feature list, a launch announcement or a publication of its internal mechanisms. Carried by RED DOOR RED DOOR incubates and leads InnerSide. The collective holds the product direction and decides what the project becomes, what remains private and when a wider public view is appropriate. The Electronic Artefacts contribution Electronic Artefacts supports RED DOOR as a strategic and technology collaborator. The studio contributes actively to R&amp;D through product and technology counsel, software architecture, technical exploration, prototyping and the development of foundations intended to make the project coherent and durable. This is a technology contribution to a project carried by RED DOOR. Electronic Artefacts does not present InnerSide as one of its own products. An architecture shaped by boundaries Current work explicitly separates the responsibilities of identity, territory, experience, publishing, relations and value. This composition allows each domain to be tested without transferring authority that does not belong to it. Privacy is not a setting added later. Context must be explicit, disclosure minimal and every capability bounded by its owner. This page exposes those principles without publishing their contracts or implementation. State and evidence The project is in research and prototyping. Current work includes a governed product framework, a composed architecture and executable experiments validated locally. It is not yet a public service, market validation or a system claimed to be production-ready. What remains behind the door The detailed product experience, its first public use and its release path are intentionally absent from this record. For now, the visible signal is the collaboration itself: RED DOOR is building InnerSide, and Electronic Artefacts is helping give it strategic and technological form.",
     "tags": [
       "InnerSide",
       "RED DOOR",
@@ -10672,7 +10674,7 @@
     ],
     "status": "research",
     "confidence": "observed",
-    "modifiedAt": "2026-08-04"
+    "modifiedAt": "2026-08-27"
   },
   {
     "id": "ea:project:palimpsests",

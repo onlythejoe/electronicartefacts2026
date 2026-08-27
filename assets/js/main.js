@@ -3006,24 +3006,44 @@
   const homeHeroFrame = (item, className, options = {}) => {
     if (!item) return "";
     const media = cardImageFor(item);
-    if (!media) return "";
     const href = entryHref(item);
+    const description = options.description || item.abstract || item.description || "";
+    const status = options.status || item.statusLabel || item.status || "Active";
+    const visual = options.visual || (media
+      ? `<img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />`
+      : `<span class="home-project-hologram__monogram" aria-hidden="true">${esc(String(item.title || "EA").slice(0, 2))}</span>`);
     return `
-      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}">
-        <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
-        <figcaption>
-          <span>${esc(options.kicker || item.category || item.type || "Project")}</span>
-          <strong>${esc(item.title)}</strong>
-        </figcaption>
-      </a>
+      <article class="home-intent-stage__frame home-project-hologram ${esc(className)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" data-home-project-card>
+        <a class="home-project-hologram__link" href="${esc(href)}" aria-label="${esc(`${options.openLabel || "Open"} ${item.title}`)}">
+          <span class="home-project-hologram__visual" aria-hidden="${media ? "false" : "true"}">${visual}</span>
+          <span class="home-project-hologram__identity">
+            <span class="home-project-hologram__logo" aria-hidden="true">${options.logo || esc(String(item.title || "EA").slice(0, 2))}</span>
+            <span><small>${esc(options.kicker || item.category || item.type || "Project")}</small><strong>${esc(item.title)}</strong></span>
+          </span>
+          <span class="home-project-hologram__detail">
+            <span>${esc(description)}</span>
+            <small><i></i>${esc(status)}</small>
+          </span>
+        </a>
+        <span class="home-project-hologram__controls" role="group" aria-label="${esc(options.controlsLabel || "Resize project preview")}">
+          <button type="button" data-home-card-size="smaller" aria-label="${esc(options.smallerLabel || "Make preview smaller")}">−</button>
+          <button type="button" data-home-card-size="reset" aria-label="${esc(options.resetLabel || "Reset preview size")}">↺</button>
+          <button type="button" data-home-card-size="larger" aria-label="${esc(options.largerLabel || "Make preview larger")}">+</button>
+        </span>
+        <button class="home-project-hologram__resize-handle" type="button" data-home-card-resize aria-label="${esc(options.resizeLabel || "Resize project preview")}"><span></span></button>
+      </article>
     `;
   };
   const renderHomeHero = () => {
-    const ranked = homeProjects().filter((item) => cardImageFor(item));
+    const ranked = homeProjects();
     const lead = entityById("voice-capture-studio") || ranked[0] || entityById("vestiges");
-    const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
-    const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
+    const vaste = entityById("vaste");
+    const innerside = entityById("innerside");
+    const publicProof = entityById("oeil-de-meg") || ranked.find((item) => item.id !== lead?.id);
     const leadKicker = isFrench() ? "Notre prochain projet phare" : "Our next flagship";
+    const resizeLabels = isFrench()
+      ? { controlsLabel: "Redimensionner l’aperçu du projet", smallerLabel: "Réduire l’aperçu", resetLabel: "Réinitialiser la taille", largerLabel: "Agrandir l’aperçu", resizeLabel: "Redimensionner librement l’aperçu", openLabel: "Ouvrir" }
+      : { controlsLabel: "Resize project preview", smallerLabel: "Make preview smaller", resetLabel: "Reset preview size", largerLabel: "Make preview larger", resizeLabel: "Freely resize project preview", openLabel: "Open" };
 
     return `
       <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
@@ -3046,19 +3066,11 @@
           <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
             <div class="intent-hero__stage-label"><span>Selected work</span><strong>Current systems and shipped projects</strong></div>
             <div class="home-intent-stage__orbit" aria-hidden="true"></div>
-            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: leadKicker, eager: true })}
-            ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
-            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Shipped client work" })}
-            <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
-              <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer" aria-label="Open the Electronic Artefacts Instagram channel">
-                <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" alt="" loading="lazy" />
-                <span>@electronic.artefacts</span>
-              </a>
-              <a href="https://www.instagram.com/creativestuff.jpg/" target="_blank" rel="noreferrer" aria-label="Open the CreativeStuff.jpg Instagram channel">
-                <img src="./assets/media/projects/creativestuff/creativestuff-logo.jpg" alt="" loading="lazy" />
-                <span>@creativestuff.jpg</span>
-              </a>
-            </div>
+            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { ...resizeLabels, depth: 0.82, kicker: leadKicker, eager: true, logo: '<span class="home-project-logo home-project-logo--voice"><i></i><i></i><i></i><i></i></span>', description: isFrench() ? "Capture locale, corpus continu et exports de texte temporisé." : "Local capture, continuous corpus and timed-text exports." })}
+            ${homeHeroFrame(vaste, "home-intent-stage__frame--vaste", { ...resizeLabels, depth: 1.18, kicker: isFrench() ? "Runtime expérimental" : "Experimental runtime", logo: '<span class="home-project-logo home-project-logo--vaste">V<span>·</span></span>', visual: '<span class="home-project-hologram__graph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b></b></span>', description: isFrench() ? "Un runtime graph-native portable, contextuel et gouverné." : "A portable, contextual and governed graph-native runtime." })}
+            ${homeHeroFrame(innerside, "home-intent-stage__frame--innerside", { ...resizeLabels, depth: 1.48, kicker: "RED DOOR × EA", logo: '<span class="home-project-logo home-project-logo--innerside"><i></i><b>IS</b></span>', visual: '<span class="home-project-hologram__threshold" aria-hidden="true"><i></i><b>INNER<br>SIDE</b></span>', description: isFrench() ? "Produit émergent porté par RED DOOR, façonné avec Electronic Artefacts." : "An emerging RED DOOR product shaped with Electronic Artefacts." })}
+            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { ...resizeLabels, depth: 1.62, kicker: isFrench() ? "Projet client livré" : "Shipped client work", logo: '<span class="home-project-logo home-project-logo--eye">Œ</span>', description: isFrench() ? "Identité, narration et plateforme numérique pour la photographie." : "Identity, storytelling and a digital platform for photography." })}
+            <p class="home-intent-stage__hint" aria-hidden="true">${isFrench() ? "Sélectionner · déplacer · redimensionner" : "Select · move · resize"}</p>
           </aside>
         </div>
       </section>
@@ -4979,6 +4991,25 @@
     initForgeArtifactViewer();
     startGraphSurfaceAnimation();
     startResearchAtlas?.();
+    document.querySelectorAll("[data-selected-works-toggle]").forEach((button) => {
+      if (button.dataset.selectedWorksBound === "true") return;
+      button.dataset.selectedWorksBound = "true";
+      const targetId = button.getAttribute("aria-controls");
+      const target = targetId ? document.getElementById(targetId) : null;
+      if (!target) return;
+      button.addEventListener("click", () => {
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!expanded));
+        target.hidden = expanded;
+        target.classList.toggle("is-visible", !expanded);
+        const icon = button.querySelector(".selected-works-action__icon");
+        if (icon) icon.textContent = expanded ? "+" : "−";
+        button.setAttribute("aria-label", expanded
+          ? (isFrench() ? "Voir plus de réalisations" : "See more work")
+          : (isFrench() ? "Masquer les réalisations supplémentaires" : "Hide additional work"));
+        if (!expanded) refreshCardSurfaces(target);
+      });
+    });
   };
 
   const load = async () => {

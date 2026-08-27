@@ -160,6 +160,7 @@ await bundle(
   "js",
 );
 const publishedCssPath = path.join(rootDir, "assets/css/app.css");
+const unscopedCss = await readFile(publishedCssPath, "utf8");
 const [purgedCss] = await new PurgeCSS().purge({
   content: [
     "*.html", "fr/**/*.html", "projects/**/*.html", "programs/**/*.html", "knowledge/**/*.html",
@@ -167,20 +168,26 @@ const [purgedCss] = await new PurgeCSS().purge({
     "src/templates/**/*.ts", "assets/js/catalog.js", "assets/js/main.js", "assets/js/core/*.js",
   ].map((pattern) => path.join(rootDir, pattern)),
   css: [publishedCssPath],
+  blocklist: [
+    /home-project-hologram/, /home-project-logo/, /home-card-resized/,
+    /home-intent-stage__hint/, /home-intent-stage__frame--vaste/, /home-intent-stage__frame--innerside/,
+    /intent-hero--home/, /research-atlas/, /selected-works/,
+    /innerside-/,
+  ],
   safelist: { greedy: [/\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/] },
 });
 await writeFile(publishedCssPath, await minify(purgedCss.css, "css"));
 const [homeCss] = await new PurgeCSS().purge({
   content: ["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html", flowSource]
     .map((file) => path.join(rootDir, file)),
-  css: [publishedCssPath],
+  css: [{ raw: unscopedCss }],
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
       /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
       /consent-banner/, /flow-progress/, /reveal-/, /card-link/, /card-media-plate/,
-      /graph-surface/, /home-intent-stage/, /intent-hero/, /latests-/,
+      /graph-surface/, /home-intent-stage/, /home-card-resized/, /intent-hero/, /latests-/,
       /metric-pill/, /metric-rail/, /pill-cloud/, /program-card/,
       /project-butterfly/, /project-card/, /project-meg-badge/,
       /research-atlas/, /selected-works/, /signature-banner/,
@@ -196,13 +203,14 @@ const [projectCss] = await new PurgeCSS().purge({
     flowSource, "assets/js/core/project.js", "assets/js/core/context-menu.js",
   ]
     .map((pattern) => path.join(rootDir, pattern)),
-  css: [publishedCssPath],
+  css: [{ raw: unscopedCss }],
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
       /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
       /consent-banner/, /flow-progress/, /reveal-/, /card-link/,
+      /innerside-/,
       /data-media-state/, /data-spotlight/,
     ],
   },

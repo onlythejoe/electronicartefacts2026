@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/projects/innerside/#webpage",
       "url": "https://electronicartefacts.com/fr/projects/innerside/",
       "name": "InnerSide",
-      "description": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+      "description": "Vision produit et dossier technique public d’InnerSide, premier logiciel de RED DOOR, développé avec la contribution stratégique et technologique d’Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-08-04",
-      "dateModified": "2026-08-04",
+      "dateModified": "2026-08-27",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/project/innerside/",
       "identifier": "ea:project:innerside-fr",
       "name": "InnerSide",
-      "abstract": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
-      "description": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
+      "abstract": "InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.",
+      "description": "InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.",
       "url": "https://electronicartefacts.com/fr/projects/innerside/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/projects/innerside/#webpage"
@@ -68,7 +68,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-07-24",
       "datePublished": "2026-08-04",
-      "dateModified": "2026-08-04",
+      "dateModified": "2026-08-27",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 260
+      "wordCount": 365
     },
     {
       "@type": "Organization",

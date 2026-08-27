@@ -5,9 +5,9 @@ translationOf: ea:project:innerside
 slug:
   canonical: innerside
 title: InnerSide
-subtitle: Un projet logiciel encore secret porté par RED DOOR
-abstract: InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.
-description: Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.
+subtitle: Une couche numérique contextuelle portée par RED DOOR
+abstract: InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.
+description: Vision produit et dossier technique public d’InnerSide, premier logiciel de RED DOOR, développé avec la contribution stratégique et technologique d’Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -15,11 +15,11 @@ status: research
 maturity: prototype
 confidence: observed
 version:
-  version: 0.1.0
+  version: 0.2.0
   createdAt: "2026-07-24"
   publishedAt: "2026-08-04"
-  modifiedAt: "2026-08-04"
-  changeSummary: Première fiche publique du projet, clarifiant le portage, les rôles de collaboration et la frontière R&D actuelle.
+  modifiedAt: "2026-08-27"
+  changeSummary: Nouvelle page produit et dossier technique public, avec vision, principes, architecture d’intention et frontière de confidentialité explicite.
 authors:
   - id: ea:organization:red-door
 publisher: ea:organization:electronic-artefacts
@@ -27,8 +27,8 @@ contributors:
   - id: ea:organization:electronic-artefacts
     role: Collaborateur stratégique et technologique
 category: collaboration
-brief: Aider RED DOOR à transformer son premier produit en un système technique cohérent et testable, sans révéler prématurément l’expérience en préparation.
-context: InnerSide est un projet logiciel émergent, à la rencontre du territoire, du contexte et de l’expérience humaine. Sa proposition détaillée reste volontairement confidentielle pendant que RED DOOR et ses collaborateurs établissent ses fondations produit et techniques.
+brief: Concevoir avec RED DOOR un logiciel contextuel cohérent, testable et respectueux du choix humain, sans révéler prématurément ses mécanismes différenciants.
+context: InnerSide est un système logiciel émergent à la rencontre du territoire, du contexte et de l’expérience humaine. Sa vision publique peut être comprise ; ses contrats internes, mécanismes de confiance et parcours non annoncés restent volontairement confidentiels.
 stakeholders:
   - id: ea:organization:red-door
   - id: ea:organization:electronic-artefacts
@@ -73,11 +73,11 @@ developmentFocus:
   - Gouvernance de la recherche
 ---
 
-## Seulement le seuil
+## Le numérique, au bon endroit
 
-InnerSide est le premier produit de RED DOOR. Son territoire est contextuel et humain ; sa forme exacte demeure volontairement hors champ.
+InnerSide est le premier produit de RED DOOR. Il explore ce que devient une expérience numérique lorsqu’elle commence par le territoire, tient compte du contexte et laisse à la personne la maîtrise de sa présence.
 
-Cette page documente l’existence du travail, le collectif qui le porte et la contribution d’Electronic Artefacts. Elle ne constitue ni une révélation, ni une liste de fonctionnalités, ni une annonce de lancement.
+Cette page ouvre la vision et les principes d’architecture du projet. Elle ne constitue ni une liste de fonctionnalités, ni une annonce de lancement, ni la publication de ses mécanismes internes.
 
 ## Porté par RED DOOR
 
@@ -89,9 +89,15 @@ Electronic Artefacts accompagne RED DOOR comme collaborateur stratégique et tec
 
 Il s’agit d’une contribution technologique à un projet porté par RED DOOR. Electronic Artefacts ne présente pas InnerSide comme l’un de ses propres produits.
 
-## État actuel
+## Une architecture guidée par les limites
 
-Le projet se trouve en phase de recherche et de prototypage. Le travail comprend un cadre produit gouverné, des études d’architecture et des expériences exécutables, sans que ces éléments soient présentés ici comme un service achevé ou un système de production.
+Les travaux en cours séparent explicitement les responsabilités liées à l’identité, au territoire, aux expériences, à la publication, aux relations et à la valeur. Cette composition permet d’éprouver chaque domaine sans lui transférer une autorité qui ne lui appartient pas.
+
+La confidentialité n’est pas un réglage ajouté après coup. Le contexte doit être explicite, la divulgation minimale et toute capacité rester bornée par son propriétaire. Cette page expose ces principes sans publier leurs contrats ni leur implémentation.
+
+## État et preuve
+
+Le projet se trouve en phase de recherche et de prototypage. Le travail actuel comprend un cadre produit gouverné, une architecture composée et des expériences exécutables validées localement. Il ne s’agit pas encore d’un service public, d’une validation de marché ou d’un système déclaré prêt pour la production.
 
 ## Ce qui reste derrière la porte
 

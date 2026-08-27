@@ -6,9 +6,9 @@
     "canonical": "innerside"
   },
   "title": "InnerSide",
-  "subtitle": "Un projet logiciel encore secret porté par RED DOOR",
-  "abstract": "InnerSide est le premier produit de RED DOOR, actuellement façonné par la recherche, l’architecture et le prototypage avec le soutien stratégique et technologique actif d’Electronic Artefacts.",
-  "description": "Une vue volontairement partielle sur un projet logiciel émergent porté par RED DOOR et soutenu par Electronic Artefacts en stratégie, technologie et R&D.",
+  "subtitle": "Une couche numérique contextuelle portée par RED DOOR",
+  "abstract": "InnerSide explore une relation plus intentionnelle entre les personnes, les lieux et les expériences numériques — en montrant moins, au moment juste.",
+  "description": "Vision produit et dossier technique public d’InnerSide, premier logiciel de RED DOOR, développé avec la contribution stratégique et technologique d’Electronic Artefacts.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -16,11 +16,11 @@
   "maturity": "prototype",
   "confidence": "observed",
   "version": {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "createdAt": "2026-07-24",
     "publishedAt": "2026-08-04",
-    "modifiedAt": "2026-08-04",
-    "changeSummary": "Première fiche publique du projet, clarifiant le portage, les rôles de collaboration et la frontière R&D actuelle."
+    "modifiedAt": "2026-08-27",
+    "changeSummary": "Nouvelle page produit et dossier technique public, avec vision, principes, architecture d’intention et frontière de confidentialité explicite."
   },
   "authors": [
     {
@@ -48,8 +48,8 @@
     "Recherche et développement"
   ],
   "category": "collaboration",
-  "brief": "Aider RED DOOR à transformer son premier produit en un système technique cohérent et testable, sans révéler prématurément l’expérience en préparation.",
-  "context": "InnerSide est un projet logiciel émergent, à la rencontre du territoire, du contexte et de l’expérience humaine. Sa proposition détaillée reste volontairement confidentielle pendant que RED DOOR et ses collaborateurs établissent ses fondations produit et techniques.",
+  "brief": "Concevoir avec RED DOOR un logiciel contextuel cohérent, testable et respectueux du choix humain, sans révéler prématurément ses mécanismes différenciants.",
+  "context": "InnerSide est un système logiciel émergent à la rencontre du territoire, du contexte et de l’expérience humaine. Sa vision publique peut être comprise ; ses contrats internes, mécanismes de confiance et parcours non annoncés restent volontairement confidentiels.",
   "stakeholders": [
     {
       "id": "ea:organization:red-door"
@@ -98,19 +98,20 @@
     "Stratégie technologique",
     "Gouvernance de la recherche"
   ],
-  "bodyHtml": "<h2 id=\"seulement-le-seuil\">Seulement le seuil</h2>\n<p>InnerSide est le premier produit de RED DOOR. Son territoire est contextuel et humain ; sa forme exacte demeure volontairement hors champ.</p>\n<p>Cette page documente l’existence du travail, le collectif qui le porte et la contribution d’Electronic Artefacts. Elle ne constitue ni une révélation, ni une liste de fonctionnalités, ni une annonce de lancement.</p>\n<h2 id=\"porte-par-red-door\">Porté par RED DOOR</h2>\n<p>RED DOOR incube et porte InnerSide. Le collectif tient la direction produit et décide de ce que le projet devient, de ce qui reste privé et du moment où une ouverture publique plus large devient pertinente.</p>\n<h2 id=\"la-contribution-d-electronic-artefacts\">La contribution d’Electronic Artefacts</h2>\n<p>Electronic Artefacts accompagne RED DOOR comme collaborateur stratégique et technologique. Le studio contribue activement à la R&amp;D par le conseil produit et technologique, l’architecture logicielle, l’exploration technique, le prototypage et le développement de fondations destinées à rendre le projet cohérent et durable.</p>\n<p>Il s’agit d’une contribution technologique à un projet porté par RED DOOR. Electronic Artefacts ne présente pas InnerSide comme l’un de ses propres produits.</p>\n<h2 id=\"etat-actuel\">État actuel</h2>\n<p>Le projet se trouve en phase de recherche et de prototypage. Le travail comprend un cadre produit gouverné, des études d’architecture et des expériences exécutables, sans que ces éléments soient présentés ici comme un service achevé ou un système de production.</p>\n<h2 id=\"ce-qui-reste-derriere-la-porte\">Ce qui reste derrière la porte</h2>\n<p>L’expérience détaillée, son premier usage public et son chemin de sortie sont volontairement absents de cette fiche. Pour le moment, le signal visible est la collaboration elle-même : RED DOOR construit InnerSide et Electronic Artefacts contribue à lui donner une forme stratégique et technologique.</p>\n",
+  "bodyHtml": "<h2 id=\"le-numerique-au-bon-endroit\">Le numérique, au bon endroit</h2>\n<p>InnerSide est le premier produit de RED DOOR. Il explore ce que devient une expérience numérique lorsqu’elle commence par le territoire, tient compte du contexte et laisse à la personne la maîtrise de sa présence.</p>\n<p>Cette page ouvre la vision et les principes d’architecture du projet. Elle ne constitue ni une liste de fonctionnalités, ni une annonce de lancement, ni la publication de ses mécanismes internes.</p>\n<h2 id=\"porte-par-red-door\">Porté par RED DOOR</h2>\n<p>RED DOOR incube et porte InnerSide. Le collectif tient la direction produit et décide de ce que le projet devient, de ce qui reste privé et du moment où une ouverture publique plus large devient pertinente.</p>\n<h2 id=\"la-contribution-d-electronic-artefacts\">La contribution d’Electronic Artefacts</h2>\n<p>Electronic Artefacts accompagne RED DOOR comme collaborateur stratégique et technologique. Le studio contribue activement à la R&amp;D par le conseil produit et technologique, l’architecture logicielle, l’exploration technique, le prototypage et le développement de fondations destinées à rendre le projet cohérent et durable.</p>\n<p>Il s’agit d’une contribution technologique à un projet porté par RED DOOR. Electronic Artefacts ne présente pas InnerSide comme l’un de ses propres produits.</p>\n<h2 id=\"une-architecture-guidee-par-les-limites\">Une architecture guidée par les limites</h2>\n<p>Les travaux en cours séparent explicitement les responsabilités liées à l’identité, au territoire, aux expériences, à la publication, aux relations et à la valeur. Cette composition permet d’éprouver chaque domaine sans lui transférer une autorité qui ne lui appartient pas.</p>\n<p>La confidentialité n’est pas un réglage ajouté après coup. Le contexte doit être explicite, la divulgation minimale et toute capacité rester bornée par son propriétaire. Cette page expose ces principes sans publier leurs contrats ni leur implémentation.</p>\n<h2 id=\"etat-et-preuve\">État et preuve</h2>\n<p>Le projet se trouve en phase de recherche et de prototypage. Le travail actuel comprend un cadre produit gouverné, une architecture composée et des expériences exécutables validées localement. Il ne s’agit pas encore d’un service public, d’une validation de marché ou d’un système déclaré prêt pour la production.</p>\n<h2 id=\"ce-qui-reste-derriere-la-porte\">Ce qui reste derrière la porte</h2>\n<p>L’expérience détaillée, son premier usage public et son chemin de sortie sont volontairement absents de cette fiche. Pour le moment, le signal visible est la collaboration elle-même : RED DOOR construit InnerSide et Electronic Artefacts contribue à lui donner une forme stratégique et technologique.</p>\n",
   "headings": [
-    "Seulement le seuil",
+    "Le numérique, au bon endroit",
     "Porté par RED DOOR",
     "La contribution d’Electronic Artefacts",
-    "État actuel",
+    "Une architecture guidée par les limites",
+    "État et preuve",
     "Ce qui reste derrière la porte"
   ],
   "headingItems": [
     {
       "level": 2,
-      "title": "Seulement le seuil",
-      "id": "seulement-le-seuil"
+      "title": "Le numérique, au bon endroit",
+      "id": "le-numerique-au-bon-endroit"
     },
     {
       "level": 2,
@@ -124,8 +125,13 @@
     },
     {
       "level": 2,
-      "title": "État actuel",
-      "id": "etat-actuel"
+      "title": "Une architecture guidée par les limites",
+      "id": "une-architecture-guidee-par-les-limites"
+    },
+    {
+      "level": 2,
+      "title": "État et preuve",
+      "id": "etat-et-preuve"
     },
     {
       "level": 2,
