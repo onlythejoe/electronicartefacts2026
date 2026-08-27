@@ -210,7 +210,7 @@
   };
 
   const vasteEngineMarkup = (variant = "default") => `
-    <div class="vast-engine${variant === "compact" ? " vast-engine--compact" : ""}" ${variant === "compact" ? 'data-vast-engine-card style="width:100%;min-height:0;height:7rem;margin:0"' : "data-vast-engine"} aria-hidden="true">
+    <div class="vast-engine${variant === "compact" ? " vast-engine--compact" : ""}" data-vast-engine${variant === "compact" ? ' style="width:100%;height:100%;min-height:0;margin:0;border-radius:inherit"' : ""} aria-hidden="true">
       <svg viewBox="0 0 500 400" role="presentation" focusable="false">
         <circle class="vast-engine__cutout" cx="110" cy="130" r="45" />
         <circle class="vast-engine__cutout" cx="240" cy="292" r="45" />
@@ -230,12 +230,9 @@
     </div>
   `;
 
-  const startVasteEngineAnimation = () => {
-    const root = document.querySelector("[data-vast-engine]");
-    if (!root || root.dataset.vastEngineAnimated === "true") return;
+  const initVasteEngineAnimation = (root) => {
+    if (root.dataset.vastEngineAnimated === "true") return;
     root.dataset.vastEngineAnimated = "true";
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const links = [...root.querySelectorAll(".vast-engine__link")];
     const nodes = [...root.querySelectorAll(".vast-engine__node")];
@@ -412,6 +409,13 @@
     }
 
     document.addEventListener("visibilitychange", syncVisibility);
+  };
+
+  const startVasteEngineAnimation = () => {
+    const roots = [...document.querySelectorAll("[data-vast-engine]")];
+    if (!roots.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    roots.forEach(initVasteEngineAnimation);
   };
 
   const computationFieldMarkup = (variant = "hero") => `
@@ -902,9 +906,8 @@
 
     if (item.id === "vaste") {
       return `
-        <div class="selected-works-card__infographic selected-works-card__infographic--vaste" style="display:grid;grid-template-rows:minmax(0,1fr) auto;padding:.35rem .55rem .5rem;background:rgba(20,18,50,.4)">
+        <div class="selected-works-card__infographic selected-works-card__infographic--vaste" style="position:absolute;inset:0;min-height:0;border:0;border-radius:inherit;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.06),transparent 42%)">
           ${vasteEngineMarkup("compact")}
-          <p style="display:flex;justify-content:space-between;gap:.45rem;margin:0;font:690 .48rem/1 ui-monospace,monospace"><span>${french ? "ENTITÉS" : "ENTITIES"}</span><span>${french ? "RELATIONS" : "RELATIONS"}</span><span>${french ? "CONTEXTE" : "CONTEXT"}</span></p>
         </div>
       `;
     }
@@ -994,6 +997,7 @@
     const featured = options.featured !== false;
     const compact = !featured;
     const isVestiges = item.id === "vestiges";
+    const isVaste = item.id === "vaste";
     const label = options.label || `Open ${item.title} detail`;
     const cardClasses = [
       "project-card",
@@ -1005,9 +1009,9 @@
       .join(" ");
 
     return `
-      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, label)}>
+      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, label)}${isVaste ? ' style="min-height:clamp(18rem,29vw,24rem);overflow:hidden;background:radial-gradient(circle at 50% 24%,rgba(56,189,248,.14),transparent 26%),radial-gradient(circle at 50% 74%,rgba(255,255,255,.04),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.012)),rgba(255,255,255,.016)"' : ""}>
         <a class="project-card__overlay-link" href="${esc(href)}" aria-label="${esc(label)}"></a>
-        <div class="project-card__top">
+        <div class="project-card__top"${isVaste ? ' style="position:relative;z-index:1"' : ""}>
           <div>
             <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
             <h3 class="card__title">${esc(item.title)}</h3>
@@ -1025,10 +1029,10 @@
           </div>
         </div>
         ${selectedWorksInfographic(item) || cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges && item.id !== "oeil-de-meg", action: options.mediaAction })}
-        ${cardCopy(item.summary || item.description, featured ? 2 : item.id === "forge" ? 3 : 1)}
-        <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
-        ${signalStrip(item)}
-        ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
+        ${isVaste ? "" : cardCopy(item.summary || item.description, featured ? 2 : item.id === "forge" ? 3 : 1)}
+        ${isVaste ? "" : `<p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>`}
+        ${isVaste ? "" : signalStrip(item)}
+        ${isVaste ? "" : tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
         ${
           options.actions?.length
             ? `<div class="selected-works-card__actions">${linkRow(options.actions[0], options.actions.slice(1))}</div>`

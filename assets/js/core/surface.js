@@ -56,7 +56,7 @@
                 ${actions
                   .map(
                     (action, index) =>
-                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${action.icon ? `<span class="graph-surface__action-icon" aria-hidden="true">${esc(action.icon)}</span>` : ""}<span class="graph-surface__action-label">${esc(action.label)}</span></a>`,
+                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}${index !== 1 ? " graph-surface__action--edge" : ""}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${action.icon ? `<span class="graph-surface__action-icon" aria-hidden="true">${esc(action.icon)}</span>` : ""}<span class="graph-surface__action-label">${esc(action.label)}</span></a>`,
                   )
                   .join("")}
               </div>

@@ -17747,11 +17747,20 @@ body[data-page="home"] .home-intent-stage__frame--proof{left:16%;right:auto;top:
     justify-content: center;
     gap: 1rem;
   }
+
+  .graph-surface--home .graph-surface__content > .button-row .graph-surface__action--edge {
+    justify-content: flex-start;
+    padding-left: 0.78rem;
+  }
 }
 
 .selected-works-card--featured > .tag-cluster {
   gap: 0.5rem;
   padding-inline: 0;
+}
+
+.selected-works-card--featured[data-entry-id="voice-capture-studio"] {
+  row-gap: clamp(1rem, 1.6vw, 1.35rem);
 }
 
 .selected-works-card--compact {
@@ -17831,16 +17840,6 @@ body[data-page="home"] .home-intent-stage__frame--proof{left:16%;right:auto;top:
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 1rem;
-}
-
-.selected-works-card__infographic--vaste .vast-engine__node,
-.selected-works-card__infographic--vaste .vast-engine__nucleus {
-  animation: selected-vast-node 3.8s ease-in-out infinite;
-}
-
-@keyframes selected-vast-node {
-  0%, 100% { opacity: 0.72; transform: scale(0.94); }
-  50% { opacity: 1; transform: scale(1.08); }
 }
 
 .selected-works-card__infographic:is(.selected-works-card__infographic--forge,.selected-works-card__infographic--innerside){display:grid;place-items:center;padding:.45rem;background:rgba(3,8,18,.45)}
