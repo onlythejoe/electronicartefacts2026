@@ -3013,18 +3013,21 @@
       ? `<img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />`
       : `<span class="home-project-hologram__monogram" aria-hidden="true">${esc(String(item.title || "EA").slice(0, 2))}</span>`);
     return `
-      <article class="home-intent-stage__frame home-project-hologram ${esc(className)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" data-home-project-card>
-        <a class="home-project-hologram__link" href="${esc(href)}" aria-label="${esc(`${options.openLabel || "Open"} ${item.title}`)}">
+      <article class="home-intent-stage__frame home-project-hologram ${esc(className)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" data-home-project-card tabindex="0" aria-label="${esc(`${options.previewLabel || "Project preview"}: ${item.title}`)}">
+        <div class="home-project-hologram__link">
           <span class="home-project-hologram__visual" aria-hidden="${media ? "false" : "true"}">${visual}</span>
           <span class="home-project-hologram__identity">
             <span class="home-project-hologram__logo" aria-hidden="true">${options.logo || esc(String(item.title || "EA").slice(0, 2))}</span>
             <span><small>${esc(options.kicker || item.category || item.type || "Project")}</small><strong>${esc(item.title)}</strong></span>
           </span>
           <span class="home-project-hologram__detail">
-            <span>${esc(description)}</span>
-            <small><i></i>${esc(status)}</small>
+            <span class="home-project-hologram__detail-copy">${esc(description)}</span>
+            <span class="home-project-hologram__detail-meta">
+              <small><i></i>${esc(status)}</small>
+              <a class="home-project-hologram__open" href="${esc(href)}" data-home-card-open>${esc(options.accessLabel || "View project")} <span aria-hidden="true">↗</span></a>
+            </span>
           </span>
-        </a>
+        </div>
         <span class="home-project-hologram__controls" role="group" aria-label="${esc(options.controlsLabel || "Resize project preview")}">
           <button type="button" data-home-card-size="smaller" aria-label="${esc(options.smallerLabel || "Make preview smaller")}">−</button>
           <button type="button" data-home-card-size="reset" aria-label="${esc(options.resetLabel || "Reset preview size")}">↺</button>
@@ -3042,8 +3045,8 @@
     const publicProof = entityById("oeil-de-meg") || ranked.find((item) => item.id !== lead?.id);
     const leadKicker = isFrench() ? "Notre prochain projet phare" : "Our next flagship";
     const resizeLabels = isFrench()
-      ? { controlsLabel: "Redimensionner l’aperçu du projet", smallerLabel: "Réduire l’aperçu", resetLabel: "Réinitialiser la taille", largerLabel: "Agrandir l’aperçu", resizeLabel: "Redimensionner librement l’aperçu", openLabel: "Ouvrir" }
-      : { controlsLabel: "Resize project preview", smallerLabel: "Make preview smaller", resetLabel: "Reset preview size", largerLabel: "Make preview larger", resizeLabel: "Freely resize project preview", openLabel: "Open" };
+      ? { controlsLabel: "Redimensionner l’aperçu du projet", smallerLabel: "Réduire l’aperçu", resetLabel: "Réinitialiser la taille", largerLabel: "Agrandir l’aperçu", resizeLabel: "Redimensionner librement l’aperçu", previewLabel: "Aperçu du projet", accessLabel: "Accéder au projet" }
+      : { controlsLabel: "Resize project preview", smallerLabel: "Make preview smaller", resetLabel: "Reset preview size", largerLabel: "Make preview larger", resizeLabel: "Freely resize project preview", previewLabel: "Project preview", accessLabel: "View project" };
 
     return `
       <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">

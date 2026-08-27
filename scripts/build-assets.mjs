@@ -178,8 +178,14 @@ const [purgedCss] = await new PurgeCSS().purge({
 });
 await writeFile(publishedCssPath, await minify(purgedCss.css, "css"));
 const [homeCss] = await new PurgeCSS().purge({
-  content: ["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html", flowSource]
-    .map((file) => path.join(rootDir, file)),
+  content: [
+    ...["index.html", "fr/index.html", "assets/partials/header.html", "assets/partials/footer.html", flowSource]
+      .map((file) => path.join(rootDir, file)),
+    {
+      raw: '<article class="home-project-hologram is-hero-selected is-home-card-resized is-home-card-resizing"></article>',
+      extension: "html",
+    },
+  ],
   css: [{ raw: unscopedCss }],
   safelist: {
     greedy: [

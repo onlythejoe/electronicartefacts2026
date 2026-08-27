@@ -2581,7 +2581,7 @@
         };
 
         layer.addEventListener("pointerdown", (event) => {
-          if (event.button !== 0 || drag || (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize]"))) return;
+          if (event.button !== 0 || drag || (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize], [data-home-card-open]"))) return;
           pressWasSelected = selectedMovableLayer === layer;
           selectMovableLayer(layer);
           pendingPress = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
@@ -2613,7 +2613,7 @@
           if (drag) event.preventDefault();
         });
         layer.addEventListener("click", (event) => {
-          if (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize]")) return;
+          if (event.target instanceof Element && event.target.closest("[data-home-card-size], [data-home-card-resize], [data-home-card-open]")) return;
           if (event.detail === 0) return;
           if (performance.now() <= suppressClickUntil) {
             event.preventDefault();

@@ -889,7 +889,9 @@
       const { ctx, width, height, centerX, centerY, minDim } = context;
       const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
       const compactGraph = isResearchAtlasGraph && minDim < 380;
-      const t = compactGraph ? 0 : performance.now() * 0.001;
+      // The atlas is an information map first: keep its labelled constellation
+      // stable so every project remains readable, while preserving drag support.
+      const t = compactGraph || isResearchAtlasGraph ? 0 : performance.now() * 0.001;
 
       ctx.clearRect(0, 0, width, height);
 
