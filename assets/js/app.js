@@ -286,7 +286,7 @@ window.EA_TAXONOMIES={temporality:{foundation:{label:"Foundation"},emergence:{la
           </div>
         </div>
         ${kt(t,{kicker:x?"Lead visual":"Visual",caption:!D&&t.id!=="oeil-de-meg",action:o.mediaAction})}
-        ${E(t.summary||t.description,x?2:1)}
+        ${E(t.summary||t.description,x||t.id==="forge"?2:1)}
         <p class="project-card__editorial-note">${i(At(t))}</p>
         ${st(t)}
         ${ke(Et(t),{limit:x?4:2,compact:!0})}

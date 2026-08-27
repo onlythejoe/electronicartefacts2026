@@ -987,7 +987,7 @@
           </div>
         </div>
         ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges && item.id !== "oeil-de-meg", action: options.mediaAction })}
-        ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
+        ${cardCopy(item.summary || item.description, featured || item.id === "forge" ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
