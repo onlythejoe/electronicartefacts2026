@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initEngagementPanels, initPalimpsestsBoard, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initHomeViewportMotion, initEngagementPanels, initPalimpsestsBoard, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const { init: initContextMenu } = window.EA_CONTEXT_MENU || {};
   const {
     cardBaseAttrs,
@@ -4996,6 +4996,7 @@
     initForgeArtifactViewer();
     startGraphSurfaceAnimation();
     startResearchAtlas?.();
+    initHomeViewportMotion?.();
     document.querySelectorAll("[data-selected-works-toggle]").forEach((button) => {
       if (button.dataset.selectedWorksBound === "true") return;
       button.dataset.selectedWorksBound = "true";

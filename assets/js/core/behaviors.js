@@ -58,7 +58,7 @@
   };
 
   const initMediaReadiness = (root = document) => {
-    root.querySelectorAll(".site-main img:not(.project-butterfly__wing):not(.project-meg-badge__picto)").forEach((image) => {
+    root.querySelectorAll(".site-main img:not(.project-butterfly__wing):not(.project-meg-badge__picto):not(.signature-banner__image)").forEach((image) => {
       if (image.dataset.boundMediaReadiness === "true") return;
       /* Preserve the first paint of eager and already decoded images. */
       if (image.loading !== "lazy" || (image.complete && image.naturalWidth > 0)) return;
@@ -1093,6 +1093,7 @@
     );
 
     targets.forEach((target, index) => {
+      if (target.matches(".signature-banner--oreth") || target.closest(".cross-navigation")) return;
       const rect = target.getBoundingClientRect();
       /* Do not mutate content already visible: that would trigger a second
          candidate paint for headings and hero media. */
@@ -1103,6 +1104,136 @@
       target.classList.add("is-reveal-pending");
       observer.observe(target);
     });
+  };
+
+  const initHomeViewportMotion = () => {
+    if (document.body.dataset.page !== "home" || reduceMotion()) return;
+
+    const groups = [
+      {
+        selector: ".home-intent-stage .home-project-hologram",
+        keyframes: [{ opacity: 0 }, { opacity: 1 }],
+        duration: 880,
+        stagger: 105,
+      },
+      {
+        selector: ".graph-surface--home .graph-surface__node:not([hidden])",
+        keyframes: [{ opacity: 0, scale: "0.88" }, { opacity: 1, scale: "1" }],
+        duration: 920,
+        stagger: 85,
+      },
+      {
+        selector: ".signature-banner--oreth .signature-banner__image",
+        keyframes: [{ scale: "0.84" }, { scale: "1" }],
+        duration: 1400,
+        stagger: 0,
+        origin: "50% 100%",
+        fade: false,
+      },
+      {
+        selector: ".latests-panel__cta .vast-engine > svg",
+        keyframes: [{ opacity: 0, scale: "0.86" }, { opacity: 1, scale: "1" }],
+        duration: 1150,
+        stagger: 0,
+      },
+      {
+        selector: ".selected-works-card[data-entry-id=\"oeil-de-meg\"] .card-media-plate img, .selected-works-card[data-entry-id=\"vestiges\"] .card-media-plate img, .selected-works-card[data-entry-id=\"vaste\"] .vast-engine > svg",
+        keyframes: [{ opacity: 0, scale: "0.9" }, { opacity: 1, scale: "1" }],
+        duration: 980,
+        stagger: 90,
+      },
+      {
+        selector: ".selected-works-card[data-entry-id=\"forge\"] .selected-works-card__infographic > svg",
+        keyframes: [{ opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0 0 0)" }],
+        duration: 1050,
+        stagger: 0,
+        fade: false,
+        trigger: ".selected-works-card[data-entry-id=\"forge\"]",
+      },
+      {
+        selector: ".selected-works-card[data-entry-id=\"forge\"] > .card__copy",
+        keyframes: [{ opacity: 0 }, { opacity: 1 }],
+        duration: 720,
+        delay: 720,
+        stagger: 0,
+        trigger: ".selected-works-card[data-entry-id=\"forge\"]",
+      },
+      {
+        selector: ".cross-navigation .card-grid > .panel",
+        keyframes: [{ opacity: 0 }, { opacity: 1 }],
+        duration: 820,
+        stagger: 95,
+      },
+      {
+        selector: ".research-atlas__artefact-list > a",
+        keyframes: [{ opacity: 0 }, { opacity: 1 }],
+        duration: 760,
+        stagger: 90,
+      },
+      {
+        selector: ".research-atlas__node:not([hidden])",
+        keyframes: [{ opacity: 0, scale: "0.86" }, { opacity: 1, scale: "1" }],
+        duration: 880,
+        stagger: 80,
+      },
+    ];
+
+    const pending = [];
+    groups.forEach((group) => {
+      document.querySelectorAll(group.selector).forEach((target, index) => {
+        if (target.dataset.viewportMotionBound === "true") return;
+        target.dataset.viewportMotionBound = "true";
+        target.style.transformOrigin = group.origin || "50% 50%";
+        target.style.willChange = group.keyframes.some((frame) => "clipPath" in frame)
+          ? "opacity, clip-path"
+          : group.fade === false
+            ? "scale"
+            : "opacity, scale";
+        if (group.fade !== false) target.style.opacity = "0";
+        if (group.keyframes[0].scale) target.style.scale = group.keyframes[0].scale;
+        if (group.keyframes[0].clipPath) target.style.clipPath = group.keyframes[0].clipPath;
+        const trigger = group.trigger ? target.closest(group.trigger) || target : target;
+        pending.push({ target, trigger, group, index });
+      });
+    });
+
+    if (!pending.length) return;
+    const reveal = ({ target, group, index }) => {
+      if (target.dataset.viewportMotionVisible === "true") return;
+      target.dataset.viewportMotionVisible = "true";
+      const animation = target.animate(group.keyframes, {
+        duration: group.duration,
+        delay: (group.delay || 0) + index * group.stagger,
+        easing: "cubic-bezier(0.16, 1, 0.3, 1)",
+        fill: "forwards",
+      });
+      animation.finished.catch(() => {}).finally(() => {
+        target.style.removeProperty("opacity");
+        target.style.removeProperty("scale");
+        target.style.removeProperty("clip-path");
+        target.style.removeProperty("transform-origin");
+        target.style.removeProperty("will-change");
+        animation.cancel();
+      });
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      pending.forEach(reveal);
+      return;
+    }
+    const entries = new Map();
+    pending.forEach((item) => {
+      if (!entries.has(item.trigger)) entries.set(item.trigger, []);
+      entries.get(item.trigger).push(item);
+    });
+    const observer = new IntersectionObserver((observations) => {
+      observations.forEach((observation) => {
+        if (!observation.isIntersecting) return;
+        entries.get(observation.target)?.forEach(reveal);
+        observer.unobserve(observation.target);
+      });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.08 });
+    entries.forEach((_, trigger) => observer.observe(trigger));
   };
 
   const initCardSpotlight = (root = document) => {
@@ -2825,6 +2956,7 @@
     initScrollProgress();
     initAutoHideHeader();
     initReveal();
+    initHomeViewportMotion();
     initIntentHeroes();
     initFilterSummaries(filterState);
     initProjectDossier();
@@ -3118,6 +3250,7 @@
     initEngagementPanels,
     initIntentHeroes,
     initUXEnhancements,
+    initHomeViewportMotion,
     initProjectButterflies,
     initPalimpsestsBoard,
     animateContentRefresh,

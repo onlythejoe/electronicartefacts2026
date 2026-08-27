@@ -19,7 +19,7 @@
   };
 
   const navigationSection = ({ eyebrow, title, copy, cards = [] }) => `
-    <section class="zone-card hero">
+    <section class="zone-card hero cross-navigation">
       <div class="section-head">
         <p class="eyebrow">${esc(eyebrow)}</p>
         <h2>${esc(title)}</h2>
