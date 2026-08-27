@@ -1112,21 +1112,55 @@
       if (card.dataset.boundSpotlight === "true") return;
       card.dataset.boundSpotlight = "true";
       let rect = null;
+      let spotlightFrame = 0;
+      const restingPoint = card.classList.contains("signature-banner") ? { x: 50, y: 28 } : { x: 50, y: 50 };
+      const currentPoint = { ...restingPoint };
+      const targetPoint = { ...restingPoint };
+      let clearWhenSettled = false;
+      const renderSpotlight = () => {
+        spotlightFrame = 0;
+        const deltaX = targetPoint.x - currentPoint.x;
+        const deltaY = targetPoint.y - currentPoint.y;
+        currentPoint.x += deltaX * 0.16;
+        currentPoint.y += deltaY * 0.16;
+        card.style.setProperty("--pointer-x", `${currentPoint.x.toFixed(2)}%`);
+        card.style.setProperty("--pointer-y", `${currentPoint.y.toFixed(2)}%`);
+        if (Math.abs(deltaX) > 0.08 || Math.abs(deltaY) > 0.08) {
+          spotlightFrame = requestAnimationFrame(renderSpotlight);
+          return;
+        }
+        currentPoint.x = targetPoint.x;
+        currentPoint.y = targetPoint.y;
+        if (clearWhenSettled) {
+          card.style.removeProperty("--pointer-x");
+          card.style.removeProperty("--pointer-y");
+          clearWhenSettled = false;
+        }
+      };
+      const scheduleSpotlight = () => {
+        if (!spotlightFrame) spotlightFrame = requestAnimationFrame(renderSpotlight);
+      };
       const syncRect = () => {
         rect = card.getBoundingClientRect();
+        clearWhenSettled = false;
       };
       const clearRect = () => {
         rect = null;
+        targetPoint.x = restingPoint.x;
+        targetPoint.y = restingPoint.y;
+        clearWhenSettled = true;
+        scheduleSpotlight();
       };
 
       card.addEventListener("pointerenter", syncRect);
       card.addEventListener("pointerleave", clearRect);
+      card.addEventListener("pointercancel", clearRect);
       card.addEventListener("pointermove", (event) => {
         if (!rect) syncRect();
-        const x = ((event.clientX - rect.left) / rect.width) * 100;
-        const y = ((event.clientY - rect.top) / rect.height) * 100;
-        card.style.setProperty("--pointer-x", `${x.toFixed(2)}%`);
-        card.style.setProperty("--pointer-y", `${y.toFixed(2)}%`);
+        targetPoint.x = Math.max(0, Math.min(100, ((event.clientX - rect.left) / rect.width) * 100));
+        targetPoint.y = Math.max(0, Math.min(100, ((event.clientY - rect.top) / rect.height) * 100));
+        clearWhenSettled = false;
+        scheduleSpotlight();
       });
     });
   };
