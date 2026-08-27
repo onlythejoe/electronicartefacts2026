@@ -209,8 +209,8 @@
     `;
   };
 
-  const vasteEngineMarkup = () => `
-    <div class="vast-engine" data-vast-engine aria-hidden="true">
+  const vasteEngineMarkup = (variant = "default") => `
+    <div class="vast-engine${variant === "compact" ? " vast-engine--compact" : ""}" ${variant === "compact" ? 'data-vast-engine-card style="width:100%;min-height:0;height:7rem;margin:0"' : "data-vast-engine"} aria-hidden="true">
       <svg viewBox="0 0 500 400" role="presentation" focusable="false">
         <circle class="vast-engine__cutout" cx="110" cy="130" r="45" />
         <circle class="vast-engine__cutout" cx="240" cy="292" r="45" />
@@ -896,6 +896,44 @@
     return `${item.category || item.type || "Project"} inside the Electronic Artefacts world.`;
   };
 
+  const selectedWorksInfographic = (item) => {
+    if (!item) return "";
+    const french = document.documentElement.lang?.startsWith("fr");
+
+    if (item.id === "vaste") {
+      return `
+        <div class="selected-works-card__infographic selected-works-card__infographic--vaste" style="display:grid;grid-template-rows:minmax(0,1fr) auto;padding:.35rem .55rem .5rem;background:rgba(20,18,50,.4)">
+          ${vasteEngineMarkup("compact")}
+          <p style="display:flex;justify-content:space-between;gap:.45rem;margin:0;font:690 .48rem/1 ui-monospace,monospace"><span>${french ? "ENTITÉS" : "ENTITIES"}</span><span>${french ? "RELATIONS" : "RELATIONS"}</span><span>${french ? "CONTEXTE" : "CONTEXT"}</span></p>
+        </div>
+      `;
+    }
+
+    if (item.id === "forge") {
+      return `
+        <div class="selected-works-card__infographic selected-works-card__infographic--forge" aria-label="${esc(french ? "Pipeline Forge, de la capture vidéo à l’artefact 3D vérifié" : "Forge pipeline, from video capture to verified 3D artefact")}">
+          <svg viewBox="0 0 600 190" aria-hidden="true">
+            <g fill="none" stroke="rgba(147,197,253,.28)"><rect x="15" y="24" width="155" height="104" rx="13"/><rect x="222" y="24" width="155" height="104" rx="13"/><rect x="429" y="24" width="155" height="104" rx="13"/><path d="M177 76h37m-10-9 10 9-10 9M384 76h37m-10-9 10 9-10 9"/></g>
+            <g fill="#dbeafe" font-family="ui-monospace,monospace"><text x="30" y="51" font-size="12">01</text><text x="30" y="77" font-size="17">CAPTURE</text><text x="30" y="101" font-size="11">VIDEO / IMAGES</text><text x="237" y="51" font-size="12">02</text><text x="237" y="77" font-size="15">${french ? "RECONSTRUCTION" : "RECONSTRUCT"}</text><text x="237" y="101" font-size="11">MESH + TEXTURE</text><text x="444" y="51" font-size="12">03</text><text x="444" y="77" font-size="17">ARTEFACT</text><text x="444" y="101" font-size="11">GLB + EVIDENCE</text><text x="300" y="163" text-anchor="middle" font-size="11">${french ? "LIGNÉE TRAÇABLE · CONTRÔLES QUALITÉ" : "TRACEABLE LINEAGE · QUALITY GATES"}</text></g>
+          </svg>
+        </div>
+      `;
+    }
+
+    if (item.id === "innerside") {
+      return `
+        <div class="selected-works-card__infographic selected-works-card__infographic--innerside" aria-hidden="true">
+          <svg viewBox="0 0 600 190">
+            <g fill="none" stroke="#ff829b"><circle cx="88" cy="98" r="8"/><circle cx="512" cy="98" r="8"/><path d="M96 98h132m144 0h132" opacity=".45"/><rect x="228" y="25" width="144" height="128" rx="50"/></g>
+            <g fill="#fff" font-family="ui-monospace,monospace"><text x="20" y="24" font-size="12" fill="#ff829b">••• RED DOOR × EA</text><text x="300" y="87" text-anchor="middle" font-size="28" opacity=".2">INNER</text><text x="300" y="116" text-anchor="middle" font-size="28" opacity=".2">SIDE</text><text x="580" y="174" text-anchor="end" font-size="10" opacity=".45">${french ? "R&amp;D PRODUIT · TECHNOLOGIE DISCRÈTE" : "PRODUCT R&amp;D · DISCREET TECHNOLOGY"}</text></g>
+          </svg>
+        </div>
+      `;
+    }
+
+    return "";
+  };
+
   const projectCard = (item) => `
     <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(item)}>
       ${entryHrefFor(item) ? `<a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
@@ -981,13 +1019,13 @@
           </div>
           <div class="project-card__top-meta">
             ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
-            ${statusBadge(item.status, item.statusLabel)}
+            <span class="selected-works-card__status">${statusBadge(item.status, item.statusLabel)}</span>
             ${projectSignatureBubble(item, "card")}
             ${projectButterflyBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges && item.id !== "oeil-de-meg", action: options.mediaAction })}
-        ${cardCopy(item.summary || item.description, featured || item.id === "forge" ? 2 : 1)}
+        ${selectedWorksInfographic(item) || cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges && item.id !== "oeil-de-meg", action: options.mediaAction })}
+        ${cardCopy(item.summary || item.description, featured ? 2 : item.id === "forge" ? 3 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
@@ -1352,7 +1390,15 @@
     if (!lead) return "";
     const supporting = [oeilDeMeg, vaste, vestiges, forge].filter(Boolean);
     const reservedIds = [lead, ...supporting].map((item) => item?.id).filter(Boolean);
-    const moreProjects = homeProjects(reservedIds).slice(0, 4);
+    const rankedMoreProjects = homeProjects(reservedIds).filter((item) => item.id !== "null_human");
+    const preferredMoreProjects = ["innerside", "palimpsests", "unionmob"]
+      .map(entityById)
+      .filter((item) => item && !reservedIds.includes(item.id));
+    const preferredMoreIds = new Set(preferredMoreProjects.map((item) => item.id));
+    const moreProjects = [
+      ...preferredMoreProjects,
+      ...rankedMoreProjects.filter((item) => !preferredMoreIds.has(item.id)),
+    ].slice(0, 4);
     const signalCopy = document.documentElement.lang?.startsWith("fr")
       ? "Choisissez un système pour l’explorer directement : un signal, une destination."
       : "Choose a system to explore it directly — one signal, one destination.";

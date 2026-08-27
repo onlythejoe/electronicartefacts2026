@@ -17745,52 +17745,223 @@ body[data-page="home"] .home-intent-stage__frame--proof{left:16%;right:auto;top:
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.52rem;
+    gap: 1rem;
   }
 }
 
 .selected-works-card--featured > .tag-cluster {
-  display: flex;
-  justify-content: flex-start;
   gap: 0.5rem;
   padding-inline: 0;
-  scroll-padding-inline: 0;
-  mask-image: none;
-  -webkit-mask-image: none;
+}
+
+.selected-works-card--compact {
+  container: selected-work-card / inline-size;
+}
+
+.selected-works-card--compact .project-card__top {
+  position: relative;
+}
+
+.selected-works-card--compact .project-card__top > div:first-child {
+  padding-right: clamp(7.25rem, 35%, 10.5rem);
 }
 
 .selected-works-card--compact .project-card__top-meta {
+  margin-left: auto;
+}
+
+.selected-works-card--compact .selected-works-card__status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+}
+
+.selected-works-card--compact .selected-works-card__status .status-badge {
+  min-height: 1.55rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.58rem;
+}
+
+.selected-works-card--compact[data-entry-id="oeil-de-meg"] .project-card__top-meta {
   flex: 1 0 100%;
   justify-content: flex-start;
+  margin-left: 0;
 }
+
+.selected-works-card--compact[data-entry-id="oeil-de-meg"] .project-card__top {
+  padding-right: 0;
+}
+
+.selected-works-card--compact[data-entry-id="oeil-de-meg"] .selected-works-card__status {
+  right: 3.65rem;
+}
+
+@container selected-work-card (max-width: 19rem) {
+  .selected-works-card--compact .project-card__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.55rem;
+  }
+
+  .selected-works-card--compact .project-card__top > div:first-child {
+    padding-right: 0;
+  }
+
+  .selected-works-card--compact .project-card__top-meta {
+    flex: 1 0 100%;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .selected-works-card--compact[data-entry-id="oeil-de-meg"] .project-card__top-meta {
+    justify-content: flex-start;
+  }
+
+  .selected-works-card--compact .selected-works-card__status,
+  .selected-works-card--compact[data-entry-id="oeil-de-meg"] .selected-works-card__status {
+    position: static;
+  }
+}
+
+.selected-works-card__infographic {
+  position: relative;
+  min-height: 8.25rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1rem;
+}
+
+.selected-works-card__infographic--vaste .vast-engine__node,
+.selected-works-card__infographic--vaste .vast-engine__nucleus {
+  animation: selected-vast-node 3.8s ease-in-out infinite;
+}
+
+@keyframes selected-vast-node {
+  0%, 100% { opacity: 0.72; transform: scale(0.94); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.selected-works-card__infographic:is(.selected-works-card__infographic--forge,.selected-works-card__infographic--innerside){display:grid;place-items:center;padding:.45rem;background:rgba(3,8,18,.45)}
+.selected-works-card__infographic>svg{display:block;width:100%}
 
 /* Reuse the canonical Forge dossier palette and retain useful context in its compact card. */
 .selected-works-card[data-entry-id="forge"] {
-  --project-rgb: 96, 165, 250;
   border-color: rgba(147, 197, 253, 0.38);
   background:
     radial-gradient(circle at 89% 6%, rgba(96, 165, 250, 0.34), transparent 31%),
-    radial-gradient(circle at 12% 88%, rgba(14, 116, 144, 0.22), transparent 38%),
     linear-gradient(145deg, #153b69, #0a203c 58%, #06152a);
-  box-shadow:
-    0 0 0 1px rgba(147, 197, 253, 0.1),
-    0 20px 38px rgba(1, 12, 28, 0.42);
 }
 
 .selected-works-card--compact[data-entry-id="forge"] .card__copy {
   display: -webkit-box;
-  max-width: 29rem;
   color: rgba(219, 234, 254, 0.82);
-  font-size: clamp(0.76rem, 1.05vw, 0.9rem);
-  line-height: 1.45;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 
 .selected-works-card[data-entry-id="forge"] :is(.chip, .status-badge) {
   border-color: rgba(147, 197, 253, 0.28);
   background: rgba(30, 64, 112, 0.3);
+}
+
+/* Compact project cards use the media itself as the surface when the artwork is the story. */
+.selected-works-card--compact[data-entry-id="palimpsests"] {
+  isolation: isolate;
+  min-height: clamp(18rem, 25vw, 22rem);
+  overflow: hidden;
+  background: #171219;
+}
+
+.selected-works-card--compact[data-entry-id="palimpsests"] .card-media-plate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.selected-works-card--compact[data-entry-id="palimpsests"] .card-media-plate::after,
+.selected-works-card--compact[data-entry-id="palimpsests"] .card-media-plate figcaption {
+  display: none;
+}
+
+.selected-works-card--compact[data-entry-id="palimpsests"] .card-media-plate img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  filter: brightness(0.62);
+}
+
+.selected-works-card--compact[data-entry-id="palimpsests"] .project-card__top {
+  position: relative;
+  z-index: 1;
+}
+
+.selected-works-card--compact[data-entry-id="palimpsests"] :is(.card__meta, .card__title) {
+  color: #fff8f1;
+}
+
+.selected-works-card--compact[data-entry-id="unionmob"] .card-media-plate img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+}
+
+/* One alignment system for every hologram identity, regardless of its logo artwork. */
+.home-project-hologram__identity {
+  grid-template-columns: 2.1rem minmax(0, 1fr);
+  min-height: 2.1rem;
+}
+
+.home-project-hologram__identity > span:last-child {
+  align-content: center;
+}
+
+.home-project-hologram__logo {
+  width: 2.1rem;
+  height: 2.1rem;
+  overflow: visible;
+}
+
+.home-project-logo--vaste {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: none;
+}
+
+.home-project-hologram[data-entry-id="oeil-de-meg"] .home-project-hologram__logo--interactive {
+  background: rgba(255, 248, 237, 0.92);
+}
+
+.home-project-hologram__logo .project-butterfly--hologram {
+  position: relative;
+  inset: auto;
+  width: 2.55rem;
+  height: 2rem;
+}
+
+@media (max-width: 48rem) {
+  .home-project-hologram__identity {
+    grid-template-columns: 1.7rem minmax(0, 1fr);
+    min-height: 1.7rem;
+  }
+
+  .home-project-hologram__logo {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .home-project-hologram__logo .project-butterfly--hologram {
+    width: 2.1rem;
+    height: 1.65rem;
+  }
 }
 @keyframes selected-works-reveal{from{opacity:0;transform:translateY(.8rem)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:64rem){.selected-works-panel__more-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
