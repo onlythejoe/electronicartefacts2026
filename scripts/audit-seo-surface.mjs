@@ -185,8 +185,12 @@ const sitemapLocs = new Set(all(sitemap, /<loc>([^<]+)<\/loc>/g));
 for (const canonical of indexableCanonicals.keys()) {
   if (!sitemapLocs.has(canonical)) issues.push([canonical, "indexable canonical missing from sitemap"]);
 }
-if (!/<loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<lastmod>2026-07-09<\/lastmod>/.test(sitemap)) {
-  issues.push(["sitemap.xml", "homepage lastmod does not reflect the current search-surface update"]);
+const siteConfig = await readFile(path.join(rootDir, "src/config/site.ts"), "utf8");
+const configuredHomepageLastmod = siteConfig.match(/\bupdatedAt:\s*"(\d{4}-\d{2}-\d{2})"/)?.[1];
+const homepageSitemapEntry = sitemap.match(/<url>\s*<loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<\/url>/)?.[0];
+const homepageLastmod = homepageSitemapEntry?.match(/<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/)?.[1];
+if (!configuredHomepageLastmod || homepageLastmod !== configuredHomepageLastmod) {
+  issues.push(["sitemap.xml", `homepage lastmod should match site.updatedAt (${configuredHomepageLastmod || "missing"}), got ${homepageLastmod || "missing"}`]);
 }
 
 const manifest = JSON.parse(await readFile(path.join(rootDir, "site.webmanifest"), "utf8"));

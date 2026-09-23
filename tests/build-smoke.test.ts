@@ -42,7 +42,7 @@ test("generated French pilot pages expose localized metadata", async (context) =
 
 test("generated project pages keep machine details secondary and avoid fake telemetry", async (context) => {
   const englishFile = path.resolve("programs/vaste/index.html");
-  const frenchFile = path.resolve("fr/projects/vestiges/index.html");
+  const frenchFile = path.resolve("fr/projects/v6/index.html");
   try {
     const [programHtml, frenchProjectHtml] = await Promise.all([
       readFile(englishFile, "utf8"),

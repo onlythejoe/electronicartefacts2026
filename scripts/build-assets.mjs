@@ -187,6 +187,7 @@ const [homeCss] = await new PurgeCSS().purge({
     },
   ],
   css: [{ raw: unscopedCss }],
+  blocklist: [/vcs-/, /voice-capture-studio/],
   safelist: {
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
@@ -194,7 +195,7 @@ const [homeCss] = await new PurgeCSS().purge({
       /image-lightbox/, /quick-view/, /toast/, /language-switcher/, /site-context-menu/,
       /consent-banner/, /flow-progress/, /reveal-/, /card-link/, /card-media-plate/,
       /graph-surface/, /home-intent-stage/, /home-card-resized/, /intent-hero/, /latests-/,
-      /metric-pill/, /metric-rail/, /pill-cloud/, /program-card/,
+      /pill-cloud/, /program-card/,
       /project-butterfly/, /project-card/, /project-meg-badge/,
       /research-atlas/, /selected-works/, /signature-banner/,
       /status-badge/, /taxonomy-pill/, /vast-banner/, /vast-engine/,
@@ -211,6 +212,7 @@ const [projectCss] = await new PurgeCSS().purge({
     .map((pattern) => path.join(rootDir, pattern)),
   css: [{ raw: unscopedCss }],
   safelist: {
+    standard: ["is-header-hidden"],
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
       /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,

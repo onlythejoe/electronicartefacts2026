@@ -17978,3 +17978,124 @@ body[data-page="home"] .home-intent-stage__frame--proof{left:16%;right:auto;top:
   .selected-works-action--browse .selected-works-action__icon{font-size:1.05rem;translate:.06rem -.04rem}
 }
 @media(prefers-reduced-motion:reduce){.selected-works-panel__more.is-visible{animation:none}}
+
+/* Voice Capture Studio is documented on the site's black editorial surface. */
+body[data-entry-id="voice-capture-studio"] {
+  --vcs-ink: #f7f4ef;
+  --vcs-muted: rgba(247, 244, 239, 0.72);
+  --vcs-line: rgba(247, 244, 239, 0.16);
+  --vcs-surface: rgba(255, 255, 255, 0.045);
+  --vcs-blue: rgba(127, 205, 224, 0.16);
+  --vcs-blue-strong: #8bd7eb;
+  --vcs-rose: #e59aa5;
+  background: #000;
+}
+
+body[data-entry-id="voice-capture-studio"] .site-main {
+  background: #000;
+}
+
+body[data-entry-id="voice-capture-studio"] :is(.shell-header.zone-card, .zone-card, .panel) {
+  border-color: var(--vcs-line);
+  background: #08090a;
+  color: var(--vcs-ink);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.42);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero {
+  border-color: var(--vcs-line);
+  background: #050607;
+  color: var(--vcs-ink);
+}
+
+body[data-entry-id="voice-capture-studio"] :is(.project-dossier-hero .display-title, .project-dossier-hero .card__meta, .project-dossier-hero .lede, .project-dossier-hero .eyebrow, .project-dossier-breadcrumbs, .project-dossier-breadcrumbs a, .project-dossier-breadcrumbs span) {
+  color: var(--vcs-ink);
+  text-shadow: none;
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .lede,
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .card__meta {
+  color: var(--vcs-muted);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .metric-pill :is(span, em) {
+  color: var(--vcs-muted);
+}
+
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero :is(.button--secondary, .metric-pill, .chip, .project-dossier-nav .tag) {
+  border-color: var(--vcs-line);
+  color: var(--vcs-ink);
+  background: var(--vcs-surface);
+}
+
+.vcs-experience {
+  border-color: var(--vcs-line);
+  background: #050607;
+}
+
+.vcs-experience::before {
+  opacity: 0.18;
+  background-image: linear-gradient(rgba(247, 244, 239, 0.08) 1px, transparent 1px);
+}
+
+.vcs-instrument,
+.vcs-pipeline__steps li,
+.vcs-pipeline__boundary,
+.vcs-knowledge-roadmap__index a,
+.vcs-knowledge-roadmap__briefs article {
+  border-color: var(--vcs-line);
+  color: var(--vcs-ink);
+  background: #0b0c0e;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.34);
+}
+
+.vcs-instrument__signal {
+  background:
+    linear-gradient(90deg, transparent 49.9%, rgba(247, 244, 239, 0.12) 50%, transparent 50.1%),
+    linear-gradient(rgba(247, 244, 239, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 244, 239, 0.07) 1px, transparent 1px),
+    #08090a;
+  background-size: 100% 100%, 100% 3.2rem, 3.2rem 100%, 100% 100%;
+}
+
+.vcs-instrument__signal span,
+.vcs-mode-panel dl div,
+.vcs-mode-panel dt,
+.vcs-mode-panel dd,
+.vcs-pipeline__steps strong,
+.vcs-pipeline__steps small,
+.vcs-knowledge-roadmap__briefs h3,
+.vcs-knowledge-roadmap__briefs article > p:not(:first-child),
+.vcs-knowledge-roadmap__briefs a {
+  color: var(--vcs-ink);
+}
+
+.vcs-mode-tab {
+  border-color: var(--vcs-line);
+  color: var(--vcs-muted);
+  background: #101113;
+}
+
+.vcs-mode-tab:hover,
+.vcs-mode-tab:focus-visible,
+.vcs-mode-tab.is-active,
+.vcs-knowledge-roadmap__index a:hover,
+.vcs-knowledge-roadmap__index a:focus-visible {
+  border-color: var(--vcs-blue-strong);
+  color: #fff;
+  background: var(--vcs-blue);
+}
+
+.vcs-pipeline__steps li:not(:last-child)::after {
+  border-color: var(--vcs-line);
+  color: var(--vcs-ink);
+  background: #101113;
+}
+
+.vcs-knowledge-roadmap__briefs article:target {
+  background: #10191c;
+}
+
+body[data-entry-id="voice-capture-studio"] :is(.project-dossier-hero a, .vcs-experience a, .vcs-experience button):focus-visible {
+  outline-color: var(--vcs-blue-strong);
+}
