@@ -37,6 +37,8 @@ const jsSources = [
   "assets/js/core/view.js",
   "assets/js/core/surface.js",
   "assets/js/core/modal.js",
+  "assets/js/core/language-menu.js",
+  "assets/js/core/tabs.js",
   "assets/js/core/behaviors.js",
   "assets/js/core/context-menu.js",
   "assets/js/main.js",
@@ -45,23 +47,28 @@ const jsSources = [
 const flowSource = "assets/js/core/flow.js";
 const editorialSources = [
   "assets/js/core/modal.js",
+  "assets/js/core/language-menu.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
 ];
 const projectSources = [
   "assets/js/core/modal.js",
+  "assets/js/core/language-menu.js",
   "assets/js/core/context-menu.js",
+  "assets/js/core/tabs.js",
   "assets/js/core/behaviors.js",
   "assets/js/core/project.js",
 ];
 const graphSources = [
   "assets/js/core/modal.js",
+  "assets/js/core/language-menu.js",
   "assets/js/core/graph-page.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
 ];
 const searchSources = [
   "assets/js/core/modal.js",
+  "assets/js/core/language-menu.js",
   "assets/js/core/search-page.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
@@ -217,7 +224,7 @@ const [projectCss] = await new PurgeCSS().purge({
     .map((pattern) => path.join(rootDir, pattern)),
   css: [{ raw: unscopedCss }],
   safelist: {
-    standard: ["is-header-hidden"],
+    standard: ["is-header-hidden", "is-tabbed"],
     greedy: [
       /\.(?:is|has|was|no)-/, /\.is-safari/, /active-view-transition/,
       /ambient-field/, /scroll-progress/, /command-/, /ux-dock/,
@@ -230,6 +237,7 @@ const [projectCss] = await new PurgeCSS().purge({
 });
 await writeFile(path.join(rootDir, "assets/css/project.css"), await minify(projectCss.css, "css"));
 await bundle([flowSource], "assets/js/flow.js", "/* Generated critical navigation and loading runtime. */", "js");
+await bundle(["src/search/scoring.ts"], "assets/js/search/scoring.js", "/* Generated canonical search scoring. */", "ts");
 const editorialTranslations = await buildTranslationsFor([
   "fr/archive/**/*.html", "fr/knowledge/**/*.html", "fr/publications/**/*.html", "fr/research/**/*.html",
   "fr/organizations/**/*.html", "fr/programs/**/*.html",

@@ -9019,6 +9019,22 @@ body[data-page="search"] [data-render="cross-navigation"] {
   backdrop-filter: blur(10px);
 }
 
+.image-lightbox__trigger {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: zoom-in;
+}
+
+.image-lightbox__trigger:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
 .image-lightbox[hidden] {
   display: none;
 }
@@ -11221,6 +11237,10 @@ input:focus-visible {
 }
 
 .project-command.is-tabbed .project-command__panel:not(.is-active) {
+  display: none;
+}
+
+.project-command__panel[hidden] {
   display: none;
 }
 

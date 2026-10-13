@@ -126,8 +126,6 @@
     const storageKey = "ea:language";
     const supported = ["en", "fr"];
     const labels = { en: "EN", fr: "FR" };
-    const trigger = root.querySelector("[data-language-trigger]");
-    const menu = root.querySelector("[data-language-menu]");
     const current = root.querySelector("[data-language-current]");
     const status = root.querySelector("[data-language-status]");
     const options = [...root.querySelectorAll("[data-language-option]")];
@@ -181,24 +179,8 @@
     const currentAlternates = Object.keys(linkedAlternates).length
       ? linkedAlternates
       : alternates?.[currentPath] || alternates?.[normalizePath(currentPath)] || { [routeLocale(currentPath)]: currentPath };
-    const preserveCurrentUrlState = (target) => {
-      const targetUrl = new URL(target, window.location.origin);
-      if (!targetUrl.search && currentUrl.search) targetUrl.search = currentUrl.search;
-      if (!targetUrl.hash && currentUrl.hash) targetUrl.hash = currentUrl.hash;
-      return `${targetUrl.pathname}${targetUrl.search}${targetUrl.hash}`;
-    };
-
-    const setOpen = (open) => {
-      root.classList.toggle("is-open", open);
-      trigger?.setAttribute("aria-expanded", open ? "true" : "false");
-      if (menu) menu.hidden = !open;
-      if (open) {
-        window.requestAnimationFrame(() => {
-          const checked = root.querySelector('[data-language-option][aria-checked="true"]');
-          if (checked instanceof HTMLElement) checked.focus({ preventScroll: true });
-        });
-      }
-    };
+    const preserveCurrentUrlState = (target) => window.EA_LANGUAGE_MENU.preserveUrlState(target, window.location.href);
+    const { setOpen } = window.EA_LANGUAGE_MENU.bind(root);
 
     const sync = (language) => {
       if (current) current.textContent = labels[language] || language.toUpperCase();
@@ -208,6 +190,7 @@
         const available = Boolean(currentAlternates[optionLanguage]);
         if (available) availableCount += 1;
         option.setAttribute("aria-checked", optionLanguage === language ? "true" : "false");
+        option.setAttribute("aria-disabled", String(!available));
         option.classList.toggle("is-unavailable", !available);
         option.title = available ? "" : translate("Translation not available yet");
       });
@@ -221,7 +204,7 @@
     const navigateTo = (language, manual = false) => {
       const target = currentAlternates[language];
       const active = routeLocale(currentPath);
-      sync(language);
+      if (target) sync(language);
       if (target && normalizePath(target) !== currentPath) {
         navigateWithTransition(preserveCurrentUrlState(target));
         return;
@@ -236,7 +219,6 @@
     sync(active);
     if (currentPath === "/" && stored && stored !== active && currentAlternates[stored]) navigateTo(stored);
 
-    trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
     options.forEach((option) => {
       option.addEventListener("click", () => {
         const language = option.getAttribute("data-language-option");
@@ -249,27 +231,6 @@
         writePreference(language);
         navigateTo(language, true);
       });
-    });
-
-    menu?.addEventListener("keydown", (event) => {
-      if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
-      event.preventDefault();
-      const activeIndex = Math.max(0, options.indexOf(document.activeElement));
-      const nextIndex = event.key === "Home"
-        ? 0
-        : event.key === "End"
-          ? options.length - 1
-          : (activeIndex + (event.key === "ArrowDown" ? 1 : -1) + options.length) % options.length;
-      options[nextIndex]?.focus();
-    });
-
-    document.addEventListener("click", (event) => {
-      if (event.target instanceof Node && root.contains(event.target)) return;
-      setOpen(false);
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") setOpen(false);
     });
   };
 
@@ -1445,7 +1406,10 @@
 
     const input = palette.querySelector("[data-command-input]");
     const results = palette.querySelector("[data-command-results]");
-    const modal = window.EA_MODAL.bind(palette, { initialFocus: input, fallbackFocus: button });
+    const modal = window.EA_MODAL.bind(palette, {
+      initialFocus: input, fallbackFocus: button,
+      onClose: () => document.body.classList.remove("has-command-palette"),
+    });
 
     const renderResults = () => {
       const query = input.value.trim().toLowerCase();
@@ -1508,25 +1472,40 @@
     lightbox.className = "image-lightbox";
     lightbox.hidden = true;
     lightbox.setAttribute("data-image-lightbox", "");
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("aria-label", translate("Image preview"));
     lightbox.innerHTML = `
-      <button class="image-lightbox__close" type="button" aria-label="Close image">Close</button>
+      <button class="image-lightbox__close" type="button" aria-label="${esc(translate("Close image"))}">${esc(translate("Close"))}</button>
       <img alt="" data-image-lightbox-img />
     `;
     document.body.append(lightbox);
     const image = lightbox.querySelector("[data-image-lightbox-img]");
-    const close = () => {
-      lightbox.hidden = true;
-      document.body.classList.remove("has-image-lightbox");
-    };
+    const modal = window.EA_MODAL.bind(lightbox, {
+      initialFocus: lightbox.querySelector(".image-lightbox__close"),
+      onClose: () => document.body.classList.remove("has-image-lightbox"),
+    });
     lightbox.addEventListener("click", (event) => {
-      if (event.target === lightbox || event.target.closest(".image-lightbox__close")) close();
+      if (event.target === lightbox || event.target.closest(".image-lightbox__close")) modal.close();
+    });
+    lightbox.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      event.stopPropagation();
+      modal.close();
     });
     images.forEach((node) => {
       node.closest("figure")?.classList.add("has-lightbox");
-      node.addEventListener("click", () => {
+      const trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "image-lightbox__trigger";
+      trigger.setAttribute("aria-label", `${translate("Enlarge image")}: ${node.alt || translate("Image preview")}`);
+      node.before(trigger);
+      trigger.append(node);
+      trigger.addEventListener("click", () => {
         image.src = node.currentSrc || node.src;
         image.alt = node.alt || "";
-        lightbox.hidden = false;
+        modal.open();
         document.body.classList.add("has-image-lightbox");
       });
     });
@@ -1890,8 +1869,11 @@
       const canvas = signal?.querySelector("[data-vcs-signal-canvas]");
       const context = canvas?.getContext("2d");
       const tabs = [...(instrument?.querySelectorAll("[data-vcs-mode]") || [])];
-      const panels = [...(instrument?.querySelectorAll("[data-vcs-mode-panel]") || [])];
-      if (!instrument || !signal || !canvas || !context || !tabs.length) return;
+      if (!instrument || !tabs.length) return;
+      if (!signal || !canvas || !context) {
+        window.EA_TABS.bind(instrument, { tabSelector: "[data-vcs-mode]", panelSelector: "[data-vcs-mode-panel]" });
+        return;
+      }
 
       const profiles = {
         free: { frequency: 2.2, detail: 7.1, amplitude: 0.29, color: "#159bc6" },
@@ -1968,38 +1950,9 @@
         animationFrame = window.requestAnimationFrame(draw);
       };
 
-      const activate = (tab) => {
-        activeMode = tab.dataset.vcsMode || "free";
-        tabs.forEach((item) => {
-          const active = item === tab;
-          item.classList.toggle("is-active", active);
-          item.setAttribute("aria-selected", active ? "true" : "false");
-          item.tabIndex = active ? 0 : -1;
-        });
-        panels.forEach((panel) => {
-          const active = panel.dataset.vcsModePanel === activeMode;
-          panel.classList.toggle("is-active", active);
-          panel.hidden = !active;
-        });
-        if (reduceMotion) draw();
-      };
-
-      tabs.forEach((tab, index) => {
-        tab.tabIndex = index === 0 ? 0 : -1;
-        tab.addEventListener("click", () => activate(tab));
-        tab.addEventListener("keydown", (event) => {
-          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
-          event.preventDefault();
-          const nextIndex = event.key === "Home"
-            ? 0
-            : event.key === "End"
-              ? tabs.length - 1
-              : event.key === "ArrowRight"
-                ? (index + 1) % tabs.length
-                : (index - 1 + tabs.length) % tabs.length;
-          tabs[nextIndex].focus();
-          activate(tabs[nextIndex]);
-        });
+      window.EA_TABS.bind(instrument, {
+        tabSelector: "[data-vcs-mode]", panelSelector: "[data-vcs-mode-panel]",
+        onActivate: (tab) => { activeMode = tab.dataset.vcsMode || "free"; if (reduceMotion) draw(); },
       });
 
       signal.addEventListener("pointerenter", () => {
@@ -2064,39 +2017,7 @@
       tabsRoot.dataset.boundProjectTabs = "true";
       tabsRoot.classList.add("is-tabbed");
 
-      const tabs = [...tabsRoot.querySelectorAll("[data-project-tab]")];
-      const panels = [...tabsRoot.querySelectorAll("[data-project-panel]")];
-      const activate = (activeTab) => {
-        const targetId = activeTab.getAttribute("aria-controls");
-        tabs.forEach((tab) => {
-          const active = tab === activeTab;
-          tab.classList.toggle("is-active", active);
-          tab.setAttribute("aria-selected", active ? "true" : "false");
-          tab.tabIndex = active ? 0 : -1;
-        });
-        panels.forEach((panel) => {
-          panel.classList.toggle("is-active", panel.id === targetId);
-        });
-      };
-
-      tabs.forEach((tab, index) => {
-        tab.tabIndex = tab.classList.contains("is-active") ? 0 : -1;
-        tab.addEventListener("click", () => activate(tab));
-        tab.addEventListener("keydown", (event) => {
-          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
-          event.preventDefault();
-          const nextIndex =
-            event.key === "Home"
-              ? 0
-              : event.key === "End"
-                ? tabs.length - 1
-                : event.key === "ArrowRight"
-                  ? (index + 1) % tabs.length
-                  : (index - 1 + tabs.length) % tabs.length;
-          tabs[nextIndex].focus();
-          activate(tabs[nextIndex]);
-        });
-      });
+      window.EA_TABS.bind(tabsRoot, { tabSelector: "[data-project-tab]", panelSelector: "[data-project-panel]" });
     });
 
     root.querySelectorAll("[data-project-process]").forEach((process) => {

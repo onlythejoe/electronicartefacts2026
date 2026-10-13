@@ -58,6 +58,10 @@
   ]);
 
   const french = {
+    "Close": "Fermer",
+    "Image preview": "Aperçu de l’image",
+    "Close image": "Fermer l’image",
+    "Enlarge image": "Agrandir l’image",
     "Skip to main content": "Aller au contenu principal",
     "Back to home": "Retour à l’accueil",
     "Independent creative technology studio": "Studio indépendant de technologies créatives",

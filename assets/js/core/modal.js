@@ -1,6 +1,6 @@
 (function () {
-  // Shared focus management for the two quick-navigation runtimes.
-  const bind = (container, { initialFocus, fallbackFocus } = {}) => {
+  let activeModal = null;
+  const bind = (container, { initialFocus, fallbackFocus, onClose } = {}) => {
     let opener = null;
     let background = [];
     const focusableElements = () => [...container.querySelectorAll(
@@ -9,12 +9,14 @@
 
     const open = () => {
       if (!container.hidden) return;
+      activeModal?.close();
       opener = document.activeElement;
       container.hidden = false;
       background = [...document.body.children]
         .filter((element) => element !== container && !element.contains(container))
         .map((element) => ({ element, inert: element.inert }));
       background.forEach(({ element }) => { element.inert = true; });
+      activeModal = controls;
       requestAnimationFrame(() => {
         if (!container.hidden) (initialFocus || focusableElements()[0])?.focus({ preventScroll: true });
       });
@@ -28,6 +30,8 @@
       const target = opener?.isConnected && !opener.closest('[hidden], [inert]') ? opener : fallbackFocus;
       target?.focus({ preventScroll: true });
       opener = null;
+      if (activeModal === controls) activeModal = null;
+      onClose?.();
     };
 
     container.addEventListener("keydown", (event) => {
@@ -45,7 +49,8 @@
       }
     });
 
-    return Object.freeze({ open, close });
+    const controls = Object.freeze({ open, close });
+    return controls;
   };
 
   window.EA_MODAL = Object.freeze({ bind });

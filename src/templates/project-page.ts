@@ -359,7 +359,7 @@ const renderProjectTabs = (
           <h2>${isVestiges ? ui(project, "Read Vestiges from thesis to evidence.", "Lire Vestiges de la thèse aux preuves.") : ui(project, "A concise guide to the project dossier.", "Un guide concis du dossier projet.")}</h2>
           <p class="lede">${isVestiges ? ui(project, "Move from the cultural problem to the contribution model and current public evidence.", "Passez du problème culturel au modèle de contribution et aux preuves publiques actuelles.") : ui(project, "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page.", "Naviguez entre cadre stratégique, contexte, logique d’implémentation et preuves sans perdre le fil de la page.")}</p>
         </div>
-        <div class="project-command__nav" role="tablist" aria-label="Project dossier sections">
+        <div class="project-command__nav" role="tablist" aria-label="${ui(project, "Project dossier sections", "Sections du dossier projet")}">
           ${tabs.map((tab, index) => `
             <button
               class="project-command__tab${index === 0 ? " is-active" : ""}"
@@ -379,6 +379,7 @@ const renderProjectTabs = (
             id="project-panel-${escapeHtml(tab.id)}"
             role="tabpanel"
             aria-labelledby="project-tab-${escapeHtml(tab.id)}"
+            tabindex="0"
             data-project-panel
           >
             <p class="card__meta">${escapeHtml(tab.eyebrow)}</p>
@@ -1004,11 +1005,11 @@ const renderVoiceCaptureStudioExperience = (project: ProjectEntity): string => {
         </div>
         <div class="vcs-instrument__body">
           <div class="vcs-mode-tabs" role="tablist" aria-label="${ui(project, "Voice Capture Studio modes", "Modes de Voice Capture Studio")}">
-            ${modes.map((mode, index) => `<button class="vcs-mode-tab${index === 0 ? " is-active" : ""}" type="button" role="tab" aria-selected="${index === 0 ? "true" : "false"}" aria-controls="vcs-mode-${mode[0]}" data-vcs-mode="${mode[0]}">${escapeHtml(mode[1])}</button>`).join("")}
+            ${modes.map((mode, index) => `<button class="vcs-mode-tab${index === 0 ? " is-active" : ""}" id="vcs-tab-${mode[0]}" type="button" role="tab" aria-selected="${index === 0 ? "true" : "false"}" aria-controls="vcs-mode-${mode[0]}" data-vcs-mode="${mode[0]}">${escapeHtml(mode[1])}</button>`).join("")}
           </div>
           <div class="vcs-mode-panels">
             ${modes.map((mode, index) => `
-              <article class="vcs-mode-panel${index === 0 ? " is-active" : ""}" id="vcs-mode-${mode[0]}" role="tabpanel" data-vcs-mode-panel="${mode[0]}"${index === 0 ? "" : " hidden"}>
+              <article class="vcs-mode-panel${index === 0 ? " is-active" : ""}" id="vcs-mode-${mode[0]}" role="tabpanel" aria-labelledby="vcs-tab-${mode[0]}" tabindex="0" data-vcs-mode-panel="${mode[0]}"${index === 0 ? "" : " hidden"}>
                 <div>
                   <p class="card__meta">${String(index + 1).padStart(2, "0")} / 05</p>
                   <h3>${escapeHtml(mode[1])}</h3>

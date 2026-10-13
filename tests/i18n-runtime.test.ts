@@ -172,6 +172,7 @@ test("language switcher respects an explicitly requested localized detail page",
     }),
   };
 
+  vm.runInNewContext(await readFile("assets/js/core/language-menu.js", "utf8"), context);
   vm.runInNewContext(source, context, { filename: "assets/js/core/behaviors.js" });
   await (context.window as typeof context.window & { EA_BEHAVIORS: { initLanguageSwitcher: () => Promise<void> } }).EA_BEHAVIORS.initLanguageSwitcher();
 

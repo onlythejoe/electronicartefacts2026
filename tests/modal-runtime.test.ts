@@ -26,7 +26,7 @@ const harness = () => {
   }
   const frames: Array<() => void> = [];
   const context = {
-    document, window: {} as { EA_MODAL?: { bind(container: Element, options: { initialFocus: Element; fallbackFocus: Element }): { open(): void; close(): void } } },
+    document, window: {} as { EA_MODAL?: { bind(container: Element, options: { initialFocus: Element; fallbackFocus: Element; onClose?: () => void }): { open(): void; close(): void } } },
     requestAnimationFrame: (callback: () => void) => frames.push(callback),
   };
   vm.runInNewContext(source, context);
@@ -43,7 +43,7 @@ const harness = () => {
   document.body.children = [header, main, button, palette];
   document.activeElement = button;
   const modal = context.window.EA_MODAL!.bind(palette, { initialFocus: input, fallbackFocus: button });
-  return { document, header, main, button, palette, input, link, modal, flush: () => frames.splice(0).forEach((callback) => callback()) };
+  return { document, header, main, button, palette, input, link, modal, Element, bind: context.window.EA_MODAL!.bind, flush: () => frames.splice(0).forEach((callback) => callback()) };
 };
 
 test("quick navigation restores focus and the original background state after repeated opens", () => {
@@ -77,4 +77,31 @@ test("a cancelled opening never steals focus after the dialog closes", () => {
   h.modal.open(); h.modal.close(); h.flush();
   assert.equal(h.document.activeElement, h.button);
   assert.equal(h.main.inert, false);
+});
+
+test("opening a second dialog closes the first and preserves background and return focus", () => {
+  const h = harness();
+  const second = new h.Element();
+  const closeButton = new h.Element();
+  second.hidden = true;
+  second.children = [closeButton];
+  closeButton.parent = second;
+  h.document.body.children.push(second);
+  let closed = 0;
+  const dialog = h.bind(second, { initialFocus: closeButton, fallbackFocus: h.button, onClose: () => { closed += 1; } });
+  dialog.open(); h.flush();
+  assert.equal(h.document.activeElement, closeButton);
+  h.modal.open(); h.flush();
+  assert.equal(second.hidden, true);
+  assert.equal(closed, 1);
+  assert.equal(h.document.activeElement, h.input);
+  assert.equal(h.main.inert, true);
+  assert.equal(h.palette.inert, false);
+  h.modal.close();
+  assert.equal(h.document.activeElement, h.button);
+  assert.equal(h.main.inert, false);
+  assert.equal(h.header.inert, true);
+  assert.equal(second.inert, false);
+  dialog.close();
+  assert.equal(closed, 1);
 });

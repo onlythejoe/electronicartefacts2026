@@ -385,12 +385,12 @@ for (const [file, config] of Object.entries(pages)) {
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   const styleAsset = file === "index.html"
-    ? "home.css?v=5"
+    ? "home.css?v=6"
     : file === "graph.html"
-      ? "graph.css?v=2"
+      ? "graph.css?v=3"
       : file === "search.html"
-        ? "search.css?v=2"
-        : "app.css?v=91";
+        ? "search.css?v=3"
+        : "app.css?v=92";
   const performanceStyles = `<!-- PERFORMANCE_STYLES_START -->
     <link rel="stylesheet" href="/assets/css/${styleAsset}" />
     <!-- PERFORMANCE_STYLES_END -->`;
@@ -398,8 +398,8 @@ for (const [file, config] of Object.entries(pages)) {
     /<!-- PERFORMANCE_STYLES_START -->[\s\S]*?<!-- PERFORMANCE_STYLES_END -->|<link\s+rel="stylesheet"\s+href="(?:\.\/|\/)assets\/css\/(?:app|home|graph|search)\.css\?v=\d+"\s*\/>/,
     performanceStyles,
   );
-  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=2" : file === "search.html" ? "search.js?v=2" : "";
-  const runtime = file === "index.html" ? "home.js?v=1" : "app.js?v=79";
+  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=3" : file === "search.html" ? "search.js?v=3" : "";
+  const runtime = file === "index.html" ? "home.js?v=2" : "app.js?v=80";
   const runtimeBoot = file === "index.html"
     ? `<script type="module">{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/${runtime}"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}</script>`
     : dedicatedRuntime

@@ -48,8 +48,6 @@
   const initLanguage = () => {
     const root = document.querySelector("[data-language-switcher]");
     if (!root) return;
-    const trigger = root.querySelector("[data-language-trigger]");
-    const menu = root.querySelector("[data-language-menu]");
     const current = root.querySelector("[data-language-current]");
     const status = root.querySelector("[data-language-status]");
     const options = [...root.querySelectorAll("[data-language-option]")];
@@ -57,31 +55,23 @@
       .map((node) => [node.hreflang, node.href]));
     const active = isFrench ? "fr" : "en";
 
-    const setOpen = (open) => {
-      root.classList.toggle("is-open", open);
-      trigger?.setAttribute("aria-expanded", String(open));
-      if (menu) menu.hidden = !open;
-    };
+    const { setOpen } = window.EA_LANGUAGE_MENU.bind(root);
     if (current) current.textContent = active.toUpperCase();
     if (status) status.textContent = active === "fr" ? "Français actif" : "English active";
     options.forEach((option) => {
       const locale = option.dataset.languageOption;
       option.setAttribute("aria-checked", String(locale === active));
       option.classList.toggle("is-unavailable", !alternates[locale]);
+      option.setAttribute("aria-disabled", String(!alternates[locale]));
       option.addEventListener("click", () => {
         const target = alternates[locale];
         setOpen(false);
         if (!target || locale === active) return;
         try { localStorage.setItem("ea:language", locale); } catch {}
         body.classList.add("is-page-leaving");
-        setTimeout(() => location.assign(target), reduceMotion ? 0 : 105);
+        setTimeout(() => location.assign(window.EA_LANGUAGE_MENU.preserveUrlState(target, location.href)), reduceMotion ? 0 : 105);
       });
     });
-    trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
-    document.addEventListener("click", (event) => {
-      if (event.target instanceof Node && !root.contains(event.target)) setOpen(false);
-    });
-    document.addEventListener("keydown", (event) => { if (event.key === "Escape") setOpen(false); });
   };
 
   const syncNavigation = () => {
@@ -286,7 +276,10 @@
     body.append(button, palette);
     const input = palette.querySelector("[data-input]");
     const results = palette.querySelector("[data-results]");
-    const modal = window.EA_MODAL.bind(palette, { initialFocus: input, fallbackFocus: button });
+    const modal = window.EA_MODAL.bind(palette, {
+      initialFocus: input, fallbackFocus: button,
+      onClose: () => body.classList.remove("has-command-palette"),
+    });
     const render = () => {
       const query = input.value.trim().toLowerCase();
       results.innerHTML = entries.filter((entry) => !query || entry.title.toLowerCase().includes(query)).slice(0, 9)
