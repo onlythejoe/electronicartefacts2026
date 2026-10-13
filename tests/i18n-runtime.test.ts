@@ -88,13 +88,22 @@ test("French link localization is idempotent across every generated alternate", 
 });
 
 test("French legacy skip links resolve to their own document instead of the root base URL", async () => {
-  for (const file of ["fr/index.html", "fr/contact.html", "fr/graph.html", "fr/search.html", "fr/artist.html"]) {
+  for (const file of ["fr/index.html", "fr/contact.html", "fr/graph.html", "fr/search.html", "fr/artist.html", "fr/confidentialite.html", "fr/mentions-legales.html"]) {
     const html = await readFile(file, "utf8");
     const href = html.match(/class="skip-link" href="([^"]+)"/)?.[1];
     assert.ok(href);
     const target = new URL(href, "https://electronicartefacts.com/");
     assert.equal(target.pathname, file === "fr/index.html" ? "/fr/" : `/${file}`);
     assert.equal(target.hash, "#main");
+    assert.match(html, /<main id="main"[^>]*tabindex="-1"/);
+    if (file === "fr/confidentialite.html") {
+      assert.match(html, /Gestion des données du site\./);
+      assert.doesNotMatch(html, /How the site handles data\./);
+    }
+    if (file === "fr/mentions-legales.html") {
+      assert.match(html, /Éditeur et informations d'hébergement\./);
+      assert.doesNotMatch(html, /Publisher and hosting details\./);
+    }
   }
 });
 

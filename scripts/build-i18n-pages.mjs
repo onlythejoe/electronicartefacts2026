@@ -725,11 +725,12 @@ for (const page of pages) {
     .replace('<body data-page=', '<body data-locale="fr" data-page=');
 
   if (page.source === "confidentialite.html") {
-    html = html.replace(/    <main id="main" class="site-main">[\s\S]*?    <\/main>/, frenchPrivacyMain);
+    html = html.replace(/    <main id="main"[^>]*>[\s\S]*?    <\/main>/, frenchPrivacyMain);
   }
   if (page.source === "mentions-legales.html") {
-    html = html.replace(/    <main id="main" class="site-main">[\s\S]*?    <\/main>/, frenchLegalMain);
+    html = html.replace(/    <main id="main"[^>]*>[\s\S]*?    <\/main>/, frenchLegalMain);
   }
+  html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
 
   const output = path.join(rootDir, page.output);
   await mkdir(path.dirname(output), { recursive: true });
