@@ -87,6 +87,17 @@ test("French link localization is idempotent across every generated alternate", 
   assert.ok(checked > 100, `expected broad alternate coverage, checked ${checked}`);
 });
 
+test("French legacy skip links resolve to their own document instead of the root base URL", async () => {
+  for (const file of ["fr/index.html", "fr/contact.html", "fr/graph.html", "fr/search.html", "fr/artist.html"]) {
+    const html = await readFile(file, "utf8");
+    const href = html.match(/class="skip-link" href="([^"]+)"/)?.[1];
+    assert.ok(href);
+    const target = new URL(href, "https://electronicartefacts.com/");
+    assert.equal(target.pathname, file === "fr/index.html" ? "/fr/" : `/${file}`);
+    assert.equal(target.hash, "#main");
+  }
+});
+
 test("French link localization preserves queries, fragments and non-page assets", async () => {
   const { runtime } = await loadFrenchRuntime();
 

@@ -32,6 +32,7 @@
   const state = {
     loaded: false,
     banner: null,
+    bannerOpener: null,
     instrumentationBound: false,
     sectionObserver: null,
     trackedSections: new Set(),
@@ -63,6 +64,8 @@
       };
 
   const now = () => Date.now();
+  const disableKey = `ga-disable-${config.measurementId}`;
+  window[disableKey] = true;
   const maxAgeMs = Number(config.consentMaxAgeDays) * 24 * 60 * 60 * 1000;
 
   const readConsent = () => {
@@ -71,7 +74,7 @@
       if (!raw) return null;
       const parsed = JSON.parse(raw);
       if (!["granted", "denied"].includes(parsed.status)) return null;
-      if (!parsed.updatedAt || now() - parsed.updatedAt > maxAgeMs) {
+      if (!Number.isFinite(parsed.updatedAt) || parsed.updatedAt <= 0 || parsed.updatedAt > now() || now() - parsed.updatedAt > maxAgeMs) {
         window.localStorage.removeItem(config.consentStorageKey);
         return null;
       }
@@ -118,8 +121,8 @@
     window.dataLayer.push(args);
   };
 
-  const setConsentMode = (analyticsStorage) => {
-    gtag("consent", "default", {
+  const setConsentMode = (analyticsStorage, initialize = false) => {
+    if (initialize) gtag("consent", "default", {
       analytics_storage: "denied",
       ad_storage: "denied",
       ad_user_data: "denied",
@@ -472,7 +475,7 @@
       }
       const button = event.target?.closest?.("button, [role='button']");
       if (!button) return;
-      if (button.matches("[data-analytics-preferences]")) showBanner();
+      if (button.matches("[data-analytics-preferences]")) showBanner({ focus: true });
       trackButtonClick(button);
     });
 
@@ -592,11 +595,12 @@
   };
 
   const loadGoogleTag = () => {
-    if (state.loaded) return;
+    window[disableKey] = false;
+    if (state.loaded) { setConsentMode("granted"); return; }
     state.loaded = true;
     window.dataLayer = window.dataLayer || [];
     window.gtag = gtag;
-    setConsentMode("granted");
+    setConsentMode("granted", true);
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(config.measurementId)}`;
@@ -615,8 +619,12 @@
   };
 
   const hideBanner = () => {
+    const restoreFocus = state.banner?.contains(document.activeElement);
+    const target = state.bannerOpener || document.querySelector("[data-analytics-preferences]");
     state.banner?.remove();
     state.banner = null;
+    state.bannerOpener = null;
+    if (restoreFocus && target?.isConnected && !target.closest("[hidden], [inert]")) target.focus({ preventScroll: true });
   };
 
   const applyConsent = (status) => {
@@ -625,13 +633,9 @@
       loadGoogleTag();
       track("ea_analytics_consent", { consent_action: "granted" });
     } else {
+      window[disableKey] = true;
       if (typeof window.gtag === "function") {
-        window.gtag("consent", "update", {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied",
-        });
+        setConsentMode("denied");
       }
       clearGoogleAnalyticsCookies();
     }
@@ -641,6 +645,8 @@
   const createBanner = () => {
     if (state.banner) return state.banner;
     const text = copy();
+    const privacyUrl = isFrench() && config.privacyUrl.startsWith("/") && !config.privacyUrl.startsWith("/fr/")
+      ? `/fr${config.privacyUrl}` : config.privacyUrl;
     const banner = document.createElement("section");
     banner.className = "consent-banner";
     banner.setAttribute("aria-label", text.settings);
@@ -650,7 +656,7 @@
           <p class="card__meta">${text.settings}</p>
           <h2 class="card__title" id="ea-consent-title">${text.title}</h2>
           <p class="card__copy">${text.body}</p>
-          <a class="tag" href="${config.privacyUrl}">${text.privacy}</a>
+          <a class="tag" href="${privacyUrl}">${text.privacy}</a>
         </div>
         <div class="consent-banner__actions">
           <button class="button button--secondary" type="button" data-consent-choice="denied">${text.reject}</button>
@@ -662,25 +668,24 @@
       if (!button) return;
       applyConsent(button.getAttribute("data-consent-choice"));
     });
+    banner.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      hideBanner();
+    });
     state.banner = banner;
     return banner;
   };
 
-  const showBanner = () => {
-    document.body.appendChild(createBanner());
-  };
-
-  const bindPreferenceButtons = () => {
-    document.querySelectorAll("[data-analytics-preferences]").forEach((button) => {
-      if (button.dataset.boundAnalyticsPreferences === "true") return;
-      button.dataset.boundAnalyticsPreferences = "true";
-      button.addEventListener("click", showBanner);
-    });
+  const showBanner = ({ focus = false } = {}) => {
+    const banner = createBanner();
+    if (focus && !banner.contains(document.activeElement)) state.bannerOpener = document.activeElement;
+    document.body.appendChild(banner);
+    if (focus) banner.querySelector('[data-consent-choice="denied"]')?.focus({ preventScroll: true });
   };
 
   const init = () => {
     bindInteractionTracking();
-    bindPreferenceButtons();
     const consent = readConsent();
     if (consent?.status === "granted") {
       loadGoogleTag();
@@ -695,7 +700,7 @@
 
   window.EA_ANALYTICS = {
     configured: true,
-    openPreferences: showBanner,
+    openPreferences: () => showBanner({ focus: true }),
     getConsent: readConsent,
     setConsent: applyConsent,
     track,

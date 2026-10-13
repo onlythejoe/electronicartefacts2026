@@ -14,9 +14,9 @@ interface LayoutInput {
 
 export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => {
   const styles = pageClass === "project"
-    ? `<link rel="stylesheet" href="/assets/css/project.css?v=6" />`
-    : `<link rel="stylesheet" href="/assets/css/editorial.css?v=5" />`;
-  const runtime = pageClass === "project" ? "project.js?v=5" : "editorial.js?v=4";
+    ? `<link rel="stylesheet" href="/assets/css/project.css?v=7" />`
+    : `<link rel="stylesheet" href="/assets/css/editorial.css?v=6" />`;
+  const runtime = pageClass === "project" ? "project.js?v=6" : "editorial.js?v=5";
   const heroPreload = entryId === "palimpsests"
     ? `<link rel="preload" as="image" href="/assets/media/projects/oreth/ORETH-hero-800.webp" imagesrcset="/assets/media/projects/oreth/ORETH-hero-800.webp 800w, /assets/media/projects/oreth/ORETH-hero-1200.webp 1200w" imagesizes="(max-width: 48rem) 100vw, 48vw" fetchpriority="high" />`
     : "";
@@ -74,8 +74,8 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     ${heroPreload}
     ${styles}
     <!-- PERFORMANCE_RUNTIME_START -->
-    <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script defer src="/assets/js/flow.js?v=2"></script>
+    <script defer src="/assets/js/analytics.js?v=2"></script>
+    <script defer src="/assets/js/flow.js?v=3"></script>
     <script type="module">{const boot=()=>import("/assets/js/${runtime}");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>
     <!-- PERFORMANCE_RUNTIME_END -->
   </head>

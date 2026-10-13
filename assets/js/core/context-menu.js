@@ -64,7 +64,7 @@
     .filter((action) => !action.when || action.when(ctx))
     .sort((a, b) => (a.order || 0) - (b.order || 0));
 
-  const close = ({ restoreFocus = false } = {}) => {
+  const close = ({ restoreFocus = Boolean(menu?.contains(document.activeElement)) } = {}) => {
     if (!menu || menu.hidden) return;
     menu.hidden = true;
     menu.replaceChildren();
@@ -99,6 +99,7 @@
       button.type = "button";
       button.className = "site-context-menu__item";
       button.setAttribute("role", "menuitem");
+      button.tabIndex = -1;
       button.dataset.contextAction = action.id;
       const text = document.createElement("span");
       text.textContent = action.label(ctx);
@@ -149,19 +150,20 @@
     document.body.append(menu);
 
     document.addEventListener("contextmenu", (event) => {
-      if (event.shiftKey || event.target.closest("input, textarea, [contenteditable='true']")) return;
+      if (event.shiftKey || event.target.closest("input, textarea, [contenteditable='true'], [aria-modal='true']")) return;
       event.preventDefault();
       close();
       open(resolve(event.target, event));
     });
     document.addEventListener("keydown", (event) => {
-      if ((event.key === "ContextMenu" || (event.shiftKey && event.key === "F10")) && !event.target.closest("input, textarea, [contenteditable='true']")) {
+      if ((event.key === "ContextMenu" || (event.shiftKey && event.key === "F10")) && !event.target.closest("input, textarea, [contenteditable='true'], [aria-modal='true']")) {
         event.preventDefault();
         const rect = event.target.getBoundingClientRect();
         open(resolve(event.target, { clientX: rect.left + 12, clientY: rect.top + 12 }));
         return;
       }
       if (!menu.hidden && event.key === "Escape") { event.preventDefault(); close({ restoreFocus: true }); }
+      if (!menu.hidden && event.key === "Tab") close({ restoreFocus: true });
       if (!menu.hidden && ["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) {
         event.preventDefault();
         const items = [...menu.querySelectorAll("button")];
@@ -175,7 +177,7 @@
       if (!button || !context) return;
       const action = actions.get(button.dataset.contextAction);
       const activeContext = context;
-      close();
+      close({ restoreFocus: true });
       try { await action?.run(activeContext); track(action?.id || "unknown", activeContext); }
       catch (error) { if (error?.name !== "AbortError") console.warn("Context action unavailable", error); }
     });

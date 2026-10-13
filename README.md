@@ -22,7 +22,7 @@ npm run check
 ```
 
 `npm run check` builds the published output before testing it, then audits SEO,
-language and local links (including deferred and responsive images). The Site
+language and local links (including fragment targets, deferred and responsive images). The Site
 quality workflow runs these checks, audits dependencies and verifies that
 committed output matches its sources on every push and pull request.
 
@@ -44,7 +44,7 @@ Do not submit before the deployment is live: search engines verify the public ke
 
 - `content/` - source-of-truth Markdown entities and YAML relation statements.
 - `src/schema/` - entity, relation, predicate, and frontmatter contracts.
-- `src/legacy-data/` - non-published compatibility inputs for the legacy browser runtime.
+- `src/legacy-data/` - compatibility inputs for the legacy browser runtime, separate from the canonical public catalog.
 - `src/config/` - site constants, route rules, and publication contracts.
 - `src/build/` - loaders, graph validation, catalog building, route building, and output helpers.
 - `src/templates/` - page layouts and reusable HTML components.
@@ -56,3 +56,7 @@ Do not submit before the deployment is live: search engines verify the public ke
 - `docs/` - architecture notes, audits, specs, and implementation records.
 
 See [docs/architecture/repository-architecture.md](docs/architecture/repository-architecture.md) for the detailed architecture rules.
+
+The GitHub repository is public and GitHub Pages currently serves its root.
+Source files and documentation remain publicly accessible even when records are
+excluded from generated catalogs by their visibility field.

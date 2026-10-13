@@ -11,7 +11,7 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
 
   assert.match(template, /data-vaste-demo/);
   assert.match(template, /vaste-demo\.css\?v=3/);
-  assert.match(template, /vaste-demo\.js\?v=3/);
+  assert.match(template, /vaste-demo\.js\?v=4/);
   assert.doesNotMatch(template, /vaste-demo__traffic/);
   assert.match(template, /data-demo-scene="runtime"/);
   assert.match(template, /data-demo-scene="portable"/);
@@ -45,4 +45,23 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   assert.match(styles, /width: 100vw/);
   assert.match(styles, /touch-action: none/);
   assert.match(styles, /height: clamp\(460px, 126vw, 540px\)/);
+});
+
+test("VASTE navigation anchors resolve in both languages and preserve heading permalinks", async () => {
+  for (const prefix of ["", "fr/"]) {
+    const html = await readFile(`${prefix}programs/vaste/index.html`, "utf8");
+    const nav = html.match(/<nav class="vaste-console__nav"[\s\S]*?<\/nav>/)?.[0];
+    assert.ok(nav);
+    const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]));
+    const links = [...nav.matchAll(/href="#([^"]+)"/g)].map((match) => match[1]);
+    assert.equal(links.length, 7);
+    assert.ok(links.every((id) => ids.has(id)), `${prefix}VASTE dossier has broken navigation`);
+    assert.ok(ids.has(prefix ? "modele-runtime" : "runtime-model"));
+    assert.ok(ids.has(prefix ? "registre-de-preuves" : "validation-record"));
+    const controls = html.match(/<div class="vaste-demo__scenes"[\s\S]*?<\/div>/)?.[0];
+    assert.ok(controls);
+    assert.match(controls, /role="group"/);
+    assert.equal([...controls.matchAll(/aria-pressed="(?:true|false)"/g)].length, 3);
+    assert.doesNotMatch(controls, /role="tab"|aria-selected/);
+  }
 });

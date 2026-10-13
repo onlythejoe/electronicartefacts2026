@@ -28,6 +28,7 @@ const runAnalytics = async (options: {
     src: "",
     setAttribute() {},
     addEventListener() {},
+    contains() { return false; },
     remove() {},
   });
 
@@ -142,6 +143,7 @@ test("analytics consent banner uses readable French copy", async () => {
   assert.match(banner.innerHTML || "", /d’améliorer/);
   assert.match(banner.innerHTML || "", /Politique de confidentialité/);
   assert.match(banner.innerHTML || "", /Préférences de confidentialité/);
+  assert.match(banner.innerHTML || "", /href="\/fr\/confidentialite\.html"/);
 });
 
 test("analytics runtime honors stored refusal and clears accessible GA cookies", async () => {
@@ -191,4 +193,32 @@ test("analytics runtime sends sanitized events only after consent", async () => 
       entry_id: "ea:test",
     },
   );
+});
+
+test("analytics revocation disables the tag and reacceptance updates consent without reinjecting it", async () => {
+  const harness = await runAnalytics();
+  const window = harness.context.window as typeof harness.context.window & {
+    "ga-disable-G-TEST1234": boolean;
+    dataLayer: unknown[][];
+    EA_ANALYTICS: { setConsent(status: "granted" | "denied"): void; track(name: string): boolean };
+  };
+  assert.equal(window["ga-disable-G-TEST1234"], true);
+  window.EA_ANALYTICS.setConsent("granted");
+  assert.equal(window["ga-disable-G-TEST1234"], false);
+  window.EA_ANALYTICS.setConsent("denied");
+  assert.equal(window["ga-disable-G-TEST1234"], true);
+  assert.equal(window.EA_ANALYTICS.track("test_event"), false);
+  window.EA_ANALYTICS.setConsent("granted");
+  assert.equal(window["ga-disable-G-TEST1234"], false);
+  assert.equal(harness.headChildren.length, 1);
+  const updates = window.dataLayer.filter((entry) => entry[0] === "consent" && entry[1] === "update");
+  assert.deepEqual(Array.from(updates, (entry) => (entry[2] as { analytics_storage: string }).analytics_storage), ["granted", "denied", "granted"]);
+});
+
+test("analytics rejects expired, future and non-finite consent dates", async () => {
+  for (const updatedAt of [Date.now() - 181 * 86400000, Date.now() + 86400000, Number.NaN]) {
+    const harness = await runAnalytics({ storedConsent: { status: "granted", updatedAt, provider: "Google Analytics 4" } });
+    assert.equal(harness.headChildren.length, 0);
+    assert.equal(harness.bodyChildren.length, 1);
+  }
 });

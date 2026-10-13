@@ -139,6 +139,7 @@
     edgesByNode.get(id).push(edge);
   }));
   const stage = graph.querySelector("[data-global-graph-stage]");
+  const canvas = graph.querySelector(".global-graph__canvas");
   const viewport = graph.querySelector("[data-global-graph-viewport]");
   const inspectorKind = graph.querySelector("[data-global-graph-inspector-kind]");
   const inspectorTitle = graph.querySelector("[data-global-graph-inspector-title]");
@@ -199,9 +200,10 @@
     clearButton.hidden = false;
   };
   const applyViewport = () => {
+    const matrix = canvas?.getScreenCTM();
     viewport?.style.setProperty("--global-graph-scale", String(scale));
-    viewport?.style.setProperty("--global-graph-pan-x", `${panX}px`);
-    viewport?.style.setProperty("--global-graph-pan-y", `${panY}px`);
+    viewport?.style.setProperty("--global-graph-pan-x", `${matrix?.a ? panX / matrix.a : 0}px`);
+    viewport?.style.setProperty("--global-graph-pan-y", `${matrix?.d ? panY / matrix.d : 0}px`);
   };
   const scheduleViewport = () => {
     if (viewportFrame) return;
@@ -213,10 +215,16 @@
     panX = Math.max(-limitX, Math.min(limitX, panX));
     panY = Math.max(-limitY, Math.min(limitY, panY));
   };
-  const stagePoint = (event, rect = stage?.getBoundingClientRect()) => rect ? {
-    x: Math.max(2, Math.min(98, ((event.clientX - rect.left) / rect.width) * 100)),
-    y: Math.max(2, Math.min(98, ((event.clientY - rect.top) / rect.height) * 100)),
-  } : null;
+  const stagePoint = (event) => {
+    const matrix = viewport?.getScreenCTM();
+    if (!matrix || !canvas) return null;
+    const point = canvas.createSVGPoint();
+    point.x = event.clientX; point.y = event.clientY;
+    try {
+      const local = point.matrixTransform(matrix.inverse());
+      return Number.isFinite(local.x) && Number.isFinite(local.y) ? local : null;
+    } catch { return null; }
+  };
   const renderNodePosition = (node) => {
     const x = Number(node.dataset.globalGraphX);
     const y = Number(node.dataset.globalGraphY);
@@ -243,28 +251,33 @@
   buttons.forEach((button) => button.addEventListener("click", () => selectType(button.dataset.globalGraphFilter || "all")));
   nodes.forEach((node) => {
     node.addEventListener("pointerdown", (event) => {
-      if (event.pointerType === "touch" && !event.isPrimary) return;
+      if (event.button !== 0 || (event.pointerType === "touch" && !event.isPrimary)) return;
       const point = stagePoint(event);
       if (!point) return;
       event.stopPropagation();
-      nodeDrag = { node, pointerId: event.pointerId, rect: stage?.getBoundingClientRect(), startX: point.x, startY: point.y, moved: false };
+      nodeDrag = {
+        node, pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, moved: false,
+        offsetX: Number(node.dataset.globalGraphX) - point.x,
+        offsetY: Number(node.dataset.globalGraphY) - point.y,
+      };
       node.setPointerCapture?.(event.pointerId);
       node.classList.add("is-dragging");
     });
     node.addEventListener("pointermove", (event) => {
       if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
-      const point = stagePoint(event, nodeDrag.rect);
+      const point = stagePoint(event);
       if (!point) return;
-      nodeDrag.moved ||= Math.abs(point.x - nodeDrag.startX) > 0.35 || Math.abs(point.y - nodeDrag.startY) > 0.35;
-      node.dataset.globalGraphX = String(point.x);
-      node.dataset.globalGraphY = String(point.y);
+      nodeDrag.moved ||= Math.hypot(event.clientX - nodeDrag.startX, event.clientY - nodeDrag.startY) > 3;
+      if (!nodeDrag.moved) return;
+      node.dataset.globalGraphX = String(Math.max(2, Math.min(98, point.x + nodeDrag.offsetX)));
+      node.dataset.globalGraphY = String(Math.max(2, Math.min(98, point.y + nodeDrag.offsetY)));
       if (!nodeFrame) nodeFrame = requestAnimationFrame(() => { nodeFrame = 0; renderNodePosition(node); });
     });
     const stopNodeDrag = (event) => {
       if (!nodeDrag || nodeDrag.node !== node || event.pointerId !== nodeDrag.pointerId) return;
       node.releasePointerCapture?.(event.pointerId);
       node.classList.remove("is-dragging");
-      if (nodeDrag.moved) node.dataset.suppressGraphClick = "true";
+      node.dataset.suppressGraphClick = String(event.type === "pointerup" && nodeDrag.moved);
       nodeDrag = null;
     };
     node.addEventListener("pointerup", stopNodeDrag);
@@ -277,7 +290,10 @@
     });
     node.addEventListener("focus", () => selectNode(node));
   });
-  clearButton.addEventListener("click", () => selectType(activeType));
+  clearButton.addEventListener("click", () => {
+    selectType(activeType);
+    buttons.find((button) => button.dataset.globalGraphFilter === activeType)?.focus({ preventScroll: true });
+  });
   graph.querySelectorAll("[data-global-graph-zoom]").forEach((button) => button.addEventListener("click", () => {
     const action = button.dataset.globalGraphZoom;
     scale = action === "in" ? Math.min(1.45, scale + 0.15) : action === "out" ? Math.max(0.78, scale - 0.15) : 1;
@@ -285,13 +301,14 @@
     clampPan(); applyViewport();
   }));
   stage?.addEventListener("keydown", (event) => {
+    if (event.ctrlKey || event.metaKey || event.altKey) return;
     if (!['+', '-'].includes(event.key)) return;
     event.preventDefault();
     scale = event.key === "+" ? Math.min(1.45, scale + 0.15) : Math.max(0.78, scale - 0.15);
     clampPan(); applyViewport();
   });
   stage?.addEventListener("pointerdown", (event) => {
-    if (event.pointerType === "touch" && !event.isPrimary) return;
+    if (event.button !== 0 || (event.pointerType === "touch" && !event.isPrimary)) return;
     if (event.target.closest?.("[data-global-graph-node], [data-global-graph-zoom]")) return;
     stageDrag = { pointerId: event.pointerId, rect: stage.getBoundingClientRect(), startX: event.clientX, startY: event.clientY, panX, panY };
     stage.setPointerCapture?.(event.pointerId);
@@ -321,6 +338,7 @@
   }, { passive: false });
   if (compactQuery.addEventListener) compactQuery.addEventListener("change", applyIdleEdgeDensity);
   else compactQuery.addListener(applyIdleEdgeDensity);
+  window.addEventListener("resize", () => { clampPan(); applyViewport(); }, { passive: true });
   resetInspector();
   performance.mark?.("ea:graph-interactive");
   try { performance.measure?.("ea:graph-start-to-interactive", "ea:graph-runtime-start", "ea:graph-interactive"); } catch {}

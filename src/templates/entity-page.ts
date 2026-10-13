@@ -133,10 +133,10 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <span class="vaste-demo__chrome-state" data-demo-chrome-state>${french ? "SYSTÈME ACTIF" : "SYSTEM ACTIVE"}</span>
         </div>
 
-        <div class="vaste-demo__scenes" role="tablist" aria-label="${french ? "Choisir une projection" : "Choose a projection"}">
-          <button class="vaste-demo__scene is-active" type="button" role="tab" aria-selected="true" data-demo-scene="runtime">${french ? "Runtime" : "Runtime"}</button>
-          <button class="vaste-demo__scene" type="button" role="tab" aria-selected="false" data-demo-scene="portable">${french ? "Portabilité .vast" : ".vast portability"}</button>
-          <button class="vaste-demo__scene" type="button" role="tab" aria-selected="false" data-demo-scene="boot">Assisted Boot</button>
+        <div class="vaste-demo__scenes" role="group" aria-label="${french ? "Choisir une projection" : "Choose a projection"}">
+          <button class="vaste-demo__scene is-active" type="button" aria-pressed="true" data-demo-scene="runtime">Runtime</button>
+          <button class="vaste-demo__scene" type="button" aria-pressed="false" data-demo-scene="portable">${french ? "Portabilité .vast" : ".vast portability"}</button>
+          <button class="vaste-demo__scene" type="button" aria-pressed="false" data-demo-scene="boot">Assisted Boot</button>
         </div>
 
         <div class="vaste-demo__workspace">
@@ -182,7 +182,7 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>
         </div>
       </div>
-      <script type="module" src="/assets/js/vaste-demo.js?v=3"></script>
+      <script type="module" src="/assets/js/vaste-demo.js?v=4"></script>
     </section>`;
 };
 
@@ -190,32 +190,37 @@ const renderEntityBody = (entity: Entity): string => {
   if (!isVasteProgram(entity)) return entity.bodyHtml;
   const headings: Array<[RegExp, string]> = entity.locale === "fr"
     ? [
-        [/<h2>Définition<\/h2>/, '<h2 id="definition">Définition</h2>'],
-        [/<h2>Modèle runtime<\/h2>/, '<h2 id="runtime-model">Modèle runtime</h2>'],
-        [/<h2>Exécution gouvernée<\/h2>/, '<h2 id="governed-execution">Exécution gouvernée</h2>'],
-        [/<h2>Portabilité <code>\.vast<\/code><\/h2>/, '<h2 id="portability">Portabilité <code>.vast</code></h2>'],
-        [/<h2>VAB — Assisted Boot<\/h2>/, '<h2 id="assisted-boot">VAB — Assisted Boot</h2>'],
-        [/<h2>Registre de preuves<\/h2>/, '<h2 id="evidence">Registre de preuves</h2>'],
-        [/<h2>Limites<\/h2>/, '<h2 id="limits">Limites</h2>'],
+        [/<h2\b[^>]*>Définition<\/h2>/, "definition"],
+        [/<h2\b[^>]*>Modèle runtime<\/h2>/, "runtime-model"],
+        [/<h2\b[^>]*>Exécution gouvernée<\/h2>/, "governed-execution"],
+        [/<h2\b[^>]*>Portabilité <code>\.vast<\/code><\/h2>/, "portability"],
+        [/<h2\b[^>]*>VAB — Assisted Boot<\/h2>/, "assisted-boot"],
+        [/<h2\b[^>]*>Registre de preuves<\/h2>/, "evidence"],
+        [/<h2\b[^>]*>Limites<\/h2>/, "limits"],
       ]
     : [
-        [/<h2>Definition<\/h2>/, '<h2 id="definition">Definition</h2>'],
-        [/<h2>Runtime model<\/h2>/, '<h2 id="runtime-model">Runtime model</h2>'],
-        [/<h2>Governed execution<\/h2>/, '<h2 id="governed-execution">Governed execution</h2>'],
-        [/<h2><code>\.vast<\/code> portability<\/h2>/, '<h2 id="portability"><code>.vast</code> portability</h2>'],
-        [/<h2>VAB — Assisted Boot<\/h2>/, '<h2 id="assisted-boot">VAB — Assisted Boot</h2>'],
-        [/<h2>Validation record<\/h2>/, '<h2 id="evidence">Validation record</h2>'],
-        [/<h2>Limits<\/h2>/, '<h2 id="limits">Limits</h2>'],
+        [/<h2\b[^>]*>Definition<\/h2>/, "definition"],
+        [/<h2\b[^>]*>Runtime model<\/h2>/, "runtime-model"],
+        [/<h2\b[^>]*>Governed execution<\/h2>/, "governed-execution"],
+        [/<h2\b[^>]*><code>\.vast<\/code> portability<\/h2>/, "portability"],
+        [/<h2\b[^>]*>VAB — Assisted Boot<\/h2>/, "assisted-boot"],
+        [/<h2\b[^>]*>Validation record<\/h2>/, "evidence"],
+        [/<h2\b[^>]*>Limits<\/h2>/, "limits"],
       ];
   const french = entity.locale === "fr";
-  const withAnchors = headings.reduce((html, [pattern, replacement]) => html.replace(pattern, replacement), entity.bodyHtml);
-  const withVisualFlows = withAnchors
+  const withVisualFlows = entity.bodyHtml
     .replace(/<pre><code class="language-text">(?:Apps et hosts remplaçables|Apps and replaceable hosts)[\s\S]*?Mécanique déterministe du kernel\n<\/code><\/pre>|<pre><code class="language-text">Apps and replaceable hosts[\s\S]*?Deterministic kernel mechanics\n<\/code><\/pre>/, renderVasteRuntimeStack(french))
     .replace(/<pre><code class="language-text">(?:VASTE boote Electronic Artefacts|VASTE boots Electronic Artefacts)[\s\S]*?<\/code><\/pre>/, renderVasteGenesisFlow(french));
   return withVisualFlows
     .split(/(?=<h2(?:\s|>))/)
     .filter(Boolean)
-    .map((section) => `<section class="vaste-dossier-section">${section}</section>`)
+    .map((section) => {
+      const anchor = headings.find(([pattern]) => pattern.test(section))?.[1];
+      const headingId = section.match(/<h2\b[^>]*\bid="([^"]*)"/)?.[1];
+      // Keep published heading permalinks and add the stable bilingual navigation alias.
+      const alias = anchor && anchor !== headingId ? ` id="${anchor}"` : "";
+      return `<section class="vaste-dossier-section"${alias}>${section}</section>`;
+    })
     .join("");
 };
 

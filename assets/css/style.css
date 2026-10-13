@@ -7635,7 +7635,7 @@ body[data-page="search"] [data-render="cross-navigation"] {
 }
 
 .global-graph__viewport {
-  transform-box: fill-box;
+  transform-box: view-box;
   transform-origin: center;
   transform: translate(var(--global-graph-pan-x, 0), var(--global-graph-pan-y, 0)) scale(var(--global-graph-scale, 1));
   transition: transform 180ms ease-out;

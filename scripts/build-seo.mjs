@@ -385,12 +385,12 @@ for (const [file, config] of Object.entries(pages)) {
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   const styleAsset = file === "index.html"
-    ? "home.css?v=6"
+    ? "home.css?v=7"
     : file === "graph.html"
-      ? "graph.css?v=3"
+      ? "graph.css?v=4"
       : file === "search.html"
-        ? "search.css?v=3"
-        : "app.css?v=92";
+        ? "search.css?v=4"
+        : "app.css?v=93";
   const performanceStyles = `<!-- PERFORMANCE_STYLES_START -->
     <link rel="stylesheet" href="/assets/css/${styleAsset}" />
     <!-- PERFORMANCE_STYLES_END -->`;
@@ -398,16 +398,16 @@ for (const [file, config] of Object.entries(pages)) {
     /<!-- PERFORMANCE_STYLES_START -->[\s\S]*?<!-- PERFORMANCE_STYLES_END -->|<link\s+rel="stylesheet"\s+href="(?:\.\/|\/)assets\/css\/(?:app|home|graph|search)\.css\?v=\d+"\s*\/>/,
     performanceStyles,
   );
-  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=3" : file === "search.html" ? "search.js?v=3" : "";
-  const runtime = file === "index.html" ? "home.js?v=2" : "app.js?v=80";
+  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=4" : file === "search.html" ? "search.js?v=4" : "";
+  const runtime = file === "index.html" ? "home.js?v=3" : "app.js?v=81";
   const runtimeBoot = file === "index.html"
     ? `<script type="module">{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/${runtime}"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}</script>`
     : dedicatedRuntime
       ? `<script type="module" src="/assets/js/${dedicatedRuntime}"></script>`
       : `<script type="module">{const boot=()=>import("/assets/js/${runtime}");const schedule=()=>"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:700}):setTimeout(boot,180);document.readyState==="loading"?document.addEventListener("DOMContentLoaded",schedule,{once:true}):schedule();}</script>`;
   const performanceRuntime = `<!-- PERFORMANCE_RUNTIME_START -->
-    <script defer src="/assets/js/analytics.js?v=1"></script>
-    <script defer src="/assets/js/flow.js?v=2"></script>
+    <script defer src="/assets/js/analytics.js?v=2"></script>
+    <script defer src="/assets/js/flow.js?v=3"></script>
     ${runtimeBoot}
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(

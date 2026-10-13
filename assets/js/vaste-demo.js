@@ -316,7 +316,7 @@ const initDemo = (root) => {
     root.querySelectorAll("[data-demo-scene]").forEach((button) => {
       const active = button.dataset.demoScene === name;
       button.classList.toggle("is-active", active);
-      button.setAttribute("aria-selected", String(active));
+      button.setAttribute("aria-pressed", String(active));
     });
     updateInspector();
     save();

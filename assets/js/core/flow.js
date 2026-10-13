@@ -186,6 +186,14 @@
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const anchor = event.target.closest?.("a[href]");
     if (!anchor || anchor.dataset.noPageTransition === "true") return;
+    if (anchor.classList.contains("skip-link")) {
+      const main = document.getElementById("main");
+      if (!main) return;
+      event.preventDefault();
+      window.location.hash = "main";
+      main.focus({ preventScroll: true });
+      return;
+    }
     const url = destinationFor(anchor);
     if (!url) return;
 
