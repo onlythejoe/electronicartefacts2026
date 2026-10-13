@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import vm from "node:vm";
-import fg from "fast-glob";
+import { glob as fg } from "glob";
 
 test("the canonical generated catalog overrides migrated legacy records", async () => {
   const source = await readFile(path.resolve("assets/js/catalog.js"), "utf8");

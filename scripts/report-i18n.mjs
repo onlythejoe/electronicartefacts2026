@@ -1,6 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import fg from "fast-glob";
+import { glob as fg } from "glob";
 
 const rootDir = path.resolve(".");
 const staticFrenchPages = [

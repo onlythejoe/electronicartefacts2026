@@ -47,12 +47,12 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- PERFORMANCE_STYLES_START -->
-    <link rel="stylesheet" href="/assets/css/home.css?v=4" />
+    <link rel="stylesheet" href="/assets/css/home.css?v=5" />
     <!-- PERFORMANCE_STYLES_END -->
     <!-- PERFORMANCE_RUNTIME_START -->
     <script defer src="/assets/js/analytics.js?v=1"></script>
     <script defer src="/assets/js/flow.js?v=2"></script>
-    <script type="module">{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/app.js?v=78"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}</script>
+    <script type="module">{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/home.js?v=1"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}</script>
     <!-- PERFORMANCE_RUNTIME_END -->
   </head>
   <body data-locale="fr" data-page="home" itemscope itemtype="https://schema.org/Organization" itemid="https://electronicartefacts.com/id/organization/electronic-artefacts/">
@@ -66,7 +66,7 @@
     <link itemprop="sameAs" href="https://github.com/onlythejoe" />
     <link itemprop="sameAs" href="https://soundcloud.com/electronic-artefacts" />
     <!-- ENTITY MICRODATA END -->
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main">Aller au contenu principal</a>
     <header><!-- STATIC_HEADER_START --><div class="shell-header zone-card">
   <a class="brand-lockup" href="/index.html">
     <span class="brand-text">
@@ -87,7 +87,7 @@
   </nav>
 
   <div class="language-switcher" data-language-switcher>
-    <button class="language-switcher__trigger" type="button" aria-haspopup="menu" aria-expanded="false" title="Choose language" data-language-trigger>
+    <button class="language-switcher__trigger" type="button" aria-label="Choisir la langue" aria-haspopup="menu" aria-expanded="false" title="Choisir la langue" data-language-trigger>
       <span class="language-switcher__planet" aria-hidden="true">
         <span></span>
       </span>

@@ -51,6 +51,9 @@ test("generated project pages keep machine details secondary and avoid fake tele
     assert.doesNotMatch(programHtml, /128\.4 GB\/s|Live computation field/);
     assert.match(programHtml, /<details class="zone-card record-details">/);
     assert.match(frenchProjectHtml, /<summary>[\s\S]*Détails de la fiche/);
+    assert.match(frenchProjectHtml, /href="\/fr\/work\.html">EXPERTISE<\/a>/);
+    assert.match(frenchProjectHtml, /aria-label="Choisir la langue"/);
+    assert.match(frenchProjectHtml, /Aller au contenu principal/);
     assert.doesNotMatch(frenchProjectHtml, />See related context<|\b18 useful links\b|<dt>Confidence<\/dt>/);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {

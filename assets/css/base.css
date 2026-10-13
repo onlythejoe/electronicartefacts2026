@@ -426,6 +426,15 @@ textarea,
 }
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+
   body > main,
   body > footer,
   .shell-header.zone-card {

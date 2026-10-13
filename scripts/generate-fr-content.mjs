@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import fg from "fast-glob";
+import { glob as fg } from "glob";
 import { parse, stringify } from "yaml";
 
 const rootDir = path.resolve(".");

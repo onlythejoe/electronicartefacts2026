@@ -4,7 +4,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { transform } from "esbuild";
 import { PurgeCSS } from "purgecss";
-import fg from "fast-glob";
+import { glob as fg } from "glob";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -36,6 +36,7 @@ const jsSources = [
   "assets/js/core/ui.js",
   "assets/js/core/view.js",
   "assets/js/core/surface.js",
+  "assets/js/core/modal.js",
   "assets/js/core/behaviors.js",
   "assets/js/core/context-menu.js",
   "assets/js/main.js",
@@ -43,20 +44,24 @@ const jsSources = [
 
 const flowSource = "assets/js/core/flow.js";
 const editorialSources = [
+  "assets/js/core/modal.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
 ];
 const projectSources = [
+  "assets/js/core/modal.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/behaviors.js",
   "assets/js/core/project.js",
 ];
 const graphSources = [
+  "assets/js/core/modal.js",
   "assets/js/core/graph-page.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
 ];
 const searchSources = [
+  "assets/js/core/modal.js",
   "assets/js/core/search-page.js",
   "assets/js/core/context-menu.js",
   "assets/js/core/editorial.js",
@@ -351,7 +356,7 @@ for (const source of jsSources) {
   const content = await readFile(path.join(rootDir, source), "utf8");
   runtimeChunks.push(`/* ==== ${source} ==== */\n${content.trimEnd()}`);
 }
-const writeRuntime = async (destination, catalog) => {
+const writeRuntime = async (destination, catalog, sources = runtimeChunks, treeShaking = false) => {
   const chunks = [
     jsBanner,
     "/* Public data: internal and restricted records are excluded at build time. */",
@@ -359,12 +364,44 @@ const writeRuntime = async (destination, catalog) => {
     publicData.collectionRuntime,
     catalog ? `window.EA_PUBLIC_CATALOG = ${JSON.stringify(catalog)};` : "",
     `window.EA_EMBEDDED_INCLUDES = ${JSON.stringify(embeddedIncludes)};`,
-    ...runtimeChunks,
+    ...sources,
   ];
-  await writeFile(path.join(rootDir, destination), await minify(`${chunks.join("\n\n")}\n`, "js"));
+  const result = await transform(`${chunks.join("\n\n")}\n`, {
+    legalComments: "none", loader: "js", minify: true, target: "es2020", treeShaking,
+  });
+  await writeFile(path.join(rootDir, destination), result.code);
 };
 
 await writeRuntime("assets/js/app.js", runtimeCatalog);
+
+// Restrict each shared module's public API so esbuild can remove functions that
+// the homepage never calls, while retaining their transitive dependencies.
+const homeExports = {
+  "assets/js/core/view.js": ["EA_VIEW", [
+    "routeCard", "vasteBanner", "featuredWork", "featuredResearch",
+    "startVasteEngineAnimation", "startComputationFieldAnimation", "initForgeArtifactViewer",
+  ]],
+  "assets/js/core/surface.js": ["EA_SURFACE", [
+    "crossNavigation", "ecosystemExplorer", "researchAtlas", "startGraphSurfaceAnimation", "startResearchAtlas",
+  ]],
+  "assets/js/core/behaviors.js": ["EA_BEHAVIORS", [
+    "initLanguageSwitcher", "initCardLinks", "initProgressiveGrids", "initUXEnhancements",
+    "initEngagementPanels", "refreshCardSurfaces", "syncNavigationState",
+  ]],
+};
+const homeChunks = [];
+for (const source of jsSources.filter((file) => !["assets/js/main.js", "src/legacy-data/search-index.js"].includes(file)).concat("assets/js/core/home.js")) {
+  let content = await readFile(path.join(rootDir, source), "utf8");
+  const projection = homeExports[source];
+  if (projection) {
+    const [name, exports] = projection;
+    const pattern = new RegExp(`window\\.${name} = \\{[\\s\\S]*?\\n  \\};(?=\\n\\}\\)\\(\\);)`);
+    if (!pattern.test(content)) throw new Error(`Missing runtime exports in ${source}`);
+    content = content.replace(pattern, `window.${name} = { ${exports.join(", ")} };`);
+  }
+  homeChunks.push(content);
+}
+await writeRuntime("assets/js/home.js", runtimeCatalog, homeChunks, true);
 
 const explorerTranslations = await buildTranslationsFor([
   "fr/graph.html", "fr/search.html", "assets/js/core/graph-page.js", "assets/js/core/search-page.js",

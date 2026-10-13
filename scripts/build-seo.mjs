@@ -1,51 +1,22 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { site } from "../src/config/site.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const rootifyPartial = (html) => html.replaceAll('href="./', 'href="/').replaceAll('src="./', 'src="/').trim();
 const staticHeader = rootifyPartial(await readFile(path.join(rootDir, "assets/partials/header.html"), "utf8"));
 const staticFooter = rootifyPartial(await readFile(path.join(rootDir, "assets/partials/footer.html"), "utf8"));
-const origin = "https://electronicartefacts.com";
-const siteDescription = "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.";
-const siteUpdatedAt = "2026-07-10";
-const socialImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg`;
-const logoImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png`;
+const origin = site.origin;
+const siteDescription = site.description;
+const siteUpdatedAt = site.updatedAt;
+const socialImage = `${origin}${site.socialImage}`;
+const logoImage = `${origin}${site.logoImage}`;
 const organizationId = `${origin}/id/organization/electronic-artefacts/`;
-const siteAlternateNames = ["electronicArtefacts", "electronicartefacts.com"];
-const siteKeywords = [
-  "creative technology",
-  "digital product strategy",
-  "UX design",
-  "web development",
-  "knowledge graph",
-  "AI agents",
-  "retrieval-augmented generation",
-  "linked data",
-  "digital preservation",
-  "cultural infrastructure",
-  "software systems",
-  "research publishing",
-];
-const knowsAbout = [
-  "AI agents",
-  "knowledge graphs",
-  "retrieval-augmented generation",
-  "linked data",
-  "JSON-LD",
-  "creative coding",
-  "digital preservation",
-  "cultural knowledge systems",
-  "software architecture",
-  "human-computer interaction",
-  "generative AI",
-  "provenance",
-];
-const sameAs = [
-  "https://www.instagram.com/electronic.artefacts/",
-  "https://github.com/onlythejoe",
-  "https://soundcloud.com/electronic-artefacts",
-];
+const siteAlternateNames = site.alternateNames;
+const siteKeywords = site.keywords;
+const knowsAbout = site.knowsAbout;
+const sameAs = site.sameAs;
 const frenchRoutes = {
   "index.html": "/fr/",
   "work.html": "/fr/work.html",
@@ -276,11 +247,11 @@ const seoMarkup = (file, config) => {
         height: 1024,
       },
       image: socialImage,
-      email: "electronic.artefacts@gmail.com",
+      email: site.contactEmail,
       contactPoint: [
         {
           "@type": "ContactPoint",
-          email: "electronic.artefacts@gmail.com",
+          email: site.contactEmail,
           contactType: "inquiries",
           availableLanguage: ["en", "fr"],
         },
@@ -414,12 +385,12 @@ for (const [file, config] of Object.entries(pages)) {
   );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
   const styleAsset = file === "index.html"
-    ? "home.css?v=4"
+    ? "home.css?v=5"
     : file === "graph.html"
-      ? "graph.css?v=1"
+      ? "graph.css?v=2"
       : file === "search.html"
-        ? "search.css?v=1"
-        : "app.css?v=90";
+        ? "search.css?v=2"
+        : "app.css?v=91";
   const performanceStyles = `<!-- PERFORMANCE_STYLES_START -->
     <link rel="stylesheet" href="/assets/css/${styleAsset}" />
     <!-- PERFORMANCE_STYLES_END -->`;
@@ -427,8 +398,8 @@ for (const [file, config] of Object.entries(pages)) {
     /<!-- PERFORMANCE_STYLES_START -->[\s\S]*?<!-- PERFORMANCE_STYLES_END -->|<link\s+rel="stylesheet"\s+href="(?:\.\/|\/)assets\/css\/(?:app|home|graph|search)\.css\?v=\d+"\s*\/>/,
     performanceStyles,
   );
-  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=1" : file === "search.html" ? "search.js?v=1" : "";
-  const runtime = "app.js?v=78";
+  const dedicatedRuntime = file === "graph.html" ? "graph.js?v=2" : file === "search.html" ? "search.js?v=2" : "";
+  const runtime = file === "index.html" ? "home.js?v=1" : "app.js?v=79";
   const runtimeBoot = file === "index.html"
     ? `<script type="module">{let started=false,loading;const boot=()=>loading||(loading=import("/assets/js/${runtime}"));const start=()=>{if(started)return;started=true;"requestIdleCallback"in window?requestIdleCallback(boot,{timeout:900}):setTimeout(boot,0)};["pointerover","focusin","pointerdown","keydown","touchstart","wheel","scroll"].forEach(type=>window.addEventListener(type,start,{once:true,passive:true}));document.addEventListener("click",event=>{const trigger=event.target.closest?.("[data-language-trigger]");if(!trigger||document.body.classList.contains("is-ready"))return;event.preventDefault();event.stopImmediatePropagation();started=true;boot();let tries=0;const replay=()=>{if(document.body.classList.contains("is-ready")){trigger.click();return}if(tries++<120)requestAnimationFrame(replay)};replay()},true);}</script>`
     : dedicatedRuntime
@@ -440,7 +411,7 @@ for (const [file, config] of Object.entries(pages)) {
     ${runtimeBoot}
     <!-- PERFORMANCE_RUNTIME_END -->`;
   html = html.replace(
-    /<!-- PERFORMANCE_RUNTIME_START -->[\s\S]*?<!-- PERFORMANCE_RUNTIME_END -->|<script\s+type="module"\s+src="(?:\.\/|\/)assets\/js\/(?:app(?:-full)?|graph|search)\.js\?v=\d+"><\/script>/,
+    /<!-- PERFORMANCE_RUNTIME_START -->[\s\S]*?<!-- PERFORMANCE_RUNTIME_END -->|<script\s+type="module"\s+src="(?:\.\/|\/)assets\/js\/(?:app(?:-full)?|home|graph|search)\.js\?v=\d+"><\/script>/,
     performanceRuntime,
   );
   html = html

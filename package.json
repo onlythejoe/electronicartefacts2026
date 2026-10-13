@@ -2,25 +2,26 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run validate && tsx scripts/build-site.ts && node scripts/build-seo.mjs && node scripts/build-i18n-pages.mjs && node scripts/build-static-fallbacks.mjs && node scripts/build-assets.mjs && node scripts/report-i18n.mjs",
+    "build": "npm run validate && tsx scripts/build-site.ts && tsx scripts/build-seo.mjs && node scripts/build-i18n-pages.mjs && node scripts/build-static-fallbacks.mjs && node scripts/build-assets.mjs && node scripts/report-i18n.mjs",
     "audit:language": "node scripts/audit-language-surface.mjs",
     "audit:content": "tsx scripts/audit-content-structure.ts",
     "audit:graph": "tsx scripts/audit-graph-connectivity.ts",
     "audit:seo": "node scripts/audit-seo-surface.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "i18n:report": "node scripts/report-i18n.mjs",
-    "seo": "node scripts/build-seo.mjs",
+    "seo": "tsx scripts/build-seo.mjs",
     "validate": "tsx scripts/validate-content.ts",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
-    "check": "npm run validate && npm run audit:content && npm run audit:graph && npm run typecheck && npm test && npm run build"
+    "check": "npm run validate && npm run audit:content && npm run audit:graph && npm run typecheck && npm run build && npm test && npm run audit:seo && npm run audit:language && npm run audit:links",
+    "audit:links": "tsx scripts/audit-links.ts"
   },
   "dependencies": {
-    "fast-glob": "3.3.3",
-    "markdown-it": "14.2.0",
+    "markdown-it": "14.3.2",
     "minisearch": "7.1.2",
     "yaml": "2.9.0",
-    "zod": "3.25.76"
+    "zod": "3.25.76",
+    "glob": "13.0.6"
   },
   "devDependencies": {
     "@types/markdown-it": "14.1.2",
@@ -29,5 +30,13 @@
     "purgecss": "^7.0.2",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
+  },
+  "overrides": {
+    "purgecss": {
+      "postcss-selector-parser": "7.1.6"
+    }
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

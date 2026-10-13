@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import fg from "fast-glob";
+import { glob as fg } from "glob";
 import { parse } from "yaml";
 import { relationSchema } from "../schema/validation.js";
 import type { RelationStatement } from "../schema/relation.js";

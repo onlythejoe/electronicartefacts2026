@@ -10,6 +10,7 @@ import { buildOpenSearchDescription } from "../src/seo/opensearch.js";
 import { buildSitemap } from "../src/seo/sitemaps.js";
 import { buildSecurityTxt } from "../src/seo/trust-files.js";
 import { jsonLdFor } from "../src/semantic/jsonld.js";
+import { site } from "../src/config/site.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { renderEditorialPanels } from "../src/templates/components/editorial-panels.js";
 import { renderIdentifierPage } from "../src/templates/identifier-page.js";
@@ -103,7 +104,9 @@ test("sitemap excludes noindex generated search route", async () => {
   assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/graph\.html<\/loc>/);
   assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/fr\/graph\.html<\/loc>/);
   assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
-  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc>.*<lastmod>2026-07-10<\/lastmod>/);
+  const homepage = sitemap.match(/<url><loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<\/url>/)?.[0];
+  assert.ok(homepage);
+  assert.ok(homepage.includes(`<lastmod>${site.updatedAt}</lastmod>`));
   assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-social\.jpg<\/image:loc>/);
 });
 

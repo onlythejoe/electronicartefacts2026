@@ -11,6 +11,8 @@ The repository is organized around a generated-site pipeline:
 
 ## Working Commands
 
+Use Node.js 24 (`nvm use`), then install the locked dependencies with `npm ci`.
+
 ```sh
 npm run validate
 npm run typecheck
@@ -18,6 +20,16 @@ npm test
 npm run build
 npm run check
 ```
+
+`npm run check` builds the published output before testing it, then audits SEO,
+language and local links (including deferred and responsive images). The Site
+quality workflow runs these checks, audits dependencies and verifies that
+committed output matches its sources on every push and pull request.
+
+The homepage has its own generated `assets/js/home.js` runtime. Edit
+`assets/js/core/home.js` or the shared modules and rebuild; the build keeps only
+the shared APIs that the homepage needs. Browser captures in `output/` and
+`.playwright-cli/` are local verification artifacts.
 
 After a successful production deployment, notify IndexNow-compatible search engines about either selected routes or the full sitemap:
 

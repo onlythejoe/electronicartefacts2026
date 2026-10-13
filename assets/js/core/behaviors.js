@@ -971,13 +971,14 @@
   };
 
   const makeEntryHref = (item) => {
-    if (!item) return "./index.html";
+    const prefix = isFrench() ? "/fr" : "";
+    if (!item) return `${prefix}/index.html`;
     const canonicalRoute = window.EA_CATALOG?.routeFor?.(item);
     if (canonicalRoute) return canonicalRoute;
-    if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
-    if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
-    if (item.kind === "artefact" || item.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(item.id)}`;
-    return `./entity.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "project") return `${prefix}/project.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "collection") return `${prefix}/collection.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "artefact" || item.kind === "researchLog") return `${prefix}/artefact.html?id=${encodeURIComponent(item.id)}`;
+    return `${prefix}/entity.html?id=${encodeURIComponent(item.id)}`;
   };
 
   const initScrollProgress = () => {
@@ -1394,15 +1395,16 @@
   const initCommandPalette = () => {
     if (document.querySelector("[data-command-palette]")) return;
     const catalog = window.EA_CATALOG || {};
+    const prefix = isFrench() ? "/fr" : "";
     const entries = [
-      { title: "Home", type: "Page", href: "./index.html" },
-      { title: "Work", type: "Page", href: "./work.html" },
-      { title: "Projects", type: "Page", href: "./projects.html" },
-      { title: "Programs", type: "Page", href: "./programs.html" },
-      { title: "Research", type: "Page", href: "./research.html" },
-      { title: "Archive", type: "Page", href: "./archive.html" },
-      { title: "About", type: "Page", href: "./about.html" },
-      { title: "Contact", type: "Page", href: "./contact.html" },
+      { title: "Home", type: "Page", href: `${prefix}/index.html` },
+      { title: "Work", type: "Page", href: `${prefix}/work.html` },
+      { title: "Projects", type: "Page", href: `${prefix}/projects.html` },
+      { title: "Programs", type: "Page", href: `${prefix}/programs.html` },
+      { title: "Research", type: "Page", href: `${prefix}/research.html` },
+      { title: "Archive", type: "Page", href: `${prefix}/archive.html` },
+      { title: "About", type: "Page", href: `${prefix}/about.html` },
+      { title: "Contact", type: "Page", href: `${prefix}/contact.html` },
       ...((catalog.indexes?.entities || []).map((item) => ({
         title: item.title,
         type: catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "Entry",
@@ -1420,8 +1422,8 @@
     const button = document.createElement("button");
     button.className = "command-fab";
     button.type = "button";
-    button.setAttribute("aria-label", "Open quick navigation");
-    button.setAttribute("title", "Open quick navigation");
+    button.setAttribute("aria-label", translate("Open quick navigation"));
+    button.setAttribute("title", translate("Open quick navigation"));
     button.innerHTML = `<span>${esc(translate("Search"))}</span><kbd>⌘K</kbd>`;
 
     const palette = document.createElement("div");
@@ -1433,7 +1435,7 @@
       <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="${esc(translate("Quick navigation"))}">
         <div class="command-palette__search">
           <span aria-hidden="true">⌕</span>
-          <input type="search" placeholder="${esc(translate("Search pages, projects and programs..."))}" data-command-input />
+          <input type="search" aria-label="${esc(translate("Search pages, projects and programs..."))}" placeholder="${esc(translate("Search pages, projects and programs..."))}" data-command-input />
           <button type="button" data-command-close aria-label="${esc(translate("Close quick navigation"))}">Esc</button>
         </div>
         <div class="command-palette__results" data-command-results></div>
@@ -1443,21 +1445,22 @@
 
     const input = palette.querySelector("[data-command-input]");
     const results = palette.querySelector("[data-command-results]");
+    const modal = window.EA_MODAL.bind(palette, { initialFocus: input, fallbackFocus: button });
 
     const renderResults = () => {
       const query = input.value.trim().toLowerCase();
       const matches = entries
-        .filter((entry) => !query || `${entry.title} ${entry.type} ${entry.summary || ""}`.toLowerCase().includes(query))
+        .filter((entry) => !query || `${entry.title} ${translate(entry.title)} ${entry.type} ${entry.summary || ""} ${translate(entry.summary || "")}`.toLowerCase().includes(query))
         .slice(0, 9);
       results.innerHTML = matches
         .map(
           (entry, index) => `
             <a class="command-result${index === 0 ? " is-active" : ""}" href="${esc(entry.href)}">
               <span>
-                <strong>${esc(entry.title)}</strong>
-                ${entry.summary ? `<small>${esc(entry.summary)}</small>` : ""}
+                <strong>${esc(translate(entry.title))}</strong>
+                ${entry.summary ? `<small>${esc(translate(entry.summary))}</small>` : ""}
               </span>
-              <em>${esc(entry.type)}</em>
+              <em>${esc(translate(entry.type))}</em>
             </a>
           `,
         )
@@ -1465,21 +1468,25 @@
     };
 
     const open = () => {
-      palette.hidden = false;
       document.body.classList.add("has-command-palette");
       input.value = "";
       renderResults();
-      requestAnimationFrame(() => input.focus());
+      modal.open();
     };
     const close = () => {
-      palette.hidden = true;
       document.body.classList.remove("has-command-palette");
-      button.focus({ preventScroll: true });
+      modal.close();
     };
 
     button.addEventListener("click", open);
     palette.querySelectorAll("[data-command-close]").forEach((node) => node.addEventListener("click", close));
     input.addEventListener("input", renderResults);
+    results.addEventListener("click", (event) => {
+      if (event.target.closest("a[href]") && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) close();
+    });
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.isComposing) results.querySelector("a[href]")?.click();
+    });
     document.addEventListener("keydown", (event) => {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
         event.preventDefault();

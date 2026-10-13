@@ -18022,6 +18022,12 @@ body[data-entry-id="voice-capture-studio"] .project-dossier-hero .metric-pill :i
   color: var(--vcs-muted);
 }
 
+body[data-entry-id="voice-capture-studio"] .project-dossier-hero .button--primary {
+  color: #050607;
+  background: var(--vcs-ink);
+  border-color: var(--vcs-ink);
+}
+
 body[data-entry-id="voice-capture-studio"] .project-dossier-hero :is(.button--secondary, .metric-pill, .chip, .project-dossier-nav .tag) {
   border-color: var(--vcs-line);
   color: var(--vcs-ink);

@@ -282,20 +282,27 @@
     palette.className = "command-palette";
     palette.hidden = true;
     palette.dataset.commandPalette = "";
-    palette.innerHTML = `<div class="command-palette__backdrop" data-close></div><section class="command-palette__panel" role="dialog" aria-modal="true"><div class="command-palette__search"><span>⌕</span><input type="search" placeholder="${label("Search this page and connected paths…", "Rechercher cette page et ses liens…")}" data-input><button type="button" data-close>Esc</button></div><div class="command-palette__results" data-results></div></section>`;
+    palette.innerHTML = `<div class="command-palette__backdrop" data-close></div><section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="${label("Quick navigation", "Navigation rapide")}"><div class="command-palette__search"><span aria-hidden="true">⌕</span><input type="search" aria-label="${label("Search this page and connected paths…", "Rechercher cette page et ses liens…")}" placeholder="${label("Search this page and connected paths…", "Rechercher cette page et ses liens…")}" data-input><button type="button" data-close aria-label="${label("Close quick navigation", "Fermer la navigation rapide")}">Esc</button></div><div class="command-palette__results" data-results></div></section>`;
     body.append(button, palette);
     const input = palette.querySelector("[data-input]");
     const results = palette.querySelector("[data-results]");
+    const modal = window.EA_MODAL.bind(palette, { initialFocus: input, fallbackFocus: button });
     const render = () => {
       const query = input.value.trim().toLowerCase();
       results.innerHTML = entries.filter((entry) => !query || entry.title.toLowerCase().includes(query)).slice(0, 9)
         .map((entry, index) => `<a class="command-result${index ? "" : " is-active"}" href="${escapeHtml(entry.href)}"><span><strong>${escapeHtml(entry.title)}</strong></span><em>${label("Open", "Ouvrir")}</em></a>`).join("");
     };
-    const open = () => { palette.hidden = false; body.classList.add("has-command-palette"); input.value = ""; render(); requestAnimationFrame(() => input.focus()); };
-    const close = () => { palette.hidden = true; body.classList.remove("has-command-palette"); };
+    const open = () => { body.classList.add("has-command-palette"); input.value = ""; render(); modal.open(); };
+    const close = () => { body.classList.remove("has-command-palette"); modal.close(); };
     button.addEventListener("click", open);
     palette.querySelectorAll("[data-close]").forEach((node) => node.addEventListener("click", close));
     input.addEventListener("input", render);
+    results.addEventListener("click", (event) => {
+      if (event.target.closest("a[href]") && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) close();
+    });
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.isComposing) results.querySelector("a[href]")?.click();
+    });
     document.addEventListener("keydown", (event) => {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") { event.preventDefault(); palette.hidden ? open() : close(); }
       if (event.key === "Escape" && !palette.hidden) close();

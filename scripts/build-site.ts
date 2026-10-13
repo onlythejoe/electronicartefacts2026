@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import vm from "node:vm";
 import { loadContent } from "../src/build/load-content.js";
 import { loadRelations } from "../src/build/load-relations.js";
 import { withDerivedRelations } from "../src/build/derive-relations.js";
@@ -74,6 +75,33 @@ const rootifyPartials = (html: string): string =>
 const header = rootifyPartials(await readFile(path.join(rootDir, "assets/partials/header.html"), "utf8"));
 const footer = rootifyPartials(await readFile(path.join(rootDir, "assets/partials/footer.html"), "utf8"));
 
+// Use the same dictionary as the browser, so generated French navigation is
+// already localized before JavaScript loads (including project-only runtimes).
+const i18nSource = await readFile(path.join(rootDir, "assets/js/core/i18n.js"), "utf8");
+const dictionaryStart = i18nSource.indexOf("  const french = ");
+const dictionaryEnd = i18nSource.indexOf("\n\n  const normalizeWhitespace", dictionaryStart);
+if (dictionaryStart < 0 || dictionaryEnd < 0) throw new Error("Missing French shell dictionary");
+const frenchDictionary = vm.runInNewContext(`(() => {${i18nSource.slice(dictionaryStart, dictionaryEnd)}; return french;})()`) as Record<string, string>;
+const localizeShell = (html: string): string => html.split(/(<[^>]+>)/g).map((part) => {
+  if (!part.startsWith("<")) {
+    const translated = frenchDictionary[part.trim()];
+    return translated ? part.replace(part.trim(), escapeHtml(translated)) : part;
+  }
+  return part.replace(/\b(aria-label|title|alt|placeholder)="([^"]*)"/g, (match, attribute: string, value: string) =>
+    frenchDictionary[value] ? `${attribute}="${escapeHtml(frenchDictionary[value])}"` : match,
+  ).replace(/href="(\/[^"]*)"/g, (match, value: string) => {
+    const url = new URL(value, origin);
+    const route = url.pathname === "/index.html" ? "/" : url.pathname;
+    const alternate = i18nAlternates[route]?.fr;
+    return alternate ? `href="${escapeHtml(`${alternate}${url.search}${url.hash}`)}"` : match;
+  });
+}).join("");
+const renderSiteLayout: typeof renderLayout = (input) => renderLayout({
+  ...input,
+  header: input.metadata.language === "fr" ? localizeShell(input.header) : input.header,
+  footer: input.metadata.language === "fr" ? localizeShell(input.footer) : input.footer,
+});
+
 for (const entity of publicEntities) {
   const route = routeForEntity(entity);
   const routeAlternates = i18nAlternates[route];
@@ -97,7 +125,7 @@ for (const entity of publicEntities) {
   const body = entity.type === "publication"
     ? renderPublicationPage(entity as PublicationEntity, relations, localById, localRouteById)
     : renderEntityPage(entity, relations, localById, localRouteById);
-  const html = renderLayout({
+  const html = renderSiteLayout({
     metadata,
     body,
     header,
@@ -454,7 +482,7 @@ ${hubCards(items, locale).trimStart()}
       },
     ],
   };
-  await writeText(routeToFile(rootDir, route), renderLayout({
+  await writeText(routeToFile(rootDir, route), renderSiteLayout({
     metadata: hubMetadata(title, description, route, locale, alternates),
     body,
     header,
@@ -488,7 +516,7 @@ await writeJson(path.join(rootDir, "search/documents.json"), searchDocuments);
 await writeJson(path.join(rootDir, "search/index.json"), buildSearchIndex(searchDocuments));
 const searchBody = `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">KNOWLEDGE SEARCH</p><h1 class="display-title">Search the public graph.</h1><p class="lede">Find concepts, research fields, programs, projects, publications and organizations.</p></div><label class="card__meta" for="generated-search">Query</label><input id="generated-search" class="search-input" type="search" data-generated-search-input placeholder="Graph Runtime, VASTE, Vestiges…"></section><section class="zone-card hero"><div class="stack" data-generated-search-results></div></section><script type="module" src="/assets/js/search/client.js"></script>`;
 const searchAlternates = i18nAlternates["/search/"];
-await writeText(routeToFile(rootDir, "/search/"), renderLayout({
+await writeText(routeToFile(rootDir, "/search/"), renderSiteLayout({
   metadata: { ...hubMetadata("Search", "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.", "/search/", defaultLocale, searchAlternates ? [
     ...Object.entries(searchAlternates).map(([hreflang, href]) => ({ hreflang, href: `${origin}${href}` })),
     ...(searchAlternates.en ? [{ hreflang: "x-default", href: `${origin}${searchAlternates.en}` }] : []),
